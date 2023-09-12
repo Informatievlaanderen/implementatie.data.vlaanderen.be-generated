@@ -1,0 +1,130 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.w3.org/ns/locn#Address> a rdfs:Class;
+  rdfs:label "VMSW Adres"@nl .
+
+<https://implementatie.data.vlaanderen.be/ns/vmsw#adres> a owl:ObjectProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vmsw>;
+  rdfs:range <http://www.w3.org/ns/locn#Address> .
+
+<https://implementatie.data.vlaanderen.be/ns/vmsw#bebouwingsType> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vmsw>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/vmsw#bouwjaar> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vmsw>;
+  rdfs:range xsd:integer .
+
+<https://implementatie.data.vlaanderen.be/ns/vmsw#eigendom> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vmsw>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/vmsw#gebouweenheidId> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vmsw>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/vmsw#gemeenteNISCode> a owl:DatatypeProperty;
+  rdfs:comment "NIS code van een gemeente"@nl;
+  rdfs:domain <http://www.w3.org/ns/locn#Address>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vmsw>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/vmsw#organisatieId> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vmsw>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/vmsw#statistischeSector> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vmsw>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/vmsw#typeEigendom> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vmsw>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/vmsw#vmswWoningId> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vmsw>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/vmsw#wijk> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vmsw>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/vmsw#woningType> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vmsw>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/vmsw#woonmaatschappijWoningCode> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vmsw>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/vmsw#woonmaatschappijWoningGroepCode> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vmsw>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/vmsw#woonmaatschappijWoningId> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vmsw>;
+  rdfs:range xsd:string .
+
+<http://www.w3.org/ns/locn#postCode> a rdf:Property;
+  rdfs:label "postcode"@nl .
+
+<http://www.w3.org/ns/locn#thoroughfare> a rdf:Property;
+  rdfs:label "straatnaam"@nl .
+
+<https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer> a rdf:Property;
+  rdfs:label "busnummer"@nl .
+
+<https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer> a rdf:Property;
+  rdfs:label "huisnummer"@nl .
+
+<https://data.vlaanderen.be/ns/adres#gemeentenaam> a rdf:Property;
+  rdfs:label "gemeentenaam"@nl .
+
+<https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vmsw> .
+
+<https://implementatie.data.vlaanderen.be/ns/vmsw> a owl:Ontology;
+  rdfs:label "voc-vmsw"@en,
+    "voc-vmsw"@nl;
+  dc:issued "TODO";
+  dc:license "https://creativecommons.org/publicdomain/zero/1.0/",
+    <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>;
+  dc:mediator [
+    foaf:homepage <https://data.specs.org>;
+    foaf:mbox <mailto:info@data.specs.org>;
+    foaf:name "Data Specifications Organisation"
+  ];
+  rdfs:seeAlso <http://www.w3.org/ns/locn#Address>,
+    <http://www.w3.org/ns/locn#postCode>,
+    <http://www.w3.org/ns/locn#thoroughfare>,
+    <https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer>,
+    <https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer>,
+    <https://data.vlaanderen.be/ns/adres#gemeentenaam>;
+  <http://www.w3.org/2001/02pd/rec54#editor> [
+    a foaf:Person;
+    foaf:firstName "Nick";
+    foaf:lastName "De Decker"
+  ], [
+    a foaf:Person;
+    foaf:firstName "Bert";
+    foaf:lastName "Van Nuffelen"
+  ] .
