@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/tree/b02469d7c078986e7e81d4181e3bc6de0f09d492",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/blob/b02469d7c078986e7e81d4181e3bc6de0f09d492/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/tree/081fd5cb264062c11d85d7fbee3b7b3aa4d1beb5",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/blob/081fd5cb264062c11d85d7fbee3b7b3aa4d1beb5/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/issues",
     "standaardregisterurl": "",
     "usesVocs": [],
@@ -22,241 +22,49 @@
   },
   "classes": [
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris",
-      "name": "",
-      "label": {},
-      "sort": "",
+      "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Afvalfiche",
+      "name": "Afvalfiche",
+      "label": {
+        "nl": "Afvalfiche"
+      },
+      "sort": "Afvalfiche",
+      "description": {},
+      "usage": {},
+      "parents": [
+        {
+          "label": "Fiche",
+          "name": "Fiche",
+          "package": "asbestInventaris-im",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche",
+          "scoped_uri": "#Fiche"
+        }
+      ],
+      "properties": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Analyserapport",
+      "name": "Analyserapport",
+      "label": {
+        "nl": "Analyserapport"
+      },
+      "sort": "Analyserapport",
       "description": {},
       "usage": {},
       "parents": [],
       "properties": [
         {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#resultaat",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "AsbestInventaris",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris"
-            }
-          ],
-          "range": [],
-          "scopedrange": [],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
           "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
-          "name": "",
-          "sort": "",
-          "label": {},
+          "name": "id",
+          "sort": "id",
+          "label": {
+            "nl": "id"
+          },
           "description": {},
           "usage": {},
           "domain": [
             {
-              "EA-Name": "AsbestInventaris",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris"
-            }
-          ],
-          "range": [],
-          "scopedrange": [],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkeDelen",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "AsbestInventaris",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris"
-            }
-          ],
-          "range": [],
-          "scopedrange": [],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkDeel",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "AsbestInventaris",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris"
-            }
-          ],
-          "range": [],
-          "scopedrange": [],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geldigTot",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "AsbestInventaris",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris"
-            }
-          ],
-          "range": [],
-          "scopedrange": [],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geFinaliseerdOp",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "AsbestInventaris",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris"
-            }
-          ],
-          "range": [],
-          "scopedrange": [],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attestNummer",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "AsbestInventaris",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris"
-            }
-          ],
-          "range": [],
-          "scopedrange": [],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attest",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "AsbestInventaris",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris"
-            }
-          ],
-          "range": [],
-          "scopedrange": [],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestMaterialen",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "AsbestInventaris",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris"
-            }
-          ],
-          "range": [],
-          "scopedrange": [],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalUitsluitingen",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "AsbestInventaris",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris"
-            }
-          ],
-          "range": [],
-          "scopedrange": [],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalBeperkingen",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "AsbestInventaris",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris"
-            }
-          ],
-          "range": [],
-          "scopedrange": [],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalAsbestMaterialen",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "AsbestInventaris",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris"
-            }
-          ],
-          "range": [],
-          "scopedrange": [],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aanleiding",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "AsbestInventaris",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris"
+              "EA-Name": "Analyserapport",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Analyserapport"
             }
           ],
           "range": [],
@@ -267,29 +75,541 @@
       ]
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Attest",
-      "name": "",
-      "label": {},
-      "sort": "",
+      "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris",
+      "name": "Asbestinventaris",
+      "label": {
+        "nl": "Asbestinventaris"
+      },
+      "sort": "Asbestinventaris",
       "description": {},
       "usage": {},
       "parents": [],
-      "properties": []
+      "properties": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#uitgegevenOp",
+          "name": "uitgegevenOp",
+          "sort": "uitgegeven op",
+          "label": {
+            "nl": "uitgegeven op"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asbestinventaris",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
+            }
+          ],
+          "range": [],
+          "scopedrange": [],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#resultaat",
+          "name": "resultaat",
+          "sort": "resultaat",
+          "label": {
+            "nl": "resultaat"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asbestinventaris",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Taalstring",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#locatiebeschrijving",
+          "name": "locatieBeschrijving",
+          "sort": "locatie beschrijving",
+          "label": {
+            "nl": "locatie beschrijving"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asbestinventaris",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Taalstring",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
+          "name": "id",
+          "sort": "id",
+          "label": {
+            "nl": "id"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asbestinventaris",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
+            }
+          ],
+          "range": [],
+          "scopedrange": [],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkeDelen",
+          "name": "gemeenschappelijkeDelen",
+          "sort": "gemeenschappelijke delen",
+          "label": {
+            "nl": "gemeenschappelijke delen"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asbestinventaris",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
+            }
+          ],
+          "range": [],
+          "scopedrange": [],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkDeel",
+          "name": "gemeenschappelijkDeel",
+          "sort": "gemeenschappelijk deel",
+          "label": {
+            "nl": "gemeenschappelijk deel"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asbestinventaris",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
+            }
+          ],
+          "range": [],
+          "scopedrange": [],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geldigTot",
+          "name": "geldigTot",
+          "sort": "geldig tot",
+          "label": {
+            "nl": "geldig tot"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asbestinventaris",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
+            }
+          ],
+          "range": [],
+          "scopedrange": [],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geFinaliseerdOp",
+          "name": "gefinaliseerdOp",
+          "sort": "gefinaliseerd op",
+          "label": {
+            "nl": "gefinaliseerd op"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asbestinventaris",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
+            }
+          ],
+          "range": [],
+          "scopedrange": [],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attestNummer",
+          "name": "attestNummer",
+          "sort": "attest nummer",
+          "label": {
+            "nl": "attest nummer"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asbestinventaris",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
+            }
+          ],
+          "range": [],
+          "scopedrange": [],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attest",
+          "name": "attest",
+          "sort": "attest",
+          "label": {
+            "nl": "attest"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asbestinventaris",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Attest",
+              "range_uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Attest"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Attest",
+              "range_puri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Attest",
+              "range_label": {
+                "nl": "Attest"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestMaterialen",
+          "name": "asbestMaterialen",
+          "sort": "asbest materialen",
+          "label": {
+            "nl": "asbest materialen"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asbestinventaris",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
+            }
+          ],
+          "range": [],
+          "scopedrange": [],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#analyserapport",
+          "name": "analyseRapport",
+          "sort": "analyse rapport",
+          "label": {
+            "nl": "analyse rapport"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asbestinventaris",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Analyserapport",
+              "range_uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Analyserapport"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Analyserapport",
+              "range_puri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Analyserapport",
+              "range_label": {
+                "nl": "Analyserapport"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalUitsluitingen",
+          "name": "aantalUitsluitingen",
+          "sort": "aantal uitsluitingen",
+          "label": {
+            "nl": "aantal uitsluitingen"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asbestinventaris",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
+            }
+          ],
+          "range": [],
+          "scopedrange": [],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalBeperkingen",
+          "name": "aantalBeperkingen",
+          "sort": "aantal beperkingen",
+          "label": {
+            "nl": "aantal beperkingen"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asbestinventaris",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
+            }
+          ],
+          "range": [],
+          "scopedrange": [],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalAsbestMaterialen",
+          "name": "aantalAsbestMaterialen",
+          "sort": "aantal asbest materialen",
+          "label": {
+            "nl": "aantal asbest materialen"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asbestinventaris",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
+            }
+          ],
+          "range": [],
+          "scopedrange": [],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aanleiding",
+          "name": "aanleiding",
+          "sort": "aanleiding",
+          "label": {
+            "nl": "aanleiding"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asbestinventaris",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Taalstring",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Attest",
+      "name": "Attest",
+      "label": {
+        "nl": "Attest"
+      },
+      "sort": "Attest",
+      "description": {},
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
+          "name": "id",
+          "sort": "id",
+          "label": {
+            "nl": "id"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Attest",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Attest"
+            }
+          ],
+          "range": [],
+          "scopedrange": [],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Bronfiche",
+      "name": "Bronfiche",
+      "label": {
+        "nl": "Bronfiche"
+      },
+      "sort": "Bronfiche",
+      "description": {},
+      "usage": {},
+      "parents": [
+        {
+          "label": "Fiche",
+          "name": "Fiche",
+          "package": "asbestInventaris-im",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche",
+          "scoped_uri": "#Fiche"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#risicobeoordeling",
+          "name": "risicobeoordeling",
+          "sort": "risicobeoordeling",
+          "label": {
+            "nl": "risicobeoordeling"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Bronfiche",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Bronfiche"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Taalstring",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#mijlpaal",
+          "name": "mijlpaal",
+          "sort": "mijlpaal",
+          "label": {
+            "nl": "mijlpaal"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Bronfiche",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Bronfiche"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Taalstring",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
     },
     {
       "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche",
-      "name": "",
-      "label": {},
-      "sort": "",
+      "name": "Fiche",
+      "label": {
+        "nl": "Fiche"
+      },
+      "sort": "Fiche",
       "description": {},
       "usage": {},
       "parents": [],
       "properties": [
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#primairedrager",
-          "name": "",
-          "sort": "",
-          "label": {},
+          "name": "primaireDrager",
+          "sort": "primaire drager",
+          "label": {
+            "nl": "primaire drager"
+          },
           "description": {},
           "usage": {},
           "domain": [
@@ -298,16 +618,31 @@
               "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche"
             }
           ],
-          "range": [],
-          "scopedrange": [],
+          "range": [
+            {
+              "range_label": "Taalstring",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
           "cardinality": "1",
           "codelist_uri": ""
         },
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#omgeving",
-          "name": "",
-          "sort": "",
-          "label": {},
+          "name": "omgeving",
+          "sort": "omgeving",
+          "label": {
+            "nl": "omgeving"
+          },
           "description": {},
           "usage": {},
           "domain": [
@@ -316,16 +651,31 @@
               "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche"
             }
           ],
-          "range": [],
-          "scopedrange": [],
+          "range": [
+            {
+              "range_label": "Taalstring",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
           "cardinality": "1",
           "codelist_uri": ""
         },
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
-          "name": "",
-          "sort": "",
-          "label": {},
+          "name": "id",
+          "sort": "id",
+          "label": {
+            "nl": "id"
+          },
           "description": {},
           "usage": {},
           "domain": [
@@ -341,9 +691,44 @@
         },
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gebondenheid",
-          "name": "",
-          "sort": "",
-          "label": {},
+          "name": "gebondenheid",
+          "sort": "gebondenheid",
+          "label": {
+            "nl": "gebondenheid"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Fiche",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Taalstring",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#eenvoudigbereikbaar",
+          "name": "eenvoudigBereikbaar",
+          "sort": "eenvoudig bereikbaar",
+          "label": {
+            "nl": "eenvoudig bereikbaar"
+          },
           "description": {},
           "usage": {},
           "domain": [
@@ -359,9 +744,11 @@
         },
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#bindmiddel",
-          "name": "",
-          "sort": "",
-          "label": {},
+          "name": "bindmiddel",
+          "sort": "bindmiddel",
+          "label": {
+            "nl": "bindmiddel"
+          },
           "description": {},
           "usage": {},
           "domain": [
@@ -370,16 +757,31 @@
               "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche"
             }
           ],
-          "range": [],
-          "scopedrange": [],
+          "range": [
+            {
+              "range_label": "Taalstring",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
           "cardinality": "1",
           "codelist_uri": ""
         },
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#beschrijving",
-          "name": "",
-          "sort": "",
-          "label": {},
+          "name": "beschrijving",
+          "sort": "beschrijving",
+          "label": {
+            "nl": "beschrijving"
+          },
           "description": {},
           "usage": {},
           "domain": [
@@ -388,16 +790,64 @@
               "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche"
             }
           ],
-          "range": [],
-          "scopedrange": [],
+          "range": [
+            {
+              "range_label": "Taalstring",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestsoort",
+          "name": "asbestsoort",
+          "sort": "asbestsoort",
+          "label": {
+            "nl": "asbestsoort"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Fiche",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Taalstring",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
           "cardinality": "1",
           "codelist_uri": ""
         },
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestmateriaal",
-          "name": "",
-          "sort": "",
-          "label": {},
+          "name": "asbestmateriaal",
+          "sort": "asbestmateriaal",
+          "label": {
+            "nl": "asbestmateriaal"
+          },
           "description": {},
           "usage": {},
           "domain": [
@@ -406,22 +856,83 @@
               "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche"
             }
           ],
-          "range": [],
-          "scopedrange": [],
+          "range": [
+            {
+              "range_label": "Taalstring",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
           "cardinality": "1",
           "codelist_uri": ""
         },
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#actie",
-          "name": "",
-          "sort": "",
-          "label": {},
+          "name": "actie",
+          "sort": "actie",
+          "label": {
+            "nl": "actie"
+          },
           "description": {},
           "usage": {},
           "domain": [
             {
               "EA-Name": "Fiche",
               "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Taalstring",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Gebouweenheid",
+      "name": "Gebouweenheid",
+      "label": {
+        "nl": "Gebouweenheid"
+      },
+      "sort": "Gebouweenheid",
+      "description": {},
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
+          "name": "id",
+          "sort": "id",
+          "label": {
+            "nl": "id"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Gebouweenheid",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Gebouweenheid"
             }
           ],
           "range": [],
@@ -432,25 +943,29 @@
       ]
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#GebouwEenheid",
-      "name": "",
-      "label": {},
-      "sort": "",
+      "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#InventarisSummary",
+      "name": "InventarisSummary",
+      "label": {
+        "nl": "Inventaris Summary"
+      },
+      "sort": "Inventaris Summary",
       "description": {},
       "usage": {},
       "parents": [],
       "properties": [
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
-          "name": "",
-          "sort": "",
-          "label": {},
+          "name": "id",
+          "sort": "id",
+          "label": {
+            "nl": "id"
+          },
           "description": {},
           "usage": {},
           "domain": [
             {
-              "EA-Name": "GebouwEenheid",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#GebouwEenheid"
+              "EA-Name": "InventarisSummary",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#InventarisSummary"
             }
           ],
           "range": [],
@@ -461,7 +976,38 @@
       ]
     }
   ],
-  "properties": [],
+  "properties": [
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attest",
+      "name": {
+        "nl": "attest",
+        "undefined": "attest"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#analyserapport",
+      "name": {
+        "nl": "analyse rapport",
+        "undefined": "analyseRapport"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    }
+  ],
   "contributors": [
     {
       "role": "A",

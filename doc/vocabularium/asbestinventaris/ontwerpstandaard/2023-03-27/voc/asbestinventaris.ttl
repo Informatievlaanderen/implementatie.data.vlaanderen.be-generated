@@ -6,98 +6,158 @@
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Attest> a owl:Class;
-  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Afvalfiche> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris>;
+  rdfs:subClassOf <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche> .
 
-<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aanleiding> a rdf:Property;
-  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris>;
-  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aanleiding> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris>;
+  rdfs:range rdf:langString .
 
 <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalAsbestMaterialen> a rdf:Property;
-  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris>;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
 
 <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalBeperkingen> a rdf:Property;
-  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris>;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
 
 <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalUitsluitingen> a rdf:Property;
-  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris>;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
 
-<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#actie> a rdf:Property;
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#actie> a owl:DatatypeProperty;
   rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche>;
-  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris>;
+  rdfs:range rdf:langString .
+
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#analyserapport> a owl:ObjectProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris>;
+  rdfs:range <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Analyserapport> .
 
 <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestMaterialen> a rdf:Property;
-  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris>;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
 
-<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestmateriaal> a rdf:Property;
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestmateriaal> a owl:DatatypeProperty;
   rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche>;
-  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris>;
+  rdfs:range rdf:langString .
 
-<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attest> a rdf:Property;
-  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris>;
-  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestsoort> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris>;
+  rdfs:range rdf:langString .
+
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attest> a owl:ObjectProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris>;
+  rdfs:range <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Attest> .
 
 <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attestNummer> a rdf:Property;
-  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris>;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
 
-<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#beschrijving> a rdf:Property;
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#beschrijving> a owl:DatatypeProperty;
   rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche>;
-  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris>;
+  rdfs:range rdf:langString .
 
-<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#bindmiddel> a rdf:Property;
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#bindmiddel> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris>;
+  rdfs:range rdf:langString .
+
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#eenvoudigbereikbaar> a rdf:Property;
   rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
 
 <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geFinaliseerdOp> a rdf:Property;
-  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris>;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
 
-<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gebondenheid> a rdf:Property;
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gebondenheid> a owl:DatatypeProperty;
   rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche>;
-  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris>;
+  rdfs:range rdf:langString .
 
 <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geldigTot> a rdf:Property;
-  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris>;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
 
 <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkDeel> a rdf:Property;
-  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris>;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
 
 <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkeDelen> a rdf:Property;
-  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris>;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
 
 <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id> a rdf:Property;
-  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris>,
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris>,
+    <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Attest>,
     <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche>,
-    <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#GebouwEenheid>;
+    <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Gebouweenheid>,
+    <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Analyserapport>,
+    <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#InventarisSummary>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
 
-<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#omgeving> a rdf:Property;
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#locatiebeschrijving> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris>;
+  rdfs:range rdf:langString .
+
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#mijlpaal> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Bronfiche>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris>;
+  rdfs:range rdf:langString .
+
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#omgeving> a owl:DatatypeProperty;
   rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche>;
-  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris>;
+  rdfs:range rdf:langString .
 
-<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#primairedrager> a rdf:Property;
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#primairedrager> a owl:DatatypeProperty;
   rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris>;
+  rdfs:range rdf:langString .
+
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#resultaat> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris>;
+  rdfs:range rdf:langString .
+
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#risicobeoordeling> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Bronfiche>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris>;
+  rdfs:range rdf:langString .
+
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#uitgegevenOp> a rdf:Property;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
 
-<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#resultaat> a rdf:Property;
-  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris>;
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Gebouweenheid> a owl:Class;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
 
-<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#GebouwEenheid> a owl:Class;
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#InventarisSummary> a owl:Class;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
+
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Analyserapport> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
+
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Attest> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
+
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Bronfiche> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris>;
+  rdfs:subClassOf <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche> .
 
 <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche> a owl:Class;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
 
-<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#AsbestInventaris> a owl:Class;
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris> a owl:Class;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> .
 
 <https://implementatie.data.vlaanderen.be/ns/asbestinventaris> a owl:Ontology;
