@@ -47,7 +47,7 @@
               <dl>
               <dt>Status</dt><dd><a href="https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard">https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard</a></dd>
               <dt>Uitgegeven op</dt><dd>2023-09-13</dd>
-              <dt>Deze versie</dt><dd><a href="https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-21">https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-21</a></dd>
+              <dt>Deze versie</dt><dd><a href="https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-22">https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-22</a></dd>
               
               
               </dl>
@@ -124,8 +124,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/tree/b0c710e722e3680077e80f80ed1518595dc8e935">https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/tree/b0c710e722e3680077e80f80ed1518595dc8e935</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/blob/b0c710e722e3680077e80f80ed1518595dc8e935/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/blob/b0c710e722e3680077e80f80ed1518595dc8e935/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/tree/f92e1bbb73c3407ff8ac423f4daa6dbb32f659f7">https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/tree/f92e1bbb73c3407ff8ac423f4daa6dbb32f659f7</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/blob/f92e1bbb73c3407ff8ac423f4daa6dbb32f659f7/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/blob/f92e1bbb73c3407ff8ac423f4daa6dbb32f659f7/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/issues">https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/issues</a></dd>
               <dt>Standaardenregister</dt><dd><a href=""></a></dd>
 
@@ -266,8 +266,8 @@ De payload hierin een JSON-LD structuur. De Json-LD context file mapped all json
             </div>
 
             <div class="region region--no-space-top">
-              <a href="/doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-21/html/overview.jpg" target="_blank">
-                 <img src="/doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-21/html/overview.jpg" />
+              <a href="/doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-22/html/overview.jpg" target="_blank">
+                 <img src="/doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-22/html/overview.jpg" />
               </a>
               
               
@@ -1359,14 +1359,67 @@ Er kan gekozen worden voor dit als een complex type te beschouwen met 2  eigensc
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">JSON-LD context</h2>
                 (niet normatief)
                 
-                <p>Een herbruikbare JSON-LD context definitie voor dit implementatiemodel is terug te vinden op: <a href="/doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-21/context/asbestinventaris.jsonld" target="_blank">/doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-21/context/asbestinventaris.jsonld</a></p>
-                
+Deze sectie beschrijft de aanpak hoe de Asbestinventaris API payloads in lijn kunnen gebracht worden met dit implementatiemodel met behulp van JSON-LD.
+Voor de specificatie van JSON-LD verwijzen we naar https://json-ld.org. 
+Er is daar ook een playground waarin men JSON-LD kan ervaren met voorbeelden uit deze sectie. 
+
+We illustreren de alignatie voor het api endpoint  "https://asbestinventaris.ovam.be/asbestinventaris/api/Asbestinventaris".
+
+<h3>1. Een JSON-LD payload volgens het implementatiemodel</h3>
+We starten vanaf een een JSON structuur dat helemaal samenvalt met de klasse Asbestinventaris zoals beschreven in het implementatiemodel.
+De OSLO toolchain JSON-LD context is hier letterlijk van toepassing.
+We zien in dit voorbeeld dat de taal expliciet is opgenomen in payload.
+ 
+<h3>2. Taalkeuze wordt vastgelegd op nederlands</h3>
+De taal kan ook opgenomen in de JSON-LD context. Dat vereenvoudigt de API payload. 
+Ontwikkelaars kunnen nog steeds te weten komen dat de strings in het Nederlands zijn als ze de payload semantisch interpreteren.
+Deze keuze voor een eentalige API payload betekent dat indien in de toekomst meertaligheid moet ondersteund worden dit een major API change is. 
+
+<h3>3. id attribuut is exact de URI van de entiteit</h3>
+In het semantische data formaat RDF heeft elke entiteit een unieke identifier, een URI. 
+Dit is nodig omdat men hiermee een decentrale, gedistributeerde kennisgraaf mee wil kunnen voorstellen.
+JSON is een syntax voor geneste structuren.  
+Elke verwijzing naar een entiteit buiten de structuur is een externe interpretatie die buiten de JSON syntax valt.
+JSON heeft dus geen nood aan om voor entiteiten een identifier op te leggen, of een universele afspraak hierover te maken.
+
+JSON-LD is een afspraak die beiden verbindt. 
+En dus voor JSON-LD is het noodzakelijk om een afspraak over de unieke URI identifier (al dan niet impliciet) op te nemen.
+Deze wordt aangeduidt met de "@id" attribuut.
+
+In het asbestinventaris implementatiemodel is er een eigenschap "id" opgenomen voor elk van de klassen.
+Deze eigenschap heeft zelfs het verwachte formaat afspraak URI om ook te kunnen beschouwd worden als de identifier in RDF.
+In het onderstaande voorbeeld hebben we beiden doen samenvallen en eigenschap "id" (en niet de JSON-LD "@id") behouden.
+Dat is ook de reden waarom het is opgenomen in het implementatiemodel. 
+ 
+
+
+<h3>4. API gebruikt ligt afwijkende benamingen voor eigenschappen</h3>
+De OSLO modelleringsregels stellen dat de semantiek zo duidelijk mogelijk moet zijn van het label van de eigenschap en dat voor relaties tussen klassen we enkelvoud gebruiken.
+Deze naamgevingsverschillen kunnen opgevangen worden door deze op te nemen in de context file.
+
+De naamgevingsverschillen zijn een natuurlijk onderdeel van een verschil tussen een technische implementatie een semantisch data perspectief. 
+Bij voorkeur worden verschillen zoals hier tot een minimum behouden en liefst is er een technische naamgevingsregel die dit verschil ondersteunt.
+
+
+<h3>5. API biedt extra ondersteuning voor API interactie</h3>
+Tenslotte biedt de API een implementatie ondersteuning aan die buiten de semantiek valt. 
+Namelijk het is mogelijk om een rapport in verschillende formaten op te vragen.
+Om gebruikers de juiste API query parameters mee te geven is er een extra indirectie in de API payload.
+
+<p/>
+Deze 4 bovenstaande aanpassingen aan de contextfile laten toe om de asbestinventaris API payload semantisch te interpreteren t.o.v. dit implementatiemodel.
+Elk van de aanpassingen hebben hun motivatie in implementatie.
+<p/>
+Men kan de conformance van de mapping testen door onderstaande shacl shape te gebruiken voor bekomen RDF structuur van een API payload. 
+
+
+
             </div>
             <div class="region region--no-space-top" id="shacl">
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">SHACL template</h2>
                 (niet normatief)
                 
-                <p>Een herbruikbare SHACL template definitie voor dit implementatiemodel is terug te vinden op: <a href="/doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-21/shacl/asbestinventaris-SHACL.ttl" target="_blank">/doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-21/shacl/asbestinventaris-SHACL.ttl</a></p>
+                <p>Een herbruikbare SHACL template definitie voor dit implementatiemodel is terug te vinden op: <a href="/doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-22/shacl/asbestinventaris-SHACL.ttl" target="_blank">/doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-22/shacl/asbestinventaris-SHACL.ttl</a></p>
                 
             </div>
           </div>
