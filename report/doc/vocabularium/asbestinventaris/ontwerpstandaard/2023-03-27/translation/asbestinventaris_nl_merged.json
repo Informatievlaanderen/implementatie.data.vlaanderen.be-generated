@@ -498,8 +498,8 @@
   "contributors-column": "MijnKolom",
   "contributors-file": "stakeholders.csv",
   "diagram": "asbestinventarisDiagram",
-  "documentcommit": "56b6c0ebf04f3f619885cf04b91f6e1b254efd99",
-  "dummy": 5,
+  "documentcommit": "078871cf60a1309f4a11dca7146ccb8b7ba107cd",
+  "dummy": 6,
   "eap": "asbestinventaris.eap",
   "editors": [
     {
@@ -694,6 +694,108 @@
       "name": ""
     },
     {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#Resource",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{1AA0E996-D528-405a-B678-568005AD0B1E}",
+      "definition": {
+        "nl": "Een URI die technisch als een klasse wordt voorgesteld in RDF,maar in het gebruik een literal is."
+      },
+      "definition-en": {
+        "en": "A URI which is encoded as an Class in RDF,but commonly used as a Literal."
+      },
+      "definition-nl": {
+        "nl": "Een URI die technisch als een klasse wordt voorgesteld in RDF,maar in het gebruik een literal is."
+      },
+      "extra": {
+        "EA-Guid": "{1AA0E996-D528-405a-B678-568005AD0B1E}",
+        "EA-Name": "URi",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "A URI which is encoded as an Class in RDF,but commonly used as a Literal."
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Een URI die technisch als een klasse wordt voorgesteld in RDF,maar in het gebruik een literal is."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "URI"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2000/01/rdf-schema#Resource"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "This datatype is to be used in case one do not want to introduce placeholder classes or datatypes."
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "Een zinvolle toepassing van dit datatype is het vermijden van de introductie van placeholder klassen. Een andere toepassing is om compliancy te bekomen met de bereik definitie van eigenschappen.  ",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": {
+          "nl": "Een URI die technisch als een klasse wordt voorgesteld in RDF,maar in het gebruik een literal is."
+        },
+        "definition-en": {
+          "en": "A URI which is encoded as an Class in RDF,but commonly used as a Literal."
+        },
+        "definition-nl": {
+          "nl": "Een URI die technisch als een klasse wordt voorgesteld in RDF,maar in het gebruik een literal is."
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "URI"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "URI"
+        },
+        "parentclasses": "",
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": {
+          "nl": "Een zinvolle toepassing van dit datatype is het vermijden van de introductie van placeholder klassen. Een andere toepassing is om compliancy te bekomen met de bereik definitie van eigenschappen.  "
+        },
+        "usageNote-en": {
+          "en": "This datatype is to be used in case one do not want to introduce placeholder classes or datatypes."
+        },
+        "usageNote-nl": {
+          "nl": "Een zinvolle toepassing van dit datatype is het vermijden van de introductie van placeholder klassen. Een andere toepassing is om compliancy te bekomen met de bereik definitie van eigenschappen.  "
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "URI"
+      },
+      "label-nl": {
+        "nl": "URI"
+      },
+      "name": "Uri",
+      "usage": {
+        "nl": "Een zinvolle toepassing van dit datatype is het vermijden van de introductie van placeholder klassen. Een andere toepassing is om compliancy te bekomen met de bereik definitie van eigenschappen.  "
+      },
+      "usageNote-en": {
+        "en": "This datatype is to be used in case one do not want to introduce placeholder classes or datatypes."
+      },
+      "usageNote-nl": {
+        "nl": "Een zinvolle toepassing van dit datatype is het vermijden van de introductie van placeholder klassen. Een andere toepassing is om compliancy te bekomen met de bereik definitie van eigenschappen.  "
+      }
+    },
+    {
       "@id": "https://data.vlaanderen.be/ns/gebouw#Gebouweenheid",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{E8E3415B-9B02-4d08-A903-099402C13FA0}",
@@ -779,7 +881,7 @@
   "properties": [
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#uitgegevenOp",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{7510D161-4F48-422f-9794-5084A589906C}",
       "codelist": [],
       "definition-nl": {
@@ -797,12 +899,12 @@
         "EA-Guid": "{7510D161-4F48-422f-9794-5084A589906C}",
         "EA-Name": "uitgegevenOp",
         "EA-Package": "asbestInventaris-im",
-        "EA-Range": "int",
+        "EA-Range": "Date",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-Name": "",
+          "EA-Name": "Date",
           "EA-Package": "",
-          "uri": "null"
+          "uri": "http://www.w3.org/2001/XMLSchema#date"
         },
         "RawTags": [
           {
@@ -843,7 +945,13 @@
       "maxCardinality": "1",
       "minCardinality": "1",
       "name": "uitgegevenOp",
-      "range": []
+      "range": [
+        {
+          "EA-Name": "Date",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#date"
+        }
+      ]
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#risicobeoordeling",
@@ -2203,7 +2311,7 @@
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#eenvoudigbereikbaar",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{DBC6E113-8BC6-4e86-9463-01B91998145D}",
       "codelist": [],
       "definition-nl": {
@@ -2221,12 +2329,12 @@
         "EA-Guid": "{DBC6E113-8BC6-4e86-9463-01B91998145D}",
         "EA-Name": "eenvoudigbereikbaar",
         "EA-Package": "asbestInventaris-im",
-        "EA-Range": "boolean",
+        "EA-Range": "Boolean",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-Name": "",
+          "EA-Name": "Boolean",
           "EA-Package": "",
-          "uri": "null"
+          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
         },
         "RawTags": [
           {
@@ -2267,7 +2375,13 @@
       "maxCardinality": "1",
       "minCardinality": "1",
       "name": "eenvoudigBereikbaar",
-      "range": []
+      "range": [
+        {
+          "EA-Name": "Boolean",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+        }
+      ]
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#bindmiddel",
@@ -2441,12 +2555,12 @@
         "EA-Guid": "{A274D65A-52E0-4f5f-959D-C7D8E0DB696D}",
         "EA-Name": "attestNummer",
         "EA-Package": "asbestInventaris-im",
-        "EA-Range": "Int",
+        "EA-Range": "Integer",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-Name": "Int",
+          "EA-Name": "Integer",
           "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#int"
+          "uri": "http://www.w3.org/2001/XMLSchema#integer"
         },
         "RawTags": [
           {
@@ -2489,9 +2603,9 @@
       "name": "attestNummer",
       "range": [
         {
-          "EA-Name": "Int",
+          "EA-Name": "Integer",
           "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#int"
+          "uri": "http://www.w3.org/2001/XMLSchema#integer"
         }
       ]
     },
@@ -2743,7 +2857,7 @@
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestMaterialen",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{F4B9CB4F-3C58-4e33-9324-9F1141B359A1}",
       "codelist": [],
       "definition-nl": {
@@ -2761,12 +2875,12 @@
         "EA-Guid": "{F4B9CB4F-3C58-4e33-9324-9F1141B359A1}",
         "EA-Name": "asbestMaterialen",
         "EA-Package": "asbestInventaris-im",
-        "EA-Range": "int",
+        "EA-Range": "Integer",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-Name": "",
+          "EA-Name": "Integer",
           "EA-Package": "",
-          "uri": "null"
+          "uri": "http://www.w3.org/2001/XMLSchema#integer"
         },
         "RawTags": [
           {
@@ -2807,7 +2921,13 @@
       "maxCardinality": "1",
       "minCardinality": "1",
       "name": "asbestMaterialen",
-      "range": []
+      "range": [
+        {
+          "EA-Name": "Integer",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      ]
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#analyserapport",
@@ -2981,7 +3101,7 @@
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalUitsluitingen",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{E688E4D4-B206-40c6-A68E-83DC0E163D9D}",
       "codelist": [],
       "definition-nl": {
@@ -2999,12 +3119,12 @@
         "EA-Guid": "{E688E4D4-B206-40c6-A68E-83DC0E163D9D}",
         "EA-Name": "aantalUitsluitingen",
         "EA-Package": "asbestInventaris-im",
-        "EA-Range": "int",
+        "EA-Range": "Integer",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-Name": "",
+          "EA-Name": "Integer",
           "EA-Package": "",
-          "uri": "null"
+          "uri": "http://www.w3.org/2001/XMLSchema#integer"
         },
         "RawTags": [
           {
@@ -3045,11 +3165,17 @@
       "maxCardinality": "1",
       "minCardinality": "1",
       "name": "aantalUitsluitingen",
-      "range": []
+      "range": [
+        {
+          "EA-Name": "Integer",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      ]
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalBeperkingen",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{DB7157A4-4791-4dcb-B714-DB3983E93A74}",
       "codelist": [],
       "definition-nl": {
@@ -3067,12 +3193,12 @@
         "EA-Guid": "{DB7157A4-4791-4dcb-B714-DB3983E93A74}",
         "EA-Name": "aantalBeperkingen",
         "EA-Package": "asbestInventaris-im",
-        "EA-Range": "int",
+        "EA-Range": "Integer",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-Name": "",
+          "EA-Name": "Integer",
           "EA-Package": "",
-          "uri": "null"
+          "uri": "http://www.w3.org/2001/XMLSchema#integer"
         },
         "RawTags": [
           {
@@ -3113,11 +3239,17 @@
       "maxCardinality": "1",
       "minCardinality": "1",
       "name": "aantalBeperkingen",
-      "range": []
+      "range": [
+        {
+          "EA-Name": "Integer",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      ]
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalAsbestMaterialen",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{A8C1669B-6845-453a-BBE7-39B2EC361D38}",
       "codelist": [],
       "definition-nl": {
@@ -3135,12 +3267,12 @@
         "EA-Guid": "{A8C1669B-6845-453a-BBE7-39B2EC361D38}",
         "EA-Name": "aantalAsbestMaterialen",
         "EA-Package": "asbestInventaris-im",
-        "EA-Range": "int",
+        "EA-Range": "Integer",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-Name": "",
+          "EA-Name": "Integer",
           "EA-Package": "",
-          "uri": "null"
+          "uri": "http://www.w3.org/2001/XMLSchema#integer"
         },
         "RawTags": [
           {
@@ -3181,7 +3313,13 @@
       "maxCardinality": "1",
       "minCardinality": "1",
       "name": "aantalAsbestMaterialen",
-      "range": []
+      "range": [
+        {
+          "EA-Name": "Integer",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      ]
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aanleiding",
@@ -3269,7 +3407,7 @@
   "title-nl": {
     "nl": "TODO"
   },
-  "toolchaincommit": "5a438e443cfa91d51b40c8db5fc4dc3537908eef",
+  "toolchaincommit": "fcf8e8e51839e456a04d76938840035f11fee0a2",
   "translation": [
     {
       "language": "nl",
