@@ -394,53 +394,6 @@
       "parents": []
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Gebouweenheid",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{E8E3415B-9B02-4d08-A903-099402C13FA0}",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "ap-label-nl": {
-        "nl": "Gebouweenheid"
-      },
-      "extra": {
-        "EA-Guid": "{E8E3415B-9B02-4d08-A903-099402C13FA0}",
-        "EA-Name": "Gebouweenheid",
-        "EA-Package": "asbestInventaris-im",
-        "EA-Parents": "",
-        "EA-Parents2": [],
-        "EA-Type": "CLASS",
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "Gebouweenheid"
-          }
-        ],
-        "Scope": "FULL_DEFINITON",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-label-nl": {
-          "nl": "Gebouweenheid"
-        },
-        "ap-usageNote-nl": "",
-        "definition": "",
-        "label": {
-          "nl": "Gebouweenheid"
-        },
-        "parentclasses": "",
-        "usage": ""
-      },
-      "inpackage": "ACTIVE_PACKAGE",
-      "label": {
-        "nl": "Gebouweenheid"
-      },
-      "name": "Gebouweenheid",
-      "parents": []
-    },
-    {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#InventarisSummary",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{12CC1A28-24EF-45db-99DF-C436F08FDAB0}",
@@ -504,8 +457,8 @@
   "contributors-column": "MijnKolom",
   "contributors-file": "stakeholders.csv",
   "diagram": "asbestinventarisDiagram",
-  "documentcommit": "193824330a9227d9d56d429a4a7fd2ebf6cca818",
-  "dummy": 4,
+  "documentcommit": "56b6c0ebf04f3f619885cf04b91f6e1b254efd99",
+  "dummy": 5,
   "eap": "asbestinventaris.eap",
   "editors": [
     {
@@ -676,6 +629,57 @@
       "usage": {
         "nl": "Een taalstring kan op verschillende manieren geïmplementeerd worden.\r\nEr kan gekozen worden voor dit als een complex type te beschouwen met 2  eigenschappen. Maar evenzeer een notatie waarbij het eenduidig is wat de taal is voor de string waarde. Deze laatste is in json de meest voorkomende."
       }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/gebouw#Gebouweenheid",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{E8E3415B-9B02-4d08-A903-099402C13FA0}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "Gebouweenheid"
+      },
+      "extra": {
+        "EA-Guid": "{E8E3415B-9B02-4d08-A903-099402C13FA0}",
+        "EA-Name": "Gebouweenheid",
+        "EA-Package": "asbestInventaris-im",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Gebouweenheid"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/gebouw#Gebouweenheid"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "Gebouweenheid"
+        },
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": {
+          "nl": "Gebouweenheid"
+        },
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Gebouweenheid"
+      },
+      "name": "Gebouweenheid"
     }
   ],
   "extra": {
@@ -1188,7 +1192,7 @@
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{D7AEEFF0-65D4-42c4-8158-AEAA4836A4A0}",
       "ap-definition-nl": {
         "nl": "TODO"
@@ -1209,12 +1213,12 @@
         "EA-Guid": "{D7AEEFF0-65D4-42c4-8158-AEAA4836A4A0}",
         "EA-Name": "id",
         "EA-Package": "asbestInventaris-im",
-        "EA-Range": "string",
+        "EA-Range": "String",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-Name": "",
+          "EA-Name": "String",
           "EA-Package": "",
-          "uri": "null"
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
         },
         "RawTags": [
           {
@@ -1246,7 +1250,13 @@
       "maxCardinality": "1",
       "minCardinality": "1",
       "name": "id",
-      "range": []
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ]
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
@@ -1318,7 +1328,7 @@
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{F110C820-35B0-452e-934E-9BE3DCC776CF}",
       "ap-definition-nl": {
         "nl": "TODO"
@@ -1339,12 +1349,12 @@
         "EA-Guid": "{F110C820-35B0-452e-934E-9BE3DCC776CF}",
         "EA-Name": "id",
         "EA-Package": "asbestInventaris-im",
-        "EA-Range": "string",
+        "EA-Range": "String",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-Name": "",
+          "EA-Name": "String",
           "EA-Package": "",
-          "uri": "null"
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
         },
         "RawTags": [
           {
@@ -1376,11 +1386,17 @@
       "maxCardinality": "1",
       "minCardinality": "1",
       "name": "id",
-      "range": []
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ]
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{11E2E570-1B38-4e0a-830A-70527AF2C83C}",
       "ap-definition-nl": {
         "nl": "TODO"
@@ -1392,7 +1408,7 @@
       "domain": [
         {
           "EA-Name": "Gebouweenheid",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Gebouweenheid"
+          "uri": "https://data.vlaanderen.be/ns/gebouw#Gebouweenheid"
         }
       ],
       "extra": {
@@ -1401,12 +1417,12 @@
         "EA-Guid": "{11E2E570-1B38-4e0a-830A-70527AF2C83C}",
         "EA-Name": "id",
         "EA-Package": "asbestInventaris-im",
-        "EA-Range": "string",
+        "EA-Range": "String",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-Name": "",
+          "EA-Name": "String",
           "EA-Package": "",
-          "uri": "null"
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
         },
         "RawTags": [
           {
@@ -1438,7 +1454,13 @@
       "maxCardinality": "1",
       "minCardinality": "1",
       "name": "id",
-      "range": []
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ]
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
@@ -1510,7 +1532,7 @@
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{AD950E5F-DBAC-4f5c-A6BC-E8612398AC9E}",
       "ap-definition-nl": {
         "nl": "TODO"
@@ -1531,12 +1553,12 @@
         "EA-Guid": "{AD950E5F-DBAC-4f5c-A6BC-E8612398AC9E}",
         "EA-Name": "id",
         "EA-Package": "asbestInventaris-im",
-        "EA-Range": "string",
+        "EA-Range": "String",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-Name": "",
+          "EA-Name": "String",
           "EA-Package": "",
-          "uri": "null"
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
         },
         "RawTags": [
           {
@@ -1568,11 +1590,17 @@
       "maxCardinality": "1",
       "minCardinality": "1",
       "name": "id",
-      "range": []
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ]
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkeDelen",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{430F8F68-3428-4598-B91F-3113CA6C8ED6}",
       "ap-definition-nl": {
         "nl": "TODO"
@@ -1593,12 +1621,12 @@
         "EA-Guid": "{430F8F68-3428-4598-B91F-3113CA6C8ED6}",
         "EA-Name": "gemeenschappelijkeDelen",
         "EA-Package": "asbestInventaris-im",
-        "EA-Range": "string",
+        "EA-Range": "String",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-Name": "",
+          "EA-Name": "String",
           "EA-Package": "",
-          "uri": "null"
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
         },
         "RawTags": [
           {
@@ -1630,7 +1658,13 @@
       "maxCardinality": "1",
       "minCardinality": "1",
       "name": "gemeenschappelijkeDelen",
-      "range": []
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ]
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkDeel",
@@ -1668,7 +1702,7 @@
           "EA-GUID": "{E8E3415B-9B02-4d08-A903-099402C13FA0}",
           "EA-Name": "Gebouweenheid",
           "EA-Package": "asbestInventaris-im",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Gebouweenheid"
+          "uri": "https://data.vlaanderen.be/ns/gebouw#Gebouweenheid"
         },
         "RawTags": [
           {
@@ -1706,13 +1740,13 @@
           "EA-GUID": "{E8E3415B-9B02-4d08-A903-099402C13FA0}",
           "EA-Name": "Gebouweenheid",
           "EA-Package": "asbestInventaris-im",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Gebouweenheid"
+          "uri": "https://data.vlaanderen.be/ns/gebouw#Gebouweenheid"
         }
       ]
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkDeel",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{15832CD0-70B5-4c78-A3EF-12B9B971DE78}",
       "ap-definition-nl": {
         "nl": "TODO"
@@ -1733,12 +1767,12 @@
         "EA-Guid": "{15832CD0-70B5-4c78-A3EF-12B9B971DE78}",
         "EA-Name": "gemeenschappelijkDeel",
         "EA-Package": "asbestInventaris-im",
-        "EA-Range": "boolean",
+        "EA-Range": "Boolean",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-Name": "",
+          "EA-Name": "Boolean",
           "EA-Package": "",
-          "uri": "null"
+          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
         },
         "RawTags": [
           {
@@ -1770,11 +1804,17 @@
       "maxCardinality": "1",
       "minCardinality": "1",
       "name": "gemeenschappelijkDeel",
-      "range": []
+      "range": [
+        {
+          "EA-Name": "Boolean",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+        }
+      ]
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geldigTot",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{738F4686-23A9-4e81-B247-0B167D2DF633}",
       "ap-definition-nl": {
         "nl": "TODO"
@@ -1795,12 +1835,12 @@
         "EA-Guid": "{738F4686-23A9-4e81-B247-0B167D2DF633}",
         "EA-Name": "geldigTot",
         "EA-Package": "asbestInventaris-im",
-        "EA-Range": "date",
+        "EA-Range": "Date",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-Name": "",
+          "EA-Name": "Date",
           "EA-Package": "",
-          "uri": "null"
+          "uri": "http://www.w3.org/2001/XMLSchema#date"
         },
         "RawTags": [
           {
@@ -1832,7 +1872,13 @@
       "maxCardinality": "1",
       "minCardinality": "1",
       "name": "geldigTot",
-      "range": []
+      "range": [
+        {
+          "EA-Name": "Date",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#date"
+        }
+      ]
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gebondenheid",
@@ -1906,7 +1952,7 @@
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geFinaliseerdOp",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{D6D0F917-711A-4beb-8472-EFBF3E0A97F0}",
       "ap-definition-nl": {
         "nl": "TODO"
@@ -1927,12 +1973,12 @@
         "EA-Guid": "{D6D0F917-711A-4beb-8472-EFBF3E0A97F0}",
         "EA-Name": "geFinaliseerdOp",
         "EA-Package": "asbestInventaris-im",
-        "EA-Range": "int",
+        "EA-Range": "Integer",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-Name": "",
+          "EA-Name": "Integer",
           "EA-Package": "",
-          "uri": "null"
+          "uri": "http://www.w3.org/2001/XMLSchema#integer"
         },
         "RawTags": [
           {
@@ -1964,7 +2010,13 @@
       "maxCardinality": "1",
       "minCardinality": "1",
       "name": "gefinaliseerdOp",
-      "range": []
+      "range": [
+        {
+          "EA-Name": "Integer",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      ]
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#eenvoudigbereikbaar",
@@ -2170,7 +2222,7 @@
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attestNummer",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{A274D65A-52E0-4f5f-959D-C7D8E0DB696D}",
       "ap-definition-nl": {
         "nl": "TODO"
@@ -2191,12 +2243,12 @@
         "EA-Guid": "{A274D65A-52E0-4f5f-959D-C7D8E0DB696D}",
         "EA-Name": "attestNummer",
         "EA-Package": "asbestInventaris-im",
-        "EA-Range": "int",
+        "EA-Range": "Int",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-Name": "",
+          "EA-Name": "Int",
           "EA-Package": "",
-          "uri": "null"
+          "uri": "http://www.w3.org/2001/XMLSchema#int"
         },
         "RawTags": [
           {
@@ -2228,7 +2280,13 @@
       "maxCardinality": "1",
       "minCardinality": "1",
       "name": "attestNummer",
-      "range": []
+      "range": [
+        {
+          "EA-Name": "Int",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#int"
+        }
+      ]
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attest",
@@ -2942,7 +3000,7 @@
   "standaardregisterurl": "",
   "template": "im-asbestinventaris.j2",
   "title": "Implementatiemodel asbestinventaris",
-  "toolchaincommit": "b03533dfcfea65a273454beb54869461dcf55904",
+  "toolchaincommit": "5a438e443cfa91d51b40c8db5fc4dc3537908eef",
   "translation": [
     {
       "language": "nl",
