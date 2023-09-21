@@ -525,6 +525,73 @@
   ],
   "properties": [
     {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#vanToepassingOpGemeenschappelijkDeel",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "name": "vanToepassingOpGemeenschappelijkDeel",
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "van toepassing op gemeenschappelijk deel"
+      },
+      "ap-label-nl": {
+        "nl": "van toepassing op gemeenschappelijk deel"
+      },
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "vanToepassingOpGemeenschappelijkDeel",
+        "EA-Guid": "{15832CD0-70B5-4c78-A3EF-12B9B971DE78}",
+        "EA-Package": "asbestInventaris-im",
+        "EA-Type": "attribute",
+        "EA-Domain": "Asbestinventaris",
+        "EA-Domain-Guid": "{CE6DEED7-9E8C-4254-9587-29D4A373C753}",
+        "EA-Range": "Boolean",
+        "RangeData": {
+          "EA-Name": "Boolean",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "label": {
+          "nl": "van toepassing op gemeenschappelijk deel"
+        },
+        "definition": "",
+        "usage": "",
+        "ap-label-nl": {
+          "nl": "van toepassing op gemeenschappelijk deel"
+        },
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "van toepassing op gemeenschappelijk deel",
+            "note": "null"
+          }
+        ],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris",
+          "EA-Name": "Asbestinventaris"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Boolean",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
+    },
+    {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#uitgegevenOp",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "name": "uitgegevenOp",
@@ -1437,8 +1504,14 @@
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "",
+      "name": "id",
       "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "id"
+      },
+      "ap-label-nl": {
+        "nl": "id"
+      },
       "ap-definition-nl": {
         "nl": "TODO"
       },
@@ -1456,16 +1529,26 @@
           "EA-Package": "OSLO-Generiek",
           "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
         },
-        "label": "",
+        "label": {
+          "nl": "id"
+        },
         "definition": "",
         "usage": "",
-        "ap-label-nl": "",
+        "ap-label-nl": {
+          "nl": "id"
+        },
         "ap-definition-nl": {
           "nl": "TODO"
         },
         "ap-usageNote-nl": "",
         "ap-codelist": "",
-        "RawTags": [],
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "id",
+            "note": "null"
+          }
+        ],
         "Scope": "FULL_DEFINITON"
       },
       "codelist": [],
@@ -1565,73 +1648,6 @@
       "generalization": [],
       "minCardinality": "0",
       "maxCardinality": "n"
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkDeel",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "name": "gemeenschappelijkDeel",
-      "inpackage": "ACTIVE_PACKAGE",
-      "label": {
-        "nl": "gemeenschappelijk deel"
-      },
-      "ap-label-nl": {
-        "nl": "gemeenschappelijk deel"
-      },
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "gemeenschappelijkDeel",
-        "EA-Guid": "{15832CD0-70B5-4c78-A3EF-12B9B971DE78}",
-        "EA-Package": "asbestInventaris-im",
-        "EA-Type": "attribute",
-        "EA-Domain": "Asbestinventaris",
-        "EA-Domain-Guid": "{CE6DEED7-9E8C-4254-9587-29D4A373C753}",
-        "EA-Range": "Boolean",
-        "RangeData": {
-          "EA-Name": "Boolean",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
-        },
-        "label": {
-          "nl": "gemeenschappelijk deel"
-        },
-        "definition": "",
-        "usage": "",
-        "ap-label-nl": {
-          "nl": "gemeenschappelijk deel"
-        },
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "value": "gemeenschappelijk deel",
-            "note": "null"
-          }
-        ],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris",
-          "EA-Name": "Asbestinventaris"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "Boolean",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geldigTot",
@@ -2763,6 +2779,12 @@
       "usage": {
         "nl": "Een taalstring kan op verschillende manieren geïmplementeerd worden.\r\nEr kan gekozen worden voor dit als een complex type te beschouwen met 2  eigenschappen. Maar evenzeer een notatie waarbij het eenduidig is wat de taal is voor de string waarde. Deze laatste is in json de meest voorkomende."
       },
+      "label": {
+        "nl": "Taalstring"
+      },
+      "ap-label-nl": {
+        "nl": "Taalstring"
+      },
       "ap-definition-nl": {
         "nl": "TODO"
       },
@@ -2774,12 +2796,16 @@
         "EA-Parents": "",
         "EA-Parents2": [],
         "parentclasses": "",
-        "label": "",
+        "label": {
+          "nl": "Taalstring"
+        },
         "definition": "",
         "usage": {
           "nl": "Een taalstring kan op verschillende manieren geïmplementeerd worden.\r\nEr kan gekozen worden voor dit als een complex type te beschouwen met 2  eigenschappen. Maar evenzeer een notatie waarbij het eenduidig is wat de taal is voor de string waarde. Deze laatste is in json de meest voorkomende."
         },
-        "ap-label-nl": "",
+        "ap-label-nl": {
+          "nl": "Taalstring"
+        },
         "ap-definition-nl": {
           "nl": "TODO"
         },
@@ -2802,11 +2828,16 @@
             "key": "ap-usageNote-nl",
             "value": "NOTE",
             "note": "Een taalstring kan op verschillende manieren geïmplementeerd worden.\r\nEr kan gekozen worden voor dit als een complex type te beschouwen met 2  eigenschappen. Maar evenzeer een notatie waarbij het eenduidig is wat de taal is voor de string waarde. Deze laatste is in json de meest voorkomende."
+          },
+          {
+            "key": "label-nl",
+            "value": "Taalstring",
+            "note": "null"
           }
         ],
         "Scope": "NOTHING"
       },
-      "name": ""
+      "name": "Taalstring"
     },
     {
       "@id": "http://www.w3.org/2000/01/rdf-schema#Resource",
@@ -2943,10 +2974,19 @@
     {
       "@id": "https://data.vlaanderen.be/ns/generiek#taal",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-      "name": "",
+      "name": "taal",
       "inpackage": "OTHER_PACKAGE",
+      "definition": {
+        "nl": "een aanduiding van de gebruikte taal."
+      },
+      "label": {
+        "nl": "taal"
+      },
+      "ap-label-nl": {
+        "nl": "taal"
+      },
       "ap-definition-nl": {
-        "nl": "TODO"
+        "nl": "een aanduiding van de gebruikte taal."
       },
       "extra": {
         "EA-Name": "taal",
@@ -2955,22 +2995,39 @@
         "EA-Type": "attribute",
         "EA-Domain": "Taalstring",
         "EA-Domain-Guid": "{BA45F400-33F1-43f1-87A0-ABDA9D4D01FD}",
-        "EA-Range": "Taalcode",
+        "EA-Range": "TaalCode",
         "RangeData": {
           "EA-Name": "",
           "EA-Package": "",
           "uri": "null"
         },
-        "label": "",
-        "definition": "",
+        "label": {
+          "nl": "taal"
+        },
+        "definition": {
+          "nl": "een aanduiding van de gebruikte taal."
+        },
         "usage": "",
-        "ap-label-nl": "",
+        "ap-label-nl": {
+          "nl": "taal"
+        },
         "ap-definition-nl": {
-          "nl": "TODO"
+          "nl": "een aanduiding van de gebruikte taal."
         },
         "ap-usageNote-nl": "",
         "ap-codelist": "",
-        "RawTags": [],
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "taal",
+            "note": "null"
+          },
+          {
+            "key": "definition-nl",
+            "value": "een aanduiding van de gebruikte taal.",
+            "note": "null"
+          }
+        ],
         "Scope": "NOTHING"
       },
       "codelist": [],
@@ -2988,10 +3045,19 @@
     {
       "@id": "https://data.vlaanderen.be/ns/generiek#string",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "name": "",
+      "name": "string",
       "inpackage": "OTHER_PACKAGE",
+      "definition": {
+        "nl": "een tekst in de aangegeven taal"
+      },
+      "label": {
+        "nl": "string"
+      },
+      "ap-label-nl": {
+        "nl": "string"
+      },
       "ap-definition-nl": {
-        "nl": "TODO"
+        "nl": "een tekst in de aangegeven taal"
       },
       "extra": {
         "EA-Name": "string",
@@ -3006,16 +3072,33 @@
           "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#string"
         },
-        "label": "",
-        "definition": "",
+        "label": {
+          "nl": "string"
+        },
+        "definition": {
+          "nl": "een tekst in de aangegeven taal"
+        },
         "usage": "",
-        "ap-label-nl": "",
+        "ap-label-nl": {
+          "nl": "string"
+        },
         "ap-definition-nl": {
-          "nl": "TODO"
+          "nl": "een tekst in de aangegeven taal"
         },
         "ap-usageNote-nl": "",
         "ap-codelist": "",
-        "RawTags": [],
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "string",
+            "note": "null"
+          },
+          {
+            "key": "definition-nl",
+            "value": "een tekst in de aangegeven taal",
+            "note": "null"
+          }
+        ],
         "Scope": "NOTHING"
       },
       "codelist": [],
@@ -3058,8 +3141,8 @@
   "navigation": {},
   "repository": "https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris",
   "urlref": "/doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-28",
-  "documentcommit": "2ea03a489af31d2408010465ae54441188fb94d8",
-  "toolchaincommit": "1bbea4b8285f494703c0907c3ceffbe9f3de8492",
+  "documentcommit": "37ad3143857710b2b94f518cf87179e103b286a2",
+  "toolchaincommit": "f25640fb8db02bb55b056027978a8c190b15208d",
   "hostname": "https://implementatie.data.vlaanderen.be/",
   "translation": [
     {

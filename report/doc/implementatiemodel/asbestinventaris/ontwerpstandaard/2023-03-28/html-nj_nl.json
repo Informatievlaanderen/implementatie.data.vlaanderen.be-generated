@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/tree/2ea03a489af31d2408010465ae54441188fb94d8",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/blob/2ea03a489af31d2408010465ae54441188fb94d8/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/tree/37ad3143857710b2b94f518cf87179e103b286a2",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/blob/37ad3143857710b2b94f518cf87179e103b286a2/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/issues",
     "standaardregisterurl": "",
     "usesVocs": [],
@@ -98,6 +98,39 @@
       "usage": {},
       "parents": [],
       "properties": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#vanToepassingOpGemeenschappelijkDeel",
+          "name": "vanToepassingOpGemeenschappelijkDeel",
+          "sort": "van toepassing op gemeenschappelijk deel",
+          "label": {
+            "nl": "van toepassing op gemeenschappelijk deel"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asbestinventaris",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Boolean",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_label": {
+                "nl": "Boolean"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#uitgegevenOp",
           "name": "uitgegevenOp",
@@ -263,39 +296,6 @@
             }
           ],
           "cardinality": "0..n",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkDeel",
-          "name": "gemeenschappelijkDeel",
-          "sort": "gemeenschappelijk deel",
-          "label": {
-            "nl": "gemeenschappelijk deel"
-          },
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Asbestinventaris",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Boolean",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
-              "range_label": {
-                "nl": "Boolean"
-              }
-            }
-          ],
-          "cardinality": "1",
           "codelist_uri": ""
         },
         {
@@ -608,9 +608,11 @@
       "properties": [
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
-          "name": "",
-          "sort": "",
-          "label": {},
+          "name": "id",
+          "sort": "id",
+          "label": {
+            "nl": "id"
+          },
           "description": {},
           "usage": {},
           "domain": [
@@ -1302,7 +1304,8 @@
     {
       "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
       "name": {
-        "undefined": ""
+        "nl": "id",
+        "undefined": "id"
       },
       "description": {},
       "domain": [
@@ -1408,9 +1411,11 @@
   "datatypes": [
     {
       "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-      "name": "",
-      "label": {},
-      "sort": "",
+      "name": "Taalstring",
+      "label": {
+        "nl": "Taalstring"
+      },
+      "sort": "Taalstring",
       "description": {},
       "usage": {
         "nl": "Een taalstring kan op verschillende manieren geïmplementeerd worden.\r\nEr kan gekozen worden voor dit als een complex type te beschouwen met 2  eigenschappen. Maar evenzeer een notatie waarbij het eenduidig is wat de taal is voor de string waarde. Deze laatste is in json de meest voorkomende."
@@ -1419,10 +1424,14 @@
       "properties": [
         {
           "uri": "https://data.vlaanderen.be/ns/generiek#taal",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
+          "name": "taal",
+          "sort": "taal",
+          "label": {
+            "nl": "taal"
+          },
+          "description": {
+            "nl": "een aanduiding van de gebruikte taal."
+          },
           "usage": {},
           "domain": [
             {
@@ -1437,10 +1446,14 @@
         },
         {
           "uri": "https://data.vlaanderen.be/ns/generiek#string",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
+          "name": "string",
+          "sort": "string",
+          "label": {
+            "nl": "string"
+          },
+          "description": {
+            "nl": "een tekst in de aangegeven taal"
+          },
           "usage": {},
           "domain": [
             {
