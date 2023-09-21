@@ -4,7 +4,8 @@
     "Analyserapport": {
       "@context": {
         "id": {
-          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id"
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
         }
       },
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Analyserapport"
@@ -47,7 +48,9 @@
           "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geldigTot"
         },
         "gemeenschappelijkDeel": {
-          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkDeel"
+          "@container": "@set",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkDeel",
+          "@type": "@id"
         },
         "gemeenschappelijkeDelen": {
           "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkeDelen"
@@ -72,7 +75,8 @@
     "Attest": {
       "@context": {
         "id": {
-          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id"
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
         }
       },
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Attest"
@@ -148,6 +152,18 @@
         }
       },
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#InventarisSummary"
+    },
+    "Taalstring": {
+      "@context": {
+        "string": {
+          "@id": "https://data.vlaanderen.be/ns/generiek#string",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "taal": {
+          "@id": "https://data.vlaanderen.be/ns/generiek#taal"
+        }
+      },
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     }
   }
 }

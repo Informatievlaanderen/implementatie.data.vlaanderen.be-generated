@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/tree/081fd5cb264062c11d85d7fbee3b7b3aa4d1beb5",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/blob/081fd5cb264062c11d85d7fbee3b7b3aa4d1beb5/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/tree/193824330a9227d9d56d429a4a7fd2ebf6cca818",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/blob/193824330a9227d9d56d429a4a7fd2ebf6cca818/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/issues",
     "standaardregisterurl": "",
     "usesVocs": [],
@@ -67,8 +67,21 @@
               "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Analyserapport"
             }
           ],
-          "range": [],
-          "scopedrange": [],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
           "cardinality": "1",
           "codelist_uri": ""
         }
@@ -128,7 +141,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#Taalstring",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "Taalstring"
@@ -161,7 +174,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#Taalstring",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "Taalstring"
@@ -209,6 +222,39 @@
           "range": [],
           "scopedrange": [],
           "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkDeel",
+          "name": "gemeenschappelijkDeel",
+          "sort": "gemeenschappelijk deel",
+          "label": {
+            "nl": "gemeenschappelijk deel"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asbestinventaris",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Gebouweenheid",
+              "range_uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Gebouweenheid"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Gebouweenheid",
+              "range_puri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Gebouweenheid",
+              "range_label": {
+                "nl": "Gebouweenheid"
+              }
+            }
+          ],
+          "cardinality": "",
           "codelist_uri": ""
         },
         {
@@ -460,7 +506,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#Taalstring",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "Taalstring"
@@ -498,8 +544,21 @@
               "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Attest"
             }
           ],
-          "range": [],
-          "scopedrange": [],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
           "cardinality": "1",
           "codelist_uri": ""
         }
@@ -547,7 +606,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#Taalstring",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "Taalstring"
@@ -580,7 +639,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#Taalstring",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "Taalstring"
@@ -626,7 +685,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#Taalstring",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "Taalstring"
@@ -659,7 +718,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#Taalstring",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "Taalstring"
@@ -712,7 +771,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#Taalstring",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "Taalstring"
@@ -765,7 +824,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#Taalstring",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "Taalstring"
@@ -798,7 +857,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#Taalstring",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "Taalstring"
@@ -831,7 +890,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#Taalstring",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "Taalstring"
@@ -864,7 +923,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#Taalstring",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "Taalstring"
@@ -897,7 +956,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#Taalstring",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "Taalstring"
@@ -978,6 +1037,21 @@
   ],
   "properties": [
     {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkDeel",
+      "name": {
+        "nl": "gemeenschappelijk deel",
+        "undefined": "gemeenschappelijkDeel"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
       "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attest",
       "name": {
         "nl": "attest",
@@ -1040,7 +1114,70 @@
       "email": "medewerkervoornaam.medewerkernaam@medewerkerdomein"
     }
   ],
-  "datatypes": [],
+  "datatypes": [
+    {
+      "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+      "name": "",
+      "label": {},
+      "sort": "",
+      "description": {},
+      "usage": {
+        "nl": "Een taalstring kan op verschillende manieren geïmplementeerd worden.\r\nEr kan gekozen worden voor dit als een complex type te beschouwen met 2  eigenschappen. Maar evenzeer een notatie waarbij het eenduidig is wat de taal is voor de string waarde. Deze laatste is in json de meest voorkomende."
+      },
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/generiek#taal",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Taalstring",
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "range": [],
+          "scopedrange": [],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/generiek#string",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Taalstring",
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    }
+  ],
   "parents": [],
   "documentroot": "/doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-27"
 }
