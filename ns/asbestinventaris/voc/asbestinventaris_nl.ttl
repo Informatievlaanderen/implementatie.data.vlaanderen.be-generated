@@ -43,13 +43,13 @@
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris>;
   rdfs:range <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Analyserapport> .
 
-<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestmateriaal> a owl:DatatypeProperty,
-    owl:ObjectProperty;
-  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche>,
-    <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris>;
+<https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestmateriaal> a owl:ObjectProperty,
+    owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris>,
+    <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris>;
-  rdfs:range rdf:langString,
-    <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestmateriaal> .
+  rdfs:range <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestmateriaal>,
+    rdf:langString .
 
 <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestsoort> a owl:DatatypeProperty;
   rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche>;
@@ -64,7 +64,7 @@
 <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attestNummer> a owl:DatatypeProperty;
   rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/asbestinventaris>;
-  rdfs:range xsd:integer .
+  rdfs:range xsd:string .
 
 <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#beschrijving> a owl:DatatypeProperty;
   rdfs:domain <https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche>;
