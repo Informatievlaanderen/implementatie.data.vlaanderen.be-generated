@@ -47,7 +47,7 @@
               <dl>
               <dt>Status</dt><dd><a href="https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard">https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard</a></dd>
               <dt>Uitgegeven op</dt><dd>2023-09-13</dd>
-              <dt>Deze versie</dt><dd><a href="https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-22">https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-22</a></dd>
+              <dt>Deze versie</dt><dd><a href="https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22">https://implementatie.data.vlaanderen.be//doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22</a></dd>
               
               
               </dl>
@@ -124,8 +124,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/tree/f92e1bbb73c3407ff8ac423f4daa6dbb32f659f7">https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/tree/f92e1bbb73c3407ff8ac423f4daa6dbb32f659f7</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/blob/f92e1bbb73c3407ff8ac423f4daa6dbb32f659f7/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/blob/f92e1bbb73c3407ff8ac423f4daa6dbb32f659f7/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/tree/58f45dba8e830b7ab856c07f8868e8de3c0a8cf2">https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/tree/58f45dba8e830b7ab856c07f8868e8de3c0a8cf2</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/blob/58f45dba8e830b7ab856c07f8868e8de3c0a8cf2/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/blob/58f45dba8e830b7ab856c07f8868e8de3c0a8cf2/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/issues">https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/issues</a></dd>
               <dt>Standaardenregister</dt><dd><a href=""></a></dd>
 
@@ -191,7 +191,7 @@ De assessment is gebaseerd op het <a href="https://data.vlaanderen.be/standaarde
 
 <h3>Aangenomen afspraken</h3>
 
-<h4>Graad van conformiteit: 2</h4>
+<h4>Graad van conformiteit: 2 van 2</h4>
 
 <!--
 Graad 1: Conformiteit met één of meer OSLO datastandaarden in het domein of de domeinen waarop de applicatie betrekking heeft.
@@ -203,13 +203,16 @@ Graad 2: Graad 1 + conformiteit met een of meerdere niet-OSLO standaarden voor d
 De termen van het implementatiemodel asbestinventaris valt grotendeels buiten de reeds gestandardiseerde OSLO terminologie.
 Het vormt dus nieuwe terminologie. 
 Deze nieuwe terminologie is gepubliceerd volgens de OSLO methodologie op <a href="https://implementatie.data.vlaanderen.be">implementatie.data.vlaanderen.be</a>.
-
+<p/>
 De volgende bestaande OSLO standaarden zijn wel herbruikt:
 
-OSLO Gebouw: Een asbestattest heeft betrekking op een Gebouweenheid. Het implementatie model connecteerd deze met de authentieke bron Gebouwenregister.
+<ul>
+<li>OSLO Gebouw: Een asbestattest heeft betrekking op een Gebouweenheid. Het implementatie model connecteerd deze met de authentieke bron Gebouwenregister.</li>
+<li>OSLO Generiek: voor enkele basis datatypes</li>
+</ul>
 
 
-<h4>Niveau van conformiteit: 2</h4>
+<h4>Niveau van conformiteit: 2 van 3</h4>
 
 <!--
 Niveau 1:
@@ -224,9 +227,21 @@ Niveau 3:
 -->
 
 De datauitwisseling gebeurt volgens de afspraken gedocumenteed in the OpenAPI specificatie van het asbestinventaris.
-De payload hierin een JSON-LD structuur. De Json-LD context file mapped all json termen op termen in het implementatiemodel AsbestInventaris. 
+De payload hierin een JSON-LD structuur. De Json-LD context file mapped all json termen op termen in het implementatiemodel Asbestinventaris. 
+<p/>
+In de sectie JSON-LD worden enkele implementatiekeuzes van de mapping beschreven, en hoe deze zich manifesteert in de JSON-LD context.
+<p/>
+Niveau 3 is bereikbaar indien het implementatiemodel verder uitgewerkt wordt.
 
-<h3>Toekomstige afspraken</hr32>
+<h3>Toekomstige afspraken</h3>
+
+De volgende aspecten kunnen het implementatiemodel verbeteren:
+<ul>
+<li>finaliseren van duidelijke definities voor elk van de klassen en eigenschappen.</li>
+<li>Indien er codelijsten zijn (o.a. asbestmateriaal), deze op te nemen en deze codelijst te publiceren.</li>
+<li>De technische implementatie afspraken te toetsen aan deze semantische afspraken (oa. taal, datum voorstelling, URI etc).</li>
+</ul>
+
 
 
             </div>
@@ -266,8 +281,8 @@ De payload hierin een JSON-LD structuur. De Json-LD context file mapped all json
             </div>
 
             <div class="region region--no-space-top">
-              <a href="/doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-22/html/overview.jpg" target="_blank">
-                 <img src="/doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-22/html/overview.jpg" />
+              <a href="/doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22/html/overview.jpg" target="_blank">
+                 <img src="/doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22/html/overview.jpg" />
               </a>
               
               
@@ -1419,7 +1434,7 @@ Men kan de conformance van de mapping testen door onderstaande shacl shape te ge
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">SHACL template</h2>
                 (niet normatief)
                 
-                <p>Een herbruikbare SHACL template definitie voor dit implementatiemodel is terug te vinden op: <a href="/doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-22/shacl/asbestinventaris-SHACL.ttl" target="_blank">/doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-03-22/shacl/asbestinventaris-SHACL.ttl</a></p>
+                <p>Een herbruikbare SHACL template definitie voor dit implementatiemodel is terug te vinden op: <a href="/doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22/shacl/asbestinventaris-SHACL.ttl" target="_blank">/doc/implementatiemodel/asbestinventaris/ontwerpstandaard/2023-09-22/shacl/asbestinventaris-SHACL.ttl</a></p>
                 
             </div>
           </div>
