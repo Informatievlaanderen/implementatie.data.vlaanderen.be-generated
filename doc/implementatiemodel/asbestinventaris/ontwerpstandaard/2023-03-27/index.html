@@ -124,8 +124,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/tree/078871cf60a1309f4a11dca7146ccb8b7ba107cd">https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/tree/078871cf60a1309f4a11dca7146ccb8b7ba107cd</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/blob/078871cf60a1309f4a11dca7146ccb8b7ba107cd/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/blob/078871cf60a1309f4a11dca7146ccb8b7ba107cd/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/tree/8ba6e1082200dc4ff60e0731d56f234f4ed51f77">https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/tree/8ba6e1082200dc4ff60e0731d56f234f4ed51f77</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/blob/8ba6e1082200dc4ff60e0731d56f234f4ed51f77/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/blob/8ba6e1082200dc4ff60e0731d56f234f4ed51f77/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/issues">https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/issues</a></dd>
               <dt>Standaardenregister</dt><dd><a href=""></a></dd>
 
@@ -197,6 +197,7 @@
                       <a href="#Afvalfiche">Afvalfiche</a> |
                       <a href="#Analyserapport">Analyserapport</a> |
                       <a href="#Asbestinventaris">Asbestinventaris</a> |
+                      <a href="#Asbestmateriaal">Asbestmateriaal</a> |
                       <a href="#Attest">Attest</a> |
                       <a href="#Bronfiche">Bronfiche</a> |
                       <a href="#Fiche">Fiche</a> |
@@ -289,9 +290,9 @@
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
-                            
+			    
+			    <a href="#URI" data-placement="right">URI</a>
+			    
                           
                         </td>
                         <td>1</td>
@@ -316,19 +317,17 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Asbestinventaris%3A"></a>, 
                       <a href="#Asbestinventaris%3Aaanleiding">aanleiding</a>, 
                       <a href="#Asbestinventaris%3AaantalAsbestMaterialen">aantal asbest materialen</a>, 
                       <a href="#Asbestinventaris%3AaantalBeperkingen">aantal beperkingen</a>, 
                       <a href="#Asbestinventaris%3AaantalUitsluitingen">aantal uitsluitingen</a>, 
                       <a href="#Asbestinventaris%3AanalyseRapport">analyse rapport</a>, 
-                      <a href="#Asbestinventaris%3AasbestMaterialen">asbest materialen</a>, 
                       <a href="#Asbestinventaris%3Aattest">attest</a>, 
                       <a href="#Asbestinventaris%3AattestNummer">attest nummer</a>, 
-                      <a href="#Asbestinventaris%3AgefinaliseerdOp">gefinaliseerd op</a>, 
                       <a href="#Asbestinventaris%3AgeldigTot">geldig tot</a>, 
                       <a href="#Asbestinventaris%3AgemeenschappelijkDeel">gemeenschappelijk deel</a>, 
                       <a href="#Asbestinventaris%3AgemeenschappelijkDeel">gemeenschappelijk deel</a>, 
-                      <a href="#Asbestinventaris%3AgemeenschappelijkeDelen">gemeenschappelijke delen</a>, 
                       <a href="#Asbestinventaris%3Aid">id</a>, 
                       <a href="#Asbestinventaris%3AlocatieBeschrijving">locatie beschrijving</a>, 
                       <a href="#Asbestinventaris%3Aresultaat">resultaat</a>, 
@@ -351,6 +350,26 @@
                     </thead>
 
                     <tbody class="supertype">
+                    
+                      <tr id="Asbestinventaris%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestmateriaal">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestmateriaal" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestmateriaal" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Asbestmateriaal" data-placement="right">Asbestmateriaal</a>
+			    
+                          
+                        </td>
+                        <td></td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
                     
                       <tr id="Asbestinventaris%3Aaanleiding" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aanleiding">
                         <td>
@@ -452,26 +471,6 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Asbestinventaris%3AasbestMaterialen" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestMaterialen">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestMaterialen" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestMaterialen" data-placement="right">
-                            asbest materialen</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			     
-			    <a href="http://www.w3.org/2001/XMLSchema#integer" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#integer" data-placement="right">Integer</a>
-                            
-                          
-                        </td>
-                        <td>1</td>
-                        <td property="rdfs:comment"></td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
                       <tr id="Asbestinventaris%3Aattest" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attest">
                         <td>
                           <code property="rdfs:label">
@@ -497,26 +496,6 @@
                           <code property="rdfs:label">
                             <a href="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attestNummer" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attestNummer" data-placement="right">
                             attest nummer</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			     
-			    <a href="http://www.w3.org/2001/XMLSchema#integer" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#integer" data-placement="right">Integer</a>
-                            
-                          
-                        </td>
-                        <td>1</td>
-                        <td property="rdfs:comment"></td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="Asbestinventaris%3AgefinaliseerdOp" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geFinaliseerdOp">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geFinaliseerdOp" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geFinaliseerdOp" data-placement="right">
-                            gefinaliseerd op</a>
                           </code>
                         </td>
                         <td>
@@ -592,26 +571,6 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Asbestinventaris%3AgemeenschappelijkeDelen" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkeDelen">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkeDelen" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkeDelen" data-placement="right">
-                            gemeenschappelijke delen</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			     
-			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
-                            
-                          
-                        </td>
-                        <td>1</td>
-                        <td property="rdfs:comment"></td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
                       <tr id="Asbestinventaris%3Aid" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id">
                         <td>
                           <code property="rdfs:label">
@@ -621,9 +580,9 @@
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
-                            
+			    
+			    <a href="#URI" data-placement="right">URI</a>
+			    
                           
                         </td>
                         <td>1</td>
@@ -648,7 +607,7 @@
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment"></td>
-                        <td property="vann:usageNote"></td>
+                        <td property="vann:usageNote">Betreft slechts een indicatie van de locatie. Het bevat niet de officiële locatiegegevens van de overheid.</td>
                         <td></td>
                       </tr>
                     
@@ -684,6 +643,62 @@
 			     
 			    <a href="http://www.w3.org/2001/XMLSchema#date" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#date" data-placement="right">Date</a>
                             
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Asbestmateriaal"><a href="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestmateriaal" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestmateriaal" data-placement="right">Asbestmateriaal</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd></dd>
+                    
+		    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Asbestmateriaal%3A"></a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Asbestmateriaal%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#URI" data-placement="right">URI</a>
+			    
                           
                         </td>
                         <td>1</td>
@@ -737,9 +752,9 @@
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
-                            
+			    
+			    <a href="#URI" data-placement="right">URI</a>
+			    
                           
                         </td>
                         <td>1</td>
@@ -1023,9 +1038,9 @@
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
-                            
+			    
+			    <a href="#URI" data-placement="right">URI</a>
+			    
                           
                         </td>
                         <td>1</td>
@@ -1119,9 +1134,9 @@
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
-                            
+			    
+			    <a href="#URI" data-placement="right">URI</a>
+			    
                           
                         </td>
                         <td>1</td>
@@ -1175,9 +1190,9 @@
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
-                            
+			    
+			    <a href="#URI" data-placement="right">URI</a>
+			    
                           
                         </td>
                         <td>1</td>

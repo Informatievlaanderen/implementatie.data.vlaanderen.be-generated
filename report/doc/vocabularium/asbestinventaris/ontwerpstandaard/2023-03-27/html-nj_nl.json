@@ -12,8 +12,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/tree/078871cf60a1309f4a11dca7146ccb8b7ba107cd",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/blob/078871cf60a1309f4a11dca7146ccb8b7ba107cd/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/tree/8ba6e1082200dc4ff60e0731d56f234f4ed51f77",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/blob/8ba6e1082200dc4ff60e0731d56f234f4ed51f77/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-im-asbestinventaris/issues",
     "standaardregisterurl": "",
     "usesVocs": [],
@@ -53,6 +53,18 @@
         "nl": "Asbestinventaris"
       },
       "sort": "Asbestinventaris",
+      "description": {},
+      "usage": {},
+      "equivalent": [],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestmateriaal",
+      "name": "Asbestmateriaal",
+      "label": {
+        "nl": "Asbestmateriaal"
+      },
+      "sort": "Asbestmateriaal",
       "description": {},
       "usage": {},
       "equivalent": [],
@@ -242,7 +254,7 @@
         "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
       ],
       "range": [
-        "http://www.w3.org/2001/XMLSchema#string"
+        "http://www.w3.org/2000/01/rdf-schema#Resource"
       ],
       "parents": []
     },
@@ -259,7 +271,7 @@
         "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Attest"
       ],
       "range": [
-        "http://www.w3.org/2001/XMLSchema#string"
+        "http://www.w3.org/2000/01/rdf-schema#Resource"
       ],
       "parents": []
     },
@@ -276,7 +288,7 @@
         "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche"
       ],
       "range": [
-        "http://www.w3.org/2001/XMLSchema#string"
+        "http://www.w3.org/2000/01/rdf-schema#Resource"
       ],
       "parents": []
     },
@@ -293,7 +305,7 @@
         "https://data.vlaanderen.be/ns/gebouw#Gebouweenheid"
       ],
       "range": [
-        "http://www.w3.org/2001/XMLSchema#string"
+        "http://www.w3.org/2000/01/rdf-schema#Resource"
       ],
       "parents": []
     },
@@ -310,7 +322,7 @@
         "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Analyserapport"
       ],
       "range": [
-        "http://www.w3.org/2001/XMLSchema#string"
+        "http://www.w3.org/2000/01/rdf-schema#Resource"
       ],
       "parents": []
     },
@@ -327,24 +339,22 @@
         "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#InventarisSummary"
       ],
       "range": [
-        "http://www.w3.org/2001/XMLSchema#string"
+        "http://www.w3.org/2000/01/rdf-schema#Resource"
       ],
       "parents": []
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkeDelen",
-      "name": "gemeenschappelijkeDelen",
-      "label": {
-        "nl": "gemeenschappelijke delen"
-      },
-      "sort": "gemeenschappelijke delen",
+      "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
+      "name": "",
+      "label": {},
+      "sort": "",
       "description": {},
       "usage": {},
       "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
+        "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestmateriaal"
       ],
       "range": [
-        "http://www.w3.org/2001/XMLSchema#string"
+        "http://www.w3.org/2000/01/rdf-schema#Resource"
       ],
       "parents": []
     },
@@ -413,23 +423,6 @@
       ],
       "range": [
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-      ],
-      "parents": []
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geFinaliseerdOp",
-      "name": "gefinaliseerdOp",
-      "label": {
-        "nl": "gefinaliseerd op"
-      },
-      "sort": "gefinaliseerd op",
-      "description": {},
-      "usage": {},
-      "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
-      ],
-      "range": [
-        "http://www.w3.org/2001/XMLSchema#integer"
       ],
       "parents": []
     },
@@ -553,19 +546,17 @@
       "parents": []
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestMaterialen",
-      "name": "asbestMaterialen",
-      "label": {
-        "nl": "asbest materialen"
-      },
-      "sort": "asbest materialen",
+      "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestmateriaal",
+      "name": "",
+      "label": {},
+      "sort": "",
       "description": {},
       "usage": {},
       "domain": [
         "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
       ],
       "range": [
-        "http://www.w3.org/2001/XMLSchema#integer"
+        "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestmateriaal"
       ],
       "parents": []
     },

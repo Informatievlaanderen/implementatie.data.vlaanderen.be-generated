@@ -5,7 +5,7 @@
       "@context": {
         "id": {
           "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
-          "@type": "http://www.w3.org/2001/XMLSchema#string"
+          "@type": "@id"
         }
       },
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Analyserapport"
@@ -33,9 +33,10 @@
           "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#analyserapport",
           "@type": "@id"
         },
-        "asbestMaterialen": {
-          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestMaterialen",
-          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        "asbestmateriaal": {
+          "@container": "@set",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestmateriaal",
+          "@type": "@id"
         },
         "attest": {
           "@container": "@set",
@@ -44,10 +45,6 @@
         },
         "attestNummer": {
           "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attestNummer",
-          "@type": "http://www.w3.org/2001/XMLSchema#integer"
-        },
-        "gefinaliseerdOp": {
-          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geFinaliseerdOp",
           "@type": "http://www.w3.org/2001/XMLSchema#integer"
         },
         "geldigTot": {
@@ -59,13 +56,9 @@
           "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkDeel",
           "@type": "@id"
         },
-        "gemeenschappelijkeDelen": {
-          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkeDelen",
-          "@type": "http://www.w3.org/2001/XMLSchema#string"
-        },
         "id": {
           "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
-          "@type": "http://www.w3.org/2001/XMLSchema#string"
+          "@type": "@id"
         },
         "locatieBeschrijving": {
           "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#locatiebeschrijving",
@@ -82,11 +75,20 @@
       },
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
     },
+    "Asbestmateriaal": {
+      "@context": {
+        "id": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
+          "@type": "@id"
+        }
+      },
+      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestmateriaal"
+    },
     "Attest": {
       "@context": {
         "id": {
           "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
-          "@type": "http://www.w3.org/2001/XMLSchema#string"
+          "@type": "@id"
         }
       },
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Attest"
@@ -136,7 +138,7 @@
         },
         "id": {
           "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
-          "@type": "http://www.w3.org/2001/XMLSchema#string"
+          "@type": "@id"
         },
         "omgeving": {
           "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#omgeving",
@@ -153,7 +155,7 @@
       "@context": {
         "id": {
           "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
-          "@type": "http://www.w3.org/2001/XMLSchema#string"
+          "@type": "@id"
         }
       },
       "@id": "https://data.vlaanderen.be/ns/gebouw#Gebouweenheid"
@@ -162,7 +164,7 @@
       "@context": {
         "id": {
           "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
-          "@type": "http://www.w3.org/2001/XMLSchema#string"
+          "@type": "@id"
         }
       },
       "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#InventarisSummary"

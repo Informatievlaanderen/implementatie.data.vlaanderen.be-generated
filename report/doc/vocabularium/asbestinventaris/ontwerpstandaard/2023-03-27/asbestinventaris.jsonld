@@ -304,6 +304,58 @@
             "parents": []
         },
         {
+            "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestmateriaal",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "label-nl": {
+                "nl": "Asbestmateriaal"
+            },
+            "label": {
+                "nl": "Asbestmateriaal"
+            },
+            "definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "Asbestmateriaal",
+                "EA-Guid": "{9C36942B-6752-4332-81AB-5B1C4BF5EB73}",
+                "EA-Package": "asbestInventaris-im",
+                "EA-Type": "CLASS",
+                "EA-Parents": "",
+                "EA-Parents2": [],
+                "parentclasses": "",
+                "label": {
+                    "nl": "Asbestmateriaal"
+                },
+                "definition": "",
+                "usage": "",
+                "label-nl": {
+                    "nl": "Asbestmateriaal"
+                },
+                "definition-nl": {
+                    "nl": "TODO"
+                },
+                "usageNote-nl": "",
+                "label-en": "",
+                "definition-en": "",
+                "usageNote-en": "",
+                "equivalent": "",
+                "subclass": "",
+                "subclass1": "",
+                "sameAs": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "Asbestmateriaal",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "FULL_DEFINITON"
+            },
+            "inpackage": "ACTIVE_PACKAGE",
+            "name": "Asbestmateriaal",
+            "parents": []
+        },
+        {
             "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Attest",
             "@type": "http://www.w3.org/2002/07/owl#Class",
             "label-nl": {
@@ -1022,6 +1074,11 @@
                         "key": "label-nl",
                         "value": "locatie beschrijving",
                         "note": "null"
+                    },
+                    {
+                        "key": "ap-usageNote-nl",
+                        "value": "Betreft slechts een indicatie van de locatie. Het bevat niet de officiële locatiegegevens van de overheid.",
+                        "note": "null"
                     }
                 ],
                 "Scope": "FULL_DEFINITON"
@@ -1047,7 +1104,7 @@
         },
         {
             "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
             "name": "id",
             "inpackage": "ACTIVE_PACKAGE",
             "label-nl": {
@@ -1066,11 +1123,12 @@
                 "EA-Type": "attribute",
                 "EA-Domain": "Asbestinventaris",
                 "EA-Domain-Guid": "{CE6DEED7-9E8C-4254-9587-29D4A373C753}",
-                "EA-Range": "String",
+                "EA-Range": "URi",
                 "RangeData": {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
+                    "EA-Name": "URi",
+                    "EA-GUID": "{1AA0E996-D528-405a-B678-568005AD0B1E}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
                 },
                 "label": {
                     "nl": "id"
@@ -1109,9 +1167,10 @@
             ],
             "range": [
                 {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
+                    "EA-Name": "URi",
+                    "EA-GUID": "{1AA0E996-D528-405a-B678-568005AD0B1E}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
                 }
             ],
             "generalization": [],
@@ -1120,7 +1179,7 @@
         },
         {
             "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
             "name": "id",
             "inpackage": "ACTIVE_PACKAGE",
             "label-nl": {
@@ -1139,11 +1198,12 @@
                 "EA-Type": "attribute",
                 "EA-Domain": "Attest",
                 "EA-Domain-Guid": "{EF3F6F90-3CCB-4fe0-81D2-C9CB8749C2B2}",
-                "EA-Range": "String",
+                "EA-Range": "URi",
                 "RangeData": {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
+                    "EA-Name": "URi",
+                    "EA-GUID": "{1AA0E996-D528-405a-B678-568005AD0B1E}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
                 },
                 "label": {
                     "nl": "id"
@@ -1182,9 +1242,10 @@
             ],
             "range": [
                 {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
+                    "EA-Name": "URi",
+                    "EA-GUID": "{1AA0E996-D528-405a-B678-568005AD0B1E}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
                 }
             ],
             "generalization": [],
@@ -1193,7 +1254,7 @@
         },
         {
             "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
             "name": "id",
             "inpackage": "ACTIVE_PACKAGE",
             "label-nl": {
@@ -1212,11 +1273,12 @@
                 "EA-Type": "attribute",
                 "EA-Domain": "Fiche",
                 "EA-Domain-Guid": "{A254DF23-193E-4beb-ACA5-715580A4D490}",
-                "EA-Range": "String",
+                "EA-Range": "URi",
                 "RangeData": {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
+                    "EA-Name": "URi",
+                    "EA-GUID": "{1AA0E996-D528-405a-B678-568005AD0B1E}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
                 },
                 "label": {
                     "nl": "id"
@@ -1255,9 +1317,10 @@
             ],
             "range": [
                 {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
+                    "EA-Name": "URi",
+                    "EA-GUID": "{1AA0E996-D528-405a-B678-568005AD0B1E}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
                 }
             ],
             "generalization": [],
@@ -1266,7 +1329,7 @@
         },
         {
             "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
             "name": "id",
             "inpackage": "ACTIVE_PACKAGE",
             "label-nl": {
@@ -1285,11 +1348,12 @@
                 "EA-Type": "attribute",
                 "EA-Domain": "Gebouweenheid",
                 "EA-Domain-Guid": "{E8E3415B-9B02-4d08-A903-099402C13FA0}",
-                "EA-Range": "String",
+                "EA-Range": "URi",
                 "RangeData": {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
+                    "EA-Name": "URi",
+                    "EA-GUID": "{1AA0E996-D528-405a-B678-568005AD0B1E}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
                 },
                 "label": {
                     "nl": "id"
@@ -1328,9 +1392,10 @@
             ],
             "range": [
                 {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
+                    "EA-Name": "URi",
+                    "EA-GUID": "{1AA0E996-D528-405a-B678-568005AD0B1E}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
                 }
             ],
             "generalization": [],
@@ -1339,7 +1404,7 @@
         },
         {
             "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
             "name": "id",
             "inpackage": "ACTIVE_PACKAGE",
             "label-nl": {
@@ -1358,11 +1423,12 @@
                 "EA-Type": "attribute",
                 "EA-Domain": "Analyserapport",
                 "EA-Domain-Guid": "{3827B6C4-D923-45e1-A22B-503ADA7DDDC3}",
-                "EA-Range": "String",
+                "EA-Range": "URi",
                 "RangeData": {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
+                    "EA-Name": "URi",
+                    "EA-GUID": "{1AA0E996-D528-405a-B678-568005AD0B1E}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
                 },
                 "label": {
                     "nl": "id"
@@ -1401,9 +1467,10 @@
             ],
             "range": [
                 {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
+                    "EA-Name": "URi",
+                    "EA-GUID": "{1AA0E996-D528-405a-B678-568005AD0B1E}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
                 }
             ],
             "generalization": [],
@@ -1412,7 +1479,7 @@
         },
         {
             "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
             "name": "id",
             "inpackage": "ACTIVE_PACKAGE",
             "label-nl": {
@@ -1431,11 +1498,12 @@
                 "EA-Type": "attribute",
                 "EA-Domain": "InventarisSummary",
                 "EA-Domain-Guid": "{12CC1A28-24EF-45db-99DF-C436F08FDAB0}",
-                "EA-Range": "String",
+                "EA-Range": "URi",
                 "RangeData": {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
+                    "EA-Name": "URi",
+                    "EA-GUID": "{1AA0E996-D528-405a-B678-568005AD0B1E}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
                 },
                 "label": {
                     "nl": "id"
@@ -1474,9 +1542,10 @@
             ],
             "range": [
                 {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
+                    "EA-Name": "URi",
+                    "EA-GUID": "{1AA0E996-D528-405a-B678-568005AD0B1E}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
                 }
             ],
             "generalization": [],
@@ -1484,39 +1553,35 @@
             "maxCardinality": "1"
         },
         {
-            "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkeDelen",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "gemeenschappelijkeDelen",
+            "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "",
             "inpackage": "ACTIVE_PACKAGE",
             "label-nl": {
-                "nl": "gemeenschappelijke delen"
-            },
-            "label": {
-                "nl": "gemeenschappelijke delen"
+                "nl": "TODO"
             },
             "definition-nl": {
                 "nl": "TODO"
             },
             "extra": {
-                "EA-Name": "gemeenschappelijkeDelen",
-                "EA-Guid": "{430F8F68-3428-4598-B91F-3113CA6C8ED6}",
+                "EA-Name": "id",
+                "EA-Guid": "{B279D73C-54B3-44b6-A5D4-2E8D80B2A1D5}",
                 "EA-Package": "asbestInventaris-im",
                 "EA-Type": "attribute",
-                "EA-Domain": "Asbestinventaris",
-                "EA-Domain-Guid": "{CE6DEED7-9E8C-4254-9587-29D4A373C753}",
-                "EA-Range": "String",
+                "EA-Domain": "Asbestmateriaal",
+                "EA-Domain-Guid": "{9C36942B-6752-4332-81AB-5B1C4BF5EB73}",
+                "EA-Range": "URi",
                 "RangeData": {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
+                    "EA-Name": "URi",
+                    "EA-GUID": "{1AA0E996-D528-405a-B678-568005AD0B1E}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
                 },
-                "label": {
-                    "nl": "gemeenschappelijke delen"
-                },
+                "label": "",
                 "definition": "",
                 "usage": "",
                 "label-nl": {
-                    "nl": "gemeenschappelijke delen"
+                    "nl": "TODO"
                 },
                 "definition-nl": {
                     "nl": "TODO"
@@ -1529,27 +1594,22 @@
                 "subclass": "",
                 "subclass1": "",
                 "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "gemeenschappelijke delen",
-                        "note": "null"
-                    }
-                ],
+                "RawTags": [],
                 "Scope": "FULL_DEFINITON"
             },
             "codelist": [],
             "domain": [
                 {
-                    "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris",
-                    "EA-Name": "Asbestinventaris"
+                    "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestmateriaal",
+                    "EA-Name": "Asbestmateriaal"
                 }
             ],
             "range": [
                 {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
+                    "EA-Name": "URi",
+                    "EA-GUID": "{1AA0E996-D528-405a-B678-568005AD0B1E}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
                 }
             ],
             "generalization": [],
@@ -1854,79 +1914,6 @@
                     "EA-GUID": "{BA45F400-33F1-43f1-87A0-ABDA9D4D01FD}",
                     "EA-Package": "OSLO-Generiek",
                     "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "1",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geFinaliseerdOp",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "gefinaliseerdOp",
-            "inpackage": "ACTIVE_PACKAGE",
-            "label-nl": {
-                "nl": "gefinaliseerd op"
-            },
-            "label": {
-                "nl": "gefinaliseerd op"
-            },
-            "definition-nl": {
-                "nl": "TODO"
-            },
-            "extra": {
-                "EA-Name": "geFinaliseerdOp",
-                "EA-Guid": "{D6D0F917-711A-4beb-8472-EFBF3E0A97F0}",
-                "EA-Package": "asbestInventaris-im",
-                "EA-Type": "attribute",
-                "EA-Domain": "Asbestinventaris",
-                "EA-Domain-Guid": "{CE6DEED7-9E8C-4254-9587-29D4A373C753}",
-                "EA-Range": "Integer",
-                "RangeData": {
-                    "EA-Name": "Integer",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#integer"
-                },
-                "label": {
-                    "nl": "gefinaliseerd op"
-                },
-                "definition": "",
-                "usage": "",
-                "label-nl": {
-                    "nl": "gefinaliseerd op"
-                },
-                "definition-nl": {
-                    "nl": "TODO"
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "gefinaliseerd op",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "FULL_DEFINITON"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris",
-                    "EA-Name": "Asbestinventaris"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "Integer",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#integer"
                 }
             ],
             "generalization": [],
@@ -2473,39 +2460,38 @@
             "maxCardinality": "1"
         },
         {
-            "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestMaterialen",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "asbestMaterialen",
+            "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestmateriaal",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "",
             "inpackage": "ACTIVE_PACKAGE",
             "label-nl": {
-                "nl": "asbest materialen"
-            },
-            "label": {
-                "nl": "asbest materialen"
+                "nl": "TODO"
             },
             "definition-nl": {
                 "nl": "TODO"
             },
             "extra": {
-                "EA-Name": "asbestMaterialen",
-                "EA-Guid": "{F4B9CB4F-3C58-4e33-9324-9F1141B359A1}",
-                "EA-Package": "asbestInventaris-im",
-                "EA-Type": "attribute",
+                "EA-Name": "asbestmateriaal",
+                "EA-Guid": "{84415B0B-BDCF-4f75-BFE2-8193ECF94C06}",
+                "derived": "false",
+                "EA-Package": "",
+                "EA-Type": "connector",
                 "EA-Domain": "Asbestinventaris",
                 "EA-Domain-Guid": "{CE6DEED7-9E8C-4254-9587-29D4A373C753}",
-                "EA-Range": "Integer",
+                "EA-Range": "Asbestmateriaal",
                 "RangeData": {
-                    "EA-Name": "Integer",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#integer"
+                    "EA-Name": "Asbestmateriaal",
+                    "EA-GUID": "{9C36942B-6752-4332-81AB-5B1C4BF5EB73}",
+                    "EA-Package": "asbestInventaris-im",
+                    "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestmateriaal"
                 },
-                "label": {
-                    "nl": "asbest materialen"
-                },
+                "sourceRole": "null",
+                "destRole": "asbestmateriaal",
+                "label": "",
                 "definition": "",
                 "usage": "",
                 "label-nl": {
-                    "nl": "asbest materialen"
+                    "nl": "TODO"
                 },
                 "definition-nl": {
                     "nl": "TODO"
@@ -2518,13 +2504,8 @@
                 "subclass": "",
                 "subclass1": "",
                 "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "asbest materialen",
-                        "note": "null"
-                    }
-                ],
+                "RawTags": [],
+                "DestRoleTags": [],
                 "Scope": "FULL_DEFINITON"
             },
             "codelist": [],
@@ -2536,14 +2517,13 @@
             ],
             "range": [
                 {
-                    "EA-Name": "Integer",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#integer"
+                    "EA-Name": "Asbestmateriaal",
+                    "EA-GUID": "{9C36942B-6752-4332-81AB-5B1C4BF5EB73}",
+                    "EA-Package": "asbestInventaris-im",
+                    "uri": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestmateriaal"
                 }
             ],
-            "generalization": [],
-            "minCardinality": "1",
-            "maxCardinality": "1"
+            "generalization": []
         },
         {
             "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#analyserapport",
