@@ -1,0 +1,1260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xml:lang="nl" lang="nl" dir="ltr" typeof="bibo:Document " about="" property="dcterms:language" content="nl" prefix="dcterms: http://purl.org/dc/terms/ bibo: http://purl.org/ontology/bibo/ schema: http://schema.org/ w3p: http://www.w3.org/2001/02pd/rec54#" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   
+  <title>Implementatiemodel Verkeersmetingen</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://dij151upo6vad.cloudfront.net/2.latest/css/vlaanderen-ui.css" />
+  <link rel="stylesheet" href="https://dij151upo6vad.cloudfront.net/2.latest/css/vlaanderen-ui-corporate.css" />
+
+  <link rel="icon" sizes="192x192" href="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/icon-highres-precomposed.png" />
+  <link rel="apple-touch-icon" href="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/touch-icon-iphone-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/touch-icon-ipad-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/touch-icon-iphone-retina-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/touch-icon-ipad-retina-precomposed.png" />
+
+  <meta name="msapplication-square70x70logo" content="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/tile-small.png" />
+  <meta name="msapplication-square150x150logo" content="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/tile-medium.png" />
+  <meta name="msapplication-wide310x150logo" content="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/tile-wide.png" />
+  <meta name="msapplication-square310x310logo" content="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/tile-large.png" />
+  <meta name="msapplication-TileColor" content="#FFE615" />
+</head>
+
+<body>
+
+  <!-- Start page content -->
+  <div class="page">
+    <div class="layout layout--wide">
+      <div class="skiplink">
+        <a rel="nofollow noreferrer" href="#main">Overslaan en naar de algemene inhoud gaan</a>
+      </div>
+    </div>
+    <div class="page">
+      <div class="region">
+        <div class="layout layout--wide">
+          <div class="grid u-hr">
+            <div class="col--9-12 col--1-1--s">
+              <h1 class="h1">Implementatiemodel Verkeersmetingen</h1>
+
+              <div class="head" role="status" id="status">
+              <dl>
+              <dt>Status</dt><dd><a href="https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard">https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard</a></dd>
+              <dt>Uitgegeven op</dt><dd>2023-09-27</dd>
+              <dt>Deze versie</dt><dd><a href="https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27">https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27</a></dd>
+              
+              
+              </dl>
+              </div>
+
+              <div class="head" role="contentinfo" id="respecHeader">
+                <dl>
+                        
+                          
+                        
+                        
+                          <dt>Editors</dt>
+                          
+                          <dd inlist="" rel="bibo:editor" class="p-author h-card vcard">
+                              <span typeof="foaf:Person">
+                              <span class="p-name fn" property="foaf:lastName">Geert</span>,
+                              <span class="p-name fn" property="foaf:firstName">Thijs</span>
+                              
+                							
+                							</span>
+                          </dd>
+                        
+                          <dd inlist="" rel="bibo:editor" class="p-author h-card vcard">
+                              <span typeof="foaf:Person">
+                              <span class="p-name fn" property="foaf:lastName">Samuel</span>,
+                              <span class="p-name fn" property="foaf:firstName">Van Ackere</span>
+                              
+                							
+                							</span>
+                          </dd>
+                        
+                        
+                      
+                      
+                </dl>
+              </div>
+
+              <div class="head" role="metainfo" id="metainfo">
+              <dl>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/cd6a37a4da4c5e91bd0a3497529578f8d8c3ecce">https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/cd6a37a4da4c5e91bd0a3497529578f8d8c3ecce</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/cd6a37a4da4c5e91bd0a3497529578f8d8c3ecce/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/cd6a37a4da4c5e91bd0a3497529578f8d8c3ecce/CHANGELOG</a></dd>
+              <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/issues">https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/issues</a></dd>
+              <dt>Standaardenregister</dt><dd><a href="https://data.vlaanderen.be/standaarden/">https://data.vlaanderen.be/standaarden/</a></dd>
+
+              <dt>Afhankelijkheden</dt><dd>
+                
+		</dd>
+              </dl>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main" itemprop="mainContentOfPage" role="main" tabindex="-1" class="main-content">
+      <div class="layout layout--wide">
+        <div class="grid">
+          <div class="col--8-12 col--12-12--s">
+            <div class="region" id="introduction">
+              <div class="introduction typography">
+              
+                <p>Dit document beschrijft een <strong>implementatiemodel</strong>, in dit geval <strong>Implementatiemodel Verkeersmetingen</strong>.
+                Een implementatiemodel is een toepassing van vocabularia voor een concreet doel.
+                Het beschrijft in alle detail (zoals kardinaliteiten, codelijsten, datatypes, ...) de gewenste datastructuur.
+                </p>
+              
+              </div>
+            </div>
+
+            <div class="region region--no-space-top typography" id="summary">
+                <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">Samenvatting</h2>
+                
+<p>Vul hier een samenvatting van mijn implementatiemodel in.</p>
+
+            </div>
+
+            <div class="region region--no-space-top typography" id="status">
+              <section class="introductory" id="sotd" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
+                <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">Status van dit document</h2>
+                
+<p>(Verwijder dit blok om een geautomatiseerde standaardparagraaf te laten verschijnen.)</p>
+
+              </section>
+            </div>
+
+            <div class="region region--no-space-top typography" id="license">
+              <h2 class="h2">Licentie</h2>
+              
+              <p><span rel="dct:type" property="dct:title" href="http://purl.org/dc/dcmitype/Text" xmlns:dct="http://purl.org/dc/terms/">Deze specificatie</span> van <a rel="cc:attributionURL" property="cc:attributionName" href="http://vlaanderen.be/informatievlaanderen" xmlns:cc="http://creativecommons.org/ns#">Informatie Vlaanderen</a> is gepubliceerd onder de <a href="https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0" rel="license">"Modellicentie Gratis Hergebruik - v1.0"</a>.</p>
+              
+            </div>
+            <div class="region region--no-space-top typography" id="conformance">
+              <h2 class="h2" id="conformance" aria-level="1" role="heading">Conformiteit</h2>
+              
+              <p>De conformiteit voor implementatiemodellen is <a href="/doc/begeleidend/implementatiemodellen/conformiteit">hier</a> te vinden.</p>
+              
+            </div>
+            <div class="region region--no-space-top" id="overview">
+              <h2 class="h2">Overzicht</h2>
+              <div class="grid">
+                <div class="col--9-12 col--1-1--s typography">
+                  
+                  <div class="region region--no-space-top">
+                    <p>In dit document wordt correct gebruik van de volgende entiteiten toegelicht:
+                      <br />
+                      |
+                      <a href="#"></a> |
+                      <a href="#Observatieprocedure">Observatieprocedure</a> |
+                      <a href="#Rijrichting">Rijrichting</a> |
+                      <a href="#Sensor">Sensor</a> |
+                      <a href="#Verkeerskenmerk">Verkeerskenmerk</a> |
+                      <a href="#Verkeersmeetpunt">Verkeersmeetpunt</a> |
+                    </p>
+                  </div>
+                  
+                  
+                  <div class="region region--no-space-top">
+                    <p> In dit document worden de volgende datatypes toegelicht:
+                      <br />
+                      |
+                      <a href="#"></a> |
+                      <a href="#"></a> |
+                      <a href="#Puntreferentie">Puntreferentie</a> |
+                    </p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="region region--no-space-top">
+              <a href="/doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27/html/overview.jpg" target="_blank">
+                 <img src="/doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27/html/overview.jpg" />
+              </a>
+              
+              
+            </div>
+            <div class="region region--no-space-top">
+              <h2 class="h2">Entiteiten</h2>
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id=""><a href="http://fixme.com#Verkeerstelling" data-toggle="tooltip" data-content="http://fixme.com#Verkeerstelling" data-placement="right"></a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd></dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting">Verkeersmeting</a>, 
+                        <a href="http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation">Telling</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#%3A"></a>, 
+                      <a href="#%3AfenomeenTijd">fenomeenTijd</a>, 
+                      <a href="#%3Aresultaat">resultaat</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="http://fixme.com#tellingresultaat">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://fixme.com#tellingresultaat" data-toggle="tooltip" data-content="http://fixme.com#tellingresultaat" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#double" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#double" data-placement="right">Double</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3AfenomeenTijd" typeof="rdfs:Property" resource="https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime" data-toggle="tooltip" data-content="https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime" data-placement="right">
+                            fenomeenTijd</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://fixme.com#ProperInterval" data-toggle="tooltip" data-content="http://fixme.com#ProperInterval" data-placement="right">ProperInterval</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Het moment waarop het resultaat van de Verkeersmeting van toepassing is.</td>
+                        <td property="vann:usageNote">Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn.</td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3Aresultaat" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation.result">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation.result" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation.result" data-placement="right">
+                            resultaat</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#integer" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#integer" data-placement="right">Integer</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Resultaat van de Telling.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Observatieprocedure"><a href="https://www.w3.org/TR/vocab-ssn/#SOSAProcedure" data-toggle="tooltip" data-content="https://www.w3.org/TR/vocab-ssn/#SOSAProcedure" data-placement="right">Observatieprocedure</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Een workflow, protocol, plan, algoritme of berekeningswijze waarin wordt gespecifieerd hoe een Observatie moet worden uitgevoerd.</dd>
+                    
+                    <dt>Gebruik</dt><dd>De procedure legt uit welke stappen uitgevoerd moeten worden om een reproduceerbaar resultaat te krijgen. Bv de correcte plaatsing van een windmeter (op een welbepaalde hoogte boven het grondoppervlak, bv 10m voor meteorologische waarnemingen). De procedures zijn doorgaans bedoeld om bij meer dan één Bemonstering te worden toegepast.</dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="http://www.w3.org/ns/sosa/Procedure">Procedure</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Observatieprocedure%3Age%C3%AFmplementeerdMet">geïmplementeerdMet</a>, 
+                      <a href="#Observatieprocedure%3Ainput">input</a>, 
+                      <a href="#Observatieprocedure%3Aoutput">output</a>, 
+                      <a href="#Observatieprocedure%3Aparameter">parameter</a>, 
+                      <a href="#Observatieprocedure%3Aspecificatie">specificatie</a>, 
+                      <a href="#Observatieprocedure%3Atype">type</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Observatieprocedure%3Age%C3%AFmplementeerdMet" typeof="rdfs:Property" resource="http://www.w3.org/ns/ssn/implementedBy">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/ssn/implementedBy" data-toggle="tooltip" data-content="http://www.w3.org/ns/ssn/implementedBy" data-placement="right">
+                            geïmplementeerdMet</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Sensor" data-placement="right">Sensor</a>
+			    
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Sensor waarmee de Observatieprocedure is of moet worden uitgevoerd.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Observatieprocedure%3Ainput" typeof="rdfs:Property" resource="http://www.w3.org/ns/ssn/hasInput">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/ssn/hasInput" data-toggle="tooltip" data-content="http://www.w3.org/ns/ssn/hasInput" data-placement="right">
+                            input</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/ns/ssn/Input" data-toggle="tooltip" data-content="http://www.w3.org/ns/ssn/Input" data-placement="right">Input</a>
+                            
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Verwijzing naar de Input die de procedure vereist.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Observatieprocedure%3Aoutput" typeof="rdfs:Property" resource="http://www.w3.org/ns/ssn/hasOutput">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/ssn/hasOutput" data-toggle="tooltip" data-content="http://www.w3.org/ns/ssn/hasOutput" data-placement="right">
+                            output</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/ns/ssn/Output" data-toggle="tooltip" data-content="http://www.w3.org/ns/ssn/Output" data-placement="right">Output</a>
+                            
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Verwijzing naar de Output die de Procedure genereert.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Observatieprocedure%3Aparameter" typeof="rdfs:Property" resource="https://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.parameter">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.parameter" data-toggle="tooltip" data-content="https://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.parameter" data-placement="right">
+                            parameter</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://def.isotc211.org/iso19156/2011/Observation#NamedValue" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Observation#NamedValue" data-placement="right">BenoemdeWaarde</a>
+                            
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Willekeurig gegeven geassocieerd met de Observatieprocedure.</td>
+                        <td property="vann:usageNote">Bv een parameter die een aspect van de Observatieprocedure beschrijft (bv de vereiste hoogte voor het observeren van windsnelheid) of een noodzakelijke omgevingsparameter (bv temperatuurbereik waarbinnen een labo-analyse moet plaatsvinden).</td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Observatieprocedure%3Aspecificatie" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Observatieprocedure.specificatie">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Observatieprocedure.specificatie" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Observatieprocedure.specificatie" data-placement="right">
+                            specificatie</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#anyURI" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#anyURI" data-placement="right">URI</a>
+                            
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Verwijzing naar een document dat de Observatieprocedure beschrijft.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Observatieprocedure%3Atype" typeof="rdfs:Property" resource="http://purl.org/cd/terms/type">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://purl.org/cd/terms/type" data-toggle="tooltip" data-content="http://purl.org/cd/terms/type" data-placement="right">
+                            type</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2004/02/skos/core#Concept" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#Concept" data-placement="right">Observatieproceduretype</a>
+                            
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Aard van de Observatieprocedure.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Rijrichting"><a href="https://data.vlaanderen.be/ns/weg#Rijrichting" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/weg#Rijrichting" data-placement="right">Rijrichting</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Richting waarin het verkeer zich over de weg beweegt.</dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersdomeinobject">Verkeersdomeinobject</a>, 
+                        <a href="https://data.vlaanderen.be/ns/transportnetwerk#Transporteigenschap">Transporteigenschap</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Rijrichting%3A"></a>, 
+                      <a href="#Rijrichting%3Anetwerkreferentie">netwerkreferentie</a>, 
+                      <a href="#Rijrichting%3Arijrichting">rijrichting</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Rijrichting%3A" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/verkeersmetingen#tellingnetwerkreferentieelement">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/verkeersmetingen#tellingnetwerkreferentieelement" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#tellingnetwerkreferentieelement" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="https://data.vlaanderen.be/ns/weg#Wegsegment" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/weg#Wegsegment" data-placement="right">Wegsegment</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Rijrichting%3Anetwerkreferentie" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/netwerk#netwerkreferentie">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/netwerk#netwerkreferentie" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/netwerk#netwerkreferentie" data-placement="right">
+                            netwerkreferentie</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="https://data.vlaanderen.be/ns/netwerk#Netwerkreferentie" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/netwerk#Netwerkreferentie" data-placement="right">Netwerkreferentie</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Verwijzing naar het Netwerkelement waarop de Rijrichting betrekking heeft.</td>
+                        <td property="vann:usageNote">In de context van dit applicatieprofiel is het Netwerkelement een Wegsegment of een Weglinksequentie. De Netwerkreferentie laat ook toe om Rijstroken te specifiëren voor slechts een stuk van de weg of voor één bepaalde wegkant.</td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Rijrichting%3Arijrichting" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/weg#rijrichting">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/weg#rijrichting" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/weg#rijrichting" data-placement="right">
+                            rijrichting</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2004/02/skos/core#Concept" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#Concept" data-placement="right">Rijrichtingtype</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">De rijrichting.</td>
+                        <td property="vann:usageNote">Deze wordt beschreven tov de richting van de geometrie van de weg: gelijklopend met of tegengesteld aan die richting. De richting van de geometrie wordt bepaald door de volgorde waarin de coördinaten op elkaar volgen.</td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Sensor"><a href="https://www.w3.org/ns/sosa/Sensor" data-toggle="tooltip" data-content="https://www.w3.org/ns/sosa/Sensor" data-placement="right">Sensor</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden.</dd>
+                    
+                    <dt>Gebruik</dt><dd>Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor.</dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="https://www.w3.org/TR/vocab-ssn/#ssn-system">Systeem</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Sensor%3Aimplementeert">implementeert</a>, 
+                      <a href="#Sensor%3Aligging">ligging</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Sensor%3Aimplementeert" typeof="rdfs:Property" resource="http://www.w3.org/ns/ssn/implements">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/ssn/implements" data-toggle="tooltip" data-content="http://www.w3.org/ns/ssn/implements" data-placement="right">
+                            implementeert</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Observatieprocedure" data-placement="right">Observatieprocedure</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Observatieprocedure die door de Sensor wordt toegepast.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Sensor%3Aligging" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/verkeersmetingen#ligging">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/verkeersmetingen#ligging" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#ligging" data-placement="right">
+                            ligging</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/ns/prov#Location" data-toggle="tooltip" data-content="http://www.w3.org/ns/prov#Location" data-placement="right">Locatie</a>
+                            
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Locatie van de Sensor.</td>
+                        <td property="vann:usageNote">Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren.</td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Verkeerskenmerk"><a href="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk" data-placement="right">Verkeerskenmerk</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer.</dd>
+                    
+                    <dt>Gebruik</dt><dd>Bvb de gemiddelde snelheid van auto's langs een Meetpunt of de verkeersIntensiteit van fietsen op een Wegsegment bvb uitgedrukt in aantal voertuigen of de snelheid van een individueel Voertuig etc.</dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType">Kenmerktype</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Verkeerskenmerk%3A"></a>, 
+                      <a href="#Verkeerskenmerk%3Atype">type</a>, 
+                      <a href="#Verkeerskenmerk%3Averkeersdeelnemertype">verkeersdeelnemertype</a>, 
+                      <a href="#Verkeerskenmerk%3AvoertuigType">voertuigType</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Verkeerskenmerk%3A" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/verkeersmetingen#tellingtype">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/verkeersmetingen#tellingtype" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#tellingtype" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2004/02/skos/core#Concept" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#Concept" data-placement="right">Verkeerskenmerktype</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Verkeerskenmerk%3Atype" typeof="rdfs:Property" resource="http://purl.org/dc/elements/1.1/type">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://purl.org/dc/elements/1.1/type" data-toggle="tooltip" data-content="http://purl.org/dc/elements/1.1/type" data-placement="right">
+                            type</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Verkeerskenmerk" data-placement="right">Verkeerskenmerk</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Type vh Verkeerskenmerk.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Verkeerskenmerk%3Averkeersdeelnemertype" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/verkeersmetingen#verkeersdeelnemerType">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/verkeersmetingen#verkeersdeelnemerType" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#verkeersdeelnemerType" data-placement="right">
+                            verkeersdeelnemertype</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2004/02/skos/core#Concept" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#Concept" data-placement="right">Verkeersdeelnemertype</a>
+                            
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Soort Verkeersdeelnemer waarvan men het Verkeerskenmerk meet.</td>
+                        <td property="vann:usageNote">Bvb "Voetganger" als men enkel het aantal Voertgangers wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Verkeersdeelnemer zijn maar bvb een Wegsegment of Rijstrook etc.</td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Verkeerskenmerk%3AvoertuigType" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType" data-placement="right">
+                            voertuigType</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="https://data.vlaanderen.be/ns/transportnetwerk#Voertuigtype" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/transportnetwerk#Voertuigtype" data-placement="right">Voertuigtype</a>
+                            
+                          
+                        </td>
+                        <td>1..*</td>
+                        <td property="rdfs:comment">Soort Voertuig waarvan men het Verkeerskenmerk meet.</td>
+                        <td property="vann:usageNote">Bvb "Fiets" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc.</td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Verkeersmeetpunt"><a href="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt" data-placement="right">Verkeersmeetpunt</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Punt waarlangs men kenmerken van het voorbijkomend verkeer meet.</dd>
+                    
+                    <dt>Gebruik</dt><dd>Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft.</dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersbemonsteringsobject">Verkeersbemonsteringsobject</a>, 
+                        <a href="http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint">Bemonsteringspunt</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Verkeersmeetpunt%3A"></a>, 
+                      <a href="#Verkeersmeetpunt%3A"></a>, 
+                      <a href="#Verkeersmeetpunt%3Ageometrie">geometrie</a>, 
+                      <a href="#Verkeersmeetpunt%3Anetwerkreferentie">netwerkreferentie</a>, 
+                      <a href="#Verkeersmeetpunt%3Awegdeel">wegdeel</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Verkeersmeetpunt%3A" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/verkeersmetingen#telpuntnetwerkreferentie">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/verkeersmetingen#telpuntnetwerkreferentie" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#telpuntnetwerkreferentie" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="https://data.vlaanderen.be/ns/netwerk#Puntreferentie" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/netwerk#Puntreferentie" data-placement="right">Puntreferentie</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Verkeersmeetpunt%3A" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Rijrichting" data-placement="right">Rijrichting</a>
+			    
+                          
+                        </td>
+                        <td></td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Verkeersmeetpunt%3Ageometrie" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape" data-placement="right">
+                            geometrie</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.opengis.net/ont/sf#Point" data-toggle="tooltip" data-content="http://www.opengis.net/ont/sf#Point" data-placement="right">Punt</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">Vorm- en positiekenmerken van het meetpunt.</td>
+                        <td property="vann:usageNote">Datatype vd geometrie is Punt.</td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Verkeersmeetpunt%3Anetwerkreferentie" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt.netwerkreferentie">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt.netwerkreferentie" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt.netwerkreferentie" data-placement="right">
+                            netwerkreferentie</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="https://data.vlaanderen.be/ns/netwerk#Netwerkreferentie" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/netwerk#Netwerkreferentie" data-placement="right">Netwerkreferentie</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt.</td>
+                        <td property="vann:usageNote">Nuttig als men weet langs welk Wegsegment het punt ligt en aan welke kant van de weg en op welke afstand van het beginpunt. Alternatief voor of aanvulling op coördinaten. Ook noodzakelijk om aan te geven over welk Wegsegment en aan welke kant ervan de Voertuigen rijden waarvan men bvb de snelheid meet.
+</td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Verkeersmeetpunt%3Awegdeel" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt.wegdeel">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt.wegdeel" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt.wegdeel" data-placement="right">
+                            wegdeel</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="https://data.vlaanderen.be/ns/verkeersmetingen#Wegdeel" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#Wegdeel" data-placement="right">Wegdeel</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">Geeft aan welke op welk Wegdeel het Verkeersmeetpunt gelegen is of betrekking heeft.</td>
+                        <td property="vann:usageNote">Alternatief voor of aanvulling op geometrie of netwerkreferentie. Ook noodzakelijk om aan te geven op welk deel van de weg de Voertuigen of Verkeersdeelnemers waarvan men een kenmerk meet zich bevinden, bvb op een bepaalde Rijstrook of op het Fietspad of het Voetpad.</td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+
+            
+            <div class="region region--no-space-top">
+              <h2 class="h2">Datatypes</h2>
+            </div>
+            
+            <div class="region region--no-space-top">
+              
+              <h3 class="h3" id=""><a href="http://fixme.com#Instant" data-toggle="tooltip" data-content="http://fixme.com#Instant" data-placement="right"></a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd></dd>
+                    
+		    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor dit datatype zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#%3A"></a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                      
+                      <tr id="%3A" typeof="rdfs:Property" resource="http://fixme.com#inXSDDateTime">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://fixme.com#inXSDDateTime" data-toggle="tooltip" data-content="http://fixme.com#inXSDDateTime" data-placement="right"></a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#dateTime" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#dateTime" data-placement="right">DateTime</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+                
+            </div>
+            
+            <div class="region region--no-space-top">
+              
+              <h3 class="h3" id=""><a href="http://fixme.com#ProperInterval - Copy" data-toggle="tooltip" data-content="http://fixme.com#ProperInterval - Copy" data-placement="right"></a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd></dd>
+                    
+		    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor dit datatype zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                      
+                      <tr id="%3A" typeof="rdfs:Property" resource="http://fixme.com#hasEnd">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://fixme.com#hasEnd" data-toggle="tooltip" data-content="http://fixme.com#hasEnd" data-placement="right"></a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Instant" data-placement="right">Instant</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="%3A" typeof="rdfs:Property" resource="http://fixme.com#hasBeginning">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://fixme.com#hasBeginning" data-toggle="tooltip" data-content="http://fixme.com#hasBeginning" data-placement="right"></a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Instant" data-placement="right">Instant</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+                
+            </div>
+            
+            <div class="region region--no-space-top">
+              
+              <h3 class="h3" id="Puntreferentie"><a href="https://data.vlaanderen.be/ns/netwerk#Puntreferentie" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/netwerk#Puntreferentie" data-placement="right">Puntreferentie</a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Netwerkreferentie beperkt tot een punt langs de Link of Linksequentie waarnaar ze verwijst.</dd>
+                    
+		    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor dit datatype zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Puntreferentie%3Aelement">element</a>, 
+                      <a href="#Puntreferentie%3AopPositie">opPositie</a>, 
+                      <a href="#Puntreferentie%3AtoepassingsRichting">toepassingsRichting</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                      
+                      <tr id="Puntreferentie%3Aelement" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/netwerk#Linkreferentie.element">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/netwerk#Linkreferentie.element" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/netwerk#Linkreferentie.element" data-placement="right">element</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="https://data.vlaanderen.be/ns/weg#Wegsegment" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/weg#Wegsegment" data-placement="right">Wegsegment</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Verwijzing naar de Link of Linksequentie.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Puntreferentie%3AopPositie" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/netwerk#Puntreferentie.opPositie">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/netwerk#Puntreferentie.opPositie" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/netwerk#Puntreferentie.opPositie" data-placement="right">opPositie</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://def.isotc211.org/iso19103/2015/MeasureTypes#Length" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19103/2015/MeasureTypes#Length" data-placement="right">Lengte</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Afstand vanaf het begin van de Link of Linksequentie tot het punt waar de Netwerkeigenschap geldt.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Puntreferentie%3AtoepassingsRichting" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting" data-placement="right">toepassingsRichting</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2004/02/skos/core#Concept" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#Concept" data-placement="right">Toepassingsrichtingtype</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie.</td>
+                        <td property="vann:usageNote">Mogelijke richtingen zijn gelijklopend met de geometrie, tegengesteld aan de geometrie of beide. Indien gelijklopend of tegengesteld wordt verondersteld dat de eigenschap voorkomt aan de rechterkant van de Link volgens die richting. Bvb als de toepassingsrichting van de straatverlichting gelijklopend is wil dat zeggen dat rechts van de Link straatverlichting aanwezig is.</td>
+                        <td></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+                
+            </div>
+            
+            
+            <div class="region region--no-space-top" id="jsonld">
+                <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">JSON-LD context</h2>
+                (niet normatief)
+                
+                <p>Een herbruikbare JSON-LD context definitie voor dit implementatiemodel is terug te vinden op: <a href="/doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27/context/Verkeersmetingen-im.jsonld" target="_blank">/doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27/context/Verkeersmetingen-im.jsonld</a></p>
+                
+            </div>
+            <div class="region region--no-space-top" id="shacl">
+                <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">SHACL template</h2>
+                (niet normatief)
+                
+                <p>Een herbruikbare SHACL template definitie voor dit implementatiemodel is terug te vinden op: <a href="/doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27/shacl/Verkeersmetingen-im-SHACL.ttl" target="_blank">/doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27/shacl/Verkeersmetingen-im-SHACL.ttl</a></p>
+                
+            </div>
+          </div>
+          <div class="col--3-12 col--12-12--s col--4-12--m push--1-12 push--reset--m" id="sideNav">
+              <nav class="side-navigation js-sticky region" id="sideNav">
+                  <div class="side-navigation__content js-scrollspy">
+                      <div class="side-navigation__group">
+                          <ul>
+                              <li class="side-navigation__item">
+                                  <a href="#introduction">Inleiding</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#summary">Samenvatting</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#status">Status van dit document</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#license">Licentie</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#conformance">Conformiteit</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#overview">Overzicht</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#jsonld">JSON-LD Context</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#shacl">SHACL template</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+    <!-- End page content -->
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="https://dij151upo6vad.cloudfront.net/2.latest/js/vlaanderen-ui.js"></script>
+
+  <style>
+    @media screen {  /* hide from IE3 */
+      a[href]:hover { background: #ffa }
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    tr:nth-child(even) td     { background-color:#eee; }
+
+    dt, dd { margin-top: 0; margin-bottom: 0 } /* opera 3.50 */
+    dt { font-weight: bold }
+
+    pre, code { font-family: monospace } /* navigator 4 requires this */
+
+    em {
+          font-style: italic;
+    }
+
+    img {
+       width: 100%;
+    }
+
+    .tooltip {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 800;
+      display: none;
+      max-width: 128rem;
+      background: #fff;
+      border: 1px solid #ccc;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-size: 1.4rem;
+      color: #000;
+      background-clip: padding-box;
+    }
+  </style>
+</body>
+</html>

@@ -1,0 +1,3454 @@
+{
+  "@context": {
+    "affiliation": {
+      "@id": "http://schema.org/affiliation"
+    },
+    "authors": {
+      "@id": "foaf:maker",
+      "@type": "foaf:Person"
+    },
+    "classes": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "contributors": {
+      "@id": "dcterms:contributor",
+      "@type": "foaf:Person"
+    },
+    "datatypes": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "domain": {
+      "@id": "rdfs:domain"
+    },
+    "editors": {
+      "@id": "rec:editor",
+      "@type": "foaf:Person"
+    },
+    "externals": {
+      "@id": "rdfs:seeAlso",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class"
+    },
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "generalization": {
+      "@id": "rdfs:subPropertyOf"
+    },
+    "issued": {
+      "@id": "dcterms:issued"
+    },
+    "label": {
+      "@container": "@language",
+      "@id": "rdfs:label"
+    },
+    "maxCardinality": {
+      "@id": "sh:maxCount"
+    },
+    "minCardinality": {
+      "@id": "sh:minCount"
+    },
+    "modified": {
+      "@id": "dcterms:modified",
+      "@type": "xsd:date"
+    },
+    "name": {
+      "@id": "rdfs:label"
+    },
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "person": "http://www.w3.org/ns/person#",
+    "properties": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "qb": "http://purl.org/linked-data/cube#",
+    "range": {
+      "@id": "rdfs:range"
+    },
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rec": "http://www.w3.org/2001/02pd/rec54#",
+    "sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
+    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+    "sh": "http://w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "vann": "http://purl.org/vocab/vann/",
+    "vlaanderen": "http://data.vlaanderen.be/ns/",
+    "void": "http://rdfs.org/ns/void#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "http://fixme.com",
+  "@type": "http://www.w3.org/2002/07/owl#Ontology",
+  "authors": [],
+  "branchtag": "main",
+  "classes": [
+    {
+      "@id": "http://fixme.com#Verkeerstelling",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{9C9C02E7-1253-4b05-84C1-93274ABD2496}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{9C9C02E7-1253-4b05-84C1-93274ABD2496}",
+        "EA-Name": "Verkeerstelling",
+        "EA-Package": "VSDS-Verkeerstelling",
+        "EA-Parents": "",
+        "EA-Parents2": [
+          {
+            "label": "Verkeersmeting",
+            "name": "Verkeersmeting",
+            "package": "OSLO-Verkeersmetingen",
+            "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting"
+          },
+          {
+            "label": "Telling",
+            "name": "Telling",
+            "package": "OSLO-ObservatiesEnMetingen",
+            "uri": "http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation"
+          }
+        ],
+        "EA-Type": "CLASS",
+        "RawTags": [],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": "",
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": "",
+        "parentclasses": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting, http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation",
+        "usage": ""
+      },
+      "inpackage": "ACTIVE_PACKAGE",
+      "name": "",
+      "parents": [
+        "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting",
+        "http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation"
+      ]
+    }
+  ],
+  "config": "config/config-ap.json",
+  "contributors": [],
+  "contributors-column": "Verkeersmetingen",
+  "contributors-file": "stakeholders.csv",
+  "diagram": "VSDS-Verkeerstelling",
+  "documentcommit": "cd6a37a4da4c5e91bd0a3497529578f8d8c3ecce",
+  "eap": "Verkeersmetingen-IM.eap",
+  "editors": [
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Van Ackere",
+      "foaf:lastName": "Samuel"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Thijs",
+      "foaf:lastName": "Geert"
+    }
+  ],
+  "externalproperties": [
+    {
+      "@id": "https://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.parameter",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{6F78409A-1707-4564-824E-36842F1DC6F5}",
+      "ap-definition-nl": {
+        "nl": "Willekeurig gegeven geassocieerd met de Observatieprocedure."
+      },
+      "ap-label-nl": {
+        "nl": "parameter"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Bv een parameter die een aspect van de Observatieprocedure beschrijft (bv de vereiste hoogte voor het observeren van windsnelheid) of een noodzakelijke omgevingsparameter (bv temperatuurbereik waarbinnen een labo-analyse moet plaatsvinden)."
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Willekeurig gegeven geassocieerd met de Observatieprocedure."
+      },
+      "domain": [
+        {
+          "EA-Name": "Observatieprocedure",
+          "uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Observatieprocedure",
+        "EA-Domain-Guid": "{A3059FBD-C1E7-4349-8384-8F514B023183}",
+        "EA-Guid": "{6F78409A-1707-4564-824E-36842F1DC6F5}",
+        "EA-Name": "parameter",
+        "EA-Package": "SSN/SOSA",
+        "EA-Range": "BenoemdeWaarde",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{F4E10B03-9767-4b06-BA92-535E21122838}",
+          "EA-Name": "BenoemdeWaarde",
+          "EA-Package": "OSLO-ObservatiesEnMetingen",
+          "uri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "parameter"
+          },
+          {
+            "key": "name",
+            "note": "null",
+            "value": "Observatieprocedure.parameter"
+          },
+          {
+            "key": "package",
+            "note": "null",
+            "value": "OSLO-SensorenEnBemonstering"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "parameter"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Willekeurig gegeven geassocieerd met de Observatieprocedure."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "Bv een parameter die een aspect van de Observatieprocedure beschrijft (bv de vereiste hoogte voor het observeren van windsnelheid) of een noodzakelijke omgevingsparameter (bv temperatuurbereik waarbinnen een labo-analyse moet plaatsvinden)."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.parameter"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Willekeurig gegeven geassocieerd met de Observatieprocedure."
+        },
+        "ap-label-nl": {
+          "nl": "parameter"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Bv een parameter die een aspect van de Observatieprocedure beschrijft (bv de vereiste hoogte voor het observeren van windsnelheid) of een noodzakelijke omgevingsparameter (bv temperatuurbereik waarbinnen een labo-analyse moet plaatsvinden)."
+        },
+        "definition": {
+          "nl": "Willekeurig gegeven geassocieerd met de Observatieprocedure."
+        },
+        "label": {
+          "nl": "parameter"
+        },
+        "usage": {
+          "nl": "Bv een parameter die een aspect van de Observatieprocedure beschrijft (bv de vereiste hoogte voor het observeren van windsnelheid) of een noodzakelijke omgevingsparameter (bv temperatuurbereik waarbinnen een labo-analyse moet plaatsvinden)."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "parameter"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "parameter",
+      "range": [
+        {
+          "EA-GUID": "{F4E10B03-9767-4b06-BA92-535E21122838}",
+          "EA-Name": "BenoemdeWaarde",
+          "EA-Package": "OSLO-ObservatiesEnMetingen",
+          "uri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue"
+        }
+      ],
+      "usage": {
+        "nl": "Bv een parameter die een aspect van de Observatieprocedure beschrijft (bv de vereiste hoogte voor het observeren van windsnelheid) of een noodzakelijke omgevingsparameter (bv temperatuurbereik waarbinnen een labo-analyse moet plaatsvinden)."
+      }
+    },
+    {
+      "@id": "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{08BA936D-44F3-420f-9E42-82994C3B7E89}",
+      "ap-definition-nl": {
+        "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+      },
+      "ap-label-nl": {
+        "nl": "fenomeenTijd"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn."
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+      },
+      "domain": [
+        {
+          "EA-Name": "Verkeerstelling",
+          "uri": "http://fixme.com#Verkeerstelling"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Verkeerstelling",
+        "EA-Domain-Guid": "{9C9C02E7-1253-4b05-84C1-93274ABD2496}",
+        "EA-Guid": "{08BA936D-44F3-420f-9E42-82994C3B7E89}",
+        "EA-Name": "fenomeenTijd",
+        "EA-Package": "VSDS-Verkeerstelling",
+        "EA-Range": "ProperInterval",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{A684AFDD-DE0B-4442-A75E-461358C61B47}",
+          "EA-Name": "ProperInterval",
+          "EA-Package": "Time",
+          "uri": "http://fixme.com#ProperInterval"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "fenomeenTijd"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "fenomeenTijd"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+        },
+        "ap-label-nl": {
+          "nl": "fenomeenTijd"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn."
+        },
+        "definition": {
+          "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+        },
+        "label": {
+          "nl": "fenomeenTijd"
+        },
+        "usage": {
+          "nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "fenomeenTijd"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "fenomeenTijd",
+      "range": [
+        {
+          "EA-GUID": "{A684AFDD-DE0B-4442-A75E-461358C61B47}",
+          "EA-Name": "ProperInterval",
+          "EA-Package": "Time",
+          "uri": "http://fixme.com#ProperInterval"
+        }
+      ],
+      "usage": {
+        "nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/weg#rijrichting",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{DF397868-554C-432f-B8E3-338F37528EB8}",
+      "ap-definition-nl": {
+        "nl": "De rijrichting."
+      },
+      "ap-label-nl": {
+        "nl": "rijrichting"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Deze wordt beschreven tov de richting van de geometrie van de weg: gelijklopend met of tegengesteld aan die richting. De richting van de geometrie wordt bepaald door de volgorde waarin de coördinaten op elkaar volgen."
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "De rijrichting."
+      },
+      "domain": [
+        {
+          "EA-Name": "Rijrichting",
+          "uri": "https://data.vlaanderen.be/ns/weg#Rijrichting"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Rijrichting",
+        "EA-Domain-Guid": "{F475BC99-8F8C-42fa-8AFC-97D937475E85}",
+        "EA-Guid": "{DF397868-554C-432f-B8E3-338F37528EB8}",
+        "EA-Name": "rijrichting",
+        "EA-Package": "OSLO-Verkeersmetingen",
+        "EA-Range": "Rijrichtingtype",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{61D8E530-32CD-41e8-A1DC-4C2118C9E1AE}",
+          "EA-Name": "Rijrichtingtype",
+          "EA-Package": "OSLO-Verkeersmetingen",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "rijrichting"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/weg#rijrichting"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "rijrichting"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "De rijrichting."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "Deze wordt beschreven tov de richting van de geometrie van de weg: gelijklopend met of tegengesteld aan die richting. De richting van de geometrie wordt bepaald door de volgorde waarin de coördinaten op elkaar volgen."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "De rijrichting."
+        },
+        "ap-label-nl": {
+          "nl": "rijrichting"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Deze wordt beschreven tov de richting van de geometrie van de weg: gelijklopend met of tegengesteld aan die richting. De richting van de geometrie wordt bepaald door de volgorde waarin de coördinaten op elkaar volgen."
+        },
+        "definition": {
+          "nl": "De rijrichting."
+        },
+        "label": {
+          "nl": "rijrichting"
+        },
+        "usage": {
+          "nl": "Deze wordt beschreven tov de richting van de geometrie van de weg: gelijklopend met of tegengesteld aan die richting. De richting van de geometrie wordt bepaald door de volgorde waarin de coördinaten op elkaar volgen."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "rijrichting"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "rijrichting",
+      "range": [
+        {
+          "EA-GUID": "{61D8E530-32CD-41e8-A1DC-4C2118C9E1AE}",
+          "EA-Name": "Rijrichtingtype",
+          "EA-Package": "OSLO-Verkeersmetingen",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ],
+      "usage": {
+        "nl": "Deze wordt beschreven tov de richting van de geometrie van de weg: gelijklopend met of tegengesteld aan die richting. De richting van de geometrie wordt bepaald door de volgorde waarin de coördinaten op elkaar volgen."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{CF9C3D94-2593-4911-AFB0-26E1C2D262AB}",
+      "ap-definition-nl": {
+        "nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
+      },
+      "ap-label-nl": {
+        "nl": "voertuigType"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc."
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
+      },
+      "domain": [
+        {
+          "EA-Name": "Verkeerskenmerk",
+          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Verkeerskenmerk",
+        "EA-Domain-Guid": "{CCF671D1-65E5-4164-80DC-A55676E447D2}",
+        "EA-Guid": "{CF9C3D94-2593-4911-AFB0-26E1C2D262AB}",
+        "EA-Name": "voertuigType",
+        "EA-Package": "OSLO-Verkeersmetingen",
+        "EA-Range": "Voertuigtype",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{64EE5960-3F3B-44f0-B16F-98DB641FF786}",
+          "EA-Name": "Voertuigtype",
+          "EA-Package": "INSPIRE-Transportnetwerk",
+          "uri": "https://data.vlaanderen.be/ns/transportnetwerk#Voertuigtype"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "voertuigType"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "voertuigType"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc."
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "null",
+            "value": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
+        },
+        "ap-label-nl": {
+          "nl": "voertuigType"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc."
+        },
+        "definition": {
+          "nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
+        },
+        "label": {
+          "nl": "voertuigType"
+        },
+        "usage": {
+          "nl": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "voertuigType"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "1",
+      "name": "voertuigType",
+      "range": [
+        {
+          "EA-GUID": "{64EE5960-3F3B-44f0-B16F-98DB641FF786}",
+          "EA-Name": "Voertuigtype",
+          "EA-Package": "INSPIRE-Transportnetwerk",
+          "uri": "https://data.vlaanderen.be/ns/transportnetwerk#Voertuigtype"
+        }
+      ],
+      "usage": {
+        "nl": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#verkeersdeelnemerType",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{EC4722C1-6C3C-4de7-B2D4-37DAB77A27ED}",
+      "ap-definition-nl": {
+        "nl": "Soort Verkeersdeelnemer waarvan men het Verkeerskenmerk meet."
+      },
+      "ap-label-nl": {
+        "nl": "verkeersdeelnemertype"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Bvb \"Voetganger\" als men enkel het aantal Voertgangers wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Verkeersdeelnemer zijn maar bvb een Wegsegment of Rijstrook etc."
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Soort Verkeersdeelnemer waarvan men het Verkeerskenmerk meet."
+      },
+      "domain": [
+        {
+          "EA-Name": "Verkeerskenmerk",
+          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Verkeerskenmerk",
+        "EA-Domain-Guid": "{CCF671D1-65E5-4164-80DC-A55676E447D2}",
+        "EA-Guid": "{EC4722C1-6C3C-4de7-B2D4-37DAB77A27ED}",
+        "EA-Name": "verkeersdeelnemerType",
+        "EA-Package": "OSLO-Verkeersmetingen",
+        "EA-Range": "Verkeersdeelnemertype",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{F151595A-76BA-4645-9FDC-D1B0FA637997}",
+          "EA-Name": "Verkeersdeelnemertype",
+          "EA-Package": "OSLO-Verkeersmetingen",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "verkeersdeelnemertype"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Soort Verkeersdeelnemer waarvan men het Verkeerskenmerk meet."
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "verkeersdeelnemertype"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Soort Verkeersdeelnemer waarvan men het Verkeerskenmerk meet."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "Bvb \"Voetganger\" als men enkel het aantal Voertgangers wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Verkeersdeelnemer zijn maar bvb een Wegsegment of Rijstrook etc."
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "null",
+            "value": "Bvb \"Voetganger\" als men enkel het aantal Voertgangers wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Verkeersdeelnemer zijn maar bvb een Wegsegment of Rijstrook etc."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Soort Verkeersdeelnemer waarvan men het Verkeerskenmerk meet."
+        },
+        "ap-label-nl": {
+          "nl": "verkeersdeelnemertype"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Bvb \"Voetganger\" als men enkel het aantal Voertgangers wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Verkeersdeelnemer zijn maar bvb een Wegsegment of Rijstrook etc."
+        },
+        "definition": {
+          "nl": "Soort Verkeersdeelnemer waarvan men het Verkeerskenmerk meet."
+        },
+        "label": {
+          "nl": "verkeersdeelnemertype"
+        },
+        "usage": {
+          "nl": "Bvb \"Voetganger\" als men enkel het aantal Voertgangers wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Verkeersdeelnemer zijn maar bvb een Wegsegment of Rijstrook etc."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "verkeersdeelnemertype"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "verkeersdeelnemertype",
+      "range": [
+        {
+          "EA-GUID": "{F151595A-76BA-4645-9FDC-D1B0FA637997}",
+          "EA-Name": "Verkeersdeelnemertype",
+          "EA-Package": "OSLO-Verkeersmetingen",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ],
+      "usage": {
+        "nl": "Bvb \"Voetganger\" als men enkel het aantal Voertgangers wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Verkeersdeelnemer zijn maar bvb een Wegsegment of Rijstrook etc."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#telpuntnetwerkreferentie",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{52414853-0857-4630-9CA7-3C1889B82C27}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "Verkeersmeetpunt",
+          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Verkeersmeetpunt",
+        "EA-Domain-Guid": "{84DECA56-0848-4297-A791-E0316CDC69CF}",
+        "EA-Guid": "{52414853-0857-4630-9CA7-3C1889B82C27}",
+        "EA-Name": "telpuntnetwerkreferentie",
+        "EA-Package": "OSLO-Verkeersmetingen",
+        "EA-Range": "Puntreferentie",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{A3BFE246-F22F-427d-8A16-CC9C40EFE22E}",
+          "EA-Name": "Puntreferentie",
+          "EA-Package": "INSPIRE-netwerk",
+          "uri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie"
+        },
+        "RawTags": [],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": "",
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": "",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "",
+      "range": [
+        {
+          "EA-GUID": "{A3BFE246-F22F-427d-8A16-CC9C40EFE22E}",
+          "EA-Name": "Puntreferentie",
+          "EA-Package": "INSPIRE-netwerk",
+          "uri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#tellingtype",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{22FB3E3F-D955-47a6-8E37-4C88B1F58C6F}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "Verkeerskenmerk",
+          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Verkeerskenmerk",
+        "EA-Domain-Guid": "{CCF671D1-65E5-4164-80DC-A55676E447D2}",
+        "EA-Guid": "{22FB3E3F-D955-47a6-8E37-4C88B1F58C6F}",
+        "EA-Name": "tellingtype",
+        "EA-Package": "OSLO-Verkeersmetingen",
+        "EA-Range": "Verkeerskenmerktype",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{4546C09B-B040-4ca4-9FB5-08D06C3454B9}",
+          "EA-Name": "Verkeerskenmerktype",
+          "EA-Package": "OSLO-Verkeersmetingen",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": "",
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": "",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "",
+      "range": [
+        {
+          "EA-GUID": "{4546C09B-B040-4ca4-9FB5-08D06C3454B9}",
+          "EA-Name": "Verkeerskenmerktype",
+          "EA-Package": "OSLO-Verkeersmetingen",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#tellingnetwerkreferentieelement",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{D0FC4E26-48C8-4a28-BD9A-D6BD94C4C450}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "Rijrichting",
+          "uri": "https://data.vlaanderen.be/ns/weg#Rijrichting"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Rijrichting",
+        "EA-Domain-Guid": "{F475BC99-8F8C-42fa-8AFC-97D937475E85}",
+        "EA-Guid": "{D0FC4E26-48C8-4a28-BD9A-D6BD94C4C450}",
+        "EA-Name": "tellingnetwerkreferentieelement",
+        "EA-Package": "OSLO-Verkeersmetingen",
+        "EA-Range": "Wegsegment",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{A74FEDDC-177C-430a-80BF-5D15C5278C01}",
+          "EA-Name": "Wegsegment",
+          "EA-Package": "INSPIRE-Weg",
+          "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment"
+        },
+        "RawTags": [],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": "",
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": "",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "",
+      "range": [
+        {
+          "EA-GUID": "{A74FEDDC-177C-430a-80BF-5D15C5278C01}",
+          "EA-Name": "Wegsegment",
+          "EA-Package": "INSPIRE-Weg",
+          "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#ligging",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{34CAD925-9990-4440-8D3B-1C7A2D324E5B}",
+      "ap-definition-nl": {
+        "nl": "Locatie van de Sensor."
+      },
+      "ap-label-nl": {
+        "nl": "ligging"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Locatie van de Sensor."
+      },
+      "domain": [
+        {
+          "EA-Name": "Sensor",
+          "uri": "https://www.w3.org/ns/sosa/Sensor"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Sensor",
+        "EA-Domain-Guid": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
+        "EA-Guid": "{34CAD925-9990-4440-8D3B-1C7A2D324E5B}",
+        "EA-Name": "ligging",
+        "EA-Package": "SSN/SOSA",
+        "EA-Range": "Locatie",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{E214F098-F563-483c-A095-65A105394C36}",
+          "EA-Name": "Locatie",
+          "EA-Package": "OSLO-Verkeersmetingen",
+          "uri": "http://www.w3.org/ns/prov#Location"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "ligging"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "ligging"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Locatie van de Sensor."
+          },
+          {
+            "key": "package",
+            "note": "null",
+            "value": "OSLO-Verkeersmetingen"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Locatie van de Sensor."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren.",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Locatie van de Sensor."
+        },
+        "ap-label-nl": {
+          "nl": "ligging"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
+        },
+        "definition": {
+          "nl": "Locatie van de Sensor."
+        },
+        "label": {
+          "nl": "ligging"
+        },
+        "usage": {
+          "nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "ligging"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "ligging",
+      "range": [
+        {
+          "EA-GUID": "{E214F098-F563-483c-A095-65A105394C36}",
+          "EA-Name": "Locatie",
+          "EA-Package": "OSLO-Verkeersmetingen",
+          "uri": "http://www.w3.org/ns/prov#Location"
+        }
+      ],
+      "usage": {
+        "nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{7E2D3AF5-D5EB-4407-9F0A-ED496B9670FC}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "Verkeersmeetpunt",
+          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [],
+        "EA-Domain": "Verkeersmeetpunt",
+        "EA-Domain-Guid": "{84DECA56-0848-4297-A791-E0316CDC69CF}",
+        "EA-Guid": "{7E2D3AF5-D5EB-4407-9F0A-ED496B9670FC}",
+        "EA-Name": "bemonsterdObject",
+        "EA-Package": "",
+        "EA-Range": "Rijrichting",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{F475BC99-8F8C-42fa-8AFC-97D937475E85}",
+          "EA-Name": "Rijrichting",
+          "EA-Package": "OSLO-Verkeersmetingen",
+          "uri": "https://data.vlaanderen.be/ns/weg#Rijrichting"
+        },
+        "RawTags": [],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": "",
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "derived": "false",
+        "destRole": "bemonsterdObject",
+        "label": "",
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "name": "",
+      "range": [
+        {
+          "EA-GUID": "{F475BC99-8F8C-42fa-8AFC-97D937475E85}",
+          "EA-Name": "Rijrichting",
+          "EA-Package": "OSLO-Verkeersmetingen",
+          "uri": "https://data.vlaanderen.be/ns/weg#Rijrichting"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt.wegdeel",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{10462306-BBFF-4c5b-820D-9A28AC37E33C}",
+      "ap-definition-nl": {
+        "nl": "Geeft aan welke op welk Wegdeel het Verkeersmeetpunt gelegen is of betrekking heeft."
+      },
+      "ap-label-nl": {
+        "nl": "wegdeel"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Alternatief voor of aanvulling op geometrie of netwerkreferentie. Ook noodzakelijk om aan te geven op welk deel van de weg de Voertuigen of Verkeersdeelnemers waarvan men een kenmerk meet zich bevinden, bvb op een bepaalde Rijstrook of op het Fietspad of het Voetpad."
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Geeft aan welke op welk Wegdeel het Verkeersmeetpunt gelegen is of betrekking heeft."
+      },
+      "domain": [
+        {
+          "EA-Name": "Verkeersmeetpunt",
+          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Verkeersmeetpunt",
+        "EA-Domain-Guid": "{84DECA56-0848-4297-A791-E0316CDC69CF}",
+        "EA-Guid": "{10462306-BBFF-4c5b-820D-9A28AC37E33C}",
+        "EA-Name": "wegdeel",
+        "EA-Package": "OSLO-Verkeersmetingen",
+        "EA-Range": "Wegdeel",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{49BDB313-5E07-40eb-A64B-40827FFC648A}",
+          "EA-Name": "Wegdeel",
+          "EA-Package": "Hulppakket",
+          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Wegdeel"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "wegdeel"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Geeft aan welke op welk Wegdeel het Verkeersmeetpunt gelegen is of betrekking heeft."
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "wegdeel"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Geeft aan welke op welk Wegdeel het Verkeersmeetpunt gelegen is of betrekking heeft."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Alternatief voor of aanvulling op geometrie of netwerkreferentie. Ook noodzakelijk om aan te geven op welk deel van de weg de Voertuigen of Verkeersdeelnemers waarvan men een kenmerk meet zich bevinden, bvb op een bepaalde Rijstrook of op het Fietspad of het Voetpad.",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "Alternatief voor of aanvulling op geometrie of netwerkreferentie. Ook noodzakelijk om aan te geven op welk deel van de weg de Voertuigen of Verkeersdeelnemers waarvan men een kenmerk meet zich bevinden, bvb op een bepaalde Rijstrook of op het Fietspad of het Voetpad.",
+            "value": "NOTE"
+          },
+          {
+            "key": "name",
+            "note": "null",
+            "value": "Verkeersmeetpunt.wegdeel"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Geeft aan welke op welk Wegdeel het Verkeersmeetpunt gelegen is of betrekking heeft."
+        },
+        "ap-label-nl": {
+          "nl": "wegdeel"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Alternatief voor of aanvulling op geometrie of netwerkreferentie. Ook noodzakelijk om aan te geven op welk deel van de weg de Voertuigen of Verkeersdeelnemers waarvan men een kenmerk meet zich bevinden, bvb op een bepaalde Rijstrook of op het Fietspad of het Voetpad."
+        },
+        "definition": {
+          "nl": "Geeft aan welke op welk Wegdeel het Verkeersmeetpunt gelegen is of betrekking heeft."
+        },
+        "label": {
+          "nl": "wegdeel"
+        },
+        "usage": {
+          "nl": "Alternatief voor of aanvulling op geometrie of netwerkreferentie. Ook noodzakelijk om aan te geven op welk deel van de weg de Voertuigen of Verkeersdeelnemers waarvan men een kenmerk meet zich bevinden, bvb op een bepaalde Rijstrook of op het Fietspad of het Voetpad."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "wegdeel"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "wegdeel",
+      "range": [
+        {
+          "EA-GUID": "{49BDB313-5E07-40eb-A64B-40827FFC648A}",
+          "EA-Name": "Wegdeel",
+          "EA-Package": "Hulppakket",
+          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Wegdeel"
+        }
+      ],
+      "usage": {
+        "nl": "Alternatief voor of aanvulling op geometrie of netwerkreferentie. Ook noodzakelijk om aan te geven op welk deel van de weg de Voertuigen of Verkeersdeelnemers waarvan men een kenmerk meet zich bevinden, bvb op een bepaalde Rijstrook of op het Fietspad of het Voetpad."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt.netwerkreferentie",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{B61FC9A0-0BD3-4e09-8513-CC72AF0D5D56}",
+      "ap-definition-nl": {
+        "nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
+      },
+      "ap-label-nl": {
+        "nl": "netwerkreferentie"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Nuttig als men weet langs welk Wegsegment het punt ligt en aan welke kant van de weg en op welke afstand van het beginpunt. Alternatief voor of aanvulling op coördinaten. Ook noodzakelijk om aan te geven over welk Wegsegment en aan welke kant ervan de Voertuigen rijden waarvan men bvb de snelheid meet.\r\n"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
+      },
+      "domain": [
+        {
+          "EA-Name": "Verkeersmeetpunt",
+          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Verkeersmeetpunt",
+        "EA-Domain-Guid": "{84DECA56-0848-4297-A791-E0316CDC69CF}",
+        "EA-Guid": "{B61FC9A0-0BD3-4e09-8513-CC72AF0D5D56}",
+        "EA-Name": "netwerkreferentie",
+        "EA-Package": "OSLO-Verkeersmetingen",
+        "EA-Range": "Netwerkreferentie",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{D77B05FC-5561-4d2e-A613-AFE8679BEFC1}",
+          "EA-Name": "Netwerkreferentie",
+          "EA-Package": "INSPIRE-netwerk",
+          "uri": "https://data.vlaanderen.be/ns/netwerk#Netwerkreferentie"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "netwerkreferentie"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "netwerkreferentie"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Nuttig als men weet langs welk Wegsegment het punt ligt en aan welke kant van de weg en op welke afstand van het beginpunt. Alternatief voor of aanvulling op coördinaten. Ook noodzakelijk om aan te geven over welk Wegsegment en aan welke kant ervan de Voertuigen rijden waarvan men bvb de snelheid meet.\r\n",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "Nuttig als men weet langs welk Wegsegment het punt ligt en aan welke kant van de weg en op welke afstand van het beginpunt. Alternatief voor of aanvulling op coördinaten. Ook noodzakelijk om aan te geven over welk Wegsegment en aan welke kant ervan de Voertuigen rijden waarvan men bvb de snelheid meet.\r\n",
+            "value": "NOTE"
+          },
+          {
+            "key": "name",
+            "note": "null",
+            "value": "Verkeersmeetpunt.netwerkreferentie"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
+        },
+        "ap-label-nl": {
+          "nl": "netwerkreferentie"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Nuttig als men weet langs welk Wegsegment het punt ligt en aan welke kant van de weg en op welke afstand van het beginpunt. Alternatief voor of aanvulling op coördinaten. Ook noodzakelijk om aan te geven over welk Wegsegment en aan welke kant ervan de Voertuigen rijden waarvan men bvb de snelheid meet.\r\n"
+        },
+        "definition": {
+          "nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
+        },
+        "label": {
+          "nl": "netwerkreferentie"
+        },
+        "usage": {
+          "nl": "Nuttig als men weet langs welk Wegsegment het punt ligt en aan welke kant van de weg en op welke afstand van het beginpunt. Alternatief voor of aanvulling op coördinaten. Ook noodzakelijk om aan te geven over welk Wegsegment en aan welke kant ervan de Voertuigen rijden waarvan men bvb de snelheid meet.\r\n"
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "netwerkreferentie"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "netwerkreferentie",
+      "range": [
+        {
+          "EA-GUID": "{D77B05FC-5561-4d2e-A613-AFE8679BEFC1}",
+          "EA-Name": "Netwerkreferentie",
+          "EA-Package": "INSPIRE-netwerk",
+          "uri": "https://data.vlaanderen.be/ns/netwerk#Netwerkreferentie"
+        }
+      ],
+      "usage": {
+        "nl": "Nuttig als men weet langs welk Wegsegment het punt ligt en aan welke kant van de weg en op welke afstand van het beginpunt. Alternatief voor of aanvulling op coördinaten. Ook noodzakelijk om aan te geven over welk Wegsegment en aan welke kant ervan de Voertuigen rijden waarvan men bvb de snelheid meet.\r\n"
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Observatieprocedure.specificatie",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{A961E12C-13B7-48b5-A89E-2D7D1185611C}",
+      "ap-definition-nl": {
+        "nl": "Verwijzing naar een document dat de Observatieprocedure beschrijft."
+      },
+      "ap-label-nl": {
+        "nl": "specificatie"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Verwijzing naar een document dat de Observatieprocedure beschrijft."
+      },
+      "domain": [
+        {
+          "EA-Name": "Observatieprocedure",
+          "uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Observatieprocedure",
+        "EA-Domain-Guid": "{A3059FBD-C1E7-4349-8384-8F514B023183}",
+        "EA-Guid": "{A961E12C-13B7-48b5-A89E-2D7D1185611C}",
+        "EA-Name": "specificatie",
+        "EA-Package": "SSN/SOSA",
+        "EA-Range": "URI",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "URI",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#anyURI"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "specificatie"
+          },
+          {
+            "key": "name",
+            "note": "null",
+            "value": "Observatieprocedure.specificatie"
+          },
+          {
+            "key": "package",
+            "note": "null",
+            "value": "OSLO-SensorenEnBemonstering"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "specificatie"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Verwijzing naar een document dat de Observatieprocedure beschrijft."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Observatieprocedure.specificatie"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Verwijzing naar een document dat de Observatieprocedure beschrijft."
+        },
+        "ap-label-nl": {
+          "nl": "specificatie"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Verwijzing naar een document dat de Observatieprocedure beschrijft."
+        },
+        "label": {
+          "nl": "specificatie"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "specificatie"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "specificatie",
+      "range": [
+        {
+          "EA-Name": "URI",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#anyURI"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/netwerk#netwerkreferentie",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{2C0C4043-021D-4394-AFEC-27CBEA07A5F0}",
+      "ap-definition-nl": {
+        "nl": "Verwijzing naar het Netwerkelement waarop de Rijrichting betrekking heeft."
+      },
+      "ap-label-nl": {
+        "nl": "netwerkreferentie"
+      },
+      "ap-usageNote-nl": {
+        "nl": "In de context van dit applicatieprofiel is het Netwerkelement een Wegsegment of een Weglinksequentie. De Netwerkreferentie laat ook toe om Rijstroken te specifiëren voor slechts een stuk van de weg of voor één bepaalde wegkant."
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Verwijzing naar het Netwerkelement waarop de Rijrichting betrekking heeft."
+      },
+      "domain": [
+        {
+          "EA-Name": "Rijrichting",
+          "uri": "https://data.vlaanderen.be/ns/weg#Rijrichting"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Rijrichting",
+        "EA-Domain-Guid": "{F475BC99-8F8C-42fa-8AFC-97D937475E85}",
+        "EA-Guid": "{2C0C4043-021D-4394-AFEC-27CBEA07A5F0}",
+        "EA-Name": "^netwerkreferentie",
+        "EA-Package": "OSLO-Verkeersmetingen",
+        "EA-Range": "Netwerkreferentie",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{D77B05FC-5561-4d2e-A613-AFE8679BEFC1}",
+          "EA-Name": "Netwerkreferentie",
+          "EA-Package": "INSPIRE-netwerk",
+          "uri": "https://data.vlaanderen.be/ns/netwerk#Netwerkreferentie"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "netwerkreferentie"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "netwerkreferentie"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Verwijzing naar het Netwerkelement waarop de Rijrichting betrekking heeft."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/netwerk#netwerkreferentie"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "In de context van dit applicatieprofiel is het Netwerkelement een Wegsegment of een Weglinksequentie. De Netwerkreferentie laat ook toe om Rijstroken te specifiëren voor slechts een stuk van de weg of voor één bepaalde wegkant."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Verwijzing naar het Netwerkelement waarop de Rijrichting betrekking heeft."
+        },
+        "ap-label-nl": {
+          "nl": "netwerkreferentie"
+        },
+        "ap-usageNote-nl": {
+          "nl": "In de context van dit applicatieprofiel is het Netwerkelement een Wegsegment of een Weglinksequentie. De Netwerkreferentie laat ook toe om Rijstroken te specifiëren voor slechts een stuk van de weg of voor één bepaalde wegkant."
+        },
+        "definition": {
+          "nl": "Verwijzing naar het Netwerkelement waarop de Rijrichting betrekking heeft."
+        },
+        "label": {
+          "nl": "netwerkreferentie"
+        },
+        "usage": {
+          "nl": "In de context van dit applicatieprofiel is het Netwerkelement een Wegsegment of een Weglinksequentie. De Netwerkreferentie laat ook toe om Rijstroken te specifiëren voor slechts een stuk van de weg of voor één bepaalde wegkant."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "netwerkreferentie"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "netwerkreferentie",
+      "range": [
+        {
+          "EA-GUID": "{D77B05FC-5561-4d2e-A613-AFE8679BEFC1}",
+          "EA-Name": "Netwerkreferentie",
+          "EA-Package": "INSPIRE-netwerk",
+          "uri": "https://data.vlaanderen.be/ns/netwerk#Netwerkreferentie"
+        }
+      ],
+      "usage": {
+        "nl": "In de context van dit applicatieprofiel is het Netwerkelement een Wegsegment of een Weglinksequentie. De Netwerkreferentie laat ook toe om Rijstroken te specifiëren voor slechts een stuk van de weg of voor één bepaalde wegkant."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie.opPositie",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{2C64B5EB-1449-4241-BEEE-9A6D6CEE1F8A}",
+      "ap-definition-nl": {
+        "nl": "Afstand vanaf het begin van de Link of Linksequentie tot het punt waar de Netwerkeigenschap geldt."
+      },
+      "ap-label-nl": {
+        "nl": "opPositie"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Afstand vanaf het begin van de Link of Linksequentie tot het punt waar de Netwerkeigenschap geldt."
+      },
+      "domain": [
+        {
+          "EA-Name": "Puntreferentie - Copy",
+          "uri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Puntreferentie - Copy",
+        "EA-Domain-Guid": "{FEF275E4-D5D2-400b-8B56-DEC54C0738A0}",
+        "EA-Guid": "{2C64B5EB-1449-4241-BEEE-9A6D6CEE1F8A}",
+        "EA-Name": "opPositie",
+        "EA-Package": "INSPIRE-netwerk",
+        "EA-Range": "Lengte",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{117BB863-5BF5-4019-AA23-D591C462BA66}",
+          "EA-Name": "Lengte",
+          "EA-Package": "Schema.org",
+          "uri": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Length"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "op positie"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "opPositie"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Afstand vanaf het begin van de Link of Linksequentie tot het punt waar de Netwerkeigenschap geldt."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie.opPositie"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Afstand vanaf het begin van de Link of Linksequentie tot het punt waar de Netwerkeigenschap geldt."
+        },
+        "ap-label-nl": {
+          "nl": "opPositie"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Afstand vanaf het begin van de Link of Linksequentie tot het punt waar de Netwerkeigenschap geldt."
+        },
+        "label": {
+          "nl": "opPositie"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "opPositie"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "opPositie",
+      "range": [
+        {
+          "EA-GUID": "{117BB863-5BF5-4019-AA23-D591C462BA66}",
+          "EA-Name": "Lengte",
+          "EA-Package": "Schema.org",
+          "uri": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Length"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{0CE9287E-8130-4fc5-9EFF-5074F9AF8DFD}",
+      "ap-definition-nl": {
+        "nl": "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie."
+      },
+      "ap-label-nl": {
+        "nl": "toepassingsRichting"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Mogelijke richtingen zijn gelijklopend met de geometrie, tegengesteld aan de geometrie of beide. Indien gelijklopend of tegengesteld wordt verondersteld dat de eigenschap voorkomt aan de rechterkant van de Link volgens die richting. Bvb als de toepassingsrichting van de straatverlichting gelijklopend is wil dat zeggen dat rechts van de Link straatverlichting aanwezig is."
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie."
+      },
+      "domain": [
+        {
+          "EA-Name": "Puntreferentie - Copy",
+          "uri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Puntreferentie - Copy",
+        "EA-Domain-Guid": "{FEF275E4-D5D2-400b-8B56-DEC54C0738A0}",
+        "EA-Guid": "{0CE9287E-8130-4fc5-9EFF-5074F9AF8DFD}",
+        "EA-Name": "^toepassingsRichting",
+        "EA-Package": "INSPIRE-netwerk",
+        "EA-Range": "Toepassingsrichtingtype",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{EC67803A-1019-4ed6-9C7D-2E42246C1D43}",
+          "EA-Name": "Toepassingsrichtingtype",
+          "EA-Package": "INSPIRE-netwerk",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Mogelijke richtingen zijn gelijklopend met de geometrie, tegengesteld aan de geometrie of beide. Indien gelijklopend of tegengesteld wordt verondersteld dat de eigenschap voorkomt aan de rechterkant van de Link volgens die richting. Bvb als de toepassingsrichting van de straatverlichting gelijklopend is wil dat zeggen dat rechts van de Link straatverlichting aanwezig is.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "toepassingsrichting"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "toepassingsRichting"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie."
+        },
+        "ap-label-nl": {
+          "nl": "toepassingsRichting"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Mogelijke richtingen zijn gelijklopend met de geometrie, tegengesteld aan de geometrie of beide. Indien gelijklopend of tegengesteld wordt verondersteld dat de eigenschap voorkomt aan de rechterkant van de Link volgens die richting. Bvb als de toepassingsrichting van de straatverlichting gelijklopend is wil dat zeggen dat rechts van de Link straatverlichting aanwezig is."
+        },
+        "definition": {
+          "nl": "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie."
+        },
+        "label": {
+          "nl": "toepassingsRichting"
+        },
+        "usage": {
+          "nl": "Mogelijke richtingen zijn gelijklopend met de geometrie, tegengesteld aan de geometrie of beide. Indien gelijklopend of tegengesteld wordt verondersteld dat de eigenschap voorkomt aan de rechterkant van de Link volgens die richting. Bvb als de toepassingsrichting van de straatverlichting gelijklopend is wil dat zeggen dat rechts van de Link straatverlichting aanwezig is."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "toepassingsRichting"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "toepassingsRichting",
+      "range": [
+        {
+          "EA-GUID": "{EC67803A-1019-4ed6-9C7D-2E42246C1D43}",
+          "EA-Name": "Toepassingsrichtingtype",
+          "EA-Package": "INSPIRE-netwerk",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ],
+      "usage": {
+        "nl": "Mogelijke richtingen zijn gelijklopend met de geometrie, tegengesteld aan de geometrie of beide. Indien gelijklopend of tegengesteld wordt verondersteld dat de eigenschap voorkomt aan de rechterkant van de Link volgens die richting. Bvb als de toepassingsrichting van de straatverlichting gelijklopend is wil dat zeggen dat rechts van de Link straatverlichting aanwezig is."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/netwerk#Linkreferentie.element",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{CBB4403F-2482-4a74-8767-C2372DCFF5C8}",
+      "ap-definition-nl": {
+        "nl": "Verwijzing naar de Link of Linksequentie."
+      },
+      "ap-label-nl": {
+        "nl": "element"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Verwijzing naar de Link of Linksequentie."
+      },
+      "domain": [
+        {
+          "EA-Name": "Puntreferentie - Copy",
+          "uri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Puntreferentie - Copy",
+        "EA-Domain-Guid": "{FEF275E4-D5D2-400b-8B56-DEC54C0738A0}",
+        "EA-Guid": "{CBB4403F-2482-4a74-8767-C2372DCFF5C8}",
+        "EA-Name": "element",
+        "EA-Package": "INSPIRE-netwerk",
+        "EA-Range": "Wegsegment",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{A74FEDDC-177C-430a-80BF-5D15C5278C01}",
+          "EA-Name": "Wegsegment",
+          "EA-Package": "INSPIRE-Weg",
+          "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "element"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/netwerk#Linkreferentie.element"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Verwijzing naar de Link of Linksequentie."
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "element"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Verwijzing naar de Link of Linksequentie."
+        },
+        "ap-label-nl": {
+          "nl": "element"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Verwijzing naar de Link of Linksequentie."
+        },
+        "label": {
+          "nl": "element"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "element"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "element",
+      "range": [
+        {
+          "EA-GUID": "{A74FEDDC-177C-430a-80BF-5D15C5278C01}",
+          "EA-Name": "Wegsegment",
+          "EA-Package": "INSPIRE-Weg",
+          "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/ns/ssn/implements",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{5A65B170-8D73-4426-BE86-B1696B322BF8}",
+      "ap-definition-nl": {
+        "nl": "Observatieprocedure die door de Sensor wordt toegepast."
+      },
+      "ap-label-nl": {
+        "nl": "implementeert"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Observatieprocedure die door de Sensor wordt toegepast."
+      },
+      "domain": [
+        {
+          "EA-Name": "Sensor",
+          "uri": "https://www.w3.org/ns/sosa/Sensor"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "uri",
+            "note": "http://www.w3.org/ns/ssn/implements",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "Observatieprocedure die door de Sensor wordt toegepast.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "implementeert",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "implementeert",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Sensor",
+        "EA-Domain-Guid": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
+        "EA-Guid": "{5A65B170-8D73-4426-BE86-B1696B322BF8}",
+        "EA-Name": "implementeert",
+        "EA-Package": "",
+        "EA-Range": "Observatieprocedure",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{A3059FBD-C1E7-4349-8384-8F514B023183}",
+          "EA-Name": "Observatieprocedure",
+          "EA-Package": "SSN/SOSA",
+          "uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "http://www.w3.org/ns/ssn/implements",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "Observatieprocedure die door de Sensor wordt toegepast.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "implementeert",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "implementeert",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Observatieprocedure die door de Sensor wordt toegepast."
+        },
+        "ap-label-nl": {
+          "nl": "implementeert"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Observatieprocedure die door de Sensor wordt toegepast."
+        },
+        "derived": "false",
+        "destRole": "implementeert",
+        "label": {
+          "nl": "implementeert"
+        },
+        "sourceRole": "geïmplementeerdMet",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "implementeert"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "implementeert",
+      "range": [
+        {
+          "EA-GUID": "{A3059FBD-C1E7-4349-8384-8F514B023183}",
+          "EA-Name": "Observatieprocedure",
+          "EA-Package": "SSN/SOSA",
+          "uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/ns/ssn/implementedBy",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{5A65B170-8D73-4426-BE86-B1696B322BF8}",
+      "ap-definition-nl": {
+        "nl": "Sensor waarmee de Observatieprocedure is of moet worden uitgevoerd."
+      },
+      "ap-label-nl": {
+        "nl": "geïmplementeerdMet"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Sensor waarmee de Observatieprocedure is of moet worden uitgevoerd."
+      },
+      "domain": [
+        {
+          "EA-Name": "Observatieprocedure",
+          "uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "Sensor waarmee de Observatieprocedure is of moet worden uitgevoerd.",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "geïmplementeerdMet",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "geïmplementeerdMet",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "geïmplementeerdMet",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://www.w3.org/ns/ssn/implementedBy",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Observatieprocedure",
+        "EA-Domain-Guid": "{A3059FBD-C1E7-4349-8384-8F514B023183}",
+        "EA-Guid": "{5A65B170-8D73-4426-BE86-B1696B322BF8}",
+        "EA-Name": "geïmplementeerdMet",
+        "EA-Package": "",
+        "EA-Range": "Sensor",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
+          "EA-Name": "Sensor",
+          "EA-Package": "SSN/SOSA",
+          "uri": "https://www.w3.org/ns/sosa/Sensor"
+        },
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "Sensor waarmee de Observatieprocedure is of moet worden uitgevoerd.",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "geïmplementeerdMet",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "geïmplementeerdMet",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "geïmplementeerdMet",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://www.w3.org/ns/ssn/implementedBy",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Sensor waarmee de Observatieprocedure is of moet worden uitgevoerd."
+        },
+        "ap-label-nl": {
+          "nl": "geïmplementeerdMet"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Sensor waarmee de Observatieprocedure is of moet worden uitgevoerd."
+        },
+        "derived": "false",
+        "destRole": "geïmplementeerdMet",
+        "label": {
+          "nl": "geïmplementeerdMet"
+        },
+        "sourceRole": "implementeert",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "geïmplementeerdMet"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "geïmplementeerdMet",
+      "range": [
+        {
+          "EA-GUID": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
+          "EA-Name": "Sensor",
+          "EA-Package": "SSN/SOSA",
+          "uri": "https://www.w3.org/ns/sosa/Sensor"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/ns/ssn/hasOutput",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{4E0F21DF-0E3B-4613-A7F4-A01A83580F42}",
+      "ap-definition-nl": {
+        "nl": "Verwijzing naar de Output die de Procedure genereert."
+      },
+      "ap-label-nl": {
+        "nl": "output"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Verwijzing naar de Output die de Procedure genereert."
+      },
+      "domain": [
+        {
+          "EA-Name": "Observatieprocedure",
+          "uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Observatieprocedure",
+        "EA-Domain-Guid": "{A3059FBD-C1E7-4349-8384-8F514B023183}",
+        "EA-Guid": "{4E0F21DF-0E3B-4613-A7F4-A01A83580F42}",
+        "EA-Name": "output",
+        "EA-Package": "SSN/SOSA",
+        "EA-Range": "Output",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{A1B15787-239E-436b-9E40-FEE9C77B7A78}",
+          "EA-Name": "Output",
+          "EA-Package": "SSN/SOSA",
+          "uri": "http://www.w3.org/ns/ssn/Output"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "output"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/ssn/hasOutput"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "output"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Verwijzing naar de Output die de Procedure genereert."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Verwijzing naar de Output die de Procedure genereert."
+        },
+        "ap-label-nl": {
+          "nl": "output"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Verwijzing naar de Output die de Procedure genereert."
+        },
+        "label": {
+          "nl": "output"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "output"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "output",
+      "range": [
+        {
+          "EA-GUID": "{A1B15787-239E-436b-9E40-FEE9C77B7A78}",
+          "EA-Name": "Output",
+          "EA-Package": "SSN/SOSA",
+          "uri": "http://www.w3.org/ns/ssn/Output"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/ns/ssn/hasInput",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{08F08E34-6057-40d6-A4DE-8E404E329937}",
+      "ap-definition-nl": {
+        "nl": "Verwijzing naar de Input die de procedure vereist."
+      },
+      "ap-label-nl": {
+        "nl": "input"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Verwijzing naar de Input die de procedure vereist."
+      },
+      "domain": [
+        {
+          "EA-Name": "Observatieprocedure",
+          "uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Observatieprocedure",
+        "EA-Domain-Guid": "{A3059FBD-C1E7-4349-8384-8F514B023183}",
+        "EA-Guid": "{08F08E34-6057-40d6-A4DE-8E404E329937}",
+        "EA-Name": "input",
+        "EA-Package": "SSN/SOSA",
+        "EA-Range": "Input",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{FB83108B-BC83-4522-81BB-F464E8BB14F2}",
+          "EA-Name": "Input",
+          "EA-Package": "SSN/SOSA",
+          "uri": "http://www.w3.org/ns/ssn/Input"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "input"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/ssn/hasInput"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "input"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Verwijzing naar de Input die de procedure vereist."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Verwijzing naar de Input die de procedure vereist."
+        },
+        "ap-label-nl": {
+          "nl": "input"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Verwijzing naar de Input die de procedure vereist."
+        },
+        "label": {
+          "nl": "input"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "input"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "input",
+      "range": [
+        {
+          "EA-GUID": "{FB83108B-BC83-4522-81BB-F464E8BB14F2}",
+          "EA-Name": "Input",
+          "EA-Package": "SSN/SOSA",
+          "uri": "http://www.w3.org/ns/ssn/Input"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.org/dc/elements/1.1/type",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{A852CCF8-AFCF-44e7-AE0C-C26E44127C20}",
+      "ap-definition-nl": {
+        "nl": "Type vh Verkeerskenmerk."
+      },
+      "ap-label-nl": {
+        "nl": "type"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Type vh Verkeerskenmerk."
+      },
+      "domain": [
+        {
+          "EA-Name": "Verkeerskenmerk",
+          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Verkeerskenmerk",
+        "EA-Domain-Guid": "{CCF671D1-65E5-4164-80DC-A55676E447D2}",
+        "EA-Guid": "{A852CCF8-AFCF-44e7-AE0C-C26E44127C20}",
+        "EA-Name": "type",
+        "EA-Package": "OSLO-Verkeersmetingen",
+        "EA-Range": "Verkeerskenmerk",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{CCF671D1-65E5-4164-80DC-A55676E447D2}",
+          "EA-Name": "Verkeerskenmerk",
+          "EA-Package": "OSLO-Verkeersmetingen",
+          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "type"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "type"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Type vh Verkeerskenmerk."
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Type vh Verkeerskenmerk."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://purl.org/dc/elements/1.1/type"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Type vh Verkeerskenmerk."
+        },
+        "ap-label-nl": {
+          "nl": "type"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Type vh Verkeerskenmerk."
+        },
+        "label": {
+          "nl": "type"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "type"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "type",
+      "range": [
+        {
+          "EA-GUID": "{CCF671D1-65E5-4164-80DC-A55676E447D2}",
+          "EA-Name": "Verkeerskenmerk",
+          "EA-Package": "OSLO-Verkeersmetingen",
+          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.org/cd/terms/type",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{994B998D-C69A-4195-9B7A-EBA5ED5AB4D8}",
+      "ap-definition-nl": {
+        "nl": "Aard van de Observatieprocedure."
+      },
+      "ap-label-nl": {
+        "nl": "type"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Aard van de Observatieprocedure."
+      },
+      "domain": [
+        {
+          "EA-Name": "Observatieprocedure",
+          "uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Observatieprocedure",
+        "EA-Domain-Guid": "{A3059FBD-C1E7-4349-8384-8F514B023183}",
+        "EA-Guid": "{994B998D-C69A-4195-9B7A-EBA5ED5AB4D8}",
+        "EA-Name": "type",
+        "EA-Package": "SSN/SOSA",
+        "EA-Range": "Observatieproceduretype",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{174A6689-CC80-4d25-A097-8715280E43FA}",
+          "EA-Name": "Observatieproceduretype",
+          "EA-Package": "OSLO-ObservatiesEnMetingen",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "type"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "type"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Aard van de Observatieprocedure."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://purl.org/cd/terms/type"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Aard van de Observatieprocedure."
+        },
+        "ap-label-nl": {
+          "nl": "type"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Aard van de Observatieprocedure."
+        },
+        "label": {
+          "nl": "type"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "type"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "type",
+      "range": [
+        {
+          "EA-GUID": "{174A6689-CC80-4d25-A097-8715280E43FA}",
+          "EA-Name": "Observatieproceduretype",
+          "EA-Package": "OSLO-ObservatiesEnMetingen",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ]
+    },
+    {
+      "@id": "http://fixme.com#inXSDDateTime",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{9FAA793A-C01C-4e2a-93F5-4E8402F8E873}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "Instant",
+          "uri": "http://fixme.com#Instant"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Instant",
+        "EA-Domain-Guid": "{5BD75379-5351-4362-B565-5948B65869F1}",
+        "EA-Guid": "{9FAA793A-C01C-4e2a-93F5-4E8402F8E873}",
+        "EA-Name": "inXSDDateTime",
+        "EA-Package": "Time",
+        "EA-Range": "DateTime",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "RawTags": [],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": "",
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": "",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "",
+      "range": [
+        {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ]
+    },
+    {
+      "@id": "http://fixme.com#hasEnd",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{E40C8537-1B6E-4bd1-9BAC-534BA0730457}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "ProperInterval - Copy",
+          "uri": "http://fixme.com#ProperInterval - Copy"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "ProperInterval - Copy",
+        "EA-Domain-Guid": "{BBB016F0-FC2A-4d73-89DE-1AFD18004BE2}",
+        "EA-Guid": "{E40C8537-1B6E-4bd1-9BAC-534BA0730457}",
+        "EA-Name": "hasEnd",
+        "EA-Package": "Time",
+        "EA-Range": "Instant",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{5BD75379-5351-4362-B565-5948B65869F1}",
+          "EA-Name": "Instant",
+          "EA-Package": "Time",
+          "uri": "http://fixme.com#Instant"
+        },
+        "RawTags": [],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": "",
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": "",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "",
+      "range": [
+        {
+          "EA-GUID": "{5BD75379-5351-4362-B565-5948B65869F1}",
+          "EA-Name": "Instant",
+          "EA-Package": "Time",
+          "uri": "http://fixme.com#Instant"
+        }
+      ]
+    },
+    {
+      "@id": "http://fixme.com#hasBeginning",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{81CA0739-0385-4f0e-9B0E-0A018B76A904}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "ProperInterval - Copy",
+          "uri": "http://fixme.com#ProperInterval - Copy"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "ProperInterval - Copy",
+        "EA-Domain-Guid": "{BBB016F0-FC2A-4d73-89DE-1AFD18004BE2}",
+        "EA-Guid": "{81CA0739-0385-4f0e-9B0E-0A018B76A904}",
+        "EA-Name": "hasBeginning",
+        "EA-Package": "Time",
+        "EA-Range": "Instant",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{5BD75379-5351-4362-B565-5948B65869F1}",
+          "EA-Name": "Instant",
+          "EA-Package": "Time",
+          "uri": "http://fixme.com#Instant"
+        },
+        "RawTags": [],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": "",
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": "",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "",
+      "range": [
+        {
+          "EA-GUID": "{5BD75379-5351-4362-B565-5948B65869F1}",
+          "EA-Name": "Instant",
+          "EA-Package": "Time",
+          "uri": "http://fixme.com#Instant"
+        }
+      ]
+    },
+    {
+      "@id": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{44E5A859-68B9-4e6c-96E8-6C693604090C}",
+      "ap-definition-nl": {
+        "nl": "Vorm- en positiekenmerken van het meetpunt."
+      },
+      "ap-label-nl": {
+        "nl": "geometrie"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Datatype vd geometrie is Punt."
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Vorm- en positiekenmerken van het meetpunt."
+      },
+      "domain": [
+        {
+          "EA-Name": "Verkeersmeetpunt",
+          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Verkeersmeetpunt",
+        "EA-Domain-Guid": "{84DECA56-0848-4297-A791-E0316CDC69CF}",
+        "EA-Guid": "{44E5A859-68B9-4e6c-96E8-6C693604090C}",
+        "EA-Name": "^geometrie",
+        "EA-Package": "OSLO-Verkeersmetingen",
+        "EA-Range": "Punt",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{2319C469-3BB7-4eaf-8C14-F375CAD76501}",
+          "EA-Name": "Punt",
+          "EA-Package": "OpenGIS",
+          "uri": "http://www.opengis.net/ont/sf#Point"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "geometrie"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "geometrie"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Vorm- en positiekenmerken van het meetpunt."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "Datatype vd geometrie is Punt."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Vorm- en positiekenmerken van het meetpunt."
+        },
+        "ap-label-nl": {
+          "nl": "geometrie"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Datatype vd geometrie is Punt."
+        },
+        "definition": {
+          "nl": "Vorm- en positiekenmerken van het meetpunt."
+        },
+        "label": {
+          "nl": "geometrie"
+        },
+        "usage": {
+          "nl": "Datatype vd geometrie is Punt."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "geometrie"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "geometrie",
+      "range": [
+        {
+          "EA-GUID": "{2319C469-3BB7-4eaf-8C14-F375CAD76501}",
+          "EA-Name": "Punt",
+          "EA-Package": "OpenGIS",
+          "uri": "http://www.opengis.net/ont/sf#Point"
+        }
+      ],
+      "usage": {
+        "nl": "Datatype vd geometrie is Punt."
+      }
+    },
+    {
+      "@id": "http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation.result",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{C1CB543B-8405-49e9-A065-5D52488DC598}",
+      "ap-definition-nl": {
+        "nl": "Resultaat van de Telling."
+      },
+      "ap-label-nl": {
+        "nl": "resultaat"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Resultaat van de Telling."
+      },
+      "domain": [
+        {
+          "EA-Name": "Verkeerstelling",
+          "uri": "http://fixme.com#Verkeerstelling"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Verkeerstelling",
+        "EA-Domain-Guid": "{9C9C02E7-1253-4b05-84C1-93274ABD2496}",
+        "EA-Guid": "{C1CB543B-8405-49e9-A065-5D52488DC598}",
+        "EA-Name": "resultaat",
+        "EA-Package": "VSDS-Verkeerstelling",
+        "EA-Range": "Integer",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "Integer",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation.result"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "resultaat"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Resultaat van de Telling."
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "resultaat"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Resultaat van de Telling."
+        },
+        "ap-label-nl": {
+          "nl": "resultaat"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Resultaat van de Telling."
+        },
+        "label": {
+          "nl": "resultaat"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "resultaat"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "resultaat",
+      "range": [
+        {
+          "EA-Name": "Integer",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      ]
+    }
+  ],
+  "externals": [
+    {
+      "@id": "http://fixme.com#Instant",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{5BD75379-5351-4362-B565-5948B65869F1}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{5BD75379-5351-4362-B565-5948B65869F1}",
+        "EA-Name": "Instant",
+        "EA-Package": "Time",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "DATATYPE",
+        "RawTags": [],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": "",
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": "",
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "name": ""
+    },
+    {
+      "@id": "http://fixme.com#ProperInterval - Copy",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{BBB016F0-FC2A-4d73-89DE-1AFD18004BE2}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{BBB016F0-FC2A-4d73-89DE-1AFD18004BE2}",
+        "EA-Name": "ProperInterval - Copy",
+        "EA-Package": "Time",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "DATATYPE",
+        "RawTags": [],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": "",
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": "",
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "name": ""
+    },
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{BDFC2C35-B046-47bc-AC6E-FEDE6DCE3DFF}",
+      "ap-definition-nl": {
+        "nl": "Type van verkeerskenmerk"
+      },
+      "ap-label-nl": {
+        "nl": "Verkeerskenmerktype"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Bv aantal,snelheid,"
+      },
+      "definition": {
+        "nl": "Type van verkeerskenmerk"
+      },
+      "extra": {
+        "EA-Guid": "{BDFC2C35-B046-47bc-AC6E-FEDE6DCE3DFF}",
+        "EA-Name": "Verkeerskenmerktype - Copy",
+        "EA-Package": "OSLO-Verkeersmetingen",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "ENUMERATION",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Type van verkeerskenmerk"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "Verkeerskenmerktype"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "Bv aantal,snelheid,"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Verkeerskenmerktype"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Type van verkeerskenmerk"
+        },
+        "ap-label-nl": {
+          "nl": "Verkeerskenmerktype"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Bv aantal,snelheid,"
+        },
+        "definition": {
+          "nl": "Type van verkeerskenmerk"
+        },
+        "label": {
+          "nl": "Verkeerskenmerktype"
+        },
+        "parentclasses": "",
+        "usage": {
+          "nl": "Bv aantal,snelheid,"
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Verkeerskenmerktype"
+      },
+      "name": "Verkeerskenmerktype",
+      "usage": {
+        "nl": "Bv aantal,snelheid,"
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{FEF275E4-D5D2-400b-8B56-DEC54C0738A0}",
+      "ap-definition-nl": {
+        "nl": "Netwerkreferentie beperkt tot een punt langs de Link of Linksequentie waarnaar ze verwijst."
+      },
+      "ap-label-nl": {
+        "nl": "Puntreferentie"
+      },
+      "definition": {
+        "nl": "Netwerkreferentie beperkt tot een punt langs de Link of Linksequentie waarnaar ze verwijst."
+      },
+      "extra": {
+        "EA-Guid": "{FEF275E4-D5D2-400b-8B56-DEC54C0738A0}",
+        "EA-Name": "Puntreferentie - Copy",
+        "EA-Package": "INSPIRE-netwerk",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Netwerkreferentie beperkt tot een punt langs de Link of Linksequentie waarnaar ze verwijst."
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "Puntreferentie"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "puntreferentie"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Netwerkreferentie beperkt tot een punt langs de Link of Linksequentie waarnaar ze verwijst."
+        },
+        "ap-label-nl": {
+          "nl": "Puntreferentie"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Netwerkreferentie beperkt tot een punt langs de Link of Linksequentie waarnaar ze verwijst."
+        },
+        "label": {
+          "nl": "Puntreferentie"
+        },
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Puntreferentie"
+      },
+      "name": "Puntreferentie"
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{CCF671D1-65E5-4164-80DC-A55676E447D2}",
+      "ap-definition-nl": {
+        "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
+      },
+      "ap-label-nl": {
+        "nl": "Verkeerskenmerk"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Bvb de gemiddelde snelheid van auto's langs een Meetpunt of de verkeersIntensiteit van fietsen op een Wegsegment bvb uitgedrukt in aantal voertuigen of de snelheid van een individueel Voertuig etc."
+      },
+      "definition": {
+        "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
+      },
+      "extra": {
+        "EA-Guid": "{CCF671D1-65E5-4164-80DC-A55676E447D2}",
+        "EA-Name": "Verkeerskenmerk",
+        "EA-Package": "OSLO-Verkeersmetingen",
+        "EA-Parents": "",
+        "EA-Parents2": [
+          {
+            "label": "",
+            "name": "Kenmerktype",
+            "package": "ISO",
+            "uri": "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType"
+          }
+        ],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Verkeerskenmerk"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "Verkeerskenmerk"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "Bvb de gemiddelde snelheid van auto's langs een Meetpunt of de verkeersIntensiteit van fietsen op een Wegsegment bvb uitgedrukt in aantal voertuigen of de snelheid van een individueel Voertuig etc."
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "null",
+            "value": "Bvb de gemiddelde snelheid van auto's langs een Meetpunt of de verkeersIntensiteit van fietsen op een Wegsegment bvb uitgedrukt in aantal voertuigen of de snelheid van een individueel Voertuig etc."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
+        },
+        "ap-label-nl": {
+          "nl": "Verkeerskenmerk"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Bvb de gemiddelde snelheid van auto's langs een Meetpunt of de verkeersIntensiteit van fietsen op een Wegsegment bvb uitgedrukt in aantal voertuigen of de snelheid van een individueel Voertuig etc."
+        },
+        "definition": {
+          "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
+        },
+        "label": {
+          "nl": "Verkeerskenmerk"
+        },
+        "parentclasses": "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType",
+        "usage": {
+          "nl": "Bvb de gemiddelde snelheid van auto's langs een Meetpunt of de verkeersIntensiteit van fietsen op een Wegsegment bvb uitgedrukt in aantal voertuigen of de snelheid van een individueel Voertuig etc."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Verkeerskenmerk"
+      },
+      "name": "Verkeerskenmerk",
+      "usage": {
+        "nl": "Bvb de gemiddelde snelheid van auto's langs een Meetpunt of de verkeersIntensiteit van fietsen op een Wegsegment bvb uitgedrukt in aantal voertuigen of de snelheid van een individueel Voertuig etc."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{84DECA56-0848-4297-A791-E0316CDC69CF}",
+      "ap-definition-nl": {
+        "nl": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet."
+      },
+      "ap-label-nl": {
+        "nl": "Verkeersmeetpunt"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft."
+      },
+      "definition": {
+        "nl": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet."
+      },
+      "extra": {
+        "EA-Guid": "{84DECA56-0848-4297-A791-E0316CDC69CF}",
+        "EA-Name": "Verkeersmeetpunt",
+        "EA-Package": "OSLO-Verkeersmetingen",
+        "EA-Parents": "",
+        "EA-Parents2": [
+          {
+            "label": "Verkeersbemonsteringsobject",
+            "name": "Verkeersbemonsteringsobject",
+            "package": "OSLO-Verkeersmetingen",
+            "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersbemonsteringsobject"
+          },
+          {
+            "label": "Bemonsteringspunt",
+            "name": "Bemonsteringspunt",
+            "package": "OSLO-ObservatiesEnMetingen",
+            "uri": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint"
+          }
+        ],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Verkeersmeetpunt"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "Verkeersmeetpunt"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft."
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet."
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "null",
+            "value": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet."
+        },
+        "ap-label-nl": {
+          "nl": "Verkeersmeetpunt"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft."
+        },
+        "definition": {
+          "nl": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet."
+        },
+        "label": {
+          "nl": "Verkeersmeetpunt"
+        },
+        "parentclasses": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersbemonsteringsobject, http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint",
+        "usage": {
+          "nl": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Verkeersmeetpunt"
+      },
+      "name": "Verkeersmeetpunt",
+      "usage": {
+        "nl": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/weg#Rijrichting",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{F475BC99-8F8C-42fa-8AFC-97D937475E85}",
+      "ap-definition-nl": {
+        "nl": "Richting waarin het verkeer zich over de weg beweegt."
+      },
+      "ap-label-nl": {
+        "nl": "Rijrichting"
+      },
+      "definition": {
+        "nl": "Richting waarin het verkeer zich over de weg beweegt."
+      },
+      "extra": {
+        "EA-Guid": "{F475BC99-8F8C-42fa-8AFC-97D937475E85}",
+        "EA-Name": "Rijrichting",
+        "EA-Package": "OSLO-Verkeersmetingen",
+        "EA-Parents": "",
+        "EA-Parents2": [
+          {
+            "label": "Verkeersdomeinobject",
+            "name": "Verkeersdomeinobject",
+            "package": "OSLO-Verkeersmetingen",
+            "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersdomeinobject"
+          },
+          {
+            "label": "Transporteigenschap",
+            "name": "Transporteigenschap",
+            "package": "INSPIRE-Transportnetwerk",
+            "uri": "https://data.vlaanderen.be/ns/transportnetwerk#Transporteigenschap"
+          }
+        ],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Rijrichting"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/weg#Rijrichting"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "Rijrichting"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Richting waarin het verkeer zich over de weg beweegt."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Richting waarin het verkeer zich over de weg beweegt."
+        },
+        "ap-label-nl": {
+          "nl": "Rijrichting"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Richting waarin het verkeer zich over de weg beweegt."
+        },
+        "label": {
+          "nl": "Rijrichting"
+        },
+        "parentclasses": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersdomeinobject, https://data.vlaanderen.be/ns/transportnetwerk#Transporteigenschap",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Rijrichting"
+      },
+      "name": "Rijrichting"
+    },
+    {
+      "@id": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{A3059FBD-C1E7-4349-8384-8F514B023183}",
+      "ap-definition-nl": {
+        "nl": "Een workflow, protocol, plan, algoritme of berekeningswijze waarin wordt gespecifieerd hoe een Observatie moet worden uitgevoerd."
+      },
+      "ap-label-nl": {
+        "nl": "Observatieprocedure"
+      },
+      "ap-usageNote-nl": {
+        "nl": "De procedure legt uit welke stappen uitgevoerd moeten worden om een reproduceerbaar resultaat te krijgen. Bv de correcte plaatsing van een windmeter (op een welbepaalde hoogte boven het grondoppervlak, bv 10m voor meteorologische waarnemingen). De procedures zijn doorgaans bedoeld om bij meer dan één Bemonstering te worden toegepast."
+      },
+      "definition": {
+        "nl": "Een workflow, protocol, plan, algoritme of berekeningswijze waarin wordt gespecifieerd hoe een Observatie moet worden uitgevoerd."
+      },
+      "extra": {
+        "EA-Guid": "{A3059FBD-C1E7-4349-8384-8F514B023183}",
+        "EA-Name": "Observatieprocedure",
+        "EA-Package": "SSN/SOSA",
+        "EA-Parents": "",
+        "EA-Parents2": [
+          {
+            "label": "Procedure",
+            "name": "Procedure",
+            "package": "SSN/SOSA",
+            "uri": "http://www.w3.org/ns/sosa/Procedure"
+          }
+        ],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "A workflow, protocol, plan, algorithm, or computational method specifying how to make an observation, create a sample, or make a change to the state of the world (via an actuator). A procedure is re-usable, and might be involved in many observations, samplings or actuations. It explains the steps to be carried out to arrived at reproducible results.",
+            "value": "Een workflow, protocol, plan, algoritme of berekeningswijze waarin wordt gespecifieerd hoe een Observatie moet worden uitgevoerd."
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "Observatieprocedure"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Observatieprocedure"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "De procedure legt uit welke stappen uitgevoerd moeten worden om een reproduceerbaar resultaat te krijgen. Bv de correcte plaatsing van een windmeter (op een welbepaalde hoogte boven het grondoppervlak, bv 10m voor meteorologische waarnemingen). De procedures zijn doorgaans bedoeld om bij meer dan één Bemonstering te worden toegepast.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Een workflow, protocol, plan, algoritme of berekeningswijze waarin wordt gespecifieerd hoe een Observatie moet worden uitgevoerd."
+        },
+        "ap-label-nl": {
+          "nl": "Observatieprocedure"
+        },
+        "ap-usageNote-nl": {
+          "nl": "De procedure legt uit welke stappen uitgevoerd moeten worden om een reproduceerbaar resultaat te krijgen. Bv de correcte plaatsing van een windmeter (op een welbepaalde hoogte boven het grondoppervlak, bv 10m voor meteorologische waarnemingen). De procedures zijn doorgaans bedoeld om bij meer dan één Bemonstering te worden toegepast."
+        },
+        "definition": {
+          "nl": "Een workflow, protocol, plan, algoritme of berekeningswijze waarin wordt gespecifieerd hoe een Observatie moet worden uitgevoerd."
+        },
+        "label": {
+          "nl": "Observatieprocedure"
+        },
+        "parentclasses": "http://www.w3.org/ns/sosa/Procedure",
+        "usage": {
+          "nl": "De procedure legt uit welke stappen uitgevoerd moeten worden om een reproduceerbaar resultaat te krijgen. Bv de correcte plaatsing van een windmeter (op een welbepaalde hoogte boven het grondoppervlak, bv 10m voor meteorologische waarnemingen). De procedures zijn doorgaans bedoeld om bij meer dan één Bemonstering te worden toegepast."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Observatieprocedure"
+      },
+      "name": "Observatieprocedure",
+      "usage": {
+        "nl": "De procedure legt uit welke stappen uitgevoerd moeten worden om een reproduceerbaar resultaat te krijgen. Bv de correcte plaatsing van een windmeter (op een welbepaalde hoogte boven het grondoppervlak, bv 10m voor meteorologische waarnemingen). De procedures zijn doorgaans bedoeld om bij meer dan één Bemonstering te worden toegepast."
+      }
+    },
+    {
+      "@id": "https://www.w3.org/ns/sosa/Sensor",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
+      "ap-definition-nl": {
+        "nl": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden."
+      },
+      "ap-label-nl": {
+        "nl": "Sensor"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
+      },
+      "definition": {
+        "nl": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden."
+      },
+      "extra": {
+        "EA-Guid": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
+        "EA-Name": "Sensor",
+        "EA-Package": "SSN/SOSA",
+        "EA-Parents": "",
+        "EA-Parents2": [
+          {
+            "label": "Systeem",
+            "name": "Systeem",
+            "package": "SSN/SOSA",
+            "uri": "https://www.w3.org/TR/vocab-ssn/#ssn-system"
+          }
+        ],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "Device, agent (including humans), or software (simulation) involved in, or implementing, a procedure. Sensors respond to a stimulus, e.e., a change in the environment, or Input data composed from the Results of prior observations, and generate a result. Sensors can be hosted by platforms.",
+            "value": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden."
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "Sensor"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Sensor"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://www.w3.org/ns/sosa/Sensor"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden."
+        },
+        "ap-label-nl": {
+          "nl": "Sensor"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
+        },
+        "definition": {
+          "nl": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden."
+        },
+        "label": {
+          "nl": "Sensor"
+        },
+        "parentclasses": "https://www.w3.org/TR/vocab-ssn/#ssn-system",
+        "usage": {
+          "nl": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Sensor"
+      },
+      "name": "Sensor",
+      "usage": {
+        "nl": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
+      }
+    }
+  ],
+  "extra": {
+    "EA-Guid": "{AAA0E425-E61A-410c-A3DD-AE544D9D8044}",
+    "EA-Name": "VSDS-Verkeerstelling",
+    "RawTags": [],
+    "issued": "TODO",
+    "license": "TODO"
+  },
+  "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/issues",
+  "filename": "config/verkeersmetingen-im.json",
+  "hostname": "https://implementatie.data.vlaanderen.be/",
+  "issued": "TODO",
+  "label": {
+    "en": "Verkeersmetingen-im",
+    "nl": "Verkeersmetingen-im"
+  },
+  "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+  "name": "Verkeersmetingen-im",
+  "navigation": {},
+  "properties": [
+    {
+      "@id": "http://fixme.com#tellingresultaat",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{4F8BC4D4-432A-4600-B8DE-063C52B0E46E}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "Verkeerstelling",
+          "uri": "http://fixme.com#Verkeerstelling"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Verkeerstelling",
+        "EA-Domain-Guid": "{9C9C02E7-1253-4b05-84C1-93274ABD2496}",
+        "EA-Guid": "{4F8BC4D4-432A-4600-B8DE-063C52B0E46E}",
+        "EA-Name": "tellingresultaat",
+        "EA-Package": "VSDS-Verkeerstelling",
+        "EA-Range": "Double",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "Double",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#double"
+        },
+        "RawTags": [],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": "",
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": "",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "",
+      "range": [
+        {
+          "EA-Name": "Double",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#double"
+        }
+      ]
+    }
+  ],
+  "publication-date": "2023-09-27",
+  "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+  "repository": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen",
+  "site": "site-skeleton/verkeersmetingen-im",
+  "standaardregisterurl": "https://data.vlaanderen.be/standaarden/",
+  "template": "mijn-implementatiemodel-im.j2",
+  "title": "Implementatiemodel Verkeersmetingen",
+  "toolchaincommit": "d82e5c9c50a9a3efb15e1ae931f2f07ae9d8f4ad",
+  "translation": [
+    {
+      "language": "nl",
+      "mergefile": "Verkeersmetingen-im_nl_merged.json",
+      "template": "mijn-implementatiemodel-im.j2",
+      "title": "Implementatiemodel Verkeersmetingen",
+      "translationjson": "Verkeersmetingen-im_nl.json"
+    }
+  ],
+  "type": "ap",
+  "urlref": "/doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27"
+}
