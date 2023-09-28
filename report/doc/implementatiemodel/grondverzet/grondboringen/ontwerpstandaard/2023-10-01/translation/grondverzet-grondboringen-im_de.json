@@ -1,0 +1,566 @@
+{
+  "baseURI": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#",
+  "classes": [],
+  "properties": [
+    {
+      "EA-Guid": "{70188AC8-BF3C-4107-855C-56AAFFFDDBC8}",
+      "name": "gebruikteprocedure",
+      "label": {
+        "nl": "gebruikteProcedure",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "TODO",
+        "de": "Enter your translation here"
+      }
+    }
+  ],
+  "externals": [
+    {
+      "EA-Guid": "{C38DBB1A-EB18-4590-A878-37846E648571}",
+      "name": "Boorgat",
+      "label": {
+        "nl": "Boorgat",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Curve ontstaan door het boren van een gat in een vast medium.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Laat toe om bv de variatie van een bepaald fenomeen langs die curve te observeren, bv de gelaagdheid van de ondergrond (typisch op basis van de boorkern of stalen daaruit genomen).",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+      "name": "Agent",
+      "label": {
+        "nl": "Agent",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Iemand die of iets dat kan handelen of een effect kan teweeg brengen.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{F3E202C7-63FB-434b-9666-B48355841A47}",
+      "name": "Lijnstring",
+      "label": {
+        "nl": "Lijnstring",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Curve met lineaire interpolatie tussen de punten. Elk opeenvolgend paar punten vormt een lijnsegment. De lijnstring heeft ten minste twee punten.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Een curve is een 1-dimensioneel geometrisch object gedefinieerd als een sequentie van punten. De interpolatie kan op verschillende manieren gebeuren (bv lineair bij een lijnstring).",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{5720A716-474C-4451-B7ED-50C2423DC51D}",
+      "name": "Geometrie",
+      "label": {
+        "nl": "Geometrie",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Vorm- en positiekenmerken van een object.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{B63A587A-A625-4ea9-A826-1928769F397B}",
+      "name": "Bekisting",
+      "label": {
+        "nl": "Bekisting",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Kenmerken van de afwerking van het boorgat in functie van de diepte.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Bv het gebruikte materiaal en de dikte ervan. Het verloop van de Bekisting wordt voorgesteld als een DiscreetCurvebereik, dwz dat ze verandert in discrete stappen (intervallen) in functie van de diepte.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{675FF6EE-0ED8-43aa-AC6D-B4D70C646CB1}",
+      "name": "Boor",
+      "label": {
+        "nl": "Boor",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Het hulpstuk dat kan geplaatst worden in een daartoe geschikte boorhouder van een boormachine en door middel van een draaiende en/of kloppende beweging ronde gate kan aanbrengen in diverse materialen.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{97CFB897-3C1B-416d-8F1A-4E58039DC966}",
+      "name": "Boorgatdiameter",
+      "label": {
+        "nl": "Boorgatdiameter",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Diameter van het boorgat in functie van de diepte.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Het verloop van de diameter wordt voorgesteld als een DiscreetCurvebereik, dwz dat ze verandert in discrete stappen (intervallen) in functie van de diepte.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{65F9561F-631D-4274-A66C-F159CE9DE724}",
+      "name": "Boormethode",
+      "label": {
+        "nl": "Boormethode",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Methode waarmee geboord werd in functie van de diepte.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Het verloop van de methode wordt voorgesteld als een DiscreetCurvebereik, dwz dat ze verandert in discrete stappen (intervallen) in functie van de diepte.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{BA85C1A3-5058-41f8-9C84-FDB92B01C7BC}",
+      "name": "Boormethodeinterval",
+      "label": {
+        "nl": "BoormethodeInterval",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Beschrijving van de Boormethode voor een bepaald diepte-interval.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Specialisatie van een CurveWaardepaar, dit is een Curve en de waarde die eraan is toegekend. De waarde is hier de beschrijving van de Boormethode van een Grondboring, terwijl de Curve aangeeft op welke dieptes deze beschrijving geldig is. De Curve van de Grondboring wordt hierbij als referentiesysteem gebruikt. OPGELET: Als de Curve van de Grondboring niet recht in de grond werd geboord zijn de opgegeven dieptes eerder afstanden langs deze Curve.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+      "name": "Grondboring",
+      "label": {
+        "nl": "Grondboring",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "De handeling van het boren van een smalle schacht in de grond.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Onder \"grond\" verstaan we hier het deel van de aardkorst onder het aardoppervlak. Het slaat zowel op de bodem als op wat zich daaronder bevindt (en hier ondergrond wordt genoemd).",
+        "de": "Enter your translation here"
+      }
+    }
+  ],
+  "externalproperties": [
+    {
+      "EA-Guid": "{B110E2E5-E77B-4146-8876-7C235A5B2247}",
+      "name": "wettelijkkader",
+      "label": {
+        "nl": "wettelijkKader",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Het kader dat vastlegt wat behoort tot de wet.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{3B759974-551C-49b4-A070-448B58770FFE}",
+      "name": "startpunt",
+      "label": {
+        "nl": "startpunt",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Aard van het oppervlak waarop de boorkraag is geplaatst.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Doorgaans het maaiveld maar andere mogelijkheden zijn bv bouwput, boortafel, dijk, bestaand boorgat",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
+      "name": "resultaat",
+      "label": {
+        "nl": "resultaat",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Het resultaat van de uitgevoerde grondboring.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
+      "name": "isresultaatvan",
+      "label": {
+        "nl": "isResultaatVan",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Grondboring waarvan het Boorgat het resultaat is.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{AE29C7FD-A3BE-4632-8E46-74E317260284}",
+      "name": "inclinatietype",
+      "label": {
+        "nl": "inclinatietype",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Algemene aanduiding van de richting waaronder werd geboord.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Verticaal, schuin, horizontaal...",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{18A58A4B-BD27-4ea7-A8A9-D2935CBFA7BF}",
+      "name": ""
+    },
+    {
+      "EA-Guid": "{248BECFF-F9E4-474e-AC4D-E2C35B55FBD3}",
+      "name": ""
+    },
+    {
+      "EA-Guid": "{BD2A820D-885E-4ca8-8686-50AC15D68B95}",
+      "name": "doel",
+      "label": {
+        "nl": "doel",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Reden waarom de Grondboring werd uitgevoerd.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Vb exploitatie, onderzoek, bemaling etc.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{572CB00D-FA45-46ec-A084-22C9572CB1DF}",
+      "name": "boringlengte",
+      "label": {
+        "nl": "boringLengte",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Lengte van de Grondboring.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Zoals verstrekt door de dataleverancier. Kan bv afgeleid zijn uit de geometrie van de Grondboring maar ook uit bv het resultaat van de LithologischeInterpretatie of de lengte is gemeten op het terrein.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{02B3D701-BCCD-4230-87A7-77B9E64AF054}",
+      "name": "boormeester",
+      "label": {
+        "nl": "boormeester",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Opzichter bij de Boring.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{D38DB965-1FD9-4273-AF40-257B7E697F76}",
+      "name": "boordiameter",
+      "label": {
+        "nl": "boordiameter",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Verwijzing naar de beschrijving van de Boordiameter van het Boorgat.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{3D672591-1A0F-4787-86CE-90725C19307B}",
+      "name": "boorder",
+      "label": {
+        "nl": "boorder",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Diegene die de Boring heeft uitgevoerd.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{2AE90164-FD02-4630-B3BD-04DAF092CA61}",
+      "name": "aangenomengrondwaterstand",
+      "label": {
+        "nl": "aangenomenGrondwaterstand",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "De Grondwaterstand in het Boorgat, al dan niet gebaseerd op meerdere Observaties.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Die Observaties kunnen ook apart beschreven worden.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{326FB0C9-4197-45d8-8133-909E40B52A3C}",
+      "name": ""
+    },
+    {
+      "EA-Guid": "{C170A4F2-9F5B-413b-9238-67B041746509}",
+      "name": "identificator",
+      "label": {
+        "nl": "identificator",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Bv het boornummer.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{A3D2AC0E-2171-40f2-B86A-C455F3BC9DE2}",
+      "name": "methode",
+      "label": {
+        "nl": "methode",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Methode van de Boring.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{A0870428-0265-4d4a-A7E0-746F6E91D8E1}",
+      "name": "methode",
+      "label": {
+        "nl": "methode",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Verwijzing naar de beschrijving van de boormethode voor een bepaald diepteinterval.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{D56D36E9-7D84-4904-8382-4BA2E4913F09}",
+      "name": "diameter",
+      "label": {
+        "nl": "diameter",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Verwijzing naar de beschrijving van de boorgatdiameter voor een bepaald diepteinterval.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{F69EDD85-F341-43e9-8025-8C1CC5F0DA29}",
+      "name": "bekisting",
+      "label": {
+        "nl": "bekisting",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Verwijzing naar de beschrijving van de Bekisting van het Boorgat.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{DEFB56A8-6874-43fe-BBA6-1F5E2BE9755B}",
+      "name": "bekisting",
+      "label": {
+        "nl": "bekisting",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Verwijzing naar de beschrijving van de bekisting voor een bepaald diepte-interval.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{858DE2C3-1FEF-4f64-B50F-3AEB9EF6C34F}",
+      "name": "opmeting",
+      "label": {
+        "nl": "opmeting",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "De manier waarop de geometrie werd bepaald.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{03D73409-5465-4107-9B81-12455A201CC0}",
+      "name": "maaiveld",
+      "label": {
+        "nl": "maaiveld",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Het maaiveld van het Boorgat.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{EE1777AF-D572-490f-8A90-C94EC4BEC8E4}",
+      "name": "ligging",
+      "label": {
+        "nl": "ligging",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Aanvullende indicatie van de ligging van het Boorgat.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{6CD2F53D-FC3B-4c4c-90B6-1EF0EB54C73C}",
+      "name": "diepte",
+      "label": {
+        "nl": "diepte",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "De diepte van het Boorgat.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{A9607986-8705-4859-9149-D34A8AE7DD0B}",
+      "name": "bemonsteringstijdstip",
+      "label": {
+        "nl": "bemonsteringstijdstip",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Moment waarop de Bemonstering werd afgerond.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{358B9650-C866-48c1-ABC5-FC59564B9DF5}",
+      "name": "wkt",
+      "label": {
+        "nl": "wkt",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Geometrie uitgedrukt in wkt-formaat.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#wktLiteral\">wktliteral</a> als datatype.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{0EBF76F0-DAE6-43bf-95A3-B5EC1E2AE7B9}",
+      "name": "gml",
+      "label": {
+        "nl": "gml",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Geometrie uitgedrukt in gml-formaat.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#gmlLiteral\">gmlliteral</a> als datatype.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{4993A9FF-9920-43da-8DD2-CBAAC6A3366F}",
+      "name": "type",
+      "label": {
+        "nl": "type",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Verwijzing naar de beschrijving van het type Boor voor een bepaald diepteinterval.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{7199A353-95B3-4770-8D7F-1B0AFE533BAF}",
+      "name": "geometrie",
+      "label": {
+        "nl": "geometrie",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Curve die de vorm van de Grondboring beschrijft.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Loopt van de boorkraag (die zowel boven, op als onder het maaiveld - of ander referentievlak - kan liggen) tot het verste punt van de boring. De Curve kan gespecialiseerd worden tot Lijnstring, bv als de vorm door een set van lijnstukken of (typisch) door één lijnstuk wordt beschreven. Coördinaten worden minimaal in 2D maar bij voorkeur in 3D gegeven.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{19995E68-40B8-46f1-B8E2-4F8BA8936106}",
+      "name": "positionelenauwkeurigheid",
+      "label": {
+        "nl": "positioneleNauwkeurigheid",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "De nauwkeurigheid van de positie van het Boorgat.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{E04FB471-EB05-4068-B52C-5071628EBFFF}",
+      "name": "gehostplatform",
+      "label": {
+        "nl": "gehostPlatform",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Procedure die of instrument dat in of op het Boorgat is geïnstalleerd.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{3BC4C729-4C07-4799-9CE9-76ED00CB8CB6}",
+      "name": "geometrie",
+      "label": {
+        "nl": "geometrie",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Geometrie van het interval",
+        "de": "Enter your translation here"
+      }
+    }
+  ]
+}
