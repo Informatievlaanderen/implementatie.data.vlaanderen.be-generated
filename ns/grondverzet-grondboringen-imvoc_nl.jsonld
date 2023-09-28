@@ -56,33 +56,6 @@
   "externals": [],
   "properties": [
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#^gebruikteProcedure",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "definition": {
-        "nl": "TODO"
-      },
-      "domain": [
-        "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-      ],
-      "range": [
-        "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
-      ],
-      "generalization": []
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "domain": [
-        "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-      ],
-      "range": [
-        "http://www.w3.org/2001/XMLSchema#date"
-      ],
-      "generalization": [
-        "http://www.w3.org/ns/sosa/resultTime"
-      ]
-    },
-    {
       "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
@@ -113,6 +86,33 @@
       "generalization": [
         "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode"
       ]
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "domain": [
+        "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#date"
+      ],
+      "generalization": [
+        "http://www.w3.org/ns/sosa/resultTime"
+      ]
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#^gebruikteProcedure",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "nl": "TODO"
+      },
+      "domain": [
+        "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+      ],
+      "range": [
+        "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
+      ],
+      "generalization": []
     }
   ],
   "externalproperties": [],

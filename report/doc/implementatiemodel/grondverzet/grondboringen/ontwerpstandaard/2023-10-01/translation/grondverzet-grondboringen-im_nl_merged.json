@@ -109,8 +109,8 @@
   "contributors-column": "MijnKolom",
   "contributors-file": "stakeholders.csv",
   "diagram": "Grondverzet-Grondboringen",
-  "documentcommit": "e379b9f44bc9c00e170df0cffc26c3af9db3e399",
-  "dummy": "geert08",
+  "documentcommit": "288044ed85291711c3519b860e927de4098f37aa",
+  "dummy": "geert09",
   "eap": "Grondverzet.EAP",
   "editors": [
     {
@@ -127,18 +127,302 @@
   "examples": false,
   "externalproperties": [
     {
-      "@id": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.hostedProcedure",
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKader",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{E04FB471-EB05-4068-B52C-5071628EBFFF}",
+      "EA-Guid": "{B110E2E5-E77B-4146-8876-7C235A5B2247}",
       "ap-definition-nl": {
-        "nl": "Procedure die of instrument dat in of op het Boorgat is geïnstalleerd."
+        "nl": "Het kader dat vastlegt wat behoort tot de wet."
       },
       "ap-label-nl": {
-        "nl": "gehostPlatform"
+        "nl": "wettelijkKader"
       },
       "codelist": [],
       "definition": {
-        "nl": "Procedure die of instrument dat in of op het Boorgat is geïnstalleerd."
+        "nl": "Het kader dat vastlegt wat behoort tot de wet."
+      },
+      "domain": [
+        {
+          "EA-Name": "Grondboring",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Grondboring",
+        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+        "EA-Guid": "{B110E2E5-E77B-4146-8876-7C235A5B2247}",
+        "EA-Name": "wettelijkKader",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "WettelijkKaderBoring",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{932F5443-1EE5-42c2-82E2-7007E203D6CD}",
+          "EA-Name": "WettelijkKaderBoring",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "wettelijkKader"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Het kader dat vastlegt wat behoort tot de wet."
+          },
+          {
+            "key": "parentURI",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.wettelijkKader"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Het kader dat vastlegt wat behoort tot de wet."
+        },
+        "ap-label-nl": {
+          "nl": "wettelijkKader"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Het kader dat vastlegt wat behoort tot de wet."
+        },
+        "label": {
+          "nl": "wettelijkKader"
+        },
+        "usage": ""
+      },
+      "generalization": [
+        "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.wettelijkKader"
+      ],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "wettelijkKader"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "wettelijkkader",
+      "range": [
+        {
+          "EA-GUID": "{932F5443-1EE5-42c2-82E2-7007E203D6CD}",
+          "EA-Name": "WettelijkKaderBoring",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#startpunt",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{3B759974-551C-49b4-A070-448B58770FFE}",
+      "ap-definition-nl": {
+        "nl": "Aard van het oppervlak waarop de boorkraag is geplaatst."
+      },
+      "ap-label-nl": {
+        "nl": "startpunt"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Aard van het oppervlak waarop de boorkraag is geplaatst."
+      },
+      "domain": [
+        {
+          "EA-Name": "Boormethode",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Boormethode",
+        "EA-Domain-Guid": "{65F9561F-631D-4274-A66C-F159CE9DE724}",
+        "EA-Guid": "{3B759974-551C-49b4-A070-448B58770FFE}",
+        "EA-Name": "startpunt",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "Boringstartpunttype",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{7CF63770-EDB5-435e-A0E3-4BD69B970FC2}",
+          "EA-Name": "Boringstartpunttype",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "startpunt"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Aard van het oppervlak waarop de boorkraag is geplaatst."
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "null",
+            "value": "Doorgaans het maaiveld maar andere mogelijkheden zijn bv bouwput, boortafel, dijk, bestaand boorgat"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Aard van het oppervlak waarop de boorkraag is geplaatst."
+        },
+        "ap-label-nl": {
+          "nl": "startpunt"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Aard van het oppervlak waarop de boorkraag is geplaatst."
+        },
+        "label": {
+          "nl": "startpunt"
+        },
+        "usage": {
+          "nl": "Doorgaans het maaiveld maar andere mogelijkheden zijn bv bouwput, boortafel, dijk, bestaand boorgat"
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "startpunt"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "startpunt",
+      "range": [
+        {
+          "EA-GUID": "{7CF63770-EDB5-435e-A0E3-4BD69B970FC2}",
+          "EA-Name": "Boringstartpunttype",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ],
+      "usage": {
+        "nl": "Doorgaans het maaiveld maar andere mogelijkheden zijn bv bouwput, boortafel, dijk, bestaand boorgat"
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#resultaat",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
+      "ap-definition-nl": {
+        "nl": "Het resultaat van de uitgevoerde grondboring."
+      },
+      "ap-label-nl": {
+        "nl": "resultaat"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Het resultaat van de uitgevoerde grondboring."
+      },
+      "domain": [
+        {
+          "EA-Name": "Grondboring",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "parentURI",
+            "note": "http://www.w3.org/ns/sosa/hasResult",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Het resultaat van de uitgevoerde grondboring.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "resultaat",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Grondboring",
+        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+        "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
+        "EA-Name": "resultaat",
+        "EA-Package": "",
+        "EA-Range": "Boorgat",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
+          "EA-Name": "Boorgat",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+        },
+        "RawTags": [
+          {
+            "key": "parentURI",
+            "note": "http://www.w3.org/ns/sosa/hasResult",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Het resultaat van de uitgevoerde grondboring.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "resultaat",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Het resultaat van de uitgevoerde grondboring."
+        },
+        "ap-label-nl": {
+          "nl": "resultaat"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Het resultaat van de uitgevoerde grondboring."
+        },
+        "derived": "false",
+        "destRole": "resultaat",
+        "label": {
+          "nl": "resultaat"
+        },
+        "sourceRole": "isResultaatVan",
+        "usage": ""
+      },
+      "generalization": [
+        "http://www.w3.org/ns/sosa/hasResult"
+      ],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "resultaat"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "resultaat",
+      "range": [
+        {
+          "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
+          "EA-Name": "Boorgat",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#isResultaatVan",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
+      "ap-definition-nl": {
+        "nl": "Grondboring waarvan het Boorgat het resultaat is."
+      },
+      "ap-label-nl": {
+        "nl": "isResultaatVan"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Grondboring waarvan het Boorgat het resultaat is."
       },
       "domain": [
         {
@@ -147,83 +431,292 @@
         }
       ],
       "extra": {
+        "DestRoleTags": [
+          {
+            "key": "label-nl",
+            "note": "isResultaatVan",
+            "value": "NOTE"
+          },
+          {
+            "key": "parentURI",
+            "note": "http://www.w3.org/ns/sosa/isresultOf",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Grondboring waarvan het Boorgat het resultaat is.",
+            "value": "NOTE"
+          }
+        ],
         "EA-Domain": "Boorgat",
         "EA-Domain-Guid": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-        "EA-Guid": "{E04FB471-EB05-4068-B52C-5071628EBFFF}",
-        "EA-Name": "^gehostPlatform",
-        "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "Proces",
-        "EA-Type": "attribute",
+        "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
+        "EA-Name": "isResultaatVan",
+        "EA-Package": "",
+        "EA-Range": "Grondboring",
+        "EA-Type": "connector",
         "RangeData": {
-          "EA-GUID": "{A2580981-CCE9-40c4-82AE-2B10A799EB56}",
-          "EA-Name": "Proces",
-          "EA-Package": "OSLO-ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Process"
+          "EA-GUID": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+          "EA-Name": "Grondboring",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
         },
         "RawTags": [
           {
             "key": "label-nl",
-            "note": "null",
-            "value": "gehostPlatform"
+            "note": "isResultaatVan",
+            "value": "NOTE"
           },
           {
-            "key": "uri",
-            "note": "null",
-            "value": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.hostedProcedure"
+            "key": "parentURI",
+            "note": "http://www.w3.org/ns/sosa/isresultOf",
+            "value": "NOTE"
           },
           {
-            "key": "ap-definition-nl",
-            "note": "null",
-            "value": "Procedure die of instrument dat in of op het Boorgat is geïnstalleerd."
+            "key": "definition-nl",
+            "note": "Grondboring waarvan het Boorgat het resultaat is.",
+            "value": "NOTE"
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-nl": {
-          "nl": "Procedure die of instrument dat in of op het Boorgat is geïnstalleerd."
+          "nl": "Grondboring waarvan het Boorgat het resultaat is."
         },
         "ap-label-nl": {
-          "nl": "gehostPlatform"
+          "nl": "isResultaatVan"
         },
         "ap-usageNote-nl": "",
         "definition": {
-          "nl": "Procedure die of instrument dat in of op het Boorgat is geïnstalleerd."
+          "nl": "Grondboring waarvan het Boorgat het resultaat is."
+        },
+        "derived": "false",
+        "destRole": "isResultaatVan",
+        "label": {
+          "nl": "isResultaatVan"
+        },
+        "sourceRole": "resultaat",
+        "usage": ""
+      },
+      "generalization": [
+        "http://www.w3.org/ns/sosa/isresultOf"
+      ],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "isResultaatVan"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "isresultaatvan",
+      "range": [
+        {
+          "EA-GUID": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+          "EA-Name": "Grondboring",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#inclinatietype",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{AE29C7FD-A3BE-4632-8E46-74E317260284}",
+      "ap-definition-nl": {
+        "nl": "Algemene aanduiding van de richting waaronder werd geboord."
+      },
+      "ap-label-nl": {
+        "nl": "inclinatietype"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Algemene aanduiding van de richting waaronder werd geboord."
+      },
+      "domain": [
+        {
+          "EA-Name": "Boormethode",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Boormethode",
+        "EA-Domain-Guid": "{65F9561F-631D-4274-A66C-F159CE9DE724}",
+        "EA-Guid": "{AE29C7FD-A3BE-4632-8E46-74E317260284}",
+        "EA-Name": "inclinatietype",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "Boringinclinatietype",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{FD70F356-1FFD-4593-A127-35070458B5AB}",
+          "EA-Name": "Boringinclinatietype",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "inclinatietype"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Algemene aanduiding van de richting waaronder werd geboord."
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "null",
+            "value": "Verticaal, schuin, horizontaal..."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Algemene aanduiding van de richting waaronder werd geboord."
+        },
+        "ap-label-nl": {
+          "nl": "inclinatietype"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Algemene aanduiding van de richting waaronder werd geboord."
         },
         "label": {
-          "nl": "gehostPlatform"
+          "nl": "inclinatietype"
         },
-        "usage": ""
+        "usage": {
+          "nl": "Verticaal, schuin, horizontaal..."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "nl": "gehostPlatform"
+        "nl": "inclinatietype"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "inclinatietype",
+      "range": [
+        {
+          "EA-GUID": "{FD70F356-1FFD-4593-A127-35070458B5AB}",
+          "EA-Name": "Boringinclinatietype",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ],
+      "usage": {
+        "nl": "Verticaal, schuin, horizontaal..."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#doel",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{BD2A820D-885E-4ca8-8686-50AC15D68B95}",
+      "ap-definition-nl": {
+        "nl": "Reden waarom de Grondboring werd uitgevoerd."
+      },
+      "ap-label-nl": {
+        "nl": "doel"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Reden waarom de Grondboring werd uitgevoerd."
+      },
+      "domain": [
+        {
+          "EA-Name": "Grondboring",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Grondboring",
+        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+        "EA-Guid": "{BD2A820D-885E-4ca8-8686-50AC15D68B95}",
+        "EA-Name": "doel",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "Boringdoeltype",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{5447AC73-3B35-4483-9297-EC7BCA306B39}",
+          "EA-Name": "Boringdoeltype",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "doel"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Reden waarom de Grondboring werd uitgevoerd."
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "null",
+            "value": "Vb exploitatie, onderzoek, bemaling etc."
+          },
+          {
+            "key": "parentURI",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.doel"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Reden waarom de Grondboring werd uitgevoerd."
+        },
+        "ap-label-nl": {
+          "nl": "doel"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Reden waarom de Grondboring werd uitgevoerd."
+        },
+        "label": {
+          "nl": "doel"
+        },
+        "usage": {
+          "nl": "Vb exploitatie, onderzoek, bemaling etc."
+        }
+      },
+      "generalization": [
+        "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.doel"
+      ],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "doel"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
-      "name": "gehostplatform",
+      "name": "doel",
       "range": [
         {
-          "EA-GUID": "{A2580981-CCE9-40c4-82AE-2B10A799EB56}",
-          "EA-Name": "Proces",
-          "EA-Package": "OSLO-ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Process"
+          "EA-GUID": "{5447AC73-3B35-4483-9297-EC7BCA306B39}",
+          "EA-Name": "Boringdoeltype",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
         }
-      ]
+      ],
+      "usage": {
+        "nl": "Vb exploitatie, onderzoek, bemaling etc."
+      }
     },
     {
-      "@id": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.positionalAccuracy",
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#boringLengte",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{19995E68-40B8-46f1-B8E2-4F8BA8936106}",
+      "EA-Guid": "{572CB00D-FA45-46ec-A084-22C9572CB1DF}",
       "ap-definition-nl": {
-        "nl": "De nauwkeurigheid van de positie van het Boorgat."
+        "nl": "Lengte van de Grondboring."
       },
       "ap-label-nl": {
-        "nl": "positioneleNauwkeurigheid"
+        "nl": "boringLengte"
       },
       "codelist": [],
       "definition": {
-        "nl": "De nauwkeurigheid van de positie van het Boorgat."
+        "nl": "Lengte van de Grondboring."
       },
       "domain": [
         {
@@ -234,279 +727,1011 @@
       "extra": {
         "EA-Domain": "Boorgat",
         "EA-Domain-Guid": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-        "EA-Guid": "{19995E68-40B8-46f1-B8E2-4F8BA8936106}",
-        "EA-Name": "^positioneleNauwkeurigheid",
+        "EA-Guid": "{572CB00D-FA45-46ec-A084-22C9572CB1DF}",
+        "EA-Name": "boringLengte",
         "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "PositioneleNauwkeurigheid",
+        "EA-Range": "KwantitatieveWaarde",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{E4513A1B-8FBA-4876-939B-41DD9137DD80}",
-          "EA-Name": "PositioneleNauwkeurigheid",
-          "EA-Package": "OSLO-ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19115/2006/DataQualityInformation#DQ_PositionalAccuracy"
+          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
+          "EA-Name": "KwantitatieveWaarde",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "https://schema.org/QuantitativeValue"
         },
         "RawTags": [
           {
             "key": "label-nl",
             "note": "null",
-            "value": "positioneleNauwkeurigheid"
+            "value": "boringLengte"
           },
           {
-            "key": "ap-definition-nl",
+            "key": "definition-nl",
             "note": "null",
-            "value": "De nauwkeurigheid van de positie van het Boorgat."
+            "value": "Lengte van de Grondboring."
           },
           {
-            "key": "uri",
+            "key": "usageNote-nl",
             "note": "null",
-            "value": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.positionalAccuracy"
+            "value": "Zoals verstrekt door de dataleverancier. Kan bv afgeleid zijn uit de geometrie van de Grondboring maar ook uit bv het resultaat van de LithologischeInterpretatie of de lengte is gemeten op het terrein."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-nl": {
-          "nl": "De nauwkeurigheid van de positie van het Boorgat."
+          "nl": "Lengte van de Grondboring."
         },
         "ap-label-nl": {
-          "nl": "positioneleNauwkeurigheid"
+          "nl": "boringLengte"
         },
         "ap-usageNote-nl": "",
         "definition": {
-          "nl": "De nauwkeurigheid van de positie van het Boorgat."
+          "nl": "Lengte van de Grondboring."
         },
         "label": {
-          "nl": "positioneleNauwkeurigheid"
+          "nl": "boringLengte"
         },
+        "usage": {
+          "nl": "Zoals verstrekt door de dataleverancier. Kan bv afgeleid zijn uit de geometrie van de Grondboring maar ook uit bv het resultaat van de LithologischeInterpretatie of de lengte is gemeten op het terrein."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "boringLengte"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "boringlengte",
+      "range": [
+        {
+          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
+          "EA-Name": "KwantitatieveWaarde",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "https://schema.org/QuantitativeValue"
+        }
+      ],
+      "usage": {
+        "nl": "Zoals verstrekt door de dataleverancier. Kan bv afgeleid zijn uit de geometrie van de Grondboring maar ook uit bv het resultaat van de LithologischeInterpretatie of de lengte is gemeten op het terrein."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#boormeester",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{02B3D701-BCCD-4230-87A7-77B9E64AF054}",
+      "ap-definition-nl": {
+        "nl": "Opzichter bij de Boring."
+      },
+      "ap-label-nl": {
+        "nl": "boormeester"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Opzichter bij de Boring."
+      },
+      "domain": [
+        {
+          "EA-Name": "Grondboring",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Grondboring",
+        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+        "EA-Guid": "{02B3D701-BCCD-4230-87A7-77B9E64AF054}",
+        "EA-Name": "boormeester",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "Agent",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+          "EA-Name": "Agent",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://purl.org/dc/terms/Agent"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "boormeester"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Opzichter bij de Boring."
+          },
+          {
+            "key": "parentURI",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Opzichter bij de Boring."
+        },
+        "ap-label-nl": {
+          "nl": "boormeester"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Opzichter bij de Boring."
+        },
+        "label": {
+          "nl": "boormeester"
+        },
+        "usage": ""
+      },
+      "generalization": [
+        "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor"
+      ],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "boormeester"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "boormeester",
+      "range": [
+        {
+          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+          "EA-Name": "Agent",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://purl.org/dc/terms/Agent"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#boordiameter",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{D38DB965-1FD9-4273-AF40-257B7E697F76}",
+      "ap-definition-nl": {
+        "nl": "Verwijzing naar de beschrijving van de Boordiameter van het Boorgat."
+      },
+      "ap-label-nl": {
+        "nl": "boordiameter"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Verwijzing naar de beschrijving van de Boordiameter van het Boorgat."
+      },
+      "domain": [
+        {
+          "EA-Name": "Boorgat",
+          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "definition-nl",
+            "note": "Verwijzing naar de beschrijving van de Boordiameter van het Boorgat.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "boordiameter",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Boorgat",
+        "EA-Domain-Guid": "{C38DBB1A-EB18-4590-A878-37846E648571}",
+        "EA-Guid": "{D38DB965-1FD9-4273-AF40-257B7E697F76}",
+        "EA-Name": "boordiameter",
+        "EA-Package": "",
+        "EA-Range": "Boorgatdiameter",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{97CFB897-3C1B-416d-8F1A-4E58039DC966}",
+          "EA-Name": "Boorgatdiameter",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter"
+        },
+        "RawTags": [
+          {
+            "key": "definition-nl",
+            "note": "Verwijzing naar de beschrijving van de Boordiameter van het Boorgat.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "boordiameter",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Verwijzing naar de beschrijving van de Boordiameter van het Boorgat."
+        },
+        "ap-label-nl": {
+          "nl": "boordiameter"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Verwijzing naar de beschrijving van de Boordiameter van het Boorgat."
+        },
+        "derived": "false",
+        "destRole": "boordiameter",
+        "label": {
+          "nl": "boordiameter"
+        },
+        "sourceRole": "null",
         "usage": ""
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "nl": "positioneleNauwkeurigheid"
+        "nl": "boordiameter"
       },
-      "maxCardinality": "2",
+      "maxCardinality": "1",
       "minCardinality": "0",
-      "name": "positionelenauwkeurigheid",
+      "name": "boordiameter",
       "range": [
         {
-          "EA-GUID": "{E4513A1B-8FBA-4876-939B-41DD9137DD80}",
-          "EA-Name": "PositioneleNauwkeurigheid",
-          "EA-Package": "OSLO-ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19115/2006/DataQualityInformation#DQ_PositionalAccuracy"
+          "EA-GUID": "{97CFB897-3C1B-416d-8F1A-4E58039DC966}",
+          "EA-Name": "Boorgatdiameter",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter"
         }
       ]
     },
     {
-      "@id": "http://purl.org/dc/terms/type",
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#boorder",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{4993A9FF-9920-43da-8DD2-CBAAC6A3366F}",
+      "EA-Guid": "{3D672591-1A0F-4787-86CE-90725C19307B}",
       "ap-definition-nl": {
-        "nl": "Verwijzing naar de beschrijving van het type Boor voor een bepaald diepteinterval."
+        "nl": "Diegene die de Boring heeft uitgevoerd."
       },
       "ap-label-nl": {
-        "nl": "type"
+        "nl": "boorder"
       },
       "codelist": [],
       "definition": {
-        "nl": "Verwijzing naar de beschrijving van het type Boor voor een bepaald diepteinterval."
+        "nl": "Diegene die de Boring heeft uitgevoerd."
       },
       "domain": [
         {
-          "EA-Name": "Boor",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boor"
+          "EA-Name": "Grondboring",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
         }
       ],
       "extra": {
-        "EA-Domain": "Boor",
-        "EA-Domain-Guid": "{675FF6EE-0ED8-43aa-AC6D-B4D70C646CB1}",
-        "EA-Guid": "{4993A9FF-9920-43da-8DD2-CBAAC6A3366F}",
-        "EA-Name": "type",
+        "EA-Domain": "Grondboring",
+        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+        "EA-Guid": "{3D672591-1A0F-4787-86CE-90725C19307B}",
+        "EA-Name": "boorder",
         "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "BoortypeInterval",
+        "EA-Range": "Agent",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{055ADEA4-F719-4500-B0D0-24609EACCE5E}",
-          "EA-Name": "BoortypeInterval",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#BoortypeInterval"
+          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+          "EA-Name": "Agent",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://purl.org/dc/terms/Agent"
         },
         "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "boorder"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Diegene die de Boring heeft uitgevoerd."
+          },
+          {
+            "key": "parentURI",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Diegene die de Boring heeft uitgevoerd."
+        },
+        "ap-label-nl": {
+          "nl": "boorder"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Diegene die de Boring heeft uitgevoerd."
+        },
+        "label": {
+          "nl": "boorder"
+        },
+        "usage": ""
+      },
+      "generalization": [
+        "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor"
+      ],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "boorder"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "boorder",
+      "range": [
+        {
+          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+          "EA-Name": "Agent",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://purl.org/dc/terms/Agent"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#aangenomenGrondwaterstand",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{2AE90164-FD02-4630-B3BD-04DAF092CA61}",
+      "ap-definition-nl": {
+        "nl": "De Grondwaterstand in het Boorgat, al dan niet gebaseerd op meerdere Observaties."
+      },
+      "ap-label-nl": {
+        "nl": "aangenomenGrondwaterstand"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "De Grondwaterstand in het Boorgat, al dan niet gebaseerd op meerdere Observaties."
+      },
+      "domain": [
+        {
+          "EA-Name": "Boorgat",
+          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Boorgat",
+        "EA-Domain-Guid": "{C38DBB1A-EB18-4590-A878-37846E648571}",
+        "EA-Guid": "{2AE90164-FD02-4630-B3BD-04DAF092CA61}",
+        "EA-Name": "aangenomenGrondwaterstand",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "KwantitatieveWaarde",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
+          "EA-Name": "KwantitatieveWaarde",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "https://schema.org/QuantitativeValue"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "aangenomenGrondwaterstand"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "De Grondwaterstand in het Boorgat, al dan niet gebaseerd op meerdere Observaties."
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "null",
+            "value": "Die Observaties kunnen ook apart beschreven worden."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "De Grondwaterstand in het Boorgat, al dan niet gebaseerd op meerdere Observaties."
+        },
+        "ap-label-nl": {
+          "nl": "aangenomenGrondwaterstand"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "De Grondwaterstand in het Boorgat, al dan niet gebaseerd op meerdere Observaties."
+        },
+        "label": {
+          "nl": "aangenomenGrondwaterstand"
+        },
+        "usage": {
+          "nl": "Die Observaties kunnen ook apart beschreven worden."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "aangenomenGrondwaterstand"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "aangenomengrondwaterstand",
+      "range": [
+        {
+          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
+          "EA-Name": "KwantitatieveWaarde",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "https://schema.org/QuantitativeValue"
+        }
+      ],
+      "usage": {
+        "nl": "Die Observaties kunnen ook apart beschreven worden."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{C170A4F2-9F5B-413b-9238-67B041746509}",
+      "ap-definition-nl": {
+        "nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
+      },
+      "ap-label-nl": {
+        "nl": "identificator"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
+      },
+      "domain": [
+        {
+          "EA-Name": "Grondboring",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Grondboring",
+        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+        "EA-Guid": "{C170A4F2-9F5B-413b-9238-67B041746509}",
+        "EA-Name": "identificator",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "Identificator",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+          "EA-Name": "Identificator",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/ns/adms#Identifier"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "identificator"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "null",
+            "value": "Bv het boornummer."
+          },
+          {
+            "key": "name",
+            "note": "null",
+            "value": "Grondboring.identificator"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
+        },
+        "ap-label-nl": {
+          "nl": "identificator"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
+        },
+        "label": {
+          "nl": "identificator"
+        },
+        "usage": {
+          "nl": "Bv het boornummer."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "identificator"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "1",
+      "name": "identificator",
+      "range": [
+        {
+          "EA-GUID": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+          "EA-Name": "Identificator",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/ns/adms#Identifier"
+        }
+      ],
+      "usage": {
+        "nl": "Bv het boornummer."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{A3D2AC0E-2171-40f2-B86A-C455F3BC9DE2}",
+      "ap-definition-nl": {
+        "nl": "Methode van de Boring."
+      },
+      "ap-label-nl": {
+        "nl": "methode"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Methode van de Boring."
+      },
+      "domain": [
+        {
+          "EA-Name": "BoormethodeInterval",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "BoormethodeInterval",
+        "EA-Domain-Guid": "{BA85C1A3-5058-41f8-9C84-FDB92B01C7BC}",
+        "EA-Guid": "{A3D2AC0E-2171-40f2-B86A-C455F3BC9DE2}",
+        "EA-Name": "methode",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "BoormethodeType",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{94CE97C3-AB9F-4cf9-8611-FFCA23AF8315}",
+          "EA-Name": "BoormethodeType",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "methode"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Methode van de Boring."
+          },
+          {
+            "key": "parentURI",
+            "note": "null",
+            "value": "http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.value"
+          },
+          {
+            "key": "name",
+            "note": "null",
+            "value": "Boormethodeinterval.methode"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Methode van de Boring."
+        },
+        "ap-label-nl": {
+          "nl": "methode"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Methode van de Boring."
+        },
+        "label": {
+          "nl": "methode"
+        },
+        "usage": ""
+      },
+      "generalization": [
+        "http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.value"
+      ],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "methode"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "methode",
+      "range": [
+        {
+          "EA-GUID": "{94CE97C3-AB9F-4cf9-8611-FFCA23AF8315}",
+          "EA-Name": "BoormethodeType",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#Boormethode.methode",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{A0870428-0265-4d4a-A7E0-746F6E91D8E1}",
+      "ap-definition-nl": {
+        "nl": "Verwijzing naar de beschrijving van de boormethode voor een bepaald diepteinterval."
+      },
+      "ap-label-nl": {
+        "nl": "methode"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Verwijzing naar de beschrijving van de boormethode voor een bepaald diepteinterval."
+      },
+      "domain": [
+        {
+          "EA-Name": "Boormethode",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Boormethode",
+        "EA-Domain-Guid": "{65F9561F-631D-4274-A66C-F159CE9DE724}",
+        "EA-Guid": "{A0870428-0265-4d4a-A7E0-746F6E91D8E1}",
+        "EA-Name": "methode",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "BoormethodeInterval",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{BA85C1A3-5058-41f8-9C84-FDB92B01C7BC}",
+          "EA-Name": "BoormethodeInterval",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "methode"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Verwijzing naar de beschrijving van de boormethode voor een bepaald diepteinterval."
+          },
           {
             "key": "xUML",
             "note": "null",
             "value": "{redefines ^type, element}"
           },
           {
-            "key": "label-nl",
+            "key": "name",
             "note": "null",
-            "value": "type"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://purl.org/dc/terms/type"
-          },
-          {
-            "key": "ap-definition-nl",
-            "note": "null",
-            "value": "Verwijzing naar de beschrijving van het type Boor voor een bepaald diepteinterval."
+            "value": "Boormethode.methode"
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-nl": {
-          "nl": "Verwijzing naar de beschrijving van het type Boor voor een bepaald diepteinterval."
+          "nl": "Verwijzing naar de beschrijving van de boormethode voor een bepaald diepteinterval."
         },
         "ap-label-nl": {
-          "nl": "type"
+          "nl": "methode"
         },
         "ap-usageNote-nl": "",
         "definition": {
-          "nl": "Verwijzing naar de beschrijving van het type Boor voor een bepaald diepteinterval."
+          "nl": "Verwijzing naar de beschrijving van de boormethode voor een bepaald diepteinterval."
         },
         "label": {
-          "nl": "type"
+          "nl": "methode"
         },
         "usage": ""
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "nl": "type"
+        "nl": "methode"
       },
       "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "type",
+      "minCardinality": "1",
+      "name": "methode",
       "range": [
         {
-          "EA-GUID": "{055ADEA4-F719-4500-B0D0-24609EACCE5E}",
-          "EA-Name": "BoortypeInterval",
+          "EA-GUID": "{BA85C1A3-5058-41f8-9C84-FDB92B01C7BC}",
+          "EA-Name": "BoormethodeInterval",
           "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#BoortypeInterval"
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval"
         }
       ]
     },
     {
-      "@id": "http://www.opengis.net/ont/geosparql#asGML",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{0EBF76F0-DAE6-43bf-95A3-B5EC1E2AE7B9}",
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter.diameter",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{D56D36E9-7D84-4904-8382-4BA2E4913F09}",
       "ap-definition-nl": {
-        "nl": "Geometrie uitgedrukt in gml-formaat."
+        "nl": "Verwijzing naar de beschrijving van de boorgatdiameter voor een bepaald diepteinterval."
       },
       "ap-label-nl": {
-        "nl": "gml"
-      },
-      "ap-usageNote-nl": {
-        "nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#gmlLiteral\">gmlliteral</a> als datatype."
+        "nl": "diameter"
       },
       "codelist": [],
       "definition": {
-        "nl": "Geometrie uitgedrukt in gml-formaat."
+        "nl": "Verwijzing naar de beschrijving van de boorgatdiameter voor een bepaald diepteinterval."
       },
       "domain": [
         {
-          "EA-Name": "Geometrie",
-          "uri": "http://www.w3.org/ns/locn#Geometry"
+          "EA-Name": "Boorgatdiameter",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter"
         }
       ],
       "extra": {
-        "EA-Domain": "Geometrie",
-        "EA-Domain-Guid": "{5720A716-474C-4451-B7ED-50C2423DC51D}",
-        "EA-Guid": "{0EBF76F0-DAE6-43bf-95A3-B5EC1E2AE7B9}",
-        "EA-Name": "gml",
-        "EA-Package": "OSLO-Generiek",
-        "EA-Range": "GetypeerdeString",
+        "EA-Domain": "Boorgatdiameter",
+        "EA-Domain-Guid": "{97CFB897-3C1B-416d-8F1A-4E58039DC966}",
+        "EA-Guid": "{D56D36E9-7D84-4904-8382-4BA2E4913F09}",
+        "EA-Name": "diameter",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "Boorgatdiameterinterval",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{B6D75F64-5CDC-4937-AD4A-58B8358E284F}",
-          "EA-Name": "GetypeerdeString",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+          "EA-GUID": "{00D6FCCD-1B1C-4c18-A7CE-B109714BE557}",
+          "EA-Name": "Boorgatdiameterinterval",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameterinterval"
         },
         "RawTags": [
           {
-            "key": "ap-label-nl",
-            "note": "null",
-            "value": "gml"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://www.opengis.net/ont/geosparql#asGML"
-          },
-          {
             "key": "label-nl",
             "note": "null",
-            "value": "gml"
+            "value": "diameter"
           },
           {
-            "key": "ap-usageNote-nl",
+            "key": "definition-nl",
             "note": "null",
-            "value": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#gmlLiteral\">gmlliteral</a> als datatype."
+            "value": "Verwijzing naar de beschrijving van de boorgatdiameter voor een bepaald diepteinterval."
           },
           {
-            "key": "ap-definition-nl",
+            "key": "parentURI",
             "note": "null",
-            "value": "Geometrie uitgedrukt in gml-formaat."
+            "value": "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage.element"
+          },
+          {
+            "key": "name",
+            "note": "null",
+            "value": "Boorgatdiameter.diameter"
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-nl": {
-          "nl": "Geometrie uitgedrukt in gml-formaat."
+          "nl": "Verwijzing naar de beschrijving van de boorgatdiameter voor een bepaald diepteinterval."
         },
         "ap-label-nl": {
-          "nl": "gml"
+          "nl": "diameter"
         },
-        "ap-usageNote-nl": {
-          "nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#gmlLiteral\">gmlliteral</a> als datatype."
-        },
+        "ap-usageNote-nl": "",
         "definition": {
-          "nl": "Geometrie uitgedrukt in gml-formaat."
+          "nl": "Verwijzing naar de beschrijving van de boorgatdiameter voor een bepaald diepteinterval."
         },
         "label": {
-          "nl": "gml"
+          "nl": "diameter"
         },
-        "usage": {
-          "nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#gmlLiteral\">gmlliteral</a> als datatype."
-        }
+        "usage": ""
       },
-      "generalization": [],
+      "generalization": [
+        "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage.element"
+      ],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "nl": "gml"
+        "nl": "diameter"
       },
-      "maxCardinality": "1",
-      "minCardinality": "0",
-      "name": "gml",
+      "maxCardinality": "*",
+      "minCardinality": "1",
+      "name": "diameter",
       "range": [
         {
-          "EA-GUID": "{B6D75F64-5CDC-4937-AD4A-58B8358E284F}",
-          "EA-Name": "GetypeerdeString",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+          "EA-GUID": "{00D6FCCD-1B1C-4c18-A7CE-B109714BE557}",
+          "EA-Name": "Boorgatdiameterinterval",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameterinterval"
         }
-      ],
-      "usage": {
-        "nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#gmlLiteral\">gmlliteral</a> als datatype."
-      }
+      ]
     },
     {
-      "@id": "http://www.opengis.net/ont/geosparql#asWKT",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{358B9650-C866-48c1-ABC5-FC59564B9DF5}",
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#Boorgat.bekisting",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{F69EDD85-F341-43e9-8025-8C1CC5F0DA29}",
       "ap-definition-nl": {
-        "nl": "Geometrie uitgedrukt in wkt-formaat."
+        "nl": "Verwijzing naar de beschrijving van de Bekisting van het Boorgat."
       },
       "ap-label-nl": {
-        "nl": "wkt"
-      },
-      "ap-usageNote-nl": {
-        "nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#wktLiteral\">wktliteral</a> als datatype."
+        "nl": "bekisting"
       },
       "codelist": [],
       "definition": {
-        "nl": "Geometrie uitgedrukt in wkt-formaat."
+        "nl": "Verwijzing naar de beschrijving van de Bekisting van het Boorgat."
+      },
+      "domain": [
+        {
+          "EA-Name": "Boorgat",
+          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "definition-nl",
+            "note": "Verwijzing naar de beschrijving van de Bekisting van het Boorgat.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "bekisting",
+            "value": "NOTE"
+          },
+          {
+            "key": "name",
+            "note": "Boorgat.bekisting",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Boorgat",
+        "EA-Domain-Guid": "{C38DBB1A-EB18-4590-A878-37846E648571}",
+        "EA-Guid": "{F69EDD85-F341-43e9-8025-8C1CC5F0DA29}",
+        "EA-Name": "bekisting",
+        "EA-Package": "",
+        "EA-Range": "Bekisting",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{B63A587A-A625-4ea9-A826-1928769F397B}",
+          "EA-Name": "Bekisting",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Bekisting"
+        },
+        "RawTags": [
+          {
+            "key": "definition-nl",
+            "note": "Verwijzing naar de beschrijving van de Bekisting van het Boorgat.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "bekisting",
+            "value": "NOTE"
+          },
+          {
+            "key": "name",
+            "note": "Boorgat.bekisting",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Verwijzing naar de beschrijving van de Bekisting van het Boorgat."
+        },
+        "ap-label-nl": {
+          "nl": "bekisting"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Verwijzing naar de beschrijving van de Bekisting van het Boorgat."
+        },
+        "derived": "false",
+        "destRole": "bekisting",
+        "label": {
+          "nl": "bekisting"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "bekisting"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "bekisting",
+      "range": [
+        {
+          "EA-GUID": "{B63A587A-A625-4ea9-A826-1928769F397B}",
+          "EA-Name": "Bekisting",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Bekisting"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#Bekisting.bekisting",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{DEFB56A8-6874-43fe-BBA6-1F5E2BE9755B}",
+      "ap-definition-nl": {
+        "nl": "Verwijzing naar de beschrijving van de bekisting voor een bepaald diepte-interval."
+      },
+      "ap-label-nl": {
+        "nl": "bekisting"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Verwijzing naar de beschrijving van de bekisting voor een bepaald diepte-interval."
+      },
+      "domain": [
+        {
+          "EA-Name": "Bekisting",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Bekisting"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Bekisting",
+        "EA-Domain-Guid": "{B63A587A-A625-4ea9-A826-1928769F397B}",
+        "EA-Guid": "{DEFB56A8-6874-43fe-BBA6-1F5E2BE9755B}",
+        "EA-Name": "bekisting",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "Bekistinginterval",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{37DFE43F-25BD-452d-BF41-0A4AD797133D}",
+          "EA-Name": "Bekistinginterval",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Bekistinginterval"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "bekisting"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Verwijzing naar de beschrijving van de bekisting voor een bepaald diepte-interval."
+          },
+          {
+            "key": "parentURI",
+            "note": "null",
+            "value": "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage.element"
+          },
+          {
+            "key": "name",
+            "note": "null",
+            "value": "Bekisting.bekisting"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Verwijzing naar de beschrijving van de bekisting voor een bepaald diepte-interval."
+        },
+        "ap-label-nl": {
+          "nl": "bekisting"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Verwijzing naar de beschrijving van de bekisting voor een bepaald diepte-interval."
+        },
+        "label": {
+          "nl": "bekisting"
+        },
+        "usage": ""
+      },
+      "generalization": [
+        "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage.element"
+      ],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "bekisting"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "1",
+      "name": "bekisting",
+      "range": [
+        {
+          "EA-GUID": "{37DFE43F-25BD-452d-BF41-0A4AD797133D}",
+          "EA-Name": "Bekistinginterval",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Bekistinginterval"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{858DE2C3-1FEF-4f64-B50F-3AEB9EF6C34F}",
+      "ap-definition-nl": {
+        "nl": "De manier waarop de geometrie werd bepaald."
+      },
+      "ap-label-nl": {
+        "nl": "opmeting"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "De manier waarop de geometrie werd bepaald."
       },
       "domain": [
         {
@@ -517,84 +1742,322 @@
       "extra": {
         "EA-Domain": "Geometrie",
         "EA-Domain-Guid": "{5720A716-474C-4451-B7ED-50C2423DC51D}",
-        "EA-Guid": "{358B9650-C866-48c1-ABC5-FC59564B9DF5}",
-        "EA-Name": "wkt",
+        "EA-Guid": "{858DE2C3-1FEF-4f64-B50F-3AEB9EF6C34F}",
+        "EA-Name": "opmeting",
         "EA-Package": "OSLO-Generiek",
-        "EA-Range": "GetypeerdeString",
+        "EA-Range": "Opmeting",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{B6D75F64-5CDC-4937-AD4A-58B8358E284F}",
-          "EA-Name": "GetypeerdeString",
+          "EA-GUID": "{BFD25136-77A8-41d2-A135-26FA75EC9287}",
+          "EA-Name": "Opmeting",
           "EA-Package": "OSLO-Generiek",
-          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+          "uri": "https://data.vlaanderen.be/ns/generiek#Opmeting"
         },
         "RawTags": [
           {
-            "key": "ap-label-nl",
-            "note": "null",
-            "value": "wkt"
-          },
-          {
-            "key": "ap-usageNote-nl",
-            "note": "null",
-            "value": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#wktLiteral\">wktliteral</a> als datatype."
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://www.opengis.net/ont/geosparql#asWKT"
-          },
-          {
             "key": "label-nl",
             "note": "null",
-            "value": "wkt"
+            "value": "opmeting"
           },
           {
-            "key": "ap-definition-nl",
+            "key": "definition-nl",
             "note": "null",
-            "value": "Geometrie uitgedrukt in wkt-formaat."
+            "value": "De manier waarop de geometrie werd bepaald."
+          },
+          {
+            "key": "name",
+            "note": "null",
+            "value": "Geometrie.opmeting"
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-nl": {
-          "nl": "Geometrie uitgedrukt in wkt-formaat."
+          "nl": "De manier waarop de geometrie werd bepaald."
         },
         "ap-label-nl": {
-          "nl": "wkt"
+          "nl": "opmeting"
         },
-        "ap-usageNote-nl": {
-          "nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#wktLiteral\">wktliteral</a> als datatype."
-        },
+        "ap-usageNote-nl": "",
         "definition": {
-          "nl": "Geometrie uitgedrukt in wkt-formaat."
+          "nl": "De manier waarop de geometrie werd bepaald."
         },
         "label": {
-          "nl": "wkt"
+          "nl": "opmeting"
         },
-        "usage": {
-          "nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#wktLiteral\">wktliteral</a> als datatype."
-        }
+        "usage": ""
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "nl": "wkt"
+        "nl": "opmeting"
       },
       "maxCardinality": "1",
       "minCardinality": "0",
-      "name": "wkt",
+      "name": "opmeting",
       "range": [
         {
-          "EA-GUID": "{B6D75F64-5CDC-4937-AD4A-58B8358E284F}",
-          "EA-Name": "GetypeerdeString",
+          "EA-GUID": "{BFD25136-77A8-41d2-A135-26FA75EC9287}",
+          "EA-Name": "Opmeting",
           "EA-Package": "OSLO-Generiek",
-          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+          "uri": "https://data.vlaanderen.be/ns/generiek#Opmeting"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{03D73409-5465-4107-9B81-12455A201CC0}",
+      "ap-definition-nl": {
+        "nl": "Het maaiveld van het Boorgat."
+      },
+      "ap-label-nl": {
+        "nl": "maaiveld"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Het maaiveld van het Boorgat."
+      },
+      "domain": [
+        {
+          "EA-Name": "Boorgat",
+          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
         }
       ],
-      "usage": {
-        "nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#wktLiteral\">wktliteral</a> als datatype."
-      }
+      "extra": {
+        "EA-Domain": "Boorgat",
+        "EA-Domain-Guid": "{C38DBB1A-EB18-4590-A878-37846E648571}",
+        "EA-Guid": "{03D73409-5465-4107-9B81-12455A201CC0}",
+        "EA-Name": "^maaiveld",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "Maaiveld",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{21B4FA33-7DB4-4a19-8AF1-C20655F672D9}",
+          "EA-Name": "Maaiveld",
+          "EA-Package": "OSLO-BodemEnOndergrond",
+          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "maaiveld"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Het maaiveld van het Boorgat."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Het maaiveld van het Boorgat."
+        },
+        "ap-label-nl": {
+          "nl": "maaiveld"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Het maaiveld van het Boorgat."
+        },
+        "label": {
+          "nl": "maaiveld"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "maaiveld"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "maaiveld",
+      "range": [
+        {
+          "EA-GUID": "{21B4FA33-7DB4-4a19-8AF1-C20655F672D9}",
+          "EA-Name": "Maaiveld",
+          "EA-Package": "OSLO-BodemEnOndergrond",
+          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.ligging",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{EE1777AF-D572-490f-8A90-C94EC4BEC8E4}",
+      "ap-definition-nl": {
+        "nl": "Aanvullende indicatie van de ligging van het Boorgat."
+      },
+      "ap-label-nl": {
+        "nl": "ligging"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Aanvullende indicatie van de ligging van het Boorgat."
+      },
+      "domain": [
+        {
+          "EA-Name": "Boorgat",
+          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Boorgat",
+        "EA-Domain-Guid": "{C38DBB1A-EB18-4590-A878-37846E648571}",
+        "EA-Guid": "{EE1777AF-D572-490f-8A90-C94EC4BEC8E4}",
+        "EA-Name": "^ligging",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "Locatie",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{FCF68A7F-66EB-447d-B907-B64B950C22D5}",
+          "EA-Name": "Locatie",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/ns/prov#Location"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "ligging"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.ligging"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Aanvullende indicatie van de ligging van het Boorgat."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Aanvullende indicatie van de ligging van het Boorgat."
+        },
+        "ap-label-nl": {
+          "nl": "ligging"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Aanvullende indicatie van de ligging van het Boorgat."
+        },
+        "label": {
+          "nl": "ligging"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "ligging"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "ligging",
+      "range": [
+        {
+          "EA-GUID": "{FCF68A7F-66EB-447d-B907-B64B950C22D5}",
+          "EA-Name": "Locatie",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/ns/prov#Location"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.diepte",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{6CD2F53D-FC3B-4c4c-90B6-1EF0EB54C73C}",
+      "ap-definition-nl": {
+        "nl": "De diepte van het Boorgat."
+      },
+      "ap-label-nl": {
+        "nl": "diepte"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "De diepte van het Boorgat."
+      },
+      "domain": [
+        {
+          "EA-Name": "Boorgat",
+          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Boorgat",
+        "EA-Domain-Guid": "{C38DBB1A-EB18-4590-A878-37846E648571}",
+        "EA-Guid": "{6CD2F53D-FC3B-4c4c-90B6-1EF0EB54C73C}",
+        "EA-Name": "^diepte",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "Diepte",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{2F646ECE-32AB-4301-8A89-0F6F7D410F68}",
+          "EA-Name": "Diepte",
+          "EA-Package": "OSLO-BodemEnOndergrond",
+          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Diepte"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "diepte"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.diepte"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "De diepte van het Boorgat."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "De diepte van het Boorgat."
+        },
+        "ap-label-nl": {
+          "nl": "diepte"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "De diepte van het Boorgat."
+        },
+        "label": {
+          "nl": "diepte"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "diepte"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "diepte",
+      "range": [
+        {
+          "EA-GUID": "{2F646ECE-32AB-4301-8A89-0F6F7D410F68}",
+          "EA-Name": "Diepte",
+          "EA-Package": "OSLO-BodemEnOndergrond",
+          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Diepte"
+        }
+      ]
     },
     {
       "@id": "http://www.w3.org/ns/sosa/madeBySampler",
@@ -712,273 +2175,21 @@
       ]
     },
     {
-      "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.diepte",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{6CD2F53D-FC3B-4c4c-90B6-1EF0EB54C73C}",
+      "@id": "http://www.opengis.net/ont/geosparql#asWKT",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{358B9650-C866-48c1-ABC5-FC59564B9DF5}",
       "ap-definition-nl": {
-        "nl": "De diepte van het Boorgat."
+        "nl": "Geometrie uitgedrukt in wkt-formaat."
       },
       "ap-label-nl": {
-        "nl": "diepte"
+        "nl": "wkt"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#wktLiteral\">wktliteral</a> als datatype."
       },
       "codelist": [],
       "definition": {
-        "nl": "De diepte van het Boorgat."
-      },
-      "domain": [
-        {
-          "EA-Name": "Boorgat",
-          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Boorgat",
-        "EA-Domain-Guid": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-        "EA-Guid": "{6CD2F53D-FC3B-4c4c-90B6-1EF0EB54C73C}",
-        "EA-Name": "^diepte",
-        "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "Diepte",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{2F646ECE-32AB-4301-8A89-0F6F7D410F68}",
-          "EA-Name": "Diepte",
-          "EA-Package": "OSLO-BodemEnOndergrond",
-          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Diepte"
-        },
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "diepte"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.diepte"
-          },
-          {
-            "key": "ap-definition-nl",
-            "note": "null",
-            "value": "De diepte van het Boorgat."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "De diepte van het Boorgat."
-        },
-        "ap-label-nl": {
-          "nl": "diepte"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "De diepte van het Boorgat."
-        },
-        "label": {
-          "nl": "diepte"
-        },
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "diepte"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "0",
-      "name": "diepte",
-      "range": [
-        {
-          "EA-GUID": "{2F646ECE-32AB-4301-8A89-0F6F7D410F68}",
-          "EA-Name": "Diepte",
-          "EA-Package": "OSLO-BodemEnOndergrond",
-          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Diepte"
-        }
-      ]
-    },
-    {
-      "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.ligging",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{EE1777AF-D572-490f-8A90-C94EC4BEC8E4}",
-      "ap-definition-nl": {
-        "nl": "Aanvullende indicatie van de ligging van het Boorgat."
-      },
-      "ap-label-nl": {
-        "nl": "ligging"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "Aanvullende indicatie van de ligging van het Boorgat."
-      },
-      "domain": [
-        {
-          "EA-Name": "Boorgat",
-          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Boorgat",
-        "EA-Domain-Guid": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-        "EA-Guid": "{EE1777AF-D572-490f-8A90-C94EC4BEC8E4}",
-        "EA-Name": "^ligging",
-        "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "Locatie",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{FCF68A7F-66EB-447d-B907-B64B950C22D5}",
-          "EA-Name": "Locatie",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "http://www.w3.org/ns/prov#Location"
-        },
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "ligging"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.ligging"
-          },
-          {
-            "key": "ap-definition-nl",
-            "note": "null",
-            "value": "Aanvullende indicatie van de ligging van het Boorgat."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Aanvullende indicatie van de ligging van het Boorgat."
-        },
-        "ap-label-nl": {
-          "nl": "ligging"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "Aanvullende indicatie van de ligging van het Boorgat."
-        },
-        "label": {
-          "nl": "ligging"
-        },
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "ligging"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "ligging",
-      "range": [
-        {
-          "EA-GUID": "{FCF68A7F-66EB-447d-B907-B64B950C22D5}",
-          "EA-Name": "Locatie",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "http://www.w3.org/ns/prov#Location"
-        }
-      ]
-    },
-    {
-      "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{03D73409-5465-4107-9B81-12455A201CC0}",
-      "ap-definition-nl": {
-        "nl": "Het maaiveld van het Boorgat."
-      },
-      "ap-label-nl": {
-        "nl": "maaiveld"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "Het maaiveld van het Boorgat."
-      },
-      "domain": [
-        {
-          "EA-Name": "Boorgat",
-          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Boorgat",
-        "EA-Domain-Guid": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-        "EA-Guid": "{03D73409-5465-4107-9B81-12455A201CC0}",
-        "EA-Name": "^maaiveld",
-        "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "Maaiveld",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{21B4FA33-7DB4-4a19-8AF1-C20655F672D9}",
-          "EA-Name": "Maaiveld",
-          "EA-Package": "OSLO-BodemEnOndergrond",
-          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld"
-        },
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "maaiveld"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld"
-          },
-          {
-            "key": "ap-definition-nl",
-            "note": "null",
-            "value": "Het maaiveld van het Boorgat."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Het maaiveld van het Boorgat."
-        },
-        "ap-label-nl": {
-          "nl": "maaiveld"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "Het maaiveld van het Boorgat."
-        },
-        "label": {
-          "nl": "maaiveld"
-        },
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "maaiveld"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "maaiveld",
-      "range": [
-        {
-          "EA-GUID": "{21B4FA33-7DB4-4a19-8AF1-C20655F672D9}",
-          "EA-Name": "Maaiveld",
-          "EA-Package": "OSLO-BodemEnOndergrond",
-          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld"
-        }
-      ]
-    },
-    {
-      "@id": "https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{858DE2C3-1FEF-4f64-B50F-3AEB9EF6C34F}",
-      "ap-definition-nl": {
-        "nl": "De manier waarop de geometrie werd bepaald."
-      },
-      "ap-label-nl": {
-        "nl": "opmeting"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "De manier waarop de geometrie werd bepaald."
+        "nl": "Geometrie uitgedrukt in wkt-formaat."
       },
       "domain": [
         {
@@ -989,1283 +2200,293 @@
       "extra": {
         "EA-Domain": "Geometrie",
         "EA-Domain-Guid": "{5720A716-474C-4451-B7ED-50C2423DC51D}",
-        "EA-Guid": "{858DE2C3-1FEF-4f64-B50F-3AEB9EF6C34F}",
-        "EA-Name": "opmeting",
+        "EA-Guid": "{358B9650-C866-48c1-ABC5-FC59564B9DF5}",
+        "EA-Name": "wkt",
         "EA-Package": "OSLO-Generiek",
-        "EA-Range": "Opmeting",
+        "EA-Range": "GetypeerdeString",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{BFD25136-77A8-41d2-A135-26FA75EC9287}",
-          "EA-Name": "Opmeting",
+          "EA-GUID": "{B6D75F64-5CDC-4937-AD4A-58B8358E284F}",
+          "EA-Name": "GetypeerdeString",
           "EA-Package": "OSLO-Generiek",
-          "uri": "https://data.vlaanderen.be/ns/generiek#Opmeting"
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
         },
         "RawTags": [
           {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "wkt"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#wktLiteral\">wktliteral</a> als datatype."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.opengis.net/ont/geosparql#asWKT"
+          },
+          {
             "key": "label-nl",
             "note": "null",
-            "value": "opmeting"
+            "value": "wkt"
           },
           {
-            "key": "definition-nl",
+            "key": "ap-definition-nl",
             "note": "null",
-            "value": "De manier waarop de geometrie werd bepaald."
-          },
-          {
-            "key": "name",
-            "note": "null",
-            "value": "Geometrie.opmeting"
+            "value": "Geometrie uitgedrukt in wkt-formaat."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-nl": {
-          "nl": "De manier waarop de geometrie werd bepaald."
+          "nl": "Geometrie uitgedrukt in wkt-formaat."
         },
         "ap-label-nl": {
-          "nl": "opmeting"
+          "nl": "wkt"
         },
-        "ap-usageNote-nl": "",
+        "ap-usageNote-nl": {
+          "nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#wktLiteral\">wktliteral</a> als datatype."
+        },
         "definition": {
-          "nl": "De manier waarop de geometrie werd bepaald."
+          "nl": "Geometrie uitgedrukt in wkt-formaat."
         },
         "label": {
-          "nl": "opmeting"
+          "nl": "wkt"
         },
-        "usage": ""
+        "usage": {
+          "nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#wktLiteral\">wktliteral</a> als datatype."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "nl": "opmeting"
+        "nl": "wkt"
       },
       "maxCardinality": "1",
       "minCardinality": "0",
-      "name": "opmeting",
+      "name": "wkt",
       "range": [
         {
-          "EA-GUID": "{BFD25136-77A8-41d2-A135-26FA75EC9287}",
-          "EA-Name": "Opmeting",
+          "EA-GUID": "{B6D75F64-5CDC-4937-AD4A-58B8358E284F}",
+          "EA-Name": "GetypeerdeString",
           "EA-Package": "OSLO-Generiek",
-          "uri": "https://data.vlaanderen.be/ns/generiek#Opmeting"
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
         }
-      ]
+      ],
+      "usage": {
+        "nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#wktLiteral\">wktliteral</a> als datatype."
+      }
     },
     {
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#Bekisting.bekisting",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{DEFB56A8-6874-43fe-BBA6-1F5E2BE9755B}",
+      "@id": "http://www.opengis.net/ont/geosparql#asGML",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{0EBF76F0-DAE6-43bf-95A3-B5EC1E2AE7B9}",
       "ap-definition-nl": {
-        "nl": "Verwijzing naar de beschrijving van de bekisting voor een bepaald diepte-interval."
+        "nl": "Geometrie uitgedrukt in gml-formaat."
       },
       "ap-label-nl": {
-        "nl": "bekisting"
+        "nl": "gml"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#gmlLiteral\">gmlliteral</a> als datatype."
       },
       "codelist": [],
       "definition": {
-        "nl": "Verwijzing naar de beschrijving van de bekisting voor een bepaald diepte-interval."
+        "nl": "Geometrie uitgedrukt in gml-formaat."
       },
       "domain": [
         {
-          "EA-Name": "Bekisting",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Bekisting"
+          "EA-Name": "Geometrie",
+          "uri": "http://www.w3.org/ns/locn#Geometry"
         }
       ],
       "extra": {
-        "EA-Domain": "Bekisting",
-        "EA-Domain-Guid": "{B63A587A-A625-4ea9-A826-1928769F397B}",
-        "EA-Guid": "{DEFB56A8-6874-43fe-BBA6-1F5E2BE9755B}",
-        "EA-Name": "bekisting",
-        "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "Bekistinginterval",
+        "EA-Domain": "Geometrie",
+        "EA-Domain-Guid": "{5720A716-474C-4451-B7ED-50C2423DC51D}",
+        "EA-Guid": "{0EBF76F0-DAE6-43bf-95A3-B5EC1E2AE7B9}",
+        "EA-Name": "gml",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Range": "GetypeerdeString",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{37DFE43F-25BD-452d-BF41-0A4AD797133D}",
-          "EA-Name": "Bekistinginterval",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Bekistinginterval"
+          "EA-GUID": "{B6D75F64-5CDC-4937-AD4A-58B8358E284F}",
+          "EA-Name": "GetypeerdeString",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
         },
         "RawTags": [
           {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "gml"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.opengis.net/ont/geosparql#asGML"
+          },
+          {
             "key": "label-nl",
             "note": "null",
-            "value": "bekisting"
+            "value": "gml"
           },
           {
-            "key": "definition-nl",
+            "key": "ap-usageNote-nl",
             "note": "null",
-            "value": "Verwijzing naar de beschrijving van de bekisting voor een bepaald diepte-interval."
+            "value": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#gmlLiteral\">gmlliteral</a> als datatype."
           },
           {
-            "key": "parentURI",
+            "key": "ap-definition-nl",
             "note": "null",
-            "value": "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage.element"
-          },
-          {
-            "key": "name",
-            "note": "null",
-            "value": "Bekisting.bekisting"
+            "value": "Geometrie uitgedrukt in gml-formaat."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-nl": {
-          "nl": "Verwijzing naar de beschrijving van de bekisting voor een bepaald diepte-interval."
+          "nl": "Geometrie uitgedrukt in gml-formaat."
         },
         "ap-label-nl": {
-          "nl": "bekisting"
+          "nl": "gml"
         },
-        "ap-usageNote-nl": "",
+        "ap-usageNote-nl": {
+          "nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#gmlLiteral\">gmlliteral</a> als datatype."
+        },
         "definition": {
-          "nl": "Verwijzing naar de beschrijving van de bekisting voor een bepaald diepte-interval."
+          "nl": "Geometrie uitgedrukt in gml-formaat."
         },
         "label": {
-          "nl": "bekisting"
+          "nl": "gml"
         },
-        "usage": ""
-      },
-      "generalization": [
-        "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage.element"
-      ],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "bekisting"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "1",
-      "name": "bekisting",
-      "range": [
-        {
-          "EA-GUID": "{37DFE43F-25BD-452d-BF41-0A4AD797133D}",
-          "EA-Name": "Bekistinginterval",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Bekistinginterval"
+        "usage": {
+          "nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#gmlLiteral\">gmlliteral</a> als datatype."
         }
-      ]
-    },
-    {
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#Boorgat.bekisting",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{F69EDD85-F341-43e9-8025-8C1CC5F0DA29}",
-      "ap-definition-nl": {
-        "nl": "Verwijzing naar de beschrijving van de Bekisting van het Boorgat."
-      },
-      "ap-label-nl": {
-        "nl": "bekisting"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "Verwijzing naar de beschrijving van de Bekisting van het Boorgat."
-      },
-      "domain": [
-        {
-          "EA-Name": "Boorgat",
-          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "definition-nl",
-            "note": "Verwijzing naar de beschrijving van de Bekisting van het Boorgat.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-nl",
-            "note": "bekisting",
-            "value": "NOTE"
-          },
-          {
-            "key": "name",
-            "note": "Boorgat.bekisting",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Boorgat",
-        "EA-Domain-Guid": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-        "EA-Guid": "{F69EDD85-F341-43e9-8025-8C1CC5F0DA29}",
-        "EA-Name": "bekisting",
-        "EA-Package": "",
-        "EA-Range": "Bekisting",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{B63A587A-A625-4ea9-A826-1928769F397B}",
-          "EA-Name": "Bekisting",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Bekisting"
-        },
-        "RawTags": [
-          {
-            "key": "definition-nl",
-            "note": "Verwijzing naar de beschrijving van de Bekisting van het Boorgat.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-nl",
-            "note": "bekisting",
-            "value": "NOTE"
-          },
-          {
-            "key": "name",
-            "note": "Boorgat.bekisting",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Verwijzing naar de beschrijving van de Bekisting van het Boorgat."
-        },
-        "ap-label-nl": {
-          "nl": "bekisting"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "Verwijzing naar de beschrijving van de Bekisting van het Boorgat."
-        },
-        "derived": "false",
-        "destRole": "bekisting",
-        "label": {
-          "nl": "bekisting"
-        },
-        "sourceRole": "null",
-        "usage": ""
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "nl": "bekisting"
+        "nl": "gml"
       },
       "maxCardinality": "1",
       "minCardinality": "0",
-      "name": "bekisting",
+      "name": "gml",
       "range": [
         {
-          "EA-GUID": "{B63A587A-A625-4ea9-A826-1928769F397B}",
-          "EA-Name": "Bekisting",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Bekisting"
+          "EA-GUID": "{B6D75F64-5CDC-4937-AD4A-58B8358E284F}",
+          "EA-Name": "GetypeerdeString",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
         }
-      ]
+      ],
+      "usage": {
+        "nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#gmlLiteral\">gmlliteral</a> als datatype."
+      }
     },
     {
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter.diameter",
+      "@id": "http://purl.org/dc/terms/type",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{D56D36E9-7D84-4904-8382-4BA2E4913F09}",
+      "EA-Guid": "{4993A9FF-9920-43da-8DD2-CBAAC6A3366F}",
       "ap-definition-nl": {
-        "nl": "Verwijzing naar de beschrijving van de boorgatdiameter voor een bepaald diepteinterval."
+        "nl": "Verwijzing naar de beschrijving van het type Boor voor een bepaald diepteinterval."
       },
       "ap-label-nl": {
-        "nl": "diameter"
+        "nl": "type"
       },
       "codelist": [],
       "definition": {
-        "nl": "Verwijzing naar de beschrijving van de boorgatdiameter voor een bepaald diepteinterval."
+        "nl": "Verwijzing naar de beschrijving van het type Boor voor een bepaald diepteinterval."
       },
       "domain": [
         {
-          "EA-Name": "Boorgatdiameter",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter"
+          "EA-Name": "Boor",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boor"
         }
       ],
       "extra": {
-        "EA-Domain": "Boorgatdiameter",
-        "EA-Domain-Guid": "{97CFB897-3C1B-416d-8F1A-4E58039DC966}",
-        "EA-Guid": "{D56D36E9-7D84-4904-8382-4BA2E4913F09}",
-        "EA-Name": "diameter",
+        "EA-Domain": "Boor",
+        "EA-Domain-Guid": "{675FF6EE-0ED8-43aa-AC6D-B4D70C646CB1}",
+        "EA-Guid": "{4993A9FF-9920-43da-8DD2-CBAAC6A3366F}",
+        "EA-Name": "type",
         "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "Boorgatdiameterinterval",
+        "EA-Range": "BoortypeInterval",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{00D6FCCD-1B1C-4c18-A7CE-B109714BE557}",
-          "EA-Name": "Boorgatdiameterinterval",
+          "EA-GUID": "{055ADEA4-F719-4500-B0D0-24609EACCE5E}",
+          "EA-Name": "BoortypeInterval",
           "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameterinterval"
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#BoortypeInterval"
         },
         "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "diameter"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "Verwijzing naar de beschrijving van de boorgatdiameter voor een bepaald diepteinterval."
-          },
-          {
-            "key": "parentURI",
-            "note": "null",
-            "value": "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage.element"
-          },
-          {
-            "key": "name",
-            "note": "null",
-            "value": "Boorgatdiameter.diameter"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Verwijzing naar de beschrijving van de boorgatdiameter voor een bepaald diepteinterval."
-        },
-        "ap-label-nl": {
-          "nl": "diameter"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "Verwijzing naar de beschrijving van de boorgatdiameter voor een bepaald diepteinterval."
-        },
-        "label": {
-          "nl": "diameter"
-        },
-        "usage": ""
-      },
-      "generalization": [
-        "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage.element"
-      ],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "diameter"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "1",
-      "name": "diameter",
-      "range": [
-        {
-          "EA-GUID": "{00D6FCCD-1B1C-4c18-A7CE-B109714BE557}",
-          "EA-Name": "Boorgatdiameterinterval",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameterinterval"
-        }
-      ]
-    },
-    {
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#Boormethode.methode",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{A0870428-0265-4d4a-A7E0-746F6E91D8E1}",
-      "ap-definition-nl": {
-        "nl": "Verwijzing naar de beschrijving van de boormethode voor een bepaald diepteinterval."
-      },
-      "ap-label-nl": {
-        "nl": "methode"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "Verwijzing naar de beschrijving van de boormethode voor een bepaald diepteinterval."
-      },
-      "domain": [
-        {
-          "EA-Name": "Boormethode",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Boormethode",
-        "EA-Domain-Guid": "{65F9561F-631D-4274-A66C-F159CE9DE724}",
-        "EA-Guid": "{A0870428-0265-4d4a-A7E0-746F6E91D8E1}",
-        "EA-Name": "methode",
-        "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "BoormethodeInterval",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{BA85C1A3-5058-41f8-9C84-FDB92B01C7BC}",
-          "EA-Name": "BoormethodeInterval",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval"
-        },
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "methode"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "Verwijzing naar de beschrijving van de boormethode voor een bepaald diepteinterval."
-          },
           {
             "key": "xUML",
             "note": "null",
             "value": "{redefines ^type, element}"
           },
           {
-            "key": "name",
+            "key": "label-nl",
             "note": "null",
-            "value": "Boormethode.methode"
+            "value": "type"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://purl.org/dc/terms/type"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Verwijzing naar de beschrijving van het type Boor voor een bepaald diepteinterval."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-nl": {
-          "nl": "Verwijzing naar de beschrijving van de boormethode voor een bepaald diepteinterval."
+          "nl": "Verwijzing naar de beschrijving van het type Boor voor een bepaald diepteinterval."
         },
         "ap-label-nl": {
-          "nl": "methode"
+          "nl": "type"
         },
         "ap-usageNote-nl": "",
         "definition": {
-          "nl": "Verwijzing naar de beschrijving van de boormethode voor een bepaald diepteinterval."
+          "nl": "Verwijzing naar de beschrijving van het type Boor voor een bepaald diepteinterval."
         },
         "label": {
-          "nl": "methode"
+          "nl": "type"
         },
         "usage": ""
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "nl": "methode"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "1",
-      "name": "methode",
-      "range": [
-        {
-          "EA-GUID": "{BA85C1A3-5058-41f8-9C84-FDB92B01C7BC}",
-          "EA-Name": "BoormethodeInterval",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval"
-        }
-      ]
-    },
-    {
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{A3D2AC0E-2171-40f2-B86A-C455F3BC9DE2}",
-      "ap-definition-nl": {
-        "nl": "Methode van de Boring."
-      },
-      "ap-label-nl": {
-        "nl": "methode"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "Methode van de Boring."
-      },
-      "domain": [
-        {
-          "EA-Name": "BoormethodeInterval",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "BoormethodeInterval",
-        "EA-Domain-Guid": "{BA85C1A3-5058-41f8-9C84-FDB92B01C7BC}",
-        "EA-Guid": "{A3D2AC0E-2171-40f2-B86A-C455F3BC9DE2}",
-        "EA-Name": "methode",
-        "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "BoormethodeType",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{94CE97C3-AB9F-4cf9-8611-FFCA23AF8315}",
-          "EA-Name": "BoormethodeType",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-        },
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "methode"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "Methode van de Boring."
-          },
-          {
-            "key": "parentURI",
-            "note": "null",
-            "value": "http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.value"
-          },
-          {
-            "key": "name",
-            "note": "null",
-            "value": "Boormethodeinterval.methode"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Methode van de Boring."
-        },
-        "ap-label-nl": {
-          "nl": "methode"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "Methode van de Boring."
-        },
-        "label": {
-          "nl": "methode"
-        },
-        "usage": ""
-      },
-      "generalization": [
-        "http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.value"
-      ],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "methode"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "1",
-      "name": "methode",
-      "range": [
-        {
-          "EA-GUID": "{94CE97C3-AB9F-4cf9-8611-FFCA23AF8315}",
-          "EA-Name": "BoormethodeType",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-        }
-      ]
-    },
-    {
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{C170A4F2-9F5B-413b-9238-67B041746509}",
-      "ap-definition-nl": {
-        "nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
-      },
-      "ap-label-nl": {
-        "nl": "identificator"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
-      },
-      "domain": [
-        {
-          "EA-Name": "Grondboring",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Grondboring",
-        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
-        "EA-Guid": "{C170A4F2-9F5B-413b-9238-67B041746509}",
-        "EA-Name": "identificator",
-        "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "Identificator",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
-          "EA-Name": "Identificator",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "http://www.w3.org/ns/adms#Identifier"
-        },
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "identificator"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
-          },
-          {
-            "key": "usageNote-nl",
-            "note": "null",
-            "value": "Bv het boornummer."
-          },
-          {
-            "key": "name",
-            "note": "null",
-            "value": "Grondboring.identificator"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
-        },
-        "ap-label-nl": {
-          "nl": "identificator"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
-        },
-        "label": {
-          "nl": "identificator"
-        },
-        "usage": {
-          "nl": "Bv het boornummer."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "identificator"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "1",
-      "name": "identificator",
-      "range": [
-        {
-          "EA-GUID": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
-          "EA-Name": "Identificator",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "http://www.w3.org/ns/adms#Identifier"
-        }
-      ],
-      "usage": {
-        "nl": "Bv het boornummer."
-      }
-    },
-    {
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#aangenomenGrondwaterstand",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{2AE90164-FD02-4630-B3BD-04DAF092CA61}",
-      "ap-definition-nl": {
-        "nl": "De Grondwaterstand in het Boorgat, al dan niet gebaseerd op meerdere Observaties."
-      },
-      "ap-label-nl": {
-        "nl": "aangenomenGrondwaterstand"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "De Grondwaterstand in het Boorgat, al dan niet gebaseerd op meerdere Observaties."
-      },
-      "domain": [
-        {
-          "EA-Name": "Boorgat",
-          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Boorgat",
-        "EA-Domain-Guid": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-        "EA-Guid": "{2AE90164-FD02-4630-B3BD-04DAF092CA61}",
-        "EA-Name": "aangenomenGrondwaterstand",
-        "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "KwantitatieveWaarde",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
-          "EA-Name": "KwantitatieveWaarde",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "https://schema.org/QuantitativeValue"
-        },
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "aangenomenGrondwaterstand"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "De Grondwaterstand in het Boorgat, al dan niet gebaseerd op meerdere Observaties."
-          },
-          {
-            "key": "usageNote-nl",
-            "note": "null",
-            "value": "Die Observaties kunnen ook apart beschreven worden."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "De Grondwaterstand in het Boorgat, al dan niet gebaseerd op meerdere Observaties."
-        },
-        "ap-label-nl": {
-          "nl": "aangenomenGrondwaterstand"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "De Grondwaterstand in het Boorgat, al dan niet gebaseerd op meerdere Observaties."
-        },
-        "label": {
-          "nl": "aangenomenGrondwaterstand"
-        },
-        "usage": {
-          "nl": "Die Observaties kunnen ook apart beschreven worden."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "aangenomenGrondwaterstand"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "0",
-      "name": "aangenomengrondwaterstand",
-      "range": [
-        {
-          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
-          "EA-Name": "KwantitatieveWaarde",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "https://schema.org/QuantitativeValue"
-        }
-      ],
-      "usage": {
-        "nl": "Die Observaties kunnen ook apart beschreven worden."
-      }
-    },
-    {
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#boorder",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{3D672591-1A0F-4787-86CE-90725C19307B}",
-      "ap-definition-nl": {
-        "nl": "Diegene die de Boring heeft uitgevoerd."
-      },
-      "ap-label-nl": {
-        "nl": "boorder"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "Diegene die de Boring heeft uitgevoerd."
-      },
-      "domain": [
-        {
-          "EA-Name": "Grondboring",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Grondboring",
-        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
-        "EA-Guid": "{3D672591-1A0F-4787-86CE-90725C19307B}",
-        "EA-Name": "boorder",
-        "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "Agent",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
-          "EA-Name": "Agent",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "http://purl.org/dc/terms/Agent"
-        },
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "boorder"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "Diegene die de Boring heeft uitgevoerd."
-          },
-          {
-            "key": "parentURI",
-            "note": "null",
-            "value": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Diegene die de Boring heeft uitgevoerd."
-        },
-        "ap-label-nl": {
-          "nl": "boorder"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "Diegene die de Boring heeft uitgevoerd."
-        },
-        "label": {
-          "nl": "boorder"
-        },
-        "usage": ""
-      },
-      "generalization": [
-        "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor"
-      ],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "boorder"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "0",
-      "name": "boorder",
-      "range": [
-        {
-          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
-          "EA-Name": "Agent",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "http://purl.org/dc/terms/Agent"
-        }
-      ]
-    },
-    {
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#boordiameter",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{D38DB965-1FD9-4273-AF40-257B7E697F76}",
-      "ap-definition-nl": {
-        "nl": "Verwijzing naar de beschrijving van de Boordiameter van het Boorgat."
-      },
-      "ap-label-nl": {
-        "nl": "boordiameter"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "Verwijzing naar de beschrijving van de Boordiameter van het Boorgat."
-      },
-      "domain": [
-        {
-          "EA-Name": "Boorgat",
-          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "definition-nl",
-            "note": "Verwijzing naar de beschrijving van de Boordiameter van het Boorgat.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-nl",
-            "note": "boordiameter",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Boorgat",
-        "EA-Domain-Guid": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-        "EA-Guid": "{D38DB965-1FD9-4273-AF40-257B7E697F76}",
-        "EA-Name": "boordiameter",
-        "EA-Package": "",
-        "EA-Range": "Boorgatdiameter",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{97CFB897-3C1B-416d-8F1A-4E58039DC966}",
-          "EA-Name": "Boorgatdiameter",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter"
-        },
-        "RawTags": [
-          {
-            "key": "definition-nl",
-            "note": "Verwijzing naar de beschrijving van de Boordiameter van het Boorgat.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-nl",
-            "note": "boordiameter",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Verwijzing naar de beschrijving van de Boordiameter van het Boorgat."
-        },
-        "ap-label-nl": {
-          "nl": "boordiameter"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "Verwijzing naar de beschrijving van de Boordiameter van het Boorgat."
-        },
-        "derived": "false",
-        "destRole": "boordiameter",
-        "label": {
-          "nl": "boordiameter"
-        },
-        "sourceRole": "null",
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "boordiameter"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "0",
-      "name": "boordiameter",
-      "range": [
-        {
-          "EA-GUID": "{97CFB897-3C1B-416d-8F1A-4E58039DC966}",
-          "EA-Name": "Boorgatdiameter",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter"
-        }
-      ]
-    },
-    {
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#boormeester",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{02B3D701-BCCD-4230-87A7-77B9E64AF054}",
-      "ap-definition-nl": {
-        "nl": "Opzichter bij de Boring."
-      },
-      "ap-label-nl": {
-        "nl": "boormeester"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "Opzichter bij de Boring."
-      },
-      "domain": [
-        {
-          "EA-Name": "Grondboring",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Grondboring",
-        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
-        "EA-Guid": "{02B3D701-BCCD-4230-87A7-77B9E64AF054}",
-        "EA-Name": "boormeester",
-        "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "Agent",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
-          "EA-Name": "Agent",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "http://purl.org/dc/terms/Agent"
-        },
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "boormeester"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "Opzichter bij de Boring."
-          },
-          {
-            "key": "parentURI",
-            "note": "null",
-            "value": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Opzichter bij de Boring."
-        },
-        "ap-label-nl": {
-          "nl": "boormeester"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "Opzichter bij de Boring."
-        },
-        "label": {
-          "nl": "boormeester"
-        },
-        "usage": ""
-      },
-      "generalization": [
-        "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor"
-      ],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "boormeester"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "0",
-      "name": "boormeester",
-      "range": [
-        {
-          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
-          "EA-Name": "Agent",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "http://purl.org/dc/terms/Agent"
-        }
-      ]
-    },
-    {
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#boringLengte",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{572CB00D-FA45-46ec-A084-22C9572CB1DF}",
-      "ap-definition-nl": {
-        "nl": "Lengte van de Grondboring."
-      },
-      "ap-label-nl": {
-        "nl": "boringLengte"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "Lengte van de Grondboring."
-      },
-      "domain": [
-        {
-          "EA-Name": "Boorgat",
-          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Boorgat",
-        "EA-Domain-Guid": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-        "EA-Guid": "{572CB00D-FA45-46ec-A084-22C9572CB1DF}",
-        "EA-Name": "boringLengte",
-        "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "KwantitatieveWaarde",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
-          "EA-Name": "KwantitatieveWaarde",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "https://schema.org/QuantitativeValue"
-        },
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "boringLengte"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "Lengte van de Grondboring."
-          },
-          {
-            "key": "usageNote-nl",
-            "note": "null",
-            "value": "Zoals verstrekt door de dataleverancier. Kan bv afgeleid zijn uit de geometrie van de Grondboring maar ook uit bv het resultaat van de LithologischeInterpretatie of de lengte is gemeten op het terrein."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Lengte van de Grondboring."
-        },
-        "ap-label-nl": {
-          "nl": "boringLengte"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "Lengte van de Grondboring."
-        },
-        "label": {
-          "nl": "boringLengte"
-        },
-        "usage": {
-          "nl": "Zoals verstrekt door de dataleverancier. Kan bv afgeleid zijn uit de geometrie van de Grondboring maar ook uit bv het resultaat van de LithologischeInterpretatie of de lengte is gemeten op het terrein."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "boringLengte"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "0",
-      "name": "boringlengte",
-      "range": [
-        {
-          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
-          "EA-Name": "KwantitatieveWaarde",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "https://schema.org/QuantitativeValue"
-        }
-      ],
-      "usage": {
-        "nl": "Zoals verstrekt door de dataleverancier. Kan bv afgeleid zijn uit de geometrie van de Grondboring maar ook uit bv het resultaat van de LithologischeInterpretatie of de lengte is gemeten op het terrein."
-      }
-    },
-    {
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#doel",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{BD2A820D-885E-4ca8-8686-50AC15D68B95}",
-      "ap-definition-nl": {
-        "nl": "Reden waarom de Grondboring werd uitgevoerd."
-      },
-      "ap-label-nl": {
-        "nl": "doel"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "Reden waarom de Grondboring werd uitgevoerd."
-      },
-      "domain": [
-        {
-          "EA-Name": "Grondboring",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Grondboring",
-        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
-        "EA-Guid": "{BD2A820D-885E-4ca8-8686-50AC15D68B95}",
-        "EA-Name": "doel",
-        "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "Boringdoeltype",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{5447AC73-3B35-4483-9297-EC7BCA306B39}",
-          "EA-Name": "Boringdoeltype",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-        },
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "doel"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "Reden waarom de Grondboring werd uitgevoerd."
-          },
-          {
-            "key": "usageNote-nl",
-            "note": "null",
-            "value": "Vb exploitatie, onderzoek, bemaling etc."
-          },
-          {
-            "key": "parentURI",
-            "note": "null",
-            "value": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.doel"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Reden waarom de Grondboring werd uitgevoerd."
-        },
-        "ap-label-nl": {
-          "nl": "doel"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "Reden waarom de Grondboring werd uitgevoerd."
-        },
-        "label": {
-          "nl": "doel"
-        },
-        "usage": {
-          "nl": "Vb exploitatie, onderzoek, bemaling etc."
-        }
-      },
-      "generalization": [
-        "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.doel"
-      ],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "doel"
+        "nl": "type"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
-      "name": "doel",
+      "name": "type",
       "range": [
         {
-          "EA-GUID": "{5447AC73-3B35-4483-9297-EC7BCA306B39}",
-          "EA-Name": "Boringdoeltype",
+          "EA-GUID": "{055ADEA4-F719-4500-B0D0-24609EACCE5E}",
+          "EA-Name": "BoortypeInterval",
           "EA-Package": "OSLO-Grondboringen",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#BoortypeInterval"
         }
-      ],
-      "usage": {
-        "nl": "Vb exploitatie, onderzoek, bemaling etc."
-      }
+      ]
     },
     {
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#inclinatietype",
+      "@id": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.positionalAccuracy",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{AE29C7FD-A3BE-4632-8E46-74E317260284}",
+      "EA-Guid": "{19995E68-40B8-46f1-B8E2-4F8BA8936106}",
       "ap-definition-nl": {
-        "nl": "Algemene aanduiding van de richting waaronder werd geboord."
+        "nl": "De nauwkeurigheid van de positie van het Boorgat."
       },
       "ap-label-nl": {
-        "nl": "inclinatietype"
+        "nl": "positioneleNauwkeurigheid"
       },
       "codelist": [],
       "definition": {
-        "nl": "Algemene aanduiding van de richting waaronder werd geboord."
-      },
-      "domain": [
-        {
-          "EA-Name": "Boormethode",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Boormethode",
-        "EA-Domain-Guid": "{65F9561F-631D-4274-A66C-F159CE9DE724}",
-        "EA-Guid": "{AE29C7FD-A3BE-4632-8E46-74E317260284}",
-        "EA-Name": "inclinatietype",
-        "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "Boringinclinatietype",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{FD70F356-1FFD-4593-A127-35070458B5AB}",
-          "EA-Name": "Boringinclinatietype",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-        },
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "inclinatietype"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "Algemene aanduiding van de richting waaronder werd geboord."
-          },
-          {
-            "key": "usageNote-nl",
-            "note": "null",
-            "value": "Verticaal, schuin, horizontaal..."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Algemene aanduiding van de richting waaronder werd geboord."
-        },
-        "ap-label-nl": {
-          "nl": "inclinatietype"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "Algemene aanduiding van de richting waaronder werd geboord."
-        },
-        "label": {
-          "nl": "inclinatietype"
-        },
-        "usage": {
-          "nl": "Verticaal, schuin, horizontaal..."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "inclinatietype"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "0",
-      "name": "inclinatietype",
-      "range": [
-        {
-          "EA-GUID": "{FD70F356-1FFD-4593-A127-35070458B5AB}",
-          "EA-Name": "Boringinclinatietype",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-        }
-      ],
-      "usage": {
-        "nl": "Verticaal, schuin, horizontaal..."
-      }
-    },
-    {
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#isResultaatVan",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
-      "ap-definition-nl": {
-        "nl": "Grondboring waarvan het Boorgat het resultaat is."
-      },
-      "ap-label-nl": {
-        "nl": "isResultaatVan"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "Grondboring waarvan het Boorgat het resultaat is."
+        "nl": "De nauwkeurigheid van de positie van het Boorgat."
       },
       "domain": [
         {
@@ -2274,373 +2495,152 @@
         }
       ],
       "extra": {
-        "DestRoleTags": [
-          {
-            "key": "label-nl",
-            "note": "isResultaatVan",
-            "value": "NOTE"
-          },
-          {
-            "key": "parentURI",
-            "note": "http://www.w3.org/ns/sosa/isresultOf",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-nl",
-            "note": "Grondboring waarvan het Boorgat het resultaat is.",
-            "value": "NOTE"
-          }
-        ],
         "EA-Domain": "Boorgat",
         "EA-Domain-Guid": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-        "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
-        "EA-Name": "isResultaatVan",
-        "EA-Package": "",
-        "EA-Range": "Grondboring",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
-          "EA-Name": "Grondboring",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-        },
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "isResultaatVan",
-            "value": "NOTE"
-          },
-          {
-            "key": "parentURI",
-            "note": "http://www.w3.org/ns/sosa/isresultOf",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-nl",
-            "note": "Grondboring waarvan het Boorgat het resultaat is.",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Grondboring waarvan het Boorgat het resultaat is."
-        },
-        "ap-label-nl": {
-          "nl": "isResultaatVan"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "Grondboring waarvan het Boorgat het resultaat is."
-        },
-        "derived": "false",
-        "destRole": "isResultaatVan",
-        "label": {
-          "nl": "isResultaatVan"
-        },
-        "sourceRole": "resultaat",
-        "usage": ""
-      },
-      "generalization": [
-        "http://www.w3.org/ns/sosa/isresultOf"
-      ],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "isResultaatVan"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "1",
-      "name": "isresultaatvan",
-      "range": [
-        {
-          "EA-GUID": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
-          "EA-Name": "Grondboring",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-        }
-      ]
-    },
-    {
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#resultaat",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
-      "ap-definition-nl": {
-        "nl": "Het resultaat van de uitgevoerde grondboring."
-      },
-      "ap-label-nl": {
-        "nl": "resultaat"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "Het resultaat van de uitgevoerde grondboring."
-      },
-      "domain": [
-        {
-          "EA-Name": "Grondboring",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "parentURI",
-            "note": "http://www.w3.org/ns/sosa/hasResult",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-nl",
-            "note": "Het resultaat van de uitgevoerde grondboring.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-nl",
-            "note": "resultaat",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Grondboring",
-        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
-        "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
-        "EA-Name": "resultaat",
-        "EA-Package": "",
-        "EA-Range": "Boorgat",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-          "EA-Name": "Boorgat",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-        },
-        "RawTags": [
-          {
-            "key": "parentURI",
-            "note": "http://www.w3.org/ns/sosa/hasResult",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-nl",
-            "note": "Het resultaat van de uitgevoerde grondboring.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-nl",
-            "note": "resultaat",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Het resultaat van de uitgevoerde grondboring."
-        },
-        "ap-label-nl": {
-          "nl": "resultaat"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "Het resultaat van de uitgevoerde grondboring."
-        },
-        "derived": "false",
-        "destRole": "resultaat",
-        "label": {
-          "nl": "resultaat"
-        },
-        "sourceRole": "isResultaatVan",
-        "usage": ""
-      },
-      "generalization": [
-        "http://www.w3.org/ns/sosa/hasResult"
-      ],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "resultaat"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "1",
-      "name": "resultaat",
-      "range": [
-        {
-          "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-          "EA-Name": "Boorgat",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-        }
-      ]
-    },
-    {
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#startpunt",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{3B759974-551C-49b4-A070-448B58770FFE}",
-      "ap-definition-nl": {
-        "nl": "Aard van het oppervlak waarop de boorkraag is geplaatst."
-      },
-      "ap-label-nl": {
-        "nl": "startpunt"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "Aard van het oppervlak waarop de boorkraag is geplaatst."
-      },
-      "domain": [
-        {
-          "EA-Name": "Boormethode",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Boormethode",
-        "EA-Domain-Guid": "{65F9561F-631D-4274-A66C-F159CE9DE724}",
-        "EA-Guid": "{3B759974-551C-49b4-A070-448B58770FFE}",
-        "EA-Name": "startpunt",
+        "EA-Guid": "{19995E68-40B8-46f1-B8E2-4F8BA8936106}",
+        "EA-Name": "^positioneleNauwkeurigheid",
         "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "Boringstartpunttype",
+        "EA-Range": "PositioneleNauwkeurigheid",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{7CF63770-EDB5-435e-A0E3-4BD69B970FC2}",
-          "EA-Name": "Boringstartpunttype",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+          "EA-GUID": "{E4513A1B-8FBA-4876-939B-41DD9137DD80}",
+          "EA-Name": "PositioneleNauwkeurigheid",
+          "EA-Package": "OSLO-ObservatiesEnMetingen",
+          "uri": "http://def.isotc211.org/iso19115/2006/DataQualityInformation#DQ_PositionalAccuracy"
         },
         "RawTags": [
           {
             "key": "label-nl",
             "note": "null",
-            "value": "startpunt"
+            "value": "positioneleNauwkeurigheid"
           },
           {
-            "key": "definition-nl",
+            "key": "ap-definition-nl",
             "note": "null",
-            "value": "Aard van het oppervlak waarop de boorkraag is geplaatst."
+            "value": "De nauwkeurigheid van de positie van het Boorgat."
           },
           {
-            "key": "usageNote-nl",
+            "key": "uri",
             "note": "null",
-            "value": "Doorgaans het maaiveld maar andere mogelijkheden zijn bv bouwput, boortafel, dijk, bestaand boorgat"
+            "value": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.positionalAccuracy"
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-nl": {
-          "nl": "Aard van het oppervlak waarop de boorkraag is geplaatst."
+          "nl": "De nauwkeurigheid van de positie van het Boorgat."
         },
         "ap-label-nl": {
-          "nl": "startpunt"
+          "nl": "positioneleNauwkeurigheid"
         },
         "ap-usageNote-nl": "",
         "definition": {
-          "nl": "Aard van het oppervlak waarop de boorkraag is geplaatst."
+          "nl": "De nauwkeurigheid van de positie van het Boorgat."
         },
         "label": {
-          "nl": "startpunt"
+          "nl": "positioneleNauwkeurigheid"
         },
-        "usage": {
-          "nl": "Doorgaans het maaiveld maar andere mogelijkheden zijn bv bouwput, boortafel, dijk, bestaand boorgat"
-        }
+        "usage": ""
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "nl": "startpunt"
+        "nl": "positioneleNauwkeurigheid"
       },
-      "maxCardinality": "1",
+      "maxCardinality": "2",
       "minCardinality": "0",
-      "name": "startpunt",
+      "name": "positionelenauwkeurigheid",
       "range": [
         {
-          "EA-GUID": "{7CF63770-EDB5-435e-A0E3-4BD69B970FC2}",
-          "EA-Name": "Boringstartpunttype",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+          "EA-GUID": "{E4513A1B-8FBA-4876-939B-41DD9137DD80}",
+          "EA-Name": "PositioneleNauwkeurigheid",
+          "EA-Package": "OSLO-ObservatiesEnMetingen",
+          "uri": "http://def.isotc211.org/iso19115/2006/DataQualityInformation#DQ_PositionalAccuracy"
         }
-      ],
-      "usage": {
-        "nl": "Doorgaans het maaiveld maar andere mogelijkheden zijn bv bouwput, boortafel, dijk, bestaand boorgat"
-      }
+      ]
     },
     {
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKader",
+      "@id": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.hostedProcedure",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{B110E2E5-E77B-4146-8876-7C235A5B2247}",
+      "EA-Guid": "{E04FB471-EB05-4068-B52C-5071628EBFFF}",
       "ap-definition-nl": {
-        "nl": "Het kader dat vastlegt wat behoort tot de wet."
+        "nl": "Procedure die of instrument dat in of op het Boorgat is geïnstalleerd."
       },
       "ap-label-nl": {
-        "nl": "wettelijkKader"
+        "nl": "gehostPlatform"
       },
       "codelist": [],
       "definition": {
-        "nl": "Het kader dat vastlegt wat behoort tot de wet."
+        "nl": "Procedure die of instrument dat in of op het Boorgat is geïnstalleerd."
       },
       "domain": [
         {
-          "EA-Name": "Grondboring",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+          "EA-Name": "Boorgat",
+          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
         }
       ],
       "extra": {
-        "EA-Domain": "Grondboring",
-        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
-        "EA-Guid": "{B110E2E5-E77B-4146-8876-7C235A5B2247}",
-        "EA-Name": "wettelijkKader",
+        "EA-Domain": "Boorgat",
+        "EA-Domain-Guid": "{C38DBB1A-EB18-4590-A878-37846E648571}",
+        "EA-Guid": "{E04FB471-EB05-4068-B52C-5071628EBFFF}",
+        "EA-Name": "^gehostPlatform",
         "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "WettelijkKaderBoring",
+        "EA-Range": "Proces",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{932F5443-1EE5-42c2-82E2-7007E203D6CD}",
-          "EA-Name": "WettelijkKaderBoring",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring"
+          "EA-GUID": "{A2580981-CCE9-40c4-82AE-2B10A799EB56}",
+          "EA-Name": "Proces",
+          "EA-Package": "OSLO-ObservatiesEnMetingen",
+          "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Process"
         },
         "RawTags": [
           {
             "key": "label-nl",
             "note": "null",
-            "value": "wettelijkKader"
+            "value": "gehostPlatform"
           },
           {
-            "key": "definition-nl",
+            "key": "uri",
             "note": "null",
-            "value": "Het kader dat vastlegt wat behoort tot de wet."
+            "value": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.hostedProcedure"
           },
           {
-            "key": "parentURI",
+            "key": "ap-definition-nl",
             "note": "null",
-            "value": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.wettelijkKader"
+            "value": "Procedure die of instrument dat in of op het Boorgat is geïnstalleerd."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-nl": {
-          "nl": "Het kader dat vastlegt wat behoort tot de wet."
+          "nl": "Procedure die of instrument dat in of op het Boorgat is geïnstalleerd."
         },
         "ap-label-nl": {
-          "nl": "wettelijkKader"
+          "nl": "gehostPlatform"
         },
         "ap-usageNote-nl": "",
         "definition": {
-          "nl": "Het kader dat vastlegt wat behoort tot de wet."
+          "nl": "Procedure die of instrument dat in of op het Boorgat is geïnstalleerd."
         },
         "label": {
-          "nl": "wettelijkKader"
+          "nl": "gehostPlatform"
         },
         "usage": ""
       },
-      "generalization": [
-        "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.wettelijkKader"
-      ],
+      "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "nl": "wettelijkKader"
+        "nl": "gehostPlatform"
       },
-      "maxCardinality": "1",
+      "maxCardinality": "*",
       "minCardinality": "0",
-      "name": "wettelijkkader",
+      "name": "gehostplatform",
       "range": [
         {
-          "EA-GUID": "{932F5443-1EE5-42c2-82E2-7007E203D6CD}",
-          "EA-Name": "WettelijkKaderBoring",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring"
+          "EA-GUID": "{A2580981-CCE9-40c4-82AE-2B10A799EB56}",
+          "EA-Name": "Proces",
+          "EA-Package": "OSLO-ObservatiesEnMetingen",
+          "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Process"
         }
       ]
     }
@@ -3420,206 +3420,6 @@
   "navigation": {},
   "properties": [
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#^gebruikteProcedure",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{70188AC8-BF3C-4107-855C-56AAFFFDDBC8}",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "ap-label-nl": {
-        "nl": "gebruikteProcedure"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "TODO"
-      },
-      "domain": [
-        {
-          "EA-Name": "Grondboring",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "label-nl",
-            "note": "gebruikteProcedure",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-nl",
-            "note": "TODO",
-            "value": "NOTE"
-          },
-          {
-            "key": "package",
-            "note": "Grondverzet-Grondboringen",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Grondboring",
-        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
-        "EA-Guid": "{70188AC8-BF3C-4107-855C-56AAFFFDDBC8}",
-        "EA-Name": "^gebruikteProcedure",
-        "EA-Package": "",
-        "EA-Range": "Boormethode",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{65F9561F-631D-4274-A66C-F159CE9DE724}",
-          "EA-Name": "Boormethode",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
-        },
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "gebruikteProcedure",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-nl",
-            "note": "TODO",
-            "value": "NOTE"
-          },
-          {
-            "key": "package",
-            "note": "Grondverzet-Grondboringen",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "FULL_DEFINITON",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-label-nl": {
-          "nl": "gebruikteProcedure"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "TODO"
-        },
-        "derived": "false",
-        "destRole": "^gebruikteProcedure",
-        "label": {
-          "nl": "gebruikteProcedure"
-        },
-        "sourceRole": "null",
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "ACTIVE_PACKAGE",
-      "label": {
-        "nl": "gebruikteProcedure"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "1",
-      "name": "gebruikteprocedure",
-      "range": [
-        {
-          "EA-GUID": "{65F9561F-631D-4274-A66C-F159CE9DE724}",
-          "EA-Name": "Boormethode",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
-        }
-      ]
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{A9607986-8705-4859-9149-D34A8AE7DD0B}",
-      "ap-definition-nl": {
-        "nl": "Moment waarop de Bemonstering werd afgerond."
-      },
-      "ap-label-nl": {
-        "nl": "bemonsteringstijdstip"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "Moment waarop de Bemonstering werd afgerond."
-      },
-      "domain": [
-        {
-          "EA-Name": "Grondboring",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Grondboring",
-        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
-        "EA-Guid": "{A9607986-8705-4859-9149-D34A8AE7DD0B}",
-        "EA-Name": "bemonsteringstijdstip",
-        "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "Date",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-Name": "Date",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#date"
-        },
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "bemonsteringstijdstip"
-          },
-          {
-            "key": "ap-label-nl",
-            "note": "null",
-            "value": "bemonsteringstijdstip"
-          },
-          {
-            "key": "ap-definition-nl",
-            "note": "null",
-            "value": "Moment waarop de Bemonstering werd afgerond."
-          },
-          {
-            "key": "parentURI",
-            "note": "null",
-            "value": "http://www.w3.org/ns/sosa/resultTime"
-          },
-          {
-            "key": "package",
-            "note": "null",
-            "value": "Grondverzet-Grondboringen"
-          }
-        ],
-        "Scope": "FULL_DEFINITON",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Moment waarop de Bemonstering werd afgerond."
-        },
-        "ap-label-nl": {
-          "nl": "bemonsteringstijdstip"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "Moment waarop de Bemonstering werd afgerond."
-        },
-        "label": {
-          "nl": "bemonsteringstijdstip"
-        },
-        "usage": ""
-      },
-      "generalization": [
-        "http://www.w3.org/ns/sosa/resultTime"
-      ],
-      "inpackage": "ACTIVE_PACKAGE",
-      "label": {
-        "nl": "bemonsteringstijdstip"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "1",
-      "name": "bemonsteringstijdstip",
-      "range": [
-        {
-          "EA-Name": "Date",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#date"
-        }
-      ]
-    },
-    {
       "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{18A58A4B-BD27-4ea7-A8A9-D2935CBFA7BF}",
@@ -3802,6 +3602,206 @@
           "uri": "http://www.opengis.net/ont/sf#LineString"
         }
       ]
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{A9607986-8705-4859-9149-D34A8AE7DD0B}",
+      "ap-definition-nl": {
+        "nl": "Moment waarop de Bemonstering werd afgerond."
+      },
+      "ap-label-nl": {
+        "nl": "bemonsteringstijdstip"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Moment waarop de Bemonstering werd afgerond."
+      },
+      "domain": [
+        {
+          "EA-Name": "Grondboring",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Grondboring",
+        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+        "EA-Guid": "{A9607986-8705-4859-9149-D34A8AE7DD0B}",
+        "EA-Name": "bemonsteringstijdstip",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "Date",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "Date",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "bemonsteringstijdstip"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "bemonsteringstijdstip"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Moment waarop de Bemonstering werd afgerond."
+          },
+          {
+            "key": "parentURI",
+            "note": "null",
+            "value": "http://www.w3.org/ns/sosa/resultTime"
+          },
+          {
+            "key": "package",
+            "note": "null",
+            "value": "Grondverzet-Grondboringen"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Moment waarop de Bemonstering werd afgerond."
+        },
+        "ap-label-nl": {
+          "nl": "bemonsteringstijdstip"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Moment waarop de Bemonstering werd afgerond."
+        },
+        "label": {
+          "nl": "bemonsteringstijdstip"
+        },
+        "usage": ""
+      },
+      "generalization": [
+        "http://www.w3.org/ns/sosa/resultTime"
+      ],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "bemonsteringstijdstip"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "bemonsteringstijdstip",
+      "range": [
+        {
+          "EA-Name": "Date",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#date"
+        }
+      ]
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#^gebruikteProcedure",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{70188AC8-BF3C-4107-855C-56AAFFFDDBC8}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "gebruikteProcedure"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Grondboring",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "label-nl",
+            "note": "gebruikteProcedure",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-nl",
+            "note": "TODO",
+            "value": "NOTE"
+          },
+          {
+            "key": "package",
+            "note": "Grondverzet-Grondboringen",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Grondboring",
+        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+        "EA-Guid": "{70188AC8-BF3C-4107-855C-56AAFFFDDBC8}",
+        "EA-Name": "^gebruikteProcedure",
+        "EA-Package": "",
+        "EA-Range": "Boormethode",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{65F9561F-631D-4274-A66C-F159CE9DE724}",
+          "EA-Name": "Boormethode",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "gebruikteProcedure",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-nl",
+            "note": "TODO",
+            "value": "NOTE"
+          },
+          {
+            "key": "package",
+            "note": "Grondverzet-Grondboringen",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "gebruikteProcedure"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "TODO"
+        },
+        "derived": "false",
+        "destRole": "^gebruikteProcedure",
+        "label": {
+          "nl": "gebruikteProcedure"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "gebruikteProcedure"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "gebruikteprocedure",
+      "range": [
+        {
+          "EA-GUID": "{65F9561F-631D-4274-A66C-F159CE9DE724}",
+          "EA-Name": "Boormethode",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
+        }
+      ]
     }
   ],
   "publication-date": "2023-10-01",
@@ -3811,7 +3811,7 @@
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
   "template": "mijn-applicatieprofiel-ap.j2",
   "title": "Implementatiemodel Grondverzet - Grondboringen",
-  "toolchaincommit": "c4994e36b5d6f6ce0184a613b3582da751870215",
+  "toolchaincommit": "27c69baab4501b4189478e7dd6db45d9fce42096",
   "translation": [
     {
       "language": "nl",

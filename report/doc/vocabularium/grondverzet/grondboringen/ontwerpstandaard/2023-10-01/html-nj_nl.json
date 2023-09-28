@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "Vocabularium Implementatiemodel Grondverzet - Grondboringen",
+    "title": "Vocabularium Grondverzet - Grondboringen",
     "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen",
     "issued": "2023-10-01",
     "filename": "grondverzet-grondboringen-imvoc",
@@ -12,8 +12,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/e379b9f44bc9c00e170df0cffc26c3af9db3e399",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/e379b9f44bc9c00e170df0cffc26c3af9db3e399/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/288044ed85291711c3519b860e927de4098f37aa",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/288044ed85291711c3519b860e927de4098f37aa/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-mijnThema/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
@@ -21,44 +21,6 @@
   },
   "classes": [],
   "properties": [
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#^gebruikteProcedure",
-      "name": "gebruikteprocedure",
-      "label": {
-        "nl": "gebruikteProcedure"
-      },
-      "sort": "gebruikteProcedure",
-      "description": {
-        "nl": "TODO"
-      },
-      "usage": {},
-      "domain": [
-        "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-      ],
-      "range": [
-        "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
-      ],
-      "parents": []
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip",
-      "name": "bemonsteringstijdstip",
-      "label": {
-        "nl": "bemonsteringstijdstip"
-      },
-      "sort": "bemonsteringstijdstip",
-      "description": {},
-      "usage": {},
-      "domain": [
-        "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-      ],
-      "range": [
-        "http://www.w3.org/2001/XMLSchema#date"
-      ],
-      "parents": [
-        "http://www.w3.org/ns/sosa/resultTime"
-      ]
-    },
     {
       "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
       "name": "geometrie",
@@ -100,6 +62,44 @@
       "parents": [
         "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode"
       ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip",
+      "name": "bemonsteringstijdstip",
+      "label": {
+        "nl": "bemonsteringstijdstip"
+      },
+      "sort": "bemonsteringstijdstip",
+      "description": {},
+      "usage": {},
+      "domain": [
+        "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#date"
+      ],
+      "parents": [
+        "http://www.w3.org/ns/sosa/resultTime"
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#^gebruikteProcedure",
+      "name": "gebruikteprocedure",
+      "label": {
+        "nl": "gebruikteProcedure"
+      },
+      "sort": "gebruikteProcedure",
+      "description": {
+        "nl": "TODO"
+      },
+      "usage": {},
+      "domain": [
+        "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+      ],
+      "range": [
+        "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
+      ],
+      "parents": []
     }
   ],
   "contributors": [
