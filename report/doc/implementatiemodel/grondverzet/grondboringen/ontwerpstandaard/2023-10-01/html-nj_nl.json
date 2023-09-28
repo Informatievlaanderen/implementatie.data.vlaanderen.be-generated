@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/cabae05cb4534984acdb0969cab0ef524b268e36",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/cabae05cb4534984acdb0969cab0ef524b268e36/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/74f5f8665744600628d46b08d2b99f18751eece1",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/74f5f8665744600628d46b08d2b99f18751eece1/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-mijnThema/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
@@ -59,6 +59,41 @@
       ],
       "properties": [
         {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
+          "name": "geometrie",
+          "sort": "geometrie",
+          "label": {
+            "nl": "geometrie"
+          },
+          "description": {
+            "nl": "TODO"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Boorgat",
+              "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "LijnString",
+              "range_uri": "http://www.opengis.net/ont/sf#LineString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Lijnstring",
+              "range_puri": "http://www.opengis.net/ont/sf#LineString",
+              "range_label": {
+                "nl": "Lijnstring"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#isResultaatVan",
           "name": "isresultaatvan",
           "sort": "isResultaatVan",
@@ -87,37 +122,6 @@
               "range_puri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring",
               "range_label": {
                 "nl": "Grondboring"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#geometrie",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Boorgat",
-              "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "LijnString",
-              "range_uri": "http://www.opengis.net/ont/sf#LineString"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Lijnstring",
-              "range_puri": "http://www.opengis.net/ont/sf#LineString",
-              "range_label": {
-                "nl": "Lijnstring"
               }
             }
           ],
@@ -371,43 +375,6 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.shape",
-          "name": "geometrie",
-          "sort": "geometrie",
-          "label": {
-            "nl": "geometrie"
-          },
-          "description": {
-            "nl": "Curve die de vorm van de Grondboring beschrijft."
-          },
-          "usage": {
-            "nl": "Loopt van de boorkraag (die zowel boven, op als onder het maaiveld - of ander referentievlak - kan liggen) tot het verste punt van de boring. De Curve kan gespecialiseerd worden tot Lijnstring, bv als de vorm door een set van lijnstukken of (typisch) door één lijnstuk wordt beschreven. Coördinaten worden minimaal in 2D maar bij voorkeur in 3D gegeven."
-          },
-          "domain": [
-            {
-              "EA-Name": "Boorgat",
-              "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Curve",
-              "range_uri": "http://www.opengis.net/ont/geosparql#Curve"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.opengis.net/ont/geosparql#Curve",
-              "range_puri": "http://www.opengis.net/ont/geosparql#Curve",
-              "range_label": {
-                "nl": "Curve"
-              }
-            }
-          ],
-          "cardinality": "1",
           "codelist_uri": ""
         },
         {
@@ -853,7 +820,42 @@
       ],
       "properties": [
         {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip",
+          "name": "bemonsteringstijdstip",
+          "sort": "bemonsteringstijdstip",
+          "label": {
+            "nl": "bemonsteringstijdstip"
+          },
+          "description": {
+            "nl": "Moment waarop de Bemonstering werd afgerond."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Grondboring",
+              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Date",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#date"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_label": {
+                "nl": "Date"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#^gebruikteProcedure",
           "name": "gebruikteprocedure",
           "sort": "gebruikteProcedure",
           "label": {
@@ -1065,37 +1067,6 @@
           "codelist_uri": ""
         },
         {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#^uitgevoerdMet",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Grondboring",
-              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Boor",
-              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#Boor"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Boor",
-              "range_puri": "https://data.vlaanderen.be/ns/grondboringen#Boor",
-              "range_label": {
-                "nl": "Boor"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator",
           "name": "identificator",
           "sort": "identificator",
@@ -1133,14 +1104,14 @@
           "codelist_uri": ""
         },
         {
-          "uri": "http://www.w3.org/ns/sosa/resultTime",
-          "name": "bemonsteringstijdstip",
-          "sort": "bemonsteringstijdstip",
+          "uri": "http://www.w3.org/ns/sosa/madeBySampler",
+          "name": "uitgevoerdmet",
+          "sort": "uitgevoerdMet",
           "label": {
-            "nl": "bemonsteringstijdstip"
+            "nl": "uitgevoerdMet"
           },
           "description": {
-            "nl": "Moment waarop de Bemonstering werd afgerond."
+            "nl": "TODO"
           },
           "usage": {},
           "domain": [
@@ -1151,16 +1122,16 @@
           ],
           "range": [
             {
-              "range_label": "Date",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#date"
+              "range_label": "Boor",
+              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#Boor"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#date",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_uri": "#Boor",
+              "range_puri": "https://data.vlaanderen.be/ns/grondboringen#Boor",
               "range_label": {
-                "nl": "Date"
+                "nl": "Boor"
               }
             }
           ],
@@ -1172,7 +1143,41 @@
   ],
   "properties": [
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure",
+      "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
+      "name": {
+        "nl": "geometrie",
+        "undefined": "geometrie"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": [
+        "http://def.isotc211.org/iso19156/2011/Sgeometrie"
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
+      "name": {
+        "nl": "geometrie",
+        "undefined": "geometrie"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": [
+        "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode"
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#^gebruikteProcedure",
       "name": {
         "nl": "gebruikteProcedure",
         "undefined": "gebruikteprocedure"
@@ -1392,11 +1397,15 @@
       ],
       "properties": [
         {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#geometrie",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
+          "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
+          "name": "geometrie",
+          "sort": "geometrie",
+          "label": {
+            "nl": "geometrie"
+          },
+          "description": {
+            "nl": "TODO"
+          },
           "usage": {},
           "domain": [
             {
@@ -1451,41 +1460,6 @@
               "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
               "range_label": {
                 "nl": "BoormethodeType"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://def.isotc211.org/iso19123/2005/CoverageCore#CV_CurveValuePair.geometry",
-          "name": "geometrie",
-          "sort": "geometrie",
-          "label": {
-            "nl": "geometrie"
-          },
-          "description": {
-            "nl": "Geometrie van het interval"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "BoormethodeInterval",
-              "uri": "https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Curve",
-              "range_uri": "http://www.opengis.net/ont/geosparql#Curve"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.opengis.net/ont/geosparql#Curve",
-              "range_puri": "http://www.opengis.net/ont/geosparql#Curve",
-              "range_label": {
-                "nl": "Curve"
               }
             }
           ],

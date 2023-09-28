@@ -49,7 +49,7 @@
           "@type": "@id"
         },
         "geometrie": {
-          "@id": "https://data.vlaanderen.be/ns/grondboringen#geometrie",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
           "@type": "@id"
         },
         "isResultaatVan": {
@@ -105,7 +105,7 @@
     "BoormethodeInterval": {
       "@context": {
         "geometrie": {
-          "@id": "https://data.vlaanderen.be/ns/grondboringen#geometrie",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
           "@type": "@id"
         },
         "methode": {
@@ -132,12 +132,8 @@
     },
     "Grondboring": {
       "@context": {
-        "^uitgevoerdMet": {
-          "@id": "https://data.vlaanderen.be/ns/grondboringen#^uitgevoerdMet",
-          "@type": "@id"
-        },
         "bemonsteringstijdstip": {
-          "@id": "http://www.w3.org/ns/sosa/resultTime",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip",
           "@type": "http://www.w3.org/2001/XMLSchema#date"
         },
         "boorder": {
@@ -154,7 +150,7 @@
           "@type": "@id"
         },
         "gebruikteProcedure": {
-          "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#^gebruikteProcedure",
           "@type": "@id"
         },
         "identificator": {
@@ -164,6 +160,10 @@
         },
         "resultaat": {
           "@id": "https://data.vlaanderen.be/ns/grondboringen#resultaat",
+          "@type": "@id"
+        },
+        "uitgevoerdMet": {
+          "@id": "http://www.w3.org/ns/sosa/madeBySampler",
           "@type": "@id"
         },
         "wettelijkKader": {
