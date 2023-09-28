@@ -142,8 +142,11 @@
             "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
             "name": "geometrie",
             "inpackage": "ACTIVE_PACKAGE",
+            "usage": {
+                "nl": "Loopt van de boorkraag (die zowel boven, op als onder het maaiveld - of ander referentievlak - kan liggen) tot het verste punt van de boring. Coördinaten worden minimaal in 2D maar bij voorkeur in 2.5D gegeven."
+            },
             "definition": {
-                "nl": "TODO"
+                "nl": "Lijnstring die de vorm van de Grondboring beschrijft."
             },
             "label": {
                 "nl": "geometrie"
@@ -152,7 +155,7 @@
                 "nl": "geometrie"
             },
             "ap-definition-nl": {
-                "nl": "TODO"
+                "nl": "Lijnstring die de vorm van de Grondboring beschrijft."
             },
             "extra": {
                 "EA-Name": "geometrie",
@@ -172,14 +175,16 @@
                     "nl": "geometrie"
                 },
                 "definition": {
-                    "nl": "TODO"
+                    "nl": "Lijnstring die de vorm van de Grondboring beschrijft."
                 },
-                "usage": "",
+                "usage": {
+                    "nl": "Loopt van de boorkraag (die zowel boven, op als onder het maaiveld - of ander referentievlak - kan liggen) tot het verste punt van de boring. Coördinaten worden minimaal in 2D maar bij voorkeur in 2.5D gegeven."
+                },
                 "ap-label-nl": {
                     "nl": "geometrie"
                 },
                 "ap-definition-nl": {
-                    "nl": "TODO"
+                    "nl": "Lijnstring die de vorm van de Grondboring beschrijft."
                 },
                 "ap-usageNote-nl": "",
                 "ap-codelist": "",
@@ -191,7 +196,7 @@
                     },
                     {
                         "key": "definition-nl",
-                        "value": "TODO",
+                        "value": "Lijnstring die de vorm van de Grondboring beschrijft.",
                         "note": "null"
                     },
                     {
@@ -203,6 +208,11 @@
                         "key": "package",
                         "value": "Grondverzet-Grondboringen",
                         "note": "null"
+                    },
+                    {
+                        "key": "usageNote-nl",
+                        "value": "NOTE",
+                        "note": "Loopt van de boorkraag (die zowel boven, op als onder het maaiveld - of ander referentievlak - kan liggen) tot het verste punt van de boring. Coördinaten worden minimaal in 2D maar bij voorkeur in 2.5D gegeven."
                     }
                 ],
                 "Scope": "FULL_DEFINITON"
@@ -392,7 +402,7 @@
                     },
                     {
                         "key": "definition-nl",
-                        "value": "TODO",
+                        "value": "Moment waarop de Bemonstering werd afgerond.",
                         "note": "null"
                     }
                 ],
@@ -3076,7 +3086,7 @@
             "name": "gebruikteprocedure",
             "inpackage": "ACTIVE_PACKAGE",
             "definition": {
-                "nl": "TODO"
+                "nl": "Boormethode die werd gevolgd bij de Grondboring."
             },
             "label": {
                 "nl": "gebruikteProcedure"
@@ -3085,7 +3095,7 @@
                 "nl": "gebruikteProcedure"
             },
             "ap-definition-nl": {
-                "nl": "TODO"
+                "nl": "Boormethode die werd gevolgd bij de Grondboring."
             },
             "extra": {
                 "EA-Name": "^gebruikteProcedure",
@@ -3108,18 +3118,23 @@
                     "nl": "gebruikteProcedure"
                 },
                 "definition": {
-                    "nl": "TODO"
+                    "nl": "Boormethode die werd gevolgd bij de Grondboring."
                 },
                 "usage": "",
                 "ap-label-nl": {
                     "nl": "gebruikteProcedure"
                 },
                 "ap-definition-nl": {
-                    "nl": "TODO"
+                    "nl": "Boormethode die werd gevolgd bij de Grondboring."
                 },
                 "ap-usageNote-nl": "",
                 "ap-codelist": "",
                 "RawTags": [
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "NOTE",
+                        "note": "Boormethode die werd gevolgd bij de Grondboring."
+                    },
                     {
                         "key": "label-nl",
                         "value": "NOTE",
@@ -3142,6 +3157,11 @@
                     }
                 ],
                 "DestRoleTags": [
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "NOTE",
+                        "note": "Boormethode die werd gevolgd bij de Grondboring."
+                    },
                     {
                         "key": "label-nl",
                         "value": "NOTE",
@@ -3190,7 +3210,7 @@
             "name": "uitgevoerdmet",
             "inpackage": "OTHER_PACKAGE",
             "definition": {
-                "nl": "TODO"
+                "nl": "Boor waarmee de Bemonstering is uitgevoerd."
             },
             "label": {
                 "nl": "uitgevoerdMet"
@@ -3199,7 +3219,7 @@
                 "nl": "uitgevoerdMet"
             },
             "ap-definition-nl": {
-                "nl": "TODO"
+                "nl": "Boor waarmee de Bemonstering is uitgevoerd."
             },
             "extra": {
                 "EA-Name": "^uitgevoerdMet",
@@ -3222,14 +3242,14 @@
                     "nl": "uitgevoerdMet"
                 },
                 "definition": {
-                    "nl": "TODO"
+                    "nl": "Boor waarmee de Bemonstering is uitgevoerd."
                 },
                 "usage": "",
                 "ap-label-nl": {
                     "nl": "uitgevoerdMet"
                 },
                 "ap-definition-nl": {
-                    "nl": "TODO"
+                    "nl": "Boor waarmee de Bemonstering is uitgevoerd."
                 },
                 "ap-usageNote-nl": "",
                 "ap-codelist": "",
@@ -3237,12 +3257,17 @@
                     {
                         "key": "definition-nl",
                         "value": "NOTE",
-                        "note": "TODO"
+                        "note": "Bemonsteraar waarmee de Bemonstering is uitgevoerd."
                     },
                     {
                         "key": "name",
                         "value": "NOTE",
                         "note": "uitgevoerdMet"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "NOTE",
+                        "note": "Boor waarmee de Bemonstering is uitgevoerd."
                     },
                     {
                         "key": "label-nl",
@@ -3259,12 +3284,17 @@
                     {
                         "key": "definition-nl",
                         "value": "NOTE",
-                        "note": "TODO"
+                        "note": "Bemonsteraar waarmee de Bemonstering is uitgevoerd."
                     },
                     {
                         "key": "name",
                         "value": "NOTE",
                         "note": "uitgevoerdMet"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "NOTE",
+                        "note": "Boor waarmee de Bemonstering is uitgevoerd."
                     },
                     {
                         "key": "label-nl",
@@ -3779,13 +3809,13 @@
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "config": "config/config-ap.json",
     "branchtag": "main",
-    "dummy": "geert11",
+    "dummy": "geert12",
     "examples": false,
     "filename": "config/grondverzet.json",
     "navigation": {},
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet",
     "urlref": "/doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01",
-    "documentcommit": "fee9adff2a1be1c59643195bf7ab267057c48b99",
-    "toolchaincommit": "3a58211321a88bb81907c9dc492cf14ec4626bc6",
+    "documentcommit": "2a8ac7ee326a26e8d36c2e043c2ccecb90575dec",
+    "toolchaincommit": "68f0397ef146eb34016e1cd268e89b5d16c7a63e",
     "hostname": "https://implementatie.data.vlaanderen.be/"
 }

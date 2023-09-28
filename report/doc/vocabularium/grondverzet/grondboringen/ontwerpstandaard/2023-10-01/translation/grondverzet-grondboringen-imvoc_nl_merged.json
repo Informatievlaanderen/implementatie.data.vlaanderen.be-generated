@@ -108,8 +108,8 @@
   "contributors-column": "MijnKolom",
   "contributors-file": "stakeholders.csv",
   "diagram": "Grondverzet-Grondboringen",
-  "documentcommit": "fee9adff2a1be1c59643195bf7ab267057c48b99",
-  "dummy": "geert11",
+  "documentcommit": "2a8ac7ee326a26e8d36c2e043c2ccecb90575dec",
+  "dummy": "geert12",
   "eap": "Grondverzet.EAP",
   "editors": [
     {
@@ -2219,6 +2219,11 @@
       "extra": {
         "DestRoleTags": [
           {
+            "key": "ap-definition-nl",
+            "note": "Boormethode die werd gevolgd bij de Grondboring.",
+            "value": "NOTE"
+          },
+          {
             "key": "label-nl",
             "note": "gebruikteProcedure",
             "value": "NOTE"
@@ -2253,6 +2258,11 @@
           "uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
         },
         "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "Boormethode die werd gevolgd bij de Grondboring.",
+            "value": "NOTE"
+          },
           {
             "key": "label-nl",
             "note": "gebruikteProcedure",
@@ -2326,10 +2336,10 @@
       "EA-Guid": "{326FB0C9-4197-45d8-8133-909E40B52A3C}",
       "codelist": [],
       "definition": {
-        "nl": "TODO"
+        "nl": "Bemonsteraar waarmee de Bemonstering is uitgevoerd."
       },
       "definition-nl": {
-        "nl": "TODO"
+        "nl": "Bemonsteraar waarmee de Bemonstering is uitgevoerd."
       },
       "domain": [
         {
@@ -2341,12 +2351,17 @@
         "DestRoleTags": [
           {
             "key": "definition-nl",
-            "note": "TODO",
+            "note": "Bemonsteraar waarmee de Bemonstering is uitgevoerd.",
             "value": "NOTE"
           },
           {
             "key": "name",
             "note": "uitgevoerdMet",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "Boor waarmee de Bemonstering is uitgevoerd.",
             "value": "NOTE"
           },
           {
@@ -2376,12 +2391,17 @@
         "RawTags": [
           {
             "key": "definition-nl",
-            "note": "TODO",
+            "note": "Bemonsteraar waarmee de Bemonstering is uitgevoerd.",
             "value": "NOTE"
           },
           {
             "key": "name",
             "note": "uitgevoerdMet",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "Boor waarmee de Bemonstering is uitgevoerd.",
             "value": "NOTE"
           },
           {
@@ -2397,11 +2417,11 @@
         ],
         "Scope": "NOTHING",
         "definition": {
-          "nl": "TODO"
+          "nl": "Bemonsteraar waarmee de Bemonstering is uitgevoerd."
         },
         "definition-en": "",
         "definition-nl": {
-          "nl": "TODO"
+          "nl": "Bemonsteraar waarmee de Bemonstering is uitgevoerd."
         },
         "derived": "false",
         "destRole": "^uitgevoerdMet",
@@ -3722,10 +3742,10 @@
       "EA-Guid": "{18A58A4B-BD27-4ea7-A8A9-D2935CBFA7BF}",
       "codelist": [],
       "definition": {
-        "nl": "TODO"
+        "nl": "Lijnstring die de vorm van de Grondboring beschrijft."
       },
       "definition-nl": {
-        "nl": "TODO"
+        "nl": "Lijnstring die de vorm van de Grondboring beschrijft."
       },
       "domain": [
         {
@@ -3756,7 +3776,7 @@
           {
             "key": "definition-nl",
             "note": "null",
-            "value": "TODO"
+            "value": "Lijnstring die de vorm van de Grondboring beschrijft."
           },
           {
             "key": "parentURI",
@@ -3767,15 +3787,20 @@
             "key": "package",
             "note": "null",
             "value": "Grondverzet-Grondboringen"
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "Loopt van de boorkraag (die zowel boven, op als onder het maaiveld - of ander referentievlak - kan liggen) tot het verste punt van de boring. Coördinaten worden minimaal in 2D maar bij voorkeur in 2.5D gegeven.",
+            "value": "NOTE"
           }
         ],
         "Scope": "FULL_DEFINITON",
         "definition": {
-          "nl": "TODO"
+          "nl": "Lijnstring die de vorm van de Grondboring beschrijft."
         },
         "definition-en": "",
         "definition-nl": {
-          "nl": "TODO"
+          "nl": "Lijnstring die de vorm van de Grondboring beschrijft."
         },
         "equivalent": "",
         "label": {
@@ -3788,9 +3813,13 @@
         "sameAs": "",
         "subclass": "",
         "subclass1": "",
-        "usage": "",
+        "usage": {
+          "nl": "Loopt van de boorkraag (die zowel boven, op als onder het maaiveld - of ander referentievlak - kan liggen) tot het verste punt van de boring. Coördinaten worden minimaal in 2D maar bij voorkeur in 2.5D gegeven."
+        },
         "usageNote-en": "",
-        "usageNote-nl": ""
+        "usageNote-nl": {
+          "nl": "Loopt van de boorkraag (die zowel boven, op als onder het maaiveld - of ander referentievlak - kan liggen) tot het verste punt van de boring. Coördinaten worden minimaal in 2D maar bij voorkeur in 2.5D gegeven."
+        }
       },
       "generalization": [
         "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.shape"
@@ -3812,7 +3841,13 @@
           "EA-Package": "OSLO-Generiek",
           "uri": "http://www.opengis.net/ont/sf#LineString"
         }
-      ]
+      ],
+      "usage": {
+        "nl": "Loopt van de boorkraag (die zowel boven, op als onder het maaiveld - of ander referentievlak - kan liggen) tot het verste punt van de boring. Coördinaten worden minimaal in 2D maar bij voorkeur in 2.5D gegeven."
+      },
+      "usageNote-nl": {
+        "nl": "Loopt van de boorkraag (die zowel boven, op als onder het maaiveld - of ander referentievlak - kan liggen) tot het verste punt van de boring. Coördinaten worden minimaal in 2D maar bij voorkeur in 2.5D gegeven."
+      }
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
@@ -3918,10 +3953,10 @@
       "EA-Guid": "{A9607986-8705-4859-9149-D34A8AE7DD0B}",
       "codelist": [],
       "definition": {
-        "nl": "TODO"
+        "nl": "Moment waarop de Bemonstering werd afgerond."
       },
       "definition-nl": {
-        "nl": "TODO"
+        "nl": "Moment waarop de Bemonstering werd afgerond."
       },
       "domain": [
         {
@@ -3971,16 +4006,16 @@
           {
             "key": "definition-nl",
             "note": "null",
-            "value": "TODO"
+            "value": "Moment waarop de Bemonstering werd afgerond."
           }
         ],
         "Scope": "FULL_DEFINITON",
         "definition": {
-          "nl": "TODO"
+          "nl": "Moment waarop de Bemonstering werd afgerond."
         },
         "definition-en": "",
         "definition-nl": {
-          "nl": "TODO"
+          "nl": "Moment waarop de Bemonstering werd afgerond."
         },
         "equivalent": "",
         "label": {
@@ -4028,7 +4063,7 @@
   "title-nl": {
     "nl": "TODO"
   },
-  "toolchaincommit": "3a58211321a88bb81907c9dc492cf14ec4626bc6",
+  "toolchaincommit": "68f0397ef146eb34016e1cd268e89b5d16c7a63e",
   "translation": [
     {
       "language": "nl",

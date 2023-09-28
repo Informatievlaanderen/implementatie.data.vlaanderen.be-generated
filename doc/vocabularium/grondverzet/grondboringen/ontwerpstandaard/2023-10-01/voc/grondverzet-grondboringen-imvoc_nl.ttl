@@ -7,14 +7,16 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip> a owl:DatatypeProperty;
-  rdfs:comment "TODO"@nl;
+  rdfs:comment "Moment waarop de Bemonstering werd afgerond."@nl;
   rdfs:domain <https://data.vlaanderen.be/ns/grondboringen#Grondboring>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen>;
   rdfs:range xsd:date;
   rdfs:subPropertyOf <http://www.w3.org/ns/sosa/resultTime> .
 
 <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie> a owl:ObjectProperty;
-  rdfs:comment "TODO"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Loopt van de boorkraag (die zowel boven, op als onder het maaiveld - of ander referentievlak - kan liggen) tot het verste punt van de boring. Coördinaten worden minimaal in 2D maar bij voorkeur in 2.5D gegeven."@nl;
+  rdfs:comment "Lijnstring die de vorm van de Grondboring beschrijft."@nl,
+    "TODO"@nl;
   rdfs:domain <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole>,
     <https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen>;
