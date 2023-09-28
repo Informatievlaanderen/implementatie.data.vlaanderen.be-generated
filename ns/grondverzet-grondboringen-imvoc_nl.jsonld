@@ -91,6 +91,22 @@
       ]
     },
     {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "nl": "Boormethode die werd gevolgd bij de Grondboring."
+      },
+      "domain": [
+        "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+      ],
+      "range": [
+        "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
+      ],
+      "generalization": [
+        "http://www.w3.org/ns/sosa/usedProcedure"
+      ]
+    },
+    {
       "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "definition": {
@@ -107,15 +123,7 @@
       ]
     }
   ],
-  "externalproperties": [
-    {
-      "name": {
-        "nl": "gebruikteProcedure"
-      },
-      "@id": "http://www.w3.org/ns/sosa/usedProcedure",
-      "@type": "rdf:Property"
-    }
-  ],
+  "externalproperties": [],
   "@context": {
     "vlaanderen": "http://data.vlaanderen.be/ns/",
     "owl": "http://www.w3.org/2002/07/owl#",

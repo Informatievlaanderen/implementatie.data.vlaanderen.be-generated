@@ -8,7 +8,6 @@
 <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen> <http://www.w3.org/2001/02pd/rec54#editor> _:g454700 .
 <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen> <http://purl.org/dc/terms/contributor> _:g454740 .
 <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen> <http://purl.org/dc/terms/issued> "TODO" .
-<https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/sosa/usedProcedure> .
 <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen> .
 <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie> <http://www.w3.org/2000/01/rdf-schema#comment> "Lijnstring die de vorm van de Grondboring beschrijft."@nl .
@@ -19,6 +18,12 @@
 <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opengis.net/ont/sf#LineString> .
 <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.shape> .
 <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode> .
+<https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen> .
+<https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure> <http://www.w3.org/2000/01/rdf-schema#comment> "Boormethode die werd gevolgd bij de Grondboring."@nl .
+<https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/grondboringen#Grondboring> .
+<https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/grondboringen#Boormethode> .
+<https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/sosa/usedProcedure> .
 <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen> .
 <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip> <http://www.w3.org/2000/01/rdf-schema#comment> "Moment waarop de Bemonstering werd afgerond."@nl .
@@ -49,5 +54,3 @@ _:g454740 <http://xmlns.com/foaf/0.1/lastName> "MedewerkerNaam" .
 _:g454740 <http://xmlns.com/foaf/0.1/mbox> <mailto:medewerkervoornaam.medewerkernaam@medewerkerdomein> .
 _:g454760 <http://xmlns.com/foaf/0.1/homepage> <https://medewerkerwebsiteurl> .
 _:g454760 <http://xmlns.com/foaf/0.1/name> "MedewerkerAffiliatie" .
-<http://www.w3.org/ns/sosa/usedProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://www.w3.org/ns/sosa/usedProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "gebruikteProcedure"@nl .

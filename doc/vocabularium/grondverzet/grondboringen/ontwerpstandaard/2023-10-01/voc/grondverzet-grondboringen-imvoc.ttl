@@ -13,6 +13,13 @@
   rdfs:range xsd:date;
   rdfs:subPropertyOf <http://www.w3.org/ns/sosa/resultTime> .
 
+<https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure> a owl:ObjectProperty;
+  rdfs:comment "Boormethode die werd gevolgd bij de Grondboring."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/grondboringen#Grondboring>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen>;
+  rdfs:range <https://data.vlaanderen.be/ns/grondboringen#Boormethode>;
+  rdfs:subPropertyOf <http://www.w3.org/ns/sosa/usedProcedure> .
+
 <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie> a owl:ObjectProperty;
   <http://purl.org/vocab/vann/usageNote> "Loopt van de boorkraag (die zowel boven, op als onder het maaiveld - of ander referentievlak - kan liggen) tot het verste punt van de boring. Coördinaten worden minimaal in 2D maar bij voorkeur in 2.5D gegeven."@nl;
   rdfs:comment "Lijnstring die de vorm van de Grondboring beschrijft."@nl,
@@ -23,9 +30,6 @@
   rdfs:range <http://www.opengis.net/ont/sf#LineString>;
   rdfs:subPropertyOf <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.shape>,
     <https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode> .
-
-<http://www.w3.org/ns/sosa/usedProcedure> a rdf:Property;
-  rdfs:label "gebruikteProcedure"@nl .
 
 <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen> a owl:Ontology;
   rdfs:label "grondverzet-grondboringen-imvoc"@en,
@@ -48,7 +52,6 @@
     foaf:mbox <mailto:info@data.specs.org>;
     foaf:name "Data Specifications Organisation"
   ];
-  rdfs:seeAlso <http://www.w3.org/ns/sosa/usedProcedure>;
   <http://www.w3.org/2001/02pd/rec54#editor> [
     a foaf:Person;
     schema:affiliation [

@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/2a8ac7ee326a26e8d36c2e043c2ccecb90575dec",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/2a8ac7ee326a26e8d36c2e043c2ccecb90575dec/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/b846719efb39c6e35f3233b667916b9c67e2de2f",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/b846719efb39c6e35f3233b667916b9c67e2de2f/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-mijnThema/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
@@ -822,6 +822,41 @@
       ],
       "properties": [
         {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure",
+          "name": "gebruikteprocedure",
+          "sort": "gebruikteProcedure",
+          "label": {
+            "nl": "gebruikteProcedure"
+          },
+          "description": {
+            "nl": "Boormethode die werd gevolgd bij de Grondboring."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Grondboring",
+              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Boormethode",
+              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Boormethode",
+              "range_puri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode",
+              "range_label": {
+                "nl": "Boormethode"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
           "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip",
           "name": "bemonsteringstijdstip",
           "sort": "bemonsteringstijdstip",
@@ -1071,41 +1106,6 @@
           "codelist_uri": ""
         },
         {
-          "uri": "http://www.w3.org/ns/sosa/usedProcedure",
-          "name": "gebruikteprocedure",
-          "sort": "gebruikteProcedure",
-          "label": {
-            "nl": "gebruikteProcedure"
-          },
-          "description": {
-            "nl": "Boormethode die werd gevolgd bij de Grondboring."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Grondboring",
-              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Boormethode",
-              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Boormethode",
-              "range_puri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode",
-              "range_label": {
-                "nl": "Boormethode"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
           "uri": "http://www.w3.org/ns/sosa/madeBySampler",
           "name": "uitgevoerdmet",
           "sort": "uitgevoerdMet",
@@ -1176,6 +1176,23 @@
       ],
       "parents": [
         "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode"
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure",
+      "name": {
+        "nl": "gebruikteProcedure",
+        "undefined": "gebruikteprocedure"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": [
+        "http://www.w3.org/ns/sosa/usedProcedure"
       ]
     }
   ],
