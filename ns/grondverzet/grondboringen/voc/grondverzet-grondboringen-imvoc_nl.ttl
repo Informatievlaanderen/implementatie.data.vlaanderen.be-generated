@@ -6,6 +6,13 @@
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#BoormethodeInterval.geometrie> a owl:ObjectProperty;
+  rdfs:comment "Geometrie van het interval."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen>;
+  rdfs:range <http://www.opengis.net/ont/sf#LineString>;
+  rdfs:subPropertyOf <https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode> .
+
 <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip> a owl:DatatypeProperty;
   rdfs:comment "Moment waarop de Bemonstering werd afgerond."@nl;
   rdfs:domain <https://data.vlaanderen.be/ns/grondboringen#Grondboring>;
@@ -22,14 +29,11 @@
 
 <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie> a owl:ObjectProperty;
   <http://purl.org/vocab/vann/usageNote> "Loopt van de boorkraag (die zowel boven, op als onder het maaiveld - of ander referentievlak - kan liggen) tot het verste punt van de boring. Coördinaten worden minimaal in 2D maar bij voorkeur in 2.5D gegeven."@nl;
-  rdfs:comment "Lijnstring die de vorm van de Grondboring beschrijft."@nl,
-    "TODO"@nl;
-  rdfs:domain <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole>,
-    <https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval>;
+  rdfs:comment "Lijnstring die de vorm van de Grondboring beschrijft."@nl;
+  rdfs:domain <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen>;
   rdfs:range <http://www.opengis.net/ont/sf#LineString>;
-  rdfs:subPropertyOf <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.shape>,
-    <https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode> .
+  rdfs:subPropertyOf <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.shape> .
 
 <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen> a owl:Ontology;
   rdfs:label "grondverzet-grondboringen-imvoc"@en,

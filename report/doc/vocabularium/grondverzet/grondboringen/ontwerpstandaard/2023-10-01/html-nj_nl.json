@@ -12,8 +12,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/b846719efb39c6e35f3233b667916b9c67e2de2f",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/b846719efb39c6e35f3233b667916b9c67e2de2f/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/98e1d03229b30356c8d9ccda7f10a46ead539e1d",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/98e1d03229b30356c8d9ccda7f10a46ead539e1d/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-mijnThema/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
@@ -42,27 +42,6 @@
       ],
       "parents": [
         "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.shape"
-      ]
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
-      "name": "geometrie",
-      "label": {
-        "nl": "geometrie"
-      },
-      "sort": "geometrie",
-      "description": {
-        "nl": "TODO"
-      },
-      "usage": {},
-      "domain": [
-        "https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval"
-      ],
-      "range": [
-        "http://www.opengis.net/ont/sf#LineString"
-      ],
-      "parents": [
-        "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode"
       ]
     },
     {
@@ -105,6 +84,27 @@
       ],
       "parents": [
         "http://www.w3.org/ns/sosa/resultTime"
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#BoormethodeInterval.geometrie",
+      "name": "geometrie",
+      "label": {
+        "nl": "geometrie"
+      },
+      "sort": "geometrie",
+      "description": {
+        "nl": "Geometrie van het interval."
+      },
+      "usage": {},
+      "domain": [
+        "https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval"
+      ],
+      "range": [
+        "http://www.opengis.net/ont/sf#LineString"
+      ],
+      "parents": [
+        "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode"
       ]
     }
   ],

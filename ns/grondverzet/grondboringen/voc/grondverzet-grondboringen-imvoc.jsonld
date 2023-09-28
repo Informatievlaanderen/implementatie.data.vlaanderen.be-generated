@@ -75,22 +75,6 @@
       ]
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "definition": {
-        "nl": "TODO"
-      },
-      "domain": [
-        "https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval"
-      ],
-      "range": [
-        "http://www.opengis.net/ont/sf#LineString"
-      ],
-      "generalization": [
-        "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode"
-      ]
-    },
-    {
       "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
@@ -120,6 +104,22 @@
       ],
       "generalization": [
         "http://www.w3.org/ns/sosa/resultTime"
+      ]
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#BoormethodeInterval.geometrie",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "nl": "Geometrie van het interval."
+      },
+      "domain": [
+        "https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval"
+      ],
+      "range": [
+        "http://www.opengis.net/ont/sf#LineString"
+      ],
+      "generalization": [
+        "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode"
       ]
     }
   ],

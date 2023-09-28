@@ -109,8 +109,8 @@
   "contributors-column": "MijnKolom",
   "contributors-file": "stakeholders.csv",
   "diagram": "Grondverzet-Grondboringen",
-  "documentcommit": "b846719efb39c6e35f3233b667916b9c67e2de2f",
-  "dummy": "geert13",
+  "documentcommit": "98e1d03229b30356c8d9ccda7f10a46ead539e1d",
+  "dummy": "geert14",
   "eap": "Grondverzet.EAP",
   "editors": [
     {
@@ -3532,98 +3532,6 @@
       }
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{248BECFF-F9E4-474e-AC4D-E2C35B55FBD3}",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "ap-label-nl": {
-        "nl": "geometrie"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "TODO"
-      },
-      "domain": [
-        {
-          "EA-Name": "BoormethodeInterval",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "BoormethodeInterval",
-        "EA-Domain-Guid": "{BA85C1A3-5058-41f8-9C84-FDB92B01C7BC}",
-        "EA-Guid": "{248BECFF-F9E4-474e-AC4D-E2C35B55FBD3}",
-        "EA-Name": "geometrie",
-        "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "LijnString",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{F3E202C7-63FB-434b-9666-B48355841A47}",
-          "EA-Name": "LijnString",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "http://www.opengis.net/ont/sf#LineString"
-        },
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "geometrie"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "TODO"
-          },
-          {
-            "key": "parentURI",
-            "note": "null",
-            "value": "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode"
-          },
-          {
-            "key": "package",
-            "note": "null",
-            "value": "Grondverzet-Grondboringen"
-          }
-        ],
-        "Scope": "FULL_DEFINITON",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-label-nl": {
-          "nl": "geometrie"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "TODO"
-        },
-        "label": {
-          "nl": "geometrie"
-        },
-        "usage": ""
-      },
-      "generalization": [
-        "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode"
-      ],
-      "inpackage": "ACTIVE_PACKAGE",
-      "label": {
-        "nl": "geometrie"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "1",
-      "name": "geometrie",
-      "range": [
-        {
-          "EA-GUID": "{F3E202C7-63FB-434b-9666-B48355841A47}",
-          "EA-Name": "LijnString",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "http://www.opengis.net/ont/sf#LineString"
-        }
-      ]
-    },
-    {
       "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{70188AC8-BF3C-4107-855C-56AAFFFDDBC8}",
@@ -3849,6 +3757,103 @@
           "uri": "http://www.w3.org/2001/XMLSchema#date"
         }
       ]
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#BoormethodeInterval.geometrie",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{248BECFF-F9E4-474e-AC4D-E2C35B55FBD3}",
+      "ap-definition-nl": {
+        "nl": "Geometrie van het interval."
+      },
+      "ap-label-nl": {
+        "nl": "geometrie"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Geometrie van het interval."
+      },
+      "domain": [
+        {
+          "EA-Name": "BoormethodeInterval",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "BoormethodeInterval",
+        "EA-Domain-Guid": "{BA85C1A3-5058-41f8-9C84-FDB92B01C7BC}",
+        "EA-Guid": "{248BECFF-F9E4-474e-AC4D-E2C35B55FBD3}",
+        "EA-Name": "geometrie",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "LijnString",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{F3E202C7-63FB-434b-9666-B48355841A47}",
+          "EA-Name": "LijnString",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.opengis.net/ont/sf#LineString"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "geometrie"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Geometrie van het interval."
+          },
+          {
+            "key": "parentURI",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode"
+          },
+          {
+            "key": "package",
+            "note": "null",
+            "value": "Grondverzet-Grondboringen"
+          },
+          {
+            "key": "name",
+            "note": "null",
+            "value": "BoormethodeInterval.geometrie"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Geometrie van het interval."
+        },
+        "ap-label-nl": {
+          "nl": "geometrie"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Geometrie van het interval."
+        },
+        "label": {
+          "nl": "geometrie"
+        },
+        "usage": ""
+      },
+      "generalization": [
+        "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode"
+      ],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "geometrie"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "geometrie",
+      "range": [
+        {
+          "EA-GUID": "{F3E202C7-63FB-434b-9666-B48355841A47}",
+          "EA-Name": "LijnString",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.opengis.net/ont/sf#LineString"
+        }
+      ]
     }
   ],
   "publication-date": "2023-10-01",
@@ -3858,7 +3863,7 @@
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
   "template": "mijn-applicatieprofiel-ap.j2",
   "title": "Implementatiemodel Grondverzet - Grondboringen",
-  "toolchaincommit": "9323e36f349f07d4410629865c1849bed4fe55ff",
+  "toolchaincommit": "c43793943c231a096ff7cf9b53b2651590cc90b3",
   "translation": [
     {
       "language": "nl",
