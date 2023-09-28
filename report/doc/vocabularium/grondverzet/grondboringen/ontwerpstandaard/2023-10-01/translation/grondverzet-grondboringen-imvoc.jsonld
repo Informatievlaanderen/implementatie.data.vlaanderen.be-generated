@@ -204,7 +204,7 @@
           },
           {
             "key": "parentURI",
-            "value": "http://def.isotc211.org/iso19156/2011/Sgeometrie",
+            "value": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.shape",
             "note": "null"
           },
           {
@@ -231,7 +231,7 @@
         }
       ],
       "generalization": [
-        "http://def.isotc211.org/iso19156/2011/Sgeometrie"
+        "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.shape"
       ],
       "minCardinality": "1",
       "maxCardinality": "1"
@@ -341,6 +341,9 @@
       "label-nl": {
         "nl": "bemonsteringstijdstip"
       },
+      "definition": {
+        "nl": "TODO"
+      },
       "label": {
         "nl": "bemonsteringstijdstip"
       },
@@ -363,7 +366,9 @@
         "label": {
           "nl": "bemonsteringstijdstip"
         },
-        "definition": "",
+        "definition": {
+          "nl": "TODO"
+        },
         "usage": "",
         "label-nl": {
           "nl": "bemonsteringstijdstip"
@@ -404,6 +409,11 @@
             "key": "package",
             "value": "Grondverzet-Grondboringen",
             "note": "null"
+          },
+          {
+            "key": "definition-nl",
+            "value": "TODO",
+            "note": "null"
           }
         ],
         "Scope": "FULL_DEFINITON"
@@ -425,116 +435,6 @@
       "generalization": [
         "http://www.w3.org/ns/sosa/resultTime"
       ],
-      "minCardinality": "1",
-      "maxCardinality": "1"
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#^gebruikteProcedure",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "gebruikteprocedure",
-      "inpackage": "ACTIVE_PACKAGE",
-      "label-nl": {
-        "nl": "gebruikteProcedure"
-      },
-      "definition": {
-        "nl": "TODO"
-      },
-      "label": {
-        "nl": "gebruikteProcedure"
-      },
-      "definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "^gebruikteProcedure",
-        "EA-Guid": "{70188AC8-BF3C-4107-855C-56AAFFFDDBC8}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "Grondboring",
-        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
-        "EA-Range": "Boormethode",
-        "RangeData": {
-          "EA-Name": "Boormethode",
-          "EA-GUID": "{65F9561F-631D-4274-A66C-F159CE9DE724}",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
-        },
-        "sourceRole": "null",
-        "destRole": "^gebruikteProcedure",
-        "label": {
-          "nl": "gebruikteProcedure"
-        },
-        "definition": {
-          "nl": "TODO"
-        },
-        "usage": "",
-        "label-nl": {
-          "nl": "gebruikteProcedure"
-        },
-        "definition-nl": {
-          "nl": "TODO"
-        },
-        "usageNote-nl": "",
-        "label-en": "",
-        "definition-en": "",
-        "usageNote-en": "",
-        "equivalent": "",
-        "subclass": "",
-        "subclass1": "",
-        "sameAs": "",
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "value": "NOTE",
-            "note": "gebruikteProcedure"
-          },
-          {
-            "key": "definition-nl",
-            "value": "NOTE",
-            "note": "TODO"
-          },
-          {
-            "key": "package",
-            "value": "NOTE",
-            "note": "Grondverzet-Grondboringen"
-          }
-        ],
-        "DestRoleTags": [
-          {
-            "key": "label-nl",
-            "value": "NOTE",
-            "note": "gebruikteProcedure"
-          },
-          {
-            "key": "definition-nl",
-            "value": "NOTE",
-            "note": "TODO"
-          },
-          {
-            "key": "package",
-            "value": "NOTE",
-            "note": "Grondverzet-Grondboringen"
-          }
-        ],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring",
-          "EA-Name": "Grondboring"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "Boormethode",
-          "EA-GUID": "{65F9561F-631D-4274-A66C-F159CE9DE724}",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
-        }
-      ],
-      "generalization": [],
       "minCardinality": "1",
       "maxCardinality": "1"
     }
@@ -3377,6 +3277,126 @@
       "maxCardinality": "1"
     },
     {
+      "@id": "http://www.w3.org/ns/sosa/usedProcedure",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "gebruikteprocedure",
+      "inpackage": "ACTIVE_PACKAGE",
+      "label-nl": {
+        "nl": "gebruikteProcedure"
+      },
+      "definition": {
+        "nl": "TODO"
+      },
+      "label": {
+        "nl": "gebruikteProcedure"
+      },
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "^gebruikteProcedure",
+        "EA-Guid": "{70188AC8-BF3C-4107-855C-56AAFFFDDBC8}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "Grondboring",
+        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+        "EA-Range": "Boormethode",
+        "RangeData": {
+          "EA-Name": "Boormethode",
+          "EA-GUID": "{65F9561F-631D-4274-A66C-F159CE9DE724}",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
+        },
+        "sourceRole": "null",
+        "destRole": "^gebruikteProcedure",
+        "label": {
+          "nl": "gebruikteProcedure"
+        },
+        "definition": {
+          "nl": "TODO"
+        },
+        "usage": "",
+        "label-nl": {
+          "nl": "gebruikteProcedure"
+        },
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "usageNote-nl": "",
+        "label-en": "",
+        "definition-en": "",
+        "usageNote-en": "",
+        "equivalent": "",
+        "subclass": "",
+        "subclass1": "",
+        "sameAs": "",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "gebruikteProcedure"
+          },
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "TODO"
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://www.w3.org/ns/sosa/usedProcedure"
+          },
+          {
+            "key": "package",
+            "value": "NOTE",
+            "note": "Grondverzet-Grondboringen"
+          }
+        ],
+        "DestRoleTags": [
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "gebruikteProcedure"
+          },
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "TODO"
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://www.w3.org/ns/sosa/usedProcedure"
+          },
+          {
+            "key": "package",
+            "value": "NOTE",
+            "note": "Grondverzet-Grondboringen"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring",
+          "EA-Name": "Grondboring"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Boormethode",
+          "EA-GUID": "{65F9561F-631D-4274-A66C-F159CE9DE724}",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
+    },
+    {
       "@id": "http://www.w3.org/ns/sosa/madeBySampler",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "name": "uitgevoerdmet",
@@ -3961,14 +3981,14 @@
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
   "config": "config/config-voc.json",
   "branchtag": "main",
-  "dummy": "geert10",
+  "dummy": "geert11",
   "examples": false,
   "filename": "config/grondverzet.json",
   "navigation": {},
   "repository": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet",
   "urlref": "/doc/vocabularium/grondverzet/grondboringen/ontwerpstandaard/2023-10-01",
-  "documentcommit": "14d9aae0fc3348571538cd2bc42e9d9f7240f98b",
-  "toolchaincommit": "c232210b2a0501202b18c1077c94a5898419b733",
+  "documentcommit": "fee9adff2a1be1c59643195bf7ab267057c48b99",
+  "toolchaincommit": "3a58211321a88bb81907c9dc492cf14ec4626bc6",
   "hostname": "https://implementatie.data.vlaanderen.be/",
   "translation": [
     {

@@ -7,6 +7,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip> a owl:DatatypeProperty;
+  rdfs:comment "TODO"@nl;
   rdfs:domain <https://data.vlaanderen.be/ns/grondboringen#Grondboring>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen>;
   rdfs:range xsd:date;
@@ -18,8 +19,11 @@
     <https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen>;
   rdfs:range <http://www.opengis.net/ont/sf#LineString>;
-  rdfs:subPropertyOf <http://def.isotc211.org/iso19156/2011/Sgeometrie>,
+  rdfs:subPropertyOf <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.shape>,
     <https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode> .
+
+<http://www.w3.org/ns/sosa/usedProcedure> a rdf:Property;
+  rdfs:label "gebruikteProcedure"@nl .
 
 <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen> a owl:Ontology;
   rdfs:label "grondverzet-grondboringen-imvoc"@en,
@@ -42,6 +46,7 @@
     foaf:mbox <mailto:info@data.specs.org>;
     foaf:name "Data Specifications Organisation"
   ];
+  rdfs:seeAlso <http://www.w3.org/ns/sosa/usedProcedure>;
   <http://www.w3.org/2001/02pd/rec54#editor> [
     a foaf:Person;
     schema:affiliation [

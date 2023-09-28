@@ -68,7 +68,7 @@
         "http://www.opengis.net/ont/sf#LineString"
       ],
       "generalization": [
-        "http://def.isotc211.org/iso19156/2011/Sgeometrie"
+        "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.shape"
       ]
     },
     {
@@ -90,6 +90,9 @@
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "definition": {
+        "nl": "TODO"
+      },
       "domain": [
         "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
       ],
@@ -99,23 +102,17 @@
       "generalization": [
         "http://www.w3.org/ns/sosa/resultTime"
       ]
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#^gebruikteProcedure",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "definition": {
-        "nl": "TODO"
-      },
-      "domain": [
-        "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-      ],
-      "range": [
-        "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
-      ],
-      "generalization": []
     }
   ],
-  "externalproperties": [],
+  "externalproperties": [
+    {
+      "name": {
+        "nl": "gebruikteProcedure"
+      },
+      "@id": "http://www.w3.org/ns/sosa/usedProcedure",
+      "@type": "rdf:Property"
+    }
+  ],
   "@context": {
     "vlaanderen": "http://data.vlaanderen.be/ns/",
     "owl": "http://www.w3.org/2002/07/owl#",
