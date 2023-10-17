@@ -1,0 +1,1606 @@
+{
+  "metadata": {
+    "title": "Data Specifications",
+    "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain",
+    "issued": "2023-10-17",
+    "baseURI": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#",
+    "filename": "dataspecification",
+    "navigation": {
+      "self": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/toolchain/ontwerpstandaard/2023-09-22"
+    },
+    "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+    "documenttype": "ap",
+    "documentconfig": {},
+    "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+    "statuslabel": "Ontwerp Standaard",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-toolchain/tree/7333ac856e444a540786fed74d2a603e9d78dbd1",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-toolchain/blob/7333ac856e444a540786fed74d2a603e9d78dbd1/CHANGELOG",
+    "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-im-toolchain/issues",
+    "standaardregisterurl": "",
+    "usesVocs": [],
+    "usesAPs": []
+  },
+  "classes": [
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#AssociationClass",
+      "name": "",
+      "label": {},
+      "sort": "",
+      "description": {},
+      "usage": {},
+      "parents": [
+        {
+          "label": "Class",
+          "name": "Class",
+          "package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class",
+          "scoped_uri": "#Class"
+        }
+      ],
+      "properties": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class",
+      "name": "",
+      "label": {},
+      "sort": "",
+      "description": {},
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Class",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "LangString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#LangString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "LangString"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Class",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Class",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "External",
+              "range_uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#External",
+              "range_puri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External",
+              "range_label": {
+                "nl": "External"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#label",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Class",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "LangString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#LangString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "LangString"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Class",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "LangString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#LangString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "LangString"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class.parent.target",
+          "name": "(target)",
+          "sort": " (target)",
+          "label": {
+            "nl": " (target)"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Class",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Class",
+              "range_uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Class",
+              "range_puri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class",
+              "range_label": {
+                "nl": "Class"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class.parent.source",
+          "name": "(source)",
+          "sort": " (source)",
+          "label": {
+            "nl": " (source)"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Class",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Class",
+              "range_uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Class",
+              "range_puri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class",
+              "range_label": {
+                "nl": "Class"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataProperty",
+      "name": "",
+      "label": {},
+      "sort": "",
+      "description": {},
+      "usage": {},
+      "parents": [
+        {
+          "label": "Property",
+          "name": "Property",
+          "package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property",
+          "scoped_uri": "#Property"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#range",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "DataProperty",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataProperty"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DataType",
+              "range_uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#DataType",
+              "range_puri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType",
+              "range_label": {
+                "nl": "DataType"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType",
+      "name": "",
+      "label": {},
+      "sort": "",
+      "description": {},
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "DataType",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "LangString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#LangString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "LangString"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "DataType",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "DataType",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "External",
+              "range_uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#External",
+              "range_puri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External",
+              "range_label": {
+                "nl": "External"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#label",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "DataType",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "LangString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#LangString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "LangString"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "DataType",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "LangString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#LangString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "LangString"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Diagram",
+      "name": "",
+      "label": {},
+      "sort": "",
+      "description": {},
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#property",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Diagram",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Diagram"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Property",
+              "range_uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Property",
+              "range_puri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property",
+              "range_label": {
+                "nl": "Property"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#licence",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Diagram",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Diagram"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#datatype",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Diagram",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Diagram"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DataType",
+              "range_uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#DataType",
+              "range_puri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType",
+              "range_label": {
+                "nl": "DataType"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#class",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Diagram",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Diagram"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Class",
+              "range_uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Class",
+              "range_puri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class",
+              "range_label": {
+                "nl": "Class"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element",
+      "name": "",
+      "label": {},
+      "sort": "",
+      "description": {},
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#soureRoleTag",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "EA-Element",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "EA-Tag",
+              "range_uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#EA-Tag",
+              "range_puri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag",
+              "range_label": {
+                "nl": "EA-Tag"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#name",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "EA-Element",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#guid",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "EA-Element",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#elementTag",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "EA-Element",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "EA-Tag",
+              "range_uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#EA-Tag",
+              "range_puri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag",
+              "range_label": {
+                "nl": "EA-Tag"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#destRoleTag",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "EA-Element",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "EA-Tag",
+              "range_uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#EA-Tag",
+              "range_puri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag",
+              "range_label": {
+                "nl": "EA-Tag"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag",
+      "name": "",
+      "label": {},
+      "sort": "",
+      "description": {},
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#value",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "EA-Tag",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#note",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "EA-Tag",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#key",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "EA-Tag",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ObjectProperty",
+      "name": "",
+      "label": {},
+      "sort": "",
+      "description": {},
+      "usage": {},
+      "parents": [
+        {
+          "label": "Property",
+          "name": "Property",
+          "package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property",
+          "scoped_uri": "#Property"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#range",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ObjectProperty",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ObjectProperty"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Class",
+              "range_uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Class",
+              "range_puri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class",
+              "range_label": {
+                "nl": "Class"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#codelist",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ObjectProperty",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ObjectProperty"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Package",
+      "name": "",
+      "label": {},
+      "sort": "",
+      "description": {},
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#baseuri",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Package",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Package"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PredefinedDatatype",
+      "name": "",
+      "label": {},
+      "sort": "",
+      "description": {},
+      "usage": {},
+      "parents": [
+        {
+          "label": "DataType",
+          "name": "DataType",
+          "package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType",
+          "scoped_uri": "#DataType"
+        }
+      ],
+      "properties": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property",
+      "name": "",
+      "label": {},
+      "sort": "",
+      "description": {},
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Property",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "LangString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#LangString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "LangString"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Property",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Property",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "External",
+              "range_uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#External",
+              "range_puri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External",
+              "range_label": {
+                "nl": "External"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#parent",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Property",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Property",
+              "range_uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Property",
+              "range_puri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property",
+              "range_label": {
+                "nl": "Property"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#mincard",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Property",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#maxcard",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Property",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#label",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Property",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "LangString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#LangString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "LangString"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#domain",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Property",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Class",
+              "range_uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Class",
+              "range_puri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class",
+              "range_label": {
+                "nl": "Class"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#derived",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {
+            "nl": "The property is derived through intepretation of direction, tags and roles "
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Property",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Boolean",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_label": {
+                "nl": "Boolean"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Property",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "LangString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#LangString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "LangString"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#soureRoleTag",
+      "name": {
+        "undefined": ""
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope",
+      "name": {
+        "undefined": ""
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope",
+      "name": {
+        "undefined": ""
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope",
+      "name": {
+        "undefined": ""
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#range",
+      "name": {
+        "undefined": ""
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#range",
+      "name": {
+        "undefined": ""
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#property",
+      "name": {
+        "undefined": ""
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#parent",
+      "name": {
+        "undefined": ""
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#elementTag",
+      "name": {
+        "undefined": ""
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#domain",
+      "name": {
+        "undefined": ""
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#destRoleTag",
+      "name": {
+        "undefined": ""
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#datatype",
+      "name": {
+        "undefined": ""
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#class",
+      "name": {
+        "undefined": ""
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class.parent.target",
+      "name": {
+        "nl": " (target)",
+        "undefined": "(target)"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class.parent.source",
+      "name": {
+        "nl": " (source)",
+        "undefined": "(source)"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    }
+  ],
+  "contributors": [
+    {
+      "role": "A",
+      "first_name": "Bert",
+      "last_name": "Van Nuffelen",
+      "affiliation": {
+        "name": "Flanders Digital Agency"
+      }
+    },
+    {
+      "role": "E",
+      "first_name": "Bert",
+      "last_name": "Van Nuffelen",
+      "affiliation": {
+        "name": "Flanders Digital Agency"
+      }
+    }
+  ],
+  "datatypes": [
+    {
+      "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+      "name": "",
+      "label": {},
+      "sort": "",
+      "description": {},
+      "usage": {},
+      "parents": [],
+      "properties": []
+    }
+  ],
+  "parents": [],
+  "documentroot": "/doc/implementatiemodel/toolchain/ontwerpstandaard/2023-09-22"
+}

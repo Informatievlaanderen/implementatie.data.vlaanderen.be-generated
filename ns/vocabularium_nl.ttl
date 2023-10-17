@@ -1,0 +1,363 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+rdf:langString a rdfs:Class .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#AssociationClass> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:subClassOf <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataProperty> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:subClassOf <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#affiliation> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Person>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#baseuri> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Package>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#branchtag> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#codelist> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ObjectProperty>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#config> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#contributor-column> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#contributor-file> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class>,
+    <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType>,
+    <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range rdf:langString .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#derived> a owl:DatatypeProperty;
+  rdfs:comment "The property is derived through intepretation of direction, tags and roles "@nl;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:boolean .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#diagram> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#disabled> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#documentcommit> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationExecution>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#domain> a rdf:Property;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationEnvironmentConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#eap> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#examples> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:boolean .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#feedbackURL> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#filename> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#firstname> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Person>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#generatedrepository> a rdf:Property;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationEnvironmentConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#guid> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#hostname> a rdf:Property,
+    owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationEnvironmentConfig>,
+    <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationExecution>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#key> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#label> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class>,
+    <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType>,
+    <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range rdf:langString .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#language> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#TranslationConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#lastname> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Person>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#licence> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Diagram>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#maxcard> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#mergefile> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#TranslationConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#mincard> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#name> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element>,
+    <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig>,
+    <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#navigation> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#note> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#otherLanguages> a rdf:Property;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationEnvironmentConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#primeLanguage> a rdf:Property;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationEnvironmentConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#publication-date> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:date .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#publication-state> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#publicationpoints> a rdf:Property;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationEnvironmentConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#repository> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope> a owl:ObjectProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class>,
+    <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType>,
+    <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#seealso> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#site> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#standaardregisterurl> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#template> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig>,
+    <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#TranslationConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#title> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig>,
+    <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#TranslationConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#toolchain> a rdf:Property;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationEnvironmentConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#toolchaincommit> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationExecution>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#toolchainversion> a rdf:Property;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationEnvironmentConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#translationjson> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#TranslationConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#type> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class>,
+    <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType>,
+    <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#urlref> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class>,
+    <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType>,
+    <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range rdf:langString .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#value> a owl:DatatypeProperty;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:range xsd:string .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Diagram> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ObjectProperty> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain>;
+  rdfs:subClassOf <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Package> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Person> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationExecution> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#TranslationConfig> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationEnvironmentConfig> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> .
+
+<https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain> a owl:Ontology;
+  rdfs:label "vocabularium"@en,
+    "vocabularium"@nl;
+  dc:issued "TODO";
+  dc:license "https://creativecommons.org/publicdomain/zero/1.0/",
+    <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>;
+  dc:mediator [
+    foaf:homepage <https://data.specs.org>;
+    foaf:mbox <mailto:info@data.specs.org>;
+    foaf:name "Data Specifications Organisation"
+  ];
+  rdfs:seeAlso rdf:langString;
+  <http://www.w3.org/2001/02pd/rec54#editor> [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Flanders Digital Agency"];
+    foaf:firstName "Bert";
+    foaf:lastName "Van Nuffelen"
+  ];
+  foaf:maker [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Flanders Digital Agency"];
+    foaf:firstName "Bert";
+    foaf:lastName "Van Nuffelen"
+  ] .
