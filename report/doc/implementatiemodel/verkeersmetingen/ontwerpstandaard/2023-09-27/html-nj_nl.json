@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/446eead9b6c8b71ef07dd9156cf01efacf618175",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/446eead9b6c8b71ef07dd9156cf01efacf618175/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/09c6fd8266bd104459b768df97cc2e8f2e98c1ff",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/09c6fd8266bd104459b768df97cc2e8f2e98c1ff/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/",
     "usesVocs": [],
@@ -1027,16 +1027,16 @@
           ],
           "range": [
             {
-              "range_label": "Rijrichtingtype",
+              "range_label": "Linkrichtingtype",
               "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Rijrichtingtype",
+              "range_uri": "#Linkrichtingtpe",
               "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
               "range_label": {
-                "nl": "Rijrichtingtype"
+                "nl": "Linkrichtingtpe"
               }
             }
           ],
@@ -1295,7 +1295,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#Locatie",
+              "range_uri": "http://www.w3.org/ns/prov#Location",
               "range_puri": "http://www.w3.org/ns/prov#Location",
               "range_label": {
                 "nl": "Locatie"
@@ -1471,187 +1471,6 @@
       "properties": []
     },
     {
-      "uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Instant",
-      "name": "Moment",
-      "label": {
-        "nl": "Moment"
-      },
-      "sort": "Moment",
-      "description": {
-        "nl": "Een 0-dimensionele geometrische primitieve in de tijd."
-      },
-      "usage": {
-        "nl": "Vergelijkbaar met een Punt in de ruimte, maar ipv een positie in een ruimtelijk referentiesysteem gaat het hier over een punt op de tijdsas. OPMERKING: Meer info in <a href=\"https://iso.org/standard/26013.html\">ISO 19108 Geographic Information - Temporal schema</a>. Substitutie door een eenvoudiger equivalent bv time:Instant uit de <a href=\"https://w3.org/TR/owl-time/\">W3C Time Ontology</a> is aanbevolen."
-      },
-      "parents": [],
-      "properties": []
-    },
-    {
-      "uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object",
-      "name": "TemporeleEntiteit",
-      "label": {
-        "nl": "TemporeleEntiteit"
-      },
-      "sort": "TemporeleEntiteit",
-      "description": {
-        "nl": "Abstracte klasse voor temporele objecten."
-      },
-      "usage": {
-        "nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn. OPMERKING: Meer info in <a href=\"https://iso.org/standard/26013.html\">ISO 19108 Geographic Information - Temporal schema</a>. Substitutie door een eenvoudiger equivalent bv time:TemporalEntity uit de <a href=\"https://w3.org/TR/owl-time/\">W3C Time Ontology</a> is aanbevolen."
-      },
-      "parents": [],
-      "properties": []
-    },
-    {
-      "uri": "http://def.isotc211.org/iso19115/2006/DataQualityInformation#DQ_Element",
-      "name": "Kwaliteitselement",
-      "label": {
-        "nl": "Kwaliteitselement"
-      },
-      "sort": "Kwaliteitselement",
-      "description": {
-        "nl": "Component van datakwaliteit."
-      },
-      "usage": {
-        "nl": "Beschrijft een bepaald aspect van de  datakwaliteit, bvb PositioneleNauwkeurigheid, LogischeConsistentie, Volledigheid etc. OPMERKING: Meer info over deze klasse in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/\">OSLO Datakwaliteit</a>."
-      },
-      "parents": [],
-      "properties": []
-    },
-    {
-      "uri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue",
-      "name": "BenoemdeWaarde",
-      "label": {
-        "nl": "BenoemdeWaarde"
-      },
-      "sort": "BenoemdeWaarde",
-      "description": {
-        "nl": "Generieke, zwak getypeerde waarde."
-      },
-      "usage": {
-        "nl": "In essentie een waarde en de naam vh type van de waarde. Bv een temperatuur van 21graden Celcius (waarde = 21 graden Celcius, naam = temperatuur)."
-      },
-      "parents": [],
-      "properties": [
-        {
-          "uri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue.value",
-          "name": "waarde",
-          "sort": "waarde",
-          "label": {
-            "nl": "waarde"
-          },
-          "description": {
-            "nl": "Kwalitatieve of kwantitatieve invulling van de waarde."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "BenoemdeWaarde",
-              "uri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Any",
-              "range_uri": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
-              "range_puri": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
-              "range_label": {
-                "nl": "Any"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue.name",
-          "name": "naam",
-          "sort": "naam",
-          "label": {
-            "nl": "naam"
-          },
-          "description": {
-            "nl": "Naam vh type van de waarde."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "BenoemdeWaarde",
-              "uri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "GeneriekeNaam",
-              "range_uri": "http://def.isotc211.org/iso19103/2005/Names#GenericName"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://def.isotc211.org/iso19103/2005/Names#GenericName",
-              "range_puri": "http://def.isotc211.org/iso19103/2005/Names#GenericName",
-              "range_label": {
-                "nl": "GeneriekeNaam"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        }
-      ]
-    },
-    {
-      "uri": "http://purl.org/dc/terms/FileFormat",
-      "name": "Bestandsformaat",
-      "label": {
-        "nl": "Bestandsformaat"
-      },
-      "sort": "Bestandsformaat",
-      "description": {
-        "nl": "Standaard manier waarop informatie wordt gecodeerd voor opslag in een computerbestand."
-      },
-      "usage": {},
-      "parents": [
-        {
-          "label": "Formaat",
-          "name": "Formaat",
-          "package": "DCTERMS",
-          "uri": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Formaat",
-          "scoped_uri": "#Formaat"
-        }
-      ],
-      "properties": []
-    },
-    {
-      "uri": "http://purl.org/dc/terms/PhysicalMedium",
-      "name": "Gegevensdrager",
-      "label": {
-        "nl": "Gegevensdrager"
-      },
-      "sort": "Gegevensdrager",
-      "description": {
-        "nl": "Fysiek opslagmedium waarop gegevens staan of waarop deze kunnen worden opgeslagen."
-      },
-      "usage": {
-        "nl": "Bv papier, canvas, dvd etc."
-      },
-      "parents": [
-        {
-          "label": "Formaat",
-          "name": "Formaat",
-          "package": "DCTERMS",
-          "uri": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Formaat",
-          "scoped_uri": "#Formaat"
-        }
-      ],
-      "properties": []
-    },
-    {
       "uri": "http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#LineString",
       "name": "Lijnstring",
       "label": {
@@ -1696,171 +1515,6 @@
         }
       ],
       "properties": []
-    },
-    {
-      "uri": "http://www.w3.org/ns/adms#Identifier",
-      "name": "Identificator",
-      "label": {
-        "nl": "Identificator"
-      },
-      "sort": "Identificator",
-      "description": {
-        "nl": "Informatie gebruikt om een object uniek te identificeren."
-      },
-      "usage": {
-        "nl": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem."
-      },
-      "parents": [],
-      "properties": [
-        {
-          "uri": "http://www.w3.org/ns/adms#schemaAgency",
-          "name": "toegekend door (String)",
-          "sort": "toegekend door (String)",
-          "label": {
-            "nl": "toegekend door (String)"
-          },
-          "description": {
-            "nl": "Naam vd agent die de identificator heeft toegekend."
-          },
-          "usage": {
-            "nl": " "
-          },
-          "domain": [
-            {
-              "EA-Name": "Identificator",
-              "uri": "http://www.w3.org/ns/adms#Identifier"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "String",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
-              "range_label": {
-                "nl": "String"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://www.w3.org/2004/02/skos/core#notation",
-          "name": "identificator",
-          "sort": "identificator",
-          "label": {
-            "nl": "identificator"
-          },
-          "description": {
-            "nl": "String gebruikt om het object uniek te identificeren."
-          },
-          "usage": {
-            "nl": "Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator."
-          },
-          "domain": [
-            {
-              "EA-Name": "Identificator",
-              "uri": "http://www.w3.org/ns/adms#Identifier"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Literal",
-              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal",
-              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
-              "range_label": {
-                "nl": "Literal"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://purl.org/dc/terms/issued",
-          "name": "toegekend op",
-          "sort": "toegekend op",
-          "label": {
-            "nl": "toegekend op"
-          },
-          "description": {
-            "nl": "Tijdstip waarop de identificator werd uitgegeven."
-          },
-          "usage": {
-            "nl": " "
-          },
-          "domain": [
-            {
-              "EA-Name": "Identificator",
-              "uri": "http://www.w3.org/ns/adms#Identifier"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "DateTime",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
-              "range_label": {
-                "nl": "DateTime"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://purl.org/dc/terms/creator",
-          "name": "toegekend door",
-          "sort": "toegekend door",
-          "label": {
-            "nl": "toegekend door"
-          },
-          "description": {
-            "nl": "Link naar de agent die de identificator heeft uitgegeven."
-          },
-          "usage": {
-            "nl": " "
-          },
-          "domain": [
-            {
-              "EA-Name": "Identificator",
-              "uri": "http://www.w3.org/ns/adms#Identifier"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Agent",
-              "range_uri": "http://purl.org/dc/terms/Agent"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Agent",
-              "range_puri": "http://purl.org/dc/terms/Agent",
-              "range_label": {
-                "nl": "Agent"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": ""
-        }
-      ]
     },
     {
       "uri": "http://www.w3.org/ns/locn#Geometry",
@@ -1945,109 +1599,6 @@
               "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
               "range_label": {
                 "nl": "Literal"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        }
-      ]
-    },
-    {
-      "uri": "http://www.w3.org/ns/prov#Location",
-      "name": "Locatie",
-      "label": {
-        "nl": "Locatie"
-      },
-      "sort": "Locatie",
-      "description": {
-        "nl": "Aanduiding van een geografische positie, dmv coördinaten, een toponiem, een adreslabel, een verwijzing naar een plaats/regio, een verwijzing naar een adres of een verwijzing naar een geografisch object."
-      },
-      "usage": {
-        "nl": "Te gebruiken als de manier waarop de geografische positie wordt aangeduid pas zal worden vastgelegd bij implementatie. Is deze manier nu al gekend dan moet dit datatype gesubstitueerd worden door klassen of datatypes zoals Geometrie, GeografischeNaam, Adres etc. OPMERKING: Meer info over deze klassen/datatypes in het applicatieprofiel OSLO Generiek - basis."
-      },
-      "parents": [],
-      "properties": []
-    },
-    {
-      "uri": "https://data.vlaanderen.be/ns/netwerk#GerichteLink",
-      "name": "GerichteLink",
-      "label": {
-        "nl": "GerichteLink"
-      },
-      "sort": "GerichteLink",
-      "description": {
-        "nl": "Link in hetzij zijn positieve, hetzij zijn negatieve richting."
-      },
-      "usage": {
-        "nl": "Typisch gebruikt in Linksequenties, de Links waaruit de sequentie bestaat worden hiermee allemaal in dezelfde richting gezet."
-      },
-      "parents": [],
-      "properties": [
-        {
-          "uri": "https://data.vlaanderen.be/ns/netwerk#richting",
-          "name": "richting",
-          "sort": "richting",
-          "label": {
-            "nl": "richting"
-          },
-          "description": {
-            "nl": "Geeft aan of de GerichteLink de oorspronkelijke richting van de Link volgt of niet (positief indien gelijklopend, negatief indien tegengesteld)."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "GerichteLink",
-              "uri": "https://data.vlaanderen.be/ns/netwerk#GerichteLink"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Teken",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Teken",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "nl": "Teken"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "https://wherever/TODO"
-        },
-        {
-          "uri": "https://data.vlaanderen.be/ns/netwerk#GerichteLink.link",
-          "name": "link",
-          "sort": "link",
-          "label": {
-            "nl": "link"
-          },
-          "description": {
-            "nl": "Verwijzing naar de oorspronkelijke Link."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "GerichteLink",
-              "uri": "https://data.vlaanderen.be/ns/netwerk#GerichteLink"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Link",
-              "range_uri": "https://data.vlaanderen.be/ns/netwerk#Link"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "https://data.vlaanderen.be/ns/netwerk#Link",
-              "range_puri": "https://data.vlaanderen.be/ns/netwerk#Link",
-              "range_label": {
-                "nl": "Link"
               }
             }
           ],
@@ -2193,16 +1744,16 @@
           ],
           "range": [
             {
-              "range_label": "Toepassingsrichtingtype",
+              "range_label": "Linkrichtingtype",
               "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Toepassingsrichtingtype",
+              "range_uri": "#Linkrichtingtpe",
               "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
               "range_label": {
-                "nl": "Toepassingsrichtingtype"
+                "nl": "Linkrichtingtpe"
               }
             }
           ],
@@ -2320,62 +1871,6 @@
           "codelist_uri": ""
         }
       ]
-    },
-    {
-      "uri": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Dekking",
-      "name": "Dekking",
-      "label": {
-        "nl": "Dekking"
-      },
-      "sort": "Dekking",
-      "description": {
-        "nl": "Gebied of periode waarop de data betrekking heeft."
-      },
-      "usage": {
-        "nl": "Voorbeelden van een gebied: een jurisdictie of adminstratieve eenheid of een plaatsnaam of coördinaten. Voorbeelden van een periode: een benoemd tijdperk of datum of datumbereik. OPMERKING: Te substitueren door de klasse of het datatype dat van toepassing, bv Locatie in het geval van een gebied en Periode voor een tijdsaanduiding."
-      },
-      "parents": [],
-      "properties": []
-    },
-    {
-      "uri": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Dimensie",
-      "name": "Dimensie",
-      "label": {
-        "nl": "Dimensie"
-      },
-      "sort": "Dimensie",
-      "description": {
-        "nl": "Meetbare omvang van iets."
-      },
-      "usage": {
-        "nl": "Bv lengte, breedte etc"
-      },
-      "parents": [
-        {
-          "label": "Formaat",
-          "name": "Formaat",
-          "package": "DCTERMS",
-          "uri": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Formaat",
-          "scoped_uri": "#Formaat"
-        }
-      ],
-      "properties": []
-    },
-    {
-      "uri": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Formaat",
-      "name": "Formaat",
-      "label": {
-        "nl": "Formaat"
-      },
-      "sort": "Formaat",
-      "description": {
-        "nl": "Vorm of omvang van iets."
-      },
-      "usage": {
-        "nl": "Bv de vorm waarin iets wordt aangeboden (bestandsformaat, programmasjabloon etc), de dimensies van een voorwerp (grootte, afmetingen etc)."
-      },
-      "parents": [],
-      "properties": []
     }
   ],
   "parents": [],

@@ -2,21 +2,7 @@
   "@context": {
     "Agent": "http://purl.org/dc/terms/Agent",
     "Bemonsteringspunt": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint",
-    "BenoemdeWaarde": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue",
-    "BenoemdeWaarde.naam": {
-      "@id": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue.name",
-      "@type": "@id"
-    },
-    "BenoemdeWaarde.waarde": {
-      "@id": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue.value",
-      "@type": "@id"
-    },
-    "Bestandsformaat": "http://purl.org/dc/terms/FileFormat",
-    "Dekking": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Dekking",
-    "Dimensie": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Dimensie",
     "Domeinobject": "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature",
-    "Formaat": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Formaat",
-    "Gegevensdrager": "http://purl.org/dc/terms/PhysicalMedium",
     "Geometrie": "http://www.w3.org/ns/locn#Geometry",
     "Geometrie.gml": {
       "@id": "http://www.opengis.net/ont/geosparql#asGML",
@@ -26,35 +12,7 @@
       "@id": "http://www.opengis.net/ont/geosparql#asWKT",
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "GerichteLink": "https://data.vlaanderen.be/ns/netwerk#GerichteLink",
-    "GerichteLink.link": {
-      "@id": "https://data.vlaanderen.be/ns/netwerk#GerichteLink.link",
-      "@type": "@id"
-    },
-    "GerichteLink.richting": {
-      "@id": "https://data.vlaanderen.be/ns/netwerk#richting",
-      "@type": "@id"
-    },
-    "Identificator": "http://www.w3.org/ns/adms#Identifier",
-    "Identificator.identificator": {
-      "@id": "http://www.w3.org/2004/02/skos/core#notation",
-      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
-    },
-    "Identificator.toegekendDoor": {
-      "@id": "http://purl.org/dc/terms/creator",
-      "@type": "@id"
-    },
-    "Identificator.toegekendDoor (string)": {
-      "@id": "http://www.w3.org/ns/adms#schemaAgency",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "Identificator.toegekendOp": {
-      "@id": "http://purl.org/dc/terms/issued",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
-    "Informatietype": "http://www.w3.org/2004/02/skos/core#Concept",
     "Kenmerktype": "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType",
-    "Kwaliteitselement": "http://def.isotc211.org/iso19115/2006/DataQualityInformation#DQ_Element",
     "Lengte": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Length",
     "Lijnstring": "http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#LineString",
     "LineaireReferentie": "https://data.vlaanderen.be/ns/netwerk#LineaireReferentie",
@@ -71,9 +29,8 @@
       "@id": "https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting",
       "@type": "@id"
     },
-    "Locatie": "http://www.w3.org/ns/prov#Location",
+    "Linkrichtingtpe": "http://www.w3.org/2004/02/skos/core#Concept",
     "Meting": "http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement",
-    "Moment": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Instant",
     "Netwerkelement": "https://data.vlaanderen.be/ns/netwerk#Netwerkelement",
     "Netwerkreferentie": "https://data.vlaanderen.be/ns/netwerk#Netwerkreferentie",
     "Netwerkreferentie.element": {
@@ -110,8 +67,6 @@
       "@id": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#tellingnetwerkreferentieelement",
       "@type": "@id"
     },
-    "Rijrichtingtype": "http://www.w3.org/2004/02/skos/core#Concept",
-    "Rijstrooktype": "http://www.w3.org/2004/02/skos/core#Concept",
     "Sensor": "https://www.w3.org/ns/sosa/Sensor",
     "Sensor.implementeert": {
       "@id": "http://www.w3.org/ns/ssn/implements",
@@ -123,11 +78,8 @@
       "@type": "@id"
     },
     "Systeem": "https://www.w3.org/TR/vocab-ssn/#ssn-system",
-    "Taalcode": "http://www.w3.org/2004/02/skos/core#Concept",
     "Teken": "http://www.w3.org/2004/02/skos/core#Concept",
     "Telling": "http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation",
-    "TemporeleEntiteit": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object",
-    "Toepassingsrichtingtype": "http://www.w3.org/2004/02/skos/core#Concept",
     "Transporteigenschap": "https://data.vlaanderen.be/ns/transportnetwerk#Transporteigenschap",
     "Transportlink": "https://data.vlaanderen.be/ns/transportnetwerk#Transportlink",
     "Verkeersbemonsteringsobject": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersbemonsteringsobject",
@@ -136,7 +88,6 @@
       "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject",
       "@type": "@id"
     },
-    "Verkeersdeelnemertype": "http://www.w3.org/2004/02/skos/core#Concept",
     "Verkeersdomeinobject": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersdomeinobject",
     "Verkeerskenmerk": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk",
     "Verkeerskenmerk.kenmerktype": {
@@ -148,7 +99,6 @@
       "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType",
       "@type": "@id"
     },
-    "Verkeerskenmerktype": "http://www.w3.org/2004/02/skos/core#Concept",
     "Verkeersmeetpunt": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt",
     "Verkeersmeetpunt.geometrie": {
       "@id": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape",
