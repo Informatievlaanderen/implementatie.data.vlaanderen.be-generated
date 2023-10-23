@@ -3,7 +3,15 @@
   "classes": [
     {
       "EA-Guid": "{433C2DC0-0C36-4600-B8FC-0782A8CBDB54}",
-      "name": ""
+      "name": "Verkeerssnelheidsmeting",
+      "label": {
+        "nl": "Verkeerssnelheidsmeting",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "TODO",
+        "fr": "Enter your translation here"
+      }
     },
     {
       "EA-Guid": "{3E7EBA12-CF4D-41ef-90F3-D582B09D761E}",
@@ -72,6 +80,18 @@
       }
     },
     {
+      "EA-Guid": "{D0FC4E26-48C8-4a28-BD9A-D6BD94C4C450}",
+      "name": "tellingnetwerkreferentieelement",
+      "label": {
+        "nl": "tellingnetwerkreferentieelement",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "TODO",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
       "EA-Guid": "{8E611CBE-ABDA-4726-9E28-7BE132D4F8F3}",
       "name": ""
     },
@@ -93,7 +113,15 @@
     },
     {
       "EA-Guid": "{3F7E064B-491E-4d0d-899D-5E68F578CE9A}",
-      "name": ""
+      "name": "geobserveerdKenmerk",
+      "label": {
+        "nl": "geobserveerdKenmerk",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "TODO",
+        "fr": "Enter your translation here"
+      }
     },
     {
       "EA-Guid": "{08BA936D-44F3-420f-9E42-82994C3B7E89}",
@@ -113,22 +141,6 @@
     }
   ],
   "externals": [
-    {
-      "EA-Guid": "{32477EB9-C446-428f-BCBC-EC0B95A0A53E}",
-      "name": "Any",
-      "label": {
-        "nl": "Any",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Instanties van  om het even welk type.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "Te substitueren door een geschikte klasse of datatype.",
-        "fr": "Enter your translation here"
-      }
-    },
     {
       "EA-Guid": "{117BB863-5BF5-4019-AA23-D591C462BA66}",
       "name": "Lengte",
@@ -206,6 +218,22 @@
       }
     },
     {
+      "EA-Guid": "{60687386-E7B9-4acf-84F3-D292E6BCEBD8}",
+      "name": "Telling",
+      "label": {
+        "nl": "Telling",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Observatie waarbij het resultaat een aantal is.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Doorgaans bij een Observatie waar het belang van een fenomeen te bepalen door te tellen hoe vaak het voorkomt. Bv het observeren vd opkomst bij een verkiezing,het tellen van bio-indicatoren in een watermonster. Datatype vh resultaat is een Integer.",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
       "EA-Guid": "{BB8A7BBA-E7AF-4881-82CE-723EED46C045}",
       "name": "Object",
       "label": {
@@ -218,6 +246,22 @@
       },
       "usage": {
         "nl": "In de context van Observaties en Metingen is dit het geobserveerdObject waarvan een kenmerk wordt geobserveerd. Het geobserveerdObject kan ook een Object zijn dat de werkelijkheid bemonstert (subklasse Bemonsteringsobject). OPGELET: deze klasse is abstract, ze moet gespecialiseerd worden in functie van het applicatiedomein.",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{8923C8D0-9720-4dee-B176-931D6B67E938}",
+      "name": "Meting",
+      "label": {
+        "nl": "Meting",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Observatie waarbij het resultaat kwantitatief is.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Doorgaans bij een Observatie waar getracht wordt de kwantatieve waarde van een bepaalde grootheid te bepalen. Bv het wegen van een steenmonster, het meten van de watertemperatuur, het bepalen van de ph van een bodemstaal. Het datatype vh resultaat is een KwantitatieveWaarde, ttz een waarde en een eenheid. De grootheid waarvan sprake is het geobserveerdKenmerk.",
         "fr": "Enter your translation here"
       }
     },
@@ -250,38 +294,6 @@
       },
       "usage": {
         "nl": "Het gaat om schattingen van de waarde, maw op de waarde zit een zekere foutmarge. Voorbeelden zijn temperatuur, klasse, kleur. Dit is verschillend van waarden die zijn toegekend en dus geen schattingen zijn zoals naam of prijs.OPMERKING: Voor meer details over deze klasse zie <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/sensoren-en-bemonstering/\">AP Sensoren en Bemonstering</a>.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{6E83163F-BC3B-4df8-B728-961211A38188}",
-      "name": "Bemonsteringscurve",
-      "label": {
-        "nl": "Bemonsteringscurve",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Een RuimtelijkBemonsteringsobject dat de vorm aanneemt van een Curve.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "Van het Object dat men wil observeren wordt in dat geval een representatief lijnvormig deel beschouwd. Voorbeelden zijn trajecten, boorgaten, profielen, intervallen etc. Dikwijls specialiseert de Curve zich tot Lijnstring. OPMERKING: Meer info over deze klasse in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/observaties-en-metingen/\">OSLO Observaties en Metingen</a> .",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{44270BA8-F67E-4f98-A688-EBEC932F9F3A}",
-      "name": "Bemonsteringsobject",
-      "label": {
-        "nl": "Bemonsteringsobject",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Deel van het Object dat men wil observeren en dat representatief is voor dat Object.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "Het deel waarvan sprake kan fysiek zijn (een Monster) of ruimtelijk (een RuimtelijkBemonsteringsobject). Men observeert een Bemonsteringsobject ipv het werkelijk Object als dat laatste niet in zijn geheel geobserveerd kan worden (bv omdat exhaustieve observatie onpraktisch zou zijn). Het Bemonsteringsobject vormt samen met het Proces dat voor observatie is gebruikt het zgn observatieprotocol. OPGELET: deze klasse is abstract, ze moet gespecialiseerd worden in functie van het applicatiedomein.",
         "fr": "Enter your translation here"
       }
     },
@@ -590,30 +602,6 @@
       }
     },
     {
-      "EA-Guid": "{FB83108B-BC83-4522-81BB-F464E8BB14F2}",
-      "name": "Input",
-      "label": {
-        "nl": "Input",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Informatie die door een Procedure wordt gebruikt.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{A1B15787-239E-436b-9E40-FEE9C77B7A78}",
-      "name": "Output",
-      "label": {
-        "nl": "Output",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Informatie die door een Procedure wordt gegenereerd.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
       "EA-Guid": "{777CAFBE-1B79-4205-998C-2116BB1DCBAB}",
       "name": "GerichteLink",
       "label": {
@@ -642,22 +630,6 @@
       },
       "usage": {
         "nl": "Het deel waarvan sprake ligt tiussen de vanPositie en de totPositie op de Link of Linksequentie.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{C446C097-AC28-425d-8805-29B819DD805F}",
-      "name": "Link",
-      "label": {
-        "nl": "Link",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Curvilineair netwerkelement dat twee posities verbindt en een homogeen pad in het Netwerk vertegenwoordigt. De verbonden posities worden voorgesteld door Knopen.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "Onder een homogeen pad verstaan we een route die zich niet vertakt, bvb een weg tussen twee kruispunten (waarbij de kruispunten knopen in het netwerk voorstellen).\r\n",
         "fr": "Enter your translation here"
       }
     },
@@ -774,22 +746,6 @@
       }
     },
     {
-      "EA-Guid": "{3E8C7A20-E02F-41c4-9D1C-4D3E755F45BE}",
-      "name": "Transportknoop",
-      "label": {
-        "nl": "Transportknoop",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Significante positie in het Transportetwerk die steeds samenvalt met het begin of het einde van een Transportlink.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "OPMERKING: Voor meer details over deze klasse zie <a href=\"https://data.vlaanderen.be/ns/transportnetwerk/\">APTransportnetwerk</a>.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
       "EA-Guid": "{6DB2286D-C90C-4878-8716-3D0FD7F5CDD0}",
       "name": "Transportlink",
       "label": {
@@ -802,34 +758,6 @@
       },
       "usage": {
         "nl": "OPMERKING: Voor meer details over deze klasse zie <a href=\"https://data.vlaanderen.be/ns/transportnetwerk/\">APTransportnetwerk</a>.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{1AD0C74E-D337-474c-9246-CC16ED16B749}",
-      "name": "Transportlinksequentie",
-      "label": {
-        "nl": "Transportlinksequentie",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Lineair ruimtelijk object, bestaande uit een geordende verzameling van Transportlinks, die een onvertakt doorlopend pad in een Transportnetwerk vertegenwoordigt.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{E25E0426-630B-4434-8504-B2D4022D78B3}",
-      "name": "Rijstrook",
-      "label": {
-        "nl": "Rijstrook",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "In de langsrichting begrensd deel van de rijbaan, bedoeld om een deel van de verkeersstroom te geleiden in een bepaalde richting en met de breedte van maximum één Voertuig.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "Onder rijbaan verstaan we dat deel van de wegbaan ingericht om met een Voertuig over te rijden. Door de rijbaan op te splitsen krijgt men een meer gecontroleerde verkeersstroom, in de eerste plaats omdat de rijrichtingen of bvb doorgaand en afslaand verkeer gescheiden worden en ook door de breedte te beperken zodat er maar één Voertuig tegelijk doorkan. Rijstroken worden typisch afgebakend dmv wegmarkeringen, bvb een witte doorlopende of onderbroken streep. OPMERKING: Voetpaden of Fietspaden zijn geen Rijstroken aangezien ze niet bedoeld zijn om met een auto over te rijden en dus geen deel zijn van de rijbaan.\n",
         "fr": "Enter your translation here"
       }
     },
@@ -930,22 +858,6 @@
       }
     },
     {
-      "EA-Guid": "{49BDB313-5E07-40eb-A64B-40827FFC648A}",
-      "name": "Wegdeel",
-      "label": {
-        "nl": "Wegdeel",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Deel van de wegbaan.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "In deze context worden er longitudonale onderverdelingen van de weg mee bedoeld zoals Rijstroken, Fietspaden edm. OPGELET: Deze klasse is abstract,gebruik de subklassen.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
       "EA-Guid": "{F475BC99-8F8C-42fa-8AFC-97D937475E85}",
       "name": "Rijrichting",
       "label": {
@@ -986,22 +898,6 @@
       }
     },
     {
-      "EA-Guid": "{FC957B5D-8BF1-4f69-8D8E-6DA16D203ABA}",
-      "name": "Observatieverzameling",
-      "label": {
-        "nl": "Observatieverzameling",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Collectie van Observaties met dezelfde kenmerken.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "Bv Observaties die op hetzelfde tijdstip plaatsvonden of hetzelfde Object observeren of door dezelfde sensor zijn gemaakt.\r\nOPMERKING: Voor meer details over deze klasse zie <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/sensoren-en-bemonstering/\">AP Sensoren en Bemonstering</a>.\r\n",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
       "EA-Guid": "{A3059FBD-C1E7-4349-8384-8F514B023183}",
       "name": "Observatieprocedure",
       "label": {
@@ -1034,22 +930,6 @@
       }
     },
     {
-      "EA-Guid": "{1CD74C8C-C59C-4394-88BC-E7D006727775}",
-      "name": "Platform",
-      "label": {
-        "nl": "Platform",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Entiteit die fungeert als basis voor andere Entiteiten.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "In deze context zijn deze andere entiteiten typisch Sensoren, Bemonsteraars of Actuators. Voorbeelden van Platformen zijn palen,boeien, voertuigen,schepen, vliegtuigen, gsm's en zelfs mensen en dieren.\nOPMERKING: Voor meer details over deze klasse zie <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/sensoren-en-bemonstering/\">AP Sensoren en Bemonstering</a>.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
       "EA-Guid": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
       "name": "Sensor",
       "label": {
@@ -1067,22 +947,6 @@
     }
   ],
   "externalproperties": [
-    {
-      "EA-Guid": "{6F78409A-1707-4564-824E-36842F1DC6F5}",
-      "name": "parameter",
-      "label": {
-        "nl": "parameter",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Willekeurig gegeven geassocieerd met de Observatieprocedure.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "Bv een parameter die een aspect van de Observatieprocedure beschrijft (bv de vereiste hoogte voor het observeren van windsnelheid) of een noodzakelijke omgevingsparameter (bv temperatuurbereik waarbinnen een labo-analyse moet plaatsvinden).",
-        "fr": "Enter your translation here"
-      }
-    },
     {
       "EA-Guid": "{FCFCB9D9-E66E-4e9f-AB39-7A24DC0C08BF}",
       "name": "vanPositie",
@@ -1140,46 +1004,14 @@
       }
     },
     {
-      "EA-Guid": "{EC4722C1-6C3C-4de7-B2D4-37DAB77A27ED}",
-      "name": "verkeersdeelnemertype",
-      "label": {
-        "nl": "verkeersdeelnemertype",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Soort Verkeersdeelnemer waarvan men het Verkeerskenmerk meet.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "Bvb \"Voetganger\" als men enkel het aantal Voertgangers wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Verkeersdeelnemer zijn maar bvb een Wegsegment of Rijstrook etc.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
       "EA-Guid": "{52414853-0857-4630-9CA7-3C1889B82C27}",
-      "name": ""
-    },
-    {
-      "EA-Guid": "{D0FC4E26-48C8-4a28-BD9A-D6BD94C4C450}",
-      "name": ""
-    },
-    {
-      "EA-Guid": "{8C6E7F8A-5D23-4bbb-8796-6E4BF2FFDAAF}",
-      "name": ""
-    },
-    {
-      "EA-Guid": "{D5FA77B3-614C-42e8-A732-5B633B8D3AB7}",
-      "name": "rijstrook",
+      "name": "verkeersmeetpuntnetwerkreferentie",
       "label": {
-        "nl": "rijstrook",
+        "nl": "verkeersmeetpuntnetwerkreferentie",
         "fr": "Enter your translation here"
       },
       "definition": {
-        "nl": "Identificator van de Rijstrook.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "De identificator moet getypeerd worden bvb volgens het systeem dat werd gehanteerd om de Rijstroken te nummeren. Bvb het schema van DATEX II waar over de volledige breedte van de weg van links naar rechts wordt genummerd.",
+        "nl": "TODO",
         "fr": "Enter your translation here"
       }
     },
@@ -1201,7 +1033,15 @@
     },
     {
       "EA-Guid": "{9C622FAB-2A42-457b-B26A-7E74AE56D792}",
-      "name": ""
+      "name": "geobserveerdObject",
+      "label": {
+        "nl": "geobserveerdObject",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "TODO",
+        "fr": "Enter your translation here"
+      }
     },
     {
       "EA-Guid": "{4957D1B2-0700-4cd6-A022-32AF0C0E1760}",
@@ -1220,74 +1060,6 @@
       }
     },
     {
-      "EA-Guid": "{10462306-BBFF-4c5b-820D-9A28AC37E33C}",
-      "name": "wegdeel",
-      "label": {
-        "nl": "wegdeel",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Geeft aan welke op welk Wegdeel het Verkeersmeetpunt gelegen is of betrekking heeft.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "Alternatief voor of aanvulling op geometrie of netwerkreferentie. Ook noodzakelijk om aan te geven op welk deel van de weg de Voertuigen of Verkeersdeelnemers waarvan men een kenmerk meet zich bevinden, bvb op een bepaalde Rijstrook of op het Fietspad of het Voetpad.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{B61FC9A0-0BD3-4e09-8513-CC72AF0D5D56}",
-      "name": "netwerkreferentie",
-      "label": {
-        "nl": "netwerkreferentie",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "Nuttig als men weet langs welk Wegsegment het punt ligt en aan welke kant van de weg en op welke afstand van het beginpunt. Alternatief voor of aanvulling op coördinaten. Ook noodzakelijk om aan te geven over welk Wegsegment en aan welke kant ervan de Voertuigen rijden waarvan men bvb de snelheid meet.\r\n",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{B3AA2321-DF66-47f1-B798-8ED3CD35A78C}",
-      "name": "referentie",
-      "label": {
-        "nl": "referentie",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Verwijzing naar originele Output.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{A961E12C-13B7-48b5-A89E-2D7D1185611C}",
-      "name": "specificatie",
-      "label": {
-        "nl": "specificatie",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Verwijzing naar een document dat de Observatieprocedure beschrijft.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{FCA9C4E3-C84F-49b7-9B7D-010B41CC8C49}",
-      "name": "referentie",
-      "label": {
-        "nl": "referentie",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Verwijzing naar originele Input.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
       "EA-Guid": "{29876B35-03E6-4d03-B4F8-5C382AB7C696}",
       "name": "richting",
       "label": {
@@ -1296,38 +1068,6 @@
       },
       "definition": {
         "nl": "Geeft aan of de GerichteLink de oorspronkelijke richting van de Link volgt of niet (positief indien gelijklopend, negatief indien tegengesteld).",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{2C0C4043-021D-4394-AFEC-27CBEA07A5F0}",
-      "name": "netwerkreferentie",
-      "label": {
-        "nl": "netwerkreferentie",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Verwijzing naar het Netwerkelement waarop de Rijrichting betrekking heeft.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "In de context van dit applicatieprofiel is het Netwerkelement een Wegsegment of een Weglinksequentie. De Netwerkreferentie laat ook toe om Rijstroken te specifiëren voor slechts een stuk van de weg of voor één bepaalde wegkant.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{23D52F6D-9CD2-4e59-8CA1-9F8DE91850A1}",
-      "name": "netwerkreferentie",
-      "label": {
-        "nl": "netwerkreferentie",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Verwijzing naar het Netwerkelement waarop de Rijstrook betrekking heeft.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "In de context van dit applicatieprofiel is het Netwerkelement een Wegsegment of een Weglinksequentie. De Netwerkreferentie laat ook toe om Rijstroken te specifiëren voor slechts een stuk van de weg of voor één bepaalde wegkant.",
         "fr": "Enter your translation here"
       }
     },
@@ -1416,30 +1156,6 @@
       },
       "definition": {
         "nl": "Sensor waarmee de Observatieprocedure is of moet worden uitgevoerd.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{4E0F21DF-0E3B-4613-A7F4-A01A83580F42}",
-      "name": "output",
-      "label": {
-        "nl": "output",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Verwijzing naar de Output die de Procedure genereert.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{08F08E34-6057-40d6-A4DE-8E404E329937}",
-      "name": "input",
-      "label": {
-        "nl": "input",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Verwijzing naar de Input die de procedure vereist.",
         "fr": "Enter your translation here"
       }
     },
@@ -1548,58 +1264,6 @@
       },
       "usage": {
         "nl": " ",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{A852CCF8-AFCF-44e7-AE0C-C26E44127C20}",
-      "name": "type",
-      "label": {
-        "nl": "type",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Type vh Verkeerskenmerk.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{50AB4E80-C612-40a2-AA46-5707D288E028}",
-      "name": "rijstrooktype",
-      "label": {
-        "nl": "rijstrooktype",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Aard vd Rijstrook.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "Bvb of het een afslagstrook is, een fietssuggestiestrook, een middenrijbaan etc.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{8978A887-B4BA-436a-98F6-3B7A898FD8F0}",
-      "name": "type",
-      "label": {
-        "nl": "type",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Aard van de Output.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{3B5FD4E0-D775-4ae9-BC01-3357CCCBE0FF}",
-      "name": "type",
-      "label": {
-        "nl": "type",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Aard van de input.",
         "fr": "Enter your translation here"
       }
     },
