@@ -1,0 +1,1965 @@
+{
+  "@context": {
+    "@vocab": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27",
+    "qb": "http://purl.org/linked-data/cube#",
+    "qb:codeList": {
+      "@id": "qb:codeList",
+      "@type": "@id"
+    },
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rdfs:comment": {
+      "@id": "rdfs:comment"
+    },
+    "sh": "http://www.w3.org/ns/shacl#",
+    "sh:and": {
+      "@container": "@set",
+      "@id": "sh:and",
+      "@type": "@id"
+    },
+    "sh:class": {
+      "@id": "sh:class",
+      "@type": "@id"
+    },
+    "sh:datatype": {
+      "@id": "sh:datatype",
+      "@type": "@id"
+    },
+    "sh:description": {
+      "@container": "@language",
+      "@id": "sh:description"
+    },
+    "sh:hasValue": {
+      "@id": "sh:hasValue",
+      "@type": "@id"
+    },
+    "sh:in": {
+      "@container": "@set",
+      "@id": "sh:in",
+      "@type": "@id"
+    },
+    "sh:maxCount": {
+      "@id": "sh:maxCount",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "sh:minCount": {
+      "@id": "sh:minCount",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "sh:name": {
+      "@container": "@language",
+      "@id": "sh:name"
+    },
+    "sh:node": {
+      "@id": "sh:node",
+      "@type": "@id"
+    },
+    "sh:nodeKind": {
+      "@id": "sh:nodeKind",
+      "@type": "@id"
+    },
+    "sh:or": {
+      "@container": "@set",
+      "@id": "sh:or",
+      "@type": "@id"
+    },
+    "sh:path": {
+      "@id": "sh:path",
+      "@type": "@id"
+    },
+    "sh:property": {
+      "@id": "sh:property",
+      "@type": "@id"
+    },
+    "sh:severity": {
+      "@id": "sh:severity",
+      "@type": "@id"
+    },
+    "sh:targetClass": {
+      "@id": "sh:targetClass",
+      "@type": "@id"
+    },
+    "sh:uniqueLang": {
+      "@id": "sh:uniqueLang",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "shapes": {
+      "@id": "rdfs:member",
+      "@type": "@id"
+    },
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "vl": "https://data.vlaanderen.be/ns/shacl#"
+  },
+  "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27",
+  "shapes": [
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/0b8f1cfacc6c877b4618f064aa070495c9ee15e3",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmeting%3AgeobserveerdKenmerk",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "geobserveerdKenmerk"
+          },
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor geobserveerdKenmerk"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/60638eca218f8b9f8ea1b79fb9b42510aa9f03fe",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmeting%3AgeobserveerdKenmerk",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "geobserveerdKenmerk"
+          },
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor geobserveerdKenmerk"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/af62feb10fc401a33b0ef1ef3d3dc3a9dc30f436",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmeting%3AgeobserveerdKenmerk",
+          "sh:class": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:name": {
+            "nl": "geobserveerdKenmerk"
+          },
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk",
+          "vl:message": {
+            "nl": "De range van geobserveerdKenmerk moet van het type <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/e51c4bd2d636090d65d2c5d08cfa4c274e062d53",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmeting%3AgeobserveerdKenmerk",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:name": {
+            "nl": "geobserveerdKenmerk"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk",
+          "vl:message": {
+            "nl": "De verwachte waarde voor geobserveerdKenmerk is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/09ed995683a26095de4577d13e597160f260ecb2",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmeting%3Aresultaat",
+          "sh:class": "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure",
+          "sh:description": {
+            "nl": "Resultaat van de Meting."
+          },
+          "sh:name": {
+            "nl": "resultaat"
+          },
+          "sh:path": "http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement.result",
+          "vl:message": {
+            "nl": "De range van resultaat moet van het type <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/1bab1bb4af028fef0775daa8246b62cbb09cdcd1",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmeting%3Aresultaat",
+          "sh:description": {
+            "nl": "Resultaat van de Meting."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "resultaat"
+          },
+          "sh:path": "http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement.result",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor resultaat"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/f3863ce5468352d4291842a66dd4db610576ccc5",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmeting%3Aresultaat",
+          "sh:description": {
+            "nl": "Resultaat van de Meting."
+          },
+          "sh:name": {
+            "nl": "resultaat"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement.result",
+          "vl:message": {
+            "nl": "De verwachte waarde voor resultaat is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/fc134bbb026523e6afde205e88de56ae056be099",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmeting%3Aresultaat",
+          "sh:description": {
+            "nl": "Resultaat van de Meting."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "resultaat"
+          },
+          "sh:path": "http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement.result",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor resultaat"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingkenmerkShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingkenmerkShape/3666d8c60732a88492a99ce416cfbcb043d9fc03",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmetingkenmerk%3Akenmerktype",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:name": {
+            "nl": "kenmerktype"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
+          "vl:message": {
+            "nl": "De verwachte waarde voor kenmerktype is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingkenmerkShape/769075ce9ca255bcd4545e1a849b772ff89d3a13",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmetingkenmerk%3Akenmerktype",
+          "sh:class": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerktype",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:name": {
+            "nl": "kenmerktype"
+          },
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
+          "vl:message": {
+            "nl": "De range van kenmerktype moet van het type <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerktype> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingkenmerkShape/8db07c409b1414086efbe6bc90f990689e112551",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmetingkenmerk%3Akenmerktype",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "kenmerktype"
+          },
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor kenmerktype"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingkenmerkShape/f246b770d46219bce19af871c1f33cd5de121060",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmetingkenmerk%3Akenmerktype",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "kenmerktype"
+          },
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor kenmerktype"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingkenmerktypeShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerktype"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/0b8f1cfacc6c877b4618f064aa070495c9ee15e3",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3AgeobserveerdKenmerk",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "geobserveerdKenmerk"
+          },
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor geobserveerdKenmerk"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/60638eca218f8b9f8ea1b79fb9b42510aa9f03fe",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3AgeobserveerdKenmerk",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "geobserveerdKenmerk"
+          },
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor geobserveerdKenmerk"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/af62feb10fc401a33b0ef1ef3d3dc3a9dc30f436",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3AgeobserveerdKenmerk",
+          "sh:class": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:name": {
+            "nl": "geobserveerdKenmerk"
+          },
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk",
+          "vl:message": {
+            "nl": "De range van geobserveerdKenmerk moet van het type <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/e51c4bd2d636090d65d2c5d08cfa4c274e062d53",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3AgeobserveerdKenmerk",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:name": {
+            "nl": "geobserveerdKenmerk"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk",
+          "vl:message": {
+            "nl": "De verwachte waarde voor geobserveerdKenmerk is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/6d779b2d3752ec2d545135744c36a1b114604c3d",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3Atellingresultaat",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "tellingresultaat"
+          },
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor tellingresultaat"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/8af89cbd72964c8ec4fe4592327be90edd502278",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3Atellingresultaat",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:name": {
+            "nl": "tellingresultaat"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat",
+          "vl:message": {
+            "nl": "De verwachte waarde voor tellingresultaat is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/cea7a4b228e342123596f45aa39a49eec79741fd",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3Atellingresultaat",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#double",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:name": {
+            "nl": "tellingresultaat"
+          },
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat",
+          "vl:message": {
+            "nl": "De range van tellingresultaat moet van het type <http://www.w3.org/2001/XMLSchema#double> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/dfeacf766937dfc762d8e6f053750c8ff022f05f",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3Atellingresultaat",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "tellingresultaat"
+          },
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor tellingresultaat"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingkenmerkShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingkenmerkShape/3666d8c60732a88492a99ce416cfbcb043d9fc03",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstellingkenmerk%3Akenmerktype",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:name": {
+            "nl": "kenmerktype"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
+          "vl:message": {
+            "nl": "De verwachte waarde voor kenmerktype is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingkenmerkShape/769075ce9ca255bcd4545e1a849b772ff89d3a13",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstellingkenmerk%3Akenmerktype",
+          "sh:class": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerktype",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:name": {
+            "nl": "kenmerktype"
+          },
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
+          "vl:message": {
+            "nl": "De range van kenmerktype moet van het type <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerktype> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingkenmerkShape/8db07c409b1414086efbe6bc90f990689e112551",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstellingkenmerk%3Akenmerktype",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "kenmerktype"
+          },
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor kenmerktype"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingkenmerkShape/f246b770d46219bce19af871c1f33cd5de121060",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstellingkenmerk%3Akenmerktype",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "kenmerktype"
+          },
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor kenmerktype"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingkenmerktypeShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerktype"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LengteShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Length"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#KenmerktypeShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#TellingShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#ObjectShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#MetingShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#ObservatieShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#BemonsteringspuntShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#DomeinobjectShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#AgentShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://purl.org/dc/terms/Agent"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LijnstringShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#LineString"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#PuntShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.opengis.net/ont/sf#Point"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VoertuigtypeShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#TekenShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#ObservatieproceduretypeShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LinkrichtingtypeShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#GeometrieShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#GeometrieShape/3b0382e36e26470fa0813557479e9f144aa033af",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Geometrie%3AGML",
+          "sh:description": {
+            "nl": "Geometrie uitgedrukt in gml-formaat."
+          },
+          "sh:name": {
+            "nl": "GML"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://www.opengis.net/ont/geosparql#asGML",
+          "vl:message": {
+            "nl": "De verwachte waarde voor GML is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#GeometrieShape/716f7a0b37579a46503ed3a02eb79c3be9e783cd",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Geometrie%3AGML",
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": {
+            "nl": "Geometrie uitgedrukt in gml-formaat."
+          },
+          "sh:name": {
+            "nl": "GML"
+          },
+          "sh:path": "http://www.opengis.net/ont/geosparql#asGML",
+          "vl:message": {
+            "nl": "De range van GML moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#GeometrieShape/e6a748ddd32c7cf74e441863d64d0835cdc7950b",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Geometrie%3AGML",
+          "sh:description": {
+            "nl": "Geometrie uitgedrukt in gml-formaat."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "GML"
+          },
+          "sh:path": "http://www.opengis.net/ont/geosparql#asGML",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor GML"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#GeometrieShape/ecda37a0207b08cff48c2c89e7672fee7a75f197",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Geometrie%3AGML",
+          "sh:description": {
+            "nl": "Geometrie uitgedrukt in gml-formaat."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "GML"
+          },
+          "sh:path": "http://www.opengis.net/ont/geosparql#asGML",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor GML"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#GeometrieShape/55bafae9d0d8872395836607bb89e1c8359852c0",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Geometrie%3AWKT",
+          "sh:description": {
+            "nl": "Geometrie uitgedrukt in wkt-formaat."
+          },
+          "sh:name": {
+            "nl": "WKT"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://www.opengis.net/ont/geosparql#asWKT",
+          "vl:message": {
+            "nl": "De verwachte waarde voor WKT is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#GeometrieShape/9694d8e38b7551fac8f035b665acee26cc4f183e",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Geometrie%3AWKT",
+          "sh:description": {
+            "nl": "Geometrie uitgedrukt in wkt-formaat."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "WKT"
+          },
+          "sh:path": "http://www.opengis.net/ont/geosparql#asWKT",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor WKT"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#GeometrieShape/a1bb27b1b9e7c5a3e43fee34289e357087eed803",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Geometrie%3AWKT",
+          "sh:description": {
+            "nl": "Geometrie uitgedrukt in wkt-formaat."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "WKT"
+          },
+          "sh:path": "http://www.opengis.net/ont/geosparql#asWKT",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor WKT"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#GeometrieShape/ab3f9df9a73a1d6bf7c1a850ed415316f121f406",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Geometrie%3AWKT",
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": {
+            "nl": "Geometrie uitgedrukt in wkt-formaat."
+          },
+          "sh:name": {
+            "nl": "WKT"
+          },
+          "sh:path": "http://www.opengis.net/ont/geosparql#asWKT",
+          "vl:message": {
+            "nl": "De range van WKT moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/locn#Geometry"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LocatieShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/ns/prov#Location"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#ProcedureShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/ns/sosa/Procedure"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LineaireReferentieShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LineaireReferentieShape/7dc6c1b9f9faf87cd86cf6d3b4c07708fcbc4f45",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LineaireReferentie%3AtotPositie",
+          "sh:description": {
+            "nl": "Afstand vanaf het begin van de Link of Linksequentie vanaf waar de Netwerkeigenschap geldt."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "totPositie"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/weg#totPositie",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor totPositie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LineaireReferentieShape/aa6dfa0c7ffb68aa527b0866eda4159c5cd03fef",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LineaireReferentie%3AtotPositie",
+          "sh:description": {
+            "nl": "Afstand vanaf het begin van de Link of Linksequentie vanaf waar de Netwerkeigenschap geldt."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "totPositie"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/weg#totPositie",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor totPositie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LineaireReferentieShape/c0eddb5cb7e47a034086d71d1354f3053f2121d9",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LineaireReferentie%3AtotPositie",
+          "sh:class": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Length",
+          "sh:description": {
+            "nl": "Afstand vanaf het begin van de Link of Linksequentie vanaf waar de Netwerkeigenschap geldt."
+          },
+          "sh:name": {
+            "nl": "totPositie"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/weg#totPositie",
+          "vl:message": {
+            "nl": "De range van totPositie moet van het type <http://def.isotc211.org/iso19103/2015/MeasureTypes#Length> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LineaireReferentieShape/c3d497f974ba519d5bdac78baf18a3c4107b798d",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LineaireReferentie%3AtotPositie",
+          "sh:description": {
+            "nl": "Afstand vanaf het begin van de Link of Linksequentie vanaf waar de Netwerkeigenschap geldt."
+          },
+          "sh:name": {
+            "nl": "totPositie"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://data.vlaanderen.be/ns/weg#totPositie",
+          "vl:message": {
+            "nl": "De verwachte waarde voor totPositie is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LineaireReferentieShape/0218c54387795326689fcdf276a4b553827c0e6e",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LineaireReferentie%3AvanPositie",
+          "sh:description": {
+            "nl": "Afstand vanaf het begin van de Link of Linksequentie tot waar de Netwerkeigenschap geldt."
+          },
+          "sh:name": {
+            "nl": "vanPositie"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://data.vlaanderen.be/ns/weg#vanPositie",
+          "vl:message": {
+            "nl": "De verwachte waarde voor vanPositie is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LineaireReferentieShape/3d5a8744d2ef782ea796fcd4125b637cc00322a5",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LineaireReferentie%3AvanPositie",
+          "sh:class": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Length",
+          "sh:description": {
+            "nl": "Afstand vanaf het begin van de Link of Linksequentie tot waar de Netwerkeigenschap geldt."
+          },
+          "sh:name": {
+            "nl": "vanPositie"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/weg#vanPositie",
+          "vl:message": {
+            "nl": "De range van vanPositie moet van het type <http://def.isotc211.org/iso19103/2015/MeasureTypes#Length> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LineaireReferentieShape/d1f30fb9f791c7514404955e6d07fc09a7ed06d4",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LineaireReferentie%3AvanPositie",
+          "sh:description": {
+            "nl": "Afstand vanaf het begin van de Link of Linksequentie tot waar de Netwerkeigenschap geldt."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "vanPositie"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/weg#vanPositie",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor vanPositie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LineaireReferentieShape/ef757c547a98a574d28557be12a8dec27337cc54",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LineaireReferentie%3AvanPositie",
+          "sh:description": {
+            "nl": "Afstand vanaf het begin van de Link of Linksequentie tot waar de Netwerkeigenschap geldt."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "vanPositie"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/weg#vanPositie",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor vanPositie"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/netwerk#LineaireReferentie"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LinkreferentieShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LinkreferentieShape/917d65aa2a2bb3cc3eccac3424fb6d48eb7933b5",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Linkreferentie%3AtoepassingsRichting",
+          "sh:description": {
+            "nl": "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie."
+          },
+          "sh:name": {
+            "nl": "toepassingsRichting"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting",
+          "vl:message": {
+            "nl": "De verwachte waarde voor toepassingsRichting is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LinkreferentieShape/ceaeb9bcc2cc216a37dd895409adba9cb0a457d4",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Linkreferentie%3AtoepassingsRichting",
+          "sh:description": {
+            "nl": "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "toepassingsRichting"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor toepassingsRichting"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LinkreferentieShape/d7b24da783261a76c0f697be5e0acef8edb3ccef",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Linkreferentie%3AtoepassingsRichting",
+          "sh:description": {
+            "nl": "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "toepassingsRichting"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor toepassingsRichting"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LinkreferentieShape/e17b770acaf85dd473552d4911ce657815d721be",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Linkreferentie%3AtoepassingsRichting",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "nl": "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie."
+          },
+          "sh:name": {
+            "nl": "toepassingsRichting"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting",
+          "vl:message": {
+            "nl": "De range van toepassingsRichting moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/netwerk#Linkreferentie"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#NetwerkelementShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/netwerk#Netwerkelement"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#NetwerkreferentieShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#NetwerkreferentieShape/44479df511afb8aedc167c98e2023e66c0a57094",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Netwerkreferentie%3Aelement",
+          "sh:class": "https://data.vlaanderen.be/ns/netwerk#Netwerkelement",
+          "sh:description": {
+            "nl": "Verwijzing naar het Netwerkelement."
+          },
+          "sh:name": {
+            "nl": "element"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Netwerkreferentie.element",
+          "vl:message": {
+            "nl": "De range van element moet van het type <https://data.vlaanderen.be/ns/netwerk#Netwerkelement> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#NetwerkreferentieShape/5b0c55c734bb41336d7fda0cfa4a1202186fcb68",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Netwerkreferentie%3Aelement",
+          "sh:description": {
+            "nl": "Verwijzing naar het Netwerkelement."
+          },
+          "sh:name": {
+            "nl": "element"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Netwerkreferentie.element",
+          "vl:message": {
+            "nl": "De verwachte waarde voor element is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#NetwerkreferentieShape/93d8ee4dba95e075ccb9e8042481b9ea1165e7f5",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Netwerkreferentie%3Aelement",
+          "sh:description": {
+            "nl": "Verwijzing naar het Netwerkelement."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "element"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Netwerkreferentie.element",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor element"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#NetwerkreferentieShape/c3accc7622f6a96b4b3ce0871e8b573e3f76c9f1",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Netwerkreferentie%3Aelement",
+          "sh:description": {
+            "nl": "Verwijzing naar het Netwerkelement."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "element"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Netwerkreferentie.element",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor element"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/netwerk#Netwerkreferentie"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#PuntreferentieShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#PuntreferentieShape/2d16047da1432acd4decefff76cea7609802dbc1",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Puntreferentie%3AopPositie",
+          "sh:description": {
+            "nl": "Afstand vanaf het begin van de Link of Linksequentie tot het punt waar de Netwerkeigenschap geldt."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "opPositie"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie.opPositie",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor opPositie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#PuntreferentieShape/4dc9a28b3271f12aa53aa4235ac592bd8cc47387",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Puntreferentie%3AopPositie",
+          "sh:description": {
+            "nl": "Afstand vanaf het begin van de Link of Linksequentie tot het punt waar de Netwerkeigenschap geldt."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "opPositie"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie.opPositie",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor opPositie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#PuntreferentieShape/5f8b0a9df408011b02059135f3618aa48d7eea71",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Puntreferentie%3AopPositie",
+          "sh:class": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Length",
+          "sh:description": {
+            "nl": "Afstand vanaf het begin van de Link of Linksequentie tot het punt waar de Netwerkeigenschap geldt."
+          },
+          "sh:name": {
+            "nl": "opPositie"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie.opPositie",
+          "vl:message": {
+            "nl": "De range van opPositie moet van het type <http://def.isotc211.org/iso19103/2015/MeasureTypes#Length> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#PuntreferentieShape/e367a9adb9ac1e281ee50e367bae2bded0375808",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Puntreferentie%3AopPositie",
+          "sh:description": {
+            "nl": "Afstand vanaf het begin van de Link of Linksequentie tot het punt waar de Netwerkeigenschap geldt."
+          },
+          "sh:name": {
+            "nl": "opPositie"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie.opPositie",
+          "vl:message": {
+            "nl": "De verwachte waarde voor opPositie is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#TransporteigenschapShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/transportnetwerk#Transporteigenschap"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#TransportlinkShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/transportnetwerk#Transportlink"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersbemonsteringsobjectShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersbemonsteringsobjectShape/3c6ffc15b1b38d49ef1d16069a55fdfbbbbea02d",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersbemonsteringsobject%3AbemonsterdObject",
+          "sh:description": {
+            "nl": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
+          },
+          "sh:name": {
+            "nl": "bemonsterdObject"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject",
+          "vl:message": {
+            "nl": "De verwachte waarde voor bemonsterdObject is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersbemonsteringsobjectShape/59b9347ab72afa0c39a2c50ed656780c82fba2dc",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersbemonsteringsobject%3AbemonsterdObject",
+          "sh:class": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersdomeinobject",
+          "sh:description": {
+            "nl": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
+          },
+          "sh:name": {
+            "nl": "bemonsterdObject"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject",
+          "vl:message": {
+            "nl": "De range van bemonsterdObject moet van het type <https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersdomeinobject> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersbemonsteringsobjectShape/7dc9be25e8708bd3eb46ed61288f2a193eea5d61",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersbemonsteringsobject%3AbemonsterdObject",
+          "sh:description": {
+            "nl": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "bemonsterdObject"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor bemonsterdObject"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersbemonsteringsobject"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersdomeinobjectShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersdomeinobject"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerskenmerkShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerskenmerkShape/3f6300d60a14509064df1b4c25dcd07e51081b33",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerskenmerk%3AvoertuigType",
+          "sh:description": {
+            "nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
+          },
+          "sh:name": {
+            "nl": "voertuigType"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType",
+          "vl:message": {
+            "nl": "De verwachte waarde voor voertuigType is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerskenmerkShape/c53c1376f59495ae14f591145811007941ec95a9",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerskenmerk%3AvoertuigType",
+          "sh:description": {
+            "nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "voertuigType"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor voertuigType"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerskenmerkShape/c742cfa98ba46c4292837e5fe05fbf3f2cbca5d3",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerskenmerk%3AvoertuigType",
+          "sh:class": "https://data.vlaanderen.be/ns/transportnetwerk#Voertuigtype",
+          "sh:description": {
+            "nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
+          },
+          "sh:name": {
+            "nl": "voertuigType"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType",
+          "vl:message": {
+            "nl": "De range van voertuigType moet van het type <https://data.vlaanderen.be/ns/transportnetwerk#Voertuigtype> zijn."
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmeetpuntShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmeetpuntShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeetpunt%3Ageometrie",
+          "sh:description": {
+            "nl": "Vorm- en positiekenmerken van het meetpunt."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "geometrie"
+          },
+          "sh:path": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor geometrie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmeetpuntShape/35ea4794233fe7d78e3fa9762f8c5685fe9c0f51",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeetpunt%3Ageometrie",
+          "sh:description": {
+            "nl": "Vorm- en positiekenmerken van het meetpunt."
+          },
+          "sh:name": {
+            "nl": "geometrie"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape",
+          "vl:message": {
+            "nl": "De verwachte waarde voor geometrie is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmeetpuntShape/722a1f18cabb107c684fe4ca857876ade00b0d01",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeetpunt%3Ageometrie",
+          "sh:class": "http://www.opengis.net/ont/sf#Point",
+          "sh:description": {
+            "nl": "Vorm- en positiekenmerken van het meetpunt."
+          },
+          "sh:name": {
+            "nl": "geometrie"
+          },
+          "sh:path": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape",
+          "vl:message": {
+            "nl": "De range van geometrie moet van het type <http://www.opengis.net/ont/sf#Point> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmeetpuntShape/4d2c98bf74c787097e04d3f0fcb0f87ee31b849a",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeetpunt%3Averkeersmeetpuntnetwerkreferentie",
+          "sh:class": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:name": {
+            "nl": "verkeersmeetpuntnetwerkreferentie"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#verkeersmeetpuntnetwerkreferentie",
+          "vl:message": {
+            "nl": "De range van verkeersmeetpuntnetwerkreferentie moet van het type <https://data.vlaanderen.be/ns/netwerk#Puntreferentie> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmeetpuntShape/6671f3df53b1417a425162900c4a685dcbcfbc33",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeetpunt%3Averkeersmeetpuntnetwerkreferentie",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "verkeersmeetpuntnetwerkreferentie"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#verkeersmeetpuntnetwerkreferentie",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor verkeersmeetpuntnetwerkreferentie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmeetpuntShape/80d746b7bc38757a0a0ce94cf1fe831bf65b863f",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeetpunt%3Averkeersmeetpuntnetwerkreferentie",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "verkeersmeetpuntnetwerkreferentie"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#verkeersmeetpuntnetwerkreferentie",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor verkeersmeetpuntnetwerkreferentie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmeetpuntShape/a3d5a15651b427eac8d95369919117a2c53d2ff3",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeetpunt%3Averkeersmeetpuntnetwerkreferentie",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:name": {
+            "nl": "verkeersmeetpuntnetwerkreferentie"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#verkeersmeetpuntnetwerkreferentie",
+          "vl:message": {
+            "nl": "De verwachte waarde voor verkeersmeetpuntnetwerkreferentie is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/197106ad0cb4018b29e87acb4c3be7026e6ba087",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting%3AfenomeenTijd",
+          "sh:description": {
+            "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "fenomeenTijd"
+          },
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor fenomeenTijd"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/3f9e90796cef453d4c89590ccef204f96f43e944",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting%3AfenomeenTijd",
+          "sh:class": "http://fixme.com#ProperInterval",
+          "sh:description": {
+            "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+          },
+          "sh:name": {
+            "nl": "fenomeenTijd"
+          },
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd",
+          "vl:message": {
+            "nl": "De range van fenomeenTijd moet van het type <http://fixme.com#ProperInterval> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/9373b012767c975cbce90bd23a5bd885a2bbe616",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting%3AfenomeenTijd",
+          "sh:description": {
+            "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "fenomeenTijd"
+          },
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor fenomeenTijd"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/f07ba85fe4333da03e9106489e01661aeb3ce219",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting%3AfenomeenTijd",
+          "sh:description": {
+            "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+          },
+          "sh:name": {
+            "nl": "fenomeenTijd"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd",
+          "vl:message": {
+            "nl": "De verwachte waarde voor fenomeenTijd is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/02392d5801878f9e5a93fa1f9b524558c2d2be0d",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting%3AgeobserveerdObject",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "geobserveerdObject"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor geobserveerdObject"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/6e434f5d610060882b1c5cc940b819500d354365",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting%3AgeobserveerdObject",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:name": {
+            "nl": "geobserveerdObject"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject",
+          "vl:message": {
+            "nl": "De verwachte waarde voor geobserveerdObject is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/b4fef4e71702ab03a51fad45549ce17a4cd6d8ca",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting%3AgeobserveerdObject",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "geobserveerdObject"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor geobserveerdObject"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/c98db63081606ff3cead34428d27ce68f0deb45e",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting%3AgeobserveerdObject",
+          "sh:class": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:name": {
+            "nl": "geobserveerdObject"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject",
+          "vl:message": {
+            "nl": "De range van geobserveerdObject moet van het type <https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/02e518bb5aab79e8f6c8f8a1ba1efbc3dcf68652",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting%3AuitgevoerdMet",
+          "sh:description": {
+            "nl": "De Sensor waarmee de Verkeersmeting werd uitgevoerd."
+          },
+          "sh:name": {
+            "nl": "uitgevoerdMet"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/sosa/madeBySensor",
+          "vl:message": {
+            "nl": "De verwachte waarde voor uitgevoerdMet is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/1577ed08c179238e234b11af1f5672b5d2614526",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting%3AuitgevoerdMet",
+          "sh:class": "https://www.w3.org/ns/sosa/Sensor",
+          "sh:description": {
+            "nl": "De Sensor waarmee de Verkeersmeting werd uitgevoerd."
+          },
+          "sh:name": {
+            "nl": "uitgevoerdMet"
+          },
+          "sh:path": "http://www.w3.org/ns/sosa/madeBySensor",
+          "vl:message": {
+            "nl": "De range van uitgevoerdMet moet van het type <https://www.w3.org/ns/sosa/Sensor> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/806dacc51b530a17850a552ce0cb724ec7cbbc93",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting%3AuitgevoerdMet",
+          "sh:description": {
+            "nl": "De Sensor waarmee de Verkeersmeting werd uitgevoerd."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "uitgevoerdMet"
+          },
+          "sh:path": "http://www.w3.org/ns/sosa/madeBySensor",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor uitgevoerdMet"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/e7fa4f717d657a7ec29e000dc85d6d977df36c27",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting%3AuitgevoerdMet",
+          "sh:description": {
+            "nl": "De Sensor waarmee de Verkeersmeting werd uitgevoerd."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "uitgevoerdMet"
+          },
+          "sh:path": "http://www.w3.org/ns/sosa/madeBySensor",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor uitgevoerdMet"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersobjectShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersobject"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/1403f089adc1e6d11802f1dd83304f136b454f4e",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Rijrichting%3Arijrichting",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "nl": "De rijrichting."
+          },
+          "sh:name": {
+            "nl": "rijrichting"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/weg#rijrichting",
+          "vl:message": {
+            "nl": "De range van rijrichting moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/be669d91bd450ab37b70c1d48ce1501e20b66bed",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Rijrichting%3Arijrichting",
+          "sh:description": {
+            "nl": "De rijrichting."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "rijrichting"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/weg#rijrichting",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor rijrichting"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/f07f36ce1c31753a313165cb1fcc08b7b5d10190",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Rijrichting%3Arijrichting",
+          "sh:description": {
+            "nl": "De rijrichting."
+          },
+          "sh:name": {
+            "nl": "rijrichting"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://data.vlaanderen.be/ns/weg#rijrichting",
+          "vl:message": {
+            "nl": "De verwachte waarde voor rijrichting is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/114250c4d7f071c1fe11f6220d2b41fd8263e814",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Rijrichting%3Atellingnetwerkreferentieelement",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "tellingnetwerkreferentieelement"
+          },
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#tellingnetwerkreferentieelement",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor tellingnetwerkreferentieelement"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/37b3d00ded1aace0173c1d775dbd8c7812e1717b",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Rijrichting%3Atellingnetwerkreferentieelement",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "tellingnetwerkreferentieelement"
+          },
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#tellingnetwerkreferentieelement",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor tellingnetwerkreferentieelement"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/7e0f63c6f0f8fd59eb19d7fda36f3b13e0586f8d",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Rijrichting%3Atellingnetwerkreferentieelement",
+          "sh:class": "https://data.vlaanderen.be/ns/weg#Wegsegment",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:name": {
+            "nl": "tellingnetwerkreferentieelement"
+          },
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#tellingnetwerkreferentieelement",
+          "vl:message": {
+            "nl": "De range van tellingnetwerkreferentieelement moet van het type <https://data.vlaanderen.be/ns/weg#Wegsegment> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/90140244d7cadbcb028cd5ad4fc2b4a261eeedb8",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Rijrichting%3Atellingnetwerkreferentieelement",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:name": {
+            "nl": "tellingnetwerkreferentieelement"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#tellingnetwerkreferentieelement",
+          "vl:message": {
+            "nl": "De verwachte waarde voor tellingnetwerkreferentieelement is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/weg#Rijrichting"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegobjectShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/weg#Wegobject"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/0d6965f57149b3954a4d17f42403d565ac3e30d6",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegsegment%3Ageometriemiddenlijn",
+          "sh:description": {
+            "nl": "Geometrie van de midellijn van het Wegsegment."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "geometriemiddenlijn"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor geometriemiddenlijn"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/9a0b700bb15e65d2f2337e0e176d23dd88d934d3",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegsegment%3Ageometriemiddenlijn",
+          "sh:description": {
+            "nl": "Geometrie van de midellijn van het Wegsegment."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "geometriemiddenlijn"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor geometriemiddenlijn"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/9c82de97b38bdda35c6c252ab489bd8e17f7bde3",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegsegment%3Ageometriemiddenlijn",
+          "sh:class": "http://www.opengis.net/ont/sf#LineString",
+          "sh:description": {
+            "nl": "Geometrie van de midellijn van het Wegsegment."
+          },
+          "sh:name": {
+            "nl": "geometriemiddenlijn"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn",
+          "vl:message": {
+            "nl": "De range van geometriemiddenlijn moet van het type <http://www.opengis.net/ont/sf#LineString> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/ce33b9bdbeaa69b900443c6cc0ff8a64f54d595c",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegsegment%3Ageometriemiddenlijn",
+          "sh:description": {
+            "nl": "Geometrie van de midellijn van het Wegsegment."
+          },
+          "sh:name": {
+            "nl": "geometriemiddenlijn"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn",
+          "vl:message": {
+            "nl": "De verwachte waarde voor geometriemiddenlijn is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/weg#Wegsegment"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#ObservatieprocedureShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#ObservatieprocedureShape/4881f41cc66f4b8cd3be64c9f9b7e6e26cfd2cf5",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Observatieprocedure%3Age%C3%AFmplementeerdMet",
+          "sh:class": "https://www.w3.org/ns/sosa/Sensor",
+          "sh:description": {
+            "nl": "Sensor waarmee de Observatieprocedure is of moet worden uitgevoerd."
+          },
+          "sh:name": {
+            "nl": "geïmplementeerdMet"
+          },
+          "sh:path": "http://www.w3.org/ns/ssn/implementedBy",
+          "vl:message": {
+            "nl": "De range van geïmplementeerdMet moet van het type <https://www.w3.org/ns/sosa/Sensor> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#ObservatieprocedureShape/a265c3d27196ab9974be137d04e73752e08d974d",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Observatieprocedure%3Age%C3%AFmplementeerdMet",
+          "sh:description": {
+            "nl": "Sensor waarmee de Observatieprocedure is of moet worden uitgevoerd."
+          },
+          "sh:name": {
+            "nl": "geïmplementeerdMet"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/ssn/implementedBy",
+          "vl:message": {
+            "nl": "De verwachte waarde voor geïmplementeerdMet is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#ObservatieprocedureShape/322371a77364a50f049d46180f6192532eea26dc",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Observatieprocedure%3Atype",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "nl": "Aard van de Observatieprocedure."
+          },
+          "sh:name": {
+            "nl": "type"
+          },
+          "sh:path": "http://purl.org/cd/terms/type",
+          "vl:message": {
+            "nl": "De range van type moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#ObservatieprocedureShape/4f381639bb6e021939f65b4f41409d1edaeade9b",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Observatieprocedure%3Atype",
+          "sh:description": {
+            "nl": "Aard van de Observatieprocedure."
+          },
+          "sh:name": {
+            "nl": "type"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/cd/terms/type",
+          "vl:message": {
+            "nl": "De verwachte waarde voor type is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#SysteemShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "https://www.w3.org/TR/vocab-ssn/#ssn-system"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#SensorShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#SensorShape/715b6a06329c1327eeb4bd048fec0bdc32235658",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Sensor%3Aimplementeert",
+          "sh:description": {
+            "nl": "Observatieprocedure die door de Sensor wordt toegepast."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "implementeert"
+          },
+          "sh:path": "http://www.w3.org/ns/ssn/implements",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor implementeert"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#SensorShape/802fd650e6ec42f1b6aa8e9d6d85dd529d59b822",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Sensor%3Aimplementeert",
+          "sh:class": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure",
+          "sh:description": {
+            "nl": "Observatieprocedure die door de Sensor wordt toegepast."
+          },
+          "sh:name": {
+            "nl": "implementeert"
+          },
+          "sh:path": "http://www.w3.org/ns/ssn/implements",
+          "vl:message": {
+            "nl": "De range van implementeert moet van het type <https://www.w3.org/TR/vocab-ssn/#SOSAProcedure> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#SensorShape/8d07586aae83facd2b68b0b6185c459c184d6532",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Sensor%3Aimplementeert",
+          "sh:description": {
+            "nl": "Observatieprocedure die door de Sensor wordt toegepast."
+          },
+          "sh:name": {
+            "nl": "implementeert"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/ssn/implements",
+          "vl:message": {
+            "nl": "De verwachte waarde voor implementeert is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#SensorShape/5135dc15b45f37597a136588559f2028121eda2d",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Sensor%3Aligging",
+          "sh:description": {
+            "nl": "Locatie van de Sensor."
+          },
+          "sh:name": {
+            "nl": "ligging"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#ligging",
+          "vl:message": {
+            "nl": "De verwachte waarde voor ligging is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#SensorShape/7c8605c3338335abe4771b8126140af61a98ddc1",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Sensor%3Aligging",
+          "sh:class": "http://www.w3.org/ns/prov#Location",
+          "sh:description": {
+            "nl": "Locatie van de Sensor."
+          },
+          "sh:name": {
+            "nl": "ligging"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#ligging",
+          "vl:message": {
+            "nl": "De range van ligging moet van het type <http://www.w3.org/ns/prov#Location> zijn."
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "https://www.w3.org/ns/sosa/Sensor"
+    }
+  ]
+}

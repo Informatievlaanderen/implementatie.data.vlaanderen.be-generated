@@ -1,0 +1,96 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd> a owl:ObjectProperty;
+  rdfs:domain <https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting>;
+  rdfs:isDefinedBy <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen>;
+  rdfs:range <http://fixme.com#ProperInterval>;
+  rdfs:subPropertyOf <https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime> .
+
+<https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk> a owl:ObjectProperty;
+  rdfs:comment "TODO"@nl;
+  rdfs:domain <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling>,
+    <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting>;
+  rdfs:isDefinedBy <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen>;
+  rdfs:range <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk>,
+    <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk>;
+  rdfs:subPropertyOf <https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk> .
+
+<https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype> a owl:ObjectProperty;
+  rdfs:comment "TODO"@nl;
+  rdfs:domain <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk>,
+    <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk>;
+  rdfs:isDefinedBy <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen>;
+  rdfs:range <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerktype>,
+    <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerktype> .
+
+<https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#tellingnetwerkreferentieelement> a owl:ObjectProperty;
+  rdfs:comment "TODO"@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/weg#Rijrichting>;
+  rdfs:isDefinedBy <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen>;
+  rdfs:range <https://data.vlaanderen.be/ns/weg#Wegsegment>;
+  rdfs:subPropertyOf <https://data.vlaanderen.be/ns/netwerk/#netwerkreferentie> .
+
+<https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat> a owl:DatatypeProperty;
+  rdfs:comment "TODO"@nl;
+  rdfs:domain <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling>;
+  rdfs:isDefinedBy <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen>;
+  rdfs:range xsd:double;
+  rdfs:subPropertyOf <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result> .
+
+<http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement.result> a rdf:Property;
+  rdfs:label "resultaat"@nl .
+
+<https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting> a owl:Class;
+  rdfs:comment "TODO"@nl;
+  rdfs:isDefinedBy <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen>;
+  rdfs:subClassOf <https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting>,
+    <http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement> .
+
+<https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerktype> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen> .
+
+<https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerktype> a owl:Class;
+  rdfs:isDefinedBy <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen> .
+
+<https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk> a owl:Class;
+  rdfs:comment "TODO"@nl;
+  rdfs:isDefinedBy <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen>;
+  rdfs:subClassOf <https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk> .
+
+<https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling> a owl:Class;
+  rdfs:comment "TODO"@nl;
+  rdfs:isDefinedBy <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen>;
+  rdfs:subClassOf <https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting>,
+    <http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation> .
+
+<https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk> a owl:Class;
+  rdfs:comment "TODO"@nl;
+  rdfs:isDefinedBy <https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen>;
+  rdfs:subClassOf <https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk> .
+
+<https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen> a owl:Ontology;
+  rdfs:label "Verkeersmetingen-im-voc"@en,
+    "Verkeersmetingen-im-voc"@nl;
+  dc:issued "TODO";
+  dc:license "https://creativecommons.org/publicdomain/zero/1.0/",
+    <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>;
+  dc:mediator [
+    foaf:homepage <https://data.specs.org>;
+    foaf:mbox <mailto:info@data.specs.org>;
+    foaf:name "Data Specifications Organisation"
+  ];
+  rdfs:seeAlso <http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement.result>;
+  <http://www.w3.org/2001/02pd/rec54#editor> [
+    a foaf:Person;
+    foaf:firstName "Van Ackere";
+    foaf:lastName "Samuel"
+  ], [
+    a foaf:Person;
+    foaf:firstName "Thijs";
+    foaf:lastName "Geert"
+  ] .
