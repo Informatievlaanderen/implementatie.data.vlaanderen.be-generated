@@ -12,8 +12,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/98e1d03229b30356c8d9ccda7f10a46ead539e1d",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/98e1d03229b30356c8d9ccda7f10a46ead539e1d/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/c44bfc9023d5a792fa0d5859dee755bdf1a09df5",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/c44bfc9023d5a792fa0d5859dee755bdf1a09df5/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-mijnThema/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
@@ -22,47 +22,24 @@
   "classes": [],
   "properties": [
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
+      "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#BoormethodeInterval.geometrie",
       "name": "geometrie",
       "label": {
         "nl": "geometrie"
       },
       "sort": "geometrie",
       "description": {
-        "nl": "Lijnstring die de vorm van de Grondboring beschrijft."
+        "nl": "Geometrie van het interval."
       },
-      "usage": {
-        "nl": "Loopt van de boorkraag (die zowel boven, op als onder het maaiveld - of ander referentievlak - kan liggen) tot het verste punt van de boring. Coördinaten worden minimaal in 2D maar bij voorkeur in 2.5D gegeven."
-      },
+      "usage": {},
       "domain": [
-        "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+        "https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval"
       ],
       "range": [
         "http://www.opengis.net/ont/sf#LineString"
       ],
       "parents": [
-        "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.shape"
-      ]
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure",
-      "name": "gebruikteprocedure",
-      "label": {
-        "nl": "gebruikteProcedure"
-      },
-      "sort": "gebruikteProcedure",
-      "description": {
-        "nl": "Boormethode die werd gevolgd bij de Grondboring."
-      },
-      "usage": {},
-      "domain": [
-        "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-      ],
-      "range": [
-        "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
-      ],
-      "parents": [
-        "http://www.w3.org/ns/sosa/usedProcedure"
+        "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode"
       ]
     },
     {
@@ -87,24 +64,47 @@
       ]
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#BoormethodeInterval.geometrie",
+      "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure",
+      "name": "gebruikteprocedure",
+      "label": {
+        "nl": "gebruikteProcedure"
+      },
+      "sort": "gebruikteProcedure",
+      "description": {
+        "nl": "Boormethode die werd gevolgd bij de Grondboring."
+      },
+      "usage": {},
+      "domain": [
+        "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+      ],
+      "range": [
+        "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
+      ],
+      "parents": [
+        "http://www.w3.org/ns/sosa/usedProcedure"
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
       "name": "geometrie",
       "label": {
         "nl": "geometrie"
       },
       "sort": "geometrie",
       "description": {
-        "nl": "Geometrie van het interval."
+        "nl": "Lijnstring die de vorm van de Grondboring beschrijft."
       },
-      "usage": {},
+      "usage": {
+        "nl": "Loopt van de boorkraag (die zowel boven, op als onder het maaiveld - of ander referentievlak - kan liggen) tot het verste punt van de boring. Coördinaten worden minimaal in 2D maar bij voorkeur in 2.5D gegeven."
+      },
       "domain": [
-        "https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval"
+        "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
       ],
       "range": [
         "http://www.opengis.net/ont/sf#LineString"
       ],
       "parents": [
-        "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode"
+        "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.shape"
       ]
     }
   ],

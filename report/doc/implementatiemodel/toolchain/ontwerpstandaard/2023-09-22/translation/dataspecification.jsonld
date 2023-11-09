@@ -520,87 +520,57 @@
   ],
   "properties": [
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#value",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "name": "",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class.parent.source",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "(source)",
       "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": " (source)"
+      },
+      "ap-label-nl": {
+        "nl": " (source)"
+      },
       "ap-definition-nl": {
         "nl": "TODO"
       },
       "extra": {
-        "EA-Name": "value",
-        "EA-Guid": "{580C90DA-CA51-415c-85AF-102D39873971}",
-        "EA-Package": "OSLO-Toolchain",
-        "EA-Type": "attribute",
-        "EA-Domain": "EA-Tag",
-        "EA-Domain-Guid": "{83A1BE86-5B34-424c-A808-6DE8B2D71707}",
-        "EA-Range": "String",
-        "RangeData": {
-          "EA-Name": "String",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
-        },
-        "label": "",
-        "definition": "",
-        "usage": "",
-        "ap-label-nl": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag",
-          "EA-Name": "EA-Tag"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "String",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "name": "",
-      "inpackage": "ACTIVE_PACKAGE",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "usagenote",
-        "EA-Guid": "{0EEB42A0-03B3-4e75-93A8-79EE0A1D8AC8}",
-        "EA-Package": "OSLO-Toolchain",
-        "EA-Type": "attribute",
+        "EA-Name": "parent",
+        "EA-Guid": "{CE76D302-F376-4cf7-AD86-5EDA051F8198}",
+        "derived": "true",
+        "EA-Package": "",
+        "EA-Type": "connector",
         "EA-Domain": "Class",
         "EA-Domain-Guid": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
-        "EA-Range": "LangString",
+        "EA-Range": "Class",
         "RangeData": {
-          "EA-Name": "LangString",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+          "EA-Name": "Class",
+          "EA-GUID": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
         },
-        "label": "",
+        "sourceRole": "parent",
+        "destRole": "parent",
+        "label": {
+          "nl": " (source)"
+        },
         "definition": "",
         "usage": "",
-        "ap-label-nl": "",
+        "ap-label-nl": {
+          "nl": " (source)"
+        },
         "ap-definition-nl": {
           "nl": "TODO"
         },
         "ap-usageNote-nl": "",
         "ap-codelist": "",
-        "RawTags": [],
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": " (source)",
+            "note": ""
+          }
+        ],
+        "DestRoleTags": [],
         "Scope": "FULL_DEFINITON"
       },
       "codelist": [],
@@ -612,148 +582,66 @@
       ],
       "range": [
         {
-          "EA-Name": "LangString",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+          "EA-Name": "Class",
+          "EA-GUID": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
         }
       ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
+      "generalization": []
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "name": "",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class.parent.target",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "(target)",
       "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": " (target)"
+      },
+      "ap-label-nl": {
+        "nl": " (target)"
+      },
       "ap-definition-nl": {
         "nl": "TODO"
       },
       "extra": {
-        "EA-Name": "usagenote",
-        "EA-Guid": "{F846AE24-EDEA-489a-BE6D-143101EC8D3B}",
-        "EA-Package": "OSLO-Toolchain",
-        "EA-Type": "attribute",
-        "EA-Domain": "Property",
-        "EA-Domain-Guid": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
-        "EA-Range": "LangString",
-        "RangeData": {
-          "EA-Name": "LangString",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        },
-        "label": "",
-        "definition": "",
-        "usage": "",
-        "ap-label-nl": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property",
-          "EA-Name": "Property"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "LangString",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "name": "",
-      "inpackage": "ACTIVE_PACKAGE",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "usagenote",
-        "EA-Guid": "{C7D21655-BBD2-4b8c-9B8A-ECD869085FA3}",
-        "EA-Package": "OSLO-Toolchain",
-        "EA-Type": "attribute",
-        "EA-Domain": "DataType",
-        "EA-Domain-Guid": "{74D49128-E5C9-4503-9188-F6BB554A950C}",
-        "EA-Range": "LangString",
-        "RangeData": {
-          "EA-Name": "LangString",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        },
-        "label": "",
-        "definition": "",
-        "usage": "",
-        "ap-label-nl": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType",
-          "EA-Name": "DataType"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "LangString",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "name": "",
-      "inpackage": "ACTIVE_PACKAGE",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "uri",
-        "EA-Guid": "{DC7AD89C-C137-498a-8558-3D0AE781031D}",
-        "EA-Package": "OSLO-Toolchain",
-        "EA-Type": "attribute",
+        "EA-Name": "parent",
+        "EA-Guid": "{CE76D302-F376-4cf7-AD86-5EDA051F8198}",
+        "derived": "true",
+        "EA-Package": "",
+        "EA-Type": "connector",
         "EA-Domain": "Class",
         "EA-Domain-Guid": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
-        "EA-Range": "String",
+        "EA-Range": "Class",
         "RangeData": {
-          "EA-Name": "String",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
+          "EA-Name": "Class",
+          "EA-GUID": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
         },
-        "label": "",
+        "sourceRole": "parent",
+        "destRole": "parent",
+        "label": {
+          "nl": " (target)"
+        },
         "definition": "",
         "usage": "",
-        "ap-label-nl": "",
+        "ap-label-nl": {
+          "nl": " (target)"
+        },
         "ap-definition-nl": {
           "nl": "TODO"
         },
         "ap-usageNote-nl": "",
         "ap-codelist": "",
-        "RawTags": [],
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": " (target)",
+            "note": ""
+          }
+        ],
+        "DestRoleTags": [],
         "Scope": "FULL_DEFINITON"
       },
       "codelist": [],
@@ -765,17 +653,16 @@
       ],
       "range": [
         {
-          "EA-Name": "String",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
+          "EA-Name": "Class",
+          "EA-GUID": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
         }
       ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
+      "generalization": []
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#baseuri",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "name": "",
       "inpackage": "ACTIVE_PACKAGE",
@@ -783,12 +670,12 @@
         "nl": "TODO"
       },
       "extra": {
-        "EA-Name": "uri",
-        "EA-Guid": "{FF9B2A0B-F0F8-4cd3-A82E-1DEE1FF792B1}",
+        "EA-Name": "baseuri",
+        "EA-Guid": "{8CE27F19-30DE-40e9-AE06-C98DACB8BD7A}",
         "EA-Package": "OSLO-Toolchain",
         "EA-Type": "attribute",
-        "EA-Domain": "Property",
-        "EA-Domain-Guid": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
+        "EA-Domain": "Package",
+        "EA-Domain-Guid": "{9C85F08E-AA24-4dd8-AB39-B97601DCF92A}",
         "EA-Range": "String",
         "RangeData": {
           "EA-Name": "String",
@@ -810,8 +697,8 @@
       "codelist": [],
       "domain": [
         {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property",
-          "EA-Name": "Property"
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Package",
+          "EA-Name": "Package"
         }
       ],
       "range": [
@@ -826,58 +713,7 @@
       "maxCardinality": "1"
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "name": "",
-      "inpackage": "ACTIVE_PACKAGE",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "uri",
-        "EA-Guid": "{0E0D6183-0C44-4f9b-8480-86A401E2E4FE}",
-        "EA-Package": "OSLO-Toolchain",
-        "EA-Type": "attribute",
-        "EA-Domain": "DataType",
-        "EA-Domain-Guid": "{74D49128-E5C9-4503-9188-F6BB554A950C}",
-        "EA-Range": "String",
-        "RangeData": {
-          "EA-Name": "String",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
-        },
-        "label": "",
-        "definition": "",
-        "usage": "",
-        "ap-label-nl": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType",
-          "EA-Name": "DataType"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "String",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#soureRoleTag",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#class",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "name": "",
       "inpackage": "ACTIVE_PACKAGE",
@@ -885,8 +721,384 @@
         "nl": "TODO"
       },
       "extra": {
-        "EA-Name": "SoureRoleTag",
-        "EA-Guid": "{CCE7E44D-0F26-4c74-AE6E-AA11B146D7F3}",
+        "EA-Name": "class",
+        "EA-Guid": "{B9C77E36-14FD-4888-9940-7752EBEC40F7}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "Diagram",
+        "EA-Domain-Guid": "{73675182-E664-471f-A633-E01A98344CBE}",
+        "EA-Range": "Class",
+        "RangeData": {
+          "EA-Name": "Class",
+          "EA-GUID": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
+        },
+        "sourceRole": "null",
+        "destRole": "class",
+        "label": "",
+        "definition": "",
+        "usage": "",
+        "ap-label-nl": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [],
+        "DestRoleTags": [],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Diagram",
+          "EA-Name": "Diagram"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Class",
+          "EA-GUID": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
+        }
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#codelist",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "name": "",
+      "inpackage": "ACTIVE_PACKAGE",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "codelist",
+        "EA-Guid": "{33710F28-A6AB-4bdd-BA90-9680DBE8FB79}",
+        "EA-Package": "OSLO-Toolchain",
+        "EA-Type": "attribute",
+        "EA-Domain": "ObjectProperty",
+        "EA-Domain-Guid": "{3DBD89BA-8ADF-4863-BF37-DA90D55CB049}",
+        "EA-Range": "String",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "label": "",
+        "definition": "",
+        "usage": "",
+        "ap-label-nl": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ObjectProperty",
+          "EA-Name": "ObjectProperty"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#datatype",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "",
+      "inpackage": "ACTIVE_PACKAGE",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "datatype",
+        "EA-Guid": "{8A8749F7-731D-4f36-B507-0D41B7D9DA46}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "Diagram",
+        "EA-Domain-Guid": "{73675182-E664-471f-A633-E01A98344CBE}",
+        "EA-Range": "DataType",
+        "RangeData": {
+          "EA-Name": "DataType",
+          "EA-GUID": "{74D49128-E5C9-4503-9188-F6BB554A950C}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType"
+        },
+        "sourceRole": "null",
+        "destRole": "datatype",
+        "label": "",
+        "definition": "",
+        "usage": "",
+        "ap-label-nl": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [],
+        "DestRoleTags": [],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Diagram",
+          "EA-Name": "Diagram"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "DataType",
+          "EA-GUID": "{74D49128-E5C9-4503-9188-F6BB554A950C}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType"
+        }
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "name": "",
+      "inpackage": "ACTIVE_PACKAGE",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "definition",
+        "EA-Guid": "{CF5137CC-D963-4d55-AB07-1B39CD65379E}",
+        "EA-Package": "OSLO-Toolchain",
+        "EA-Type": "attribute",
+        "EA-Domain": "Class",
+        "EA-Domain-Guid": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
+        "EA-Range": "LangString",
+        "RangeData": {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "label": "",
+        "definition": "",
+        "usage": "",
+        "ap-label-nl": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class",
+          "EA-Name": "Class"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "name": "",
+      "inpackage": "ACTIVE_PACKAGE",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "definition",
+        "EA-Guid": "{B7BD5DF1-5088-4beb-9AB5-5303A9B88238}",
+        "EA-Package": "OSLO-Toolchain",
+        "EA-Type": "attribute",
+        "EA-Domain": "Property",
+        "EA-Domain-Guid": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
+        "EA-Range": "LangString",
+        "RangeData": {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "label": "",
+        "definition": "",
+        "usage": "",
+        "ap-label-nl": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property",
+          "EA-Name": "Property"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "name": "",
+      "inpackage": "ACTIVE_PACKAGE",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "definition",
+        "EA-Guid": "{217CE6DC-763C-449b-B9E2-67BC380E1B01}",
+        "EA-Package": "OSLO-Toolchain",
+        "EA-Type": "attribute",
+        "EA-Domain": "DataType",
+        "EA-Domain-Guid": "{74D49128-E5C9-4503-9188-F6BB554A950C}",
+        "EA-Range": "LangString",
+        "RangeData": {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "label": "",
+        "definition": "",
+        "usage": "",
+        "ap-label-nl": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType",
+          "EA-Name": "DataType"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#derived",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "name": "",
+      "inpackage": "ACTIVE_PACKAGE",
+      "definition": {
+        "nl": "The property is derived through intepretation of direction, tags and roles "
+      },
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "derived",
+        "EA-Guid": "{9FAD3362-6EF6-4e0f-8B78-DFA8D3BCC8A1}",
+        "EA-Package": "OSLO-Toolchain",
+        "EA-Type": "attribute",
+        "EA-Domain": "Property",
+        "EA-Domain-Guid": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
+        "EA-Range": "Boolean",
+        "RangeData": {
+          "EA-Name": "Boolean",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "label": "",
+        "definition": {
+          "nl": "The property is derived through intepretation of direction, tags and roles "
+        },
+        "usage": "",
+        "ap-label-nl": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "definition",
+            "value": "The property is derived through intepretation of direction, tags and roles ",
+            "note": "null"
+          }
+        ],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property",
+          "EA-Name": "Property"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Boolean",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#destRoleTag",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "",
+      "inpackage": "ACTIVE_PACKAGE",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "DestRoleTag",
+        "EA-Guid": "{1ECD920E-4E91-4309-86C9-26B93B14DAB6}",
         "derived": "false",
         "EA-Package": "",
         "EA-Type": "connector",
@@ -900,7 +1112,7 @@
           "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag"
         },
         "sourceRole": "null",
-        "destRole": "SoureRoleTag",
+        "destRole": "DestRoleTag",
         "label": "",
         "definition": "",
         "usage": "",
@@ -932,7 +1144,7 @@
       "generalization": []
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#domain",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "name": "",
       "inpackage": "ACTIVE_PACKAGE",
@@ -940,227 +1152,13 @@
         "nl": "TODO"
       },
       "extra": {
-        "EA-Name": "scope",
-        "EA-Guid": "{0507B8E1-37B8-4d55-BF88-C9825A4F6BB3}",
-        "EA-Package": "OSLO-Toolchain",
-        "EA-Type": "attribute",
-        "EA-Domain": "Class",
-        "EA-Domain-Guid": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
-        "EA-Range": "External",
-        "RangeData": {
-          "EA-Name": "External",
-          "EA-GUID": "{AAE28EF4-9E38-4741-8009-FAD12448F835}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External"
-        },
-        "label": "",
-        "definition": "",
-        "usage": "",
-        "ap-label-nl": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class",
-          "EA-Name": "Class"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "External",
-          "EA-GUID": "{AAE28EF4-9E38-4741-8009-FAD12448F835}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "",
-      "inpackage": "ACTIVE_PACKAGE",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "scope",
-        "EA-Guid": "{1CA9887C-5399-402d-A20C-CB665CA54F27}",
-        "EA-Package": "OSLO-Toolchain",
-        "EA-Type": "attribute",
+        "EA-Name": "domain",
+        "EA-Guid": "{F8B73396-C0A4-4a2a-ADE0-FBFCFBBF1398}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
         "EA-Domain": "Property",
         "EA-Domain-Guid": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
-        "EA-Range": "External",
-        "RangeData": {
-          "EA-Name": "External",
-          "EA-GUID": "{AAE28EF4-9E38-4741-8009-FAD12448F835}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External"
-        },
-        "label": "",
-        "definition": "",
-        "usage": "",
-        "ap-label-nl": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property",
-          "EA-Name": "Property"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "External",
-          "EA-GUID": "{AAE28EF4-9E38-4741-8009-FAD12448F835}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "",
-      "inpackage": "ACTIVE_PACKAGE",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "scope",
-        "EA-Guid": "{562B08D4-D262-43f1-BAB5-AD789DD3F49B}",
-        "EA-Package": "OSLO-Toolchain",
-        "EA-Type": "attribute",
-        "EA-Domain": "DataType",
-        "EA-Domain-Guid": "{74D49128-E5C9-4503-9188-F6BB554A950C}",
-        "EA-Range": "External",
-        "RangeData": {
-          "EA-Name": "External",
-          "EA-GUID": "{AAE28EF4-9E38-4741-8009-FAD12448F835}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External"
-        },
-        "label": "",
-        "definition": "",
-        "usage": "",
-        "ap-label-nl": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType",
-          "EA-Name": "DataType"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "External",
-          "EA-GUID": "{AAE28EF4-9E38-4741-8009-FAD12448F835}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#range",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "",
-      "inpackage": "ACTIVE_PACKAGE",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "range",
-        "EA-Guid": "{FCE83F50-3D8A-4c21-943D-128A1A3D0CC3}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "DataProperty",
-        "EA-Domain-Guid": "{A49B8331-B6BE-4e6b-926C-382F2E87FB41}",
-        "EA-Range": "DataType",
-        "RangeData": {
-          "EA-Name": "DataType",
-          "EA-GUID": "{74D49128-E5C9-4503-9188-F6BB554A950C}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType"
-        },
-        "sourceRole": "null",
-        "destRole": "range",
-        "label": "",
-        "definition": "",
-        "usage": "",
-        "ap-label-nl": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [],
-        "DestRoleTags": [],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataProperty",
-          "EA-Name": "DataProperty"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "DataType",
-          "EA-GUID": "{74D49128-E5C9-4503-9188-F6BB554A950C}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType"
-        }
-      ],
-      "generalization": []
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#range",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "",
-      "inpackage": "ACTIVE_PACKAGE",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "range",
-        "EA-Guid": "{12C51C00-65C4-412e-B98B-1112A3AC0069}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "ObjectProperty",
-        "EA-Domain-Guid": "{3DBD89BA-8ADF-4863-BF37-DA90D55CB049}",
         "EA-Range": "Class",
         "RangeData": {
           "EA-Name": "Class",
@@ -1169,117 +1167,7 @@
           "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
         },
         "sourceRole": "null",
-        "destRole": "range",
-        "label": "",
-        "definition": "",
-        "usage": "",
-        "ap-label-nl": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [],
-        "DestRoleTags": [],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ObjectProperty",
-          "EA-Name": "ObjectProperty"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "Class",
-          "EA-GUID": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
-        }
-      ],
-      "generalization": []
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#property",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "",
-      "inpackage": "ACTIVE_PACKAGE",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "property",
-        "EA-Guid": "{A6511925-A956-49e7-A73C-7414F991F60A}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "Diagram",
-        "EA-Domain-Guid": "{73675182-E664-471f-A633-E01A98344CBE}",
-        "EA-Range": "Property",
-        "RangeData": {
-          "EA-Name": "Property",
-          "EA-GUID": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"
-        },
-        "sourceRole": "null",
-        "destRole": "property",
-        "label": "",
-        "definition": "",
-        "usage": "",
-        "ap-label-nl": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [],
-        "DestRoleTags": [],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Diagram",
-          "EA-Name": "Diagram"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "Property",
-          "EA-GUID": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"
-        }
-      ],
-      "generalization": []
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#parent",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "",
-      "inpackage": "ACTIVE_PACKAGE",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "parent",
-        "EA-Guid": "{85A108C7-014D-4323-95C4-033557D99A63}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "Property",
-        "EA-Domain-Guid": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
-        "EA-Range": "Property",
-        "RangeData": {
-          "EA-Name": "Property",
-          "EA-GUID": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"
-        },
-        "sourceRole": "null",
-        "destRole": "parent",
+        "destRole": "domain",
         "label": "",
         "definition": "",
         "usage": "",
@@ -1302,35 +1190,39 @@
       ],
       "range": [
         {
-          "EA-Name": "Property",
-          "EA-GUID": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
+          "EA-Name": "Class",
+          "EA-GUID": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
           "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
         }
       ],
       "generalization": []
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#note",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#elementTag",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "name": "",
       "inpackage": "ACTIVE_PACKAGE",
       "ap-definition-nl": {
         "nl": "TODO"
       },
       "extra": {
-        "EA-Name": "note",
-        "EA-Guid": "{74C09609-20C5-441b-A0C4-1D96308B479A}",
-        "EA-Package": "OSLO-Toolchain",
-        "EA-Type": "attribute",
-        "EA-Domain": "EA-Tag",
-        "EA-Domain-Guid": "{83A1BE86-5B34-424c-A808-6DE8B2D71707}",
-        "EA-Range": "String",
+        "EA-Name": "elementTag",
+        "EA-Guid": "{B6C96B05-8CAF-407f-9945-C1828EE4EB1F}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "EA-Element",
+        "EA-Domain-Guid": "{D612F5E1-8A7D-4142-A413-BEBF3A470158}",
+        "EA-Range": "EA-Tag",
         "RangeData": {
-          "EA-Name": "String",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
+          "EA-Name": "EA-Tag",
+          "EA-GUID": "{83A1BE86-5B34-424c-A808-6DE8B2D71707}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag"
         },
+        "sourceRole": "null",
+        "destRole": "elementTag",
         "label": "",
         "definition": "",
         "usage": "",
@@ -1341,28 +1233,28 @@
         "ap-usageNote-nl": "",
         "ap-codelist": "",
         "RawTags": [],
+        "DestRoleTags": [],
         "Scope": "FULL_DEFINITON"
       },
       "codelist": [],
       "domain": [
         {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag",
-          "EA-Name": "EA-Tag"
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element",
+          "EA-Name": "EA-Element"
         }
       ],
       "range": [
         {
-          "EA-Name": "String",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
+          "EA-Name": "EA-Tag",
+          "EA-GUID": "{83A1BE86-5B34-424c-A808-6DE8B2D71707}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag"
         }
       ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
+      "generalization": []
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#name",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#guid",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "name": "",
       "inpackage": "ACTIVE_PACKAGE",
@@ -1370,8 +1262,8 @@
         "nl": "TODO"
       },
       "extra": {
-        "EA-Name": "name",
-        "EA-Guid": "{923B31C6-7B7E-440f-B97C-38468757DB3F}",
+        "EA-Name": "guid",
+        "EA-Guid": "{844F2D98-9293-4f1d-B7A0-AEBEEFA37990}",
         "EA-Package": "OSLO-Toolchain",
         "EA-Type": "attribute",
         "EA-Domain": "EA-Element",
@@ -1413,7 +1305,7 @@
       "maxCardinality": "1"
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#mincard",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#key",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "name": "",
       "inpackage": "ACTIVE_PACKAGE",
@@ -1421,12 +1313,12 @@
         "nl": "TODO"
       },
       "extra": {
-        "EA-Name": "mincard",
-        "EA-Guid": "{C4FFA5E8-0628-44ad-907C-68E7235296FF}",
+        "EA-Name": "key",
+        "EA-Guid": "{FD0BEB9C-D704-4295-8722-75516B2C1AC8}",
         "EA-Package": "OSLO-Toolchain",
         "EA-Type": "attribute",
-        "EA-Domain": "Property",
-        "EA-Domain-Guid": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
+        "EA-Domain": "EA-Tag",
+        "EA-Domain-Guid": "{83A1BE86-5B34-424c-A808-6DE8B2D71707}",
         "EA-Range": "String",
         "RangeData": {
           "EA-Name": "String",
@@ -1448,110 +1340,8 @@
       "codelist": [],
       "domain": [
         {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property",
-          "EA-Name": "Property"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "String",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#maxcard",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "name": "",
-      "inpackage": "ACTIVE_PACKAGE",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "maxcard",
-        "EA-Guid": "{D88E2360-76BD-4892-9981-967AF2519710}",
-        "EA-Package": "OSLO-Toolchain",
-        "EA-Type": "attribute",
-        "EA-Domain": "Property",
-        "EA-Domain-Guid": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
-        "EA-Range": "String",
-        "RangeData": {
-          "EA-Name": "String",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
-        },
-        "label": "",
-        "definition": "",
-        "usage": "",
-        "ap-label-nl": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property",
-          "EA-Name": "Property"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "String",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#licence",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "name": "",
-      "inpackage": "ACTIVE_PACKAGE",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "licence",
-        "EA-Guid": "{4C9BACE3-735A-422c-BEEF-EC5996A5442D}",
-        "EA-Package": "OSLO-Toolchain",
-        "EA-Type": "attribute",
-        "EA-Domain": "Diagram",
-        "EA-Domain-Guid": "{73675182-E664-471f-A633-E01A98344CBE}",
-        "EA-Range": "String",
-        "RangeData": {
-          "EA-Name": "String",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
-        },
-        "label": "",
-        "definition": "",
-        "usage": "",
-        "ap-label-nl": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Diagram",
-          "EA-Name": "Diagram"
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag",
+          "EA-Name": "EA-Tag"
         }
       ],
       "range": [
@@ -1719,7 +1509,7 @@
       "maxCardinality": "1"
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#key",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#licence",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "name": "",
       "inpackage": "ACTIVE_PACKAGE",
@@ -1727,8 +1517,212 @@
         "nl": "TODO"
       },
       "extra": {
-        "EA-Name": "key",
-        "EA-Guid": "{FD0BEB9C-D704-4295-8722-75516B2C1AC8}",
+        "EA-Name": "licence",
+        "EA-Guid": "{4C9BACE3-735A-422c-BEEF-EC5996A5442D}",
+        "EA-Package": "OSLO-Toolchain",
+        "EA-Type": "attribute",
+        "EA-Domain": "Diagram",
+        "EA-Domain-Guid": "{73675182-E664-471f-A633-E01A98344CBE}",
+        "EA-Range": "String",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "label": "",
+        "definition": "",
+        "usage": "",
+        "ap-label-nl": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Diagram",
+          "EA-Name": "Diagram"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#maxcard",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "name": "",
+      "inpackage": "ACTIVE_PACKAGE",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "maxcard",
+        "EA-Guid": "{D88E2360-76BD-4892-9981-967AF2519710}",
+        "EA-Package": "OSLO-Toolchain",
+        "EA-Type": "attribute",
+        "EA-Domain": "Property",
+        "EA-Domain-Guid": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
+        "EA-Range": "String",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "label": "",
+        "definition": "",
+        "usage": "",
+        "ap-label-nl": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property",
+          "EA-Name": "Property"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#mincard",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "name": "",
+      "inpackage": "ACTIVE_PACKAGE",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "mincard",
+        "EA-Guid": "{C4FFA5E8-0628-44ad-907C-68E7235296FF}",
+        "EA-Package": "OSLO-Toolchain",
+        "EA-Type": "attribute",
+        "EA-Domain": "Property",
+        "EA-Domain-Guid": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
+        "EA-Range": "String",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "label": "",
+        "definition": "",
+        "usage": "",
+        "ap-label-nl": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property",
+          "EA-Name": "Property"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#name",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "name": "",
+      "inpackage": "ACTIVE_PACKAGE",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "name",
+        "EA-Guid": "{923B31C6-7B7E-440f-B97C-38468757DB3F}",
+        "EA-Package": "OSLO-Toolchain",
+        "EA-Type": "attribute",
+        "EA-Domain": "EA-Element",
+        "EA-Domain-Guid": "{D612F5E1-8A7D-4142-A413-BEBF3A470158}",
+        "EA-Range": "String",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "label": "",
+        "definition": "",
+        "usage": "",
+        "ap-label-nl": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element",
+          "EA-Name": "EA-Element"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#note",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "name": "",
+      "inpackage": "ACTIVE_PACKAGE",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "note",
+        "EA-Guid": "{74C09609-20C5-441b-A0C4-1D96308B479A}",
         "EA-Package": "OSLO-Toolchain",
         "EA-Type": "attribute",
         "EA-Domain": "EA-Tag",
@@ -1770,7 +1764,441 @@
       "maxCardinality": "1"
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#guid",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#parent",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "",
+      "inpackage": "ACTIVE_PACKAGE",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "parent",
+        "EA-Guid": "{85A108C7-014D-4323-95C4-033557D99A63}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "Property",
+        "EA-Domain-Guid": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
+        "EA-Range": "Property",
+        "RangeData": {
+          "EA-Name": "Property",
+          "EA-GUID": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"
+        },
+        "sourceRole": "null",
+        "destRole": "parent",
+        "label": "",
+        "definition": "",
+        "usage": "",
+        "ap-label-nl": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [],
+        "DestRoleTags": [],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property",
+          "EA-Name": "Property"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Property",
+          "EA-GUID": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"
+        }
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#property",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "",
+      "inpackage": "ACTIVE_PACKAGE",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "property",
+        "EA-Guid": "{A6511925-A956-49e7-A73C-7414F991F60A}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "Diagram",
+        "EA-Domain-Guid": "{73675182-E664-471f-A633-E01A98344CBE}",
+        "EA-Range": "Property",
+        "RangeData": {
+          "EA-Name": "Property",
+          "EA-GUID": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"
+        },
+        "sourceRole": "null",
+        "destRole": "property",
+        "label": "",
+        "definition": "",
+        "usage": "",
+        "ap-label-nl": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [],
+        "DestRoleTags": [],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Diagram",
+          "EA-Name": "Diagram"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Property",
+          "EA-GUID": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"
+        }
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#range",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "",
+      "inpackage": "ACTIVE_PACKAGE",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "range",
+        "EA-Guid": "{FCE83F50-3D8A-4c21-943D-128A1A3D0CC3}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "DataProperty",
+        "EA-Domain-Guid": "{A49B8331-B6BE-4e6b-926C-382F2E87FB41}",
+        "EA-Range": "DataType",
+        "RangeData": {
+          "EA-Name": "DataType",
+          "EA-GUID": "{74D49128-E5C9-4503-9188-F6BB554A950C}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType"
+        },
+        "sourceRole": "null",
+        "destRole": "range",
+        "label": "",
+        "definition": "",
+        "usage": "",
+        "ap-label-nl": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [],
+        "DestRoleTags": [],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataProperty",
+          "EA-Name": "DataProperty"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "DataType",
+          "EA-GUID": "{74D49128-E5C9-4503-9188-F6BB554A950C}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType"
+        }
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#range",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "",
+      "inpackage": "ACTIVE_PACKAGE",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "range",
+        "EA-Guid": "{12C51C00-65C4-412e-B98B-1112A3AC0069}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "ObjectProperty",
+        "EA-Domain-Guid": "{3DBD89BA-8ADF-4863-BF37-DA90D55CB049}",
+        "EA-Range": "Class",
+        "RangeData": {
+          "EA-Name": "Class",
+          "EA-GUID": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
+        },
+        "sourceRole": "null",
+        "destRole": "range",
+        "label": "",
+        "definition": "",
+        "usage": "",
+        "ap-label-nl": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [],
+        "DestRoleTags": [],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ObjectProperty",
+          "EA-Name": "ObjectProperty"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Class",
+          "EA-GUID": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
+        }
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "",
+      "inpackage": "ACTIVE_PACKAGE",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "scope",
+        "EA-Guid": "{0507B8E1-37B8-4d55-BF88-C9825A4F6BB3}",
+        "EA-Package": "OSLO-Toolchain",
+        "EA-Type": "attribute",
+        "EA-Domain": "Class",
+        "EA-Domain-Guid": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
+        "EA-Range": "External",
+        "RangeData": {
+          "EA-Name": "External",
+          "EA-GUID": "{AAE28EF4-9E38-4741-8009-FAD12448F835}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External"
+        },
+        "label": "",
+        "definition": "",
+        "usage": "",
+        "ap-label-nl": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class",
+          "EA-Name": "Class"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "External",
+          "EA-GUID": "{AAE28EF4-9E38-4741-8009-FAD12448F835}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "",
+      "inpackage": "ACTIVE_PACKAGE",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "scope",
+        "EA-Guid": "{1CA9887C-5399-402d-A20C-CB665CA54F27}",
+        "EA-Package": "OSLO-Toolchain",
+        "EA-Type": "attribute",
+        "EA-Domain": "Property",
+        "EA-Domain-Guid": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
+        "EA-Range": "External",
+        "RangeData": {
+          "EA-Name": "External",
+          "EA-GUID": "{AAE28EF4-9E38-4741-8009-FAD12448F835}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External"
+        },
+        "label": "",
+        "definition": "",
+        "usage": "",
+        "ap-label-nl": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property",
+          "EA-Name": "Property"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "External",
+          "EA-GUID": "{AAE28EF4-9E38-4741-8009-FAD12448F835}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "",
+      "inpackage": "ACTIVE_PACKAGE",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "scope",
+        "EA-Guid": "{562B08D4-D262-43f1-BAB5-AD789DD3F49B}",
+        "EA-Package": "OSLO-Toolchain",
+        "EA-Type": "attribute",
+        "EA-Domain": "DataType",
+        "EA-Domain-Guid": "{74D49128-E5C9-4503-9188-F6BB554A950C}",
+        "EA-Range": "External",
+        "RangeData": {
+          "EA-Name": "External",
+          "EA-GUID": "{AAE28EF4-9E38-4741-8009-FAD12448F835}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External"
+        },
+        "label": "",
+        "definition": "",
+        "usage": "",
+        "ap-label-nl": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType",
+          "EA-Name": "DataType"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "External",
+          "EA-GUID": "{AAE28EF4-9E38-4741-8009-FAD12448F835}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#soureRoleTag",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "",
+      "inpackage": "ACTIVE_PACKAGE",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "SoureRoleTag",
+        "EA-Guid": "{CCE7E44D-0F26-4c74-AE6E-AA11B146D7F3}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "EA-Element",
+        "EA-Domain-Guid": "{D612F5E1-8A7D-4142-A413-BEBF3A470158}",
+        "EA-Range": "EA-Tag",
+        "RangeData": {
+          "EA-Name": "EA-Tag",
+          "EA-GUID": "{83A1BE86-5B34-424c-A808-6DE8B2D71707}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag"
+        },
+        "sourceRole": "null",
+        "destRole": "SoureRoleTag",
+        "label": "",
+        "definition": "",
+        "usage": "",
+        "ap-label-nl": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [],
+        "DestRoleTags": [],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element",
+          "EA-Name": "EA-Element"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "EA-Tag",
+          "EA-GUID": "{83A1BE86-5B34-424c-A808-6DE8B2D71707}",
+          "EA-Package": "OSLO-Toolchain",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag"
+        }
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "name": "",
       "inpackage": "ACTIVE_PACKAGE",
@@ -1778,12 +2206,12 @@
         "nl": "TODO"
       },
       "extra": {
-        "EA-Name": "guid",
-        "EA-Guid": "{844F2D98-9293-4f1d-B7A0-AEBEEFA37990}",
+        "EA-Name": "uri",
+        "EA-Guid": "{DC7AD89C-C137-498a-8558-3D0AE781031D}",
         "EA-Package": "OSLO-Toolchain",
         "EA-Type": "attribute",
-        "EA-Domain": "EA-Element",
-        "EA-Domain-Guid": "{D612F5E1-8A7D-4142-A413-BEBF3A470158}",
+        "EA-Domain": "Class",
+        "EA-Domain-Guid": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
         "EA-Range": "String",
         "RangeData": {
           "EA-Name": "String",
@@ -1805,8 +2233,8 @@
       "codelist": [],
       "domain": [
         {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element",
-          "EA-Name": "EA-Element"
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class",
+          "EA-Name": "Class"
         }
       ],
       "range": [
@@ -1821,198 +2249,28 @@
       "maxCardinality": "1"
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#elementTag",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "",
-      "inpackage": "ACTIVE_PACKAGE",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "elementTag",
-        "EA-Guid": "{B6C96B05-8CAF-407f-9945-C1828EE4EB1F}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "EA-Element",
-        "EA-Domain-Guid": "{D612F5E1-8A7D-4142-A413-BEBF3A470158}",
-        "EA-Range": "EA-Tag",
-        "RangeData": {
-          "EA-Name": "EA-Tag",
-          "EA-GUID": "{83A1BE86-5B34-424c-A808-6DE8B2D71707}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag"
-        },
-        "sourceRole": "null",
-        "destRole": "elementTag",
-        "label": "",
-        "definition": "",
-        "usage": "",
-        "ap-label-nl": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [],
-        "DestRoleTags": [],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element",
-          "EA-Name": "EA-Element"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "EA-Tag",
-          "EA-GUID": "{83A1BE86-5B34-424c-A808-6DE8B2D71707}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag"
-        }
-      ],
-      "generalization": []
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#domain",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "",
-      "inpackage": "ACTIVE_PACKAGE",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "domain",
-        "EA-Guid": "{F8B73396-C0A4-4a2a-ADE0-FBFCFBBF1398}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "Property",
-        "EA-Domain-Guid": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
-        "EA-Range": "Class",
-        "RangeData": {
-          "EA-Name": "Class",
-          "EA-GUID": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
-        },
-        "sourceRole": "null",
-        "destRole": "domain",
-        "label": "",
-        "definition": "",
-        "usage": "",
-        "ap-label-nl": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [],
-        "DestRoleTags": [],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property",
-          "EA-Name": "Property"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "Class",
-          "EA-GUID": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
-        }
-      ],
-      "generalization": []
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#destRoleTag",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "",
-      "inpackage": "ACTIVE_PACKAGE",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "DestRoleTag",
-        "EA-Guid": "{1ECD920E-4E91-4309-86C9-26B93B14DAB6}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "EA-Element",
-        "EA-Domain-Guid": "{D612F5E1-8A7D-4142-A413-BEBF3A470158}",
-        "EA-Range": "EA-Tag",
-        "RangeData": {
-          "EA-Name": "EA-Tag",
-          "EA-GUID": "{83A1BE86-5B34-424c-A808-6DE8B2D71707}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag"
-        },
-        "sourceRole": "null",
-        "destRole": "DestRoleTag",
-        "label": "",
-        "definition": "",
-        "usage": "",
-        "ap-label-nl": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [],
-        "DestRoleTags": [],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element",
-          "EA-Name": "EA-Element"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "EA-Tag",
-          "EA-GUID": "{83A1BE86-5B34-424c-A808-6DE8B2D71707}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag"
-        }
-      ],
-      "generalization": []
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#derived",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "name": "",
       "inpackage": "ACTIVE_PACKAGE",
-      "definition": {
-        "nl": "The property is derived through intepretation of direction, tags and roles "
-      },
       "ap-definition-nl": {
         "nl": "TODO"
       },
       "extra": {
-        "EA-Name": "derived",
-        "EA-Guid": "{9FAD3362-6EF6-4e0f-8B78-DFA8D3BCC8A1}",
+        "EA-Name": "uri",
+        "EA-Guid": "{FF9B2A0B-F0F8-4cd3-A82E-1DEE1FF792B1}",
         "EA-Package": "OSLO-Toolchain",
         "EA-Type": "attribute",
         "EA-Domain": "Property",
         "EA-Domain-Guid": "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}",
-        "EA-Range": "Boolean",
+        "EA-Range": "String",
         "RangeData": {
-          "EA-Name": "Boolean",
+          "EA-Name": "String",
           "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
         },
         "label": "",
-        "definition": {
-          "nl": "The property is derived through intepretation of direction, tags and roles "
-        },
+        "definition": "",
         "usage": "",
         "ap-label-nl": "",
         "ap-definition-nl": {
@@ -2020,13 +2278,7 @@
         },
         "ap-usageNote-nl": "",
         "ap-codelist": "",
-        "RawTags": [
-          {
-            "key": "definition",
-            "value": "The property is derived through intepretation of direction, tags and roles ",
-            "note": "null"
-          }
-        ],
+        "RawTags": [],
         "Scope": "FULL_DEFINITON"
       },
       "codelist": [],
@@ -2038,9 +2290,9 @@
       ],
       "range": [
         {
-          "EA-Name": "Boolean",
+          "EA-Name": "String",
           "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
         }
       ],
       "generalization": [],
@@ -2048,7 +2300,7 @@
       "maxCardinality": "1"
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "name": "",
       "inpackage": "ACTIVE_PACKAGE",
@@ -2056,8 +2308,59 @@
         "nl": "TODO"
       },
       "extra": {
-        "EA-Name": "definition",
-        "EA-Guid": "{CF5137CC-D963-4d55-AB07-1B39CD65379E}",
+        "EA-Name": "uri",
+        "EA-Guid": "{0E0D6183-0C44-4f9b-8480-86A401E2E4FE}",
+        "EA-Package": "OSLO-Toolchain",
+        "EA-Type": "attribute",
+        "EA-Domain": "DataType",
+        "EA-Domain-Guid": "{74D49128-E5C9-4503-9188-F6BB554A950C}",
+        "EA-Range": "String",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "label": "",
+        "definition": "",
+        "usage": "",
+        "ap-label-nl": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType",
+          "EA-Name": "DataType"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "name": "",
+      "inpackage": "ACTIVE_PACKAGE",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "usagenote",
+        "EA-Guid": "{0EEB42A0-03B3-4e75-93A8-79EE0A1D8AC8}",
         "EA-Package": "OSLO-Toolchain",
         "EA-Type": "attribute",
         "EA-Domain": "Class",
@@ -2099,7 +2402,7 @@
       "maxCardinality": "1"
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "name": "",
       "inpackage": "ACTIVE_PACKAGE",
@@ -2107,8 +2410,8 @@
         "nl": "TODO"
       },
       "extra": {
-        "EA-Name": "definition",
-        "EA-Guid": "{B7BD5DF1-5088-4beb-9AB5-5303A9B88238}",
+        "EA-Name": "usagenote",
+        "EA-Guid": "{F846AE24-EDEA-489a-BE6D-143101EC8D3B}",
         "EA-Package": "OSLO-Toolchain",
         "EA-Type": "attribute",
         "EA-Domain": "Property",
@@ -2150,7 +2453,7 @@
       "maxCardinality": "1"
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "name": "",
       "inpackage": "ACTIVE_PACKAGE",
@@ -2158,8 +2461,8 @@
         "nl": "TODO"
       },
       "extra": {
-        "EA-Name": "definition",
-        "EA-Guid": "{217CE6DC-763C-449b-B9E2-67BC380E1B01}",
+        "EA-Name": "usagenote",
+        "EA-Guid": "{C7D21655-BBD2-4b8c-9B8A-ECD869085FA3}",
         "EA-Package": "OSLO-Toolchain",
         "EA-Type": "attribute",
         "EA-Domain": "DataType",
@@ -2201,62 +2504,7 @@
       "maxCardinality": "1"
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#datatype",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "",
-      "inpackage": "ACTIVE_PACKAGE",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "datatype",
-        "EA-Guid": "{8A8749F7-731D-4f36-B507-0D41B7D9DA46}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "Diagram",
-        "EA-Domain-Guid": "{73675182-E664-471f-A633-E01A98344CBE}",
-        "EA-Range": "DataType",
-        "RangeData": {
-          "EA-Name": "DataType",
-          "EA-GUID": "{74D49128-E5C9-4503-9188-F6BB554A950C}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType"
-        },
-        "sourceRole": "null",
-        "destRole": "datatype",
-        "label": "",
-        "definition": "",
-        "usage": "",
-        "ap-label-nl": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [],
-        "DestRoleTags": [],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Diagram",
-          "EA-Name": "Diagram"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "DataType",
-          "EA-GUID": "{74D49128-E5C9-4503-9188-F6BB554A950C}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType"
-        }
-      ],
-      "generalization": []
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#codelist",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#value",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "name": "",
       "inpackage": "ACTIVE_PACKAGE",
@@ -2264,12 +2512,12 @@
         "nl": "TODO"
       },
       "extra": {
-        "EA-Name": "codelist",
-        "EA-Guid": "{33710F28-A6AB-4bdd-BA90-9680DBE8FB79}",
+        "EA-Name": "value",
+        "EA-Guid": "{580C90DA-CA51-415c-85AF-102D39873971}",
         "EA-Package": "OSLO-Toolchain",
         "EA-Type": "attribute",
-        "EA-Domain": "ObjectProperty",
-        "EA-Domain-Guid": "{3DBD89BA-8ADF-4863-BF37-DA90D55CB049}",
+        "EA-Domain": "EA-Tag",
+        "EA-Domain-Guid": "{83A1BE86-5B34-424c-A808-6DE8B2D71707}",
         "EA-Range": "String",
         "RangeData": {
           "EA-Name": "String",
@@ -2291,8 +2539,8 @@
       "codelist": [],
       "domain": [
         {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ObjectProperty",
-          "EA-Name": "ObjectProperty"
+          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag",
+          "EA-Name": "EA-Tag"
         }
       ],
       "range": [
@@ -2305,254 +2553,6 @@
       "generalization": [],
       "minCardinality": "1",
       "maxCardinality": "1"
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#class",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "",
-      "inpackage": "ACTIVE_PACKAGE",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "class",
-        "EA-Guid": "{B9C77E36-14FD-4888-9940-7752EBEC40F7}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "Diagram",
-        "EA-Domain-Guid": "{73675182-E664-471f-A633-E01A98344CBE}",
-        "EA-Range": "Class",
-        "RangeData": {
-          "EA-Name": "Class",
-          "EA-GUID": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
-        },
-        "sourceRole": "null",
-        "destRole": "class",
-        "label": "",
-        "definition": "",
-        "usage": "",
-        "ap-label-nl": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [],
-        "DestRoleTags": [],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Diagram",
-          "EA-Name": "Diagram"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "Class",
-          "EA-GUID": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
-        }
-      ],
-      "generalization": []
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#baseuri",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "name": "",
-      "inpackage": "ACTIVE_PACKAGE",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "baseuri",
-        "EA-Guid": "{8CE27F19-30DE-40e9-AE06-C98DACB8BD7A}",
-        "EA-Package": "OSLO-Toolchain",
-        "EA-Type": "attribute",
-        "EA-Domain": "Package",
-        "EA-Domain-Guid": "{9C85F08E-AA24-4dd8-AB39-B97601DCF92A}",
-        "EA-Range": "String",
-        "RangeData": {
-          "EA-Name": "String",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
-        },
-        "label": "",
-        "definition": "",
-        "usage": "",
-        "ap-label-nl": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Package",
-          "EA-Name": "Package"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "String",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class.parent.target",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "(target)",
-      "inpackage": "ACTIVE_PACKAGE",
-      "label": {
-        "nl": " (target)"
-      },
-      "ap-label-nl": {
-        "nl": " (target)"
-      },
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "parent",
-        "EA-Guid": "{CE76D302-F376-4cf7-AD86-5EDA051F8198}",
-        "derived": "true",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "Class",
-        "EA-Domain-Guid": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
-        "EA-Range": "Class",
-        "RangeData": {
-          "EA-Name": "Class",
-          "EA-GUID": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
-        },
-        "sourceRole": "parent",
-        "destRole": "parent",
-        "label": {
-          "nl": " (target)"
-        },
-        "definition": "",
-        "usage": "",
-        "ap-label-nl": {
-          "nl": " (target)"
-        },
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "value": " (target)",
-            "note": ""
-          }
-        ],
-        "DestRoleTags": [],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class",
-          "EA-Name": "Class"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "Class",
-          "EA-GUID": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
-        }
-      ],
-      "generalization": []
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class.parent.source",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "(source)",
-      "inpackage": "ACTIVE_PACKAGE",
-      "label": {
-        "nl": " (source)"
-      },
-      "ap-label-nl": {
-        "nl": " (source)"
-      },
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Name": "parent",
-        "EA-Guid": "{CE76D302-F376-4cf7-AD86-5EDA051F8198}",
-        "derived": "true",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "Class",
-        "EA-Domain-Guid": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
-        "EA-Range": "Class",
-        "RangeData": {
-          "EA-Name": "Class",
-          "EA-GUID": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
-        },
-        "sourceRole": "parent",
-        "destRole": "parent",
-        "label": {
-          "nl": " (source)"
-        },
-        "definition": "",
-        "usage": "",
-        "ap-label-nl": {
-          "nl": " (source)"
-        },
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "value": " (source)",
-            "note": ""
-          }
-        ],
-        "DestRoleTags": [],
-        "Scope": "FULL_DEFINITON"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class",
-          "EA-Name": "Class"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "Class",
-          "EA-GUID": "{2C290773-B724-44c7-8EA0-B653E5286DEB}",
-          "EA-Package": "OSLO-Toolchain",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
-        }
-      ],
-      "generalization": []
     }
   ],
   "externals": [
@@ -2620,7 +2620,7 @@
   "repository": "https://github.com/Informatievlaanderen/OSLOthema-im-toolchain",
   "urlref": "/doc/implementatiemodel/toolchain/ontwerpstandaard/2023-09-22",
   "documentcommit": "7333ac856e444a540786fed74d2a603e9d78dbd1",
-  "toolchaincommit": "6b891a1d323468b78a5069288deb1e29ba0001bf",
+  "toolchaincommit": "6ba0f47280c311287be1e861b2548378b576653a",
   "hostname": "https://implementatie.data.vlaanderen.be/",
   "translation": [
     {
