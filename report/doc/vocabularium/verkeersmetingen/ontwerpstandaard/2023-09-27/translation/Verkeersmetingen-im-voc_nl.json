@@ -7,17 +7,17 @@
         "nl": "Verkeerssnelheidsmeting"
       },
       "definition": {
-        "nl": "TODO"
+        "nl": "Het vaststellen van de snelheid van voertuigen op een bepaalde locatie op een bepaald tijdstip of gedurende een specifiek tijdsinterval."
       }
     },
     {
       "EA-Guid": "{3E7EBA12-CF4D-41ef-90F3-D582B09D761E}",
-      "name": "Verkeerssnelheidsmetingkenmer",
+      "name": "Verkeerssnelheidsmetingkenmerk",
       "label": {
-        "nl": "Verkeerssnelheidsmetingkenmer"
+        "nl": "Verkeerssnelheidsmetingkenmerk"
       },
       "definition": {
-        "nl": "TODO"
+        "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
       }
     },
     {
@@ -31,7 +31,7 @@
         "nl": "Verkeerstelling"
       },
       "definition": {
-        "nl": "TODO"
+        "nl": "Het vaststellen van het aantal voertuigen op een bepaalde locatie op een bepaald tijdstip of gedurende een specifiek tijdsinterval."
       }
     },
     {
@@ -41,7 +41,7 @@
         "nl": "Verkeerstellingkenmerk"
       },
       "definition": {
-        "nl": "TODO"
+        "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
       }
     },
     {
@@ -57,17 +57,17 @@
         "nl": "tellingresultaat"
       },
       "definition": {
-        "nl": "TODO"
+        "nl": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."
       }
     },
     {
       "EA-Guid": "{D0FC4E26-48C8-4a28-BD9A-D6BD94C4C450}",
-      "name": "tellingnetwerkreferentieelement",
+      "name": "verwijzingNaarHetNetwerkelementWegsegmentWaarvoorDeNetwerkeigenschap(bijvoorbeeldRijrichting)Geldt.",
       "label": {
-        "nl": "tellingnetwerkreferentieelement"
+        "nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."
       },
       "definition": {
-        "nl": "TODO"
+        "nl": "Referentie naar het Netwerkelement Wegsegment waarvoor een "
       }
     },
     {
@@ -77,7 +77,7 @@
         "nl": "kenmerktype"
       },
       "definition": {
-        "nl": "TODO"
+        "nl": "Kenmerktype 'aantal' is het specifieke kenmerktype van de verkeerstelling"
       }
     },
     {
@@ -87,7 +87,7 @@
         "nl": "kenmerktype"
       },
       "definition": {
-        "nl": "TODO"
+        "nl": "Kenmerktype 'snelheid' is het specifieke kenmerktype van de verkeerssnelheidsmeting"
       }
     },
     {
@@ -97,7 +97,7 @@
         "nl": "geobserveerdKenmerk"
       },
       "definition": {
-        "nl": "TODO"
+        "nl": "Object dat door de Verkeerstelling wordt geobserveerd.\t"
       }
     },
     {
@@ -107,7 +107,7 @@
         "nl": "geobserveerdKenmerk"
       },
       "definition": {
-        "nl": "TODO"
+        "nl": "Object dat door de Verkeerssnelheidsmetingen wordt geobserveerd.\t"
       }
     },
     {
@@ -115,6 +115,9 @@
       "name": "fenomeentijd",
       "label": {
         "nl": "fenomeenTijd"
+      },
+      "definition": {
+        "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
       }
     }
   ],
@@ -295,6 +298,33 @@
       }
     },
     {
+      "EA-Guid": "{F475BC99-8F8C-42fa-8AFC-97D937475E85}",
+      "name": "Rijrichting",
+      "label": {
+        "nl": "Rijrichting"
+      }
+    },
+    {
+      "EA-Guid": "{76494F4F-E122-4dfb-8EA0-84FF3C4EF761}",
+      "name": "Wegobject",
+      "label": {
+        "nl": "Wegobject"
+      },
+      "definition": {
+        "nl": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt."
+      },
+      "usage": {
+        "nl": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken."
+      }
+    },
+    {
+      "EA-Guid": "{A74FEDDC-177C-430a-80BF-5D15C5278C01}",
+      "name": "Wegsegment",
+      "label": {
+        "nl": "Wegsegment"
+      }
+    },
+    {
       "EA-Guid": "{CFE067A0-8DA9-40db-AF71-DC32C871721F}",
       "name": "Verkeersbemonsteringsobject",
       "label": {
@@ -373,33 +403,6 @@
       }
     },
     {
-      "EA-Guid": "{F475BC99-8F8C-42fa-8AFC-97D937475E85}",
-      "name": "Rijrichting",
-      "label": {
-        "nl": "Rijrichting"
-      }
-    },
-    {
-      "EA-Guid": "{76494F4F-E122-4dfb-8EA0-84FF3C4EF761}",
-      "name": "Wegobject",
-      "label": {
-        "nl": "Wegobject"
-      },
-      "definition": {
-        "nl": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt."
-      },
-      "usage": {
-        "nl": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken."
-      }
-    },
-    {
-      "EA-Guid": "{A74FEDDC-177C-430a-80BF-5D15C5278C01}",
-      "name": "Wegsegment",
-      "label": {
-        "nl": "Wegsegment"
-      }
-    },
-    {
       "EA-Guid": "{A3059FBD-C1E7-4349-8384-8F514B023183}",
       "name": "Observatieprocedure",
       "label": {
@@ -422,27 +425,6 @@
     }
   ],
   "externalproperties": [
-    {
-      "EA-Guid": "{FCFCB9D9-E66E-4e9f-AB39-7A24DC0C08BF}",
-      "name": "vanPositie",
-      "label": {
-        "nl": "van positie"
-      }
-    },
-    {
-      "EA-Guid": "{EC76D219-D568-4069-BDD5-1F401AD9FFC9}",
-      "name": "totPositie",
-      "label": {
-        "nl": "tot positie"
-      }
-    },
-    {
-      "EA-Guid": "{DF397868-554C-432f-B8E3-338F37528EB8}",
-      "name": "rijrichting",
-      "label": {
-        "nl": "rijrichting"
-      }
-    },
     {
       "EA-Guid": "{CF9C3D94-2593-4911-AFB0-26E1C2D262AB}",
       "name": "voertuigtype",
@@ -500,6 +482,27 @@
       },
       "usage": {
         "nl": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt."
+      }
+    },
+    {
+      "EA-Guid": "{FCFCB9D9-E66E-4e9f-AB39-7A24DC0C08BF}",
+      "name": "vanPositie",
+      "label": {
+        "nl": "van positie"
+      }
+    },
+    {
+      "EA-Guid": "{EC76D219-D568-4069-BDD5-1F401AD9FFC9}",
+      "name": "totPositie",
+      "label": {
+        "nl": "tot positie"
+      }
+    },
+    {
+      "EA-Guid": "{DF397868-554C-432f-B8E3-338F37528EB8}",
+      "name": "rijrichting",
+      "label": {
+        "nl": "rijrichting"
       }
     },
     {
