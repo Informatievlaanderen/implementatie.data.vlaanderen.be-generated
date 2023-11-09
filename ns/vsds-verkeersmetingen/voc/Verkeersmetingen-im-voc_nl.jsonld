@@ -15,13 +15,13 @@
   "editors": [
     {
       "@type": "foaf:Person",
-      "foaf:firstName": "Thijs",
-      "foaf:lastName": "Geert"
+      "foaf:firstName": "Van Ackere",
+      "foaf:lastName": "Samuel"
     },
     {
       "@type": "foaf:Person",
-      "foaf:firstName": "Van Ackere",
-      "foaf:lastName": "Samuel"
+      "foaf:firstName": "Thijs",
+      "foaf:lastName": "Geert"
     }
   ],
   "contributors": [],
@@ -93,20 +93,64 @@
   "externals": [],
   "properties": [
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "definition": {
-        "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+        "nl": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."
       },
       "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeting"
+        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling"
       ],
       "range": [
-        "http://fixme.com#ProperInterval"
+        "http://www.w3.org/2001/XMLSchema#double"
       ],
       "generalization": [
-        "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime"
+        "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
       ]
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "nl": "Referentie naar het Netwerkelement Wegsegment waarvoor een "
+      },
+      "domain": [
+        "https://data.vlaanderen.be/ns/weg#Rijrichting"
+      ],
+      "range": [
+        "https://data.vlaanderen.be/ns/weg#Wegsegment"
+      ],
+      "generalization": [
+        "https://data.vlaanderen.be/ns/netwerk/#netwerkreferentie"
+      ]
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "nl": "Kenmerktype 'aantal' is het specifieke kenmerktype van de verkeerstelling"
+      },
+      "domain": [
+        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk"
+      ],
+      "range": [
+        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerktype"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "nl": "Kenmerktype 'snelheid' is het specifieke kenmerktype van de verkeerssnelheidsmeting"
+      },
+      "domain": [
+        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk"
+      ],
+      "range": [
+        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerktype"
+      ],
+      "generalization": []
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk",
@@ -141,63 +185,19 @@
       ]
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
-        "nl": "Kenmerktype 'aantal' is het specifieke kenmerktype van de verkeerstelling"
+        "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
       },
       "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk"
+        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeting"
       ],
       "range": [
-        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerktype"
-      ],
-      "generalization": []
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "definition": {
-        "nl": "Kenmerktype 'snelheid' is het specifieke kenmerktype van de verkeerssnelheidsmeting"
-      },
-      "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk"
-      ],
-      "range": [
-        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerktype"
-      ],
-      "generalization": []
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "definition": {
-        "nl": "Referentie naar het Netwerkelement Wegsegment waarvoor een "
-      },
-      "domain": [
-        "https://data.vlaanderen.be/ns/weg#Rijrichting"
-      ],
-      "range": [
-        "https://data.vlaanderen.be/ns/weg#Wegsegment"
+        "http://fixme.com#ProperInterval"
       ],
       "generalization": [
-        "https://data.vlaanderen.be/ns/netwerk/#netwerkreferentie"
-      ]
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "definition": {
-        "nl": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."
-      },
-      "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling"
-      ],
-      "range": [
-        "http://www.w3.org/2001/XMLSchema#double"
-      ],
-      "generalization": [
-        "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
+        "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime"
       ]
     }
   ],
