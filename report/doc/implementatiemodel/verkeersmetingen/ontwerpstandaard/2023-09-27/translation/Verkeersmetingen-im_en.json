@@ -1,5 +1,5 @@
 {
-  "baseURI": "https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#",
+  "baseURI": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#",
   "classes": [
     {
       "EA-Guid": "{433C2DC0-0C36-4600-B8FC-0782A8CBDB54}",
@@ -9,15 +9,15 @@
         "en": "Enter your translation here"
       },
       "definition": {
-        "nl": "TODO",
+        "nl": "Het vaststellen van de snelheid van voertuigen op een bepaalde locatie op een bepaald tijdstip of gedurende een specifiek tijdsinterval.",
         "en": "Enter your translation here"
       }
     },
     {
       "EA-Guid": "{3E7EBA12-CF4D-41ef-90F3-D582B09D761E}",
-      "name": "TODO",
+      "name": "Verkeerssnelheidsmetingkenmerk",
       "label": {
-        "nl": "TODO",
+        "nl": "Verkeerssnelheidsmetingkenmerk",
         "en": "Enter your translation here"
       },
       "definition": {
@@ -37,15 +37,15 @@
         "en": "Enter your translation here"
       },
       "definition": {
-        "nl": "TODO",
+        "nl": "Het vaststellen van het aantal voertuigen op een bepaalde locatie op een bepaald tijdstip of gedurende een specifiek tijdsinterval.",
         "en": "Enter your translation here"
       }
     },
     {
       "EA-Guid": "{28B002FB-0D98-4d53-A659-282B6539F39F}",
-      "name": "TODO",
+      "name": "Verkeerstellingkenmerk",
       "label": {
-        "nl": "TODO",
+        "nl": "Verkeerstellingkenmerk",
         "en": "Enter your translation here"
       },
       "definition": {
@@ -67,19 +67,19 @@
         "en": "Enter your translation here"
       },
       "definition": {
-        "nl": "TODO",
+        "nl": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal).",
         "en": "Enter your translation here"
       }
     },
     {
       "EA-Guid": "{D0FC4E26-48C8-4a28-BD9A-D6BD94C4C450}",
-      "name": "tellingnetwerkreferentieelement",
+      "name": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt.",
       "label": {
-        "nl": "tellingnetwerkreferentieelement",
+        "nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt.",
         "en": "Enter your translation here"
       },
       "definition": {
-        "nl": "TODO",
+        "nl": "Referentie naar het Netwerkelement Wegsegment waarvoor een ",
         "en": "Enter your translation here"
       }
     },
@@ -91,7 +91,7 @@
         "en": "Enter your translation here"
       },
       "definition": {
-        "nl": "TODO",
+        "nl": "Kenmerktype 'aantal' is het specifieke kenmerktype van de verkeerstelling",
         "en": "Enter your translation here"
       }
     },
@@ -103,7 +103,7 @@
         "en": "Enter your translation here"
       },
       "definition": {
-        "nl": "TODO",
+        "nl": "Kenmerktype 'snelheid' is het specifieke kenmerktype van de verkeerssnelheidsmeting",
         "en": "Enter your translation here"
       }
     },
@@ -115,7 +115,7 @@
         "en": "Enter your translation here"
       },
       "definition": {
-        "nl": "TODO",
+        "nl": "Object dat door de Verkeerstelling wordt geobserveerd.\t",
         "en": "Enter your translation here"
       }
     },
@@ -127,7 +127,7 @@
         "en": "Enter your translation here"
       },
       "definition": {
-        "nl": "TODO",
+        "nl": "Object dat door de Verkeerssnelheidsmetingen wordt geobserveerd.\t",
         "en": "Enter your translation here"
       }
     },
@@ -518,6 +518,46 @@
       }
     },
     {
+      "EA-Guid": "{F475BC99-8F8C-42fa-8AFC-97D937475E85}",
+      "name": "Rijrichting",
+      "label": {
+        "nl": "Rijrichting",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Richting waarin het verkeer zich over de weg beweegt.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{76494F4F-E122-4dfb-8EA0-84FF3C4EF761}",
+      "name": "Wegobject",
+      "label": {
+        "nl": "Wegobject",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{A74FEDDC-177C-430a-80BF-5D15C5278C01}",
+      "name": "Wegsegment",
+      "label": {
+        "nl": "Wegsegment",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Lineair ruimtelijk object dat de geometrie en connectiviteit beschrijft tussen twee punten in een Wegennetwerk.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
       "EA-Guid": "{CFE067A0-8DA9-40db-AF71-DC32C871721F}",
       "name": "Verkeersbemonsteringsobject",
       "label": {
@@ -614,46 +654,6 @@
       }
     },
     {
-      "EA-Guid": "{F475BC99-8F8C-42fa-8AFC-97D937475E85}",
-      "name": "Rijrichting",
-      "label": {
-        "nl": "Rijrichting",
-        "en": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Richting waarin het verkeer zich over de weg beweegt.",
-        "en": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{76494F4F-E122-4dfb-8EA0-84FF3C4EF761}",
-      "name": "Wegobject",
-      "label": {
-        "nl": "Wegobject",
-        "en": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt.",
-        "en": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken.",
-        "en": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{A74FEDDC-177C-430a-80BF-5D15C5278C01}",
-      "name": "Wegsegment",
-      "label": {
-        "nl": "Wegsegment",
-        "en": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Lineair ruimtelijk object dat de geometrie en connectiviteit beschrijft tussen twee punten in een Wegennetwerk.",
-        "en": "Enter your translation here"
-      }
-    },
-    {
       "EA-Guid": "{A3059FBD-C1E7-4349-8384-8F514B023183}",
       "name": "Observatieprocedure",
       "label": {
@@ -703,46 +703,6 @@
     }
   ],
   "externalproperties": [
-    {
-      "EA-Guid": "{FCFCB9D9-E66E-4e9f-AB39-7A24DC0C08BF}",
-      "name": "vanPositie",
-      "label": {
-        "nl": "vanPositie",
-        "en": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Afstand vanaf het begin van de Link of Linksequentie tot waar de Netwerkeigenschap geldt.",
-        "en": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{EC76D219-D568-4069-BDD5-1F401AD9FFC9}",
-      "name": "totPositie",
-      "label": {
-        "nl": "totPositie",
-        "en": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Afstand vanaf het begin van de Link of Linksequentie vanaf waar de Netwerkeigenschap geldt.",
-        "en": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{DF397868-554C-432f-B8E3-338F37528EB8}",
-      "name": "rijrichting",
-      "label": {
-        "nl": "rijrichting",
-        "en": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "De rijrichting.",
-        "en": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "Deze wordt beschreven tov de richting van de geometrie van de weg: gelijklopend met of tegengesteld aan die richting. De richting van de geometrie wordt bepaald door de volgorde waarin de coördinaten op elkaar volgen.",
-        "en": "Enter your translation here"
-      }
-    },
     {
       "EA-Guid": "{CF9C3D94-2593-4911-AFB0-26E1C2D262AB}",
       "name": "voertuigType",
@@ -812,6 +772,46 @@
       },
       "usage": {
         "nl": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{FCFCB9D9-E66E-4e9f-AB39-7A24DC0C08BF}",
+      "name": "vanPositie",
+      "label": {
+        "nl": "vanPositie",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Afstand vanaf het begin van de Link of Linksequentie tot waar de Netwerkeigenschap geldt.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{EC76D219-D568-4069-BDD5-1F401AD9FFC9}",
+      "name": "totPositie",
+      "label": {
+        "nl": "totPositie",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Afstand vanaf het begin van de Link of Linksequentie vanaf waar de Netwerkeigenschap geldt.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{DF397868-554C-432f-B8E3-338F37528EB8}",
+      "name": "rijrichting",
+      "label": {
+        "nl": "rijrichting",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "De rijrichting.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Deze wordt beschreven tov de richting van de geometrie van de weg: gelijklopend met of tegengesteld aan die richting. De richting van de geometrie wordt bepaald door de volgorde waarin de coördinaten op elkaar volgen.",
         "en": "Enter your translation here"
       }
     },
@@ -971,7 +971,7 @@
         "en": "Enter your translation here"
       },
       "definition": {
-        "nl": "Resultaat van de Meting.",
+        "nl": "Resultaat van de Verkeerssnelheidsmeting.",
         "en": "Enter your translation here"
       }
     }
