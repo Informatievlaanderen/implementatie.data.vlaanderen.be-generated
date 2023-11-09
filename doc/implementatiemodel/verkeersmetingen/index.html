@@ -87,8 +87,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/13c5cceabf5e1d844d7f3677b72b587ba5421343">https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/13c5cceabf5e1d844d7f3677b72b587ba5421343</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/13c5cceabf5e1d844d7f3677b72b587ba5421343/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/13c5cceabf5e1d844d7f3677b72b587ba5421343/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/e9bbdedb1b552e32fb11a0d76d0184e3dd267486">https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/e9bbdedb1b552e32fb11a0d76d0184e3dd267486</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/e9bbdedb1b552e32fb11a0d76d0184e3dd267486/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/e9bbdedb1b552e32fb11a0d76d0184e3dd267486/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/issues">https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/issues</a></dd>
               <dt>Standaardenregister</dt><dd><a href="https://data.vlaanderen.be/standaarden/">https://data.vlaanderen.be/standaarden/</a></dd>
 
@@ -176,8 +176,6 @@
                       <a href="#Sensor">Sensor</a> |
                       <a href="#Systeem">Systeem</a> |
                       <a href="#Telling">Telling</a> |
-                      <a href="#Todo">TODO</a> |
-                      <a href="#Todo">TODO</a> |
                       <a href="#Transporteigenschap">Transporteigenschap</a> |
                       <a href="#Transportlink">Transportlink</a> |
                       <a href="#Verkeersbemonsteringsobject">Verkeersbemonsteringsobject</a> |
@@ -187,7 +185,9 @@
                       <a href="#Verkeersmeting">Verkeersmeting</a> |
                       <a href="#Verkeersobject">Verkeersobject</a> |
                       <a href="#Verkeerssnelheidsmeting">Verkeerssnelheidsmeting</a> |
+                      <a href="#Verkeerssnelheidsmetingkenmerk">Verkeerssnelheidsmetingkenmerk</a> |
                       <a href="#Verkeerstelling">Verkeerstelling</a> |
+                      <a href="#Verkeerstellingkenmerk">Verkeerstellingkenmerk</a> |
                       <a href="#Wegobject">Wegobject</a> |
                       <a href="#Wegsegment">Wegsegment</a> |
                     </p>
@@ -484,7 +484,7 @@
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
                       <a href="#Rijrichting%3Arijrichting">rijrichting</a>, 
-                      <a href="#Rijrichting%3Atellingnetwerkreferentieelement">tellingnetwerkreferentieelement</a>.</dd>
+                      <a href="#Rijrichting%3AverwijzingNaarHetNetwerkelementWegsegmentWaarvoorDeNetwerkeigenschap(bijvoorbeeldRijrichting)Geldt.">Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt.</a>.</dd>
                     
                   </dl>
                 </div>
@@ -524,11 +524,11 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Rijrichting%3Atellingnetwerkreferentieelement" typeof="rdfs:Property" resource="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#tellingnetwerkreferentieelement">
+                      <tr id="Rijrichting%3AverwijzingNaarHetNetwerkelementWegsegmentWaarvoorDeNetwerkeigenschap(bijvoorbeeldRijrichting)Geldt." typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#tellingnetwerkreferentieelement" data-toggle="tooltip" data-content="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#tellingnetwerkreferentieelement" data-placement="right">
-                            tellingnetwerkreferentieelement</a>
+                            <a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement" data-placement="right">
+                            Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt.</a>
                           </code>
                         </td>
                         <td>
@@ -539,7 +539,7 @@
                           
                         </td>
                         <td>1</td>
-                        <td property="rdfs:comment">TODO</td>
+                        <td property="rdfs:comment">Referentie naar het Netwerkelement Wegsegment waarvoor een </td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -607,10 +607,10 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Sensor%3Aligging" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/verkeersmetingen#ligging">
+                      <tr id="Sensor%3Aligging" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#ligging">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.vlaanderen.be/ns/verkeersmetingen#ligging" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#ligging" data-placement="right">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#ligging" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#ligging" data-placement="right">
                             ligging</a>
                           </code>
                         </td>
@@ -670,126 +670,6 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Todo"><a href="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk" data-toggle="tooltip" data-content="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk" data-placement="right">TODO</a></h3>
-                <div class="region region--no-space-top">
-                  <dl>
-                    <dt>Beschrijving</dt><dd>Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer.</dd>
-                    
-		     
-		    <dt>Subklasse van <dt><dd>
-                        <a href="#Verkeerskenmerk">Verkeerskenmerk</a>
-		   </dd>
-                    
-                    <dt>Eigenschappen</dt>
-		     
-                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Todo%3Akenmerktype">kenmerktype</a>.</dd>
-                    
-                  </dl>
-                </div>
-		 
-                <div class="u-table-overflow">
-                  <table class="data-table">
-                    <thead>
-                      <tr class="data-table__header">
-                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
-                        <th class="data-table__header-title--sortable">Verwacht Type</th>
-                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
-                        <th class="data-table__header-title--sortable">Beschrijving</th>
-                        <th class="data-table__header-title--sortable">Gebruik</th>
-                        <th class="data-table__header-title--sortable">Codelijst</th>
-                      </tr>
-                    </thead>
-
-                    <tbody class="supertype">
-                    
-                      <tr id="Todo%3Akenmerktype" typeof="rdfs:Property" resource="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype" data-toggle="tooltip" data-content="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype" data-placement="right">
-                            kenmerktype</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Verkeerssnelheidsmetingkenmerktype" data-placement="right">Verkeerssnelheidsmetingkenmerktype</a>
-			    
-                          
-                        </td>
-                        <td>1</td>
-                        <td property="rdfs:comment">TODO</td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                    </tbody>
-                  </table>
-                </div>
-      			  
-            </div>
-            
-              <div class="region region--no-space-top">
-              <h3 class="h3" id="Todo"><a href="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk" data-toggle="tooltip" data-content="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk" data-placement="right">TODO</a></h3>
-                <div class="region region--no-space-top">
-                  <dl>
-                    <dt>Beschrijving</dt><dd>Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer.</dd>
-                    
-		     
-		    <dt>Subklasse van <dt><dd>
-                        <a href="#Verkeerskenmerk">Verkeerskenmerk</a>
-		   </dd>
-                    
-                    <dt>Eigenschappen</dt>
-		     
-                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Todo%3Akenmerktype">kenmerktype</a>.</dd>
-                    
-                  </dl>
-                </div>
-		 
-                <div class="u-table-overflow">
-                  <table class="data-table">
-                    <thead>
-                      <tr class="data-table__header">
-                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
-                        <th class="data-table__header-title--sortable">Verwacht Type</th>
-                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
-                        <th class="data-table__header-title--sortable">Beschrijving</th>
-                        <th class="data-table__header-title--sortable">Gebruik</th>
-                        <th class="data-table__header-title--sortable">Codelijst</th>
-                      </tr>
-                    </thead>
-
-                    <tbody class="supertype">
-                    
-                      <tr id="Todo%3Akenmerktype" typeof="rdfs:Property" resource="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype" data-toggle="tooltip" data-content="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype" data-placement="right">
-                            kenmerktype</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Verkeerstellingkenmerktype" data-placement="right">Verkeerstellingkenmerktype</a>
-			    
-                          
-                        </td>
-                        <td>1</td>
-                        <td property="rdfs:comment">TODO</td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                    </tbody>
-                  </table>
-                </div>
-      			  
-            </div>
-            
-              <div class="region region--no-space-top">
               <h3 class="h3" id="Transporteigenschap"><a href="https://data.vlaanderen.be/ns/transportnetwerk#Transporteigenschap" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/transportnetwerk#Transporteigenschap" data-placement="right">Transporteigenschap</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
@@ -824,7 +704,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Verkeersbemonsteringsobject"><a href="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersbemonsteringsobject" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersbemonsteringsobject" data-placement="right">Verkeersbemonsteringsobject</a></h3>
+              <h3 class="h3" id="Verkeersbemonsteringsobject"><a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersbemonsteringsobject" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersbemonsteringsobject" data-placement="right">Verkeersbemonsteringsobject</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Object dat representatief is voor het object waarvan men het Verkeerskenmerk meet.</dd>
@@ -860,10 +740,10 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Verkeersbemonsteringsobject%3Abemonsterdobject" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject">
+                      <tr id="Verkeersbemonsteringsobject%3Abemonsterdobject" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#bemonsterdObject">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject" data-placement="right">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#bemonsterdObject" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#bemonsterdObject" data-placement="right">
                             bemonsterdObject</a>
                           </code>
                         </td>
@@ -887,7 +767,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Verkeersdomeinobject"><a href="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersdomeinobject" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersdomeinobject" data-placement="right">Verkeersdomeinobject</a></h3>
+              <h3 class="h3" id="Verkeersdomeinobject"><a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersdomeinobject" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersdomeinobject" data-placement="right">Verkeersdomeinobject</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Object uit het verkeersdomein waarvan men een Verkeerskenmerk meet.</dd>
@@ -910,7 +790,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Verkeerskenmerk"><a href="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk" data-placement="right">Verkeerskenmerk</a></h3>
+              <h3 class="h3" id="Verkeerskenmerk"><a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerskenmerk" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerskenmerk" data-placement="right">Verkeerskenmerk</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer.</dd>
@@ -945,10 +825,10 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Verkeerskenmerk%3Avoertuigtype" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType">
+                      <tr id="Verkeerskenmerk%3Avoertuigtype" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#voertuigType">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType" data-placement="right">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#voertuigType" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#voertuigType" data-placement="right">
                             voertuigType</a>
                           </code>
                         </td>
@@ -972,7 +852,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Verkeersmeetpunt"><a href="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt" data-placement="right">Verkeersmeetpunt</a></h3>
+              <h3 class="h3" id="Verkeersmeetpunt"><a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeetpunt" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeetpunt" data-placement="right">Verkeersmeetpunt</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Punt waarlangs men kenmerken van het voorbijkomend verkeer meet.</dd>
@@ -1029,10 +909,10 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Verkeersmeetpunt%3Averkeersmeetpuntnetwerkreferentie" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/verkeersmetingen#verkeersmeetpuntnetwerkreferentie">
+                      <tr id="Verkeersmeetpunt%3Averkeersmeetpuntnetwerkreferentie" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#verkeersmeetpuntnetwerkreferentie">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.vlaanderen.be/ns/verkeersmetingen#verkeersmeetpuntnetwerkreferentie" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#verkeersmeetpuntnetwerkreferentie" data-placement="right">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#verkeersmeetpuntnetwerkreferentie" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#verkeersmeetpuntnetwerkreferentie" data-placement="right">
                             verkeersmeetpuntnetwerkreferentie</a>
                           </code>
                         </td>
@@ -1056,7 +936,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Verkeersmeting"><a href="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting" data-placement="right">Verkeersmeting</a></h3>
+              <h3 class="h3" id="Verkeersmeting"><a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeting" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeting" data-placement="right">Verkeersmeting</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Het vaststellen van de waarde van een bepaald kenmerk van het verkeer op een bepaald tijdstip of tussen twee tijdstippen.</dd>
@@ -1094,10 +974,10 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Verkeersmeting%3Afenomeentijd" typeof="rdfs:Property" resource="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd">
+                      <tr id="Verkeersmeting%3Afenomeentijd" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd" data-toggle="tooltip" data-content="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd" data-placement="right">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd" data-placement="right">
                             fenomeenTijd</a>
                           </code>
                         </td>
@@ -1114,10 +994,10 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Verkeersmeting%3Ageobserveerdobject" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject">
+                      <tr id="Verkeersmeting%3Ageobserveerdobject" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdObject">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject" data-placement="right">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdObject" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdObject" data-placement="right">
                             geobserveerdObject</a>
                           </code>
                         </td>
@@ -1161,7 +1041,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Verkeersobject"><a href="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersobject" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersobject" data-placement="right">Verkeersobject</a></h3>
+              <h3 class="h3" id="Verkeersobject"><a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersobject" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersobject" data-placement="right">Verkeersobject</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Object waarop of waarlangs zich verkeer voordoet of dat deel uitmaakt vh verkeer.</dd>
@@ -1183,10 +1063,10 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Verkeerssnelheidsmeting"><a href="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting" data-toggle="tooltip" data-content="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting" data-placement="right">Verkeerssnelheidsmeting</a></h3>
+              <h3 class="h3" id="Verkeerssnelheidsmeting"><a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting" data-placement="right">Verkeerssnelheidsmeting</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Beschrijving</dt><dd>TODO</dd>
+                    <dt>Beschrijving</dt><dd>Het vaststellen van de snelheid van voertuigen op een bepaalde locatie op een bepaald tijdstip of gedurende een specifiek tijdsinterval.</dd>
                     
 		     
 		    <dt>Subklasse van <dt><dd>
@@ -1218,22 +1098,22 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Verkeerssnelheidsmeting%3Ageobserveerdkenmerk" typeof="rdfs:Property" resource="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk">
+                      <tr id="Verkeerssnelheidsmeting%3Ageobserveerdkenmerk" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk" data-toggle="tooltip" data-content="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk" data-placement="right">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk" data-placement="right">
                             geobserveerdKenmerk</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#TODO" data-placement="right">TODO</a>
+			    <a href="#Verkeerssnelheidsmetingkenmerk" data-placement="right">Verkeerssnelheidsmetingkenmerk</a>
 			    
                           
                         </td>
                         <td>1</td>
-                        <td property="rdfs:comment">TODO</td>
+                        <td property="rdfs:comment">Object dat door de Verkeerssnelheidsmetingen wordt geobserveerd.	</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -1253,7 +1133,7 @@
                           
                         </td>
                         <td>1</td>
-                        <td property="rdfs:comment">Resultaat van de Meting.</td>
+                        <td property="rdfs:comment">Resultaat van de Verkeerssnelheidsmeting.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -1265,10 +1145,70 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Verkeerstelling"><a href="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling" data-toggle="tooltip" data-content="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling" data-placement="right">Verkeerstelling</a></h3>
+              <h3 class="h3" id="Verkeerssnelheidsmetingkenmerk"><a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk" data-placement="right">Verkeerssnelheidsmetingkenmerk</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Beschrijving</dt><dd>TODO</dd>
+                    <dt>Beschrijving</dt><dd>Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer.</dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="#Verkeerskenmerk">Verkeerskenmerk</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Verkeerssnelheidsmetingkenmerk%3Akenmerktype">kenmerktype</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Verkeerssnelheidsmetingkenmerk%3Akenmerktype" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype" data-placement="right">
+                            kenmerktype</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Verkeerssnelheidsmetingkenmerktype" data-placement="right">Verkeerssnelheidsmetingkenmerktype</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Kenmerktype &#39;snelheid&#39; is het specifieke kenmerktype van de verkeerssnelheidsmeting</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Verkeerstelling"><a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling" data-placement="right">Verkeerstelling</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Het vaststellen van het aantal voertuigen op een bepaalde locatie op een bepaald tijdstip of gedurende een specifiek tijdsinterval.</dd>
                     
 		     
 		    <dt>Subklasse van <dt><dd>
@@ -1300,30 +1240,30 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Verkeerstelling%3Ageobserveerdkenmerk" typeof="rdfs:Property" resource="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk">
+                      <tr id="Verkeerstelling%3Ageobserveerdkenmerk" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk" data-toggle="tooltip" data-content="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk" data-placement="right">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk" data-placement="right">
                             geobserveerdKenmerk</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#TODO" data-placement="right">TODO</a>
+			    <a href="#Verkeerstellingkenmerk" data-placement="right">Verkeerstellingkenmerk</a>
 			    
                           
                         </td>
                         <td>1</td>
-                        <td property="rdfs:comment">TODO</td>
+                        <td property="rdfs:comment">Object dat door de Verkeerstelling wordt geobserveerd.	</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
                     
-                      <tr id="Verkeerstelling%3Atellingresultaat" typeof="rdfs:Property" resource="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat">
+                      <tr id="Verkeerstelling%3Atellingresultaat" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat" data-toggle="tooltip" data-content="https://implementatie.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat" data-placement="right">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat" data-placement="right">
                             tellingresultaat</a>
                           </code>
                         </td>
@@ -1335,7 +1275,67 @@
                           
                         </td>
                         <td>1</td>
-                        <td property="rdfs:comment">TODO</td>
+                        <td property="rdfs:comment">De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal).</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Verkeerstellingkenmerk"><a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk" data-placement="right">Verkeerstellingkenmerk</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer.</dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="#Verkeerskenmerk">Verkeerskenmerk</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Verkeerstellingkenmerk%3Akenmerktype">kenmerktype</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Verkeerstellingkenmerk%3Akenmerktype" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype" data-placement="right">
+                            kenmerktype</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Verkeerstellingkenmerktype" data-placement="right">Verkeerstellingkenmerktype</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Kenmerktype &#39;aantal&#39; is het specifieke kenmerktype van de verkeerstelling</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
