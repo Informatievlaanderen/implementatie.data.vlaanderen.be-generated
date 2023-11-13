@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/ddeae3b13c70befdf2c5e861acb4b120ee830ef0",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/ddeae3b13c70befdf2c5e861acb4b120ee830ef0/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/dd17f634ae9096325ef0b1bcb993ecd162bc3790",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/dd17f634ae9096325ef0b1bcb993ecd162bc3790/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/",
     "usesVocs": [],
@@ -50,7 +50,7 @@
       ],
       "properties": [
         {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk",
           "name": "geobserveerdkenmerk",
           "sort": "geobserveerdKenmerk",
           "label": {
@@ -143,7 +143,7 @@
       ],
       "properties": [
         {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk.kenmerktype",
           "name": "kenmerktype",
           "sort": "kenmerktype",
           "label": {
@@ -162,13 +162,13 @@
           "range": [
             {
               "range_label": "Verkeerssnelheidsmetingkenmerktype",
-              "range_uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerktype"
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Verkeerssnelheidsmetingkenmerktype",
-              "range_puri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerktype",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
               "range_label": {
                 "nl": "Verkeerssnelheidsmetingkenmerktype"
               }
@@ -243,7 +243,7 @@
           "codelist_uri": ""
         },
         {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.geobserveerdKenmerk",
           "name": "geobserveerdkenmerk",
           "sort": "geobserveerdKenmerk",
           "label": {
@@ -301,7 +301,7 @@
       ],
       "properties": [
         {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk.kenmerktype",
           "name": "kenmerktype",
           "sort": "kenmerktype",
           "label": {
@@ -320,13 +320,13 @@
           "range": [
             {
               "range_label": "Verkeerstellingkenmerktype",
-              "range_uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerktype"
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Verkeerstellingkenmerktype",
-              "range_puri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerktype",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
               "range_label": {
                 "nl": "Verkeerstellingkenmerktype"
               }
@@ -771,43 +771,6 @@
       ],
       "properties": [
         {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd",
-          "name": "fenomeentijd",
-          "sort": "fenomeenTijd",
-          "label": {
-            "nl": "fenomeenTijd"
-          },
-          "description": {
-            "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
-          },
-          "usage": {
-            "nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn."
-          },
-          "domain": [
-            {
-              "EA-Name": "Verkeersmeting",
-              "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "ProperInterval",
-              "range_uri": "http://fixme.com#ProperInterval"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://fixme.com#ProperInterval",
-              "range_puri": "http://fixme.com#ProperInterval",
-              "range_label": {
-                "nl": "ProperInterval"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
           "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#geobserveerdObject",
           "name": "geobserveerdobject",
           "sort": "geobserveerdObject",
@@ -836,6 +799,43 @@
               "range_puri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeetpunt",
               "range_label": {
                 "nl": "Verkeersmeetpunt"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#fenomeenTijd",
+          "name": "fenomeentijd",
+          "sort": "fenomeenTijd",
+          "label": {
+            "nl": "fenomeenTijd"
+          },
+          "description": {
+            "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+          },
+          "usage": {
+            "nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn."
+          },
+          "domain": [
+            {
+              "EA-Name": "Verkeersmeting",
+              "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "TemporeleEntiteit",
+              "range_uri": "http://fixme.com#TemporeleEntiteit"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#TemporeleEntiteit",
+              "range_puri": "http://fixme.com#TemporeleEntiteit",
+              "range_label": {
+                "nl": "TemporeleEntiteit"
               }
             }
           ],
@@ -1202,7 +1202,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": ""
         },
         {
@@ -1272,7 +1272,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": ""
         }
       ]
@@ -1505,7 +1505,7 @@
       ]
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
+      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk.kenmerktype",
       "name": {
         "nl": "kenmerktype",
         "undefined": "kenmerktype"
@@ -1520,22 +1520,7 @@
       "parents": []
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
-      "name": {
-        "nl": "kenmerktype",
-        "undefined": "kenmerktype"
-      },
-      "description": {},
-      "domain": [
-        null
-      ],
-      "range": [
-        null
-      ],
-      "parents": []
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk",
+      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.geobserveerdKenmerk",
       "name": {
         "nl": "geobserveerdKenmerk",
         "undefined": "geobserveerdkenmerk"
@@ -1552,7 +1537,22 @@
       ]
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk",
+      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk.kenmerktype",
+      "name": {
+        "nl": "kenmerktype",
+        "undefined": "kenmerktype"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk",
       "name": {
         "nl": "geobserveerdKenmerk",
         "undefined": "geobserveerdkenmerk"
@@ -1566,23 +1566,6 @@
       ],
       "parents": [
         "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk"
-      ]
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd",
-      "name": {
-        "nl": "fenomeenTijd",
-        "undefined": "fenomeentijd"
-      },
-      "description": {},
-      "domain": [
-        null
-      ],
-      "range": [
-        null
-      ],
-      "parents": [
-        "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime"
       ]
     }
   ],
@@ -1612,6 +1595,22 @@
         "nl": "Afstand tussen twee punten."
       },
       "usage": {},
+      "parents": [],
+      "properties": []
+    },
+    {
+      "uri": "http://fixme.com#TemporeleEntiteit",
+      "name": "Temporeleentiteit",
+      "label": {
+        "nl": "TemporeleEntiteit"
+      },
+      "sort": "TemporeleEntiteit",
+      "description": {
+        "nl": "TODO"
+      },
+      "usage": {
+        "nl": "TODO"
+      },
       "parents": [],
       "properties": []
     },
