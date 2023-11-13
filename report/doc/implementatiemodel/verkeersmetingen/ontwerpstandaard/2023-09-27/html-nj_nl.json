@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/aab77646d3aaf1ebafde11e767c46c30442ccec4",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/aab77646d3aaf1ebafde11e767c46c30442ccec4/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/464d958e6bd65932e5a7a523067f0d54a90ed632",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/464d958e6bd65932e5a7a523067f0d54a90ed632/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/",
     "usesVocs": [],
@@ -37,7 +37,7 @@
           "label": "Verkeersmeting",
           "name": "Verkeersmeting",
           "package": "OSLO-Verkeersmetingen",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeting",
+          "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting",
           "scoped_uri": "#Verkeersmeting"
         },
         {
@@ -137,7 +137,7 @@
           "label": "Verkeerskenmerk",
           "name": "Verkeerskenmerk",
           "package": "OSLO-Verkeersmetingen",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerskenmerk",
+          "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk",
           "scoped_uri": "#Verkeerskenmerk"
         }
       ],
@@ -195,7 +195,7 @@
           "label": "Verkeersmeting",
           "name": "Verkeersmeting",
           "package": "OSLO-Verkeersmetingen",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeting",
+          "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting",
           "scoped_uri": "#Verkeersmeting"
         },
         {
@@ -207,41 +207,6 @@
         }
       ],
       "properties": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk",
-          "name": "geobserveerdkenmerk",
-          "sort": "geobserveerdKenmerk",
-          "label": {
-            "nl": "geobserveerdKenmerk"
-          },
-          "description": {
-            "nl": "Object dat door de Verkeerstelling wordt geobserveerd.\t"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Verkeerstelling",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Verkeerstellingkenmerk",
-              "range_uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Verkeerstellingkenmerk",
-              "range_puri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk",
-              "range_label": {
-                "nl": "Verkeerstellingkenmerk"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat",
           "name": "tellingresultaat",
@@ -276,6 +241,41 @@
           ],
           "cardinality": "1",
           "codelist_uri": ""
+        },
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk",
+          "name": "geobserveerdkenmerk",
+          "sort": "geobserveerdKenmerk",
+          "label": {
+            "nl": "geobserveerdKenmerk"
+          },
+          "description": {
+            "nl": "Object dat door de Verkeerstelling wordt geobserveerd.\t"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Verkeerstelling",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Verkeerstellingkenmerk",
+              "range_uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Verkeerstellingkenmerk",
+              "range_puri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk",
+              "range_label": {
+                "nl": "Verkeerstellingkenmerk"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
         }
       ]
     },
@@ -295,7 +295,7 @@
           "label": "Verkeerskenmerk",
           "name": "Verkeerskenmerk",
           "package": "OSLO-Verkeersmetingen",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerskenmerk",
+          "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk",
           "scoped_uri": "#Verkeerskenmerk"
         }
       ],
@@ -482,6 +482,452 @@
       "properties": []
     },
     {
+      "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersbemonsteringsobject",
+      "name": "Verkeersbemonsteringsobject",
+      "label": {
+        "nl": "Verkeersbemonsteringsobject"
+      },
+      "sort": "Verkeersbemonsteringsobject",
+      "description": {
+        "nl": "Object dat representatief is voor het object waarvan men het Verkeerskenmerk meet."
+      },
+      "usage": {
+        "nl": "Van belang als men dit object niet rechtstreeks kan observeren. Bvb om de snelheid ve Voertuig te bepalen kan men moeilijk dat Voertuig gaan volgen, in plaats daarvan zet men een meetpunt op langs de weg om te zien hoe snel passerende Voertuigen rijden. Gelijkaardig voor bvb verkeersintensiteit: men telt in een meetpunt langs de weg doorkomsten van Voertuigen en gaat ervan uit dat dit cijfer representatief is voor  het Wegsegment (deel van de weg tussen twee opeenvolgende kruispunten). OPGELET: Deze klasse is abstract, ze mag niet geinstantieerd worden. Gebruik in de plaats de subklassen Verkeersmeetpunt of Verkeersmeettraject"
+      },
+      "parents": [
+        {
+          "label": "Verkeersobject",
+          "name": "Verkeersobject",
+          "package": "OSLO-Verkeersmetingen",
+          "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersobject",
+          "scoped_uri": "#Verkeersobject"
+        },
+        {
+          "label": "Bemonsteringsobject",
+          "name": "Bemonsteringsobject",
+          "package": "ISO",
+          "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature",
+          "scoped_uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#bemonsterdObject",
+          "name": "bemonsterdobject",
+          "sort": "bemonsterdObject",
+          "label": {
+            "nl": "bemonsterdObject"
+          },
+          "description": {
+            "nl": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
+          },
+          "usage": {
+            "nl": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt."
+          },
+          "domain": [
+            {
+              "EA-Name": "Verkeersbemonsteringsobject",
+              "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersbemonsteringsobject"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Verkeersdomeinobject",
+              "range_uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersdomeinobject"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Verkeersdomeinobject",
+              "range_puri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersdomeinobject",
+              "range_label": {
+                "nl": "Verkeersdomeinobject"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersdomeinobject",
+      "name": "Verkeersdomeinobject",
+      "label": {
+        "nl": "Verkeersdomeinobject"
+      },
+      "sort": "Verkeersdomeinobject",
+      "description": {
+        "nl": "Object uit het verkeersdomein waarvan men een Verkeerskenmerk meet."
+      },
+      "usage": {
+        "nl": "Hieronder verstaan we een real-world object uit het verkeer, ttz een Voertuig of Verkeersdeelnemer of een Wegsegment of gelijkaardig waarover verkeer plaatsvindt. Vallen hier niet onder: Verkeersbemonsteringsobjecten zoals Verkeersmeetpunten of Verkeersmeettrajecten, dat zijn de objecten die het Verkeersdomein bemonsteren. OPGELET: Deze klasse is abstract, ze mag maw niet geinstantieerd worden. Gebruik in de plaats subklassen zoal Wegsegment, Rijstrook, Voertuig etc."
+      },
+      "parents": [
+        {
+          "label": "Verkeersobject",
+          "name": "Verkeersobject",
+          "package": "OSLO-Verkeersmetingen",
+          "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersobject",
+          "scoped_uri": "#Verkeersobject"
+        },
+        {
+          "label": "Domeinobject",
+          "name": "Domeinobject",
+          "package": "ISO",
+          "uri": "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature",
+          "scoped_uri": "#Domeinobject"
+        }
+      ],
+      "properties": []
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk",
+      "name": "Verkeerskenmerk",
+      "label": {
+        "nl": "Verkeerskenmerk"
+      },
+      "sort": "Verkeerskenmerk",
+      "description": {
+        "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
+      },
+      "usage": {
+        "nl": "Bvb de gemiddelde snelheid van auto's langs een Meetpunt of de verkeersIntensiteit van fietsen op een Wegsegment bvb uitgedrukt in aantal voertuigen of de snelheid van een individueel Voertuig etc."
+      },
+      "parents": [
+        {
+          "label": "Kenmerktype",
+          "name": "Kenmerktype",
+          "package": "ISO",
+          "uri": "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType",
+          "scoped_uri": "#Kenmerktype"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#voertuigType",
+          "name": "voertuigtype",
+          "sort": "voertuigType",
+          "label": {
+            "nl": "voertuigType"
+          },
+          "description": {
+            "nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
+          },
+          "usage": {
+            "nl": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc."
+          },
+          "domain": [
+            {
+              "EA-Name": "Verkeerskenmerk",
+              "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Voertuigtype",
+              "range_uri": "https://data.vlaanderen.be/ns/transportnetwerk#Voertuigtype"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Voertuigtype",
+              "range_puri": "https://data.vlaanderen.be/ns/transportnetwerk#Voertuigtype",
+              "range_label": {
+                "nl": "Voertuigtype"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeetpunt",
+      "name": "Verkeersmeetpunt",
+      "label": {
+        "nl": "Verkeersmeetpunt"
+      },
+      "sort": "Verkeersmeetpunt",
+      "description": {
+        "nl": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet."
+      },
+      "usage": {
+        "nl": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft."
+      },
+      "parents": [
+        {
+          "label": "Verkeersbemonsteringsobject",
+          "name": "Verkeersbemonsteringsobject",
+          "package": "OSLO-Verkeersmetingen",
+          "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersbemonsteringsobject",
+          "scoped_uri": "#Verkeersbemonsteringsobject"
+        },
+        {
+          "label": "Bemonsteringspunt",
+          "name": "Bemonsteringspunt",
+          "package": "OSLO-ObservatiesEnMetingen",
+          "uri": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint",
+          "scoped_uri": "#Bemonsteringspunt"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#verkeersmeetpuntnetwerkreferentie",
+          "name": "verkeersmeetpuntnetwerkreferentie",
+          "sort": "verkeersmeetpuntnetwerkreferentie",
+          "label": {
+            "nl": "verkeersmeetpuntnetwerkreferentie"
+          },
+          "description": {
+            "nl": "TODO"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Verkeersmeetpunt",
+              "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeetpunt"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Puntreferentie",
+              "range_uri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Puntreferentie",
+              "range_puri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie",
+              "range_label": {
+                "nl": "Puntreferentie"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape",
+          "name": "geometrie",
+          "sort": "geometrie",
+          "label": {
+            "nl": "geometrie"
+          },
+          "description": {
+            "nl": "Vorm- en positiekenmerken van het meetpunt."
+          },
+          "usage": {
+            "nl": "Datatype vd geometrie is Punt."
+          },
+          "domain": [
+            {
+              "EA-Name": "Verkeersmeetpunt",
+              "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeetpunt"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Punt",
+              "range_uri": "http://www.opengis.net/ont/sf#Point"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Punt",
+              "range_puri": "http://www.opengis.net/ont/sf#Point",
+              "range_label": {
+                "nl": "Punt"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting",
+      "name": "Verkeersmeting",
+      "label": {
+        "nl": "Verkeersmeting"
+      },
+      "sort": "Verkeersmeting",
+      "description": {
+        "nl": "Het vaststellen van de waarde van een bepaald kenmerk van het verkeer op een bepaald tijdstip of tussen twee tijdstippen."
+      },
+      "usage": {
+        "nl": "Verkeer wordt gedefinieerd als de verplaatsing van objecten zoals personen, vracht, data etc over media zoals land, water, lucht, kabels. In de context van dit applicatieprofiel bedoelen we met verkeer het wegverkeer. Verkeer kan betrekking hebben op objecten die zichzelf verplaatsen (al dan niet met een vervoermiddel) of objecten die vervoerd worden, maar ook op objecten waarover verkeer plaatsvindt. De meting kan het vaststellen van de waarde van een kenmerk van een individueel Voertuig of Verkeersdeelnemer tijdens zijn verplaatsing zijn (bvb zijn snelheid of nummerplaat) of van een kenmerk van de infrastructuur zoals een Wegsegment of een Rijstrook waarover het verkeer zich beweegt (bv de verkeersintensiteit). Verkeersmetingen  zijn Observaties, maw op de waarde zit een zekere foutmarge door de gebruikte meettechniek.\n"
+      },
+      "parents": [
+        {
+          "label": "Observatie",
+          "name": "Observatie",
+          "package": "ISO",
+          "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation",
+          "scoped_uri": "#Observatie"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd",
+          "name": "fenomeentijd",
+          "sort": "fenomeenTijd",
+          "label": {
+            "nl": "fenomeenTijd"
+          },
+          "description": {
+            "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+          },
+          "usage": {
+            "nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn."
+          },
+          "domain": [
+            {
+              "EA-Name": "Verkeersmeting",
+              "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "ProperInterval",
+              "range_uri": "http://fixme.com#ProperInterval"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://fixme.com#ProperInterval",
+              "range_puri": "http://fixme.com#ProperInterval",
+              "range_label": {
+                "nl": "ProperInterval"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#geobserveerdObject",
+          "name": "geobserveerdobject",
+          "sort": "geobserveerdObject",
+          "label": {
+            "nl": "geobserveerdObject"
+          },
+          "description": {
+            "nl": "TODO"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Verkeersmeting",
+              "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Verkeersmeetpunt",
+              "range_uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeetpunt"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Verkeersmeetpunt",
+              "range_puri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeetpunt",
+              "range_label": {
+                "nl": "Verkeersmeetpunt"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/ns/sosa/madeBySensor",
+          "name": "uitgevoerdmet",
+          "sort": "uitgevoerdMet",
+          "label": {
+            "nl": "uitgevoerdMet"
+          },
+          "description": {
+            "nl": "De Sensor waarmee de Verkeersmeting werd uitgevoerd."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Verkeersmeting",
+              "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Sensor",
+              "range_uri": "https://www.w3.org/ns/sosa/Sensor"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Sensor",
+              "range_puri": "https://www.w3.org/ns/sosa/Sensor",
+              "range_label": {
+                "nl": "Sensor"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersobject",
+      "name": "Verkeersobject",
+      "label": {
+        "nl": "Verkeersobject"
+      },
+      "sort": "Verkeersobject",
+      "description": {
+        "nl": "Object waarop of waarlangs zich verkeer voordoet of dat deel uitmaakt vh verkeer."
+      },
+      "usage": {
+        "nl": "OPGELET: Deze klasse is abstract, ze moet gespecialiseerd worden als Verkeersdomeinobject of als Verkeersbemonsteringsobject. Als Verkeersdomeinobject als de meting direct betrekking heeft op het object dat men wil observeren (bvb een Wegsegment of een Voertuig etc) of als Verkeersbemonsteringsobject als de meting onrechtstreeks gebeurt (bvb via een Verkeersmeetpunt gelegen langs een Wegsegment)."
+      },
+      "parents": [
+        {
+          "label": "Object",
+          "name": "Object",
+          "package": "ISO",
+          "uri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
+          "scoped_uri": "#Object"
+        }
+      ],
+      "properties": []
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Wegobject",
+      "name": "Wegobject",
+      "label": {
+        "nl": "Wegobject"
+      },
+      "sort": "Wegobject",
+      "description": {
+        "nl": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt."
+      },
+      "usage": {
+        "nl": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken."
+      },
+      "parents": [
+        {
+          "label": "Verkeersdomeinobject",
+          "name": "Verkeersdomeinobject",
+          "package": "OSLO-Verkeersmetingen",
+          "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersdomeinobject",
+          "scoped_uri": "#Verkeersdomeinobject"
+        }
+      ],
+      "properties": []
+    },
+    {
       "uri": "https://data.vlaanderen.be/ns/netwerk#Netwerkelement",
       "name": "Netwerkelement",
       "label": {
@@ -541,7 +987,7 @@
           "label": "Verkeersdomeinobject",
           "name": "Verkeersdomeinobject",
           "package": "OSLO-Verkeersmetingen",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersdomeinobject",
+          "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersdomeinobject",
           "scoped_uri": "#Verkeersdomeinobject"
         },
         {
@@ -555,13 +1001,13 @@
       "properties": [
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement",
-          "name": "verwijzingNaarHetNetwerkelementWegsegmentWaarvoorDeNetwerkeigenschap(bijvoorbeeldRijrichting)Geldt.",
-          "sort": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt.",
+          "name": "netwerkreferentieelement",
+          "sort": "netwerkreferentieelement",
           "label": {
-            "nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."
+            "nl": "netwerkreferentieelement"
           },
           "description": {
-            "nl": "Referentie naar het Netwerkelement Wegsegment waarvoor een "
+            "nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."
           },
           "usage": {},
           "domain": [
@@ -628,30 +1074,6 @@
       ]
     },
     {
-      "uri": "https://data.vlaanderen.be/ns/weg#Wegobject",
-      "name": "Wegobject",
-      "label": {
-        "nl": "Wegobject"
-      },
-      "sort": "Wegobject",
-      "description": {
-        "nl": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt."
-      },
-      "usage": {
-        "nl": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken."
-      },
-      "parents": [
-        {
-          "label": "Verkeersdomeinobject",
-          "name": "Verkeersdomeinobject",
-          "package": "OSLO-Verkeersmetingen",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersdomeinobject",
-          "scoped_uri": "#Verkeersdomeinobject"
-        }
-      ],
-      "properties": []
-    },
-    {
       "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment",
       "name": "Wegsegment",
       "label": {
@@ -667,7 +1089,7 @@
           "label": "Wegobject",
           "name": "Wegobject",
           "package": "INSPIRE-Weg",
-          "uri": "https://data.vlaanderen.be/ns/weg#Wegobject",
+          "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Wegobject",
           "scoped_uri": "#Wegobject"
         },
         {
@@ -717,428 +1139,6 @@
       ]
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersbemonsteringsobject",
-      "name": "Verkeersbemonsteringsobject",
-      "label": {
-        "nl": "Verkeersbemonsteringsobject"
-      },
-      "sort": "Verkeersbemonsteringsobject",
-      "description": {
-        "nl": "Object dat representatief is voor het object waarvan men het Verkeerskenmerk meet."
-      },
-      "usage": {
-        "nl": "Van belang als men dit object niet rechtstreeks kan observeren. Bvb om de snelheid ve Voertuig te bepalen kan men moeilijk dat Voertuig gaan volgen, in plaats daarvan zet men een meetpunt op langs de weg om te zien hoe snel passerende Voertuigen rijden. Gelijkaardig voor bvb verkeersintensiteit: men telt in een meetpunt langs de weg doorkomsten van Voertuigen en gaat ervan uit dat dit cijfer representatief is voor  het Wegsegment (deel van de weg tussen twee opeenvolgende kruispunten). OPGELET: Deze klasse is abstract, ze mag niet geinstantieerd worden. Gebruik in de plaats de subklassen Verkeersmeetpunt of Verkeersmeettraject"
-      },
-      "parents": [
-        {
-          "label": "Verkeersobject",
-          "name": "Verkeersobject",
-          "package": "OSLO-Verkeersmetingen",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersobject",
-          "scoped_uri": "#Verkeersobject"
-        },
-        {
-          "label": "Bemonsteringsobject",
-          "name": "Bemonsteringsobject",
-          "package": "ISO",
-          "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature",
-          "scoped_uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature"
-        }
-      ],
-      "properties": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#bemonsterdObject",
-          "name": "bemonsterdobject",
-          "sort": "bemonsterdObject",
-          "label": {
-            "nl": "bemonsterdObject"
-          },
-          "description": {
-            "nl": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
-          },
-          "usage": {
-            "nl": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt."
-          },
-          "domain": [
-            {
-              "EA-Name": "Verkeersbemonsteringsobject",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersbemonsteringsobject"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Verkeersdomeinobject",
-              "range_uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersdomeinobject"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Verkeersdomeinobject",
-              "range_puri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersdomeinobject",
-              "range_label": {
-                "nl": "Verkeersdomeinobject"
-              }
-            }
-          ],
-          "cardinality": "1..*",
-          "codelist_uri": ""
-        }
-      ]
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersdomeinobject",
-      "name": "Verkeersdomeinobject",
-      "label": {
-        "nl": "Verkeersdomeinobject"
-      },
-      "sort": "Verkeersdomeinobject",
-      "description": {
-        "nl": "Object uit het verkeersdomein waarvan men een Verkeerskenmerk meet."
-      },
-      "usage": {
-        "nl": "Hieronder verstaan we een real-world object uit het verkeer, ttz een Voertuig of Verkeersdeelnemer of een Wegsegment of gelijkaardig waarover verkeer plaatsvindt. Vallen hier niet onder: Verkeersbemonsteringsobjecten zoals Verkeersmeetpunten of Verkeersmeettrajecten, dat zijn de objecten die het Verkeersdomein bemonsteren. OPGELET: Deze klasse is abstract, ze mag maw niet geinstantieerd worden. Gebruik in de plaats subklassen zoal Wegsegment, Rijstrook, Voertuig etc."
-      },
-      "parents": [
-        {
-          "label": "Verkeersobject",
-          "name": "Verkeersobject",
-          "package": "OSLO-Verkeersmetingen",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersobject",
-          "scoped_uri": "#Verkeersobject"
-        },
-        {
-          "label": "Domeinobject",
-          "name": "Domeinobject",
-          "package": "ISO",
-          "uri": "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature",
-          "scoped_uri": "#Domeinobject"
-        }
-      ],
-      "properties": []
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerskenmerk",
-      "name": "Verkeerskenmerk",
-      "label": {
-        "nl": "Verkeerskenmerk"
-      },
-      "sort": "Verkeerskenmerk",
-      "description": {
-        "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
-      },
-      "usage": {
-        "nl": "Bvb de gemiddelde snelheid van auto's langs een Meetpunt of de verkeersIntensiteit van fietsen op een Wegsegment bvb uitgedrukt in aantal voertuigen of de snelheid van een individueel Voertuig etc."
-      },
-      "parents": [
-        {
-          "label": "Kenmerktype",
-          "name": "Kenmerktype",
-          "package": "ISO",
-          "uri": "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType",
-          "scoped_uri": "#Kenmerktype"
-        }
-      ],
-      "properties": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#voertuigType",
-          "name": "voertuigtype",
-          "sort": "voertuigType",
-          "label": {
-            "nl": "voertuigType"
-          },
-          "description": {
-            "nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
-          },
-          "usage": {
-            "nl": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc."
-          },
-          "domain": [
-            {
-              "EA-Name": "Verkeerskenmerk",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerskenmerk"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Voertuigtype",
-              "range_uri": "https://data.vlaanderen.be/ns/transportnetwerk#Voertuigtype"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Voertuigtype",
-              "range_puri": "https://data.vlaanderen.be/ns/transportnetwerk#Voertuigtype",
-              "range_label": {
-                "nl": "Voertuigtype"
-              }
-            }
-          ],
-          "cardinality": "1..*",
-          "codelist_uri": ""
-        }
-      ]
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeetpunt",
-      "name": "Verkeersmeetpunt",
-      "label": {
-        "nl": "Verkeersmeetpunt"
-      },
-      "sort": "Verkeersmeetpunt",
-      "description": {
-        "nl": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet."
-      },
-      "usage": {
-        "nl": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft."
-      },
-      "parents": [
-        {
-          "label": "Verkeersbemonsteringsobject",
-          "name": "Verkeersbemonsteringsobject",
-          "package": "OSLO-Verkeersmetingen",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersbemonsteringsobject",
-          "scoped_uri": "#Verkeersbemonsteringsobject"
-        },
-        {
-          "label": "Bemonsteringspunt",
-          "name": "Bemonsteringspunt",
-          "package": "OSLO-ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint",
-          "scoped_uri": "#Bemonsteringspunt"
-        }
-      ],
-      "properties": [
-        {
-          "uri": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape",
-          "name": "geometrie",
-          "sort": "geometrie",
-          "label": {
-            "nl": "geometrie"
-          },
-          "description": {
-            "nl": "Vorm- en positiekenmerken van het meetpunt."
-          },
-          "usage": {
-            "nl": "Datatype vd geometrie is Punt."
-          },
-          "domain": [
-            {
-              "EA-Name": "Verkeersmeetpunt",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeetpunt"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Punt",
-              "range_uri": "http://www.opengis.net/ont/sf#Point"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Punt",
-              "range_puri": "http://www.opengis.net/ont/sf#Point",
-              "range_label": {
-                "nl": "Punt"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#verkeersmeetpuntnetwerkreferentie",
-          "name": "verkeersmeetpuntnetwerkreferentie",
-          "sort": "verkeersmeetpuntnetwerkreferentie",
-          "label": {
-            "nl": "verkeersmeetpuntnetwerkreferentie"
-          },
-          "description": {
-            "nl": "TODO"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Verkeersmeetpunt",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeetpunt"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Puntreferentie",
-              "range_uri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Puntreferentie",
-              "range_puri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie",
-              "range_label": {
-                "nl": "Puntreferentie"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        }
-      ]
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeting",
-      "name": "Verkeersmeting",
-      "label": {
-        "nl": "Verkeersmeting"
-      },
-      "sort": "Verkeersmeting",
-      "description": {
-        "nl": "Het vaststellen van de waarde van een bepaald kenmerk van het verkeer op een bepaald tijdstip of tussen twee tijdstippen."
-      },
-      "usage": {
-        "nl": "Verkeer wordt gedefinieerd als de verplaatsing van objecten zoals personen, vracht, data etc over media zoals land, water, lucht, kabels. In de context van dit applicatieprofiel bedoelen we met verkeer het wegverkeer. Verkeer kan betrekking hebben op objecten die zichzelf verplaatsen (al dan niet met een vervoermiddel) of objecten die vervoerd worden, maar ook op objecten waarover verkeer plaatsvindt. De meting kan het vaststellen van de waarde van een kenmerk van een individueel Voertuig of Verkeersdeelnemer tijdens zijn verplaatsing zijn (bvb zijn snelheid of nummerplaat) of van een kenmerk van de infrastructuur zoals een Wegsegment of een Rijstrook waarover het verkeer zich beweegt (bv de verkeersintensiteit). Verkeersmetingen  zijn Observaties, maw op de waarde zit een zekere foutmarge door de gebruikte meettechniek.\n"
-      },
-      "parents": [
-        {
-          "label": "Observatie",
-          "name": "Observatie",
-          "package": "ISO",
-          "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation",
-          "scoped_uri": "#Observatie"
-        }
-      ],
-      "properties": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd",
-          "name": "fenomeentijd",
-          "sort": "fenomeenTijd",
-          "label": {
-            "nl": "fenomeenTijd"
-          },
-          "description": {
-            "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
-          },
-          "usage": {
-            "nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn."
-          },
-          "domain": [
-            {
-              "EA-Name": "Verkeersmeting",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeting"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "ProperInterval",
-              "range_uri": "http://fixme.com#ProperInterval"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://fixme.com#ProperInterval",
-              "range_puri": "http://fixme.com#ProperInterval",
-              "range_label": {
-                "nl": "ProperInterval"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://www.w3.org/ns/sosa/madeBySensor",
-          "name": "uitgevoerdmet",
-          "sort": "uitgevoerdMet",
-          "label": {
-            "nl": "uitgevoerdMet"
-          },
-          "description": {
-            "nl": "De Sensor waarmee de Verkeersmeting werd uitgevoerd."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Verkeersmeting",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeting"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Sensor",
-              "range_uri": "https://www.w3.org/ns/sosa/Sensor"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Sensor",
-              "range_puri": "https://www.w3.org/ns/sosa/Sensor",
-              "range_label": {
-                "nl": "Sensor"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdObject",
-          "name": "geobserveerdobject",
-          "sort": "geobserveerdObject",
-          "label": {
-            "nl": "geobserveerdObject"
-          },
-          "description": {
-            "nl": "TODO"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Verkeersmeting",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeting"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Verkeersmeetpunt",
-              "range_uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeetpunt"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Verkeersmeetpunt",
-              "range_puri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeetpunt",
-              "range_label": {
-                "nl": "Verkeersmeetpunt"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        }
-      ]
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersobject",
-      "name": "Verkeersobject",
-      "label": {
-        "nl": "Verkeersobject"
-      },
-      "sort": "Verkeersobject",
-      "description": {
-        "nl": "Object waarop of waarlangs zich verkeer voordoet of dat deel uitmaakt vh verkeer."
-      },
-      "usage": {
-        "nl": "OPGELET: Deze klasse is abstract, ze moet gespecialiseerd worden als Verkeersdomeinobject of als Verkeersbemonsteringsobject. Als Verkeersdomeinobject als de meting direct betrekking heeft op het object dat men wil observeren (bvb een Wegsegment of een Voertuig etc) of als Verkeersbemonsteringsobject als de meting onrechtstreeks gebeurt (bvb via een Verkeersmeetpunt gelegen langs een Wegsegment)."
-      },
-      "parents": [
-        {
-          "label": "Object",
-          "name": "Object",
-          "package": "ISO",
-          "uri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
-          "scoped_uri": "#Object"
-        }
-      ],
-      "properties": []
-    },
-    {
       "uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure",
       "name": "Observatieprocedure",
       "label": {
@@ -1161,41 +1161,6 @@
         }
       ],
       "properties": [
-        {
-          "uri": "http://purl.org/cd/terms/type",
-          "name": "type",
-          "sort": "type",
-          "label": {
-            "nl": "type"
-          },
-          "description": {
-            "nl": "Aard van de Observatieprocedure."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Observatieprocedure",
-              "uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Observatieproceduretype",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Observatieproceduretype",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "nl": "Observatieproceduretype"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": ""
-        },
         {
           "uri": "http://www.w3.org/ns/ssn/implementedBy",
           "name": "geïmplementeerdmet",
@@ -1225,6 +1190,41 @@
               "range_puri": "https://www.w3.org/ns/sosa/Sensor",
               "range_label": {
                 "nl": "Sensor"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/cd/terms/type",
+          "name": "type",
+          "sort": "type",
+          "label": {
+            "nl": "type"
+          },
+          "description": {
+            "nl": "Aard van de Observatieprocedure."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Observatieprocedure",
+              "uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Observatieproceduretype",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Observatieproceduretype",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Observatieproceduretype"
               }
             }
           ],
@@ -1273,42 +1273,7 @@
       ],
       "properties": [
         {
-          "uri": "http://www.w3.org/ns/ssn/implements",
-          "name": "implementeert",
-          "sort": "implementeert",
-          "label": {
-            "nl": "implementeert"
-          },
-          "description": {
-            "nl": "Observatieprocedure die door de Sensor wordt toegepast."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Sensor",
-              "uri": "https://www.w3.org/ns/sosa/Sensor"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Observatieprocedure",
-              "range_uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Observatieprocedure",
-              "range_puri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure",
-              "range_label": {
-                "nl": "Observatieprocedure"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#ligging",
+          "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#ligging",
           "name": "ligging",
           "sort": "ligging",
           "label": {
@@ -1343,11 +1308,127 @@
           ],
           "cardinality": "0..*",
           "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/ns/ssn/implements",
+          "name": "implementeert",
+          "sort": "implementeert",
+          "label": {
+            "nl": "implementeert"
+          },
+          "description": {
+            "nl": "Observatieprocedure die door de Sensor wordt toegepast."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Sensor",
+              "uri": "https://www.w3.org/ns/sosa/Sensor"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Observatieprocedure",
+              "range_uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Observatieprocedure",
+              "range_puri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure",
+              "range_label": {
+                "nl": "Observatieprocedure"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
         }
       ]
     }
   ],
   "properties": [
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement",
+      "name": {
+        "nl": "netwerkreferentieelement",
+        "undefined": "netwerkreferentieelement"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": [
+        "https://data.vlaanderen.be/ns/netwerk/#netwerkreferentie"
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
+      "name": {
+        "nl": "kenmerktype",
+        "undefined": "kenmerktype"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
+      "name": {
+        "nl": "kenmerktype",
+        "undefined": "kenmerktype"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk",
+      "name": {
+        "nl": "geobserveerdKenmerk",
+        "undefined": "geobserveerdkenmerk"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": [
+        "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk"
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk",
+      "name": {
+        "nl": "geobserveerdKenmerk",
+        "undefined": "geobserveerdkenmerk"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": [
+        "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk"
+      ]
+    },
     {
       "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd",
       "name": {
@@ -1364,100 +1445,19 @@
       "parents": [
         "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime"
       ]
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk",
-      "name": {
-        "nl": "geobserveerdKenmerk",
-        "undefined": "geobserveerdkenmerk"
-      },
-      "description": {},
-      "domain": [
-        null
-      ],
-      "range": [
-        null
-      ],
-      "parents": [
-        "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk"
-      ]
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk",
-      "name": {
-        "nl": "geobserveerdKenmerk",
-        "undefined": "geobserveerdkenmerk"
-      },
-      "description": {},
-      "domain": [
-        null
-      ],
-      "range": [
-        null
-      ],
-      "parents": [
-        "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk"
-      ]
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
-      "name": {
-        "nl": "kenmerktype",
-        "undefined": "kenmerktype"
-      },
-      "description": {},
-      "domain": [
-        null
-      ],
-      "range": [
-        null
-      ],
-      "parents": []
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
-      "name": {
-        "nl": "kenmerktype",
-        "undefined": "kenmerktype"
-      },
-      "description": {},
-      "domain": [
-        null
-      ],
-      "range": [
-        null
-      ],
-      "parents": []
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement",
-      "name": {
-        "nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt.",
-        "undefined": "verwijzingNaarHetNetwerkelementWegsegmentWaarvoorDeNetwerkeigenschap(bijvoorbeeldRijrichting)Geldt."
-      },
-      "description": {},
-      "domain": [
-        null
-      ],
-      "range": [
-        null
-      ],
-      "parents": [
-        "https://data.vlaanderen.be/ns/netwerk/#netwerkreferentie"
-      ]
     }
   ],
   "contributors": [
     {
       "role": "E",
-      "first_name": "Thijs",
-      "last_name": "Geert",
+      "first_name": "Van Ackere",
+      "last_name": "Samuel",
       "affiliation": {}
     },
     {
       "role": "E",
-      "first_name": "Van Ackere",
-      "last_name": "Samuel",
+      "first_name": "Thijs",
+      "last_name": "Geert",
       "affiliation": {}
     }
   ],
@@ -1538,17 +1538,17 @@
       "parents": [],
       "properties": [
         {
-          "uri": "http://www.opengis.net/ont/geosparql#asGML",
-          "name": "gml",
-          "sort": "GML",
+          "uri": "http://www.opengis.net/ont/geosparql#asWKT",
+          "name": "wkt",
+          "sort": "WKT",
           "label": {
-            "nl": "GML"
+            "nl": "WKT"
           },
           "description": {
-            "nl": "Geometrie uitgedrukt in gml-formaat."
+            "nl": "Geometrie uitgedrukt in wkt-formaat."
           },
           "usage": {
-            "nl": "Gebruik http://www.opengis.net/ont/geosparql#gmlLiteral als datatype."
+            "nl": "Gebruik http://www.opengis.net/ont/geosparql#wktLiteral als datatype."
           },
           "domain": [
             {
@@ -1575,17 +1575,17 @@
           "codelist_uri": ""
         },
         {
-          "uri": "http://www.opengis.net/ont/geosparql#asWKT",
-          "name": "wkt",
-          "sort": "WKT",
+          "uri": "http://www.opengis.net/ont/geosparql#asGML",
+          "name": "gml",
+          "sort": "GML",
           "label": {
-            "nl": "WKT"
+            "nl": "GML"
           },
           "description": {
-            "nl": "Geometrie uitgedrukt in wkt-formaat."
+            "nl": "Geometrie uitgedrukt in gml-formaat."
           },
           "usage": {
-            "nl": "Gebruik http://www.opengis.net/ont/geosparql#wktLiteral als datatype."
+            "nl": "Gebruik http://www.opengis.net/ont/geosparql#gmlLiteral als datatype."
           },
           "domain": [
             {
@@ -1653,14 +1653,14 @@
       ],
       "properties": [
         {
-          "uri": "https://data.vlaanderen.be/ns/weg#totPositie",
-          "name": "totpositie",
-          "sort": "totPositie",
+          "uri": "https://data.vlaanderen.be/ns/weg#vanPositie",
+          "name": "vanpositie",
+          "sort": "vanPositie",
           "label": {
-            "nl": "totPositie"
+            "nl": "vanPositie"
           },
           "description": {
-            "nl": "Afstand vanaf het begin van de Link of Linksequentie vanaf waar de Netwerkeigenschap geldt."
+            "nl": "Afstand vanaf het begin van de Link of Linksequentie tot waar de Netwerkeigenschap geldt."
           },
           "usage": {},
           "domain": [
@@ -1688,14 +1688,14 @@
           "codelist_uri": ""
         },
         {
-          "uri": "https://data.vlaanderen.be/ns/weg#vanPositie",
-          "name": "vanpositie",
-          "sort": "vanPositie",
+          "uri": "https://data.vlaanderen.be/ns/weg#totPositie",
+          "name": "totpositie",
+          "sort": "totPositie",
           "label": {
-            "nl": "vanPositie"
+            "nl": "totPositie"
           },
           "description": {
-            "nl": "Afstand vanaf het begin van de Link of Linksequentie tot waar de Netwerkeigenschap geldt."
+            "nl": "Afstand vanaf het begin van de Link of Linksequentie vanaf waar de Netwerkeigenschap geldt."
           },
           "usage": {},
           "domain": [

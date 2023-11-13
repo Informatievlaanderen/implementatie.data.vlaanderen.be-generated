@@ -7,7 +7,7 @@
 
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd> a owl:ObjectProperty;
   rdfs:comment "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."@nl;
-  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeting>;
+  rdfs:domain <https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen>;
   rdfs:range <http://fixme.com#ProperInterval>;
   rdfs:subPropertyOf <https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime> .
@@ -32,7 +32,7 @@
     <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerktype> .
 
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement> a owl:ObjectProperty;
-  rdfs:comment "Referentie naar het Netwerkelement Wegsegment waarvoor een "@nl;
+  rdfs:comment "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."@nl;
   rdfs:domain <https://data.vlaanderen.be/ns/weg#Rijrichting>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen>;
   rdfs:range <https://data.vlaanderen.be/ns/weg#Wegsegment>;
@@ -51,7 +51,7 @@
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting> a owl:Class;
   rdfs:comment "Het vaststellen van de snelheid van voertuigen op een bepaalde locatie op een bepaald tijdstip of gedurende een specifiek tijdsinterval."@nl;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen>;
-  rdfs:subClassOf <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeting>,
+  rdfs:subClassOf <https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting>,
     <http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement> .
 
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerktype> a owl:Class;
@@ -65,18 +65,18 @@
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk> a owl:Class;
   rdfs:comment "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."@nl;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen>;
-  rdfs:subClassOf <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerskenmerk> .
+  rdfs:subClassOf <https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk> .
 
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling> a owl:Class;
   rdfs:comment "Het vaststellen van het aantal voertuigen op een bepaalde locatie op een bepaald tijdstip of gedurende een specifiek tijdsinterval."@nl;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen>;
-  rdfs:subClassOf <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeting>,
+  rdfs:subClassOf <https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting>,
     <http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation> .
 
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk> a owl:Class;
   rdfs:comment "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."@nl;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen>;
-  rdfs:subClassOf <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerskenmerk> .
+  rdfs:subClassOf <https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk> .
 
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen> a owl:Ontology;
   rdfs:label "Verkeersmetingen-im-voc"@en,
@@ -92,10 +92,10 @@
   rdfs:seeAlso <http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement.result>;
   <http://www.w3.org/2001/02pd/rec54#editor> [
     a foaf:Person;
-    foaf:firstName "Thijs";
-    foaf:lastName "Geert"
-  ], [
-    a foaf:Person;
     foaf:firstName "Van Ackere";
     foaf:lastName "Samuel"
+  ], [
+    a foaf:Person;
+    foaf:firstName "Thijs";
+    foaf:lastName "Geert"
   ] .
