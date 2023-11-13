@@ -1723,10 +1723,146 @@
       "sh:targetClass": "https://data.vlaanderen.be/ns/weg#Rijrichting"
     },
     {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegknoopShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegknoopShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegknoop%3Ageometrie",
+          "sh:description": {
+            "nl": "Locatie van de Knoop."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "geometrie"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor geometrie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegknoopShape/35ea4794233fe7d78e3fa9762f8c5685fe9c0f51",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegknoop%3Ageometrie",
+          "sh:description": {
+            "nl": "Locatie van de Knoop."
+          },
+          "sh:name": {
+            "nl": "geometrie"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie",
+          "vl:message": {
+            "nl": "De verwachte waarde voor geometrie is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegknoopShape/722a1f18cabb107c684fe4ca857876ade00b0d01",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegknoop%3Ageometrie",
+          "sh:class": "http://www.opengis.net/ont/sf#Point",
+          "sh:description": {
+            "nl": "Locatie van de Knoop."
+          },
+          "sh:name": {
+            "nl": "geometrie"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie",
+          "vl:message": {
+            "nl": "De range van geometrie moet van het type <http://www.opengis.net/ont/sf#Point> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegknoopShape/d7e4e623022693159b355b9e717ac7ec1a50695c",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegknoop%3Ageometrie",
+          "sh:description": {
+            "nl": "Locatie van de Knoop."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "geometrie"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor geometrie"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/weg#Wegknoop"
+    },
+    {
       "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/839bd972460fccde6ab43143d2fb8bde4f639e80",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegsegment%3Abeginknoop",
+          "sh:description": {
+            "nl": "Knoop die het begin is van het Wegsegment."
+          },
+          "sh:name": {
+            "nl": "beginknoop"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk/#beginknoop",
+          "vl:message": {
+            "nl": "De verwachte waarde voor beginknoop is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/a24bcd62375e8bbc9f61d65bbad2fb9eef839f2a",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegsegment%3Abeginknoop",
+          "sh:class": "https://data.vlaanderen.be/ns/weg#Wegknoop",
+          "sh:description": {
+            "nl": "Knoop die het begin is van het Wegsegment."
+          },
+          "sh:name": {
+            "nl": "beginknoop"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk/#beginknoop",
+          "vl:message": {
+            "nl": "De range van beginknoop moet van het type <https://data.vlaanderen.be/ns/weg#Wegknoop> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/8143bff517a6b93c95666cdd29f9c4dc9fdfa0f4",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegsegment%3Aeindknoop",
+          "sh:description": {
+            "nl": "Knoop die het einde is van het Wegsegment."
+          },
+          "sh:name": {
+            "nl": "eindknoop"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#eindknoop",
+          "vl:message": {
+            "nl": "De verwachte waarde voor eindknoop is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/9d1036ba24aaab1b54d1b6f62b30d6ce49858c30",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegsegment%3Aeindknoop",
+          "sh:class": "https://data.vlaanderen.be/ns/weg#Wegknoop",
+          "sh:description": {
+            "nl": "Knoop die het einde is van het Wegsegment."
+          },
+          "sh:name": {
+            "nl": "eindknoop"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#eindknoop",
+          "vl:message": {
+            "nl": "De range van eindknoop moet van het type <https://data.vlaanderen.be/ns/weg#Wegknoop> zijn."
+          },
+          "vl:rule": ""
+        },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/0d6965f57149b3954a4d17f42403d565ac3e30d6",
           "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegsegment%3Ageometriemiddenlijn",

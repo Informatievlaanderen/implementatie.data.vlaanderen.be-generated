@@ -3859,6 +3859,90 @@
             "name": "Rijrichting"
         },
         {
+            "@id": "https://data.vlaanderen.be/ns/weg#Wegknoop",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "inpackage": "OTHER_PACKAGE",
+            "label-nl": {
+                "nl": "Wegknoop"
+            },
+            "label": {
+                "nl": "Wegknoop"
+            },
+            "definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "Wegknoop",
+                "EA-Guid": "{5E144E63-EF37-4a5f-8156-703E8B996ED9}",
+                "EA-Package": "INSPIRE-Weg",
+                "EA-Type": "CLASS",
+                "EA-Parents": "Wegobject",
+                "EA-Parents2": [
+                    {
+                        "name": "Wegobject",
+                        "label": "Wegobject",
+                        "package": "INSPIRE-Weg",
+                        "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Wegobject"
+                    },
+                    {
+                        "name": "Transportknoop",
+                        "label": "",
+                        "package": "INSPIRE-Transportnetwerk",
+                        "uri": "https://data.vlaanderen.be/ns/transportnetwerk#Transportknoop"
+                    }
+                ],
+                "parentclasses": "https://data.vlaanderen.be/ns/Verkeersmetingen#Wegobject, https://data.vlaanderen.be/ns/transportnetwerk#Transportknoop",
+                "label": {
+                    "nl": "Wegknoop"
+                },
+                "definition": "",
+                "usage": "",
+                "label-nl": {
+                    "nl": "Wegknoop"
+                },
+                "definition-nl": {
+                    "nl": "TODO"
+                },
+                "usageNote-nl": "",
+                "label-en": "",
+                "definition-en": "",
+                "usageNote-en": "",
+                "equivalent": "",
+                "subclass": "",
+                "subclass1": "",
+                "sameAs": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "Wegknoop",
+                        "note": "null"
+                    },
+                    {
+                        "key": "uri",
+                        "value": "https://data.vlaanderen.be/ns/weg#Wegknoop",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "Wegknoop",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "Significante positie in het Tansportnetwerk die steeds samenvalt met het begin of het einde van een Wegsegment.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-usageNote-nl",
+                        "value": "Typisch een kruispunt van wegen of het begin of einde van een weg.",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "name": "Wegknoop"
+        },
+        {
             "@id": "https://data.vlaanderen.be/ns/weg#Wegsegment",
             "@type": "http://www.w3.org/2002/07/owl#Class",
             "inpackage": "OTHER_PACKAGE",
@@ -4457,6 +4541,121 @@
             "maxCardinality": "1"
         },
         {
+            "@id": "https://data.vlaanderen.be/ns/netwerk/#beginknoop",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "beginknoop",
+            "inpackage": "OTHER_PACKAGE",
+            "label-nl": {
+                "nl": "beginknoop"
+            },
+            "label": {
+                "nl": "beginknoop"
+            },
+            "definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "^beginknoop",
+                "EA-Guid": "{0366713F-C00D-4dd9-A4FA-1E627668457D}",
+                "derived": "false",
+                "EA-Package": "",
+                "EA-Type": "connector",
+                "EA-Domain": "Wegsegment",
+                "EA-Domain-Guid": "{A74FEDDC-177C-430a-80BF-5D15C5278C01}",
+                "EA-Range": "Wegknoop",
+                "RangeData": {
+                    "EA-Name": "Wegknoop",
+                    "EA-GUID": "{5E144E63-EF37-4a5f-8156-703E8B996ED9}",
+                    "EA-Package": "INSPIRE-Weg",
+                    "uri": "https://data.vlaanderen.be/ns/weg#Wegknoop"
+                },
+                "sourceRole": "null",
+                "destRole": "^beginknoop",
+                "label": {
+                    "nl": "beginknoop"
+                },
+                "definition": "",
+                "usage": "",
+                "label-nl": {
+                    "nl": "beginknoop"
+                },
+                "definition-nl": {
+                    "nl": "TODO"
+                },
+                "usageNote-nl": "",
+                "label-en": "",
+                "definition-en": "",
+                "usageNote-en": "",
+                "equivalent": "",
+                "subclass": "",
+                "subclass1": "",
+                "sameAs": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "NOTE",
+                        "note": "beginknoop"
+                    },
+                    {
+                        "key": "uri",
+                        "value": "NOTE",
+                        "note": "https://data.vlaanderen.be/ns/netwerk/#beginknoop"
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "NOTE",
+                        "note": "beginknoop"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "NOTE",
+                        "note": "Knoop die het begin is van het Wegsegment."
+                    }
+                ],
+                "DestRoleTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "NOTE",
+                        "note": "beginknoop"
+                    },
+                    {
+                        "key": "uri",
+                        "value": "NOTE",
+                        "note": "https://data.vlaanderen.be/ns/netwerk/#beginknoop"
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "NOTE",
+                        "note": "beginknoop"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "NOTE",
+                        "note": "Knoop die het begin is van het Wegsegment."
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment",
+                    "EA-Name": "Wegsegment"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Wegknoop",
+                    "EA-GUID": "{5E144E63-EF37-4a5f-8156-703E8B996ED9}",
+                    "EA-Package": "INSPIRE-Weg",
+                    "uri": "https://data.vlaanderen.be/ns/weg#Wegknoop"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "0",
+            "maxCardinality": "*"
+        },
+        {
             "@id": "https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn",
             "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
             "name": "geometriemiddenlijn",
@@ -4545,6 +4744,121 @@
             "generalization": [],
             "minCardinality": "1",
             "maxCardinality": "1"
+        },
+        {
+            "@id": "https://data.vlaanderen.be/ns/netwerk#eindknoop",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "eindknoop",
+            "inpackage": "OTHER_PACKAGE",
+            "label-nl": {
+                "nl": "eindknoop"
+            },
+            "label": {
+                "nl": "eindknoop"
+            },
+            "definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "^eindknoop",
+                "EA-Guid": "{3D9FF7EF-D7B9-4638-B170-8C6E2224DF15}",
+                "derived": "false",
+                "EA-Package": "",
+                "EA-Type": "connector",
+                "EA-Domain": "Wegsegment",
+                "EA-Domain-Guid": "{A74FEDDC-177C-430a-80BF-5D15C5278C01}",
+                "EA-Range": "Wegknoop",
+                "RangeData": {
+                    "EA-Name": "Wegknoop",
+                    "EA-GUID": "{5E144E63-EF37-4a5f-8156-703E8B996ED9}",
+                    "EA-Package": "INSPIRE-Weg",
+                    "uri": "https://data.vlaanderen.be/ns/weg#Wegknoop"
+                },
+                "sourceRole": "null",
+                "destRole": "^eindknoop",
+                "label": {
+                    "nl": "eindknoop"
+                },
+                "definition": "",
+                "usage": "",
+                "label-nl": {
+                    "nl": "eindknoop"
+                },
+                "definition-nl": {
+                    "nl": "TODO"
+                },
+                "usageNote-nl": "",
+                "label-en": "",
+                "definition-en": "",
+                "usageNote-en": "",
+                "equivalent": "",
+                "subclass": "",
+                "subclass1": "",
+                "sameAs": "",
+                "RawTags": [
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "NOTE",
+                        "note": "Knoop die het einde is van het Wegsegment."
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "NOTE",
+                        "note": "eindknoop"
+                    },
+                    {
+                        "key": "uri",
+                        "value": "NOTE",
+                        "note": "https://data.vlaanderen.be/ns/netwerk#eindknoop"
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "NOTE",
+                        "note": "eindknoop"
+                    }
+                ],
+                "DestRoleTags": [
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "NOTE",
+                        "note": "Knoop die het einde is van het Wegsegment."
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "NOTE",
+                        "note": "eindknoop"
+                    },
+                    {
+                        "key": "uri",
+                        "value": "NOTE",
+                        "note": "https://data.vlaanderen.be/ns/netwerk#eindknoop"
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "NOTE",
+                        "note": "eindknoop"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment",
+                    "EA-Name": "Wegsegment"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Wegknoop",
+                    "EA-GUID": "{5E144E63-EF37-4a5f-8156-703E8B996ED9}",
+                    "EA-Package": "INSPIRE-Weg",
+                    "uri": "https://data.vlaanderen.be/ns/weg#Wegknoop"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "0",
+            "maxCardinality": "*"
         },
         {
             "@id": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie.opPositie",
@@ -4815,6 +5129,101 @@
                     "EA-GUID": "{0B57205C-5EA3-41bd-9301-CDD131C79526}",
                     "EA-Package": "INSPIRE-netwerk",
                     "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "1",
+            "maxCardinality": "1"
+        },
+        {
+            "@id": "https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "geometrie",
+            "inpackage": "OTHER_PACKAGE",
+            "label-nl": {
+                "nl": "geometrie"
+            },
+            "label": {
+                "nl": "geometrie"
+            },
+            "definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "^geometrie",
+                "EA-Guid": "{D2F8232A-DDBC-49e9-8776-085C4023B01C}",
+                "EA-Package": "INSPIRE-Weg",
+                "EA-Type": "attribute",
+                "EA-Domain": "Wegknoop",
+                "EA-Domain-Guid": "{5E144E63-EF37-4a5f-8156-703E8B996ED9}",
+                "EA-Range": "Punt",
+                "RangeData": {
+                    "EA-Name": "Punt",
+                    "EA-GUID": "{2319C469-3BB7-4eaf-8C14-F375CAD76501}",
+                    "EA-Package": "OpenGIS",
+                    "uri": "http://www.opengis.net/ont/sf#Point"
+                },
+                "label": {
+                    "nl": "geometrie"
+                },
+                "definition": "",
+                "usage": "",
+                "label-nl": {
+                    "nl": "geometrie"
+                },
+                "definition-nl": {
+                    "nl": "TODO"
+                },
+                "usageNote-nl": "",
+                "label-en": "",
+                "definition-en": "",
+                "usageNote-en": "",
+                "equivalent": "",
+                "subclass": "",
+                "subclass1": "",
+                "sameAs": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "geometrie",
+                        "note": "null"
+                    },
+                    {
+                        "key": "uri",
+                        "value": "https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "geometrie",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "Locatie van de Knoop.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-usageNote-nl",
+                        "value": "Weergegeven door een Punt.",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://data.vlaanderen.be/ns/weg#Wegknoop",
+                    "EA-Name": "Wegknoop"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Punt",
+                    "EA-GUID": "{2319C469-3BB7-4eaf-8C14-F375CAD76501}",
+                    "EA-Package": "OpenGIS",
+                    "uri": "http://www.opengis.net/ont/sf#Point"
                 }
             ],
             "generalization": [],

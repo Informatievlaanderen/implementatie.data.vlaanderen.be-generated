@@ -45,6 +45,7 @@
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#TransporteigenschapShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#TransportlinkShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegknoopShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#ObservatieprocedureShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#SysteemShape>,
@@ -1051,13 +1052,57 @@
   shacl:closed false;
   shacl:targetClass skos:Concept .
 
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegknoopShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegknoopShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegknoopShape/35ea4794233fe7d78e3fa9762f8c5685fe9c0f51>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegknoopShape/722a1f18cabb107c684fe4ca857876ade00b0d01>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegknoopShape/d7e4e623022693159b355b9e717ac7ec1a50695c>;
+  shacl:targetClass <https://data.vlaanderen.be/ns/weg#Wegknoop> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegknoopShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegknoop%3Ageometrie";
+  shacl:description "Locatie van de Knoop."@nl;
+  shacl:maxCount 1;
+  shacl:name "geometrie"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Maximaal 1 waarden toegelaten voor geometrie"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegknoopShape/35ea4794233fe7d78e3fa9762f8c5685fe9c0f51> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegknoop%3Ageometrie";
+  shacl:description "Locatie van de Knoop."@nl;
+  shacl:name "geometrie"@nl;
+  shacl:nodekind "sh:BlankNodeOrIRI";
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De verwachte waarde voor geometrie is een rdfs:Resource (URI of blank node)"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegknoopShape/722a1f18cabb107c684fe4ca857876ade00b0d01> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegknoop%3Ageometrie";
+  shacl:class <http://www.opengis.net/ont/sf#Point>;
+  shacl:description "Locatie van de Knoop."@nl;
+  shacl:name "geometrie"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De range van geometrie moet van het type <http://www.opengis.net/ont/sf#Point> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegknoopShape/d7e4e623022693159b355b9e717ac7ec1a50695c> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegknoop%3Ageometrie";
+  shacl:description "Locatie van de Knoop."@nl;
+  shacl:minCount 1;
+  shacl:name "geometrie"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Minimaal 1 waarden verwacht voor geometrie"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegobjectShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass <https://data.vlaanderen.be/ns/Verkeersmetingen#Wegobject> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:property <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/0d6965f57149b3954a4d17f42403d565ac3e30d6>,
+  shacl:property <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/839bd972460fccde6ab43143d2fb8bde4f639e80>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/a24bcd62375e8bbc9f61d65bbad2fb9eef839f2a>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/8143bff517a6b93c95666cdd29f9c4dc9fdfa0f4>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/9d1036ba24aaab1b54d1b6f62b30d6ce49858c30>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/0d6965f57149b3954a4d17f42403d565ac3e30d6>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/9a0b700bb15e65d2f2337e0e176d23dd88d934d3>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/9c82de97b38bdda35c6c252ab489bd8e17f7bde3>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/ce33b9bdbeaa69b900443c6cc0ff8a64f54d595c>;
@@ -1069,6 +1114,22 @@
   shacl:name "geometriemiddenlijn"@nl;
   shacl:path <https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Maximaal 1 waarden toegelaten voor geometriemiddenlijn"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/8143bff517a6b93c95666cdd29f9c4dc9fdfa0f4> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegsegment%3Aeindknoop";
+  shacl:description "Knoop die het einde is van het Wegsegment."@nl;
+  shacl:name "eindknoop"@nl;
+  shacl:nodekind "sh:BlankNodeOrIRI";
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#eindknoop>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De verwachte waarde voor eindknoop is een rdfs:Resource (URI of blank node)"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/839bd972460fccde6ab43143d2fb8bde4f639e80> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegsegment%3Abeginknoop";
+  shacl:description "Knoop die het begin is van het Wegsegment."@nl;
+  shacl:name "beginknoop"@nl;
+  shacl:nodekind "sh:BlankNodeOrIRI";
+  shacl:path <https://data.vlaanderen.be/ns/netwerk/#beginknoop>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De verwachte waarde voor beginknoop is een rdfs:Resource (URI of blank node)"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/9a0b700bb15e65d2f2337e0e176d23dd88d934d3> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegsegment%3Ageometriemiddenlijn";
@@ -1085,6 +1146,22 @@
   shacl:name "geometriemiddenlijn"@nl;
   shacl:path <https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De range van geometriemiddenlijn moet van het type <http://www.opengis.net/ont/sf#LineString> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/9d1036ba24aaab1b54d1b6f62b30d6ce49858c30> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegsegment%3Aeindknoop";
+  shacl:class <https://data.vlaanderen.be/ns/weg#Wegknoop>;
+  shacl:description "Knoop die het einde is van het Wegsegment."@nl;
+  shacl:name "eindknoop"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#eindknoop>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De range van eindknoop moet van het type <https://data.vlaanderen.be/ns/weg#Wegknoop> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/a24bcd62375e8bbc9f61d65bbad2fb9eef839f2a> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegsegment%3Abeginknoop";
+  shacl:class <https://data.vlaanderen.be/ns/weg#Wegknoop>;
+  shacl:description "Knoop die het begin is van het Wegsegment."@nl;
+  shacl:name "beginknoop"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/netwerk/#beginknoop>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De range van beginknoop moet van het type <https://data.vlaanderen.be/ns/weg#Wegknoop> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegsegmentShape/ce33b9bdbeaa69b900443c6cc0ff8a64f54d595c> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Wegsegment%3Ageometriemiddenlijn";

@@ -87,8 +87,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/464d958e6bd65932e5a7a523067f0d54a90ed632">https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/464d958e6bd65932e5a7a523067f0d54a90ed632</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/464d958e6bd65932e5a7a523067f0d54a90ed632/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/464d958e6bd65932e5a7a523067f0d54a90ed632/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/ddeae3b13c70befdf2c5e861acb4b120ee830ef0">https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/ddeae3b13c70befdf2c5e861acb4b120ee830ef0</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/ddeae3b13c70befdf2c5e861acb4b120ee830ef0/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/ddeae3b13c70befdf2c5e861acb4b120ee830ef0/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/issues">https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/issues</a></dd>
               <dt>Standaardenregister</dt><dd><a href="https://data.vlaanderen.be/standaarden/">https://data.vlaanderen.be/standaarden/</a></dd>
 
@@ -188,6 +188,7 @@
                       <a href="#Verkeerssnelheidsmetingkenmerk">Verkeerssnelheidsmetingkenmerk</a> |
                       <a href="#Verkeerstelling">Verkeerstelling</a> |
                       <a href="#Verkeerstellingkenmerk">Verkeerstellingkenmerk</a> |
+                      <a href="#Wegknoop">Wegknoop</a> |
                       <a href="#Wegobject">Wegobject</a> |
                       <a href="#Wegsegment">Wegsegment</a> |
                     </p>
@@ -1347,6 +1348,69 @@
             </div>
             
               <div class="region region--no-space-top">
+              <h3 class="h3" id="Wegknoop"><a href="https://data.vlaanderen.be/ns/weg#Wegknoop" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/weg#Wegknoop" data-placement="right">Wegknoop</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Significante positie in het Tansportnetwerk die steeds samenvalt met het begin of het einde van een Wegsegment.</dd>
+                    
+                    <dt>Gebruik</dt><dd>Typisch een kruispunt van wegen of het begin of einde van een weg.</dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="#Wegobject">Wegobject</a>, 
+                        <a href="https://data.vlaanderen.be/ns/transportnetwerk#Transportknoop">Transportknoop</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Wegknoop%3Ageometrie">geometrie</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Wegknoop%3Ageometrie" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie" data-placement="right">
+                            geometrie</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Punt" data-placement="right">Punt</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Locatie van de Knoop.</td>
+                        <td property="vann:usageNote">Weergegeven door een Punt.</td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
               <h3 class="h3" id="Wegobject"><a href="https://data.vlaanderen.be/ns/Verkeersmetingen#Wegobject" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/Verkeersmetingen#Wegobject" data-placement="right">Wegobject</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
@@ -1383,6 +1447,8 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Wegsegment%3Abeginknoop">beginknoop</a>, 
+                      <a href="#Wegsegment%3Aeindknoop">eindknoop</a>, 
                       <a href="#Wegsegment%3Ageometriemiddenlijn">geometriemiddenlijn</a>.</dd>
                     
                   </dl>
@@ -1402,6 +1468,46 @@
                     </thead>
 
                     <tbody class="supertype">
+                    
+                      <tr id="Wegsegment%3Abeginknoop" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/netwerk/#beginknoop">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/netwerk/#beginknoop" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/netwerk/#beginknoop" data-placement="right">
+                            beginknoop</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Wegknoop" data-placement="right">Wegknoop</a>
+			    
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Knoop die het begin is van het Wegsegment.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Wegsegment%3Aeindknoop" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/netwerk#eindknoop">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/netwerk#eindknoop" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/netwerk#eindknoop" data-placement="right">
+                            eindknoop</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Wegknoop" data-placement="right">Wegknoop</a>
+			    
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Knoop die het einde is van het Wegsegment.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
                     
                       <tr id="Wegsegment%3Ageometriemiddenlijn" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn">
                         <td>

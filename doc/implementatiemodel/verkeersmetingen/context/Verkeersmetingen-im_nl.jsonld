@@ -212,9 +212,28 @@
     },
     "Verkeerstellingkenmerktype": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerktype",
     "Voertuigtype": "http://www.w3.org/2004/02/skos/core#Concept",
+    "Wegknoop": {
+      "@context": {
+        "geometrie": {
+          "@id": "https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie",
+          "@type": "@id"
+        }
+      },
+      "@id": "https://data.vlaanderen.be/ns/weg#Wegknoop"
+    },
     "Wegobject": "https://data.vlaanderen.be/ns/Verkeersmetingen#Wegobject",
     "Wegsegment": {
       "@context": {
+        "beginknoop": {
+          "@container": "@set",
+          "@id": "https://data.vlaanderen.be/ns/netwerk/#beginknoop",
+          "@type": "@id"
+        },
+        "eindknoop": {
+          "@container": "@set",
+          "@id": "https://data.vlaanderen.be/ns/netwerk#eindknoop",
+          "@type": "@id"
+        },
         "geometriemiddenlijn": {
           "@id": "https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn",
           "@type": "@id"

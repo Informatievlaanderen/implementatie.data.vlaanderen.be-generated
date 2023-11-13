@@ -535,8 +535,8 @@
   "contributors-column": "Verkeersmetingen",
   "contributors-file": "stakeholders.csv",
   "diagram": "VSDS-Verkeersmetingen",
-  "documentcommit": "464d958e6bd65932e5a7a523067f0d54a90ed632",
-  "dummy": "11",
+  "documentcommit": "ddeae3b13c70befdf2c5e861acb4b120ee830ef0",
+  "dummy": "12",
   "eap": "Verkeersmetingen-IM.eap",
   "editors": [
     {
@@ -847,6 +847,121 @@
       }
     },
     {
+      "@id": "https://data.vlaanderen.be/ns/netwerk/#beginknoop",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{0366713F-C00D-4dd9-A4FA-1E627668457D}",
+      "ap-definition-nl": {
+        "nl": "Knoop die het begin is van het Wegsegment."
+      },
+      "ap-label-nl": {
+        "nl": "beginknoop"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Knoop die het begin is van het Wegsegment."
+      },
+      "domain": [
+        {
+          "EA-Name": "Wegsegment",
+          "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "label-nl",
+            "note": "beginknoop",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "https://data.vlaanderen.be/ns/netwerk/#beginknoop",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "beginknoop",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "Knoop die het begin is van het Wegsegment.",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Wegsegment",
+        "EA-Domain-Guid": "{A74FEDDC-177C-430a-80BF-5D15C5278C01}",
+        "EA-Guid": "{0366713F-C00D-4dd9-A4FA-1E627668457D}",
+        "EA-Name": "^beginknoop",
+        "EA-Package": "",
+        "EA-Range": "Wegknoop",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{5E144E63-EF37-4a5f-8156-703E8B996ED9}",
+          "EA-Name": "Wegknoop",
+          "EA-Package": "INSPIRE-Weg",
+          "uri": "https://data.vlaanderen.be/ns/weg#Wegknoop"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "beginknoop",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "https://data.vlaanderen.be/ns/netwerk/#beginknoop",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "beginknoop",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "Knoop die het begin is van het Wegsegment.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Knoop die het begin is van het Wegsegment."
+        },
+        "ap-label-nl": {
+          "nl": "beginknoop"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Knoop die het begin is van het Wegsegment."
+        },
+        "derived": "false",
+        "destRole": "^beginknoop",
+        "label": {
+          "nl": "beginknoop"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "beginknoop"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "beginknoop",
+      "range": [
+        {
+          "EA-GUID": "{5E144E63-EF37-4a5f-8156-703E8B996ED9}",
+          "EA-Name": "Wegknoop",
+          "EA-Package": "INSPIRE-Weg",
+          "uri": "https://data.vlaanderen.be/ns/weg#Wegknoop"
+        }
+      ]
+    },
+    {
       "@id": "https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{0F1BF31F-BE6F-4460-9958-B1FAB3A2825A}",
@@ -933,6 +1048,121 @@
           "EA-Name": "LijnString",
           "EA-Package": "Hulppakket",
           "uri": "http://www.opengis.net/ont/sf#LineString"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/netwerk#eindknoop",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{3D9FF7EF-D7B9-4638-B170-8C6E2224DF15}",
+      "ap-definition-nl": {
+        "nl": "Knoop die het einde is van het Wegsegment."
+      },
+      "ap-label-nl": {
+        "nl": "eindknoop"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Knoop die het einde is van het Wegsegment."
+      },
+      "domain": [
+        {
+          "EA-Name": "Wegsegment",
+          "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "Knoop die het einde is van het Wegsegment.",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "eindknoop",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "https://data.vlaanderen.be/ns/netwerk#eindknoop",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "eindknoop",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Wegsegment",
+        "EA-Domain-Guid": "{A74FEDDC-177C-430a-80BF-5D15C5278C01}",
+        "EA-Guid": "{3D9FF7EF-D7B9-4638-B170-8C6E2224DF15}",
+        "EA-Name": "^eindknoop",
+        "EA-Package": "",
+        "EA-Range": "Wegknoop",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{5E144E63-EF37-4a5f-8156-703E8B996ED9}",
+          "EA-Name": "Wegknoop",
+          "EA-Package": "INSPIRE-Weg",
+          "uri": "https://data.vlaanderen.be/ns/weg#Wegknoop"
+        },
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "Knoop die het einde is van het Wegsegment.",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "eindknoop",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "https://data.vlaanderen.be/ns/netwerk#eindknoop",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "eindknoop",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Knoop die het einde is van het Wegsegment."
+        },
+        "ap-label-nl": {
+          "nl": "eindknoop"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Knoop die het einde is van het Wegsegment."
+        },
+        "derived": "false",
+        "destRole": "^eindknoop",
+        "label": {
+          "nl": "eindknoop"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "eindknoop"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "eindknoop",
+      "range": [
+        {
+          "EA-GUID": "{5E144E63-EF37-4a5f-8156-703E8B996ED9}",
+          "EA-Name": "Wegknoop",
+          "EA-Package": "INSPIRE-Weg",
+          "uri": "https://data.vlaanderen.be/ns/weg#Wegknoop"
         }
       ]
     },
@@ -1219,6 +1449,111 @@
       ],
       "usage": {
         "nl": "Mogelijke richtingen zijn gelijklopend met de geometrie, tegengesteld aan de geometrie of beide. Indien gelijklopend of tegengesteld wordt verondersteld dat de eigenschap voorkomt aan de rechterkant van de Link volgens die richting. Bvb als de toepassingsrichting van de straatverlichting gelijklopend is wil dat zeggen dat rechts van de Link straatverlichting aanwezig is."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{D2F8232A-DDBC-49e9-8776-085C4023B01C}",
+      "ap-definition-nl": {
+        "nl": "Locatie van de Knoop."
+      },
+      "ap-label-nl": {
+        "nl": "geometrie"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Weergegeven door een Punt."
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Locatie van de Knoop."
+      },
+      "domain": [
+        {
+          "EA-Name": "Wegknoop",
+          "uri": "https://data.vlaanderen.be/ns/weg#Wegknoop"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Wegknoop",
+        "EA-Domain-Guid": "{5E144E63-EF37-4a5f-8156-703E8B996ED9}",
+        "EA-Guid": "{D2F8232A-DDBC-49e9-8776-085C4023B01C}",
+        "EA-Name": "^geometrie",
+        "EA-Package": "INSPIRE-Weg",
+        "EA-Range": "Punt",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{2319C469-3BB7-4eaf-8C14-F375CAD76501}",
+          "EA-Name": "Punt",
+          "EA-Package": "OpenGIS",
+          "uri": "http://www.opengis.net/ont/sf#Point"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "geometrie"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "geometrie"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Locatie van de Knoop."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "Weergegeven door een Punt."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Locatie van de Knoop."
+        },
+        "ap-label-nl": {
+          "nl": "geometrie"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Weergegeven door een Punt."
+        },
+        "definition": {
+          "nl": "Locatie van de Knoop."
+        },
+        "label": {
+          "nl": "geometrie"
+        },
+        "usage": {
+          "nl": "Weergegeven door een Punt."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "geometrie"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "geometrie",
+      "range": [
+        {
+          "EA-GUID": "{2319C469-3BB7-4eaf-8C14-F375CAD76501}",
+          "EA-Name": "Punt",
+          "EA-Package": "OpenGIS",
+          "uri": "http://www.opengis.net/ont/sf#Point"
+        }
+      ],
+      "usage": {
+        "nl": "Weergegeven door een Punt."
       }
     },
     {
@@ -5353,6 +5688,100 @@
       "name": "Rijrichting"
     },
     {
+      "@id": "https://data.vlaanderen.be/ns/weg#Wegknoop",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{5E144E63-EF37-4a5f-8156-703E8B996ED9}",
+      "ap-definition-nl": {
+        "nl": "Significante positie in het Tansportnetwerk die steeds samenvalt met het begin of het einde van een Wegsegment."
+      },
+      "ap-label-nl": {
+        "nl": "Wegknoop"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Typisch een kruispunt van wegen of het begin of einde van een weg."
+      },
+      "definition": {
+        "nl": "Significante positie in het Tansportnetwerk die steeds samenvalt met het begin of het einde van een Wegsegment."
+      },
+      "extra": {
+        "EA-Guid": "{5E144E63-EF37-4a5f-8156-703E8B996ED9}",
+        "EA-Name": "Wegknoop",
+        "EA-Package": "INSPIRE-Weg",
+        "EA-Parents": "Wegobject",
+        "EA-Parents2": [
+          {
+            "label": "Wegobject",
+            "name": "Wegobject",
+            "package": "INSPIRE-Weg",
+            "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Wegobject"
+          },
+          {
+            "label": "Transportknoop",
+            "name": "Transportknoop",
+            "package": "INSPIRE-Transportnetwerk",
+            "uri": "https://data.vlaanderen.be/ns/transportnetwerk#Transportknoop"
+          }
+        ],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Wegknoop"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/weg#Wegknoop"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "Wegknoop"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Significante positie in het Tansportnetwerk die steeds samenvalt met het begin of het einde van een Wegsegment."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "Typisch een kruispunt van wegen of het begin of einde van een weg."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Significante positie in het Tansportnetwerk die steeds samenvalt met het begin of het einde van een Wegsegment."
+        },
+        "ap-label-nl": {
+          "nl": "Wegknoop"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Typisch een kruispunt van wegen of het begin of einde van een weg."
+        },
+        "definition": {
+          "nl": "Significante positie in het Tansportnetwerk die steeds samenvalt met het begin of het einde van een Wegsegment."
+        },
+        "label": {
+          "nl": "Wegknoop"
+        },
+        "parentclasses": "https://data.vlaanderen.be/ns/Verkeersmetingen#Wegobject, https://data.vlaanderen.be/ns/transportnetwerk#Transportknoop",
+        "usage": {
+          "nl": "Typisch een kruispunt van wegen of het begin of einde van een weg."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Wegknoop"
+      },
+      "name": "Wegknoop",
+      "usage": {
+        "nl": "Typisch een kruispunt van wegen of het begin of einde van een weg."
+      }
+    },
+    {
       "@id": "https://data.vlaanderen.be/ns/weg#Wegsegment",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{A74FEDDC-177C-430a-80BF-5D15C5278C01}",
@@ -6386,7 +6815,7 @@
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/",
   "template": "mijn-implementatiemodel-im.j2",
   "title": "Implementatiemodel Verkeersmetingen",
-  "toolchaincommit": "ccd3d255ebeeca68570212cc1a328d97d27a9899",
+  "toolchaincommit": "c43919ca581e15a05bdf15eca0a8f230c5f03b64",
   "translation": [
     {
       "language": "nl",
