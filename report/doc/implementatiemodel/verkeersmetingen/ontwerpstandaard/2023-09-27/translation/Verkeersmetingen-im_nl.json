@@ -22,16 +22,6 @@
       }
     },
     {
-      "EA-Guid": "{0768E8D1-52CA-40ed-96BB-8A086C751E69}",
-      "name": "Verkeerssnelheidsmetingkenmerktype",
-      "label": {
-        "nl": "Verkeerssnelheidsmetingkenmerktype"
-      },
-      "definition": {
-        "nl": "Het kenmerktype van de geobserveerde verkeerssnelheidsmeting"
-      }
-    },
-    {
       "EA-Guid": "{9C9C02E7-1253-4b05-84C1-93274ABD2496}",
       "name": "Verkeerstelling",
       "label": {
@@ -50,16 +40,6 @@
       "definition": {
         "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
       }
-    },
-    {
-      "EA-Guid": "{8BDE0E2C-3FEE-472d-AFAC-3068BB283668}",
-      "name": "Verkeerstellingkenmerktype",
-      "label": {
-        "nl": "Verkeerstellingkenmerktype"
-      },
-      "definition": {
-        "nl": "Het kenmerktype van de geobserveerde verkeerstellingsmeting"
-      }
     }
   ],
   "properties": [
@@ -75,12 +55,12 @@
     },
     {
       "EA-Guid": "{D0FC4E26-48C8-4a28-BD9A-D6BD94C4C450}",
-      "name": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt.",
+      "name": "netwerkreferentieelement",
       "label": {
-        "nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."
+        "nl": "netwerkreferentieelement"
       },
       "definition": {
-        "nl": "Referentie naar het Netwerkelement Wegsegment waarvoor een "
+        "nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."
       }
     },
     {
@@ -94,16 +74,6 @@
       }
     },
     {
-      "EA-Guid": "{4E73E06F-A9ED-4014-A62B-B4B867960F73}",
-      "name": "kenmerktype",
-      "label": {
-        "nl": "kenmerktype"
-      },
-      "definition": {
-        "nl": "Kenmerktype 'snelheid' is het specifieke kenmerktype van de verkeerssnelheidsmeting"
-      }
-    },
-    {
       "EA-Guid": "{362F2BF7-D804-4cd8-A12F-CEE01E2CAA9A}",
       "name": "geobserveerdKenmerk",
       "label": {
@@ -114,6 +84,16 @@
       }
     },
     {
+      "EA-Guid": "{4E73E06F-A9ED-4014-A62B-B4B867960F73}",
+      "name": "kenmerktype",
+      "label": {
+        "nl": "kenmerktype"
+      },
+      "definition": {
+        "nl": "Kenmerktype 'snelheid' is het specifieke kenmerktype van de verkeerssnelheidsmeting"
+      }
+    },
+    {
       "EA-Guid": "{3F7E064B-491E-4d0d-899D-5E68F578CE9A}",
       "name": "geobserveerdKenmerk",
       "label": {
@@ -121,19 +101,6 @@
       },
       "definition": {
         "nl": "Object dat door de Verkeerssnelheidsmetingen wordt geobserveerd.\t"
-      }
-    },
-    {
-      "EA-Guid": "{08BA936D-44F3-420f-9E42-82994C3B7E89}",
-      "name": "fenomeenTijd",
-      "label": {
-        "nl": "fenomeenTijd"
-      },
-      "definition": {
-        "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
-      },
-      "usage": {
-        "nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn."
       }
     }
   ],
@@ -240,6 +207,19 @@
       }
     },
     {
+      "EA-Guid": "{300A19C6-C1BD-4479-B125-ADFF86DD5836}",
+      "name": "TemporeleEntiteit",
+      "label": {
+        "nl": "TemporeleEntiteit"
+      },
+      "definition": {
+        "nl": "TODO"
+      },
+      "usage": {
+        "nl": "TODO"
+      }
+    },
+    {
       "EA-Guid": "{98CAEFA1-623F-4bae-AA47-92B5EFD72359}",
       "name": "Agent",
       "label": {
@@ -309,6 +289,29 @@
       }
     },
     {
+      "EA-Guid": "{8BDE0E2C-3FEE-472d-AFAC-3068BB283668}",
+      "name": "Verkeerstellingkenmerktype",
+      "label": {
+        "nl": "Verkeerstellingkenmerktype"
+      },
+      "definition": {
+        "nl": "Het kenmerktype van de geobserveerde verkeerstellingsmeting"
+      }
+    },
+    {
+      "EA-Guid": "{0768E8D1-52CA-40ed-96BB-8A086C751E69}",
+      "name": "Verkeerssnelheidsmetingkenmerktype",
+      "label": {
+        "nl": "Verkeerssnelheidsmetingkenmerktype"
+      },
+      "definition": {
+        "nl": "Het kenmerktype van de geobserveerde verkeerssnelheidsmeting"
+      },
+      "usage": {
+        "nl": "Todo"
+      }
+    },
+    {
       "EA-Guid": "{0B57205C-5EA3-41bd-9301-CDD131C79526}",
       "name": "Linkrichtingtpe",
       "label": {
@@ -358,6 +361,97 @@
       },
       "usage": {
         "nl": "In deze context het uitvoeren van Observaties, Bemonstering of de Bediening van Actuators. Neemt in praktijk de vorm aan van een workflow, protocol, plan, algoritme,berekeningswijze etc. OPMERKING: Voor meer details over deze klasse zie <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/sensoren-en-bemonstering/\">AP Sensoren en Bemonstering</a>."
+      }
+    },
+    {
+      "EA-Guid": "{CFE067A0-8DA9-40db-AF71-DC32C871721F}",
+      "name": "Verkeersbemonsteringsobject",
+      "label": {
+        "nl": "Verkeersbemonsteringsobject"
+      },
+      "definition": {
+        "nl": "Object dat representatief is voor het object waarvan men het Verkeerskenmerk meet."
+      },
+      "usage": {
+        "nl": "Van belang als men dit object niet rechtstreeks kan observeren. Bvb om de snelheid ve Voertuig te bepalen kan men moeilijk dat Voertuig gaan volgen, in plaats daarvan zet men een meetpunt op langs de weg om te zien hoe snel passerende Voertuigen rijden. Gelijkaardig voor bvb verkeersintensiteit: men telt in een meetpunt langs de weg doorkomsten van Voertuigen en gaat ervan uit dat dit cijfer representatief is voor  het Wegsegment (deel van de weg tussen twee opeenvolgende kruispunten). OPGELET: Deze klasse is abstract, ze mag niet geinstantieerd worden. Gebruik in de plaats de subklassen Verkeersmeetpunt of Verkeersmeettraject"
+      }
+    },
+    {
+      "EA-Guid": "{2E48BB96-557B-4b70-A841-96C9488ACB0C}",
+      "name": "Verkeersdomeinobject",
+      "label": {
+        "nl": "Verkeersdomeinobject"
+      },
+      "definition": {
+        "nl": "Object uit het verkeersdomein waarvan men een Verkeerskenmerk meet."
+      },
+      "usage": {
+        "nl": "Hieronder verstaan we een real-world object uit het verkeer, ttz een Voertuig of Verkeersdeelnemer of een Wegsegment of gelijkaardig waarover verkeer plaatsvindt. Vallen hier niet onder: Verkeersbemonsteringsobjecten zoals Verkeersmeetpunten of Verkeersmeettrajecten, dat zijn de objecten die het Verkeersdomein bemonsteren. OPGELET: Deze klasse is abstract, ze mag maw niet geinstantieerd worden. Gebruik in de plaats subklassen zoal Wegsegment, Rijstrook, Voertuig etc."
+      }
+    },
+    {
+      "EA-Guid": "{CCF671D1-65E5-4164-80DC-A55676E447D2}",
+      "name": "Verkeerskenmerk",
+      "label": {
+        "nl": "Verkeerskenmerk"
+      },
+      "definition": {
+        "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
+      },
+      "usage": {
+        "nl": "Bvb de gemiddelde snelheid van auto's langs een Meetpunt of de verkeersIntensiteit van fietsen op een Wegsegment bvb uitgedrukt in aantal voertuigen of de snelheid van een individueel Voertuig etc."
+      }
+    },
+    {
+      "EA-Guid": "{84DECA56-0848-4297-A791-E0316CDC69CF}",
+      "name": "Verkeersmeetpunt",
+      "label": {
+        "nl": "Verkeersmeetpunt"
+      },
+      "definition": {
+        "nl": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet."
+      },
+      "usage": {
+        "nl": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft."
+      }
+    },
+    {
+      "EA-Guid": "{629A009C-848B-463b-AA2C-272DB667D354}",
+      "name": "Verkeersmeting",
+      "label": {
+        "nl": "Verkeersmeting"
+      },
+      "definition": {
+        "nl": "Het vaststellen van de waarde van een bepaald kenmerk van het verkeer op een bepaald tijdstip of tussen twee tijdstippen."
+      },
+      "usage": {
+        "nl": "Verkeer wordt gedefinieerd als de verplaatsing van objecten zoals personen, vracht, data etc over media zoals land, water, lucht, kabels. In de context van dit applicatieprofiel bedoelen we met verkeer het wegverkeer. Verkeer kan betrekking hebben op objecten die zichzelf verplaatsen (al dan niet met een vervoermiddel) of objecten die vervoerd worden, maar ook op objecten waarover verkeer plaatsvindt. De meting kan het vaststellen van de waarde van een kenmerk van een individueel Voertuig of Verkeersdeelnemer tijdens zijn verplaatsing zijn (bvb zijn snelheid of nummerplaat) of van een kenmerk van de infrastructuur zoals een Wegsegment of een Rijstrook waarover het verkeer zich beweegt (bv de verkeersintensiteit). Verkeersmetingen  zijn Observaties, maw op de waarde zit een zekere foutmarge door de gebruikte meettechniek.\n"
+      }
+    },
+    {
+      "EA-Guid": "{5E405CE5-6BD2-4f40-B346-162D1D3D4C85}",
+      "name": "Verkeersobject",
+      "label": {
+        "nl": "Verkeersobject"
+      },
+      "definition": {
+        "nl": "Object waarop of waarlangs zich verkeer voordoet of dat deel uitmaakt vh verkeer."
+      },
+      "usage": {
+        "nl": "OPGELET: Deze klasse is abstract, ze moet gespecialiseerd worden als Verkeersdomeinobject of als Verkeersbemonsteringsobject. Als Verkeersdomeinobject als de meting direct betrekking heeft op het object dat men wil observeren (bvb een Wegsegment of een Voertuig etc) of als Verkeersbemonsteringsobject als de meting onrechtstreeks gebeurt (bvb via een Verkeersmeetpunt gelegen langs een Wegsegment)."
+      }
+    },
+    {
+      "EA-Guid": "{76494F4F-E122-4dfb-8EA0-84FF3C4EF761}",
+      "name": "Wegobject",
+      "label": {
+        "nl": "Wegobject"
+      },
+      "definition": {
+        "nl": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt."
+      },
+      "usage": {
+        "nl": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken."
       }
     },
     {
@@ -450,16 +544,16 @@
       }
     },
     {
-      "EA-Guid": "{76494F4F-E122-4dfb-8EA0-84FF3C4EF761}",
-      "name": "Wegobject",
+      "EA-Guid": "{5E144E63-EF37-4a5f-8156-703E8B996ED9}",
+      "name": "Wegknoop",
       "label": {
-        "nl": "Wegobject"
+        "nl": "Wegknoop"
       },
       "definition": {
-        "nl": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt."
+        "nl": "Significante positie in het Tansportnetwerk die steeds samenvalt met het begin of het einde van een Wegsegment."
       },
       "usage": {
-        "nl": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken."
+        "nl": "Typisch een kruispunt van wegen of het begin of einde van een weg."
       }
     },
     {
@@ -470,84 +564,6 @@
       },
       "definition": {
         "nl": "Lineair ruimtelijk object dat de geometrie en connectiviteit beschrijft tussen twee punten in een Wegennetwerk."
-      }
-    },
-    {
-      "EA-Guid": "{CFE067A0-8DA9-40db-AF71-DC32C871721F}",
-      "name": "Verkeersbemonsteringsobject",
-      "label": {
-        "nl": "Verkeersbemonsteringsobject"
-      },
-      "definition": {
-        "nl": "Object dat representatief is voor het object waarvan men het Verkeerskenmerk meet."
-      },
-      "usage": {
-        "nl": "Van belang als men dit object niet rechtstreeks kan observeren. Bvb om de snelheid ve Voertuig te bepalen kan men moeilijk dat Voertuig gaan volgen, in plaats daarvan zet men een meetpunt op langs de weg om te zien hoe snel passerende Voertuigen rijden. Gelijkaardig voor bvb verkeersintensiteit: men telt in een meetpunt langs de weg doorkomsten van Voertuigen en gaat ervan uit dat dit cijfer representatief is voor  het Wegsegment (deel van de weg tussen twee opeenvolgende kruispunten). OPGELET: Deze klasse is abstract, ze mag niet geinstantieerd worden. Gebruik in de plaats de subklassen Verkeersmeetpunt of Verkeersmeettraject"
-      }
-    },
-    {
-      "EA-Guid": "{2E48BB96-557B-4b70-A841-96C9488ACB0C}",
-      "name": "Verkeersdomeinobject",
-      "label": {
-        "nl": "Verkeersdomeinobject"
-      },
-      "definition": {
-        "nl": "Object uit het verkeersdomein waarvan men een Verkeerskenmerk meet."
-      },
-      "usage": {
-        "nl": "Hieronder verstaan we een real-world object uit het verkeer, ttz een Voertuig of Verkeersdeelnemer of een Wegsegment of gelijkaardig waarover verkeer plaatsvindt. Vallen hier niet onder: Verkeersbemonsteringsobjecten zoals Verkeersmeetpunten of Verkeersmeettrajecten, dat zijn de objecten die het Verkeersdomein bemonsteren. OPGELET: Deze klasse is abstract, ze mag maw niet geinstantieerd worden. Gebruik in de plaats subklassen zoal Wegsegment, Rijstrook, Voertuig etc."
-      }
-    },
-    {
-      "EA-Guid": "{CCF671D1-65E5-4164-80DC-A55676E447D2}",
-      "name": "Verkeerskenmerk",
-      "label": {
-        "nl": "Verkeerskenmerk"
-      },
-      "definition": {
-        "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
-      },
-      "usage": {
-        "nl": "Bvb de gemiddelde snelheid van auto's langs een Meetpunt of de verkeersIntensiteit van fietsen op een Wegsegment bvb uitgedrukt in aantal voertuigen of de snelheid van een individueel Voertuig etc."
-      }
-    },
-    {
-      "EA-Guid": "{84DECA56-0848-4297-A791-E0316CDC69CF}",
-      "name": "Verkeersmeetpunt",
-      "label": {
-        "nl": "Verkeersmeetpunt"
-      },
-      "definition": {
-        "nl": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet."
-      },
-      "usage": {
-        "nl": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft."
-      }
-    },
-    {
-      "EA-Guid": "{629A009C-848B-463b-AA2C-272DB667D354}",
-      "name": "Verkeersmeting",
-      "label": {
-        "nl": "Verkeersmeting"
-      },
-      "definition": {
-        "nl": "Het vaststellen van de waarde van een bepaald kenmerk van het verkeer op een bepaald tijdstip of tussen twee tijdstippen."
-      },
-      "usage": {
-        "nl": "Verkeer wordt gedefinieerd als de verplaatsing van objecten zoals personen, vracht, data etc over media zoals land, water, lucht, kabels. In de context van dit applicatieprofiel bedoelen we met verkeer het wegverkeer. Verkeer kan betrekking hebben op objecten die zichzelf verplaatsen (al dan niet met een vervoermiddel) of objecten die vervoerd worden, maar ook op objecten waarover verkeer plaatsvindt. De meting kan het vaststellen van de waarde van een kenmerk van een individueel Voertuig of Verkeersdeelnemer tijdens zijn verplaatsing zijn (bvb zijn snelheid of nummerplaat) of van een kenmerk van de infrastructuur zoals een Wegsegment of een Rijstrook waarover het verkeer zich beweegt (bv de verkeersintensiteit). Verkeersmetingen  zijn Observaties, maw op de waarde zit een zekere foutmarge door de gebruikte meettechniek.\n"
-      }
-    },
-    {
-      "EA-Guid": "{5E405CE5-6BD2-4f40-B346-162D1D3D4C85}",
-      "name": "Verkeersobject",
-      "label": {
-        "nl": "Verkeersobject"
-      },
-      "definition": {
-        "nl": "Object waarop of waarlangs zich verkeer voordoet of dat deel uitmaakt vh verkeer."
-      },
-      "usage": {
-        "nl": "OPGELET: Deze klasse is abstract, ze moet gespecialiseerd worden als Verkeersdomeinobject of als Verkeersbemonsteringsobject. Als Verkeersdomeinobject als de meting direct betrekking heeft op het object dat men wil observeren (bvb een Wegsegment of een Voertuig etc) of als Verkeersbemonsteringsobject als de meting onrechtstreeks gebeurt (bvb via een Verkeersmeetpunt gelegen langs een Wegsegment)."
       }
     },
     {
@@ -591,6 +607,115 @@
     }
   ],
   "externalproperties": [
+    {
+      "EA-Guid": "{FCFCB9D9-E66E-4e9f-AB39-7A24DC0C08BF}",
+      "name": "vanPositie",
+      "label": {
+        "nl": "vanPositie"
+      },
+      "definition": {
+        "nl": "Afstand vanaf het begin van de Link of Linksequentie tot waar de Netwerkeigenschap geldt."
+      }
+    },
+    {
+      "EA-Guid": "{EC76D219-D568-4069-BDD5-1F401AD9FFC9}",
+      "name": "totPositie",
+      "label": {
+        "nl": "totPositie"
+      },
+      "definition": {
+        "nl": "Afstand vanaf het begin van de Link of Linksequentie vanaf waar de Netwerkeigenschap geldt."
+      }
+    },
+    {
+      "EA-Guid": "{DF397868-554C-432f-B8E3-338F37528EB8}",
+      "name": "rijrichting",
+      "label": {
+        "nl": "rijrichting"
+      },
+      "definition": {
+        "nl": "De rijrichting."
+      },
+      "usage": {
+        "nl": "Deze wordt beschreven tov de richting van de geometrie van de weg: gelijklopend met of tegengesteld aan die richting. De richting van de geometrie wordt bepaald door de volgorde waarin de coördinaten op elkaar volgen."
+      }
+    },
+    {
+      "EA-Guid": "{0366713F-C00D-4dd9-A4FA-1E627668457D}",
+      "name": "beginknoop",
+      "label": {
+        "nl": "beginknoop"
+      },
+      "definition": {
+        "nl": "Knoop die het begin is van het Wegsegment."
+      }
+    },
+    {
+      "EA-Guid": "{0F1BF31F-BE6F-4460-9958-B1FAB3A2825A}",
+      "name": "geometriemiddenlijn",
+      "label": {
+        "nl": "geometriemiddenlijn"
+      },
+      "definition": {
+        "nl": "Geometrie van de midellijn van het Wegsegment."
+      }
+    },
+    {
+      "EA-Guid": "{3D9FF7EF-D7B9-4638-B170-8C6E2224DF15}",
+      "name": "eindknoop",
+      "label": {
+        "nl": "eindknoop"
+      },
+      "definition": {
+        "nl": "Knoop die het einde is van het Wegsegment."
+      }
+    },
+    {
+      "EA-Guid": "{1CABF63C-E123-4ef0-9EBA-C418F46DB0E3}",
+      "name": "opPositie",
+      "label": {
+        "nl": "opPositie"
+      },
+      "definition": {
+        "nl": "Afstand vanaf het begin van de Link of Linksequentie tot het punt waar de Netwerkeigenschap geldt."
+      }
+    },
+    {
+      "EA-Guid": "{E3B91855-4C01-4d6d-9EBD-FDB7962FC9EF}",
+      "name": "element",
+      "label": {
+        "nl": "element"
+      },
+      "definition": {
+        "nl": "Verwijzing naar het Netwerkelement."
+      }
+    },
+    {
+      "EA-Guid": "{177F8E42-EFE0-4a68-86DA-149541320602}",
+      "name": "toepassingsRichting",
+      "label": {
+        "nl": "toepassingsRichting"
+      },
+      "definition": {
+        "nl": "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie."
+      },
+      "usage": {
+        "nl": "Mogelijke richtingen zijn gelijklopend met de geometrie, tegengesteld aan de geometrie of beide. Indien gelijklopend of tegengesteld wordt verondersteld dat de eigenschap voorkomt aan de rechterkant van de Link volgens die richting. Bvb als de toepassingsrichting van de straatverlichting gelijklopend is wil dat zeggen dat rechts van de Link straatverlichting aanwezig is."
+      }
+    },
+    {
+      "EA-Guid": "{D2F8232A-DDBC-49e9-8776-085C4023B01C}",
+      "name": "geometrie",
+      "label": {
+        "nl": "geometrie"
+      },
+      "definition": {
+        "nl": "Locatie van de Knoop."
+      },
+      "usage": {
+        "nl": "Weergegeven door een Punt."
+      }
+    },
     {
       "EA-Guid": "{CF9C3D94-2593-4911-AFB0-26E1C2D262AB}",
       "name": "voertuigType",
@@ -638,6 +763,19 @@
       }
     },
     {
+      "EA-Guid": "{08BA936D-44F3-420f-9E42-82994C3B7E89}",
+      "name": "fenomeenTijd",
+      "label": {
+        "nl": "fenomeenTijd"
+      },
+      "definition": {
+        "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+      },
+      "usage": {
+        "nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn."
+      }
+    },
+    {
       "EA-Guid": "{4957D1B2-0700-4cd6-A022-32AF0C0E1760}",
       "name": "bemonsterdObject",
       "label": {
@@ -648,82 +786,6 @@
       },
       "usage": {
         "nl": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt."
-      }
-    },
-    {
-      "EA-Guid": "{FCFCB9D9-E66E-4e9f-AB39-7A24DC0C08BF}",
-      "name": "vanPositie",
-      "label": {
-        "nl": "vanPositie"
-      },
-      "definition": {
-        "nl": "Afstand vanaf het begin van de Link of Linksequentie tot waar de Netwerkeigenschap geldt."
-      }
-    },
-    {
-      "EA-Guid": "{EC76D219-D568-4069-BDD5-1F401AD9FFC9}",
-      "name": "totPositie",
-      "label": {
-        "nl": "totPositie"
-      },
-      "definition": {
-        "nl": "Afstand vanaf het begin van de Link of Linksequentie vanaf waar de Netwerkeigenschap geldt."
-      }
-    },
-    {
-      "EA-Guid": "{DF397868-554C-432f-B8E3-338F37528EB8}",
-      "name": "rijrichting",
-      "label": {
-        "nl": "rijrichting"
-      },
-      "definition": {
-        "nl": "De rijrichting."
-      },
-      "usage": {
-        "nl": "Deze wordt beschreven tov de richting van de geometrie van de weg: gelijklopend met of tegengesteld aan die richting. De richting van de geometrie wordt bepaald door de volgorde waarin de coördinaten op elkaar volgen."
-      }
-    },
-    {
-      "EA-Guid": "{0F1BF31F-BE6F-4460-9958-B1FAB3A2825A}",
-      "name": "geometriemiddenlijn",
-      "label": {
-        "nl": "geometriemiddenlijn"
-      },
-      "definition": {
-        "nl": "Geometrie van de midellijn van het Wegsegment."
-      }
-    },
-    {
-      "EA-Guid": "{1CABF63C-E123-4ef0-9EBA-C418F46DB0E3}",
-      "name": "opPositie",
-      "label": {
-        "nl": "opPositie"
-      },
-      "definition": {
-        "nl": "Afstand vanaf het begin van de Link of Linksequentie tot het punt waar de Netwerkeigenschap geldt."
-      }
-    },
-    {
-      "EA-Guid": "{E3B91855-4C01-4d6d-9EBD-FDB7962FC9EF}",
-      "name": "element",
-      "label": {
-        "nl": "element"
-      },
-      "definition": {
-        "nl": "Verwijzing naar het Netwerkelement."
-      }
-    },
-    {
-      "EA-Guid": "{177F8E42-EFE0-4a68-86DA-149541320602}",
-      "name": "toepassingsRichting",
-      "label": {
-        "nl": "toepassingsRichting"
-      },
-      "definition": {
-        "nl": "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie."
-      },
-      "usage": {
-        "nl": "Mogelijke richtingen zijn gelijklopend met de geometrie, tegengesteld aan de geometrie of beide. Indien gelijklopend of tegengesteld wordt verondersteld dat de eigenschap voorkomt aan de rechterkant van de Link volgens die richting. Bvb als de toepassingsrichting van de straatverlichting gelijklopend is wil dat zeggen dat rechts van de Link straatverlichting aanwezig is."
       }
     },
     {

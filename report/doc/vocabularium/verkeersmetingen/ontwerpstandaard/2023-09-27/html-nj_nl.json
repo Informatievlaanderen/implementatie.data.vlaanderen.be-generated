@@ -12,8 +12,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/cdfc0de8c440d35ed84875284ff4e80a4aca6bd4",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/cdfc0de8c440d35ed84875284ff4e80a4aca6bd4/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/dd17f634ae9096325ef0b1bcb993ecd162bc3790",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/dd17f634ae9096325ef0b1bcb993ecd162bc3790/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/",
     "usesVocs": [],
@@ -33,7 +33,7 @@
       "usage": {},
       "equivalent": [],
       "parents": [
-        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeting",
+        "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting",
         "http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement"
       ]
     },
@@ -50,20 +50,8 @@
       "usage": {},
       "equivalent": [],
       "parents": [
-        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerskenmerk"
+        "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk"
       ]
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerktype",
-      "name": "Verkeerssnelheidsmetingkenmerktype",
-      "label": {
-        "nl": "Verkeerssnelheidsmetingkenmerktype"
-      },
-      "sort": "Verkeerssnelheidsmetingkenmerktype",
-      "description": {},
-      "usage": {},
-      "equivalent": [],
-      "parents": []
     },
     {
       "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling",
@@ -78,7 +66,7 @@
       "usage": {},
       "equivalent": [],
       "parents": [
-        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeting",
+        "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting",
         "http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation"
       ]
     },
@@ -95,20 +83,8 @@
       "usage": {},
       "equivalent": [],
       "parents": [
-        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerskenmerk"
+        "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk"
       ]
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerktype",
-      "name": "Verkeerstellingkenmerktype",
-      "label": {
-        "nl": "Verkeerstellingkenmerktype"
-      },
-      "sort": "Verkeerstellingkenmerktype",
-      "description": {},
-      "usage": {},
-      "equivalent": [],
-      "parents": []
     }
   ],
   "properties": [
@@ -135,13 +111,13 @@
     },
     {
       "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement",
-      "name": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt.",
+      "name": "netwerkreferentieelement",
       "label": {
-        "nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."
+        "nl": "netwerkreferentieelement"
       },
-      "sort": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt.",
+      "sort": "netwerkreferentieelement",
       "description": {
-        "nl": "Referentie naar het Netwerkelement Wegsegment waarvoor een "
+        "nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."
       },
       "usage": {},
       "domain": [
@@ -155,7 +131,7 @@
       ]
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
+      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk.kenmerktype",
       "name": "kenmerktype",
       "label": {
         "nl": "kenmerktype"
@@ -169,31 +145,12 @@
         "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk"
       ],
       "range": [
-        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerktype"
+        "http://www.w3.org/2004/02/skos/core#Concept"
       ],
       "parents": []
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#kenmerktype",
-      "name": "kenmerktype",
-      "label": {
-        "nl": "kenmerktype"
-      },
-      "sort": "kenmerktype",
-      "description": {
-        "nl": "Kenmerktype 'snelheid' is het specifieke kenmerktype van de verkeerssnelheidsmeting"
-      },
-      "usage": {},
-      "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk"
-      ],
-      "range": [
-        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerktype"
-      ],
-      "parents": []
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk",
+      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.geobserveerdKenmerk",
       "name": "geobserveerdKenmerk",
       "label": {
         "nl": "geobserveerdKenmerk"
@@ -214,7 +171,26 @@
       ]
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#geobserveerdKenmerk",
+      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk.kenmerktype",
+      "name": "kenmerktype",
+      "label": {
+        "nl": "kenmerktype"
+      },
+      "sort": "kenmerktype",
+      "description": {
+        "nl": "Kenmerktype 'snelheid' is het specifieke kenmerktype van de verkeerssnelheidsmeting"
+      },
+      "usage": {},
+      "domain": [
+        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk"
+      ],
+      "range": [
+        "http://www.w3.org/2004/02/skos/core#Concept"
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk",
       "name": "geobserveerdKenmerk",
       "label": {
         "nl": "geobserveerdKenmerk"
@@ -233,27 +209,6 @@
       "parents": [
         "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk"
       ]
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd",
-      "name": "fenomeenTijd",
-      "label": {
-        "nl": "fenomeenTijd"
-      },
-      "sort": "fenomeenTijd",
-      "description": {
-        "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
-      },
-      "usage": {},
-      "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeting"
-      ],
-      "range": [
-        "http://fixme.com#ProperInterval"
-      ],
-      "parents": [
-        "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime"
-      ]
     }
   ],
   "contributors": [
@@ -271,6 +226,38 @@
     }
   ],
   "external_terms": [
+    {
+      "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+      "name": "Verkeerstellingkenmerktype",
+      "label": {
+        "nl": "Verkeerstellingkenmerktype"
+      },
+      "description": {
+        "nl": "Het kenmerktype van de geobserveerde verkeerstellingsmeting"
+      },
+      "usage": {},
+      "sort": "Verkeerstellingkenmerktype",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+      "name": "Verkeerssnelheidsmetingkenmerktype",
+      "label": {
+        "nl": "Verkeerssnelheidsmetingkenmerktype"
+      },
+      "description": {
+        "nl": "Het kenmerktype van de geobserveerde verkeerssnelheidsmeting"
+      },
+      "usage": {},
+      "sort": "Verkeerssnelheidsmetingkenmerktype",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
     {
       "uri": "http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement.result",
       "name": "resultaat",
