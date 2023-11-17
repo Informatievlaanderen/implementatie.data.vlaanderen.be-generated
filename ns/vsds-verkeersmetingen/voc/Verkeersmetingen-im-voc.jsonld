@@ -92,7 +92,21 @@
   ],
   "properties": [
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk.kenmerktype",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "nl": "Kenmerktype 'aantal' is het specifieke kenmerktype van de verkeerstelling"
+      },
+      "domain": [
+        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk"
+      ],
+      "range": [
+        "http://www.w3.org/2004/02/skos/core#Concept"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "definition": {
         "nl": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."
@@ -106,36 +120,6 @@
       "generalization": [
         "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
       ]
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "definition": {
-        "nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."
-      },
-      "domain": [
-        "https://data.vlaanderen.be/ns/weg#Rijrichting"
-      ],
-      "range": [
-        "https://data.vlaanderen.be/ns/weg#Wegsegment"
-      ],
-      "generalization": [
-        "https://data.vlaanderen.be/ns/netwerk/#netwerkreferentie"
-      ]
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk.kenmerktype",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "definition": {
-        "nl": "Kenmerktype 'aantal' is het specifieke kenmerktype van de verkeerstelling"
-      },
-      "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk"
-      ],
-      "range": [
-        "http://www.w3.org/2004/02/skos/core#Concept"
-      ],
-      "generalization": []
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.geobserveerdKenmerk",
@@ -181,6 +165,22 @@
       ],
       "generalization": [
         "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk"
+      ]
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."
+      },
+      "domain": [
+        "https://data.vlaanderen.be/ns/weg#Rijrichting"
+      ],
+      "range": [
+        "https://data.vlaanderen.be/ns/weg#Wegsegment"
+      ],
+      "generalization": [
+        "https://data.vlaanderen.be/ns/netwerk/#netwerkreferentie"
       ]
     }
   ],

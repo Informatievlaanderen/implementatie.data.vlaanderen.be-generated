@@ -10,6 +10,13 @@ skos:Concept a rdfs:Class;
   rdfs:label "Verkeerstellingkenmerktype"@nl,
     "Verkeerssnelheidsmetingkenmerktype"@nl .
 
+<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement> a owl:ObjectProperty;
+  rdfs:comment "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/weg#Rijrichting>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen>;
+  rdfs:range <https://data.vlaanderen.be/ns/weg#Wegsegment>;
+  rdfs:subPropertyOf <https://data.vlaanderen.be/ns/netwerk/#netwerkreferentie> .
+
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk> a owl:ObjectProperty;
   rdfs:comment """Object dat door de Verkeerssnelheidsmetingen wordt geobserveerd.	"""@nl;
   rdfs:domain <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting>;
@@ -30,25 +37,18 @@ skos:Concept a rdfs:Class;
   rdfs:range <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk>;
   rdfs:subPropertyOf <https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk> .
 
-<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk.kenmerktype> a owl:ObjectProperty;
-  rdfs:comment "Kenmerktype 'aantal' is het specifieke kenmerktype van de verkeerstelling"@nl;
-  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk>;
-  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen>;
-  rdfs:range skos:Concept .
-
-<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement> a owl:ObjectProperty;
-  rdfs:comment "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."@nl;
-  rdfs:domain <https://data.vlaanderen.be/ns/weg#Rijrichting>;
-  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen>;
-  rdfs:range <https://data.vlaanderen.be/ns/weg#Wegsegment>;
-  rdfs:subPropertyOf <https://data.vlaanderen.be/ns/netwerk/#netwerkreferentie> .
-
-<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat> a owl:DatatypeProperty;
+<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat> a owl:DatatypeProperty;
   rdfs:comment "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."@nl;
   rdfs:domain <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen>;
   rdfs:range xsd:double;
   rdfs:subPropertyOf <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result> .
+
+<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk.kenmerktype> a owl:ObjectProperty;
+  rdfs:comment "Kenmerktype 'aantal' is het specifieke kenmerktype van de verkeerstelling"@nl;
+  rdfs:domain <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen>;
+  rdfs:range skos:Concept .
 
 <http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement.result> a rdf:Property;
   rdfs:label "resultaat"@nl .

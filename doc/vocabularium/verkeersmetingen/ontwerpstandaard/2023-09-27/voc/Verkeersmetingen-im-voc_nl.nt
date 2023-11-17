@@ -27,18 +27,6 @@
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk> <http://www.w3.org/2000/01/rdf-schema#comment> "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."@nl .
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk> .
-<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen> .
-<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat> <http://www.w3.org/2000/01/rdf-schema#comment> "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."@nl .
-<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat> <http://www.w3.org/2000/01/rdf-schema#domain> <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling> .
-<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
-<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result> .
-<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen> .
-<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement> <http://www.w3.org/2000/01/rdf-schema#comment> "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."@nl .
-<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/weg#Rijrichting> .
-<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/weg#Wegsegment> .
-<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://data.vlaanderen.be/ns/netwerk/#netwerkreferentie> .
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk.kenmerktype> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen> .
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk.kenmerktype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk.kenmerktype> <http://www.w3.org/2000/01/rdf-schema#comment> "Kenmerktype 'aantal' is het specifieke kenmerktype van de verkeerstelling"@nl .
@@ -47,6 +35,12 @@
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Verkeerstellingkenmerktype"@nl .
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Verkeerssnelheidsmetingkenmerktype"@nl .
+<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen> .
+<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat> <http://www.w3.org/2000/01/rdf-schema#comment> "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."@nl .
+<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat> <http://www.w3.org/2000/01/rdf-schema#domain> <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling> .
+<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result> .
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.geobserveerdKenmerk> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen> .
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.geobserveerdKenmerk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.geobserveerdKenmerk> <http://www.w3.org/2000/01/rdf-schema#comment> "Object dat door de Verkeerstelling wordt geobserveerd.\t"@nl .
@@ -64,6 +58,12 @@
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk> <http://www.w3.org/2000/01/rdf-schema#domain> <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting> .
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk> <http://www.w3.org/2000/01/rdf-schema#range> <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk> .
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk> .
+<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen> .
+<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement> <http://www.w3.org/2000/01/rdf-schema#comment> "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."@nl .
+<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/weg#Rijrichting> .
+<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/weg#Wegsegment> .
+<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://data.vlaanderen.be/ns/netwerk/#netwerkreferentie> .
 _:g454640 <http://xmlns.com/foaf/0.1/homepage> <https://data.specs.org> .
 _:g454640 <http://xmlns.com/foaf/0.1/mbox> <mailto:info@data.specs.org> .
 _:g454640 <http://xmlns.com/foaf/0.1/name> "Data Specifications Organisation" .
