@@ -386,8 +386,8 @@
   "contributors-column": "Verkeersmetingen",
   "contributors-file": "stakeholders.csv",
   "diagram": "VSDS-Verkeersmetingen",
-  "documentcommit": "dd17f634ae9096325ef0b1bcb993ecd162bc3790",
-  "dummy": "14",
+  "documentcommit": "0d76abfdba94bab185cd47453d892cc5807ee2ab",
+  "dummy": "15",
   "eap": "Verkeersmetingen-IM.eap",
   "editors": [
     {
@@ -1259,6 +1259,11 @@
             "key": "ap-usageNote-nl",
             "note": "Mogelijke richtingen zijn gelijklopend met de geometrie, tegengesteld aan de geometrie of beide. Indien gelijklopend of tegengesteld wordt verondersteld dat de eigenschap voorkomt aan de rechterkant van de Link volgens die richting. Bvb als de toepassingsrichting van de straatverlichting gelijklopend is wil dat zeggen dat rechts van de Link straatverlichting aanwezig is.",
             "value": "NOTE"
+          },
+          {
+            "key": "name",
+            "note": "null",
+            "value": "toepassingsRichting"
           }
         ],
         "Scope": "NOTHING",
@@ -2898,6 +2903,11 @@
             "key": "ap-label-nl",
             "note": "null",
             "value": "resultaat"
+          },
+          {
+            "key": "name",
+            "note": "null",
+            "value": "Verkeerssnelheidsmeting.resultaat"
           }
         ],
         "Scope": "TRANSLATIONS_ONLY",
@@ -6351,183 +6361,6 @@
   "navigation": {},
   "properties": [
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{4F8BC4D4-432A-4600-B8DE-063C52B0E46E}",
-      "ap-definition-nl": {
-        "nl": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."
-      },
-      "ap-label-nl": {
-        "nl": "tellingresultaat"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."
-      },
-      "domain": [
-        {
-          "EA-Name": "Verkeerstelling",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Verkeerstelling",
-        "EA-Domain-Guid": "{9C9C02E7-1253-4b05-84C1-93274ABD2496}",
-        "EA-Guid": "{4F8BC4D4-432A-4600-B8DE-063C52B0E46E}",
-        "EA-Name": "tellingresultaat",
-        "EA-Package": "VSDS-Verkeersmetingen",
-        "EA-Range": "Double",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-Name": "Double",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#double"
-        },
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "tellingresultaat"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."
-          },
-          {
-            "key": "parentURI",
-            "note": "null",
-            "value": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
-          }
-        ],
-        "Scope": "FULL_DEFINITON",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."
-        },
-        "ap-label-nl": {
-          "nl": "tellingresultaat"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."
-        },
-        "label": {
-          "nl": "tellingresultaat"
-        },
-        "usage": ""
-      },
-      "generalization": [
-        "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
-      ],
-      "inpackage": "ACTIVE_PACKAGE",
-      "label": {
-        "nl": "tellingresultaat"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "1",
-      "name": "tellingresultaat",
-      "range": [
-        {
-          "EA-Name": "Double",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#double"
-        }
-      ]
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{D0FC4E26-48C8-4a28-BD9A-D6BD94C4C450}",
-      "ap-definition-nl": {
-        "nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."
-      },
-      "ap-label-nl": {
-        "nl": "netwerkreferentieelement"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."
-      },
-      "domain": [
-        {
-          "EA-Name": "Rijrichting",
-          "uri": "https://data.vlaanderen.be/ns/weg#Rijrichting"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Rijrichting",
-        "EA-Domain-Guid": "{F475BC99-8F8C-42fa-8AFC-97D937475E85}",
-        "EA-Guid": "{D0FC4E26-48C8-4a28-BD9A-D6BD94C4C450}",
-        "EA-Name": "netwerkreferentieelement",
-        "EA-Package": "OSLO-Verkeersmetingen",
-        "EA-Range": "Wegsegment",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{A74FEDDC-177C-430a-80BF-5D15C5278C01}",
-          "EA-Name": "Wegsegment",
-          "EA-Package": "INSPIRE-Weg",
-          "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment"
-        },
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "netwerkreferentieelement"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."
-          },
-          {
-            "key": "parentURI",
-            "note": "null",
-            "value": "https://data.vlaanderen.be/ns/netwerk/#netwerkreferentie"
-          },
-          {
-            "key": "package",
-            "note": "null",
-            "value": "VSDS-Verkeersmetingen"
-          }
-        ],
-        "Scope": "FULL_DEFINITON",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."
-        },
-        "ap-label-nl": {
-          "nl": "netwerkreferentieelement"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."
-        },
-        "label": {
-          "nl": "netwerkreferentieelement"
-        },
-        "usage": ""
-      },
-      "generalization": [
-        "https://data.vlaanderen.be/ns/netwerk/#netwerkreferentie"
-      ],
-      "inpackage": "ACTIVE_PACKAGE",
-      "label": {
-        "nl": "netwerkreferentieelement"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "1",
-      "name": "netwerkreferentieelement",
-      "range": [
-        {
-          "EA-GUID": "{A74FEDDC-177C-430a-80BF-5D15C5278C01}",
-          "EA-Name": "Wegsegment",
-          "EA-Package": "INSPIRE-Weg",
-          "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment"
-        }
-      ]
-    },
-    {
       "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk.kenmerktype",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{8E611CBE-ABDA-4726-9E28-7BE132D4F8F3}",
@@ -6619,6 +6452,96 @@
           "EA-Name": "Verkeerstellingkenmerktype",
           "EA-Package": "VSDS-Verkeersmetingen",
           "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ]
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{4F8BC4D4-432A-4600-B8DE-063C52B0E46E}",
+      "ap-definition-nl": {
+        "nl": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."
+      },
+      "ap-label-nl": {
+        "nl": "tellingresultaat"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."
+      },
+      "domain": [
+        {
+          "EA-Name": "Verkeerstelling",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Verkeerstelling",
+        "EA-Domain-Guid": "{9C9C02E7-1253-4b05-84C1-93274ABD2496}",
+        "EA-Guid": "{4F8BC4D4-432A-4600-B8DE-063C52B0E46E}",
+        "EA-Name": "tellingresultaat",
+        "EA-Package": "VSDS-Verkeersmetingen",
+        "EA-Range": "Double",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "Double",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#double"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "tellingresultaat"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."
+          },
+          {
+            "key": "parentURI",
+            "note": "null",
+            "value": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
+          },
+          {
+            "key": "name",
+            "note": "null",
+            "value": "Verkeerstelling.tellingresultaat"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."
+        },
+        "ap-label-nl": {
+          "nl": "tellingresultaat"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."
+        },
+        "label": {
+          "nl": "tellingresultaat"
+        },
+        "usage": ""
+      },
+      "generalization": [
+        "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
+      ],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "tellingresultaat"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "tellingresultaat",
+      "range": [
+        {
+          "EA-Name": "Double",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#double"
         }
       ]
     },
@@ -6910,6 +6833,103 @@
           "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk"
         }
       ]
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{D0FC4E26-48C8-4a28-BD9A-D6BD94C4C450}",
+      "ap-definition-nl": {
+        "nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."
+      },
+      "ap-label-nl": {
+        "nl": "netwerkreferentieelement"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."
+      },
+      "domain": [
+        {
+          "EA-Name": "Rijrichting",
+          "uri": "https://data.vlaanderen.be/ns/weg#Rijrichting"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Rijrichting",
+        "EA-Domain-Guid": "{F475BC99-8F8C-42fa-8AFC-97D937475E85}",
+        "EA-Guid": "{D0FC4E26-48C8-4a28-BD9A-D6BD94C4C450}",
+        "EA-Name": "netwerkreferentieelement",
+        "EA-Package": "OSLO-Verkeersmetingen",
+        "EA-Range": "Wegsegment",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{A74FEDDC-177C-430a-80BF-5D15C5278C01}",
+          "EA-Name": "Wegsegment",
+          "EA-Package": "INSPIRE-Weg",
+          "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "netwerkreferentieelement"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."
+          },
+          {
+            "key": "parentURI",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/netwerk/#netwerkreferentie"
+          },
+          {
+            "key": "package",
+            "note": "null",
+            "value": "VSDS-Verkeersmetingen"
+          },
+          {
+            "key": "name",
+            "note": "null",
+            "value": "Rijrichting.netwerkreferentieelement"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."
+        },
+        "ap-label-nl": {
+          "nl": "netwerkreferentieelement"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."
+        },
+        "label": {
+          "nl": "netwerkreferentieelement"
+        },
+        "usage": ""
+      },
+      "generalization": [
+        "https://data.vlaanderen.be/ns/netwerk/#netwerkreferentie"
+      ],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "netwerkreferentieelement"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "netwerkreferentieelement",
+      "range": [
+        {
+          "EA-GUID": "{A74FEDDC-177C-430a-80BF-5D15C5278C01}",
+          "EA-Name": "Wegsegment",
+          "EA-Package": "INSPIRE-Weg",
+          "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment"
+        }
+      ]
     }
   ],
   "publication-date": "2023-09-27",
@@ -6919,7 +6939,7 @@
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/",
   "template": "mijn-implementatiemodel-im.j2",
   "title": "Implementatiemodel Verkeersmetingen",
-  "toolchaincommit": "65eb59e724705e89122063e83018695173e2b2b5",
+  "toolchaincommit": "ad8abbe633acd94ac68275899f9dc9992ff6b334",
   "translation": [
     {
       "language": "nl",
