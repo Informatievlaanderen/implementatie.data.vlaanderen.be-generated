@@ -13,11 +13,11 @@
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LengteShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#KenmerktypeShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#TellingShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#DomeinobjectShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#ObjectShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#MetingShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#ObservatieShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#BemonsteringspuntShape>,
-    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#DomeinobjectShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#TemporeleEntiteitShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#AgentShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LijnstringShape>,
@@ -62,7 +62,7 @@
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#DomeinobjectShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:targetClass <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature> .
+  shacl:targetClass <http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_DomainFeature> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#GeometrieShape> a shacl:NodeShape;
   shacl:closed false;
@@ -240,7 +240,7 @@
   shacl:description "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie."@nl;
   shacl:name "toepassingsRichting"@nl;
   shacl:nodekind "sh:BlankNodeOrIRI";
-  shacl:path <https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting>;
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#toepassingsRichting>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De verwachte waarde voor toepassingsRichting is een rdfs:Resource (URI of blank node)"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
@@ -248,7 +248,7 @@
   shacl:description "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie."@nl;
   shacl:minCount 1;
   shacl:name "toepassingsRichting"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting>;
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#toepassingsRichting>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Minimaal 1 waarden verwacht voor toepassingsRichting"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
@@ -256,7 +256,7 @@
   shacl:description "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie."@nl;
   shacl:maxCount 1;
   shacl:name "toepassingsRichting"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting>;
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#toepassingsRichting>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Maximaal 1 waarden toegelaten voor toepassingsRichting"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
@@ -264,7 +264,7 @@
   shacl:class skos:Concept;
   shacl:description "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie."@nl;
   shacl:name "toepassingsRichting"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting>;
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#toepassingsRichting>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De range van toepassingsRichting moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
@@ -426,10 +426,10 @@
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:property <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/1c8cdb4c94347065895872d502e97ba1ed3d51e8>,
-    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/2282fdd47c4c6f8261db1b6e7267c6f18fc1ef4e>,
-    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/6be1baf1de7782039458741f0aa17e4709c35d96>,
-    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/7ac83f9c851f737f56013be17e62c02d4d4e9404>,
+  shacl:property <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/77092c33afd610eb84ac602db3f470ac159e38a0>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/7def3d66f8f35ca8575a3e73781db476e98d3b96>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/84fee443ba42f73e593a74be42fb497a2aae9e68>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/b1c5c8a466c5e90cd11752c844408779cbdc8d07>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/1403f089adc1e6d11802f1dd83304f136b454f4e>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/be669d91bd450ab37b70c1d48ce1501e20b66bed>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/f07f36ce1c31753a313165cb1fcc08b7b5d10190>;
@@ -443,36 +443,36 @@
   <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De range van rijrichting moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
-<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/1c8cdb4c94347065895872d502e97ba1ed3d51e8> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Rijrichting%3Anetwerkreferentieelement";
-  shacl:class <https://data.vlaanderen.be/ns/weg#Wegsegment>;
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/77092c33afd610eb84ac602db3f470ac159e38a0> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Rijrichting%3ARijrichting.netwerkreferentieelement";
   shacl:description "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."@nl;
-  shacl:name "netwerkreferentieelement"@nl;
-  shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement>;
-  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De range van netwerkreferentieelement moet van het type <https://data.vlaanderen.be/ns/weg#Wegsegment> zijn."];
-  <https://data.vlaanderen.be/ns/shacl#rule> "" .
-
-<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/2282fdd47c4c6f8261db1b6e7267c6f18fc1ef4e> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Rijrichting%3Anetwerkreferentieelement";
-  shacl:description "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."@nl;
-  shacl:maxCount 1;
-  shacl:name "netwerkreferentieelement"@nl;
-  shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement>;
-  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Maximaal 1 waarden toegelaten voor netwerkreferentieelement"];
-  <https://data.vlaanderen.be/ns/shacl#rule> "" .
-
-<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/6be1baf1de7782039458741f0aa17e4709c35d96> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Rijrichting%3Anetwerkreferentieelement";
-  shacl:description "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."@nl;
-  shacl:name "netwerkreferentieelement"@nl;
+  shacl:name "Rijrichting.netwerkreferentieelement"@nl;
   shacl:nodekind "sh:BlankNodeOrIRI";
   shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement>;
-  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De verwachte waarde voor netwerkreferentieelement is een rdfs:Resource (URI of blank node)"];
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De verwachte waarde voor Rijrichting.netwerkreferentieelement is een rdfs:Resource (URI of blank node)"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
-<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/7ac83f9c851f737f56013be17e62c02d4d4e9404> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Rijrichting%3Anetwerkreferentieelement";
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/7def3d66f8f35ca8575a3e73781db476e98d3b96> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Rijrichting%3ARijrichting.netwerkreferentieelement";
   shacl:description "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."@nl;
   shacl:minCount 1;
-  shacl:name "netwerkreferentieelement"@nl;
+  shacl:name "Rijrichting.netwerkreferentieelement"@nl;
   shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement>;
-  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Minimaal 1 waarden verwacht voor netwerkreferentieelement"];
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Minimaal 1 waarden verwacht voor Rijrichting.netwerkreferentieelement"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/84fee443ba42f73e593a74be42fb497a2aae9e68> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Rijrichting%3ARijrichting.netwerkreferentieelement";
+  shacl:class <https://data.vlaanderen.be/ns/weg#Wegsegment>;
+  shacl:description "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."@nl;
+  shacl:name "Rijrichting.netwerkreferentieelement"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De range van Rijrichting.netwerkreferentieelement moet van het type <https://data.vlaanderen.be/ns/weg#Wegsegment> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/b1c5c8a466c5e90cd11752c844408779cbdc8d07> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Rijrichting%3ARijrichting.netwerkreferentieelement";
+  shacl:description "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."@nl;
+  shacl:maxCount 1;
+  shacl:name "Rijrichting.netwerkreferentieelement"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Maximaal 1 waarden toegelaten voor Rijrichting.netwerkreferentieelement"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape/be669d91bd450ab37b70c1d48ce1501e20b66bed> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Rijrichting%3Arijrichting";
@@ -815,10 +815,10 @@
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:property <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/0b8f1cfacc6c877b4618f064aa070495c9ee15e3>,
-    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/60638eca218f8b9f8ea1b79fb9b42510aa9f03fe>,
-    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/af62feb10fc401a33b0ef1ef3d3dc3a9dc30f436>,
-    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/e51c4bd2d636090d65d2c5d08cfa4c274e062d53>,
+  shacl:property <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/8a87a9f3de7067cf1c8c62800cfed916d63eb498>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/90cb7f27efd24c215ec99b5b13b1b9d74dfc066e>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/a426a523be001fa03420015f1ad29dc5014f045b>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/e9df5ca04b4862759fab05c0fe95587e569e4503>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/09ed995683a26095de4577d13e597160f260ecb2>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/1bab1bb4af028fef0775daa8246b62cbb09cdcd1>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/f3863ce5468352d4291842a66dd4db610576ccc5>,
@@ -833,14 +833,6 @@
   <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De range van resultaat moet van het type <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
-<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/0b8f1cfacc6c877b4618f064aa070495c9ee15e3> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmeting%3AgeobserveerdKenmerk";
-  shacl:description """Object dat door de Verkeerssnelheidsmetingen wordt geobserveerd.	"""@nl;
-  shacl:minCount 1;
-  shacl:name "geobserveerdKenmerk"@nl;
-  shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk>;
-  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Minimaal 1 waarden verwacht voor geobserveerdKenmerk"];
-  <https://data.vlaanderen.be/ns/shacl#rule> "" .
-
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/1bab1bb4af028fef0775daa8246b62cbb09cdcd1> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmeting%3Aresultaat";
   shacl:description "Resultaat van de Verkeerssnelheidsmeting."@nl;
   shacl:minCount 1;
@@ -849,28 +841,36 @@
   <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Minimaal 1 waarden verwacht voor resultaat"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
-<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/60638eca218f8b9f8ea1b79fb9b42510aa9f03fe> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmeting%3AgeobserveerdKenmerk";
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/8a87a9f3de7067cf1c8c62800cfed916d63eb498> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmeting%3AVerkeerssnelheidsmeting.geobserveerdKenmerk";
   shacl:description """Object dat door de Verkeerssnelheidsmetingen wordt geobserveerd.	"""@nl;
   shacl:maxCount 1;
-  shacl:name "geobserveerdKenmerk"@nl;
+  shacl:name "Verkeerssnelheidsmeting.geobserveerdKenmerk"@nl;
   shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk>;
-  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Maximaal 1 waarden toegelaten voor geobserveerdKenmerk"];
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Maximaal 1 waarden toegelaten voor Verkeerssnelheidsmeting.geobserveerdKenmerk"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
-<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/af62feb10fc401a33b0ef1ef3d3dc3a9dc30f436> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmeting%3AgeobserveerdKenmerk";
-  shacl:class <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk>;
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/90cb7f27efd24c215ec99b5b13b1b9d74dfc066e> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmeting%3AVerkeerssnelheidsmeting.geobserveerdKenmerk";
   shacl:description """Object dat door de Verkeerssnelheidsmetingen wordt geobserveerd.	"""@nl;
-  shacl:name "geobserveerdKenmerk"@nl;
-  shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk>;
-  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De range van geobserveerdKenmerk moet van het type <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk> zijn."];
-  <https://data.vlaanderen.be/ns/shacl#rule> "" .
-
-<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/e51c4bd2d636090d65d2c5d08cfa4c274e062d53> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmeting%3AgeobserveerdKenmerk";
-  shacl:description """Object dat door de Verkeerssnelheidsmetingen wordt geobserveerd.	"""@nl;
-  shacl:name "geobserveerdKenmerk"@nl;
+  shacl:name "Verkeerssnelheidsmeting.geobserveerdKenmerk"@nl;
   shacl:nodekind "sh:BlankNodeOrIRI";
   shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk>;
-  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De verwachte waarde voor geobserveerdKenmerk is een rdfs:Resource (URI of blank node)"];
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De verwachte waarde voor Verkeerssnelheidsmeting.geobserveerdKenmerk is een rdfs:Resource (URI of blank node)"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/a426a523be001fa03420015f1ad29dc5014f045b> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmeting%3AVerkeerssnelheidsmeting.geobserveerdKenmerk";
+  shacl:description """Object dat door de Verkeerssnelheidsmetingen wordt geobserveerd.	"""@nl;
+  shacl:minCount 1;
+  shacl:name "Verkeerssnelheidsmeting.geobserveerdKenmerk"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Minimaal 1 waarden verwacht voor Verkeerssnelheidsmeting.geobserveerdKenmerk"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/e9df5ca04b4862759fab05c0fe95587e569e4503> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmeting%3AVerkeerssnelheidsmeting.geobserveerdKenmerk";
+  shacl:class <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk>;
+  shacl:description """Object dat door de Verkeerssnelheidsmetingen wordt geobserveerd.	"""@nl;
+  shacl:name "Verkeerssnelheidsmeting.geobserveerdKenmerk"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De range van Verkeerssnelheidsmeting.geobserveerdKenmerk moet van het type <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerssnelheidsmetingShape/f3863ce5468352d4291842a66dd4db610576ccc5> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerssnelheidsmeting%3Aresultaat";
@@ -935,78 +935,78 @@
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:property <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/0b8f1cfacc6c877b4618f064aa070495c9ee15e3>,
-    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/60638eca218f8b9f8ea1b79fb9b42510aa9f03fe>,
-    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/af62feb10fc401a33b0ef1ef3d3dc3a9dc30f436>,
-    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/e51c4bd2d636090d65d2c5d08cfa4c274e062d53>,
-    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/6d779b2d3752ec2d545135744c36a1b114604c3d>,
-    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/8af89cbd72964c8ec4fe4592327be90edd502278>,
-    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/cea7a4b228e342123596f45aa39a49eec79741fd>,
-    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/dfeacf766937dfc762d8e6f053750c8ff022f05f>;
+  shacl:property <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/12396c6fc5bf0d5afaf87ee7e7aa60985c0f59f8>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/2a88a0e074e7c409d6f15d0589c52d0162f4e28f>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/d61ab9472c05b87c71e86624e112bc52470aa740>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/e264d4206c52545c45cb34e5653f250b7cf54a62>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/57a366b84d2876c942e63388f833b53274b7df9b>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/6392ef3f3e0efda38dba76cd3a2d38cb1d1790ca>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/a32b6f04ce13cbcadb64e8d97c578cbe1dc46ccb>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/c59d667d6e6813d37a0cc51bd30dff698de03720>;
   shacl:targetClass <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling> .
 
-<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/0b8f1cfacc6c877b4618f064aa070495c9ee15e3> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3AgeobserveerdKenmerk";
-  shacl:description """Object dat door de Verkeerstelling wordt geobserveerd.	"""@nl;
-  shacl:minCount 1;
-  shacl:name "geobserveerdKenmerk"@nl;
-  shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.geobserveerdKenmerk>;
-  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Minimaal 1 waarden verwacht voor geobserveerdKenmerk"];
-  <https://data.vlaanderen.be/ns/shacl#rule> "" .
-
-<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/60638eca218f8b9f8ea1b79fb9b42510aa9f03fe> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3AgeobserveerdKenmerk";
-  shacl:description """Object dat door de Verkeerstelling wordt geobserveerd.	"""@nl;
-  shacl:maxCount 1;
-  shacl:name "geobserveerdKenmerk"@nl;
-  shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.geobserveerdKenmerk>;
-  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Maximaal 1 waarden toegelaten voor geobserveerdKenmerk"];
-  <https://data.vlaanderen.be/ns/shacl#rule> "" .
-
-<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/6d779b2d3752ec2d545135744c36a1b114604c3d> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3Atellingresultaat";
-  shacl:description "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."@nl;
-  shacl:maxCount 1;
-  shacl:name "tellingresultaat"@nl;
-  shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat>;
-  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Maximaal 1 waarden toegelaten voor tellingresultaat"];
-  <https://data.vlaanderen.be/ns/shacl#rule> "" .
-
-<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/8af89cbd72964c8ec4fe4592327be90edd502278> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3Atellingresultaat";
-  shacl:description "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."@nl;
-  shacl:name "tellingresultaat"@nl;
-  shacl:nodekind "sh:Literal";
-  shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat>;
-  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De verwachte waarde voor tellingresultaat is een Literal"];
-  <https://data.vlaanderen.be/ns/shacl#rule> "" .
-
-<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/af62feb10fc401a33b0ef1ef3d3dc3a9dc30f436> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3AgeobserveerdKenmerk";
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/12396c6fc5bf0d5afaf87ee7e7aa60985c0f59f8> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3AVerkeerstelling.geobserveerdKenmerk";
   shacl:class <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk>;
   shacl:description """Object dat door de Verkeerstelling wordt geobserveerd.	"""@nl;
-  shacl:name "geobserveerdKenmerk"@nl;
+  shacl:name "Verkeerstelling.geobserveerdKenmerk"@nl;
   shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.geobserveerdKenmerk>;
-  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De range van geobserveerdKenmerk moet van het type <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De range van Verkeerstelling.geobserveerdKenmerk moet van het type <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
-<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/cea7a4b228e342123596f45aa39a49eec79741fd> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3Atellingresultaat";
-  shacl:datatype xsd:double;
-  shacl:description "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."@nl;
-  shacl:name "tellingresultaat"@nl;
-  shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat>;
-  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De range van tellingresultaat moet van het type <http://www.w3.org/2001/XMLSchema#double> zijn."];
-  <https://data.vlaanderen.be/ns/shacl#rule> "" .
-
-<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/dfeacf766937dfc762d8e6f053750c8ff022f05f> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3Atellingresultaat";
-  shacl:description "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."@nl;
-  shacl:minCount 1;
-  shacl:name "tellingresultaat"@nl;
-  shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat>;
-  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Minimaal 1 waarden verwacht voor tellingresultaat"];
-  <https://data.vlaanderen.be/ns/shacl#rule> "" .
-
-<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/e51c4bd2d636090d65d2c5d08cfa4c274e062d53> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3AgeobserveerdKenmerk";
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/2a88a0e074e7c409d6f15d0589c52d0162f4e28f> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3AVerkeerstelling.geobserveerdKenmerk";
   shacl:description """Object dat door de Verkeerstelling wordt geobserveerd.	"""@nl;
-  shacl:name "geobserveerdKenmerk"@nl;
+  shacl:name "Verkeerstelling.geobserveerdKenmerk"@nl;
   shacl:nodekind "sh:BlankNodeOrIRI";
   shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.geobserveerdKenmerk>;
-  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De verwachte waarde voor geobserveerdKenmerk is een rdfs:Resource (URI of blank node)"];
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De verwachte waarde voor Verkeerstelling.geobserveerdKenmerk is een rdfs:Resource (URI of blank node)"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/57a366b84d2876c942e63388f833b53274b7df9b> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3AVerkeerstelling.tellingresultaat";
+  shacl:description "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."@nl;
+  shacl:name "Verkeerstelling.tellingresultaat"@nl;
+  shacl:nodekind "sh:Literal";
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De verwachte waarde voor Verkeerstelling.tellingresultaat is een Literal"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/6392ef3f3e0efda38dba76cd3a2d38cb1d1790ca> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3AVerkeerstelling.tellingresultaat";
+  shacl:description "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."@nl;
+  shacl:maxCount 1;
+  shacl:name "Verkeerstelling.tellingresultaat"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Maximaal 1 waarden toegelaten voor Verkeerstelling.tellingresultaat"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/a32b6f04ce13cbcadb64e8d97c578cbe1dc46ccb> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3AVerkeerstelling.tellingresultaat";
+  shacl:datatype xsd:double;
+  shacl:description "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."@nl;
+  shacl:name "Verkeerstelling.tellingresultaat"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De range van Verkeerstelling.tellingresultaat moet van het type <http://www.w3.org/2001/XMLSchema#double> zijn."];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/c59d667d6e6813d37a0cc51bd30dff698de03720> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3AVerkeerstelling.tellingresultaat";
+  shacl:description "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."@nl;
+  shacl:minCount 1;
+  shacl:name "Verkeerstelling.tellingresultaat"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Minimaal 1 waarden verwacht voor Verkeerstelling.tellingresultaat"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/d61ab9472c05b87c71e86624e112bc52470aa740> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3AVerkeerstelling.geobserveerdKenmerk";
+  shacl:description """Object dat door de Verkeerstelling wordt geobserveerd.	"""@nl;
+  shacl:minCount 1;
+  shacl:name "Verkeerstelling.geobserveerdKenmerk"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.geobserveerdKenmerk>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Minimaal 1 waarden verwacht voor Verkeerstelling.geobserveerdKenmerk"];
+  <https://data.vlaanderen.be/ns/shacl#rule> "" .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingShape/e264d4206c52545c45cb34e5653f250b7cf54a62> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerstelling%3AVerkeerstelling.geobserveerdKenmerk";
+  shacl:description """Object dat door de Verkeerstelling wordt geobserveerd.	"""@nl;
+  shacl:maxCount 1;
+  shacl:name "Verkeerstelling.geobserveerdKenmerk"@nl;
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.geobserveerdKenmerk>;
+  <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Maximaal 1 waarden toegelaten voor Verkeerstelling.geobserveerdKenmerk"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerstellingkenmerkShape> a shacl:NodeShape;
@@ -1121,7 +1121,7 @@
   shacl:description "Geometrie van de midellijn van het Wegsegment."@nl;
   shacl:maxCount 1;
   shacl:name "geometriemiddenlijn"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn>;
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Maximaal 1 waarden toegelaten voor geometriemiddenlijn"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
@@ -1161,7 +1161,7 @@
   shacl:description "Geometrie van de midellijn van het Wegsegment."@nl;
   shacl:minCount 1;
   shacl:name "geometriemiddenlijn"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn>;
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "Minimaal 1 waarden verwacht voor geometriemiddenlijn"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
@@ -1169,7 +1169,7 @@
   shacl:class <http://www.opengis.net/ont/sf#LineString>;
   shacl:description "Geometrie van de midellijn van het Wegsegment."@nl;
   shacl:name "geometriemiddenlijn"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn>;
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De range van geometriemiddenlijn moet van het type <http://www.opengis.net/ont/sf#LineString> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
@@ -1201,7 +1201,7 @@
   shacl:description "Geometrie van de midellijn van het Wegsegment."@nl;
   shacl:name "geometriemiddenlijn"@nl;
   shacl:nodekind "sh:BlankNodeOrIRI";
-  shacl:path <https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn>;
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27nl> "De verwachte waarde voor geometriemiddenlijn is een rdfs:Resource (URI of blank node)"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
