@@ -13,11 +13,11 @@
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22#LengteShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22#KenmerktypeShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22#TellingShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22#DomeinobjectShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22#ObjectShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22#MetingShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22#ObservatieShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22#BemonsteringspuntShape>,
-    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22#DomeinobjectShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22#ProperIntervalShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22#AgentShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22#LijnstringShape>,
@@ -63,7 +63,7 @@
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22#DomeinobjectShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:targetClass <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature> .
+  shacl:targetClass <http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_DomainFeature> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22#GeometrieShape> a shacl:NodeShape;
   shacl:closed false;
@@ -241,7 +241,7 @@
   shacl:description "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie."@nl;
   shacl:name "toepassingsRichting"@nl;
   shacl:nodekind "sh:BlankNodeOrIRI";
-  shacl:path <https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting>;
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#toepassingsRichting>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22nl> "De verwachte waarde voor toepassingsRichting is een rdfs:Resource (URI of blank node)"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
@@ -249,7 +249,7 @@
   shacl:description "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie."@nl;
   shacl:minCount 1;
   shacl:name "toepassingsRichting"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting>;
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#toepassingsRichting>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22nl> "Minimaal 1 waarden verwacht voor toepassingsRichting"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
@@ -257,7 +257,7 @@
   shacl:description "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie."@nl;
   shacl:maxCount 1;
   shacl:name "toepassingsRichting"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting>;
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#toepassingsRichting>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22nl> "Maximaal 1 waarden toegelaten voor toepassingsRichting"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
@@ -265,7 +265,7 @@
   shacl:class skos:Concept;
   shacl:description "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie."@nl;
   shacl:name "toepassingsRichting"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting>;
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#toepassingsRichting>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22nl> "De range van toepassingsRichting moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
@@ -1153,7 +1153,7 @@
   shacl:description "Geometrie van de midellijn van het Wegsegment."@nl;
   shacl:maxCount 1;
   shacl:name "geometriemiddenlijn"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn>;
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22nl> "Maximaal 1 waarden toegelaten voor geometriemiddenlijn"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
@@ -1193,7 +1193,7 @@
   shacl:description "Geometrie van de midellijn van het Wegsegment."@nl;
   shacl:minCount 1;
   shacl:name "geometriemiddenlijn"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn>;
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22nl> "Minimaal 1 waarden verwacht voor geometriemiddenlijn"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
@@ -1201,7 +1201,7 @@
   shacl:class <http://www.opengis.net/ont/sf#LineString>;
   shacl:description "Geometrie van de midellijn van het Wegsegment."@nl;
   shacl:name "geometriemiddenlijn"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn>;
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22nl> "De range van geometriemiddenlijn moet van het type <http://www.opengis.net/ont/sf#LineString> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
@@ -1233,7 +1233,7 @@
   shacl:description "Geometrie van de midellijn van het Wegsegment."@nl;
   shacl:name "geometriemiddenlijn"@nl;
   shacl:nodekind "sh:BlankNodeOrIRI";
-  shacl:path <https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn>;
+  shacl:path <https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22nl> "De verwachte waarde voor geometriemiddenlijn is een rdfs:Resource (URI of blank node)"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 

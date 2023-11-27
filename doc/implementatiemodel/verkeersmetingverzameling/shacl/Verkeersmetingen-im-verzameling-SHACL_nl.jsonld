@@ -529,6 +529,13 @@
       "sh:targetClass": "http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation"
     },
     {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22#DomeinobjectShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_DomainFeature"
+    },
+    {
       "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22#ObjectShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -555,13 +562,6 @@
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint"
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22#DomeinobjectShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature"
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingverzameling/ontwerpstandaard/2023-11-22#ProperIntervalShape",
@@ -1442,7 +1442,7 @@
             "nl": "toepassingsRichting"
           },
           "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting",
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#toepassingsRichting",
           "vl:message": {
             "nl": "De verwachte waarde voor toepassingsRichting is een rdfs:Resource (URI of blank node)"
           },
@@ -1458,7 +1458,7 @@
           "sh:name": {
             "nl": "toepassingsRichting"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting",
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#toepassingsRichting",
           "vl:message": {
             "nl": "Minimaal 1 waarden verwacht voor toepassingsRichting"
           },
@@ -1474,7 +1474,7 @@
           "sh:name": {
             "nl": "toepassingsRichting"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting",
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#toepassingsRichting",
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor toepassingsRichting"
           },
@@ -1490,7 +1490,7 @@
           "sh:name": {
             "nl": "toepassingsRichting"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting",
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#toepassingsRichting",
           "vl:message": {
             "nl": "De range van toepassingsRichting moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
           },
@@ -1999,7 +1999,7 @@
           "sh:name": {
             "nl": "geometriemiddenlijn"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn",
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn",
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor geometriemiddenlijn"
           },
@@ -2015,7 +2015,7 @@
           "sh:name": {
             "nl": "geometriemiddenlijn"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn",
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn",
           "vl:message": {
             "nl": "Minimaal 1 waarden verwacht voor geometriemiddenlijn"
           },
@@ -2031,7 +2031,7 @@
           "sh:name": {
             "nl": "geometriemiddenlijn"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn",
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn",
           "vl:message": {
             "nl": "De range van geometriemiddenlijn moet van het type <http://www.opengis.net/ont/sf#LineString> zijn."
           },
@@ -2047,7 +2047,7 @@
             "nl": "geometriemiddenlijn"
           },
           "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn",
+          "sh:path": "https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn",
           "vl:message": {
             "nl": "De verwachte waarde voor geometriemiddenlijn is een rdfs:Resource (URI of blank node)"
           },

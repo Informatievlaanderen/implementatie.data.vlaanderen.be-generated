@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/6949332c51b6283994301c655349bd9b5217490a",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/6949332c51b6283994301c655349bd9b5217490a/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/fc7addcf2646016f6bd39af281802830acb2d73e",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/fc7addcf2646016f6bd39af281802830acb2d73e/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/",
     "usesVocs": [],
@@ -370,6 +370,22 @@
       "properties": []
     },
     {
+      "uri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_DomainFeature",
+      "name": "Domeinobject",
+      "label": {
+        "nl": "Domeinobject"
+      },
+      "sort": "Domeinobject",
+      "description": {
+        "nl": "Object uit de reële wereld dat geen Bemonsteringsobject is."
+      },
+      "usage": {
+        "nl": "Dit is het werkelijk geobserveerdObject. Als rechtstreeks observeren niet kan observeren we een representatief staal, het zgn Bemonsteringsobject. In dat geval is het Domeinobject het bemonsterdObject. OPMERKING: Deze klasse is louter informatief, in praktijk moet ze gesubstitueerd worden door een klasse uit het domein. Bv in het domein Waterkwaliteit zou het domeinobject een instantie vd klasse Rivier kunnen zijn."
+      },
+      "parents": [],
+      "properties": []
+    },
+    {
       "uri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
       "name": "Object",
       "label": {
@@ -429,22 +445,6 @@
       },
       "usage": {
         "nl": "Van het Object dat men wil observeren wordt in dat geval een representatief puntvormig deel beschouwd. Voorbeeld is een (Meet)Station. OPMERKING: Meer info over deze klasse in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/observaties-en-metingen/\">OSLO Observaties en Metingen</a> ."
-      },
-      "parents": [],
-      "properties": []
-    },
-    {
-      "uri": "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature",
-      "name": "Domeinobject",
-      "label": {
-        "nl": "Domeinobject"
-      },
-      "sort": "Domeinobject",
-      "description": {
-        "nl": "Object uit de reële wereld dat geen Bemonsteringsobject is."
-      },
-      "usage": {
-        "nl": "Dit is het werkelijk geobserveerdObject. Als rechtstreeks observeren niet kan observeren we een representatief staal, het zgn Bemonsteringsobject. In dat geval is het Domeinobject het bemonsterdObject. OPMERKING: Deze klasse is louter informatief, in praktijk moet ze gesubstitueerd worden door een klasse uit het domein. Bv in het domein Waterkwaliteit zou het domeinobject een instantie vd klasse Rivier kunnen zijn."
       },
       "parents": [],
       "properties": []
@@ -1265,41 +1265,6 @@
           "codelist_uri": ""
         },
         {
-          "uri": "https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn",
-          "name": "geometriemiddenlijn",
-          "sort": "geometriemiddenlijn",
-          "label": {
-            "nl": "geometriemiddenlijn"
-          },
-          "description": {
-            "nl": "Geometrie van de midellijn van het Wegsegment."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Wegsegment",
-              "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "LijnString",
-              "range_uri": "http://www.opengis.net/ont/sf#LineString"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.opengis.net/ont/sf#LineString",
-              "range_puri": "http://www.opengis.net/ont/sf#LineString",
-              "range_label": {
-                "nl": "LijnString"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
           "uri": "https://data.vlaanderen.be/ns/netwerk#eindknoop",
           "name": "eindknoop",
           "sort": "eindknoop",
@@ -1328,6 +1293,41 @@
               "range_puri": "https://data.vlaanderen.be/ns/weg#Wegknoop",
               "range_label": {
                 "nl": "Wegknoop"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn",
+          "name": "geometriemiddenlijn",
+          "sort": "geometriemiddenlijn",
+          "label": {
+            "nl": "geometriemiddenlijn"
+          },
+          "description": {
+            "nl": "Geometrie van de midellijn van het Wegsegment."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Wegsegment",
+              "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "LijnString",
+              "range_uri": "http://www.opengis.net/ont/sf#LineString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.opengis.net/ont/sf#LineString",
+              "range_puri": "http://www.opengis.net/ont/sf#LineString",
+              "range_label": {
+                "nl": "LijnString"
               }
             }
           ],
@@ -1954,7 +1954,7 @@
       ],
       "properties": [
         {
-          "uri": "https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting",
+          "uri": "https://data.vlaanderen.be/ns/netwerk#toepassingsRichting",
           "name": "toepassingsrichting",
           "sort": "toepassingsRichting",
           "label": {

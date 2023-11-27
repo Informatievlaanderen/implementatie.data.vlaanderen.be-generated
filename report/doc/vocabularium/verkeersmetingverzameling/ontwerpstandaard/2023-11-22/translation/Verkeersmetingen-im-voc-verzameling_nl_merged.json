@@ -409,8 +409,8 @@
   "contributors-column": "Verkeersmetingen",
   "contributors-file": "stakeholders.csv",
   "diagram": "VSDS-Verkeersmetingen",
-  "documentcommit": "6949332c51b6283994301c655349bd9b5217490a",
-  "dummy": "02",
+  "documentcommit": "fc7addcf2646016f6bd39af281802830acb2d73e",
+  "dummy": "03",
   "eap": "Verkeersmetingen-IM-verzameling.eap",
   "editors": [
     {
@@ -573,7 +573,7 @@
           {
             "key": "uri",
             "note": "null",
-            "value": "https://data.vlaanderen.be/ns/netwerk#LineaireReferentie.totpositie"
+            "value": "https://data.vlaanderen.be/ns/netwerk#LineaireReferentie.totPositie"
           }
         ],
         "Scope": "NOTHING",
@@ -830,53 +830,58 @@
       ]
     },
     {
-      "@id": "https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn",
+      "@id": "https://data.vlaanderen.be/ns/netwerk#toepassingsRichting",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{0F1BF31F-BE6F-4460-9958-B1FAB3A2825A}",
+      "EA-Guid": "{177F8E42-EFE0-4a68-86DA-149541320602}",
       "codelist": [],
       "definition-nl": {
         "nl": "TODO"
       },
       "domain": [
         {
-          "EA-Name": "Wegsegment",
-          "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment"
+          "EA-Name": "Linkreferentie",
+          "uri": "https://data.vlaanderen.be/ns/netwerk#Linkreferentie"
         }
       ],
       "extra": {
-        "EA-Domain": "Wegsegment",
-        "EA-Domain-Guid": "{A74FEDDC-177C-430a-80BF-5D15C5278C01}",
-        "EA-Guid": "{0F1BF31F-BE6F-4460-9958-B1FAB3A2825A}",
-        "EA-Name": "^geometriemiddenlijn",
-        "EA-Package": "INSPIRE-Weg",
-        "EA-Range": "LijnString",
+        "EA-Domain": "Linkreferentie",
+        "EA-Domain-Guid": "{924F342D-41BC-47f5-B766-52DA2DBC76F8}",
+        "EA-Guid": "{177F8E42-EFE0-4a68-86DA-149541320602}",
+        "EA-Name": "toepassingsRichting",
+        "EA-Package": "INSPIRE-netwerk",
+        "EA-Range": "Linkrichtingtype",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{FADBFCF1-6102-4b53-B53E-56B72CA2599D}",
-          "EA-Name": "LijnString",
-          "EA-Package": "Hulppakket",
-          "uri": "http://www.opengis.net/ont/sf#LineString"
+          "EA-GUID": "{0B57205C-5EA3-41bd-9301-CDD131C79526}",
+          "EA-Name": "Linkrichtingtype",
+          "EA-Package": "INSPIRE-netwerk",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
         },
         "RawTags": [
           {
             "key": "label-nl",
             "note": "null",
-            "value": "geometriemiddenlijn"
+            "value": "toepassingsrichting"
           },
           {
             "key": "ap-label-nl",
             "note": "null",
-            "value": "geometriemiddenlijn"
+            "value": "toepassingsRichting"
           },
           {
             "key": "ap-definition-nl",
             "note": "null",
-            "value": "Geometrie van de midellijn van het Wegsegment."
+            "value": "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie."
           },
           {
             "key": "uri",
             "note": "null",
-            "value": "https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn"
+            "value": "https://data.vlaanderen.be/ns/netwerk#toepassingsRichting"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Mogelijke richtingen zijn gelijklopend met de geometrie, tegengesteld aan de geometrie of beide. Indien gelijklopend of tegengesteld wordt verondersteld dat de eigenschap voorkomt aan de rechterkant van de Link volgens die richting. Bvb als de toepassingsrichting van de straatverlichting gelijklopend is wil dat zeggen dat rechts van de Link straatverlichting aanwezig is.",
+            "value": "NOTE"
           }
         ],
         "Scope": "NOTHING",
@@ -887,11 +892,11 @@
         },
         "equivalent": "",
         "label": {
-          "nl": "geometriemiddenlijn"
+          "nl": "toepassingsrichting"
         },
         "label-en": "",
         "label-nl": {
-          "nl": "geometriemiddenlijn"
+          "nl": "toepassingsrichting"
         },
         "sameAs": "",
         "subclass": "",
@@ -903,20 +908,20 @@
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "nl": "geometriemiddenlijn"
+        "nl": "toepassingsrichting"
       },
       "label-nl": {
-        "nl": "geometriemiddenlijn"
+        "nl": "toepassingsrichting"
       },
       "maxCardinality": "1",
       "minCardinality": "1",
-      "name": "geometriemiddenlijn",
+      "name": "toepassingsrichting",
       "range": [
         {
-          "EA-GUID": "{FADBFCF1-6102-4b53-B53E-56B72CA2599D}",
-          "EA-Name": "LijnString",
-          "EA-Package": "Hulppakket",
-          "uri": "http://www.opengis.net/ont/sf#LineString"
+          "EA-GUID": "{0B57205C-5EA3-41bd-9301-CDD131C79526}",
+          "EA-Name": "Linkrichtingtype",
+          "EA-Package": "INSPIRE-netwerk",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
         }
       ]
     },
@@ -1219,58 +1224,53 @@
       ]
     },
     {
-      "@id": "https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting",
+      "@id": "https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{177F8E42-EFE0-4a68-86DA-149541320602}",
+      "EA-Guid": "{0F1BF31F-BE6F-4460-9958-B1FAB3A2825A}",
       "codelist": [],
       "definition-nl": {
         "nl": "TODO"
       },
       "domain": [
         {
-          "EA-Name": "Linkreferentie",
-          "uri": "https://data.vlaanderen.be/ns/netwerk#Linkreferentie"
+          "EA-Name": "Wegsegment",
+          "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment"
         }
       ],
       "extra": {
-        "EA-Domain": "Linkreferentie",
-        "EA-Domain-Guid": "{924F342D-41BC-47f5-B766-52DA2DBC76F8}",
-        "EA-Guid": "{177F8E42-EFE0-4a68-86DA-149541320602}",
-        "EA-Name": "toepassingsRichting",
-        "EA-Package": "INSPIRE-netwerk",
-        "EA-Range": "Linkrichtingtype",
+        "EA-Domain": "Wegsegment",
+        "EA-Domain-Guid": "{A74FEDDC-177C-430a-80BF-5D15C5278C01}",
+        "EA-Guid": "{0F1BF31F-BE6F-4460-9958-B1FAB3A2825A}",
+        "EA-Name": "^geometriemiddenlijn",
+        "EA-Package": "INSPIRE-Weg",
+        "EA-Range": "LijnString",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{0B57205C-5EA3-41bd-9301-CDD131C79526}",
-          "EA-Name": "Linkrichtingtype",
-          "EA-Package": "INSPIRE-netwerk",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+          "EA-GUID": "{FADBFCF1-6102-4b53-B53E-56B72CA2599D}",
+          "EA-Name": "LijnString",
+          "EA-Package": "Hulppakket",
+          "uri": "http://www.opengis.net/ont/sf#LineString"
         },
         "RawTags": [
           {
             "key": "label-nl",
             "note": "null",
-            "value": "toepassingsrichting"
+            "value": "geometriemiddenlijn"
           },
           {
             "key": "ap-label-nl",
             "note": "null",
-            "value": "toepassingsRichting"
+            "value": "geometriemiddenlijn"
           },
           {
             "key": "ap-definition-nl",
             "note": "null",
-            "value": "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie."
+            "value": "Geometrie van de midellijn van het Wegsegment."
           },
           {
             "key": "uri",
             "note": "null",
-            "value": "https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting"
-          },
-          {
-            "key": "ap-usageNote-nl",
-            "note": "Mogelijke richtingen zijn gelijklopend met de geometrie, tegengesteld aan de geometrie of beide. Indien gelijklopend of tegengesteld wordt verondersteld dat de eigenschap voorkomt aan de rechterkant van de Link volgens die richting. Bvb als de toepassingsrichting van de straatverlichting gelijklopend is wil dat zeggen dat rechts van de Link straatverlichting aanwezig is.",
-            "value": "NOTE"
+            "value": "https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn"
           }
         ],
         "Scope": "NOTHING",
@@ -1281,11 +1281,11 @@
         },
         "equivalent": "",
         "label": {
-          "nl": "toepassingsrichting"
+          "nl": "geometriemiddenlijn"
         },
         "label-en": "",
         "label-nl": {
-          "nl": "toepassingsrichting"
+          "nl": "geometriemiddenlijn"
         },
         "sameAs": "",
         "subclass": "",
@@ -1297,20 +1297,20 @@
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "nl": "toepassingsrichting"
+        "nl": "geometriemiddenlijn"
       },
       "label-nl": {
-        "nl": "toepassingsrichting"
+        "nl": "geometriemiddenlijn"
       },
       "maxCardinality": "1",
       "minCardinality": "1",
-      "name": "toepassingsrichting",
+      "name": "geometriemiddenlijn",
       "range": [
         {
-          "EA-GUID": "{0B57205C-5EA3-41bd-9301-CDD131C79526}",
-          "EA-Name": "Linkrichtingtype",
-          "EA-Package": "INSPIRE-netwerk",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+          "EA-GUID": "{FADBFCF1-6102-4b53-B53E-56B72CA2599D}",
+          "EA-Name": "LijnString",
+          "EA-Package": "Hulppakket",
+          "uri": "http://www.opengis.net/ont/sf#LineString"
         }
       ]
     },
@@ -3175,6 +3175,78 @@
       "name": "Telling"
     },
     {
+      "@id": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_DomainFeature",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{F007BE83-E1B0-4bcb-A0F6-C0DCD1211ABF}",
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{F007BE83-E1B0-4bcb-A0F6-C0DCD1211ABF}",
+        "EA-Name": "Domeinobject",
+        "EA-Package": "Hulppakket",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Object uit de reële wereld dat geen Bemonsteringsobject is."
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "Domeinobject"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Dit is het werkelijk geobserveerdObject. Als rechtstreeks observeren niet kan observeren we een representatief staal, het zgn Bemonsteringsobject. In dat geval is het Domeinobject het bemonsterdObject. OPMERKING: Deze klasse is louter informatief, in praktijk moet ze gesubstitueerd worden door een klasse uit het domein. Bv in het domein Waterkwaliteit zou het domeinobject een instantie vd klasse Rivier kunnen zijn.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Domeinobject"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_DomainFeature"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "Domeinobject"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "Domeinobject"
+        },
+        "parentclasses": "",
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Domeinobject"
+      },
+      "label-nl": {
+        "nl": "Domeinobject"
+      },
+      "name": "Domeinobject"
+    },
+    {
       "@id": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{BB8A7BBA-E7AF-4881-82CE-723EED46C045}",
@@ -3461,78 +3533,6 @@
         "nl": "Bemonsteringspunt"
       },
       "name": "Bemonsteringspunt"
-    },
-    {
-      "@id": "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{F007BE83-E1B0-4bcb-A0F6-C0DCD1211ABF}",
-      "definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Guid": "{F007BE83-E1B0-4bcb-A0F6-C0DCD1211ABF}",
-        "EA-Name": "Domeinobject",
-        "EA-Package": "Hulppakket",
-        "EA-Parents": "",
-        "EA-Parents2": [],
-        "EA-Type": "CLASS",
-        "RawTags": [
-          {
-            "key": "ap-definition-nl",
-            "note": "null",
-            "value": "Object uit de reële wereld dat geen Bemonsteringsobject is."
-          },
-          {
-            "key": "ap-label-nl",
-            "note": "null",
-            "value": "Domeinobject"
-          },
-          {
-            "key": "ap-usageNote-nl",
-            "note": "Dit is het werkelijk geobserveerdObject. Als rechtstreeks observeren niet kan observeren we een representatief staal, het zgn Bemonsteringsobject. In dat geval is het Domeinobject het bemonsterdObject. OPMERKING: Deze klasse is louter informatief, in praktijk moet ze gesubstitueerd worden door een klasse uit het domein. Bv in het domein Waterkwaliteit zou het domeinobject een instantie vd klasse Rivier kunnen zijn.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "Domeinobject"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature"
-          }
-        ],
-        "Scope": "NOTHING",
-        "definition": "",
-        "definition-en": "",
-        "definition-nl": {
-          "nl": "TODO"
-        },
-        "equivalent": "",
-        "label": {
-          "nl": "Domeinobject"
-        },
-        "label-en": "",
-        "label-nl": {
-          "nl": "Domeinobject"
-        },
-        "parentclasses": "",
-        "sameAs": "",
-        "subclass": "",
-        "subclass1": "",
-        "usage": "",
-        "usageNote-en": "",
-        "usageNote-nl": ""
-      },
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "Domeinobject"
-      },
-      "label-nl": {
-        "nl": "Domeinobject"
-      },
-      "name": "Domeinobject"
     },
     {
       "@id": "http://fixme.com#ProperInterval",
@@ -4204,11 +4204,6 @@
             "key": "ap-label-nl",
             "note": "null",
             "value": "Linkrichtingtpe"
-          },
-          {
-            "key": "ap-usageNote-nl",
-            "note": "Te gebruiken als de manier waarop de geografische positie wordt aangeduid pas zal worden vastgelegd bij implementatie. Is deze manier nu al gekend dan moet dit datatype gesubstitueerd worden door klassen of datatypes zoals Geometrie, GeografischeNaam, Adres etc. OPMERKING: Meer info over deze klassen/datatypes in het applicatieprofiel OSLO Generiek - basis.",
-            "value": "d!"
           },
           {
             "key": "label-nl",
@@ -7031,7 +7026,7 @@
   "title-nl": {
     "nl": "TODO"
   },
-  "toolchaincommit": "d4356af299bdbfda1a4b20cbef7883c690d9bc5d",
+  "toolchaincommit": "10942795678d36574e894778e7da0438a0e78d33",
   "translation": [
     {
       "language": "nl",
