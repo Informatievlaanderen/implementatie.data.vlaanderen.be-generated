@@ -87,8 +87,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/0d76abfdba94bab185cd47453d892cc5807ee2ab">https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/0d76abfdba94bab185cd47453d892cc5807ee2ab</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/0d76abfdba94bab185cd47453d892cc5807ee2ab/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/0d76abfdba94bab185cd47453d892cc5807ee2ab/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/6949332c51b6283994301c655349bd9b5217490a">https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/6949332c51b6283994301c655349bd9b5217490a</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/6949332c51b6283994301c655349bd9b5217490a/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/6949332c51b6283994301c655349bd9b5217490a/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/issues">https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/issues</a></dd>
               <dt>Standaardenregister</dt><dd><a href="https://data.vlaanderen.be/standaarden/">https://data.vlaanderen.be/standaarden/</a></dd>
 
@@ -264,7 +264,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Domeinobject"><a href="http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature" data-placement="right">Domeinobject</a></h3>
+              <h3 class="h3" id="Domeinobject"><a href="http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_DomainFeature" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_DomainFeature" data-placement="right">Domeinobject</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Object uit de reële wereld dat geen Bemonsteringsobject is.</dd>
@@ -485,8 +485,8 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Rijrichting%3Anetwerkreferentieelement">netwerkreferentieelement</a>, 
-                      <a href="#Rijrichting%3Arijrichting">rijrichting</a>.</dd>
+                      <a href="#Rijrichting%3Arijrichting">rijrichting</a>, 
+                      <a href="#Rijrichting%3ARijrichting.netwerkreferentieelement">Rijrichting.netwerkreferentieelement</a>.</dd>
                     
                   </dl>
                 </div>
@@ -506,26 +506,6 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Rijrichting%3Anetwerkreferentieelement" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement" data-placement="right">
-                            netwerkreferentieelement</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Wegsegment" data-placement="right">Wegsegment</a>
-			    
-                          
-                        </td>
-                        <td>1</td>
-                        <td property="rdfs:comment">Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt.</td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
                       <tr id="Rijrichting%3Arijrichting" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/weg#rijrichting">
                         <td>
                           <code property="rdfs:label">
@@ -543,6 +523,26 @@
                         <td>0..1</td>
                         <td property="rdfs:comment">De rijrichting.</td>
                         <td property="vann:usageNote">Deze wordt beschreven tov de richting van de geometrie van de weg: gelijklopend met of tegengesteld aan die richting. De richting van de geometrie wordt bepaald door de volgorde waarin de coördinaten op elkaar volgen.</td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Rijrichting%3ARijrichting.netwerkreferentieelement" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement" data-placement="right">
+                            Rijrichting.netwerkreferentieelement</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Wegsegment" data-placement="right">Wegsegment</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt.</td>
+                        <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
                     
@@ -1079,8 +1079,8 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Verkeerssnelheidsmeting%3AgeobserveerdKenmerk">geobserveerdKenmerk</a>, 
-                      <a href="#Verkeerssnelheidsmeting%3Aresultaat">resultaat</a>.</dd>
+                      <a href="#Verkeerssnelheidsmeting%3Aresultaat">resultaat</a>, 
+                      <a href="#Verkeerssnelheidsmeting%3AVerkeerssnelheidsmeting.geobserveerdKenmerk">Verkeerssnelheidsmeting.geobserveerdKenmerk</a>.</dd>
                     
                   </dl>
                 </div>
@@ -1100,26 +1100,6 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Verkeerssnelheidsmeting%3AgeobserveerdKenmerk" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk" data-placement="right">
-                            geobserveerdKenmerk</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Verkeerssnelheidsmetingkenmerk" data-placement="right">Verkeerssnelheidsmetingkenmerk</a>
-			    
-                          
-                        </td>
-                        <td>1</td>
-                        <td property="rdfs:comment">Object dat door de Verkeerssnelheidsmetingen wordt geobserveerd.	</td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
                       <tr id="Verkeerssnelheidsmeting%3Aresultaat" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement.result">
                         <td>
                           <code property="rdfs:label">
@@ -1136,6 +1116,26 @@
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">Resultaat van de Verkeerssnelheidsmeting.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Verkeerssnelheidsmeting%3AVerkeerssnelheidsmeting.geobserveerdKenmerk" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk" data-placement="right">
+                            Verkeerssnelheidsmeting.geobserveerdKenmerk</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Verkeerssnelheidsmetingkenmerk" data-placement="right">Verkeerssnelheidsmetingkenmerk</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Object dat door de Verkeerssnelheidsmetingen wordt geobserveerd.	</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -1221,8 +1221,8 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Verkeerstelling%3AgeobserveerdKenmerk">geobserveerdKenmerk</a>, 
-                      <a href="#Verkeerstelling%3Atellingresultaat">tellingresultaat</a>.</dd>
+                      <a href="#Verkeerstelling%3AVerkeerstelling.geobserveerdKenmerk">Verkeerstelling.geobserveerdKenmerk</a>, 
+                      <a href="#Verkeerstelling%3AVerkeerstelling.tellingresultaat">Verkeerstelling.tellingresultaat</a>.</dd>
                     
                   </dl>
                 </div>
@@ -1242,11 +1242,11 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Verkeerstelling%3AgeobserveerdKenmerk" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.geobserveerdKenmerk">
+                      <tr id="Verkeerstelling%3AVerkeerstelling.geobserveerdKenmerk" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.geobserveerdKenmerk">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.geobserveerdKenmerk" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.geobserveerdKenmerk" data-placement="right">
-                            geobserveerdKenmerk</a>
+                            Verkeerstelling.geobserveerdKenmerk</a>
                           </code>
                         </td>
                         <td>
@@ -1262,11 +1262,11 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Verkeerstelling%3Atellingresultaat" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat">
+                      <tr id="Verkeerstelling%3AVerkeerstelling.tellingresultaat" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat" data-placement="right">
-                            tellingresultaat</a>
+                            Verkeerstelling.tellingresultaat</a>
                           </code>
                         </td>
                         <td>
@@ -1510,10 +1510,10 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Wegsegment%3Ageometriemiddenlijn" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn">
+                      <tr id="Wegsegment%3Ageometriemiddenlijn" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn" data-placement="right">
+                            <a href="https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn" data-placement="right">
                             geometriemiddenlijn</a>
                           </code>
                         </td>
@@ -1782,10 +1782,10 @@
 
                     <tbody class="supertype">
                       
-                      <tr id="Linkreferentie%3AtoepassingsRichting" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting">
+                      <tr id="Linkreferentie%3AtoepassingsRichting" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/netwerk#toepassingsRichting">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/netwerk#Linkreferentie.toepassingsrichting" data-placement="right">toepassingsRichting</a>
+                            <a href="https://data.vlaanderen.be/ns/netwerk#toepassingsRichting" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/netwerk#toepassingsRichting" data-placement="right">toepassingsRichting</a>
                           </code>
                         </td>
                         <td>
@@ -1975,9 +1975,9 @@
 	      
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Beschrijving</dt><dd>TODO</dd>
+                    <dt>Beschrijving</dt><dd>Abstracte klasse voor temporele objecten</dd>
                     
-                    <dt>Gebruik</dt><dd>TODO</dd>
+                    <dt>Gebruik</dt><dd>Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed).</dd>
                     
 		    
                     <dt>Eigenschappen</dt>

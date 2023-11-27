@@ -65,9 +65,9 @@
     },
     {
       "EA-Guid": "{4F8BC4D4-432A-4600-B8DE-063C52B0E46E}",
-      "name": "tellingresultaat",
+      "name": "Verkeerstelling.tellingresultaat",
       "label": {
-        "nl": "tellingresultaat",
+        "nl": "Verkeerstelling.tellingresultaat",
         "fr": "Enter your translation here"
       },
       "definition": {
@@ -77,9 +77,9 @@
     },
     {
       "EA-Guid": "{362F2BF7-D804-4cd8-A12F-CEE01E2CAA9A}",
-      "name": "geobserveerdKenmerk",
+      "name": "Verkeerstelling.geobserveerdKenmerk",
       "label": {
-        "nl": "geobserveerdKenmerk",
+        "nl": "Verkeerstelling.geobserveerdKenmerk",
         "fr": "Enter your translation here"
       },
       "definition": {
@@ -101,9 +101,9 @@
     },
     {
       "EA-Guid": "{3F7E064B-491E-4d0d-899D-5E68F578CE9A}",
-      "name": "geobserveerdKenmerk",
+      "name": "Verkeerssnelheidsmeting.geobserveerdKenmerk",
       "label": {
-        "nl": "geobserveerdKenmerk",
+        "nl": "Verkeerssnelheidsmeting.geobserveerdKenmerk",
         "fr": "Enter your translation here"
       },
       "definition": {
@@ -113,9 +113,9 @@
     },
     {
       "EA-Guid": "{D0FC4E26-48C8-4a28-BD9A-D6BD94C4C450}",
-      "name": "netwerkreferentieelement",
+      "name": "Rijrichting.netwerkreferentieelement",
       "label": {
-        "nl": "netwerkreferentieelement",
+        "nl": "Rijrichting.netwerkreferentieelement",
         "fr": "Enter your translation here"
       },
       "definition": {
@@ -166,6 +166,22 @@
       },
       "usage": {
         "nl": "Doorgaans bij een Observatie waar het belang van een fenomeen te bepalen door te tellen hoe vaak het voorkomt. Bv het observeren vd opkomst bij een verkiezing,het tellen van bio-indicatoren in een watermonster. Datatype vh resultaat is een Integer.",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{F007BE83-E1B0-4bcb-A0F6-C0DCD1211ABF}",
+      "name": "Domeinobject",
+      "label": {
+        "nl": "Domeinobject",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Object uit de reële wereld dat geen Bemonsteringsobject is.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Dit is het werkelijk geobserveerdObject. Als rechtstreeks observeren niet kan observeren we een representatief staal, het zgn Bemonsteringsobject. In dat geval is het Domeinobject het bemonsterdObject. OPMERKING: Deze klasse is louter informatief, in praktijk moet ze gesubstitueerd worden door een klasse uit het domein. Bv in het domein Waterkwaliteit zou het domeinobject een instantie vd klasse Rivier kunnen zijn.",
         "fr": "Enter your translation here"
       }
     },
@@ -234,22 +250,6 @@
       }
     },
     {
-      "EA-Guid": "{F007BE83-E1B0-4bcb-A0F6-C0DCD1211ABF}",
-      "name": "Domeinobject",
-      "label": {
-        "nl": "Domeinobject",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Object uit de reële wereld dat geen Bemonsteringsobject is.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "Dit is het werkelijk geobserveerdObject. Als rechtstreeks observeren niet kan observeren we een representatief staal, het zgn Bemonsteringsobject. In dat geval is het Domeinobject het bemonsterdObject. OPMERKING: Deze klasse is louter informatief, in praktijk moet ze gesubstitueerd worden door een klasse uit het domein. Bv in het domein Waterkwaliteit zou het domeinobject een instantie vd klasse Rivier kunnen zijn.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
       "EA-Guid": "{300A19C6-C1BD-4479-B125-ADFF86DD5836}",
       "name": "TemporeleEntiteit",
       "label": {
@@ -257,11 +257,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "nl": "TODO",
+        "nl": "Abstracte klasse voor temporele objecten",
         "fr": "Enter your translation here"
       },
       "usage": {
-        "nl": "TODO",
+        "nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed).",
         "fr": "Enter your translation here"
       }
     },
@@ -386,10 +386,6 @@
       },
       "definition": {
         "nl": "Type van richting tov de richting van een Link of Linksequentie.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "d!",
         "fr": "Enter your translation here"
       }
     },
@@ -792,14 +788,18 @@
       }
     },
     {
-      "EA-Guid": "{0F1BF31F-BE6F-4460-9958-B1FAB3A2825A}",
-      "name": "geometriemiddenlijn",
+      "EA-Guid": "{177F8E42-EFE0-4a68-86DA-149541320602}",
+      "name": "toepassingsRichting",
       "label": {
-        "nl": "geometriemiddenlijn",
+        "nl": "toepassingsRichting",
         "fr": "Enter your translation here"
       },
       "definition": {
-        "nl": "Geometrie van de midellijn van het Wegsegment.",
+        "nl": "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Mogelijke richtingen zijn gelijklopend met de geometrie, tegengesteld aan de geometrie of beide. Indien gelijklopend of tegengesteld wordt verondersteld dat de eigenschap voorkomt aan de rechterkant van de Link volgens die richting. Bvb als de toepassingsrichting van de straatverlichting gelijklopend is wil dat zeggen dat rechts van de Link straatverlichting aanwezig is.",
         "fr": "Enter your translation here"
       }
     },
@@ -840,18 +840,14 @@
       }
     },
     {
-      "EA-Guid": "{177F8E42-EFE0-4a68-86DA-149541320602}",
-      "name": "toepassingsRichting",
+      "EA-Guid": "{0F1BF31F-BE6F-4460-9958-B1FAB3A2825A}",
+      "name": "geometriemiddenlijn",
       "label": {
-        "nl": "toepassingsRichting",
+        "nl": "geometriemiddenlijn",
         "fr": "Enter your translation here"
       },
       "definition": {
-        "nl": "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "Mogelijke richtingen zijn gelijklopend met de geometrie, tegengesteld aan de geometrie of beide. Indien gelijklopend of tegengesteld wordt verondersteld dat de eigenschap voorkomt aan de rechterkant van de Link volgens die richting. Bvb als de toepassingsrichting van de straatverlichting gelijklopend is wil dat zeggen dat rechts van de Link straatverlichting aanwezig is.",
+        "nl": "Geometrie van de midellijn van het Wegsegment.",
         "fr": "Enter your translation here"
       }
     },
