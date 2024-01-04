@@ -1,0 +1,1654 @@
+{
+  "@context": {
+    "vlaanderen": "http://data.vlaanderen.be/ns/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "person": "http://www.w3.org/ns/person#",
+    "rec": "http://www.w3.org/2001/02pd/rec54#",
+    "vann": "http://purl.org/vocab/vann/",
+    "sh": "http://w3.org/ns/shacl#",
+
+    "label": {
+      "@id": "rdfs:label",
+      "@container": "@language"
+    },
+    "modified": {
+      "@id": "dcterms:modified",
+      "@type": "xsd:date"
+    },
+    "issued": {
+      "@id": "dcterms:issued"
+    },
+    "authors": {
+      "@type": "foaf:Person",
+      "@id": "foaf:maker"
+    },
+    "editors": {
+      "@type": "foaf:Person",
+      "@id": "rec:editor"
+    },
+    "contributors": {
+      "@type": "foaf:Person",
+      "@id": "dcterms:contributor"
+    },
+    "affiliation": {
+      "@id": "http://schema.org/affiliation"
+    },
+    "classes": {
+      "@reverse": "rdfs:isDefinedBy"
+      },
+    "datatypes": {
+      "@reverse": "rdfs:isDefinedBy"
+      },
+    "name": {
+      "@id": "rdfs:label"
+    },
+    "properties": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "domain": {
+      "@id": "rdfs:domain"
+    },
+    "range": {
+      "@id": "rdfs:range"
+    },
+    "minCardinality": {
+    "@id": "sh:minCount"
+    },
+    "maxCardinality": {
+    "@id": "sh:maxCount"
+    },
+    "generalization": {
+      "@id": "rdfs:subPropertyOf"
+    },
+    "externals": {
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "@id": "rdfs:seeAlso"
+      },
+    "label": {
+      "@id": "rdfs:label",
+      "@container": "@language"
+    }
+  },
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain",
+"@type": "http://www.w3.org/2002/07/owl#Ontology",
+"label": {
+  "nl": "vocabularium",
+  "en": "vocabularium"
+},
+"issued" : "TODO", "license" : "TODO", "title-nl" : {"nl": "TODO", "nl": "TODO"},
+"extra": {"EA-Name" : "OSLO-Toolchain", "EA-Guid" : "{276D8903-B5F7-4683-977E-6C30E91924E8}" , "title-nl" : "TODO", "title-nl" : "TODO", "issued" : "TODO", "license" : "TODO", "RawTags" : [{ "key": "baseURI", "value": "https:\/\/implementatie.data.vlaanderen.be\/ns\/OSLO-toolchain#", "note": "null" }]},
+"authors": [
+{
+"foaf:firstName": "Bert",
+"foaf:lastName": "Van Nuffelen",
+"affiliation": {"foaf:name": "Flanders Digital Agency"},
+"@type": "foaf:Person"
+}],
+"editors": [
+{
+"foaf:firstName": "Bert",
+"foaf:lastName": "Van Nuffelen",
+"affiliation": {"foaf:name": "Flanders Digital Agency"},
+"@type": "foaf:Person"
+}],
+"contributors": [
+],
+"classes": [
+{
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#AssociationClass",
+"@type": "http://www.w3.org/2002/07/owl#Class",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "AssociationClass", "EA-Guid" : "{E9A49B18-6B51-4288-819E-E2B7DCEF2BDA}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "CLASS", "EA-Parents" : "", "EA-Parents2" : [{ "name": "Class", "label" : "", "package" : "OSLO-Toolchain", "uri" : "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class" }], "parentclasses" : "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class", "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"inpackage": "ACTIVE_PACKAGE",
+"name": "",
+"parents": [
+"https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"]
+},
+{
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class",
+"@type": "http://www.w3.org/2002/07/owl#Class",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "Class", "EA-Guid" : "{2C290773-B724-44c7-8EA0-B653E5286DEB}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "CLASS", "EA-Parents" : "", "EA-Parents2" : [], "parentclasses" : "", "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"inpackage": "ACTIVE_PACKAGE",
+"name": "",
+"parents": [
+]
+},
+{
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataProperty",
+"@type": "http://www.w3.org/2002/07/owl#Class",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "DataProperty", "EA-Guid" : "{A49B8331-B6BE-4e6b-926C-382F2E87FB41}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "CLASS", "EA-Parents" : "", "EA-Parents2" : [{ "name": "Property", "label" : "", "package" : "OSLO-Toolchain", "uri" : "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property" }], "parentclasses" : "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property", "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"inpackage": "ACTIVE_PACKAGE",
+"name": "",
+"parents": [
+"https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"]
+},
+{
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType",
+"@type": "http://www.w3.org/2002/07/owl#Class",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "DataType", "EA-Guid" : "{74D49128-E5C9-4503-9188-F6BB554A950C}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "CLASS", "EA-Parents" : "", "EA-Parents2" : [], "parentclasses" : "", "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"inpackage": "ACTIVE_PACKAGE",
+"name": "",
+"parents": [
+]
+},
+{
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Diagram",
+"@type": "http://www.w3.org/2002/07/owl#Class",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "Diagram", "EA-Guid" : "{73675182-E664-471f-A633-E01A98344CBE}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "CLASS", "EA-Parents" : "", "EA-Parents2" : [], "parentclasses" : "", "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"inpackage": "ACTIVE_PACKAGE",
+"name": "",
+"parents": [
+]
+},
+{
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element",
+"@type": "http://www.w3.org/2002/07/owl#Class",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "EA-Element", "EA-Guid" : "{D612F5E1-8A7D-4142-A413-BEBF3A470158}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "CLASS", "EA-Parents" : "", "EA-Parents2" : [], "parentclasses" : "", "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"inpackage": "ACTIVE_PACKAGE",
+"name": "",
+"parents": [
+]
+},
+{
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag",
+"@type": "http://www.w3.org/2002/07/owl#Class",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "EA-Tag", "EA-Guid" : "{83A1BE86-5B34-424c-A808-6DE8B2D71707}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "CLASS", "EA-Parents" : "", "EA-Parents2" : [], "parentclasses" : "", "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"inpackage": "ACTIVE_PACKAGE",
+"name": "",
+"parents": [
+]
+},
+{
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External",
+"@type": "http://www.w3.org/2002/07/owl#Class",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "External", "EA-Guid" : "{AAE28EF4-9E38-4741-8009-FAD12448F835}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "ENUMERATION", "EA-Parents" : "", "EA-Parents2" : [], "parentclasses" : "", "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"inpackage": "ACTIVE_PACKAGE",
+"name": "",
+"parents": [
+]
+},
+{
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ObjectProperty",
+"@type": "http://www.w3.org/2002/07/owl#Class",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "ObjectProperty", "EA-Guid" : "{3DBD89BA-8ADF-4863-BF37-DA90D55CB049}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "CLASS", "EA-Parents" : "", "EA-Parents2" : [{ "name": "Property", "label" : "", "package" : "OSLO-Toolchain", "uri" : "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property" }], "parentclasses" : "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property", "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"inpackage": "ACTIVE_PACKAGE",
+"name": "",
+"parents": [
+"https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"]
+},
+{
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Package",
+"@type": "http://www.w3.org/2002/07/owl#Class",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "Package", "EA-Guid" : "{9C85F08E-AA24-4dd8-AB39-B97601DCF92A}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "CLASS", "EA-Parents" : "", "EA-Parents2" : [], "parentclasses" : "", "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"inpackage": "ACTIVE_PACKAGE",
+"name": "",
+"parents": [
+]
+},
+{
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Person",
+"@type": "http://www.w3.org/2002/07/owl#Class",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "Person", "EA-Guid" : "{DFF6F446-F1A0-4dfe-85DE-4B9E7128E1BF}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "CLASS", "EA-Parents" : "", "EA-Parents2" : [], "parentclasses" : "", "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"inpackage": "ACTIVE_PACKAGE",
+"name": "",
+"parents": [
+]
+},
+{
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property",
+"@type": "http://www.w3.org/2002/07/owl#Class",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "Property", "EA-Guid" : "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "CLASS", "EA-Parents" : "", "EA-Parents2" : [], "parentclasses" : "", "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"inpackage": "ACTIVE_PACKAGE",
+"name": "",
+"parents": [
+]
+},
+{
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationEnvironmentConfig",
+"@type": "http://www.w3.org/2002/07/owl#Class",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "PublicationEnvironmentConfig", "EA-Guid" : "{BB309E53-2366-4437-B0A9-DD3A363E2F58}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "CLASS", "EA-Parents" : "", "EA-Parents2" : [], "parentclasses" : "", "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"inpackage": "ACTIVE_PACKAGE",
+"name": "",
+"parents": [
+]
+},
+{
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationExecution",
+"@type": "http://www.w3.org/2002/07/owl#Class",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "PublicationExecution", "EA-Guid" : "{EEBA10CF-93D3-4fba-BC3C-84C0A2C95626}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "CLASS", "EA-Parents" : "", "EA-Parents2" : [], "parentclasses" : "", "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"inpackage": "ACTIVE_PACKAGE",
+"name": "",
+"parents": [
+]
+},
+{
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig",
+"@type": "http://www.w3.org/2002/07/owl#Class",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "PublicationpointConfig", "EA-Guid" : "{8E804E45-8EE8-456c-A1B8-420DB19AFBB0}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "CLASS", "EA-Parents" : "", "EA-Parents2" : [], "parentclasses" : "", "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"inpackage": "ACTIVE_PACKAGE",
+"name": "",
+"parents": [
+]
+},
+{
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig",
+"@type": "http://www.w3.org/2002/07/owl#Class",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "ThemaConfig", "EA-Guid" : "{43CF03F4-4761-49c3-9BD9-432A457EDA72}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "CLASS", "EA-Parents" : "", "EA-Parents2" : [], "parentclasses" : "", "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"inpackage": "ACTIVE_PACKAGE",
+"name": "",
+"parents": [
+]
+},
+{
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#TranslationConfig",
+"@type": "http://www.w3.org/2002/07/owl#Class",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "TranslationConfig", "EA-Guid" : "{059EF2A0-4485-45b7-AF3B-098B49244404}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "CLASS", "EA-Parents" : "", "EA-Parents2" : [], "parentclasses" : "", "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"inpackage": "ACTIVE_PACKAGE",
+"name": "",
+"parents": [
+]
+}
+],
+"properties": [
+{
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#affiliation",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "affiliation", "EA-Guid" : "{E28F9E17-1740-4957-8D92-4EE75AE93877}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "Person", "EA-Domain-Guid" : "{DFF6F446-F1A0-4dfe-85DE-4B9E7128E1BF}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Person", "EA-Name" : "Person" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#baseuri",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "baseuri", "EA-Guid" : "{8CE27F19-30DE-40e9-AE06-C98DACB8BD7A}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "Package", "EA-Domain-Guid" : "{9C85F08E-AA24-4dd8-AB39-B97601DCF92A}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Package", "EA-Name" : "Package" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#branchtag",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "branchtag", "EA-Guid" : "{4A7B6191-4B05-4f84-9F9C-0B5BAC9A0CE1}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "PublicationpointConfig", "EA-Domain-Guid" : "{8E804E45-8EE8-456c-A1B8-420DB19AFBB0}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig", "EA-Name" : "PublicationpointConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#codelist",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "codelist", "EA-Guid" : "{33710F28-A6AB-4bdd-BA90-9680DBE8FB79}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "ObjectProperty", "EA-Domain-Guid" : "{3DBD89BA-8ADF-4863-BF37-DA90D55CB049}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ObjectProperty", "EA-Name" : "ObjectProperty" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#config",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "config", "EA-Guid" : "{5AE05EB6-845B-42e9-8314-DB599BF3D045}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "PublicationpointConfig", "EA-Domain-Guid" : "{8E804E45-8EE8-456c-A1B8-420DB19AFBB0}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig", "EA-Name" : "PublicationpointConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#contributor-column",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "contributor-column", "EA-Guid" : "{2009B117-4DBE-48f2-84E3-787245CED2DD}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "ThemaConfig", "EA-Domain-Guid" : "{43CF03F4-4761-49c3-9BD9-432A457EDA72}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig", "EA-Name" : "ThemaConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#contributor-file",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "contributor-file", "EA-Guid" : "{5E87EB97-A934-46e1-9C1D-4C71CE28BC4A}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "ThemaConfig", "EA-Domain-Guid" : "{43CF03F4-4761-49c3-9BD9-432A457EDA72}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig", "EA-Name" : "ThemaConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "definition", "EA-Guid" : "{CF5137CC-D963-4d55-AB07-1B39CD65379E}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "Class", "EA-Domain-Guid" : "{2C290773-B724-44c7-8EA0-B653E5286DEB}", "EA-Range" : "LangString", "RangeData" : {"EA-Name" : "LangString", "EA-Package" : "", "uri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class", "EA-Name" : "Class" }
+],
+"range": [
+{"EA-Name" : "LangString", "EA-Package" : "", "uri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "definition", "EA-Guid" : "{217CE6DC-763C-449b-B9E2-67BC380E1B01}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "DataType", "EA-Domain-Guid" : "{74D49128-E5C9-4503-9188-F6BB554A950C}", "EA-Range" : "LangString", "RangeData" : {"EA-Name" : "LangString", "EA-Package" : "", "uri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType", "EA-Name" : "DataType" }
+],
+"range": [
+{"EA-Name" : "LangString", "EA-Package" : "", "uri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "definition", "EA-Guid" : "{B7BD5DF1-5088-4beb-9AB5-5303A9B88238}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "Property", "EA-Domain-Guid" : "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}", "EA-Range" : "LangString", "RangeData" : {"EA-Name" : "LangString", "EA-Package" : "", "uri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property", "EA-Name" : "Property" }
+],
+"range": [
+{"EA-Name" : "LangString", "EA-Package" : "", "uri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#derived",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition" : {"nl": "The property is derived through intepretation of direction, tags and roles "}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "derived", "EA-Guid" : "{9FAD3362-6EF6-4e0f-8B78-DFA8D3BCC8A1}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "Property", "EA-Domain-Guid" : "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}", "EA-Range" : "Boolean", "RangeData" : {"EA-Name" : "Boolean", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#boolean" }, "label" : "", "definition" : "The property is derived through intepretation of direction, tags and roles ", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [{ "key": "definition", "value": "The property is derived through intepretation of direction, tags and roles ", "note": "null" }], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition" : {"nl": "The property is derived through intepretation of direction, tags and roles "}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property", "EA-Name" : "Property" }
+],
+"range": [
+{"EA-Name" : "Boolean", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#boolean" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#diagram",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "diagram", "EA-Guid" : "{9485EEA1-D167-47f3-8DB7-BABE1686577A}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "ThemaConfig", "EA-Domain-Guid" : "{43CF03F4-4761-49c3-9BD9-432A457EDA72}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig", "EA-Name" : "ThemaConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#disabled",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "disabled", "EA-Guid" : "{880A550B-91E0-4f5f-ACA2-28DB7EF84E38}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "PublicationpointConfig", "EA-Domain-Guid" : "{8E804E45-8EE8-456c-A1B8-420DB19AFBB0}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig", "EA-Name" : "PublicationpointConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#documentcommit",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "documentcommit", "EA-Guid" : "{B1B75243-0F43-4fd0-BD93-D8191B8E8ECA}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "PublicationExecution", "EA-Domain-Guid" : "{EEBA10CF-93D3-4fba-BC3C-84C0A2C95626}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationExecution", "EA-Name" : "PublicationExecution" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#domain",
+"@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "domain", "EA-Guid" : "{EBC4BB97-27AD-4a5d-91D8-E1F294509B68}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "PublicationEnvironmentConfig", "EA-Domain-Guid" : "{BB309E53-2366-4437-B0A9-DD3A363E2F58}", "EA-Range" : "int", "RangeData" : {"EA-Name" : "", "EA-Package" : "", "uri" : "null" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationEnvironmentConfig", "EA-Name" : "PublicationEnvironmentConfig" }
+],
+"range": [
+
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#eap",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "eap", "EA-Guid" : "{F74CF4CC-A5B4-4557-9120-AD776E41DAE0}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "ThemaConfig", "EA-Domain-Guid" : "{43CF03F4-4761-49c3-9BD9-432A457EDA72}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig", "EA-Name" : "ThemaConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#examples",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "examples", "EA-Guid" : "{DB99E99B-DC46-456d-98E1-7FF96D426B3F}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "PublicationpointConfig", "EA-Domain-Guid" : "{8E804E45-8EE8-456c-A1B8-420DB19AFBB0}", "EA-Range" : "Boolean", "RangeData" : {"EA-Name" : "Boolean", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#boolean" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig", "EA-Name" : "PublicationpointConfig" }
+],
+"range": [
+{"EA-Name" : "Boolean", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#boolean" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#feedbackURL",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "feedbackURL", "EA-Guid" : "{611814E2-12C4-4623-9747-9789814A192A}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "ThemaConfig", "EA-Domain-Guid" : "{43CF03F4-4761-49c3-9BD9-432A457EDA72}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig", "EA-Name" : "ThemaConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#filename",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "filename", "EA-Guid" : "{49CBE204-AC94-47dd-85A4-68E62DB127B2}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "PublicationpointConfig", "EA-Domain-Guid" : "{8E804E45-8EE8-456c-A1B8-420DB19AFBB0}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig", "EA-Name" : "PublicationpointConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#firstname",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "firstname", "EA-Guid" : "{E81B3F60-0139-44e8-B1FD-F19D2C9DD6FC}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "Person", "EA-Domain-Guid" : "{DFF6F446-F1A0-4dfe-85DE-4B9E7128E1BF}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Person", "EA-Name" : "Person" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#generatedrepository",
+"@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "generatedrepository", "EA-Guid" : "{D5023932-5783-4cc0-A80F-D35E882D49D6}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "PublicationEnvironmentConfig", "EA-Domain-Guid" : "{BB309E53-2366-4437-B0A9-DD3A363E2F58}", "EA-Range" : "int", "RangeData" : {"EA-Name" : "", "EA-Package" : "", "uri" : "null" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationEnvironmentConfig", "EA-Name" : "PublicationEnvironmentConfig" }
+],
+"range": [
+
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#guid",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "guid", "EA-Guid" : "{844F2D98-9293-4f1d-B7A0-AEBEEFA37990}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "EA-Element", "EA-Domain-Guid" : "{D612F5E1-8A7D-4142-A413-BEBF3A470158}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element", "EA-Name" : "EA-Element" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#hostname",
+"@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "hostname", "EA-Guid" : "{FBAA5B6D-C289-40fe-B603-86AAC830D823}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "PublicationEnvironmentConfig", "EA-Domain-Guid" : "{BB309E53-2366-4437-B0A9-DD3A363E2F58}", "EA-Range" : "int", "RangeData" : {"EA-Name" : "", "EA-Package" : "", "uri" : "null" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationEnvironmentConfig", "EA-Name" : "PublicationEnvironmentConfig" }
+],
+"range": [
+
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#hostname",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "hostname", "EA-Guid" : "{D5CFF38B-F2EE-40ed-B266-3476085E5B9E}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "PublicationExecution", "EA-Domain-Guid" : "{EEBA10CF-93D3-4fba-BC3C-84C0A2C95626}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationExecution", "EA-Name" : "PublicationExecution" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#key",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "key", "EA-Guid" : "{FD0BEB9C-D704-4295-8722-75516B2C1AC8}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "EA-Tag", "EA-Domain-Guid" : "{83A1BE86-5B34-424c-A808-6DE8B2D71707}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag", "EA-Name" : "EA-Tag" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#label",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "label", "EA-Guid" : "{2BB5682D-F864-486d-AB27-D3F6DD3398E5}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "Class", "EA-Domain-Guid" : "{2C290773-B724-44c7-8EA0-B653E5286DEB}", "EA-Range" : "LangString", "RangeData" : {"EA-Name" : "LangString", "EA-Package" : "", "uri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class", "EA-Name" : "Class" }
+],
+"range": [
+{"EA-Name" : "LangString", "EA-Package" : "", "uri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#label",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "label", "EA-Guid" : "{14F12A8C-1416-4741-8CFF-98AAD48ACA44}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "DataType", "EA-Domain-Guid" : "{74D49128-E5C9-4503-9188-F6BB554A950C}", "EA-Range" : "LangString", "RangeData" : {"EA-Name" : "LangString", "EA-Package" : "", "uri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType", "EA-Name" : "DataType" }
+],
+"range": [
+{"EA-Name" : "LangString", "EA-Package" : "", "uri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#label",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "label", "EA-Guid" : "{528AE324-0B5C-4869-9F3F-9E6C3C79F5F5}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "Property", "EA-Domain-Guid" : "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}", "EA-Range" : "LangString", "RangeData" : {"EA-Name" : "LangString", "EA-Package" : "", "uri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property", "EA-Name" : "Property" }
+],
+"range": [
+{"EA-Name" : "LangString", "EA-Package" : "", "uri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#language",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "language", "EA-Guid" : "{9D9B08B5-CDBC-4ba7-A04F-F904F90F4058}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "TranslationConfig", "EA-Domain-Guid" : "{059EF2A0-4485-45b7-AF3B-098B49244404}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#TranslationConfig", "EA-Name" : "TranslationConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#lastname",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "lastname", "EA-Guid" : "{17CD6BCA-E5E5-4df0-982E-D3EF981F298E}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "Person", "EA-Domain-Guid" : "{DFF6F446-F1A0-4dfe-85DE-4B9E7128E1BF}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Person", "EA-Name" : "Person" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#licence",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "licence", "EA-Guid" : "{4C9BACE3-735A-422c-BEEF-EC5996A5442D}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "Diagram", "EA-Domain-Guid" : "{73675182-E664-471f-A633-E01A98344CBE}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Diagram", "EA-Name" : "Diagram" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#maxcard",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "maxcard", "EA-Guid" : "{D88E2360-76BD-4892-9981-967AF2519710}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "Property", "EA-Domain-Guid" : "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property", "EA-Name" : "Property" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#mergefile",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "mergefile", "EA-Guid" : "{D071083D-4A55-448e-9EA7-1A9A037EB2D8}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "TranslationConfig", "EA-Domain-Guid" : "{059EF2A0-4485-45b7-AF3B-098B49244404}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#TranslationConfig", "EA-Name" : "TranslationConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#mincard",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "mincard", "EA-Guid" : "{C4FFA5E8-0628-44ad-907C-68E7235296FF}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "Property", "EA-Domain-Guid" : "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property", "EA-Name" : "Property" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#name",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "name", "EA-Guid" : "{923B31C6-7B7E-440f-B97C-38468757DB3F}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "EA-Element", "EA-Domain-Guid" : "{D612F5E1-8A7D-4142-A413-BEBF3A470158}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element", "EA-Name" : "EA-Element" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#name",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "name", "EA-Guid" : "{AE791412-5821-40b2-B597-682D8A34D847}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "PublicationpointConfig", "EA-Domain-Guid" : "{8E804E45-8EE8-456c-A1B8-420DB19AFBB0}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig", "EA-Name" : "PublicationpointConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#name",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "name", "EA-Guid" : "{58F0A1F8-6700-4561-B526-B368859C1B03}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "ThemaConfig", "EA-Domain-Guid" : "{43CF03F4-4761-49c3-9BD9-432A457EDA72}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig", "EA-Name" : "ThemaConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#navigation",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "navigation", "EA-Guid" : "{D2602FF4-7D8B-4bfb-9E56-DD24FC55EB31}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "PublicationpointConfig", "EA-Domain-Guid" : "{8E804E45-8EE8-456c-A1B8-420DB19AFBB0}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig", "EA-Name" : "PublicationpointConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#note",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "note", "EA-Guid" : "{74C09609-20C5-441b-A0C4-1D96308B479A}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "EA-Tag", "EA-Domain-Guid" : "{83A1BE86-5B34-424c-A808-6DE8B2D71707}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag", "EA-Name" : "EA-Tag" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#otherLanguages",
+"@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "otherLanguages", "EA-Guid" : "{37EEB6AE-52EA-4439-A7B2-52E81D875D29}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "PublicationEnvironmentConfig", "EA-Domain-Guid" : "{BB309E53-2366-4437-B0A9-DD3A363E2F58}", "EA-Range" : "int", "RangeData" : {"EA-Name" : "", "EA-Package" : "", "uri" : "null" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationEnvironmentConfig", "EA-Name" : "PublicationEnvironmentConfig" }
+],
+"range": [
+
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#primeLanguage",
+"@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "primeLanguage", "EA-Guid" : "{FE5F34FE-F2A1-4f3c-A018-96873D857AEB}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "PublicationEnvironmentConfig", "EA-Domain-Guid" : "{BB309E53-2366-4437-B0A9-DD3A363E2F58}", "EA-Range" : "int", "RangeData" : {"EA-Name" : "", "EA-Package" : "", "uri" : "null" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationEnvironmentConfig", "EA-Name" : "PublicationEnvironmentConfig" }
+],
+"range": [
+
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#publication-date",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "publication-date", "EA-Guid" : "{39E0FABE-BD6B-4762-BD3A-0BCB8A55D393}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "ThemaConfig", "EA-Domain-Guid" : "{43CF03F4-4761-49c3-9BD9-432A457EDA72}", "EA-Range" : "Date", "RangeData" : {"EA-Name" : "Date", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#date" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig", "EA-Name" : "ThemaConfig" }
+],
+"range": [
+{"EA-Name" : "Date", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#date" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#publication-state",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "publication-state", "EA-Guid" : "{B792B194-052E-42d5-8432-E0B05C8EC181}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "ThemaConfig", "EA-Domain-Guid" : "{43CF03F4-4761-49c3-9BD9-432A457EDA72}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig", "EA-Name" : "ThemaConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#publicationpoints",
+"@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "publicationpoints", "EA-Guid" : "{9C5F615D-A666-4db4-85DD-9EAA638D4561}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "PublicationEnvironmentConfig", "EA-Domain-Guid" : "{BB309E53-2366-4437-B0A9-DD3A363E2F58}", "EA-Range" : "int", "RangeData" : {"EA-Name" : "", "EA-Package" : "", "uri" : "null" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationEnvironmentConfig", "EA-Name" : "PublicationEnvironmentConfig" }
+],
+"range": [
+
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#repository",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "repository", "EA-Guid" : "{8573C3C4-F6E7-46fd-8784-19DC16210BAA}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "PublicationpointConfig", "EA-Domain-Guid" : "{8E804E45-8EE8-456c-A1B8-420DB19AFBB0}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig", "EA-Name" : "PublicationpointConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope",
+"@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "scope", "EA-Guid" : "{0507B8E1-37B8-4d55-BF88-C9825A4F6BB3}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "Class", "EA-Domain-Guid" : "{2C290773-B724-44c7-8EA0-B653E5286DEB}", "EA-Range" : "External", "RangeData" : {"EA-Name" : "External", "EA-GUID" : "{AAE28EF4-9E38-4741-8009-FAD12448F835}", "EA-Package" : "OSLO-Toolchain", "uri" : "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class", "EA-Name" : "Class" }
+],
+"range": [
+{"EA-Name" : "External", "EA-GUID" : "{AAE28EF4-9E38-4741-8009-FAD12448F835}", "EA-Package" : "OSLO-Toolchain", "uri" : "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope",
+"@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "scope", "EA-Guid" : "{562B08D4-D262-43f1-BAB5-AD789DD3F49B}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "DataType", "EA-Domain-Guid" : "{74D49128-E5C9-4503-9188-F6BB554A950C}", "EA-Range" : "External", "RangeData" : {"EA-Name" : "External", "EA-GUID" : "{AAE28EF4-9E38-4741-8009-FAD12448F835}", "EA-Package" : "OSLO-Toolchain", "uri" : "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType", "EA-Name" : "DataType" }
+],
+"range": [
+{"EA-Name" : "External", "EA-GUID" : "{AAE28EF4-9E38-4741-8009-FAD12448F835}", "EA-Package" : "OSLO-Toolchain", "uri" : "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope",
+"@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "scope", "EA-Guid" : "{1CA9887C-5399-402d-A20C-CB665CA54F27}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "Property", "EA-Domain-Guid" : "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}", "EA-Range" : "External", "RangeData" : {"EA-Name" : "External", "EA-GUID" : "{AAE28EF4-9E38-4741-8009-FAD12448F835}", "EA-Package" : "OSLO-Toolchain", "uri" : "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property", "EA-Name" : "Property" }
+],
+"range": [
+{"EA-Name" : "External", "EA-GUID" : "{AAE28EF4-9E38-4741-8009-FAD12448F835}", "EA-Package" : "OSLO-Toolchain", "uri" : "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#seealso",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "seealso", "EA-Guid" : "{C0ACE512-5C12-4cfa-8C38-4BDB08A00A57}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "PublicationpointConfig", "EA-Domain-Guid" : "{8E804E45-8EE8-456c-A1B8-420DB19AFBB0}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig", "EA-Name" : "PublicationpointConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#site",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "site", "EA-Guid" : "{F1986B1A-CC12-4ec5-B5BE-6FEE2D8BEE2A}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "ThemaConfig", "EA-Domain-Guid" : "{43CF03F4-4761-49c3-9BD9-432A457EDA72}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig", "EA-Name" : "ThemaConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#standaardregisterurl",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "standaardregisterurl", "EA-Guid" : "{C7A24C5D-9080-4fa5-BF9C-4682CDDAEE7A}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "ThemaConfig", "EA-Domain-Guid" : "{43CF03F4-4761-49c3-9BD9-432A457EDA72}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig", "EA-Name" : "ThemaConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#template",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "template", "EA-Guid" : "{E7E0A64E-6D2A-4742-AD97-9D33922D1049}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "ThemaConfig", "EA-Domain-Guid" : "{43CF03F4-4761-49c3-9BD9-432A457EDA72}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig", "EA-Name" : "ThemaConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#template",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "template", "EA-Guid" : "{994C47CF-538A-423e-B318-F9FAB3373AA8}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "TranslationConfig", "EA-Domain-Guid" : "{059EF2A0-4485-45b7-AF3B-098B49244404}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#TranslationConfig", "EA-Name" : "TranslationConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#title",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "title", "EA-Guid" : "{C10A85F0-F3BF-4d3b-BB15-5B8ABF365725}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "ThemaConfig", "EA-Domain-Guid" : "{43CF03F4-4761-49c3-9BD9-432A457EDA72}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig", "EA-Name" : "ThemaConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#title",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "title", "EA-Guid" : "{714D8448-4C8E-42f3-BF5D-E8663E8E24DE}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "TranslationConfig", "EA-Domain-Guid" : "{059EF2A0-4485-45b7-AF3B-098B49244404}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#TranslationConfig", "EA-Name" : "TranslationConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#toolchain",
+"@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "toolchain", "EA-Guid" : "{4BCD8D76-CDE5-4024-BE8E-33B68E577E4F}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "PublicationEnvironmentConfig", "EA-Domain-Guid" : "{BB309E53-2366-4437-B0A9-DD3A363E2F58}", "EA-Range" : "int", "RangeData" : {"EA-Name" : "", "EA-Package" : "", "uri" : "null" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationEnvironmentConfig", "EA-Name" : "PublicationEnvironmentConfig" }
+],
+"range": [
+
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#toolchaincommit",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "toolchaincommit", "EA-Guid" : "{5F868E14-F6FB-4858-8F0F-5953580B1ECB}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "PublicationExecution", "EA-Domain-Guid" : "{EEBA10CF-93D3-4fba-BC3C-84C0A2C95626}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationExecution", "EA-Name" : "PublicationExecution" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#toolchainversion",
+"@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "toolchainversion", "EA-Guid" : "{CDF49F9C-2538-4934-ADEA-F12A5DB001BD}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "PublicationEnvironmentConfig", "EA-Domain-Guid" : "{BB309E53-2366-4437-B0A9-DD3A363E2F58}", "EA-Range" : "int", "RangeData" : {"EA-Name" : "", "EA-Package" : "", "uri" : "null" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationEnvironmentConfig", "EA-Name" : "PublicationEnvironmentConfig" }
+],
+"range": [
+
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#translationjson",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "translationjson", "EA-Guid" : "{5E9AF6A2-5075-40c6-8DD9-73A9B7ED6249}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "TranslationConfig", "EA-Domain-Guid" : "{059EF2A0-4485-45b7-AF3B-098B49244404}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#TranslationConfig", "EA-Name" : "TranslationConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#type",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "type", "EA-Guid" : "{3507CE93-2027-47f2-912D-A996787DF9F9}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "ThemaConfig", "EA-Domain-Guid" : "{43CF03F4-4761-49c3-9BD9-432A457EDA72}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ThemaConfig", "EA-Name" : "ThemaConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "uri", "EA-Guid" : "{DC7AD89C-C137-498a-8558-3D0AE781031D}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "Class", "EA-Domain-Guid" : "{2C290773-B724-44c7-8EA0-B653E5286DEB}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class", "EA-Name" : "Class" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "uri", "EA-Guid" : "{0E0D6183-0C44-4f9b-8480-86A401E2E4FE}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "DataType", "EA-Domain-Guid" : "{74D49128-E5C9-4503-9188-F6BB554A950C}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType", "EA-Name" : "DataType" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "uri", "EA-Guid" : "{FF9B2A0B-F0F8-4cd3-A82E-1DEE1FF792B1}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "Property", "EA-Domain-Guid" : "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property", "EA-Name" : "Property" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#urlref",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "urlref", "EA-Guid" : "{601986F5-C76D-4d6b-9CAE-2F8A5BBCB320}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "PublicationpointConfig", "EA-Domain-Guid" : "{8E804E45-8EE8-456c-A1B8-420DB19AFBB0}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PublicationpointConfig", "EA-Name" : "PublicationpointConfig" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "usagenote", "EA-Guid" : "{0EEB42A0-03B3-4e75-93A8-79EE0A1D8AC8}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "Class", "EA-Domain-Guid" : "{2C290773-B724-44c7-8EA0-B653E5286DEB}", "EA-Range" : "LangString", "RangeData" : {"EA-Name" : "LangString", "EA-Package" : "", "uri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class", "EA-Name" : "Class" }
+],
+"range": [
+{"EA-Name" : "LangString", "EA-Package" : "", "uri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "usagenote", "EA-Guid" : "{C7D21655-BBD2-4b8c-9B8A-ECD869085FA3}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "DataType", "EA-Domain-Guid" : "{74D49128-E5C9-4503-9188-F6BB554A950C}", "EA-Range" : "LangString", "RangeData" : {"EA-Name" : "LangString", "EA-Package" : "", "uri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType", "EA-Name" : "DataType" }
+],
+"range": [
+{"EA-Name" : "LangString", "EA-Package" : "", "uri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "usagenote", "EA-Guid" : "{F846AE24-EDEA-489a-BE6D-143101EC8D3B}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "Property", "EA-Domain-Guid" : "{3E359360-3B78-42f6-9313-C5CEBEE26E4E}", "EA-Range" : "LangString", "RangeData" : {"EA-Name" : "LangString", "EA-Package" : "", "uri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property", "EA-Name" : "Property" }
+],
+"range": [
+{"EA-Name" : "LangString", "EA-Package" : "", "uri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+, {
+"@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#value",
+"@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+"name": "",
+"inpackage": "ACTIVE_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "value", "EA-Guid" : "{580C90DA-CA51-415c-85AF-102D39873971}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "attribute", "EA-Domain" : "EA-Tag", "EA-Domain-Guid" : "{83A1BE86-5B34-424c-A808-6DE8B2D71707}", "EA-Range" : "String", "RangeData" : {"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }, "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [], "Scope" : "FULL_DEFINITON", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"codelist": [
+],
+"domain": [
+{ "uri": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag", "EA-Name" : "EA-Tag" }
+],
+"range": [
+{"EA-Name" : "String", "EA-Package" : "", "uri" : "http://www.w3.org/2001/XMLSchema#string" }
+],
+"generalization": [
+
+],
+"minCardinality": "1",
+"maxCardinality": "1"}
+],
+"externals": [
+{
+"@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+"@type": "http://www.w3.org/2002/07/owl#Class",
+"inpackage": "OTHER_PACKAGE",
+"label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"},
+"extra": {"EA-Name" : "LangString", "EA-Guid" : "{61FF9D11-4FA1-4f21-8B74-DBBB34CD49DC}", "EA-Package" : "OSLO-Toolchain", "EA-Type" : "DATATYPE", "EA-Parents" : "", "EA-Parents2" : [], "parentclasses" : "", "label" : "", "definition" : "", "usage" : "", "label-nl" : "TODO", "definition-nl" : "TODO", "usageNote-nl" : "", "label-en" : "", "definition-en" : "", "usageNote-en" : "", "equivalent" : "", "subclass" : "", "subclass1" : "", "sameAs" : "", "RawTags" : [{ "key": "literal", "value": "true", "note": "null" }, { "key": "uri", "value": "http:\/\/www.w3.org\/1999\/02\/22-rdf-syntax-ns#langString", "note": "null" }], "Scope" : "TRANSLATIONS_ONLY", "label-nl" : {"nl": "TODO"}, "definition-nl" : {"nl": "TODO"}},
+"name": ""
+}
+],
+"externalproperties": [
+]
+}

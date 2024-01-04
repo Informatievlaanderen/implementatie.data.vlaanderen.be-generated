@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:ns0="http://www.w3.org/2001/02pd/rec54#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:ns1="http://purl.org/vocab/vann/" xmlns:schema="http://schema.org/">
+  <owl:ObjectProperty rdf:about="https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#BoormethodeInterval.geometrie">
+    <rdfs:isDefinedBy>
+      <owl:Ontology rdf:about="https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen">
+        <dc:license>https://creativecommons.org/publicdomain/zero/1.0/</dc:license>
+        <dc:license rdf:resource="https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0"/>
+        <dc:mediator>
+          <rdf:Description rdf:nodeID="g454740">
+            <foaf:homepage rdf:resource="https://data.specs.org"/>
+            <foaf:mbox rdf:resource="mailto:info@data.specs.org"/>
+            <foaf:name>Data Specifications Organisation</foaf:name>
+          </rdf:Description>
+        </dc:mediator>
+        <rdfs:label xml:lang="en">grondverzet-grondboringen-imvoc</rdfs:label>
+        <rdfs:label xml:lang="nl">grondverzet-grondboringen-imvoc</rdfs:label>
+        <foaf:maker>
+          <foaf:Person rdf:nodeID="g454760">
+            <schema:affiliation>
+              <rdf:Description rdf:nodeID="g454780">
+                <foaf:homepage rdf:resource="https://auteurwebsiteurl"/>
+                <foaf:name>AuteurAffiliatie</foaf:name>
+              </rdf:Description>
+            </schema:affiliation>
+            <foaf:firstName>AuteurVoornaam</foaf:firstName>
+            <foaf:lastName>AuteurNaam</foaf:lastName>
+            <foaf:mbox rdf:resource="mailto:auteurvoornaam.auteurnaam@auteurdomein"/>
+          </foaf:Person>
+        </foaf:maker>
+        <ns0:editor>
+          <foaf:Person rdf:nodeID="g454800">
+            <schema:affiliation>
+              <rdf:Description rdf:nodeID="g454820">
+                <foaf:homepage rdf:resource="https://editorwebsiteurl"/>
+                <foaf:name>EditorAffiliatie</foaf:name>
+              </rdf:Description>
+            </schema:affiliation>
+            <foaf:firstName>EditorVoornaam</foaf:firstName>
+            <foaf:lastName>EditorNaam</foaf:lastName>
+            <foaf:mbox rdf:resource="mailto:editorvoornaam.editornaam@editordomein"/>
+          </foaf:Person>
+        </ns0:editor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g454840">
+            <schema:affiliation>
+              <rdf:Description rdf:nodeID="g454860">
+                <foaf:homepage rdf:resource="https://medewerkerwebsiteurl"/>
+                <foaf:name>MedewerkerAffiliatie</foaf:name>
+              </rdf:Description>
+            </schema:affiliation>
+            <foaf:firstName>MedewerkerVoornaam</foaf:firstName>
+            <foaf:lastName>MedewerkerNaam</foaf:lastName>
+            <foaf:mbox rdf:resource="mailto:medewerkervoornaam.medewerkernaam@medewerkerdomein"/>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:issued>TODO</dc:issued>
+      </owl:Ontology>
+    </rdfs:isDefinedBy>
+    <rdfs:label xml:lang="nl">geometrie</rdfs:label>
+    <rdfs:comment xml:lang="nl">Geometrie van het interval.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval"/>
+    <rdfs:range rdf:resource="http://www.opengis.net/ont/sf#LineString"/>
+    <rdfs:subPropertyOf rdf:resource="https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip">
+    <rdfs:isDefinedBy rdf:resource="https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen"/>
+    <rdfs:label xml:lang="nl">bemonsteringstijdstip</rdfs:label>
+    <rdfs:comment xml:lang="nl">Moment waarop de Bemonstering werd afgerond.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://data.vlaanderen.be/ns/grondboringen#Grondboring"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/sosa/resultTime"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure">
+    <rdfs:isDefinedBy rdf:resource="https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen"/>
+    <rdfs:label xml:lang="nl">gebruikteProcedure</rdfs:label>
+    <rdfs:comment xml:lang="nl">Boormethode die werd gevolgd bij de Grondboring.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://data.vlaanderen.be/ns/grondboringen#Grondboring"/>
+    <rdfs:range rdf:resource="https://data.vlaanderen.be/ns/grondboringen#Boormethode"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/sosa/usedProcedure"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie">
+    <rdfs:isDefinedBy rdf:resource="https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen"/>
+    <rdfs:label xml:lang="nl">geometrie</rdfs:label>
+    <rdfs:comment xml:lang="nl">Lijnstring die de vorm van de Grondboring beschrijft.</rdfs:comment>
+    <ns1:usageNote xml:lang="nl">Loopt van de boorkraag (die zowel boven, op als onder het maaiveld - of ander referentievlak - kan liggen) tot het verste punt van de boring. Coördinaten worden minimaal in 2D maar bij voorkeur in 2.5D gegeven.</ns1:usageNote>
+    <rdfs:domain rdf:resource="http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"/>
+    <rdfs:range rdf:resource="http://www.opengis.net/ont/sf#LineString"/>
+    <rdfs:subPropertyOf rdf:resource="http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.shape"/>
+  </owl:ObjectProperty>
+</rdf:RDF>

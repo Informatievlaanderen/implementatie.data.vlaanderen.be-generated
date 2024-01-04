@@ -1,0 +1,1494 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xml:lang="nl" lang="nl" dir="ltr" typeof="bibo:Document " about="" property="dcterms:language" content="nl" prefix="dcterms: http://purl.org/dc/terms/ bibo: http://purl.org/ontology/bibo/ schema: http://schema.org/ w3p: http://www.w3.org/2001/02pd/rec54#" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   
+  <title>Data Specifications</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://dij151upo6vad.cloudfront.net/2.latest/css/vlaanderen-ui.css" />
+  <link rel="stylesheet" href="https://dij151upo6vad.cloudfront.net/2.latest/css/vlaanderen-ui-corporate.css" />
+
+  <link rel="icon" sizes="192x192" href="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/icon-highres-precomposed.png" />
+  <link rel="apple-touch-icon" href="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/touch-icon-iphone-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/touch-icon-ipad-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/touch-icon-iphone-retina-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/touch-icon-ipad-retina-precomposed.png" />
+
+  <meta name="msapplication-square70x70logo" content="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/tile-small.png" />
+  <meta name="msapplication-square150x150logo" content="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/tile-medium.png" />
+  <meta name="msapplication-wide310x150logo" content="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/tile-wide.png" />
+  <meta name="msapplication-square310x310logo" content="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/tile-large.png" />
+  <meta name="msapplication-TileColor" content="#FFE615" />
+</head>
+
+<body>
+
+  <!-- Start page content -->
+  <div class="page">
+    <div class="layout layout--wide">
+      <div class="skiplink">
+        <a rel="nofollow noreferrer" href="#main">Overslaan en naar de algemene inhoud gaan</a>
+      </div>
+    </div>
+    <div class="page">
+      <div class="region">
+        <div class="layout layout--wide">
+          <div class="grid u-hr">
+            <div class="col--9-12 col--1-1--s">
+              <h1 class="h1">Data Specifications</h1>
+
+              <div class="head" role="status" id="status">
+              <dl>
+              <dt>Status</dt><dd><a href="https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard">https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard</a></dd>
+              <dt>Uitgegeven op</dt><dd>2023-10-17</dd>
+              <dt>Deze versie</dt><dd><a href="https://implementatie.data.vlaanderen.be//doc/implementatiemodel/toolchain/ontwerpstandaard/2023-09-22">https://implementatie.data.vlaanderen.be//doc/implementatiemodel/toolchain/ontwerpstandaard/2023-09-22</a></dd>
+              
+              
+              </dl>
+              </div>
+
+              <div class="head" role="contentinfo" id="respecHeader">
+                <dl>
+                        
+                          
+                            
+                        
+                          <dt>Auteurs</dt>
+                          
+                          <dd inlist="" rel="foaf:maker" class="p-author h-card vcard">
+                              <span typeof="foaf:Person">
+                              <span class="p-name fn" property="foaf:lastName">Van Nuffelen</span>,
+                              <span class="p-name fn" property="foaf:firstName">Bert</span>
+                              
+                              - <span class="p-org org h-org h-card">Flanders Digital Agency</span>
+                              
+                							
+                              </span>
+                          </dd>
+                          
+                        
+                      
+                      
+                          
+                        
+                        
+                          <dt>Editors</dt>
+                          
+                          <dd inlist="" rel="bibo:editor" class="p-author h-card vcard">
+                              <span typeof="foaf:Person">
+                              <span class="p-name fn" property="foaf:lastName">Van Nuffelen</span>,
+                              <span class="p-name fn" property="foaf:firstName">Bert</span>
+                              
+                                 - <span class="p-org org h-org h-card">Flanders Digital Agency</span>
+                              
+                							
+                							</span>
+                          </dd>
+                        
+                        
+                      
+                      
+                </dl>
+              </div>
+
+              <div class="head" role="metainfo" id="metainfo">
+              <dl>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-toolchain/tree/7333ac856e444a540786fed74d2a603e9d78dbd1">https://github.com/Informatievlaanderen/OSLOthema-im-toolchain/tree/7333ac856e444a540786fed74d2a603e9d78dbd1</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-toolchain/blob/7333ac856e444a540786fed74d2a603e9d78dbd1/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-im-toolchain/blob/7333ac856e444a540786fed74d2a603e9d78dbd1/CHANGELOG</a></dd>
+              <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-toolchain/issues">https://github.com/Informatievlaanderen/OSLOthema-im-toolchain/issues</a></dd>
+              <dt>Standaardenregister</dt><dd><a href=""></a></dd>
+
+              <dt>Afhankelijkheden</dt><dd>
+                
+		</dd>
+              </dl>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main" itemprop="mainContentOfPage" role="main" tabindex="-1" class="main-content">
+      <div class="layout layout--wide">
+        <div class="grid">
+          <div class="col--8-12 col--12-12--s">
+            <div class="region" id="introduction">
+              <div class="introduction typography">
+              
+                <p>Dit document beschrijft een <strong>implementatiemodel</strong>, in dit geval <strong>Data Specifications</strong>.
+                Een implementatiemodel is een toepassing van vocabularia voor een concreet doel.
+                Het beschrijft in alle detail (zoals kardinaliteiten, codelijsten, datatypes, ...) de gewenste datastructuur.
+                </p>
+              
+              </div>
+            </div>
+
+            <div class="region region--no-space-top typography" id="summary">
+                <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">Samenvatting</h2>
+                
+<p>Vul hier een samenvatting van mijn applicatieprofiel in.</p>
+
+            </div>
+
+            <div class="region region--no-space-top typography" id="status">
+              <section class="introductory" id="sotd" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
+                <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">Status van dit document</h2>
+                
+<p>(Verwijder dit blok om een geautomatiseerde standaardparagraaf te laten verschijnen.)</p>
+
+              </section>
+            </div>
+
+            <div class="region region--no-space-top typography" id="license">
+              <h2 class="h2">Licentie</h2>
+              
+              <p><span rel="dct:type" property="dct:title" href="http://purl.org/dc/dcmitype/Text" xmlns:dct="http://purl.org/dc/terms/">Deze specificatie</span> van <a rel="cc:attributionURL" property="cc:attributionName" href="http://vlaanderen.be/informatievlaanderen" xmlns:cc="http://creativecommons.org/ns#">Digitaal Vlaanderen</a> is gepubliceerd onder de <a href="https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0" rel="license">"Modellicentie Gratis Hergebruik - v1.0"</a>.</p>
+              
+            </div>
+            <div class="region region--no-space-top typography" id="conformance">
+              <h2 class="h2" id="conformance" aria-level="1" role="heading">Conformiteit</h2>
+              
+              <p>De conformiteit voor implementatiemodellen is <a href="/doc/begeleidend/implementatiemodellen/conformiteit">hier</a> te vinden.</p>
+              
+            </div>
+            <div class="region region--no-space-top" id="overview">
+              <h2 class="h2">Overzicht</h2>
+              <div class="grid">
+                <div class="col--9-12 col--1-1--s typography">
+                  
+                  <div class="region region--no-space-top">
+                    <p>In dit document wordt correct gebruik van de volgende entiteiten toegelicht:
+                      <br />
+                      |
+                      <a href="#"></a> |
+                      <a href="#"></a> |
+                      <a href="#"></a> |
+                      <a href="#"></a> |
+                      <a href="#"></a> |
+                      <a href="#"></a> |
+                      <a href="#"></a> |
+                      <a href="#"></a> |
+                      <a href="#"></a> |
+                      <a href="#"></a> |
+                      <a href="#"></a> |
+                    </p>
+                  </div>
+                  
+                  
+                  <div class="region region--no-space-top">
+                    <p> In dit document worden de volgende datatypes toegelicht:
+                      <br />
+                      |
+                      <a href="#"></a> |
+                    </p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="region region--no-space-top">
+              <a href="/doc/implementatiemodel/toolchain/ontwerpstandaard/2023-09-22/html/overview.jpg" target="_blank">
+                 <img src="/doc/implementatiemodel/toolchain/ontwerpstandaard/2023-09-22/html/overview.jpg" />
+              </a>
+              
+              
+            </div>
+            <div class="region region--no-space-top">
+              <h2 class="h2">Entiteiten</h2>
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id=""><a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#AssociationClass" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#AssociationClass" data-placement="right"></a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd></dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="#Class">Class</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		    
+                    <dd>Voor deze entiteit zijn geen eigenschappen gedefinieerd.</dd>
+                    
+                  </dl>
+                </div>
+		
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id=""><a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class" data-placement="right"></a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd></dd>
+                    
+		    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A(source)"> (source)</a>, 
+                      <a href="#%3A(target)"> (target)</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#LangString" data-placement="right">LangString</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#label">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#label" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#label" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#LangString" data-placement="right">LangString</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#External" data-placement="right">External</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#LangString" data-placement="right">LangString</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A(source)" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class.parent.source">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class.parent.source" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class.parent.source" data-placement="right">
+                             (source)</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Class" data-placement="right">Class</a>
+			    
+                          
+                        </td>
+                        <td></td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A(target)" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class.parent.target">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class.parent.target" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class.parent.target" data-placement="right">
+                             (target)</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Class" data-placement="right">Class</a>
+			    
+                          
+                        </td>
+                        <td></td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id=""><a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataProperty" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataProperty" data-placement="right"></a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd></dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="#Property">Property</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#%3A"></a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#range">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#range" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#range" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#DataType" data-placement="right">DataType</a>
+			    
+                          
+                        </td>
+                        <td></td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id=""><a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType" data-placement="right"></a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd></dd>
+                    
+		    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#LangString" data-placement="right">LangString</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#label">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#label" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#label" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#LangString" data-placement="right">LangString</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#External" data-placement="right">External</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#LangString" data-placement="right">LangString</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id=""><a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Diagram" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Diagram" data-placement="right"></a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd></dd>
+                    
+		    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#class">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#class" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#class" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Class" data-placement="right">Class</a>
+			    
+                          
+                        </td>
+                        <td></td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#datatype">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#datatype" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#datatype" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#DataType" data-placement="right">DataType</a>
+			    
+                          
+                        </td>
+                        <td></td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#licence">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#licence" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#licence" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#property">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#property" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#property" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Property" data-placement="right">Property</a>
+			    
+                          
+                        </td>
+                        <td></td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id=""><a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element" data-placement="right"></a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd></dd>
+                    
+		    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#destRoleTag">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#destRoleTag" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#destRoleTag" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#EA-Tag" data-placement="right">EA-Tag</a>
+			    
+                          
+                        </td>
+                        <td></td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#elementTag">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#elementTag" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#elementTag" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#EA-Tag" data-placement="right">EA-Tag</a>
+			    
+                          
+                        </td>
+                        <td></td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#guid">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#guid" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#guid" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#name">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#name" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#name" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#soureRoleTag">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#soureRoleTag" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#soureRoleTag" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#EA-Tag" data-placement="right">EA-Tag</a>
+			    
+                          
+                        </td>
+                        <td></td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id=""><a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag" data-placement="right"></a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd></dd>
+                    
+		    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#key">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#key" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#key" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#note">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#note" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#note" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#value">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#value" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#value" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id=""><a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ObjectProperty" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ObjectProperty" data-placement="right"></a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd></dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="#Property">Property</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#codelist">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#codelist" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#codelist" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#range">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#range" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#range" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Class" data-placement="right">Class</a>
+			    
+                          
+                        </td>
+                        <td></td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id=""><a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Package" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Package" data-placement="right"></a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd></dd>
+                    
+		    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#%3A"></a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#baseuri">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#baseuri" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#baseuri" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id=""><a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PredefinedDatatype" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PredefinedDatatype" data-placement="right"></a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd></dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="#DataType">DataType</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		    
+                    <dd>Voor deze entiteit zijn geen eigenschappen gedefinieerd.</dd>
+                    
+                  </dl>
+                </div>
+		
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id=""><a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property" data-placement="right"></a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd></dd>
+                    
+		    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>, 
+                      <a href="#%3A"></a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#LangString" data-placement="right">LangString</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#derived">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#derived" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#derived" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#boolean" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#boolean" data-placement="right">Boolean</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">The property is derived through intepretation of direction, tags and roles </td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#domain">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#domain" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#domain" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Class" data-placement="right">Class</a>
+			    
+                          
+                        </td>
+                        <td></td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#label">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#label" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#label" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#LangString" data-placement="right">LangString</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#maxcard">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#maxcard" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#maxcard" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#mincard">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#mincard" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#mincard" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#parent">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#parent" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#parent" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Property" data-placement="right">Property</a>
+			    
+                          
+                        </td>
+                        <td></td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#External" data-placement="right">External</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="%3A" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote" data-placement="right">
+                            </a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#LangString" data-placement="right">LangString</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+
+            
+            <div class="region region--no-space-top">
+              <h2 class="h2">Datatypes</h2>
+            </div>
+            
+            <div class="region region--no-space-top">
+              
+              <h3 class="h3" id=""><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right"></a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd></dd>
+                    
+		    
+                    <dt>Eigenschappen</dt>
+		    
+                    <dd>Voor dit datatype zijn geen eigenschappen gedefinieerd.</dd>
+                    
+                  </dl>
+                </div>
+		
+            </div>
+            
+            
+            <div class="region region--no-space-top" id="jsonld">
+                <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">JSON-LD context</h2>
+                (niet normatief)
+                
+                <p>Een herbruikbare JSON-LD context definitie voor dit implementatiemodel is terug te vinden op: <a href="/doc/implementatiemodel/toolchain/ontwerpstandaard/2023-09-22/context/dataspecification.jsonld" target="_blank">/doc/implementatiemodel/toolchain/ontwerpstandaard/2023-09-22/context/dataspecification.jsonld</a></p>
+                
+            </div>
+            <div class="region region--no-space-top" id="shacl">
+                <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">SHACL template</h2>
+                (niet normatief)
+                
+                <p>Een herbruikbare SHACL template definitie voor dit implementatiemodel is terug te vinden op: <a href="/doc/implementatiemodel/toolchain/ontwerpstandaard/2023-09-22/shacl/dataspecification-SHACL.ttl" target="_blank">/doc/implementatiemodel/toolchain/ontwerpstandaard/2023-09-22/shacl/dataspecification-SHACL.ttl</a></p>
+                
+            </div>
+          </div>
+          <div class="col--3-12 col--12-12--s col--4-12--m push--1-12 push--reset--m" id="sideNav">
+              <nav class="side-navigation js-sticky region" id="sideNav">
+                  <div class="side-navigation__content js-scrollspy">
+                      <div class="side-navigation__group">
+                          <ul>
+                              <li class="side-navigation__item">
+                                  <a href="#introduction">Inleiding</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#summary">Samenvatting</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#status">Status van dit document</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#license">Licentie</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#conformance">Conformiteit</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#overview">Overzicht</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#jsonld">JSON-LD Context</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#shacl">SHACL template</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+    <!-- End page content -->
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="https://dij151upo6vad.cloudfront.net/2.latest/js/vlaanderen-ui.js"></script>
+
+  <style>
+    @media screen {  /* hide from IE3 */
+      a[href]:hover { background: #ffa }
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    tr:nth-child(even) td     { background-color:#eee; }
+
+    dt, dd { margin-top: 0; margin-bottom: 0 } /* opera 3.50 */
+    dt { font-weight: bold }
+
+    pre, code { font-family: monospace } /* navigator 4 requires this */
+
+    em {
+          font-style: italic;
+    }
+
+    img {
+       width: 100%;
+    }
+
+    .tooltip {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 800;
+      display: none;
+      max-width: 128rem;
+      background: #fff;
+      border: 1px solid #ccc;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-size: 1.4rem;
+      color: #000;
+      background-clip: padding-box;
+    }
+  </style>
+</body>
+</html>
