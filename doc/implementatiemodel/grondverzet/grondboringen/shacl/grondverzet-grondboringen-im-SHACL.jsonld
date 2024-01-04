@@ -6,6 +6,13 @@
       "@id": "qb:codeList",
       "@type": "@id"
     },
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdf:first": {
+      "@type": "@id"
+    },
+    "rdf:rest": {
+      "@type": "@id"
+    },
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "rdfs:comment": {
       "@id": "rdfs:comment"
@@ -87,7 +94,11 @@
       "@type": "@id"
     },
     "skos": "http://www.w3.org/2004/02/skos/core#",
-    "vl": "https://data.vlaanderen.be/ns/shacl#"
+    "vl": "https://purl.eu/ns/shacl#",
+    "vl:message": {
+      "@container": "@language",
+      "@id": "vl:message"
+    }
   },
   "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01",
   "shapes": [
@@ -97,24 +108,8 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/279120b806542f49a7b75c4ad540d92618596259",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3AaangenomenGrondwaterstand",
-          "sh:description": {
-            "nl": "De Grondwaterstand in het Boorgat, al dan niet gebaseerd op meerdere Observaties."
-          },
-          "sh:name": {
-            "nl": "aangenomenGrondwaterstand"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#aangenomenGrondwaterstand",
-          "vl:message": {
-            "nl": "De verwachte waarde voor aangenomenGrondwaterstand is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
-        },
-        {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/32d052a18f088f1afe35c6354047fdb10d5479dd",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3AaangenomenGrondwaterstand",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat.aangenomenGrondwaterstand",
           "sh:class": "https://schema.org/QuantitativeValue",
           "sh:description": {
             "nl": "De Grondwaterstand in het Boorgat, al dan niet gebaseerd op meerdere Observaties."
@@ -122,15 +117,11 @@
           "sh:name": {
             "nl": "aangenomenGrondwaterstand"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#aangenomenGrondwaterstand",
-          "vl:message": {
-            "nl": "De range van aangenomenGrondwaterstand moet van het type <https://schema.org/QuantitativeValue> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#aangenomenGrondwaterstand"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/b297d88505425b060c597a90127ea6731df15158",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3AaangenomenGrondwaterstand",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat.aangenomenGrondwaterstand",
           "sh:description": {
             "nl": "De Grondwaterstand in het Boorgat, al dan niet gebaseerd op meerdere Observaties."
           },
@@ -138,31 +129,11 @@
           "sh:name": {
             "nl": "aangenomenGrondwaterstand"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#aangenomenGrondwaterstand",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor aangenomenGrondwaterstand"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/0dd1794319d7ad522c1a868c5b4ce5acde9e15e0",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3Abekisting",
-          "sh:description": {
-            "nl": "Verwijzing naar de beschrijving van de Bekisting van het Boorgat."
-          },
-          "sh:name": {
-            "nl": "bekisting"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boorgat.bekisting",
-          "vl:message": {
-            "nl": "De verwachte waarde voor bekisting is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#aangenomenGrondwaterstand"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/884e9f81a6881c86aca995c731db202bd9cf7001",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3Abekisting",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat.bekisting",
           "sh:class": "https://data.vlaanderen.be/ns/grondboringen#Bekisting",
           "sh:description": {
             "nl": "Verwijzing naar de beschrijving van de Bekisting van het Boorgat."
@@ -170,15 +141,11 @@
           "sh:name": {
             "nl": "bekisting"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boorgat.bekisting",
-          "vl:message": {
-            "nl": "De range van bekisting moet van het type <https://data.vlaanderen.be/ns/grondboringen#Bekisting> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boorgat.bekisting"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/cde6ae373a0c4837bfdaf6c4ecb76d7e05547410",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3Abekisting",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat.bekisting",
           "sh:description": {
             "nl": "Verwijzing naar de beschrijving van de Bekisting van het Boorgat."
           },
@@ -186,31 +153,11 @@
           "sh:name": {
             "nl": "bekisting"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boorgat.bekisting",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor bekisting"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/8c18f08475f66dd1b1afe7c1dccfa19ad4b45071",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3Aboordiameter",
-          "sh:description": {
-            "nl": "Verwijzing naar de beschrijving van de Boordiameter van het Boorgat."
-          },
-          "sh:name": {
-            "nl": "boordiameter"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boordiameter",
-          "vl:message": {
-            "nl": "De verwachte waarde voor boordiameter is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boorgat.bekisting"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/8e174271536358426204e01c1355c89260ef3c5e",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3Aboordiameter",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat.boordiameter",
           "sh:class": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter",
           "sh:description": {
             "nl": "Verwijzing naar de beschrijving van de Boordiameter van het Boorgat."
@@ -218,15 +165,11 @@
           "sh:name": {
             "nl": "boordiameter"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boordiameter",
-          "vl:message": {
-            "nl": "De range van boordiameter moet van het type <https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boordiameter"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/95d5b5b31ef923c38c741035e9469a3a6a0b7d08",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3Aboordiameter",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat.boordiameter",
           "sh:description": {
             "nl": "Verwijzing naar de beschrijving van de Boordiameter van het Boorgat."
           },
@@ -234,15 +177,11 @@
           "sh:name": {
             "nl": "boordiameter"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boordiameter",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor boordiameter"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boordiameter"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/448d672403dbc26e88bc1d1c4a12358d549d6cea",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3AboringLengte",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat.boringLengte",
           "sh:class": "https://schema.org/QuantitativeValue",
           "sh:description": {
             "nl": "Lengte van de Grondboring."
@@ -250,15 +189,11 @@
           "sh:name": {
             "nl": "boringLengte"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boringLengte",
-          "vl:message": {
-            "nl": "De range van boringLengte moet van het type <https://schema.org/QuantitativeValue> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boringLengte"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/8d8a74f0f0a34af0e61fee95a2cf5e0e7e90e182",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3AboringLengte",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat.boringLengte",
           "sh:description": {
             "nl": "Lengte van de Grondboring."
           },
@@ -266,31 +201,11 @@
           "sh:name": {
             "nl": "boringLengte"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boringLengte",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor boringLengte"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/b7b35ed271bce8c59c44e3d7c07999a6b5efb999",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3AboringLengte",
-          "sh:description": {
-            "nl": "Lengte van de Grondboring."
-          },
-          "sh:name": {
-            "nl": "boringLengte"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boringLengte",
-          "vl:message": {
-            "nl": "De verwachte waarde voor boringLengte is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boringLengte"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/1de151e9a81413b8a996b6f7bc78775471630bd6",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3Adiepte",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat.diepte",
           "sh:class": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Diepte",
           "sh:description": {
             "nl": "De diepte van het Boorgat."
@@ -298,15 +213,11 @@
           "sh:name": {
             "nl": "diepte"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.diepte",
-          "vl:message": {
-            "nl": "De range van diepte moet van het type <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Diepte> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.diepte"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/9e5a675767795727e3edbd03239b7dd1082942ec",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3Adiepte",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat.diepte",
           "sh:description": {
             "nl": "De diepte van het Boorgat."
           },
@@ -314,47 +225,11 @@
           "sh:name": {
             "nl": "diepte"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.diepte",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor diepte"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/c08c70a0d89ab6a44e453c37475617473893c3fe",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3Adiepte",
-          "sh:description": {
-            "nl": "De diepte van het Boorgat."
-          },
-          "sh:name": {
-            "nl": "diepte"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.diepte",
-          "vl:message": {
-            "nl": "De verwachte waarde voor diepte is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/59037a235a81598436e45d98e1d6ddd8d3dd38d8",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3AgehostPlatform",
-          "sh:description": {
-            "nl": "Procedure die of instrument dat in of op het Boorgat is geïnstalleerd."
-          },
-          "sh:name": {
-            "nl": "gehostPlatform"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.hostedProcedure",
-          "vl:message": {
-            "nl": "De verwachte waarde voor gehostPlatform is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.diepte"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/e43d85a7010b5cf3b536d17e7fb055db04ea3e12",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3AgehostPlatform",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat.gehostPlatform",
           "sh:class": "http://def.isotc211.org/iso19156/2011/Observation#OM_Process",
           "sh:description": {
             "nl": "Procedure die of instrument dat in of op het Boorgat is geïnstalleerd."
@@ -362,15 +237,11 @@
           "sh:name": {
             "nl": "gehostPlatform"
           },
-          "sh:path": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.hostedProcedure",
-          "vl:message": {
-            "nl": "De range van gehostPlatform moet van het type <http://def.isotc211.org/iso19156/2011/Observation#OM_Process> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.hostedProcedure"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3Ageometrie",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat.geometrie",
           "sh:description": {
             "nl": "Lijnstring die de vorm van de Grondboring beschrijft."
           },
@@ -378,31 +249,11 @@
           "sh:name": {
             "nl": "geometrie"
           },
-          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor geometrie"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/35ea4794233fe7d78e3fa9762f8c5685fe9c0f51",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3Ageometrie",
-          "sh:description": {
-            "nl": "Lijnstring die de vorm van de Grondboring beschrijft."
-          },
-          "sh:name": {
-            "nl": "geometrie"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
-          "vl:message": {
-            "nl": "De verwachte waarde voor geometrie is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/722a1f18cabb107c684fe4ca857876ade00b0d01",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3Ageometrie",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat.geometrie",
           "sh:class": "http://www.opengis.net/ont/sf#LineString",
           "sh:description": {
             "nl": "Lijnstring die de vorm van de Grondboring beschrijft."
@@ -410,15 +261,11 @@
           "sh:name": {
             "nl": "geometrie"
           },
-          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
-          "vl:message": {
-            "nl": "De range van geometrie moet van het type <http://www.opengis.net/ont/sf#LineString> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/d7e4e623022693159b355b9e717ac7ec1a50695c",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3Ageometrie",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat.geometrie",
           "sh:description": {
             "nl": "Lijnstring die de vorm van de Grondboring beschrijft."
           },
@@ -426,15 +273,11 @@
           "sh:name": {
             "nl": "geometrie"
           },
-          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
-          "vl:message": {
-            "nl": "Minimaal 1 waarden verwacht voor geometrie"
-          },
-          "vl:rule": ""
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/2c8664c384bcd6ecf044a4b809503add6dd63c78",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3AisResultaatVan",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat.isResultaatVan",
           "sh:description": {
             "nl": "Grondboring waarvan het Boorgat het resultaat is."
           },
@@ -442,15 +285,11 @@
           "sh:name": {
             "nl": "isResultaatVan"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#isResultaatVan",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor isResultaatVan"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#isResultaatVan"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/323501fd679162303e804b107d55055c2f2ce59e",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3AisResultaatVan",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat.isResultaatVan",
           "sh:class": "https://data.vlaanderen.be/ns/grondboringen#Grondboring",
           "sh:description": {
             "nl": "Grondboring waarvan het Boorgat het resultaat is."
@@ -458,31 +297,11 @@
           "sh:name": {
             "nl": "isResultaatVan"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#isResultaatVan",
-          "vl:message": {
-            "nl": "De range van isResultaatVan moet van het type <https://data.vlaanderen.be/ns/grondboringen#Grondboring> zijn."
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/43cc2c510694d993830665f1fa763b393866f14d",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3AisResultaatVan",
-          "sh:description": {
-            "nl": "Grondboring waarvan het Boorgat het resultaat is."
-          },
-          "sh:name": {
-            "nl": "isResultaatVan"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#isResultaatVan",
-          "vl:message": {
-            "nl": "De verwachte waarde voor isResultaatVan is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#isResultaatVan"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/683a84ff35816eb194d8c6f0bfc0104665ba1a9f",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3AisResultaatVan",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat.isResultaatVan",
           "sh:description": {
             "nl": "Grondboring waarvan het Boorgat het resultaat is."
           },
@@ -490,31 +309,11 @@
           "sh:name": {
             "nl": "isResultaatVan"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#isResultaatVan",
-          "vl:message": {
-            "nl": "Minimaal 1 waarden verwacht voor isResultaatVan"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/5135dc15b45f37597a136588559f2028121eda2d",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3Aligging",
-          "sh:description": {
-            "nl": "Aanvullende indicatie van de ligging van het Boorgat."
-          },
-          "sh:name": {
-            "nl": "ligging"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.ligging",
-          "vl:message": {
-            "nl": "De verwachte waarde voor ligging is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#isResultaatVan"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/7c8605c3338335abe4771b8126140af61a98ddc1",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3Aligging",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat.ligging",
           "sh:class": "http://www.w3.org/ns/prov#Location",
           "sh:description": {
             "nl": "Aanvullende indicatie van de ligging van het Boorgat."
@@ -522,15 +321,11 @@
           "sh:name": {
             "nl": "ligging"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.ligging",
-          "vl:message": {
-            "nl": "De range van ligging moet van het type <http://www.w3.org/ns/prov#Location> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.ligging"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/0510a8f618b0e7ddc3f85a4fb299ab12484e595e",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3Amaaiveld",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat.maaiveld",
           "sh:class": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld",
           "sh:description": {
             "nl": "Het maaiveld van het Boorgat."
@@ -538,31 +333,11 @@
           "sh:name": {
             "nl": "maaiveld"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld",
-          "vl:message": {
-            "nl": "De range van maaiveld moet van het type <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld> zijn."
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/d65681ce493a350acdf0770242fe286d2c5352d7",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3Amaaiveld",
-          "sh:description": {
-            "nl": "Het maaiveld van het Boorgat."
-          },
-          "sh:name": {
-            "nl": "maaiveld"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld",
-          "vl:message": {
-            "nl": "De verwachte waarde voor maaiveld is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/6bdbc5157124b302cc9bf28ff5abf928f859badd",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3ApositioneleNauwkeurigheid",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat.positioneleNauwkeurigheid",
           "sh:description": {
             "nl": "De nauwkeurigheid van de positie van het Boorgat."
           },
@@ -570,15 +345,11 @@
           "sh:name": {
             "nl": "positioneleNauwkeurigheid"
           },
-          "sh:path": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.positionalAccuracy",
-          "vl:message": {
-            "nl": "Maximaal 2 waarden toegelaten voor positioneleNauwkeurigheid"
-          },
-          "vl:rule": ""
+          "sh:path": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.positionalAccuracy"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/ca9e75a6a8664f0da29ea7c32c242aaeef56005b",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3ApositioneleNauwkeurigheid",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat.positioneleNauwkeurigheid",
           "sh:class": "http://def.isotc211.org/iso19115/2006/DataQualityInformation#DQ_PositionalAccuracy",
           "sh:description": {
             "nl": "De nauwkeurigheid van de positie van het Boorgat."
@@ -586,27 +357,7 @@
           "sh:name": {
             "nl": "positioneleNauwkeurigheid"
           },
-          "sh:path": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.positionalAccuracy",
-          "vl:message": {
-            "nl": "De range van positioneleNauwkeurigheid moet van het type <http://def.isotc211.org/iso19115/2006/DataQualityInformation#DQ_PositionalAccuracy> zijn."
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape/da24e80c0d6bda9d9562a887ad6093afb385e028",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgat%3ApositioneleNauwkeurigheid",
-          "sh:description": {
-            "nl": "De nauwkeurigheid van de positie van het Boorgat."
-          },
-          "sh:name": {
-            "nl": "positioneleNauwkeurigheid"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.positionalAccuracy",
-          "vl:message": {
-            "nl": "De verwachte waarde voor positioneleNauwkeurigheid is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.positionalAccuracy"
         }
       ],
       "sh:targetClass": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
@@ -631,24 +382,8 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GeometrieShape/03e8e047dceaf1c615ca9dcd51ef5a662ce2a535",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Geometrie%3Agml",
-          "sh:description": {
-            "nl": "Geometrie uitgedrukt in gml-formaat."
-          },
-          "sh:name": {
-            "nl": "gml"
-          },
-          "sh:nodekind": "sh:Literal",
-          "sh:path": "http://www.opengis.net/ont/geosparql#asGML",
-          "vl:message": {
-            "nl": "De verwachte waarde voor gml is een Literal"
-          },
-          "vl:rule": ""
-        },
-        {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GeometrieShape/1fa2e16d78d8fce7d565e8b0d0b295ccfce4ccf1",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Geometrie%3Agml",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Geometrie.gml",
           "sh:description": {
             "nl": "Geometrie uitgedrukt in gml-formaat."
           },
@@ -656,31 +391,11 @@
           "sh:name": {
             "nl": "gml"
           },
-          "sh:path": "http://www.opengis.net/ont/geosparql#asGML",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor gml"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GeometrieShape/bf114e1074ebe493e1b26b10c8c19600d165b532",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Geometrie%3Agml",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "nl": "Geometrie uitgedrukt in gml-formaat."
-          },
-          "sh:name": {
-            "nl": "gml"
-          },
-          "sh:path": "http://www.opengis.net/ont/geosparql#asGML",
-          "vl:message": {
-            "nl": "De range van gml moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "http://www.opengis.net/ont/geosparql#asGML"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GeometrieShape/924fa0891e29beb42edc03865640a804126d1a9f",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Geometrie%3Aopmeting",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Geometrie.opmeting",
           "sh:description": {
             "nl": "De manier waarop de geometrie werd bepaald."
           },
@@ -688,31 +403,11 @@
           "sh:name": {
             "nl": "opmeting"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor opmeting"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GeometrieShape/96dd982974c470fa1341d636d69050dc0387ca34",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Geometrie%3Aopmeting",
-          "sh:description": {
-            "nl": "De manier waarop de geometrie werd bepaald."
-          },
-          "sh:name": {
-            "nl": "opmeting"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting",
-          "vl:message": {
-            "nl": "De verwachte waarde voor opmeting is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GeometrieShape/c61a6fcf48222cfd263d87bb92f5ef2035d7b7dc",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Geometrie%3Aopmeting",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Geometrie.opmeting",
           "sh:class": "https://data.vlaanderen.be/ns/generiek#Opmeting",
           "sh:description": {
             "nl": "De manier waarop de geometrie werd bepaald."
@@ -720,47 +415,11 @@
           "sh:name": {
             "nl": "opmeting"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting",
-          "vl:message": {
-            "nl": "De range van opmeting moet van het type <https://data.vlaanderen.be/ns/generiek#Opmeting> zijn."
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GeometrieShape/2a5393cfb44b132934710185c59867e11cfb9cea",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Geometrie%3Awkt",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "nl": "Geometrie uitgedrukt in wkt-formaat."
-          },
-          "sh:name": {
-            "nl": "wkt"
-          },
-          "sh:path": "http://www.opengis.net/ont/geosparql#asWKT",
-          "vl:message": {
-            "nl": "De range van wkt moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GeometrieShape/34ad32f5b7d11f20df810961c2bb99409f64c5c4",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Geometrie%3Awkt",
-          "sh:description": {
-            "nl": "Geometrie uitgedrukt in wkt-formaat."
-          },
-          "sh:name": {
-            "nl": "wkt"
-          },
-          "sh:nodekind": "sh:Literal",
-          "sh:path": "http://www.opengis.net/ont/geosparql#asWKT",
-          "vl:message": {
-            "nl": "De verwachte waarde voor wkt is een Literal"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GeometrieShape/412041a7e5eb713d30c26685c48cbbc05c934a2f",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Geometrie%3Awkt",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Geometrie.wkt",
           "sh:description": {
             "nl": "Geometrie uitgedrukt in wkt-formaat."
           },
@@ -768,11 +427,7 @@
           "sh:name": {
             "nl": "wkt"
           },
-          "sh:path": "http://www.opengis.net/ont/geosparql#asWKT",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor wkt"
-          },
-          "vl:rule": ""
+          "sh:path": "http://www.opengis.net/ont/geosparql#asWKT"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/locn#Geometry"
@@ -783,24 +438,8 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BekistingShape/0dd1794319d7ad522c1a868c5b4ce5acde9e15e0",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Bekisting%3Abekisting",
-          "sh:description": {
-            "nl": "Verwijzing naar de beschrijving van de bekisting voor een bepaald diepte-interval."
-          },
-          "sh:name": {
-            "nl": "bekisting"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Bekisting.bekisting",
-          "vl:message": {
-            "nl": "De verwachte waarde voor bekisting is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
-        },
-        {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BekistingShape/3e9788a78925a34f2cf2c0ff3e1e200b8ac00acb",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Bekisting%3Abekisting",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Bekisting.bekisting",
           "sh:description": {
             "nl": "Verwijzing naar de beschrijving van de bekisting voor een bepaald diepte-interval."
           },
@@ -808,15 +447,11 @@
           "sh:name": {
             "nl": "bekisting"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Bekisting.bekisting",
-          "vl:message": {
-            "nl": "Minimaal 1 waarden verwacht voor bekisting"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Bekisting.bekisting"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BekistingShape/884e9f81a6881c86aca995c731db202bd9cf7001",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Bekisting%3Abekisting",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Bekisting.bekisting",
           "sh:class": "https://data.vlaanderen.be/ns/grondboringen#Bekistinginterval",
           "sh:description": {
             "nl": "Verwijzing naar de beschrijving van de bekisting voor een bepaald diepte-interval."
@@ -824,11 +459,7 @@
           "sh:name": {
             "nl": "bekisting"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Bekisting.bekisting",
-          "vl:message": {
-            "nl": "De range van bekisting moet van het type <https://data.vlaanderen.be/ns/grondboringen#Bekistinginterval> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Bekisting.bekisting"
         }
       ],
       "sh:targetClass": "https://data.vlaanderen.be/ns/grondboringen#Bekisting"
@@ -840,7 +471,7 @@
       "sh:property": [
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorShape/322371a77364a50f049d46180f6192532eea26dc",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boor%3Atype",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boor.type",
           "sh:class": "https://data.vlaanderen.be/ns/grondboringen#BoortypeInterval",
           "sh:description": {
             "nl": "Verwijzing naar de beschrijving van het type Boor voor een bepaald diepteinterval."
@@ -848,27 +479,7 @@
           "sh:name": {
             "nl": "type"
           },
-          "sh:path": "http://purl.org/dc/terms/type",
-          "vl:message": {
-            "nl": "De range van type moet van het type <https://data.vlaanderen.be/ns/grondboringen#BoortypeInterval> zijn."
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorShape/4f381639bb6e021939f65b4f41409d1edaeade9b",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boor%3Atype",
-          "sh:description": {
-            "nl": "Verwijzing naar de beschrijving van het type Boor voor een bepaald diepteinterval."
-          },
-          "sh:name": {
-            "nl": "type"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://purl.org/dc/terms/type",
-          "vl:message": {
-            "nl": "De verwachte waarde voor type is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "http://purl.org/dc/terms/type"
         }
       ],
       "sh:targetClass": "https://data.vlaanderen.be/ns/grondboringen#Boor"
@@ -879,24 +490,8 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatdiameterShape/11d04e62df8e74de334ae961ee3909f20c2b242f",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgatdiameter%3Adiameter",
-          "sh:description": {
-            "nl": "Verwijzing naar de beschrijving van de boorgatdiameter voor een bepaald diepteinterval."
-          },
-          "sh:name": {
-            "nl": "diameter"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter.diameter",
-          "vl:message": {
-            "nl": "De verwachte waarde voor diameter is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
-        },
-        {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatdiameterShape/274a317ad1be239a7824cf7a9a534aea719a761c",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgatdiameter%3Adiameter",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgatdiameter.diameter",
           "sh:class": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameterinterval",
           "sh:description": {
             "nl": "Verwijzing naar de beschrijving van de boorgatdiameter voor een bepaald diepteinterval."
@@ -904,15 +499,11 @@
           "sh:name": {
             "nl": "diameter"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter.diameter",
-          "vl:message": {
-            "nl": "De range van diameter moet van het type <https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameterinterval> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter.diameter"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatdiameterShape/c399093d37b760c06be467664a8ad950ffebb97f",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgatdiameter%3Adiameter",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boorgatdiameter.diameter",
           "sh:description": {
             "nl": "Verwijzing naar de beschrijving van de boorgatdiameter voor een bepaald diepteinterval."
           },
@@ -920,11 +511,7 @@
           "sh:name": {
             "nl": "diameter"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter.diameter",
-          "vl:message": {
-            "nl": "Minimaal 1 waarden verwacht voor diameter"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter.diameter"
         }
       ],
       "sh:targetClass": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter"
@@ -936,7 +523,7 @@
       "sh:property": [
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeShape/002a7531fbfd1e27fda80870a4089d6cbc4c7aad",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boormethode%3Ainclinatietype",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boormethode.inclinatietype",
           "sh:description": {
             "nl": "Algemene aanduiding van de richting waaronder werd geboord."
           },
@@ -944,31 +531,11 @@
           "sh:name": {
             "nl": "inclinatietype"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#inclinatietype",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor inclinatietype"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeShape/38fdf198787553f2c103d0a429bd86b30063b3b8",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boormethode%3Ainclinatietype",
-          "sh:description": {
-            "nl": "Algemene aanduiding van de richting waaronder werd geboord."
-          },
-          "sh:name": {
-            "nl": "inclinatietype"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#inclinatietype",
-          "vl:message": {
-            "nl": "De verwachte waarde voor inclinatietype is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#inclinatietype"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeShape/f300a0ce6db6027efd1d94aed023b06c91bf9cd0",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boormethode%3Ainclinatietype",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boormethode.inclinatietype",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
             "nl": "Algemene aanduiding van de richting waaronder werd geboord."
@@ -976,31 +543,11 @@
           "sh:name": {
             "nl": "inclinatietype"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#inclinatietype",
-          "vl:message": {
-            "nl": "De range van inclinatietype moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeShape/07c80d65f558ebbc84954eb3f52394b1efd34add",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boormethode%3Amethode",
-          "sh:description": {
-            "nl": "Verwijzing naar de beschrijving van de boormethode voor een bepaald diepteinterval."
-          },
-          "sh:name": {
-            "nl": "methode"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boormethode.methode",
-          "vl:message": {
-            "nl": "De verwachte waarde voor methode is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#inclinatietype"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeShape/c192eb0d5e5c85399936518a4f4503c049d71714",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boormethode%3Amethode",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boormethode.methode",
           "sh:description": {
             "nl": "Verwijzing naar de beschrijving van de boormethode voor een bepaald diepteinterval."
           },
@@ -1008,15 +555,11 @@
           "sh:name": {
             "nl": "methode"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boormethode.methode",
-          "vl:message": {
-            "nl": "Minimaal 1 waarden verwacht voor methode"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boormethode.methode"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeShape/c5ab93f3649a701e1fefd1ffdb8529899ed6675c",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boormethode%3Amethode",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boormethode.methode",
           "sh:class": "https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval",
           "sh:description": {
             "nl": "Verwijzing naar de beschrijving van de boormethode voor een bepaald diepteinterval."
@@ -1024,15 +567,11 @@
           "sh:name": {
             "nl": "methode"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boormethode.methode",
-          "vl:message": {
-            "nl": "De range van methode moet van het type <https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boormethode.methode"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeShape/02676647e838d401d33ee40bee71f21ade13cdf3",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boormethode%3Astartpunt",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boormethode.startpunt",
           "sh:description": {
             "nl": "Aard van het oppervlak waarop de boorkraag is geplaatst."
           },
@@ -1040,15 +579,11 @@
           "sh:name": {
             "nl": "startpunt"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#startpunt",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor startpunt"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#startpunt"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeShape/3bb6d622e660b2a22d36e21d84bb747ca9324989",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boormethode%3Astartpunt",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boormethode.startpunt",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
             "nl": "Aard van het oppervlak waarop de boorkraag is geplaatst."
@@ -1056,27 +591,7 @@
           "sh:name": {
             "nl": "startpunt"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#startpunt",
-          "vl:message": {
-            "nl": "De range van startpunt moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeShape/f93bdd5292b01cb40f0584dab1dd3b1d17cbe536",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Boormethode%3Astartpunt",
-          "sh:description": {
-            "nl": "Aard van het oppervlak waarop de boorkraag is geplaatst."
-          },
-          "sh:name": {
-            "nl": "startpunt"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#startpunt",
-          "vl:message": {
-            "nl": "De verwachte waarde voor startpunt is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#startpunt"
         }
       ],
       "sh:targetClass": "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
@@ -1088,7 +603,7 @@
       "sh:property": [
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeIntervalShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeInterval%3Ageometrie",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeInterval.geometrie",
           "sh:description": {
             "nl": "Geometrie van het interval."
           },
@@ -1096,31 +611,11 @@
           "sh:name": {
             "nl": "geometrie"
           },
-          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#BoormethodeInterval.geometrie",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor geometrie"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeIntervalShape/35ea4794233fe7d78e3fa9762f8c5685fe9c0f51",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeInterval%3Ageometrie",
-          "sh:description": {
-            "nl": "Geometrie van het interval."
-          },
-          "sh:name": {
-            "nl": "geometrie"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#BoormethodeInterval.geometrie",
-          "vl:message": {
-            "nl": "De verwachte waarde voor geometrie is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#BoormethodeInterval.geometrie"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeIntervalShape/722a1f18cabb107c684fe4ca857876ade00b0d01",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeInterval%3Ageometrie",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeInterval.geometrie",
           "sh:class": "http://www.opengis.net/ont/sf#LineString",
           "sh:description": {
             "nl": "Geometrie van het interval."
@@ -1128,15 +623,11 @@
           "sh:name": {
             "nl": "geometrie"
           },
-          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#BoormethodeInterval.geometrie",
-          "vl:message": {
-            "nl": "De range van geometrie moet van het type <http://www.opengis.net/ont/sf#LineString> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#BoormethodeInterval.geometrie"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeIntervalShape/d7e4e623022693159b355b9e717ac7ec1a50695c",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeInterval%3Ageometrie",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeInterval.geometrie",
           "sh:description": {
             "nl": "Geometrie van het interval."
           },
@@ -1144,31 +635,11 @@
           "sh:name": {
             "nl": "geometrie"
           },
-          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#BoormethodeInterval.geometrie",
-          "vl:message": {
-            "nl": "Minimaal 1 waarden verwacht voor geometrie"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeIntervalShape/07c80d65f558ebbc84954eb3f52394b1efd34add",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeInterval%3Amethode",
-          "sh:description": {
-            "nl": "Methode van de Boring."
-          },
-          "sh:name": {
-            "nl": "methode"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode",
-          "vl:message": {
-            "nl": "De verwachte waarde voor methode is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#BoormethodeInterval.geometrie"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeIntervalShape/6890e1def304cb2b3a13ab957c88611b3da3a34e",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeInterval%3Amethode",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeInterval.methode",
           "sh:description": {
             "nl": "Methode van de Boring."
           },
@@ -1176,15 +647,11 @@
           "sh:name": {
             "nl": "methode"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor methode"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeIntervalShape/c192eb0d5e5c85399936518a4f4503c049d71714",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeInterval%3Amethode",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeInterval.methode",
           "sh:description": {
             "nl": "Methode van de Boring."
           },
@@ -1192,15 +659,11 @@
           "sh:name": {
             "nl": "methode"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode",
-          "vl:message": {
-            "nl": "Minimaal 1 waarden verwacht voor methode"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeIntervalShape/c5ab93f3649a701e1fefd1ffdb8529899ed6675c",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeInterval%3Amethode",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeInterval.methode",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
             "nl": "Methode van de Boring."
@@ -1208,11 +671,7 @@
           "sh:name": {
             "nl": "methode"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode",
-          "vl:message": {
-            "nl": "De range van methode moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode"
         }
       ],
       "sh:targetClass": "https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval"
@@ -1223,24 +682,8 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/8da6e20f491348b8905da3a7144f544eced8547f",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3Abemonsteringstijdstip",
-          "sh:description": {
-            "nl": "Moment waarop de Bemonstering werd afgerond."
-          },
-          "sh:name": {
-            "nl": "bemonsteringstijdstip"
-          },
-          "sh:nodekind": "sh:Literal",
-          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip",
-          "vl:message": {
-            "nl": "De verwachte waarde voor bemonsteringstijdstip is een Literal"
-          },
-          "vl:rule": ""
-        },
-        {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/93667e5e94a61aaa4c282073bfb73db4384ae87d",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3Abemonsteringstijdstip",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring.bemonsteringstijdstip",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#date",
           "sh:description": {
             "nl": "Moment waarop de Bemonstering werd afgerond."
@@ -1248,15 +691,11 @@
           "sh:name": {
             "nl": "bemonsteringstijdstip"
           },
-          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip",
-          "vl:message": {
-            "nl": "De range van bemonsteringstijdstip moet van het type <http://www.w3.org/2001/XMLSchema#date> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/aaf3bde5f700a97566c53449fadaf43b64d06598",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3Abemonsteringstijdstip",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring.bemonsteringstijdstip",
           "sh:description": {
             "nl": "Moment waarop de Bemonstering werd afgerond."
           },
@@ -1264,15 +703,11 @@
           "sh:name": {
             "nl": "bemonsteringstijdstip"
           },
-          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor bemonsteringstijdstip"
-          },
-          "vl:rule": ""
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/fb6ef3f37406c3cb9df029e482a520e136898356",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3Abemonsteringstijdstip",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring.bemonsteringstijdstip",
           "sh:description": {
             "nl": "Moment waarop de Bemonstering werd afgerond."
           },
@@ -1280,15 +715,11 @@
           "sh:name": {
             "nl": "bemonsteringstijdstip"
           },
-          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip",
-          "vl:message": {
-            "nl": "Minimaal 1 waarden verwacht voor bemonsteringstijdstip"
-          },
-          "vl:rule": ""
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/9909eafa370b04d51be542b1334f0d653ce9b153",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3Aboorder",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring.boorder",
           "sh:description": {
             "nl": "Diegene die de Boring heeft uitgevoerd."
           },
@@ -1296,31 +727,11 @@
           "sh:name": {
             "nl": "boorder"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boorder",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor boorder"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/bc0975e6b59082d41df00aed10931d761b3f37c4",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3Aboorder",
-          "sh:description": {
-            "nl": "Diegene die de Boring heeft uitgevoerd."
-          },
-          "sh:name": {
-            "nl": "boorder"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boorder",
-          "vl:message": {
-            "nl": "De verwachte waarde voor boorder is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boorder"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/c6998757a81917032e375281f3fcd052f8c77ba3",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3Aboorder",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring.boorder",
           "sh:class": "http://purl.org/dc/terms/Agent",
           "sh:description": {
             "nl": "Diegene die de Boring heeft uitgevoerd."
@@ -1328,15 +739,11 @@
           "sh:name": {
             "nl": "boorder"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boorder",
-          "vl:message": {
-            "nl": "De range van boorder moet van het type <http://purl.org/dc/terms/Agent> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boorder"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/9ebc30e6f69b143b3fb9e8f970b33803baf4daa9",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3Aboormeester",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring.boormeester",
           "sh:description": {
             "nl": "Opzichter bij de Boring."
           },
@@ -1344,15 +751,11 @@
           "sh:name": {
             "nl": "boormeester"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boormeester",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor boormeester"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boormeester"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/cef45fe50b2b44250cd536067b2b16e6dfb8b03c",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3Aboormeester",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring.boormeester",
           "sh:class": "http://purl.org/dc/terms/Agent",
           "sh:description": {
             "nl": "Opzichter bij de Boring."
@@ -1360,47 +763,11 @@
           "sh:name": {
             "nl": "boormeester"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boormeester",
-          "vl:message": {
-            "nl": "De range van boormeester moet van het type <http://purl.org/dc/terms/Agent> zijn."
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/e65e9815e267d998cad310f972e1cd360cb597a1",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3Aboormeester",
-          "sh:description": {
-            "nl": "Opzichter bij de Boring."
-          },
-          "sh:name": {
-            "nl": "boormeester"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boormeester",
-          "vl:message": {
-            "nl": "De verwachte waarde voor boormeester is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/a2ea3a45fcf0d646366f5f809e30f9746239744c",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3Adoel",
-          "sh:description": {
-            "nl": "Reden waarom de Grondboring werd uitgevoerd."
-          },
-          "sh:name": {
-            "nl": "doel"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#doel",
-          "vl:message": {
-            "nl": "De verwachte waarde voor doel is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boormeester"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/dded78cb6f2b8c34d17d2b01917af9c00654bb31",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3Adoel",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring.doel",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
             "nl": "Reden waarom de Grondboring werd uitgevoerd."
@@ -1408,15 +775,11 @@
           "sh:name": {
             "nl": "doel"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#doel",
-          "vl:message": {
-            "nl": "De range van doel moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#doel"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/2353f88cee6bcc5ed296824e9ab2a8820fcd96dc",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3AgebruikteProcedure",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring.gebruikteProcedure",
           "sh:description": {
             "nl": "Boormethode die werd gevolgd bij de Grondboring."
           },
@@ -1424,15 +787,11 @@
           "sh:name": {
             "nl": "gebruikteProcedure"
           },
-          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor gebruikteProcedure"
-          },
-          "vl:rule": ""
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/7afa0066b3a4f97d47d51ff39171ffd92d38f090",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3AgebruikteProcedure",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring.gebruikteProcedure",
           "sh:class": "https://data.vlaanderen.be/ns/grondboringen#Boormethode",
           "sh:description": {
             "nl": "Boormethode die werd gevolgd bij de Grondboring."
@@ -1440,15 +799,11 @@
           "sh:name": {
             "nl": "gebruikteProcedure"
           },
-          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure",
-          "vl:message": {
-            "nl": "De range van gebruikteProcedure moet van het type <https://data.vlaanderen.be/ns/grondboringen#Boormethode> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/9c77d33d4637c67d6282ac9f5d5bb3f869ff6869",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3AgebruikteProcedure",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring.gebruikteProcedure",
           "sh:description": {
             "nl": "Boormethode die werd gevolgd bij de Grondboring."
           },
@@ -1456,31 +811,11 @@
           "sh:name": {
             "nl": "gebruikteProcedure"
           },
-          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure",
-          "vl:message": {
-            "nl": "Minimaal 1 waarden verwacht voor gebruikteProcedure"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/b79677e80fcc4e079585bfac0c89d7be77734fd0",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3AgebruikteProcedure",
-          "sh:description": {
-            "nl": "Boormethode die werd gevolgd bij de Grondboring."
-          },
-          "sh:name": {
-            "nl": "gebruikteProcedure"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure",
-          "vl:message": {
-            "nl": "De verwachte waarde voor gebruikteProcedure is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3Aidentificator",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring.identificator",
           "sh:class": "http://www.w3.org/ns/adms#Identifier",
           "sh:description": {
             "nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
@@ -1488,15 +823,11 @@
           "sh:name": {
             "nl": "identificator"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator",
-          "vl:message": {
-            "nl": "De range van identificator moet van het type <http://www.w3.org/ns/adms#Identifier> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3Aidentificator",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring.identificator",
           "sh:description": {
             "nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
           },
@@ -1504,31 +835,11 @@
           "sh:name": {
             "nl": "identificator"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator",
-          "vl:message": {
-            "nl": "Minimaal 1 waarden verwacht voor identificator"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/dea743ba34d85e4615aa135025555bb2247c99e0",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3Aidentificator",
-          "sh:description": {
-            "nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
-          },
-          "sh:name": {
-            "nl": "identificator"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator",
-          "vl:message": {
-            "nl": "De verwachte waarde voor identificator is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/09ed995683a26095de4577d13e597160f260ecb2",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3Aresultaat",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring.resultaat",
           "sh:class": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole",
           "sh:description": {
             "nl": "Het resultaat van de uitgevoerde grondboring."
@@ -1536,15 +847,11 @@
           "sh:name": {
             "nl": "resultaat"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#resultaat",
-          "vl:message": {
-            "nl": "De range van resultaat moet van het type <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#resultaat"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/1bab1bb4af028fef0775daa8246b62cbb09cdcd1",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3Aresultaat",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring.resultaat",
           "sh:description": {
             "nl": "Het resultaat van de uitgevoerde grondboring."
           },
@@ -1552,31 +859,11 @@
           "sh:name": {
             "nl": "resultaat"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#resultaat",
-          "vl:message": {
-            "nl": "Minimaal 1 waarden verwacht voor resultaat"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/f3863ce5468352d4291842a66dd4db610576ccc5",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3Aresultaat",
-          "sh:description": {
-            "nl": "Het resultaat van de uitgevoerde grondboring."
-          },
-          "sh:name": {
-            "nl": "resultaat"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#resultaat",
-          "vl:message": {
-            "nl": "De verwachte waarde voor resultaat is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#resultaat"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/fc134bbb026523e6afde205e88de56ae056be099",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3Aresultaat",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring.resultaat",
           "sh:description": {
             "nl": "Het resultaat van de uitgevoerde grondboring."
           },
@@ -1584,31 +871,11 @@
           "sh:name": {
             "nl": "resultaat"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#resultaat",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor resultaat"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/02e518bb5aab79e8f6c8f8a1ba1efbc3dcf68652",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3AuitgevoerdMet",
-          "sh:description": {
-            "nl": "Boor waarmee de Bemonstering is uitgevoerd."
-          },
-          "sh:name": {
-            "nl": "uitgevoerdMet"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://www.w3.org/ns/sosa/madeBySampler",
-          "vl:message": {
-            "nl": "De verwachte waarde voor uitgevoerdMet is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#resultaat"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/1577ed08c179238e234b11af1f5672b5d2614526",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3AuitgevoerdMet",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring.uitgevoerdMet",
           "sh:class": "https://data.vlaanderen.be/ns/grondboringen#Boor",
           "sh:description": {
             "nl": "Boor waarmee de Bemonstering is uitgevoerd."
@@ -1616,15 +883,11 @@
           "sh:name": {
             "nl": "uitgevoerdMet"
           },
-          "sh:path": "http://www.w3.org/ns/sosa/madeBySampler",
-          "vl:message": {
-            "nl": "De range van uitgevoerdMet moet van het type <https://data.vlaanderen.be/ns/grondboringen#Boor> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "http://www.w3.org/ns/sosa/madeBySampler"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/806dacc51b530a17850a552ce0cb724ec7cbbc93",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3AuitgevoerdMet",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring.uitgevoerdMet",
           "sh:description": {
             "nl": "Boor waarmee de Bemonstering is uitgevoerd."
           },
@@ -1632,15 +895,11 @@
           "sh:name": {
             "nl": "uitgevoerdMet"
           },
-          "sh:path": "http://www.w3.org/ns/sosa/madeBySampler",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor uitgevoerdMet"
-          },
-          "vl:rule": ""
+          "sh:path": "http://www.w3.org/ns/sosa/madeBySampler"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/e7fa4f717d657a7ec29e000dc85d6d977df36c27",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3AuitgevoerdMet",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring.uitgevoerdMet",
           "sh:description": {
             "nl": "Boor waarmee de Bemonstering is uitgevoerd."
           },
@@ -1648,15 +907,11 @@
           "sh:name": {
             "nl": "uitgevoerdMet"
           },
-          "sh:path": "http://www.w3.org/ns/sosa/madeBySampler",
-          "vl:message": {
-            "nl": "Minimaal 1 waarden verwacht voor uitgevoerdMet"
-          },
-          "vl:rule": ""
+          "sh:path": "http://www.w3.org/ns/sosa/madeBySampler"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/48db12f64a123c44de0a2a4b3add9ca5e7d022d2",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3AwettelijkKader",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring.wettelijkKader",
           "sh:description": {
             "nl": "Het kader dat vastlegt wat behoort tot de wet."
           },
@@ -1664,31 +919,11 @@
           "sh:name": {
             "nl": "wettelijkKader"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKader",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor wettelijkKader"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/53b79072e17dd524aa873db00b0cbedf2c40eec3",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3AwettelijkKader",
-          "sh:description": {
-            "nl": "Het kader dat vastlegt wat behoort tot de wet."
-          },
-          "sh:name": {
-            "nl": "wettelijkKader"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKader",
-          "vl:message": {
-            "nl": "De verwachte waarde voor wettelijkKader is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKader"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape/eb74198c8c4a09d7bf36acd7ad653c3df7f495ca",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring%3AwettelijkKader",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#Grondboring.wettelijkKader",
           "sh:class": "https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring",
           "sh:description": {
             "nl": "Het kader dat vastlegt wat behoort tot de wet."
@@ -1696,11 +931,7 @@
           "sh:name": {
             "nl": "wettelijkKader"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKader",
-          "vl:message": {
-            "nl": "De range van wettelijkKader moet van het type <https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring> zijn."
-          },
-          "vl:rule": ""
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKader"
         }
       ],
       "sh:targetClass": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"

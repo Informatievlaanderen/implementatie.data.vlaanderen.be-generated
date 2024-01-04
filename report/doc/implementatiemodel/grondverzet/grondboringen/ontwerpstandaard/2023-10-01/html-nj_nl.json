@@ -57,6 +57,12 @@
           "scoped_uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject"
         }
       ],
+      "rawTags": {
+        "label-nl": "Boorgat",
+        "ap-definition-nl": "Curve ontstaan door het boren van een gat in een vast medium.",
+        "ap-usageNote-nl": "Laat toe om bv de variatie van een bepaald fenomeen langs die curve te observeren, bv de gelaagdheid van de ondergrond (typisch op basis van de boorkern of stalen daaruit genomen).",
+        "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+      },
       "properties": [
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
@@ -93,7 +99,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "geometrie",
+            "definition-nl": "Lijnstring die de vorm van de Grondboring beschrijft.",
+            "parentURI": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.shape",
+            "package": "Grondverzet-Grondboringen",
+            "usageNote-nl": "Loopt van de boorkraag (die zowel boven, op als onder het maaiveld - of ander referentievlak - kan liggen) tot het verste punt van de boring. Coördinaten worden minimaal in 2D maar bij voorkeur in 2.5D gegeven."
+          }
         },
         {
           "uri": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.hostedProcedure",
@@ -128,7 +141,12 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "gehostPlatform",
+            "uri": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.hostedProcedure",
+            "ap-definition-nl": "Procedure die of instrument dat in of op het Boorgat is geïnstalleerd."
+          }
         },
         {
           "uri": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.positionalAccuracy",
@@ -163,7 +181,12 @@
             }
           ],
           "cardinality": "0..2",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "positioneleNauwkeurigheid",
+            "ap-definition-nl": "De nauwkeurigheid van de positie van het Boorgat.",
+            "uri": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.positionalAccuracy"
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.diepte",
@@ -198,7 +221,12 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "diepte",
+            "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.diepte",
+            "ap-definition-nl": "De diepte van het Boorgat."
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.ligging",
@@ -233,7 +261,12 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "ligging",
+            "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.ligging",
+            "ap-definition-nl": "Aanvullende indicatie van de ligging van het Boorgat."
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld",
@@ -268,7 +301,12 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "maaiveld",
+            "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld",
+            "ap-definition-nl": "Het maaiveld van het Boorgat."
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#Boorgat.bekisting",
@@ -303,7 +341,12 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "definition-nl": "Verwijzing naar de beschrijving van de Bekisting van het Boorgat.",
+            "label-nl": "bekisting",
+            "name": "Boorgat.bekisting"
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#aangenomenGrondwaterstand",
@@ -340,7 +383,12 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "aangenomenGrondwaterstand",
+            "definition-nl": "De Grondwaterstand in het Boorgat, al dan niet gebaseerd op meerdere Observaties.",
+            "usageNote-nl": "Die Observaties kunnen ook apart beschreven worden."
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#boordiameter",
@@ -375,7 +423,11 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "definition-nl": "Verwijzing naar de beschrijving van de Boordiameter van het Boorgat.",
+            "label-nl": "boordiameter"
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#boringLengte",
@@ -412,7 +464,12 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "boringLengte",
+            "definition-nl": "Lengte van de Grondboring.",
+            "usageNote-nl": "Zoals verstrekt door de dataleverancier. Kan bv afgeleid zijn uit de geometrie van de Grondboring maar ook uit bv het resultaat van de LithologischeInterpretatie of de lengte is gemeten op het terrein."
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#isResultaatVan",
@@ -447,7 +504,12 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "isResultaatVan",
+            "parentURI": "http://www.w3.org/ns/sosa/isresultOf",
+            "definition-nl": "Grondboring waarvan het Boorgat het resultaat is."
+          }
         }
       ]
     },
@@ -463,6 +525,11 @@
       },
       "usage": {},
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Iemand die of iets dat kan handelen of een effect kan teweeg brengen.",
+        "label-nl": "Agent",
+        "uri": "http://purl.org/dc/terms/Agent"
+      },
       "properties": []
     },
     {
@@ -487,6 +554,11 @@
           "scoped_uri": "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage"
         }
       ],
+      "rawTags": {
+        "label-nl": "Bekisting",
+        "definition-nl": "Kenmerken van de afwerking van het boorgat in functie van de diepte.",
+        "usageNote-nl": "Bv het gebruikte materiaal en de dikte ervan. Het verloop van de Bekisting wordt voorgesteld als een DiscreetCurvebereik, dwz dat ze verandert in discrete stappen (intervallen) in functie van de diepte."
+      },
       "properties": [
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#Bekisting.bekisting",
@@ -521,7 +593,13 @@
             }
           ],
           "cardinality": "1..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "bekisting",
+            "definition-nl": "Verwijzing naar de beschrijving van de bekisting voor een bepaald diepte-interval.",
+            "parentURI": "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage.element",
+            "name": "Bekisting.bekisting"
+          }
         }
       ]
     },
@@ -552,6 +630,10 @@
           "scoped_uri": "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage"
         }
       ],
+      "rawTags": {
+        "label-nl": "Boor",
+        "definition-nl": "Het hulpstuk dat kan geplaatst worden in een daartoe geschikte boorhouder van een boormachine en door middel van een draaiende en/of kloppende beweging ronde gate kan aanbrengen in diverse materialen."
+      },
       "properties": [
         {
           "uri": "http://purl.org/dc/terms/type",
@@ -586,7 +668,13 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "xUML": "{redefines ^type, element}",
+            "label-nl": "type",
+            "uri": "http://purl.org/dc/terms/type",
+            "ap-definition-nl": "Verwijzing naar de beschrijving van het type Boor voor een bepaald diepteinterval."
+          }
         }
       ]
     },
@@ -612,6 +700,11 @@
           "scoped_uri": "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage"
         }
       ],
+      "rawTags": {
+        "label-nl": "Boorgatdiameter",
+        "definition-nl": "Diameter van het boorgat in functie van de diepte.",
+        "usageNote-nl": "Het verloop van de diameter wordt voorgesteld als een DiscreetCurvebereik, dwz dat ze verandert in discrete stappen (intervallen) in functie van de diepte."
+      },
       "properties": [
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter.diameter",
@@ -646,7 +739,13 @@
             }
           ],
           "cardinality": "1..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "diameter",
+            "definition-nl": "Verwijzing naar de beschrijving van de boorgatdiameter voor een bepaald diepteinterval.",
+            "parentURI": "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage.element",
+            "name": "Boorgatdiameter.diameter"
+          }
         }
       ]
     },
@@ -679,6 +778,11 @@
           "scoped_uri": "http://www.w3.org/ns/sosa/om#SamplingProcedure"
         }
       ],
+      "rawTags": {
+        "label-nl": "Boormethode",
+        "definition-nl": "Methode waarmee geboord werd in functie van de diepte.",
+        "usageNote-nl": "Het verloop van de methode wordt voorgesteld als een DiscreetCurvebereik, dwz dat ze verandert in discrete stappen (intervallen) in functie van de diepte."
+      },
       "properties": [
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode.methode",
@@ -713,7 +817,13 @@
             }
           ],
           "cardinality": "1..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "methode",
+            "definition-nl": "Verwijzing naar de beschrijving van de boormethode voor een bepaald diepteinterval.",
+            "xUML": "{redefines ^type, element}",
+            "name": "Boormethode.methode"
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#inclinatietype",
@@ -750,7 +860,12 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "inclinatietype",
+            "definition-nl": "Algemene aanduiding van de richting waaronder werd geboord.",
+            "usageNote-nl": "Verticaal, schuin, horizontaal..."
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#startpunt",
@@ -787,7 +902,12 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "startpunt",
+            "definition-nl": "Aard van het oppervlak waarop de boorkraag is geplaatst.",
+            "usageNote-nl": "Doorgaans het maaiveld maar andere mogelijkheden zijn bv bouwput, boortafel, dijk, bestaand boorgat"
+          }
         }
       ]
     },
@@ -820,6 +940,11 @@
           "scoped_uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Boring"
         }
       ],
+      "rawTags": {
+        "label-nl": "Grondboring",
+        "definition-nl": "De handeling van het boren van een smalle schacht in de grond.",
+        "usageNote-nl": "Onder \"grond\" verstaan we hier het deel van de aardkorst onder het aardoppervlak. Het slaat zowel op de bodem als op wat zich daaronder bevindt (en hier ondergrond wordt genoemd)."
+      },
       "properties": [
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip",
@@ -854,7 +979,15 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "bemonsteringstijdstip",
+            "ap-label-nl": "bemonsteringstijdstip",
+            "ap-definition-nl": "Moment waarop de Bemonstering werd afgerond.",
+            "parentURI": "http://www.w3.org/ns/sosa/resultTime",
+            "package": "Grondverzet-Grondboringen",
+            "definition-nl": "Moment waarop de Bemonstering werd afgerond."
+          }
         },
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure",
@@ -889,7 +1022,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "gebruikteProcedure",
+            "name": "gebruikteProcedure",
+            "definition-nl": "Boormethode die werd gevolgd bij de Grondboring.",
+            "package": "Grondverzet-Grondboringen",
+            "parentURI": "http://www.w3.org/ns/sosa/usedProcedure"
+          }
         },
         {
           "uri": "http://www.w3.org/ns/sosa/madeBySampler",
@@ -924,7 +1064,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "definition-nl": "Bemonsteraar waarmee de Bemonstering is uitgevoerd.",
+            "name": "uitgevoerdMet",
+            "ap-definition-nl": "Boor waarmee de Bemonstering is uitgevoerd.",
+            "label-nl": "uitgevoerdMet",
+            "uri": "http://www.w3.org/ns/sosa/madeBySampler"
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator",
@@ -961,7 +1108,13 @@
             }
           ],
           "cardinality": "1..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "identificator",
+            "definition-nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert.",
+            "usageNote-nl": "Bv het boornummer.",
+            "name": "Grondboring.identificator"
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#boorder",
@@ -996,7 +1149,12 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "boorder",
+            "definition-nl": "Diegene die de Boring heeft uitgevoerd.",
+            "parentURI": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor"
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#boormeester",
@@ -1031,7 +1189,12 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "boormeester",
+            "definition-nl": "Opzichter bij de Boring.",
+            "parentURI": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor"
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#doel",
@@ -1068,7 +1231,13 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "doel",
+            "definition-nl": "Reden waarom de Grondboring werd uitgevoerd.",
+            "usageNote-nl": "Vb exploitatie, onderzoek, bemaling etc.",
+            "parentURI": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.doel"
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#resultaat",
@@ -1103,7 +1272,12 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "parentURI": "http://www.w3.org/ns/sosa/hasResult",
+            "definition-nl": "Het resultaat van de uitgevoerde grondboring.",
+            "label-nl": "resultaat"
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKader",
@@ -1138,7 +1312,12 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "wettelijkKader",
+            "definition-nl": "Het kader dat vastlegt wat behoort tot de wet.",
+            "parentURI": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.wettelijkKader"
+          }
         }
       ]
     }
@@ -1251,6 +1430,12 @@
           "scoped_uri": "#Geometrie"
         }
       ],
+      "rawTags": {
+        "ap-definition-nl": "Curve met lineaire interpolatie tussen de punten. Elk opeenvolgend paar punten vormt een lijnsegment. De lijnstring heeft ten minste twee punten.",
+        "ap-usageNote-nl": "Een curve is een 1-dimensioneel geometrisch object gedefinieerd als een sequentie van punten. De interpolatie kan op verschillende manieren gebeuren (bv lineair bij een lijnstring).",
+        "label-nl": "Lijnstring",
+        "uri": "http://www.opengis.net/ont/sf#LineString"
+      },
       "properties": []
     },
     {
@@ -1265,6 +1450,11 @@
       },
       "usage": {},
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Vorm- en positiekenmerken van een object.",
+        "label-nl": "Geometrie",
+        "uri": "http://www.w3.org/ns/locn#Geometry"
+      },
       "properties": [
         {
           "uri": "http://www.opengis.net/ont/geosparql#asGML",
@@ -1301,7 +1491,14 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-label-nl": "gml",
+            "uri": "http://www.opengis.net/ont/geosparql#asGML",
+            "label-nl": "gml",
+            "ap-usageNote-nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#gmlLiteral\">gmlliteral</a> als datatype.",
+            "ap-definition-nl": "Geometrie uitgedrukt in gml-formaat."
+          }
         },
         {
           "uri": "http://www.opengis.net/ont/geosparql#asWKT",
@@ -1338,7 +1535,14 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-label-nl": "wkt",
+            "ap-usageNote-nl": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#wktLiteral\">wktliteral</a> als datatype.",
+            "uri": "http://www.opengis.net/ont/geosparql#asWKT",
+            "label-nl": "wkt",
+            "ap-definition-nl": "Geometrie uitgedrukt in wkt-formaat."
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting",
@@ -1373,7 +1577,12 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "opmeting",
+            "definition-nl": "De manier waarop de geometrie werd bepaald.",
+            "name": "Geometrie.opmeting"
+          }
         }
       ]
     },
@@ -1399,6 +1608,11 @@
           "scoped_uri": "http://def.isotc211.org/iso19123/2005/CoverageCore#CV_CurveValuePair"
         }
       ],
+      "rawTags": {
+        "label-nl": "BoormethodeInterval",
+        "definition-nl": "Beschrijving van de Boormethode voor een bepaald diepte-interval.",
+        "usageNote-nl": "Specialisatie van een CurveWaardepaar, dit is een Curve en de waarde die eraan is toegekend. De waarde is hier de beschrijving van de Boormethode van een Grondboring, terwijl de Curve aangeeft op welke dieptes deze beschrijving geldig is. De Curve van de Grondboring wordt hierbij als referentiesysteem gebruikt. OPGELET: Als de Curve van de Grondboring niet recht in de grond werd geboord zijn de opgegeven dieptes eerder afstanden langs deze Curve."
+      },
       "properties": [
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#BoormethodeInterval.geometrie",
@@ -1433,7 +1647,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "geometrie",
+            "definition-nl": "Geometrie van het interval.",
+            "parentURI": "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode",
+            "package": "Grondverzet-Grondboringen",
+            "name": "BoormethodeInterval.geometrie"
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode",
@@ -1468,7 +1689,13 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "methode",
+            "definition-nl": "Methode van de Boring.",
+            "parentURI": "http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.value",
+            "name": "Boormethodeinterval.methode"
+          }
         }
       ]
     }

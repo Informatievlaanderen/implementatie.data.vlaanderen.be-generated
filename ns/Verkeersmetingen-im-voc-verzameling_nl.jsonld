@@ -15,13 +15,13 @@
   "editors": [
     {
       "@type": "foaf:Person",
-      "foaf:firstName": "Van Ackere",
-      "foaf:lastName": "Samuel"
+      "foaf:firstName": "Thijs",
+      "foaf:lastName": "Geert"
     },
     {
       "@type": "foaf:Person",
-      "foaf:firstName": "Thijs",
-      "foaf:lastName": "Geert"
+      "foaf:firstName": "Van Ackere",
+      "foaf:lastName": "Samuel"
     }
   ],
   "contributors": [],
@@ -34,6 +34,9 @@
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting",
       "@type": "http://www.w3.org/2002/07/owl#Class",
+      "label": {
+        "nl": "Verkeerssnelheidsmeting"
+      },
       "definition": {
         "nl": "Het vaststellen van de snelheid van voertuigen op een bepaalde locatie op een bepaald tijdstip of gedurende een specifiek tijdsinterval."
       },
@@ -45,6 +48,9 @@
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk",
       "@type": "http://www.w3.org/2002/07/owl#Class",
+      "label": {
+        "nl": "Verkeerssnelheidsmetingkenmerk"
+      },
       "definition": {
         "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
       },
@@ -55,6 +61,9 @@
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling",
       "@type": "http://www.w3.org/2002/07/owl#Class",
+      "label": {
+        "nl": "Verkeerstelling"
+      },
       "definition": {
         "nl": "Het vaststellen van het aantal voertuigen op een bepaalde locatie op een bepaald tijdstip of gedurende een specifiek tijdsinterval."
       },
@@ -66,6 +75,9 @@
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk",
       "@type": "http://www.w3.org/2002/07/owl#Class",
+      "label": {
+        "nl": "Verkeerstellingkenmerk"
+      },
       "definition": {
         "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
       },
@@ -92,61 +104,35 @@
   ],
   "properties": [
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "label": {
+        "nl": "geobserveerdKenmerk"
+      },
       "definition": {
-        "nl": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."
+        "nl": "Object dat door de Verkeerssnelheidsmetingen wordt geobserveerd.\t"
       },
       "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling"
+        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting"
       ],
       "range": [
-        "http://www.w3.org/2001/XMLSchema#double"
+        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk"
       ],
       "generalization": [
-        "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
+        "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk"
       ]
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk.kenmerktype",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "label": {
+        "nl": "kenmerktype"
+      },
       "definition": {
-        "nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."
+        "nl": "Kenmerktype 'snelheid' is het specifieke kenmerktype van de verkeerssnelheidsmeting"
       },
       "domain": [
-        "https://data.vlaanderen.be/ns/weg#Rijrichting"
-      ],
-      "range": [
-        "https://data.vlaanderen.be/ns/weg#Wegsegment"
-      ],
-      "generalization": [
-        "https://data.vlaanderen.be/ns/netwerk/#netwerkreferentie"
-      ]
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "definition": {
-        "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
-      },
-      "domain": [
-        "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmetingverzameling"
-      ],
-      "range": [
-        "http://fixme.com#ProperInterval"
-      ],
-      "generalization": [
-        "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime"
-      ]
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk.kenmerktype",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "definition": {
-        "nl": "Kenmerktype 'aantal' is het specifieke kenmerktype van de verkeerstelling"
-      },
-      "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk"
+        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk"
       ],
       "range": [
         "http://www.w3.org/2004/02/skos/core#Concept"
@@ -156,6 +142,9 @@
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.geobserveerdKenmerk",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "label": {
+        "nl": "geobserveerdKenmerk"
+      },
       "definition": {
         "nl": "Object dat door de Verkeerstelling wordt geobserveerd.\t"
       },
@@ -170,13 +159,16 @@
       ]
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk.kenmerktype",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk.kenmerktype",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "label": {
+        "nl": "kenmerktype"
+      },
       "definition": {
-        "nl": "Kenmerktype 'snelheid' is het specifieke kenmerktype van de verkeerssnelheidsmeting"
+        "nl": "Kenmerktype 'aantal' is het specifieke kenmerktype van de verkeerstelling"
       },
       "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk"
+        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk"
       ],
       "range": [
         "http://www.w3.org/2004/02/skos/core#Concept"
@@ -184,19 +176,60 @@
       "generalization": []
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "label": {
+        "nl": "fenomeenTijd"
+      },
       "definition": {
-        "nl": "Object dat door de Verkeerssnelheidsmetingen wordt geobserveerd.\t"
+        "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
       },
       "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting"
+        "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmetingverzameling"
       ],
       "range": [
-        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk"
+        "http://fixme.com#ProperInterval"
       ],
       "generalization": [
-        "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk"
+        "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime"
+      ]
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "label": {
+        "nl": "netwerkreferentieelement"
+      },
+      "definition": {
+        "nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt."
+      },
+      "domain": [
+        "https://data.vlaanderen.be/ns/weg#Rijrichting"
+      ],
+      "range": [
+        "https://data.vlaanderen.be/ns/weg#Wegsegment"
+      ],
+      "generalization": [
+        "https://data.vlaanderen.be/ns/netwerk/#netwerkreferentie"
+      ]
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "label": {
+        "nl": "tellingresultaat"
+      },
+      "definition": {
+        "nl": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."
+      },
+      "domain": [
+        "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#double"
+      ],
+      "generalization": [
+        "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
       ]
     }
   ],

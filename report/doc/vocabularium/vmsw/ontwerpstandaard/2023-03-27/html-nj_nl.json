@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Ondersteunend Vocabularium VMSW",
-    "uri": "https://implementatie.data.vlaanderen.be/ns/vmsw",
+    "uri": "https://vmsw.vlaanderen.be/ns/vmsw",
     "issued": "2023-03-27",
     "filename": "voc-vmsw",
     "navigation": {
@@ -12,8 +12,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-vmsw/tree/a8c1d01560f1d825b4bea0f906f1209d46795b40",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-vmsw/blob/a8c1d01560f1d825b4bea0f906f1209d46795b40/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-vmsw/tree/2eeb3e28def0eb47a2a060b8d4e47b1573a800ae",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-vmsw/blob/2eeb3e28def0eb47a2a060b8d4e47b1573a800ae/CHANGELOG",
     "feedbackurl": "",
     "standaardregisterurl": "",
     "usesVocs": [],
@@ -21,7 +21,21 @@
   },
   "classes": [
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning",
+      "uri": "https://vmsw.vlaanderen.be/ns/vmsw#OrganisatieResource",
+      "name": "Organisatieresource",
+      "label": {
+        "nl": "OrganisatieResource"
+      },
+      "sort": "OrganisatieResource",
+      "description": {
+        "nl": "Gegevens over een organisatie"
+      },
+      "usage": {},
+      "equivalent": [],
+      "parents": []
+    },
+    {
+      "uri": "https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning",
       "name": "VmswWoning",
       "label": {
         "nl": "VMSW woning"
@@ -35,7 +49,7 @@
   ],
   "properties": [
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vmsw#adres",
+      "uri": "https://vmsw.vlaanderen.be/ns/vmsw#adres",
       "name": "adres",
       "label": {
         "nl": "adres"
@@ -44,7 +58,7 @@
       "description": {},
       "usage": {},
       "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning"
+        "https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning"
       ],
       "range": [
         "http://www.w3.org/ns/locn#Address"
@@ -52,7 +66,7 @@
       "parents": []
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vmsw#bebouwingsType",
+      "uri": "https://vmsw.vlaanderen.be/ns/vmsw#bebouwingsType",
       "name": "bebouwingstype",
       "label": {
         "nl": "bebouwingsType"
@@ -61,7 +75,7 @@
       "description": {},
       "usage": {},
       "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning"
+        "https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning"
       ],
       "range": [
         "http://www.w3.org/2001/XMLSchema#string"
@@ -69,7 +83,24 @@
       "parents": []
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vmsw#bouwjaar",
+      "uri": "https://vmsw.vlaanderen.be/ns/vmsw#beheerder",
+      "name": "beheerder",
+      "label": {
+        "nl": "Beheerder"
+      },
+      "sort": "Beheerder",
+      "description": {},
+      "usage": {},
+      "domain": [
+        "https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning"
+      ],
+      "range": [
+        "https://vmsw.vlaanderen.be/ns/vmsw#OrganisatieResource"
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://vmsw.vlaanderen.be/ns/vmsw#bouwjaar",
       "name": "bouwjaar",
       "label": {
         "nl": "bouwjaar"
@@ -78,7 +109,7 @@
       "description": {},
       "usage": {},
       "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning"
+        "https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning"
       ],
       "range": [
         "http://www.w3.org/2001/XMLSchema#integer"
@@ -86,24 +117,24 @@
       "parents": []
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vmsw#eigendom",
-      "name": "eigendom",
+      "uri": "https://vmsw.vlaanderen.be/ns/vmsw#eigenaar",
+      "name": "eigenaar",
       "label": {
-        "nl": "eigendom"
+        "nl": "Eigenaar"
       },
-      "sort": "eigendom",
+      "sort": "Eigenaar",
       "description": {},
       "usage": {},
       "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning"
+        "https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning"
       ],
       "range": [
-        "http://www.w3.org/2001/XMLSchema#string"
+        "https://vmsw.vlaanderen.be/ns/vmsw#OrganisatieResource"
       ],
       "parents": []
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vmsw#gebouweenheidId",
+      "uri": "https://vmsw.vlaanderen.be/ns/vmsw#gebouweenheidIds",
       "name": "gebouweenheidid",
       "label": {
         "nl": "gebouweenheidId"
@@ -112,7 +143,7 @@
       "description": {},
       "usage": {},
       "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning"
+        "https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning"
       ],
       "range": [
         "http://www.w3.org/2001/XMLSchema#string"
@@ -120,7 +151,7 @@
       "parents": []
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vmsw#gemeenteNISCode",
+      "uri": "https://vmsw.vlaanderen.be/ns/vmsw#gemeenteNISCode",
       "name": "gemeenteNisCode",
       "label": {
         "nl": "gemeente NIS code"
@@ -139,7 +170,7 @@
       "parents": []
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vmsw#organisatieId",
+      "uri": "https://vmsw.vlaanderen.be/ns/vmsw#organisatieId",
       "name": "organisatieid",
       "label": {
         "nl": "organisatieId"
@@ -148,7 +179,7 @@
       "description": {},
       "usage": {},
       "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning"
+        "https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning"
       ],
       "range": [
         "http://www.w3.org/2001/XMLSchema#string"
@@ -156,7 +187,41 @@
       "parents": []
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vmsw#statistischeSector",
+      "uri": "https://vmsw.vlaanderen.be/ns/vmsw#organisatieId",
+      "name": "organisatieid",
+      "label": {
+        "nl": "OrganisatieId"
+      },
+      "sort": "OrganisatieId",
+      "description": {},
+      "usage": {},
+      "domain": [
+        "https://vmsw.vlaanderen.be/ns/vmsw#OrganisatieResource"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://vmsw.vlaanderen.be/ns/vmsw#organisatieType",
+      "name": "organisatietype",
+      "label": {
+        "nl": "OrganisatieType"
+      },
+      "sort": "OrganisatieType",
+      "description": {},
+      "usage": {},
+      "domain": [
+        "https://vmsw.vlaanderen.be/ns/vmsw#OrganisatieResource"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://vmsw.vlaanderen.be/ns/vmsw#statistischeSector",
       "name": "statistischesector",
       "label": {
         "nl": "statistischeSector"
@@ -165,7 +230,7 @@
       "description": {},
       "usage": {},
       "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning"
+        "https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning"
       ],
       "range": [
         "http://www.w3.org/2001/XMLSchema#string"
@@ -173,16 +238,16 @@
       "parents": []
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vmsw#typeEigendom",
-      "name": "typeeigendom",
+      "uri": "https://vmsw.vlaanderen.be/ns/vmsw#verhuringsStelsel",
+      "name": "verhuringsstelsel",
       "label": {
-        "nl": "typeEigendom"
+        "nl": "VerhuringsStelsel"
       },
-      "sort": "typeEigendom",
+      "sort": "VerhuringsStelsel",
       "description": {},
       "usage": {},
       "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning"
+        "https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning"
       ],
       "range": [
         "http://www.w3.org/2001/XMLSchema#string"
@@ -190,7 +255,7 @@
       "parents": []
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vmsw#vmswWoningId",
+      "uri": "https://vmsw.vlaanderen.be/ns/vmsw#vmswWoningId",
       "name": "vmswwoningid",
       "label": {
         "nl": "vmswWoningId"
@@ -199,7 +264,7 @@
       "description": {},
       "usage": {},
       "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning"
+        "https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning"
       ],
       "range": [
         "http://www.w3.org/2001/XMLSchema#string"
@@ -207,7 +272,7 @@
       "parents": []
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vmsw#wijk",
+      "uri": "https://vmsw.vlaanderen.be/ns/vmsw#wijk",
       "name": "wijk",
       "label": {
         "nl": "wijk"
@@ -216,7 +281,7 @@
       "description": {},
       "usage": {},
       "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning"
+        "https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning"
       ],
       "range": [
         "http://www.w3.org/2001/XMLSchema#string"
@@ -224,7 +289,24 @@
       "parents": []
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vmsw#woningType",
+      "uri": "https://vmsw.vlaanderen.be/ns/vmsw#woningStatus",
+      "name": "woningstatus",
+      "label": {
+        "nl": "WoningStatus"
+      },
+      "sort": "WoningStatus",
+      "description": {},
+      "usage": {},
+      "domain": [
+        "https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://vmsw.vlaanderen.be/ns/vmsw#woningType",
       "name": "woningtype",
       "label": {
         "nl": "woningType"
@@ -233,7 +315,7 @@
       "description": {},
       "usage": {},
       "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning"
+        "https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning"
       ],
       "range": [
         "http://www.w3.org/2001/XMLSchema#string"
@@ -241,7 +323,7 @@
       "parents": []
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vmsw#woonmaatschappijWoningCode",
+      "uri": "https://vmsw.vlaanderen.be/ns/vmsw#woonmaatschappijWoningCode",
       "name": "woonmaatschappijwoningcode",
       "label": {
         "nl": "woonmaatschappijWoningCode"
@@ -250,7 +332,7 @@
       "description": {},
       "usage": {},
       "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning"
+        "https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning"
       ],
       "range": [
         "http://www.w3.org/2001/XMLSchema#string"
@@ -258,7 +340,7 @@
       "parents": []
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vmsw#woonmaatschappijWoningGroepCode",
+      "uri": "https://vmsw.vlaanderen.be/ns/vmsw#woonmaatschappijWoningGroepCode",
       "name": "woonmaatschappijwoninggroepcode",
       "label": {
         "nl": "woonmaatschappijWoningGroepCode"
@@ -267,7 +349,7 @@
       "description": {},
       "usage": {},
       "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning"
+        "https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning"
       ],
       "range": [
         "http://www.w3.org/2001/XMLSchema#string"
@@ -275,7 +357,7 @@
       "parents": []
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vmsw#woonmaatschappijWoningId",
+      "uri": "https://vmsw.vlaanderen.be/ns/vmsw#woonmaatschappijWoningId",
       "name": "woonmaatschappijwoningid",
       "label": {
         "nl": "woonmaatschappijWoningId"
@@ -284,7 +366,7 @@
       "description": {},
       "usage": {},
       "domain": [
-        "https://implementatie.data.vlaanderen.be/ns/vmsw#VmswWoning"
+        "https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning"
       ],
       "range": [
         "http://www.w3.org/2001/XMLSchema#string"
@@ -298,6 +380,13 @@
       "first_name": "Nick",
       "last_name": "De Decker",
       "affiliation": {}
+    },
+    {
+      "role": "E",
+      "first_name": "Maarten ",
+      "last_name": "De Muynck",
+      "affiliation": {},
+      "email": "maarten.demuynck@vlaanderen.be"
     },
     {
       "role": "E",
