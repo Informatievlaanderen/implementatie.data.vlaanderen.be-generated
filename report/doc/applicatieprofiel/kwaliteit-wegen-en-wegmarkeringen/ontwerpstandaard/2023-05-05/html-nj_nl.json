@@ -43,11 +43,19 @@
           "scoped_uri": "#KwaliteitsResultaat"
         }
       ],
+      "rawTags": {
+        "label-nl": "Conformiteitsresultaat",
+        "definition-nl": "Informatie over het resultaat van de evaluatie van de verkregen waarde(n) volgens een gespecifieerd conformiteitskwaliteitsniveau.",
+        "usageNote-nl": "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_ConformanceResult",
+        "ap-definition-nl": "Informatie over het resultaat van de evaluatie van de verkregen waarde(n) volgens een gespecifieerd conformiteitskwaliteitsniveau.",
+        "ap-label-nl": "Conformiteitsresultaat",
+        "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Conformiteitsresultaat"
+      },
       "properties": []
     },
     {
       "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk",
-      "name": "KwaliteitsKenmerk",
+      "name": "Kwaliteitskenmerk",
       "label": {
         "nl": "KwaliteitsKenmerk"
       },
@@ -65,6 +73,13 @@
           "scoped_uri": "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType"
         }
       ],
+      "rawTags": {
+        "label-nl": "KwaliteitsKenmerk",
+        "definition-nl": "Kenmerk vh geobserveerdObject waarop de kwaliteitsbeoordeling is gebasseerd.",
+        "ap-definition-nl": "Kenmerk vh geobserveerdObject waarop de kwaliteitsbeoordeling is gebasseerd.",
+        "ap-label-nl": "KwaliteitsKenmerk",
+        "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk"
+      },
       "properties": [
         {
           "uri": "http://purl.org/dc/terms/type",
@@ -99,7 +114,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "type",
+            "definition-nl": "verwijst naar het KenmerkType waarop de kwaliteit beoordeel wordt",
+            "ap-definition-nl": "verwijst naar het KenmerkType waarop de kwaliteit beoordeel wordt",
+            "uri": "http://purl.org/dc/terms/type",
+            "ap-label-nl": "type"
+          }
         }
       ]
     },
@@ -125,10 +147,19 @@
           "scoped_uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation"
         }
       ],
+      "rawTags": {
+        "definition-nl": "Het vaststellen van de waarde van een bepaald kwaliteitskenmerk van een Object op een bepaald tijdstip of tussen twee tijdstippen.",
+        "usageNote-nl": "Het gaat om schattingen van de waarde, maw op de waarde zit een zekere foutmarge. Bijvoorbeeld kleur. Dit is verschillend van waarden die zijn toegekend en dus geen schattingen zijn zoals naam of prijs.",
+        "ap-definition-nl": "Het vaststellen van de waarde van een bepaald kwaliteitskenmerk van een Object op een bepaald tijdstip of tussen twee tijdstippen.",
+        "ap-usageNote-nl": "Het gaat om schattingen van de waarde, maw op de waarde zit een zekere foutmarge. Bijvoorbeeld kleur. Dit is verschillend van waarden die zijn toegekend en dus geen schattingen zijn zoals naam of prijs.",
+        "label-nl": "Kwaliteitsobservatie",
+        "ap-label-nl": "Kwaliteitsobservatie",
+        "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
+      },
       "properties": [
         {
           "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor",
-          "name": "uitgevoerdDoor",
+          "name": "uitgevoerddoor",
           "sort": "uitgevoerdDoor",
           "label": {
             "nl": "uitgevoerdDoor"
@@ -161,7 +192,16 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "uitgevoerdDoor",
+            "definition-nl": "Agent die de Observatie heeft uitgevoerd.",
+            "usageNote-nl": "Dit kan bijvoorbeeld gaan over de machine learning toepassing die de observatie uitvoert",
+            "ap-definition-nl": "Agent die de Observatie heeft uitgevoerd.",
+            "ap-usageNote-nl": "Dit kan bijvoorbeeld gaan over de machine learning toepassing die de observatie uitvoert",
+            "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor",
+            "ap-label-nl": "uitgevoerdDoor"
+          }
         },
         {
           "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat",
@@ -196,11 +236,18 @@
             }
           ],
           "cardinality": "",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat",
+            "label-nl": "resultaat",
+            "ap-label-nl": "resultaat",
+            "definition-nl": "het resultaat van de KwaliteitsObservatie",
+            "ap-definition-nl": "het resultaat van de KwaliteitsObservatie"
+          }
         },
         {
           "uri": "http://www.w3.org/ns/sosa/usedProcedure",
-          "name": "gebruikteProcedure",
+          "name": "gebruikteprocedure",
           "sort": "gebruikteProcedure",
           "label": {
             "nl": "gebruikteProcedure"
@@ -231,11 +278,18 @@
             }
           ],
           "cardinality": "",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-label-nl": "gebruikteProcedure",
+            "definition-nl": "De gebruikte procedure van de observatie.",
+            "label-nl": "gebruikteProcedure",
+            "uri": "http://www.w3.org/ns/sosa/usedProcedure",
+            "ap-definition-nl": "De gebruikte procedure van de observatie."
+          }
         },
         {
           "uri": "http://www.w3.org/ns/sosa/madeBySensor",
-          "name": "uitgevoerdMetSensor",
+          "name": "uitgevoerdmetsensor",
           "sort": "uitgevoerdMetSensor",
           "label": {
             "nl": "uitgevoerdMetSensor"
@@ -268,7 +322,16 @@
             }
           ],
           "cardinality": "",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-definition-nl": "Sensor waarmee de Observatie is uitgevoerd.",
+            "ap-label-nl": "uitgevoerdMetSensor",
+            "ap-usageNote-nl": "Dit kan gaan over de machine learning toepassing die de luchtfoto's beoordeeld.",
+            "definition-nl": "Sensor waarmee de Observatie is uitgevoerd.",
+            "uri": "http://www.w3.org/ns/sosa/madeBySensor",
+            "usageNote-nl": "Dit kan gaan over de machine learning toepassing die de luchtfoto's beoordeeld.",
+            "label-nl": "uitgevoerdMetSensor"
+          }
         },
         {
           "uri": "http://purl.org/cd/terms/type",
@@ -303,11 +366,18 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "type",
+            "definition-nl": "Het type van observatie.",
+            "uri": "http://purl.org/cd/terms/type",
+            "ap-definition-nl": "Het type van observatie.",
+            "ap-label-nl": "type"
+          }
         },
         {
           "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.validTime",
-          "name": "geldigeTijd",
+          "name": "geldigetijd",
           "sort": "geldigeTijd",
           "label": {
             "nl": "geldigeTijd"
@@ -340,7 +410,16 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "geldigeTijd",
+            "ap-definition-nl": "Periode waarvoor het resultaat van de Observatie geldt.",
+            "ap-usageNote-nl": "Bv nuttig voor tijdelijke wegmarkeringen.",
+            "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.validTime",
+            "definition-nl": "Periode waarvoor het resultaat van de Observatie geldt.",
+            "usageNote-nl": "Bv nuttig voor tijdelijke wegmarkeringen.",
+            "ap-label-nl": "geldigeTijd"
+          }
         },
         {
           "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime",
@@ -377,7 +456,16 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "fenomeentijd",
+            "ap-definition-nl": "Het moment waarop het resultaat van de Observatie van toepassing was.",
+            "ap-usageNote-nl": "Typisch het moment waarop geobserveerd of bemonsterd werd. Als de Observatie temporeel is en het moment waarop iets plaatsvindt wordt geregistreerd dan is dit meteen ook de fenomeentijd.",
+            "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime",
+            "definition-nl": "Het moment waarop het resultaat van de Observatie van toepassing was.",
+            "usageNote-nl": "Typisch het moment waarop geobserveerd of bemonsterd werd. Als de Observatie temporeel is en het moment waarop iets plaatsvindt wordt geregistreerd dan is dit meteen ook de fenomeentijd.",
+            "ap-label-nl": "fenomeentijd"
+          }
         },
         {
           "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.parameter",
@@ -414,11 +502,20 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "parameter",
+            "ap-definition-nl": "Willekeurig gegeven gassocieerd met het gebeuren van de Observatie.",
+            "ap-usageNote-nl": "Het gaat hier niet om kenmerken van het geobserveerdObject (die worden al beschreven door het geobserveerdKenmerk) of om parameters geassocieerd met het observatieproces (zoals een instelling van een instrument). Het gaat hier bv om omgevingsparameters die het resultaat kunnen beïnvloeden en van belang zijn om het resultaat correct te interpreteren.  Een voorbeeld is het weer tijdens het moment van het maken van een luchtfoto.",
+            "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.parameter",
+            "definition-nl": "Willekeurig gegeven gassocieerd met het gebeuren van de Observatie.",
+            "usageNote-nl": "Het gaat hier niet om kenmerken van het geobserveerdObject (die worden al beschreven door het geobserveerdKenmerk) of om parameters geassocieerd met het observatieproces (zoals een instelling van een instrument). Het gaat hier bv om omgevingsparameters die het resultaat kunnen beïnvloeden en van belang zijn om het resultaat correct te interpreteren.  Een voorbeeld is het weer tijdens het moment van het maken van een luchtfoto.",
+            "ap-label-nl": "parameter"
+          }
         },
         {
           "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty",
-          "name": "geobserveerdKenmerk",
+          "name": "geobserveerdkenmerk",
           "sort": "geobserveerdKenmerk",
           "label": {
             "nl": "geobserveerdKenmerk"
@@ -451,11 +548,20 @@
             }
           ],
           "cardinality": "",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-definition-nl": "Kenmerk dat men observeert vh geobserveerdObject.",
+            "usageNote-nl": "Soms is de procedure waarmee de waarden vh kenmerk worden bekomen indirect, ttz men meet om praktische reden een ander kenmerk dat een proxy is voor het kenmerk dat men werkelijk wil observeren.  Bv om de scheuren in de weg te beoordelen meten we de kleurreflectie op het wegdek. CONSTRAINT: Het geobserveerdKenmerk moet werkelijk een kenmerk zijn van het geobserveerdObject of van een (onder)deel ervan.",
+            "label-nl": "geobserveerdKenmerk",
+            "definition-nl": "Kenmerk dat men observeert vh geobserveerdObject.",
+            "ap-label-nl": "geobserveerdKenmerk",
+            "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty",
+            "ap-usageNote-nl": "Soms is de procedure waarmee de waarden vh kenmerk worden bekomen indirect, ttz men meet om praktische reden een ander kenmerk dat een proxy is voor het kenmerk dat men werkelijk wil observeren.  Bv om de scheuren in de weg te beoordelen meten we de kleurreflectie op het wegdek. CONSTRAINT: Het geobserveerdKenmerk moet werkelijk een kenmerk zijn van het geobserveerdObject of van een (onder)deel ervan."
+          }
         },
         {
           "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest",
-          "name": "geobserveerdObject",
+          "name": "geobserveerdobject",
           "sort": "geobserveerdObject",
           "label": {
             "nl": "geobserveerdObject"
@@ -488,7 +594,16 @@
             }
           ],
           "cardinality": "",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-label-nl": "geobserveerdObject",
+            "definition-nl": "Object dat men observeert.",
+            "label-nl": "geobserveerdObject",
+            "ap-definition-nl": "Object dat men observeert.",
+            "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest",
+            "ap-usageNote-nl": "Dat kan het Object zelf zijn of een proxy ervan, ttz een Bemonsteringsobject. OPMERKING: In dat laatste geval weet men soms pas na het observeren welke real-world Objecten men juist geobserveerd heeft.",
+            "usageNote-nl": "Dat kan het Object zelf zijn of een proxy ervan, ttz een Bemonsteringsobject. OPMERKING: In dat laatste geval weet men soms pas na het observeren welke real-world Objecten men juist geobserveerd heeft."
+          }
         }
       ]
     },
@@ -514,6 +629,15 @@
           "scoped_uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
         }
       ],
+      "rawTags": {
+        "label-nl": "Kwaliteitsobservatieprocedure",
+        "definition-nl": "De procedure die gevolgd wordt om de observatie te doen",
+        "usageNote-nl": "Dit kan het specificatiedocument zijn met info over de ML software",
+        "ap-label-nl": "Kwaliteitsobservatieprocedure",
+        "ap-definition-nl": "De procedure die gevolgd wordt om de observatie te doen",
+        "ap-usageNote-nl": "Dit kan het specificatiedocument zijn met info over de ML software",
+        "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure"
+      },
       "properties": [
         {
           "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.specificatie",
@@ -548,7 +672,16 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "specificatie",
+            "definition-nl": "Verwijzing naar een document dat de Observatieprocedure beschrijft.",
+            "name": "Observatieprocedure.specificatie",
+            "package": "OSLO-SensorenEnBemonstering",
+            "ap-definition-nl": "Verwijzing naar een document dat de Observatieprocedure beschrijft.",
+            "ap-label-nl": "specificatie",
+            "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.specificatie"
+          }
         },
         {
           "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.parameter",
@@ -585,7 +718,18 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "parameter",
+            "definition-nl": "Willekeurig gegeven geassocieerd met de Observatieprocedure.",
+            "usageNote-nl": "Bv een parameter die een aspect van de Observatieprocedure beschrijft (bv de maximale hoogte voor het nemen van een luchtfoto) of een noodzakelijke omgevingsparameter (bv zichtbaarheidsgraad waarbinnen een luchtfoto mag plaatsnemen).",
+            "name": "Observatieprocedure.parameter",
+            "package": "OSLO-SensorenEnBemonstering",
+            "ap-definition-nl": "Willekeurig gegeven geassocieerd met de Observatieprocedure.",
+            "ap-usageNote-nl": "Bv een parameter die een aspect van de Observatieprocedure beschrijft (bv de vereiste hoogte voor het observeren van windsnelheid) of een noodzakelijke omgevingsparameter (bv temperatuurbereik waarbinnen een labo-analyse moet plaatsvinden).",
+            "ap-label-nl": "parameter",
+            "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.parameter"
+          }
         },
         {
           "uri": "http://purl.org/cd/terms/type",
@@ -620,13 +764,20 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "type",
+            "definition-nl": "Aard van de Observatieprocedure.",
+            "ap-label-nl": "type",
+            "ap-definition-nl": "Aard van de Observatieprocedure.",
+            "uri": "http://purl.org/cd/terms/type"
+          }
         }
       ]
     },
     {
       "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat",
-      "name": "KwaliteitsResultaat",
+      "name": "Kwaliteitsresultaat",
       "label": {
         "nl": "KwaliteitsResultaat"
       },
@@ -644,11 +795,18 @@
           "scoped_uri": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any"
         }
       ],
+      "rawTags": {
+        "label-nl": "KwaliteitsResultaat",
+        "definition-nl": "Het resultaat van de evaluatie van de kwaliteit van de weg, materialisatie of markering.",
+        "ap-definition-nl": "Het resultaat van de evaluatie van de kwaliteit van de weg, materialisatie of markering.",
+        "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat",
+        "ap-label-nl": "KwaliteitsResultaat"
+      },
       "properties": []
     },
     {
       "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor",
-      "name": "KwaliteitsSensor",
+      "name": "Kwaliteitssensor",
       "label": {
         "nl": "KwaliteitsSensor"
       },
@@ -668,6 +826,15 @@
           "scoped_uri": "https://www.w3.org/ns/sosa/Sensor"
         }
       ],
+      "rawTags": {
+        "label-nl": "KwaliteitsSensor",
+        "definition-nl": "De sensor die men gebruikt om de kwaliteitskenmerkern waar te nemen.",
+        "ap-definition-nl": "De sensor die men gebruikt om de kwaliteitskenmerkern waar te nemen.",
+        "usageNote-nl": "De Machine Learning toepassing die van toepassing is om de kwaliteit in kaart te brengen.",
+        "ap-usageNote-nl": "De Machine Learning toepassing die van toepassing is om de kwaliteit in kaart te brengen.",
+        "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor",
+        "ap-label-nl": "KwaliteitsSensor"
+      },
       "properties": [
         {
           "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie",
@@ -704,7 +871,17 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "name": "Systeem.versie",
+            "label-nl": "versie",
+            "definition-nl": "De versie van de kwaliteitssensor",
+            "usageNote-nl": "dit kan gaan over de versie van de machine learning toepassing",
+            "ap-definition-nl": "De versie van de kwaliteitssensor",
+            "ap-usageNote-nl": "dit kan gaan over de versie van de machine learning toepassing",
+            "ap-label-nl": "versie",
+            "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie"
+          }
         },
         {
           "uri": "http://purl.org/cd/terms/type",
@@ -739,13 +916,20 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://purl.org/cd/terms/type",
+            "label-nl": "type",
+            "definition-nl": "Aard vh Systeem.",
+            "ap-definition-nl": "Aard vh Systeem.",
+            "ap-label-nl": "type"
+          }
         }
       ]
     },
     {
       "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD",
-      "name": "Markering KOD",
+      "name": "MarkeringKod",
       "label": {
         "nl": "Markering KOD"
       },
@@ -763,10 +947,17 @@
           "scoped_uri": "#Markering"
         }
       ],
+      "rawTags": {
+        "label-nl": "Markering KOD",
+        "ap-label-nl": "Markering KOD",
+        "definition-nl": "Abstracte als noemer voor de verschillende types van markeringen.",
+        "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD",
+        "ap-definition-nl": "Abstracte als noemer voor de verschillende types van markeringen."
+      },
       "properties": [
         {
           "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD",
-          "name": "Kleur KOD",
+          "name": "kleurKod",
           "sort": "Kleur KOD",
           "label": {
             "nl": "Kleur KOD"
@@ -799,13 +990,22 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "Kleur KOD",
+            "ap-label-nl": "Kleur KOD",
+            "definition-nl": "De kleur van de gebruikte markering.",
+            "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD",
+            "ap-definition-nl": "De kleur van de gebruikte markering.",
+            "usageNote-nl": "Niet limitatieve lijst van mogelijke kleuren",
+            "ap-usageNote-nl": "Niet limitatieve lijst van mogelijke kleuren"
+          }
         }
       ]
     },
     {
       "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject",
-      "name": "OpenbaarDomeinObect",
+      "name": "Openbaardomeinobect",
       "label": {
         "nl": "OpenbaarDomeinObect"
       },
@@ -830,11 +1030,18 @@
           "scoped_uri": "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature"
         }
       ],
+      "rawTags": {
+        "label-nl": "OpenbaarDomeinObect",
+        "definition-nl": "Klasse die instanties van om het even welk type vertegenwoordigt die voorkomen op het openbaar domein.",
+        "ap-definition-nl": "Klasse die instanties van om het even welk type vertegenwoordigt die voorkomen op het openbaar domein.",
+        "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject",
+        "ap-label-nl": "OpenbaarDomeinObect"
+      },
       "properties": []
     },
     {
       "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#LidarCloud",
-      "name": "LIDARpuntenwolk",
+      "name": "Lidarpuntenwolk",
       "label": {
         "nl": "LIDARpuntenwolk"
       },
@@ -854,6 +1061,15 @@
           "scoped_uri": "#RuimtelijkBemonsteringsobject"
         }
       ],
+      "rawTags": {
+        "ap-definition-nl": "Driedimensionele set van meetpunten verkregen door een actief remote sensing systeem vh type LIDAR.",
+        "ap-label-nl": "LIDARpuntenwolk",
+        "ap-usageNote-nl": "Bv om een 3D-beeld van het terrein op te bouwen en gebouwen,vegetatie etc te detecteren.",
+        "label-nl": "LIDARpuntenwolk",
+        "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#LidarCloud",
+        "definition-nl": "Driedimensionele set van meetpunten verkregen door een actief remote sensing systeem vh type LIDAR.",
+        "usageNote-nl": "Bv om een 3D-beeld van het terrein op te bouwen en gebouwen,vegetatie etc te detecteren."
+      },
       "properties": [
         {
           "uri": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape",
@@ -888,7 +1104,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape",
+            "label-nl": "geometrie",
+            "ap-label-nl": "geometrie",
+            "ap-definition-nl": "geometrie vd LIDARpuntenwolk",
+            "definition-nl": "geometrie vd LIDARpuntenwolk"
+          }
         }
       ]
     },
@@ -914,6 +1137,15 @@
           "scoped_uri": "#RuimtelijkBemonsteringsobject"
         }
       ],
+      "rawTags": {
+        "ap-definition-nl": "Doorgaans rechthoekig vlak dat een beeld omvat.",
+        "ap-label-nl": "Scene",
+        "ap-usageNote-nl": "Bv het vlak begrensd door een luchtfoto of satellietbeeld. Typisch onderdeel van een aaneensluitende set die het aardoppervlak bedekt.",
+        "label-nl": "Scene",
+        "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Scene",
+        "definition-nl": "Doorgaans rechthoekig vlak dat een beeld omvat.",
+        "usageNote-nl": "Bv het vlak begrensd door een luchtfoto of satellietbeeld. Typisch onderdeel van een aaneensluitende set die het aardoppervlak bedekt."
+      },
       "properties": [
         {
           "uri": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape",
@@ -948,7 +1180,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "geometrie",
+            "uri": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape",
+            "ap-label-nl": "geometrie",
+            "ap-definition-nl": "Geometrie vd Scene.",
+            "definition-nl": "Geometrie vd Scene."
+          }
         }
       ]
     },
@@ -974,6 +1213,15 @@
           "scoped_uri": "#RuimtelijkBemonsteringsobject"
         }
       ],
+      "rawTags": {
+        "ap-definition-nl": "Bemonsteringscurve die opeenvolgend uitgevoerde Observaties verbindt.",
+        "ap-label-nl": "Traject",
+        "ap-usageNote-nl": "Bv omdat de Sensor op een bewegend Platform gemonteerd is,bv op een schip. Opeenvolgende Metingen komen daardoor ruimtelijk uiteen te liggen afhankelijk van de snelheid waarmee het traject wordt afgelegd.",
+        "label-nl": "Traject",
+        "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Trajectory",
+        "definition-nl": "Bemonsteringscurve die opeenvolgend uitgevoerde Observaties verbindt.",
+        "usageNote-nl": "Bv omdat de Sensor op een bewegend Platform gemonteerd is,bv op een schip. Opeenvolgende Metingen komen daardoor ruimtelijk uiteen te liggen afhankelijk van de snelheid waarmee het traject wordt afgelegd."
+      },
       "properties": [
         {
           "uri": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape",
@@ -1008,7 +1256,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "geometrie",
+            "uri": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape",
+            "ap-label-nl": "geometrie",
+            "ap-definition-nl": "Geometrie van het Traject.",
+            "definition-nl": "Geometrie van het Traject."
+          }
         }
       ]
     },
@@ -1024,11 +1279,18 @@
       },
       "usage": {},
       "parents": [],
+      "rawTags": {
+        "label-nl": "Object",
+        "definition-nl": "Klasse die instanties van om het even welk type vertegenwoordigt.",
+        "uri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
+        "ap-label-nl": "Object",
+        "ap-definition-nl": "Klasse die instanties van om het even welk type vertegenwoordigt."
+      },
       "properties": []
     },
     {
       "uri": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature",
-      "name": "RuimtelijkBemonsteringsobject",
+      "name": "Ruimtelijkbemonsteringsobject",
       "label": {
         "nl": "RuimtelijkBemonsteringsobject"
       },
@@ -1046,6 +1308,13 @@
           "scoped_uri": "#Object"
         }
       ],
+      "rawTags": {
+        "label-nl": "RuimtelijkBemonsteringsobject",
+        "definition-nl": "Ruimtelijk begrensd deel van het Object dat men observeert en dat represent",
+        "uri": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature",
+        "ap-label-nl": "RuimtelijkBemonsteringsobject",
+        "ap-definition-nl": "Ruimtelijk begrensd deel van het Object dat men observeert en dat represent"
+      },
       "properties": [
         {
           "uri": "https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator",
@@ -1082,7 +1351,17 @@
             }
           ],
           "cardinality": "1..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "identificator",
+            "definition-nl": "Verwijzing naar de informatie die het Bemonsteringsobject uniek identificeert.",
+            "usageNote-nl": "Bv het uniek nummer dat aan een Monster wordt toegekend of het numer van een meetstation.",
+            "name": "Bemonsteringsobject.identificator",
+            "ap-definition-nl": "Verwijzing naar de informatie die het Bemonsteringsobject uniek identificeert.",
+            "ap-usageNote-nl": "Bv het uniek nummer dat aan een Monster wordt toegekend of het numer van een meetstation.",
+            "uri": "https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator",
+            "ap-label-nl": "identificator"
+          }
         },
         {
           "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
@@ -1117,13 +1396,20 @@
             }
           ],
           "cardinality": "",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "definition-nl": "Verwijzing naar het Object dat men wil bemonsteren.",
+            "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
+            "ap-label-nl": "object",
+            "ap-definition-nl": "Verwijzing naar het Object dat men wil bemonsteren.",
+            "label-nl": "object"
+          }
         }
       ]
     },
     {
       "uri": "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult",
-      "name": "BeschrijvendResultaat",
+      "name": "Beschrijvendresultaat",
       "label": {
         "nl": "BeschrijvendResultaat"
       },
@@ -1143,11 +1429,20 @@
           "scoped_uri": "#KwaliteitsResultaat"
         }
       ],
+      "rawTags": {
+        "label-nl": "BeschrijvendResultaat",
+        "definition-nl": "Een beschrijvend resultaat kan ook gebruikt worden om een korte beschrijving te voorzien van het resultaat van de kwaliteitsevaluatie, ter begeleiding bij het complete kwantitatieve resultaat, of wanneer er geen kwantitatieve waarde bekomen worden kan.",
+        "usageNote-nl": "Een subjectieve evaluatie van een Element in tekstuele vorm.",
+        "uri": "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult",
+        "ap-definition-nl": "Een beschrijvend resultaat kan ook gebruikt worden om een korte beschrijving te voorzien van het resultaat van de kwaliteitsevaluatie, ter begeleiding bij het complete kwantitatieve resultaat, of wanneer er geen kwantitatieve waarde bekomen worden kan.",
+        "ap-usageNote-nl": "Een beschrijvend resultaat kan ook gebruikt worden om een korte beschrijving te voorzien van het resultaat van de kwaliteitsevaluatie, ter begeleiding bij het complete kwantitatieve resultaat, of wanneer er geen kwantitatieve waarde bekomen worden kan.",
+        "ap-label-nl": "BeschrijvendResultaat"
+      },
       "properties": []
     },
     {
       "uri": "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult",
-      "name": "KwantitatiefResultaat",
+      "name": "Kwantitatiefresultaat",
       "label": {
         "nl": "KwantitatiefResultaat"
       },
@@ -1165,6 +1460,13 @@
           "scoped_uri": "#KwaliteitsResultaat"
         }
       ],
+      "rawTags": {
+        "label-nl": "KwantitatiefResultaat",
+        "definition-nl": "De waarden of informatie over de waarden verkregen door het toepassen van een kwaliteitsmaat.",
+        "uri": "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult",
+        "ap-label-nl": "KwantitatiefResultaat",
+        "ap-definition-nl": "De waarden of informatie over de waarden verkregen door het toepassen van een kwaliteitsmaat."
+      },
       "properties": []
     },
     {
@@ -1179,6 +1481,12 @@
       },
       "usage": {},
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Iemand die of iets dat kan handelen of een effect kan teweeg brengen.",
+        "label-nl": "Agent",
+        "uri": "http://purl.org/dc/terms/Agent",
+        "ap-label-nl": "Agent"
+      },
       "properties": []
     },
     {
@@ -1193,6 +1501,13 @@
       },
       "usage": {},
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Een aantal mensen georganiseerd in een gemeenschap of andere sociale, commerciële of politieke structuur. De groep heeft een gemeenschappelijk doel of bestaansreden die de individuele leden ervan overstijgt en kan handelen als agent. Een organisatie heeft dikwijls een hiërarchische structuur.",
+        "label-nl": "Organisatie",
+        "uri": "http://www.w3.org/ns/org#Organization",
+        "definition-nl": "Een aantal mensen georganiseerd in een gemeenschap of andere sociale, commerciële of politieke structuur. De groep heeft een gemeenschappelijk doel of bestaansreden die de individuele leden ervan overstijgt en kan handelen als agent. Een organisatie heeft dikwijls een hiërarchische structuur.",
+        "ap-label-nl": "Organisatie"
+      },
       "properties": [
         {
           "uri": "http://xmlns.com/foaf/0.1/homepage",
@@ -1229,7 +1544,15 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-usageNote-nl": " ",
+            "ap-definition-nl": "Adres vd homepage van de website vd organisatie.",
+            "label-nl": "homepage",
+            "uri": "http://xmlns.com/foaf/0.1/homepage",
+            "definition-nl": "Adres vd homepage van de website vd organisatie.",
+            "ap-label-nl": "homepage"
+          }
         },
         {
           "uri": "http://www.w3.org/ns/regorg#orgType",
@@ -1266,7 +1589,16 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-label-nl": "organisatietype",
+            "uri": "http://www.w3.org/ns/regorg#orgType",
+            "label-nl": "organisatietype",
+            "ap-definition-nl": "Soort organisatie.",
+            "ap-usageNote-nl": "Specialisatie van classificatie (naast activiteit & status).",
+            "definition-nl": "Soort organisatie.",
+            "usageNote-nl": "Specialisatie van classificatie (naast activiteit & status)."
+          }
         },
         {
           "uri": "http://www.w3.org/ns/regorg#orgStatus",
@@ -1303,7 +1635,16 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-label-nl": "organisatiestatus",
+            "uri": "http://www.w3.org/ns/regorg#orgStatus",
+            "label-nl": "organisatiestatus",
+            "ap-definition-nl": "Toestand vd organisatie.",
+            "ap-usageNote-nl": "Specialisatie van classificatie (naast type & activiteit).",
+            "definition-nl": "Toestand vd organisatie.",
+            "usageNote-nl": "Specialisatie van classificatie (naast type & activiteit)."
+          }
         },
         {
           "uri": "http://www.w3.org/ns/regorg#orgActivity",
@@ -1340,11 +1681,20 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-label-nl": "organisatieactiviteit",
+            "label-nl": "organisatieactiviteit",
+            "ap-definition-nl": "Type activiteit die door de organisatie wordt uitgeoefend.",
+            "uri": "http://www.w3.org/ns/regorg#orgActivity",
+            "ap-usageNote-nl": "Specialisatie van het attribuut classificatie (naast type & status).",
+            "definition-nl": "Type activiteit die door de organisatie wordt uitgeoefend.",
+            "usageNote-nl": "Specialisatie van het attribuut classificatie (naast type & status)."
+          }
         },
         {
           "uri": "http://www.w3.org/ns/org#subOrganizationOf",
-          "name": "suborganisatie van (target)",
+          "name": "suborganisatieVan(target)",
           "sort": "suborganisatie van (target)",
           "label": {
             "nl": "suborganisatie van (target)"
@@ -1377,11 +1727,20 @@
             }
           ],
           "cardinality": "",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-definition-nl": "Organisatie die deze organisatie omvat.",
+            "ap-usageNote-nl": "Wordt gebruikt om een hiërarchie van organisaties te documenteren.",
+            "label-nl": "",
+            "ap-label-nl": "",
+            "uri": "http://www.w3.org/ns/org#subOrganizationOf",
+            "definition-nl": "Organisatie die deze organisatie omvat.",
+            "usageNote-nl": "Wordt gebruikt om een hiërarchie van organisaties te documenteren."
+          }
         },
         {
           "uri": "http://www.w3.org/ns/org#subOrganizationOf",
-          "name": "suborganisatie van (source)",
+          "name": "suborganisatieVan(source)",
           "sort": "suborganisatie van (source)",
           "label": {
             "nl": "suborganisatie van (source)"
@@ -1414,7 +1773,16 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-definition-nl": "Organisatie die deze organisatie omvat.",
+            "ap-usageNote-nl": "Wordt gebruikt om een hiërarchie van organisaties te documenteren.",
+            "label-nl": "",
+            "ap-label-nl": "",
+            "uri": "http://www.w3.org/ns/org#subOrganizationOf",
+            "definition-nl": "Organisatie die deze organisatie omvat.",
+            "usageNote-nl": "Wordt gebruikt om een hiërarchie van organisaties te documenteren."
+          }
         },
         {
           "uri": "http://www.w3.org/ns/org#purpose",
@@ -1451,11 +1819,19 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-usageNote-nl": " ",
+            "label-nl": "doel",
+            "ap-definition-nl": "Bestaansreden vd organisatie.",
+            "uri": "http://www.w3.org/ns/org#purpose",
+            "definition-nl": "Bestaansreden vd organisatie.",
+            "ap-label-nl": "doel"
+          }
         },
         {
           "uri": "http://www.w3.org/ns/org#linkedTo",
-          "name": "gelinkt met (target)",
+          "name": "gelinktMet(target)",
           "sort": "gelinkt met (target)",
           "label": {
             "nl": "gelinkt met (target)"
@@ -1488,11 +1864,20 @@
             }
           ],
           "cardinality": "",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "",
+            "ap-definition-nl": "Niet nader bepaalde relatie met een andere organisatie.",
+            "ap-usageNote-nl": "Bv om subsidiëring of bevooradingsketens te documenteren. Dient in dat geval verder gespecialiseerd te worden.",
+            "uri": "http://www.w3.org/ns/org#linkedTo",
+            "ap-label-nl": "",
+            "definition-nl": "Niet nader bepaalde relatie met een andere organisatie.",
+            "usageNote-nl": "Bv om subsidiëring of bevooradingsketens te documenteren. Dient in dat geval verder gespecialiseerd te worden."
+          }
         },
         {
           "uri": "http://www.w3.org/ns/org#linkedTo",
-          "name": "gelinkt met (source)",
+          "name": "gelinktMet(source)",
           "sort": "gelinkt met (source)",
           "label": {
             "nl": "gelinkt met (source)"
@@ -1525,11 +1910,20 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "",
+            "ap-definition-nl": "Niet nader bepaalde relatie met een andere organisatie.",
+            "ap-usageNote-nl": "Bv om subsidiëring of bevooradingsketens te documenteren. Dient in dat geval verder gespecialiseerd te worden.",
+            "uri": "http://www.w3.org/ns/org#linkedTo",
+            "ap-label-nl": "",
+            "definition-nl": "Niet nader bepaalde relatie met een andere organisatie.",
+            "usageNote-nl": "Bv om subsidiëring of bevooradingsketens te documenteren. Dient in dat geval verder gespecialiseerd te worden."
+          }
         },
         {
           "uri": "http://www.w3.org/ns/org#hasSubOrganization",
-          "name": "heeft suborganisatie (target)",
+          "name": "heeftSuborganisatie(target)",
           "sort": "heeft suborganisatie (target)",
           "label": {
             "nl": "heeft suborganisatie (target)"
@@ -1562,11 +1956,20 @@
             }
           ],
           "cardinality": "",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://www.w3.org/ns/org#hasSubOrganization",
+            "ap-usageNote-nl": "Wordt gebruikt om een hiërarchie van organisaties te documenteren.",
+            "ap-definition-nl": "Organisatie die dochter of onderdeel is van de organisatie.",
+            "label-nl": "",
+            "definition-nl": "Organisatie die dochter of onderdeel is van de organisatie.",
+            "usageNote-nl": "Wordt gebruikt om een hiërarchie van organisaties te documenteren.",
+            "ap-label-nl": ""
+          }
         },
         {
           "uri": "http://www.w3.org/ns/org#hasSubOrganization",
-          "name": "heeft suborganisatie (source)",
+          "name": "heeftSuborganisatie(source)",
           "sort": "heeft suborganisatie (source)",
           "label": {
             "nl": "heeft suborganisatie (source)"
@@ -1599,7 +2002,16 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://www.w3.org/ns/org#hasSubOrganization",
+            "ap-usageNote-nl": "Wordt gebruikt om een hiërarchie van organisaties te documenteren.",
+            "ap-definition-nl": "Organisatie die dochter of onderdeel is van de organisatie.",
+            "label-nl": "",
+            "definition-nl": "Organisatie die dochter of onderdeel is van de organisatie.",
+            "usageNote-nl": "Wordt gebruikt om een hiërarchie van organisaties te documenteren.",
+            "ap-label-nl": ""
+          }
         },
         {
           "uri": "http://www.w3.org/ns/org#classification",
@@ -1636,7 +2048,15 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-usageNote-nl": " ",
+            "ap-definition-nl": "Rangschikking van de organisatie in een classificatiesysteem.",
+            "uri": "http://www.w3.org/ns/org#classification",
+            "label-nl": "classificatie",
+            "definition-nl": "Rangschikking van de organisatie in een classificatiesysteem.",
+            "ap-label-nl": "classificatie"
+          }
         },
         {
           "uri": "http://www.w3.org/2004/02/skos/core#prefLabel",
@@ -1673,11 +2093,19 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-label-nl": "voorkeurslabel",
+            "ap-usageNote-nl": " ",
+            "uri": "http://www.w3.org/2004/02/skos/core#prefLabel",
+            "label-nl": "voorkeurslabel",
+            "ap-definition-nl": "Naam waarmee de organisatie bij voorkeur wordt aangeduid.",
+            "definition-nl": "Naam waarmee de organisatie bij voorkeur wordt aangeduid."
+          }
         },
         {
           "uri": "http://www.w3.org/2004/02/skos/core#altLabel",
-          "name": "alternatieve label",
+          "name": "alternatieveLabel",
           "sort": "alternatieve label",
           "label": {
             "nl": "alternatieve label"
@@ -1710,7 +2138,16 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-label-nl": "alternatieve label",
+            "label-nl": "alternatieve label",
+            "ap-definition-nl": "Andere naam waaronder de organisatie bekend is.",
+            "ap-usageNote-nl": "Bv commerciële naam, informele naam",
+            "uri": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "definition-nl": "Andere naam waaronder de organisatie bekend is.",
+            "usageNote-nl": "Bv commerciële naam, informele naam"
+          }
         },
         {
           "uri": "http://schema.org/logo",
@@ -1734,7 +2171,15 @@
           "range": [],
           "scopedrange": [],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-usageNote-nl": " ",
+            "ap-definition-nl": "Verwijzing naar het logo vd organisatie.",
+            "uri": "http://schema.org/logo",
+            "label-nl": "logo",
+            "definition-nl": "Verwijzing naar het logo vd organisatie.",
+            "ap-label-nl": "logo"
+          }
         },
         {
           "uri": "http://schema.org/contactPoint",
@@ -1771,7 +2216,15 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-usageNote-nl": " ",
+            "label-nl": "contactpunt",
+            "ap-definition-nl": "Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren.",
+            "uri": "http://schema.org/contactPoint",
+            "ap-label-nl": "contactpunt",
+            "definition-nl": "Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren."
+          }
         },
         {
           "uri": "http://purl.org/dc/terms/description",
@@ -1808,7 +2261,15 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-usageNote-nl": " ",
+            "label-nl": "beschrijving",
+            "ap-definition-nl": "Beschrijving van de organisatie.",
+            "uri": "http://purl.org/dc/terms/description",
+            "definition-nl": "Beschrijving van de organisatie.",
+            "ap-label-nl": "beschrijving"
+          }
         }
       ]
     },
@@ -1832,6 +2293,13 @@
           "scoped_uri": "#Fysiek object"
         }
       ],
+      "rawTags": {
+        "label-nl": "Element",
+        "definition-nl": "Afzonderlijk te onderscheiden element dat ofwel direct of indirect bevestigd is aan het aardoppervlak.",
+        "uri": "http://www.w3.org/ns/prov#Entity",
+        "ap-definition-nl": "Afzonderlijk te onderscheiden element dat ofwel direct of indirect bevestigd is aan het aardoppervlak.",
+        "ap-label-nl": "Element"
+      },
       "properties": []
     },
     {
@@ -1854,11 +2322,18 @@
           "scoped_uri": "#Fysiek object"
         }
       ],
+      "rawTags": {
+        "label-nl": "Deel",
+        "definition-nl": "Homogeen gedeelte van het aardoppervlak, met een gelijkaardige hoofdfunctie en fysiek voorkomen.",
+        "ap-definition-nl": "Homogeen gedeelte van het aardoppervlak, met een gelijkaardige hoofdfunctie en fysiek voorkomen.",
+        "ap-label-nl": "Deel",
+        "uri": "https://data.vlaanderen.be/ns/openbaardomein#Deel"
+      },
       "properties": []
     },
     {
       "uri": "https://data.vlaanderen.be/ns/openbaardomein#FysiekObject",
-      "name": "Fysiek object",
+      "name": "FysiekObject",
       "label": {
         "nl": "Fysiek object"
       },
@@ -1876,10 +2351,17 @@
           "scoped_uri": "#OpenbaarDomeinObect"
         }
       ],
+      "rawTags": {
+        "label-nl": "Fysiek object",
+        "definition-nl": "De hoofdklasse waar alle objecten die geïnventariseerd kunnen worden van afgeleid worden.",
+        "ap-definition-nl": "De hoofdklasse waar alle objecten die geïnventariseerd kunnen worden van afgeleid worden.",
+        "ap-label-nl": "Fysiek object",
+        "uri": "https://data.vlaanderen.be/ns/openbaardomein#FysiekObject"
+      },
       "properties": [
         {
           "uri": "https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator",
-          "name": "Identificator",
+          "name": "identificator",
           "sort": "Identificator",
           "label": {
             "nl": "Identificator"
@@ -1910,7 +2392,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "Identificator",
+            "definition-nl": "de identificator die gelinkt is aan het fysiek object",
+            "ap-label-nl": "Identificator",
+            "ap-definition-nl": "de identificator die gelinkt is aan het fysiek object",
+            "uri": "https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator"
+          }
         },
         {
           "uri": "http://www.w3.org/ns/locn#geometry",
@@ -1945,7 +2434,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "geometrie",
+            "definition-nl": "De geometrie overeenkomstig met een bepaald object.",
+            "uri": "http://www.w3.org/ns/locn#geometry",
+            "ap-definition-nl": "De geometrie overeenkomstig met een bepaald object.",
+            "ap-label-nl": "geometrie"
+          }
         },
         {
           "uri": "http://fixme.com/#beheerder",
@@ -1982,7 +2478,16 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "beheerder",
+            "definition-nl": "Instantie die instaat voor het beheer van het object.",
+            "usageNote-nl": "Tot op team- of dienstniveau.",
+            "ap-definition-nl": "Instantie die instaat voor het beheer van het object.",
+            "ap-usageNote-nl": "Tot op team- of dienstniveau.",
+            "ap-label-nl": "beheerder",
+            "uri": "http://fixme.com/#beheerder"
+          }
         }
       ]
     },
@@ -2008,6 +2513,15 @@
           "scoped_uri": "#Element"
         }
       ],
+      "rawTags": {
+        "label-nl": "Wegmarkering",
+        "definition-nl": "Schilderingen aangebracht op het verhard gedeelte van de wegbaan of kleurveranderingen van de verharding die een onderdeel vormen van de verkeerswetgeving.",
+        "usageNote-nl": "Naar GRB-skeletoptie wegbeheer - WEM1: Puntvormige wegmarkering; WEM2: Lijnvormige wegmarkering; WEM3: Vlakvormige wegmarkering",
+        "ap-definition-nl": "Schilderingen aangebracht op het verhard gedeelte van de wegbaan of kleurveranderingen van de verharding die een onderdeel vormen van de verkeerswetgeving.",
+        "ap-usageNote-nl": "Naar GRB-skeletoptie wegbeheer - WEM1: Puntvormige wegmarkering; WEM2: Lijnvormige wegmarkering; WEM3: Vlakvormige wegmarkering",
+        "uri": "https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Wegmarkering",
+        "ap-label-nl": "Wegmarkering"
+      },
       "properties": []
     },
     {
@@ -2030,6 +2544,16 @@
           "scoped_uri": "#AIM object"
         }
       ],
+      "rawTags": {
+        "beheerstatus": "Gepubliceerd",
+        "creatie": "28",
+        "definition-nl": "Abstracte voor de gemeenschappelijke eigenschappen van de onderliggende verhardings- en funderings-onderdelen.",
+        "laatstGewijzigd": "2.6.0-RC2.330",
+        "label-nl": "Laag",
+        "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Laag",
+        "ap-definition-nl": "Abstracte voor de gemeenschappelijke eigenschappen van de onderliggende verhardings- en funderings-onderdelen.",
+        "ap-label-nl": "Laag"
+      },
       "properties": [
         {
           "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Laag.oppervlakte",
@@ -2064,7 +2588,15 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Laag.oppervlakte",
+            "label-nl": "oppervlakte",
+            "definition-nl": "De oppervlakte van een laag in vierkante meter.",
+            "beheerstatus": "Gepubliceerd",
+            "ap-definition-nl": "De oppervlakte van een laag in vierkante meter.",
+            "ap-label-nl": "oppervlakte"
+          }
         },
         {
           "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Laag.lengte",
@@ -2099,7 +2631,15 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Laag.lengte",
+            "label-nl": "lengte",
+            "definition-nl": "De (gemiddelde) lengte van een laag in meter. Dit kan ook de nominale lengte zijn afhankelijk van de laag en situatie.",
+            "beheerstatus": "Gepubliceerd",
+            "ap-definition-nl": "De (gemiddelde) lengte van een laag in meter. Dit kan ook de nominale lengte zijn afhankelijk van de laag en situatie.",
+            "ap-label-nl": "lengte"
+          }
         },
         {
           "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Laag.breedte",
@@ -2134,7 +2674,15 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Laag.breedte",
+            "label-nl": "breedte",
+            "definition-nl": "De (gemiddelde) breedte van een laag in meter. Dit kan ook de nominale breedte zijn afhankelijk van de laag en situatie.",
+            "beheerstatus": "Gepubliceerd",
+            "ap-definition-nl": "De (gemiddelde) breedte van een laag in meter. Dit kan ook de nominale breedte zijn afhankelijk van de laag en situatie.",
+            "ap-label-nl": "breedte"
+          }
         },
         {
           "uri": "http://purl.org/cd/terms/type",
@@ -2171,7 +2719,16 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "type",
+            "ap-label-nl": "type",
+            "definition-nl": "Het type van de laag",
+            "usageNote-nl": "Voor de verschillende types van lagen en hun attributen, zie <a href=\"https://wegenenverkeer.data.vlaanderen.be/doc/implementatiemodel/verharding-wegfundering/\">AWV OTL: Verharding en Wegfundering</a>",
+            "uri": "http://purl.org/cd/terms/type",
+            "ap-definition-nl": "Het type van de laag",
+            "ap-usageNote-nl": "Voor de verschillende types van lagen en hun attributen, zie <a href=\"https://wegenenverkeer.data.vlaanderen.be/doc/implementatiemodel/verharding-wegfundering/\">AWV OTL: Verharding en Wegfundering</a>"
+          }
         }
       ]
     },
@@ -2202,6 +2759,15 @@
           "scoped_uri": "https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Signalisatie"
         }
       ],
+      "rawTags": {
+        "beheerstatus": "Gepubliceerd",
+        "creatie": "28",
+        "definition-nl": "Abstracte als noemer voor de verschillende types van markeringen.",
+        "label-nl": "Markering",
+        "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Markering",
+        "ap-definition-nl": "Abstracte als noemer voor de verschillende types van markeringen.",
+        "ap-label-nl": "Markering"
+      },
       "properties": [
         {
           "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte",
@@ -2236,7 +2802,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "package": "KwaliteitOpenbaarDomein",
+            "label-nl": "lengte",
+            "ap-label-nl": "lengte",
+            "definition-nl": "De lengte van de markering",
+            "ap-definition-nl": "De lengte van de markering"
+          }
         },
         {
           "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Markering.markeringsoort",
@@ -2271,7 +2844,15 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": "https://wegenenverkeer.data.vlaanderen.be/id/conceptscheme/KlMarkeringSoort"
+          "codelist_uri": "https://wegenenverkeer.data.vlaanderen.be/id/conceptscheme/KlMarkeringSoort",
+          "rawTags": {
+            "beheerstatus": "Gepubliceerd",
+            "label-nl": "markeringsoort",
+            "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Markering.markeringsoort",
+            "definition-nl": "De soort van markering (verf, thermopast,...).",
+            "ap-definition-nl": "De soort van markering (verf, thermopast,...).",
+            "ap-label-nl": "markeringsoort"
+          }
         },
         {
           "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Markering.kleur",
@@ -2306,7 +2887,15 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": "https://wegenenverkeer.data.vlaanderen.be/id/conceptscheme/KlKleurMarkering"
+          "codelist_uri": "https://wegenenverkeer.data.vlaanderen.be/id/conceptscheme/KlKleurMarkering",
+          "rawTags": {
+            "beheerstatus": "Gepubliceerd",
+            "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Markering.kleur",
+            "definition-nl": "De kleur van de gebruikte markering.",
+            "label-nl": "kleur",
+            "ap-definition-nl": "De kleur van de gebruikte markering.",
+            "ap-label-nl": "kleur"
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Markering.oppervlakte",
@@ -2341,7 +2930,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "oppervlakte",
+            "ap-label-nl": "oppervlakte",
+            "uri": "https://data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Markering.oppervlakte",
+            "definition-nl": "De oppervlakte van de markering",
+            "ap-definition-nl": "De oppervlakte van de markering"
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Markering.breedte",
@@ -2376,11 +2972,18 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "breedte",
+            "ap-label-nl": "breedte",
+            "uri": "https://data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Markering.breedte",
+            "definition-nl": "De breedte van de markering",
+            "ap-definition-nl": "De breedte van de markering"
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KleurKOD",
-          "name": "kleurKOD",
+          "name": "kleurkod",
           "sort": "kleurKOD",
           "label": {
             "nl": "kleurKOD"
@@ -2413,7 +3016,16 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "kleurKOD",
+            "ap-label-nl": "kleurKOD",
+            "uri": "https://data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KleurKOD",
+            "definition-nl": "De kleur van de gebruikte markering.",
+            "usageNote-nl": "Niet limitatieve lijst van mogelijke kleuren",
+            "ap-definition-nl": "De kleur van de gebruikte markering.",
+            "ap-usageNote-nl": "Niet limitatieve lijst van mogelijke kleuren"
+          }
         },
         {
           "uri": "http://purl.org/cd/terms/type",
@@ -2450,13 +3062,22 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "type",
+            "ap-label-nl": "type",
+            "definition-nl": "Het type van de markering",
+            "usageNote-nl": "Voor de verschillende types van markeringen en hun attributen, zie <a href=\"https://wegenenverkeer.data.vlaanderen.be/doc/implementatiemodel/signalisatie/\">AWV OTL: Signalisatie</a>",
+            "uri": "http://purl.org/cd/terms/type",
+            "ap-definition-nl": "Het type van de markering",
+            "ap-usageNote-nl": "Voor de verschillende types van markeringen en hun attributen, zie <a href=\"https://wegenenverkeer.data.vlaanderen.be/doc/implementatiemodel/signalisatie/\">AWV OTL: Signalisatie</a>"
+          }
         }
       ]
     },
     {
       "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#AIMObject",
-      "name": "AIM object",
+      "name": "AimObject",
       "label": {
         "nl": "AIM object"
       },
@@ -2474,6 +3095,13 @@
           "scoped_uri": "#OpenbaarDomeinObect"
         }
       ],
+      "rawTags": {
+        "label-nl": "AIM object",
+        "definition-nl": "Abstracte als de basisklasse voor alle uniek geïdentificeerde OTL objecten met de basiseigenschappen die elk OTL object minstens heeft.",
+        "ap-label-nl": "AIM object",
+        "ap-definition-nl": "Abstracte als de basisklasse voor alle uniek geïdentificeerde OTL objecten met de basiseigenschappen die elk OTL object minstens heeft.",
+        "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#AIMObject"
+      },
       "properties": [
         {
           "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#AIMObject.assetId",
@@ -2508,11 +3136,18 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "asset-id",
+            "definition-nl": "Unieke identificatie van de asset zoals toegekend door de assetbeheerder of n.a.v. eerste aanlevering door de leverancier.",
+            "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#AIMObject.assetId",
+            "ap-definition-nl": "Unieke identificatie van de asset zoals toegekend door de assetbeheerder of n.a.v. eerste aanlevering door de leverancier.",
+            "ap-label-nl": "asset-id"
+          }
         },
         {
           "uri": "https://wegenenverkeer.data.vlaanderen.be/doc/implementatiemodel/aim-object/#heeft betrokkene",
-          "name": "heeft betrokkene",
+          "name": "heeftBetrokkene",
           "sort": "heeft betrokkene",
           "label": {
             "nl": "heeft betrokkene"
@@ -2543,7 +3178,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "heeft betrokkene",
+            "uri": "https://wegenenverkeer.data.vlaanderen.be/doc/implementatiemodel/aim-object/#heeft betrokkene",
+            "ap-label-nl": "heeft betrokkene",
+            "definition-nl": "Koppelt een natuurlijk persoon,rechtspersoon of een hoedanigheid (een functie eerder dan de persoon die de functie uitoefent) aan een object in een bepaalde rol.",
+            "ap-definition-nl": "Koppelt een natuurlijk persoon,rechtspersoon of een hoedanigheid (een functie eerder dan de persoon die de functie uitoefent) aan een object in een bepaalde rol."
+          }
         }
       ]
     }
@@ -2568,7 +3210,7 @@
       "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD",
       "name": {
         "nl": "Kleur KOD",
-        "undefined": "Kleur KOD"
+        "undefined": "kleurKod"
       },
       "description": {},
       "domain": [
@@ -2598,7 +3240,7 @@
       "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor",
       "name": {
         "nl": "uitgevoerdDoor",
-        "undefined": "uitgevoerdDoor"
+        "undefined": "uitgevoerddoor"
       },
       "description": {},
       "domain": [
@@ -2767,6 +3409,15 @@
         "nl": "Typisch volgt de duur uit het opgeven ve begin- en eindtijdstip."
       },
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Min of meer afgebakende tijdsduur.",
+        "ap-usageNote-nl": "Typisch volgt de duur uit het opgeven ve begin- en eindtijdstip.",
+        "label-nl": "Periode",
+        "uri": "http://data.europa.eu/m8g/PeriodOfTime",
+        "definition-nl": "Min of meer afgebakende tijdsduur.",
+        "usageNote-nl": "Typisch volgt de duur uit het opgeven ve begin- en eindtijdstip.",
+        "ap-label-nl": "Periode"
+      },
       "properties": [
         {
           "uri": "http://data.europa.eu/m8g/startTime",
@@ -2801,7 +3452,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data.europa.eu/m8g/startTime",
+            "label-nl": "begin",
+            "ap-definition-nl": "Aanvang van de tijdsduur.",
+            "definition-nl": "Aanvang van de tijdsduur.",
+            "ap-label-nl": "begin"
+          }
         },
         {
           "uri": "http://data.europa.eu/m8g/endTime",
@@ -2836,13 +3494,20 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-definition-nl": "Einde vd tijdsduur.",
+            "label-nl": "einde",
+            "uri": "http://data.europa.eu/m8g/endTime",
+            "definition-nl": "Einde vd tijdsduur.",
+            "ap-label-nl": "einde"
+          }
         }
       ]
     },
     {
       "uri": "http://def.isotc211.org/iso19103/2005/Names#GenericName",
-      "name": "GeneriekeNaam",
+      "name": "Generiekenaam",
       "label": {
         "nl": "GeneriekeNaam"
       },
@@ -2854,11 +3519,18 @@
         "nl": "Subtypes zijn LokaleNaam en NaamInNaamruimte (resp een naam zonder en een naam met  vermelding van een naamruimte). Datatype van LokaleNaamaam is bvb String of Taalstring, datatype van NaamInNaamruimte is bvb URI. OPMERKING: Meer info over dit datatype in  <a href=\"https://www.iso.org/standard/56734.html\">ISO 19103 Geographic Information - Conceptual schema language</a>."
       },
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Abstracte klasse van alle namen in een naamruimte.",
+        "ap-label-nl": "GeneriekeNaam",
+        "ap-usageNote-nl": "Subtypes zijn LokaleNaam en NaamInNaamruimte (resp een naam zonder en een naam met  vermelding van een naamruimte). Datatype van LokaleNaamaam is bvb String of Taalstring, datatype van NaamInNaamruimte is bvb URI. OPMERKING: Meer info over dit datatype in  <a href=\"https://www.iso.org/standard/56734.html\">ISO 19103 Geographic Information - Conceptual schema language</a>.",
+        "label-nl": "GeneriekeNaam",
+        "uri": "http://def.isotc211.org/iso19103/2005/Names#GenericName"
+      },
       "properties": []
     },
     {
       "uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object",
-      "name": "TemporeleEntiteit",
+      "name": "Temporeleentiteit",
       "label": {
         "nl": "TemporeleEntiteit"
       },
@@ -2870,11 +3542,20 @@
         "nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn. OPMERKING: Meer info in <a href=\"https://iso.org/standard/26013.html\">ISO 19108 Geographic Information - Temporal schema</a>. Substitutie door een eenvoudiger equivalent bv time:TemporalEntity uit de <a href=\"https://w3.org/TR/owl-time/\">W3C Time Ontology</a> is aanbevolen."
       },
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Abstracte klasse voor temporele objecten.",
+        "ap-label-nl": "TemporeleEntiteit",
+        "ap-usageNote-nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn. OPMERKING: Meer info in <a href=\"https://iso.org/standard/26013.html\">ISO 19108 Geographic Information - Temporal schema</a>. Substitutie door een eenvoudiger equivalent bv time:TemporalEntity uit de <a href=\"https://w3.org/TR/owl-time/\">W3C Time Ontology</a> is aanbevolen.",
+        "label-nl": "TemporeleEntiteit",
+        "uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object",
+        "definition-nl": "Abstracte klasse voor temporele objecten.",
+        "usageNote-nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn. OPMERKING: Meer info in <a href=\"https://iso.org/standard/26013.html\">ISO 19108 Geographic Information - Temporal schema</a>. Substitutie door een eenvoudiger equivalent bv time:TemporalEntity uit de <a href=\"https://w3.org/TR/owl-time/\">W3C Time Ontology</a> is aanbevolen."
+      },
       "properties": []
     },
     {
       "uri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue",
-      "name": "BenoemdeWaarde",
+      "name": "Benoemdewaarde",
       "label": {
         "nl": "BenoemdeWaarde"
       },
@@ -2886,6 +3567,15 @@
         "nl": "In essentie een waarde en de naam vh type van de waarde. Bv een temperatuur van 21graden Celcius (waarde = 21 graden Celcius, naam = temperatuur)."
       },
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Generieke, zwak getypeerde waarde.",
+        "ap-label-nl": "BenoemdeWaarde",
+        "ap-usageNote-nl": "In essentie een waarde en de naam vh type van de waarde. Bv een temperatuur van 21graden Celcius (waarde = 21 graden Celcius, naam = temperatuur).",
+        "label-nl": "BenoemdeWaarde",
+        "uri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue",
+        "definition-nl": "Generieke, zwak getypeerde waarde.",
+        "usageNote-nl": "In essentie een waarde en de naam vh type van de waarde. Bv een temperatuur van 21graden Celcius (waarde = 21 graden Celcius, naam = temperatuur)."
+      },
       "properties": [
         {
           "uri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue.value",
@@ -2920,7 +3610,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "waarde",
+            "ap-label-nl": "waarde",
+            "ap-definition-nl": "Kwalitatieve of kwantitatieve invulling van de waarde.",
+            "uri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue.value",
+            "definition-nl": "Kwalitatieve of kwantitatieve invulling van de waarde."
+          }
         },
         {
           "uri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue.name",
@@ -2955,7 +3652,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "naam",
+            "ap-definition-nl": "Naam vh type van de waarde.",
+            "uri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue.name",
+            "ap-label-nl": "naam",
+            "definition-nl": "Naam vh type van de waarde."
+          }
         }
       ]
     },
@@ -2973,6 +3677,15 @@
         "nl": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek."
       },
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren.",
+        "ap-label-nl": "Contactpunt",
+        "ap-usageNote-nl": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek.",
+        "label-nl": "Contactpunt",
+        "uri": "http://schema.org/ContactPoint",
+        "definition-nl": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren.",
+        "usageNote-nl": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek."
+      },
       "properties": []
     },
     {
@@ -2997,6 +3710,15 @@
           "scoped_uri": "#Geometrie"
         }
       ],
+      "rawTags": {
+        "ap-definition-nl": "Een 1-dimensionele geometrische primitieve.",
+        "ap-label-nl": "Curve",
+        "ap-usageNote-nl": "Dimensie is te verstaan in wiskundige zin: het minimum aantal coördinaten nodig om een willekeurig punt voor te stellen dat deel uitmaakt van de primitieve. In het coördinaatsysteem dat door een Curve zelf gevormd wordt volstaat 1 coördinaat om een punt op de Curve te lokaliseren, bv de afstand langs de Curve vanaf het vertrekpunt. Een Curve heeft een lengte maar geen breedte of hoogte, wat niet wegneemt dat ze door de 3D ruimte kan kronkelen. Curves worden doorgaans voorgesteld door polylijnen, dit zijn sets van opeenvolgende punten waarbij de tussenliggende punten van de Curve bekomen worden dmv interpolatie. Als de interpolatiemethode lineair is krijg je een Lijnstring (een hoekige lijn die de opeenvolgende punten verbindt middels een rechte lijn), andere manieren om te interpoleren resulteren in circulaire bogen, cubic splines, Bézier curves etc (waarbij de controlepunten niet noodzakelijk op de Curve liggen). Een Curve wordt begrensd door zijn begin- en eindpunt.",
+        "label-nl": "Curve",
+        "uri": "http://www.opengis.net/ont/geosparql#Curve",
+        "definition-nl": "Een 1-dimensionele geometrische primitieve.",
+        "usageNote-nl": "Dimensie is te verstaan in wiskundige zin: het minimum aantal coördinaten nodig om een willekeurig punt voor te stellen dat deel uitmaakt van de primitieve. In het coördinaatsysteem dat door een Curve zelf gevormd wordt volstaat 1 coördinaat om een punt op de Curve te lokaliseren, bv de afstand langs de Curve vanaf het vertrekpunt. Een Curve heeft een lengte maar geen breedte of hoogte, wat niet wegneemt dat ze door de 3D ruimte kan kronkelen. Curves worden doorgaans voorgesteld door polylijnen, dit zijn sets van opeenvolgende punten waarbij de tussenliggende punten van de Curve bekomen worden dmv interpolatie. Als de interpolatiemethode lineair is krijg je een Lijnstring (een hoekige lijn die de opeenvolgende punten verbindt middels een rechte lijn), andere manieren om te interpoleren resulteren in circulaire bogen, cubic splines, Bézier curves etc (waarbij de controlepunten niet noodzakelijk op de Curve liggen). Een Curve wordt begrensd door zijn begin- en eindpunt."
+      },
       "properties": []
     },
     {
@@ -3021,11 +3743,20 @@
           "scoped_uri": "#Geometrie"
         }
       ],
+      "rawTags": {
+        "ap-definition-nl": "Een 2-dimensionele geometrische primitieve.",
+        "ap-label-nl": "Vlak",
+        "ap-usageNote-nl": "Dimensie is te verstaan in wiskundige zin: het minimum aantal coördinaten nodig om een willekeurig punt voor te stellen dat deel uitmaakt van de primitieve. In het coördinaatsysteem dat door een Vlak zelf wordt gevormd heb je minimaal twee coördinaten nodig om een willekeurig punt aan te duiden, bv de lengtegraad en de breedtegraad als het Vlak een bol is. Een Vlak heeft een lengte en een breedte. Analoog aan de polylijn (di een Curve onstaan door interpolatie tussen twee of meer punten) bestaan er ook in 2 dimensies vormen die gedefinieerd worden door sets van controlepunten, bv een cirkel wordt gedefinieerd door zijn middelpunt (en de straal). Een Vlak wordt begrensd door Curves, bv in het eenvoudigste geval door 1 gesloten Curve. Is die Curve een Lijnstring dan noemen we het bekomen Vlak een Polygoon. Meedere elementaire Polygonen aaneen (een zgn 3Dmesh) vormen eveneens een Vlak, bv om een oppervlak in de 3-dimensionale ruimte voor te stellen (bv om reliëf te beschrijven). Als de samenstellende vlakken driehoekig zijn spreken we van een TIN (Triangulated Irregular Network). Behalve een buitengrens hebben Vlakken soms ook binnengrenzen die dan gaten in het Vlak vormen. Om binnen- en buitengrenzen van elkaar te kunnen onderscheiden bij het vormen van een Vlak geldt doorgaans de afspraak dat het Vlak links ligt van de Curves waardoor het wordt begrensd.",
+        "label-nl": "Vlak",
+        "uri": "http://www.opengis.net/ont/geosparql#Surface",
+        "definition-nl": "Een 2-dimensionele geometrische primitieve.",
+        "usageNote-nl": "Dimensie is te verstaan in wiskundige zin: het minimum aantal coördinaten nodig om een willekeurig punt voor te stellen dat deel uitmaakt van de primitieve. In het coördinaatsysteem dat door een Vlak zelf wordt gevormd heb je minimaal twee coördinaten nodig om een willekeurig punt aan te duiden, bv de lengtegraad en de breedtegraad als het Vlak een bol is. Een Vlak heeft een lengte en een breedte. Analoog aan de polylijn (di een Curve onstaan door interpolatie tussen twee of meer punten) bestaan er ook in 2 dimensies vormen die gedefinieerd worden door sets van controlepunten, bv een cirkel wordt gedefinieerd door zijn middelpunt (en de straal). Een Vlak wordt begrensd door Curves, bv in het eenvoudigste geval door 1 gesloten Curve. Is die Curve een Lijnstring dan noemen we het bekomen Vlak een Polygoon. Meedere elementaire Polygonen aaneen (een zgn 3Dmesh) vormen eveneens een Vlak, bv om een oppervlak in de 3-dimensionale ruimte voor te stellen (bv om reliëf te beschrijven). Als de samenstellende vlakken driehoekig zijn spreken we van een TIN (Triangulated Irregular Network). Behalve een buitengrens hebben Vlakken soms ook binnengrenzen die dan gaten in het Vlak vormen. Om binnen- en buitengrenzen van elkaar te kunnen onderscheiden bij het vormen van een Vlak geldt doorgaans de afspraak dat het Vlak links ligt van de Curves waardoor het wordt begrensd."
+      },
       "properties": []
     },
     {
       "uri": "http://www.opengis.net/ont/gml#Solid",
-      "name": "3Dobject",
+      "name": "3dobject",
       "label": {
         "nl": "3Dobject"
       },
@@ -3045,11 +3776,20 @@
           "scoped_uri": "#Geometrie"
         }
       ],
+      "rawTags": {
+        "ap-definition-nl": "Een 3-dimensionele geometrische primitieve.",
+        "ap-label-nl": "3Dobject",
+        "ap-usageNote-nl": "Dimensie is te verstaan in wiskundige zin: het minimum aantal coördinaten nodig om een willekeurig punt voor te stellen dat deel uitmaakt van de primitieve. Om een willekeurig punt aan te duiden in de ruimte die het 3Dobject inneemt zijn 3 coördinaten nodig. Een 3DObject heeft daarom lengte, breedte en diepte. Analoog aan de polylijn (di een Curve onstaan door interpolatie tussen twee of meer punten) bestaan er ook in 3 dimensies vormen die gedefinieerd worden door sets van controlepunten. Een 3DObject wordt begrensd door meerdere Vlakken (bv kubus) of door 1 gesloten Vlak (bv bol). Bijkomende grensvlakken vormen mogelijks holtes in het 3DObject. Om binnen- en buitengrenzen te kunnen onderscheiden geldt doorgaans de afspraak dat het 3DObject links ligt van het Vlak waardoor het wordt begrensd.",
+        "label-nl": "3Dobject",
+        "uri": "http://www.opengis.net/ont/gml#Solid",
+        "definition-nl": "Een 3-dimensionele geometrische primitieve.",
+        "usageNote-nl": "Dimensie is te verstaan in wiskundige zin: het minimum aantal coördinaten nodig om een willekeurig punt voor te stellen dat deel uitmaakt van de primitieve. Om een willekeurig punt aan te duiden in de ruimte die het 3Dobject inneemt zijn 3 coördinaten nodig. Een 3DObject heeft daarom lengte, breedte en diepte. Analoog aan de polylijn (di een Curve onstaan door interpolatie tussen twee of meer punten) bestaan er ook in 3 dimensies vormen die gedefinieerd worden door sets van controlepunten. Een 3DObject wordt begrensd door meerdere Vlakken (bv kubus) of door 1 gesloten Vlak (bv bol). Bijkomende grensvlakken vormen mogelijks holtes in het 3DObject. Om binnen- en buitengrenzen te kunnen onderscheiden geldt doorgaans de afspraak dat het 3DObject links ligt van het Vlak waardoor het wordt begrensd."
+      },
       "properties": []
     },
     {
       "uri": "http://www.w3.org/2000/01/rdf-schema#Literal",
-      "name": "Getypeerde String",
+      "name": "GetypeerdeString",
       "label": {
         "nl": "Getypeerde String"
       },
@@ -3061,6 +3801,16 @@
         "nl": "Bvb '20170901' als string en 'datum' als type. Laat automatische interpretatie vd string toe. Te implementeren als Literal."
       },
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Combinatie van een string en het type van wat de string voorstelt.",
+        "ap-label-nl": "Getypeerde String",
+        "ap-usageNote-nl": "Bvb '20170901' als string en 'datum' als type. Laat automatische interpretatie vd string toe. Te implementeren als Literal.",
+        "literal": "true",
+        "uri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "definition-nl": "Combinatie van een string en het type van wat de string voorstelt.",
+        "usageNote-nl": "Bvb '20170901' als string en 'datum' als type. Laat automatische interpretatie vd string toe. Te implementeren als Literal.",
+        "label-nl": "Getypeerde String"
+      },
       "properties": []
     },
     {
@@ -3077,11 +3827,20 @@
         "nl": "http://www.w3.org/2000/01/rdf-schema#Literal"
       },
       "parents": [],
+      "rawTags": {
+        "beheerstatus": "Gepubliceerd",
+        "creatie": "28",
+        "definition-nl": "Beschrijft een constante.",
+        "label-nl": "Literal",
+        "uri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "usagenote-nl": "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "usageNote-nl": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      },
       "properties": []
     },
     {
       "uri": "http://www.w3.org/2001/XMLSchema#decimal",
-      "name": "Decimaal getal",
+      "name": "DecimaalGetal",
       "label": {
         "nl": "Decimaal getal"
       },
@@ -3093,6 +3852,15 @@
         "nl": "https://www.w3.org/TR/xmlschema-2/#decimal"
       },
       "parents": [],
+      "rawTags": {
+        "beheerstatus": "Gepubliceerd",
+        "creatie": "28",
+        "definition-nl": "Beschrijft een decimaal getal volgens http://www.w3.org/2001/XMLSchema#decimal.",
+        "label-nl": "Decimaal getal",
+        "uri": "http://www.w3.org/2001/XMLSchema#decimal",
+        "usageNote-nl": "https://www.w3.org/TR/xmlschema-2/#decimal",
+        "usagenote-nl": "https://www.w3.org/TR/xmlschema-2/#decimal"
+      },
       "properties": []
     },
     {
@@ -3109,6 +3877,15 @@
         "nl": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem. OPMERKING: Meer info over dit datatype in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/\">OSLO Generiek - basis</a>."
       },
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Informatie gebruikt om een object uniek te identificeren.",
+        "ap-usageNote-nl": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem. OPMERKING: Meer info over dit datatype in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/\">OSLO Generiek - basis</a>.",
+        "label-nl": "Identificator",
+        "uri": "http://www.w3.org/ns/adms#Identifier",
+        "definition-nl": "Informatie gebruikt om een object uniek te identificeren.",
+        "usageNote-nl": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem. OPMERKING: Meer info over dit datatype in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/\">OSLO Generiek - basis</a>.",
+        "ap-label-nl": "Identificator"
+      },
       "properties": []
     },
     {
@@ -3125,6 +3902,15 @@
         "nl": "Beschrijft deze kenmerken dmv punten, lijnen, polygonen en coördinaten."
       },
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Vorm- en positiekenmerken van een object.",
+        "label-nl": "Geometrie",
+        "uri": "http://www.w3.org/ns/locn#Geometry",
+        "definition-nl": "Vorm- en positiekenmerken van een object.",
+        "usageNote-nl": "Beschrijft deze kenmerken dmv punten, lijnen, polygonen en coördinaten.",
+        "ap-usageNote-nl": "Beschrijft deze kenmerken dmv punten, lijnen, polygonen en coördinaten.",
+        "ap-label-nl": "Geometrie"
+      },
       "properties": [
         {
           "uri": "https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting",
@@ -3159,11 +3945,18 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "opmeting",
+            "definition-nl": "De manier waarop de geometrie werd bepaald.",
+            "name": "Geometrie.opmeting",
+            "ap-definition-nl": "De manier waarop de geometrie werd bepaald.",
+            "ap-label-nl": "opmeting"
+          }
         },
         {
           "uri": "http://www.opengis.net/ont/geosparql#asWKT",
-          "name": "als WKT",
+          "name": "alsWkt",
           "sort": "als WKT",
           "label": {
             "nl": "als WKT"
@@ -3196,11 +3989,20 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-label-nl": "als WKT",
+            "ap-usageNote-nl": "Gebruik http://www.opengis.net/ont/geosparql#wktLiteral als datatype.",
+            "uri": "http://www.opengis.net/ont/geosparql#asWKT",
+            "label-nl": "als WKT",
+            "ap-definition-nl": "Geometrie uitgedrukt in wkt-formaat.",
+            "definition-nl": "Geometrie uitgedrukt in wkt-formaat.",
+            "usageNote-nl": "Gebruik http://www.opengis.net/ont/geosparql#wktLiteral als datatype."
+          }
         },
         {
           "uri": "http://www.opengis.net/ont/geosparql#asGML",
-          "name": "als GML",
+          "name": "alsGml",
           "sort": "als GML",
           "label": {
             "nl": "als GML"
@@ -3233,13 +4035,22 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-label-nl": "als GML",
+            "uri": "http://www.opengis.net/ont/geosparql#asGML",
+            "label-nl": "als GML",
+            "ap-usageNote-nl": "Gebruik http://www.opengis.net/ont/geosparql#gmlLiteral als datatype.",
+            "ap-definition-nl": "Geometrie uitgedrukt in gml-formaat.",
+            "definition-nl": "Geometrie uitgedrukt in gml-formaat.",
+            "usageNote-nl": "Gebruik http://www.opengis.net/ont/geosparql#gmlLiteral als datatype."
+          }
         }
       ]
     },
     {
       "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter",
-      "name": "Kwantitatieve waarde in meter",
+      "name": "KwantitatieveWaardeInMeter",
       "label": {
         "nl": "Kwantitatieve waarde in meter"
       },
@@ -3249,6 +4060,12 @@
       },
       "usage": {},
       "parents": [],
+      "rawTags": {
+        "beheerstatus": "Gepubliceerd",
+        "definition-nl": "Een kwantitatieve waarde die een getal in meter uitdrukt.",
+        "label-nl": "Kwantitatieve waarde in meter",
+        "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter"
+      },
       "properties": [
         {
           "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter.waarde",
@@ -3283,11 +4100,17 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter.waarde",
+            "definition-nl": "Bevat een getal die bij het datatype hoort.",
+            "label-nl": "waarde",
+            "beheerstatus": "Gepubliceerd"
+          }
         },
         {
           "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter.standaardEenheid",
-          "name": "standaard eenheid",
+          "name": "standaardEenheid",
           "sort": "standaard eenheid",
           "label": {
             "nl": "standaard eenheid"
@@ -3320,13 +4143,20 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter.standaardEenheid",
+            "definition-nl": "De standaard eenheid bij dit datatype is uitgedrukt in meter.",
+            "usageNote-nl": "\"m\"^^cdt:ucumunit",
+            "label-nl": "standaard eenheid",
+            "beheerstatus": "Gepubliceerd"
+          }
         }
       ]
     },
     {
       "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInVierkanteMeter",
-      "name": "Kwantitatieve waarde in vierkante meter",
+      "name": "KwantitatieveWaardeInVierkanteMeter",
       "label": {
         "nl": "Kwantitatieve waarde in vierkante meter"
       },
@@ -3336,6 +4166,13 @@
       },
       "usage": {},
       "parents": [],
+      "rawTags": {
+        "beheerstatus": "Gepubliceerd",
+        "creatie": "28",
+        "definition-nl": "Een kwantitatieve waarde die een getal in vierkante meter uitdrukt.",
+        "label-nl": "Kwantitatieve waarde in vierkante meter",
+        "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInVierkanteMeter"
+      },
       "properties": [
         {
           "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInVierkanteMeter.waarde",
@@ -3370,11 +4207,17 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInVierkanteMeter.waarde",
+            "definition-nl": "Bevat een getal die bij het datatype hoort.",
+            "label-nl": "waarde",
+            "beheerstatus": "Gepubliceerd"
+          }
         },
         {
           "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInVierkanteMeter.standaardEenheid",
-          "name": "standaard eenheid",
+          "name": "standaardEenheid",
           "sort": "standaard eenheid",
           "label": {
             "nl": "standaard eenheid"
@@ -3407,7 +4250,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInVierkanteMeter.standaardEenheid",
+            "definition-nl": "De standaard eenheid bij dit datatype is uitgedrukt in vierkante meter.",
+            "usageNote-nl": "\"m2\"^^cdt:ucumunit",
+            "label-nl": "standaard eenheid",
+            "beheerstatus": "Gepubliceerd"
+          }
         }
       ]
     }

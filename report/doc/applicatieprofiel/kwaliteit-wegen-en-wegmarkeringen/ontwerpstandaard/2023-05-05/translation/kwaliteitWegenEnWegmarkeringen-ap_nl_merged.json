@@ -300,7 +300,7 @@
       "label": {
         "nl": "KenmerkType"
       },
-      "name": "KenmerkType",
+      "name": "Kenmerktype",
       "parents": [],
       "usage": {
         "nl": "Bv de weerkaatsing van licht op het baanoppervlak"
@@ -382,7 +382,7 @@
       "label": {
         "nl": "KwaliteitsKenmerk"
       },
-      "name": "KwaliteitsKenmerk",
+      "name": "Kwaliteitskenmerk",
       "parents": [
         "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType"
       ]
@@ -665,7 +665,7 @@
       "label": {
         "nl": "KwaliteitsResultaat"
       },
-      "name": "KwaliteitsResultaat",
+      "name": "Kwaliteitsresultaat",
       "parents": [
         "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any"
       ]
@@ -763,7 +763,7 @@
       "label": {
         "nl": "KwaliteitsSensor"
       },
-      "name": "KwaliteitsSensor",
+      "name": "Kwaliteitssensor",
       "parents": [
         "https://www.w3.org/ns/sosa/Sensor"
       ],
@@ -847,7 +847,7 @@
       "label": {
         "nl": "Markering KOD"
       },
-      "name": "Markering KOD",
+      "name": "MarkeringKod",
       "parents": [
         "https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Markering"
       ]
@@ -934,7 +934,7 @@
       "label": {
         "nl": "OpenbaarDomeinObect"
       },
-      "name": "OpenbaarDomeinObect",
+      "name": "Openbaardomeinobect",
       "parents": [
         "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
         "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature"
@@ -1055,7 +1055,7 @@
   "externalproperties": [
     {
       "@id": "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInVierkanteMeter.waarde",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{5B8DD984-413C-4f46-AFC8-C55B5FB4E958}",
       "ap-definition-nl": {
         "nl": "Bevat een getal die bij het datatype hoort."
@@ -1082,9 +1082,8 @@
         "EA-Range": "Decimal",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{0D67593D-DCF5-418c-B9D4-B42881A2BFB5}",
           "EA-Name": "Decimal",
-          "EA-Package": "W3-XML-Schema",
+          "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#decimal"
         },
         "RawTags": [
@@ -1136,9 +1135,8 @@
       "name": "waarde",
       "range": [
         {
-          "EA-GUID": "{0D67593D-DCF5-418c-B9D4-B42881A2BFB5}",
           "EA-Name": "Decimal",
-          "EA-Package": "W3-XML-Schema",
+          "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#decimal"
         }
       ]
@@ -1229,7 +1227,7 @@
       },
       "maxCardinality": "1",
       "minCardinality": "1",
-      "name": "standaard eenheid",
+      "name": "standaardEenheid",
       "range": [
         {
           "EA-Name": "Literal",
@@ -1243,7 +1241,7 @@
     },
     {
       "@id": "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter.waarde",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{A1541E5F-DD90-464f-AB2C-54FC93AD67B5}",
       "ap-definition-nl": {
         "nl": "Bevat een getal die bij het datatype hoort."
@@ -1270,9 +1268,8 @@
         "EA-Range": "Decimal",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{0D67593D-DCF5-418c-B9D4-B42881A2BFB5}",
           "EA-Name": "Decimal",
-          "EA-Package": "W3-XML-Schema",
+          "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#decimal"
         },
         "RawTags": [
@@ -1324,9 +1321,8 @@
       "name": "waarde",
       "range": [
         {
-          "EA-GUID": "{0D67593D-DCF5-418c-B9D4-B42881A2BFB5}",
           "EA-Name": "Decimal",
-          "EA-Package": "W3-XML-Schema",
+          "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#decimal"
         }
       ]
@@ -1417,7 +1413,7 @@
       },
       "maxCardinality": "1",
       "minCardinality": "1",
-      "name": "standaard eenheid",
+      "name": "standaardEenheid",
       "range": [
         {
           "EA-Name": "Literal",
@@ -2109,7 +2105,7 @@
       },
       "maxCardinality": "1",
       "minCardinality": "1",
-      "name": "heeft betrokkene",
+      "name": "heeftBetrokkene",
       "range": [
         {
           "EA-GUID": "{FC6A1DB2-666B-4cbd-B7D0-0D6F75576C83}",
@@ -2245,6 +2241,101 @@
     {
       "@id": "https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{043C4B13-165A-4280-8B82-52259811F937}",
+      "ap-definition-nl": {
+        "nl": "de identificator die gelinkt is aan het fysiek object"
+      },
+      "ap-label-nl": {
+        "nl": "Identificator"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "de identificator die gelinkt is aan het fysiek object"
+      },
+      "domain": [
+        {
+          "EA-Name": "FysiekObject",
+          "uri": "https://data.vlaanderen.be/ns/openbaardomein#FysiekObject"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "FysiekObject",
+        "EA-Domain-Guid": "{D1192137-DF50-41e6-AC78-55277CC90F28}",
+        "EA-Guid": "{043C4B13-165A-4280-8B82-52259811F937}",
+        "EA-Name": "identificator",
+        "EA-Package": "OpenbaarDomein",
+        "EA-Range": "Identificator",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{2E0E0282-B00D-4d3a-A436-FA0B1ED4F4F4}",
+          "EA-Name": "Identificator",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/ns/adms#Identifier"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Identificator"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "de identificator die gelinkt is aan het fysiek object"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "Identificator"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "de identificator die gelinkt is aan het fysiek object"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "de identificator die gelinkt is aan het fysiek object"
+        },
+        "ap-label-nl": {
+          "nl": "Identificator"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "de identificator die gelinkt is aan het fysiek object"
+        },
+        "label": {
+          "nl": "Identificator"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Identificator"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "identificator",
+      "range": [
+        {
+          "EA-GUID": "{2E0E0282-B00D-4d3a-A436-FA0B1ED4F4F4}",
+          "EA-Name": "Identificator",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/ns/adms#Identifier"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{FE4D3ED3-9449-4e96-89E8-8EF1EAD6D652}",
       "ap-definition-nl": {
         "nl": "Verwijzing naar de informatie die het Bemonsteringsobject uniek identificeert."
@@ -2361,101 +2452,6 @@
       "usage": {
         "nl": "Bv het uniek nummer dat aan een Monster wordt toegekend of het numer van een meetstation."
       }
-    },
-    {
-      "@id": "https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{043C4B13-165A-4280-8B82-52259811F937}",
-      "ap-definition-nl": {
-        "nl": "de identificator die gelinkt is aan het fysiek object"
-      },
-      "ap-label-nl": {
-        "nl": "Identificator"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "de identificator die gelinkt is aan het fysiek object"
-      },
-      "domain": [
-        {
-          "EA-Name": "FysiekObject",
-          "uri": "https://data.vlaanderen.be/ns/openbaardomein#FysiekObject"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "FysiekObject",
-        "EA-Domain-Guid": "{D1192137-DF50-41e6-AC78-55277CC90F28}",
-        "EA-Guid": "{043C4B13-165A-4280-8B82-52259811F937}",
-        "EA-Name": "identificator",
-        "EA-Package": "OpenbaarDomein",
-        "EA-Range": "Identificator",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{2E0E0282-B00D-4d3a-A436-FA0B1ED4F4F4}",
-          "EA-Name": "Identificator",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "http://www.w3.org/ns/adms#Identifier"
-        },
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "Identificator"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "de identificator die gelinkt is aan het fysiek object"
-          },
-          {
-            "key": "ap-label-nl",
-            "note": "null",
-            "value": "Identificator"
-          },
-          {
-            "key": "ap-definition-nl",
-            "note": "null",
-            "value": "de identificator die gelinkt is aan het fysiek object"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "de identificator die gelinkt is aan het fysiek object"
-        },
-        "ap-label-nl": {
-          "nl": "Identificator"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "de identificator die gelinkt is aan het fysiek object"
-        },
-        "label": {
-          "nl": "Identificator"
-        },
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "Identificator"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "1",
-      "name": "Identificator",
-      "range": [
-        {
-          "EA-GUID": "{2E0E0282-B00D-4d3a-A436-FA0B1ED4F4F4}",
-          "EA-Name": "Identificator",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "http://www.w3.org/ns/adms#Identifier"
-        }
-      ]
     },
     {
       "@id": "https://data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Markering.oppervlakte",
@@ -2749,7 +2745,7 @@
       },
       "maxCardinality": "1",
       "minCardinality": "1",
-      "name": "kleurKOD",
+      "name": "kleurkod",
       "range": [
         {
           "EA-GUID": "{72AACBB8-C313-4e1a-B7DA-DF6C9708C98E}",
@@ -3078,7 +3074,7 @@
       "label": {
         "nl": "gebruikteProcedure"
       },
-      "name": "gebruikteProcedure",
+      "name": "gebruikteprocedure",
       "range": [
         {
           "EA-GUID": "{E88AB136-51A5-4442-8EC4-FB3C2C2F6787}",
@@ -3228,7 +3224,7 @@
       "label": {
         "nl": "uitgevoerdMetSensor"
       },
-      "name": "uitgevoerdMetSensor",
+      "name": "uitgevoerdmetsensor",
       "range": [
         {
           "EA-GUID": "{C00A726E-1F04-428b-907D-4006A8D8B760}",
@@ -3736,7 +3732,7 @@
       "label": {
         "nl": "suborganisatie van (target)"
       },
-      "name": "suborganisatie van (target)",
+      "name": "suborganisatieVan(target)",
       "range": [
         {
           "EA-GUID": "{D79DB8BB-6F72-441d-8741-0E2C17E5E5B3}",
@@ -3901,7 +3897,7 @@
       },
       "maxCardinality": "*",
       "minCardinality": "0",
-      "name": "suborganisatie van (source)",
+      "name": "suborganisatieVan(source)",
       "range": [
         {
           "EA-GUID": "{D79DB8BB-6F72-441d-8741-0E2C17E5E5B3}",
@@ -4174,7 +4170,7 @@
       "label": {
         "nl": "gelinkt met (target)"
       },
-      "name": "gelinkt met (target)",
+      "name": "gelinktMet(target)",
       "range": [
         {
           "EA-GUID": "{D79DB8BB-6F72-441d-8741-0E2C17E5E5B3}",
@@ -4339,7 +4335,7 @@
       },
       "maxCardinality": "*",
       "minCardinality": "0",
-      "name": "gelinkt met (source)",
+      "name": "gelinktMet(source)",
       "range": [
         {
           "EA-GUID": "{D79DB8BB-6F72-441d-8741-0E2C17E5E5B3}",
@@ -4502,7 +4498,7 @@
       "label": {
         "nl": "heeft suborganisatie (target)"
       },
-      "name": "heeft suborganisatie (target)",
+      "name": "heeftSuborganisatie(target)",
       "range": [
         {
           "EA-GUID": "{D79DB8BB-6F72-441d-8741-0E2C17E5E5B3}",
@@ -4667,7 +4663,7 @@
       },
       "maxCardinality": "*",
       "minCardinality": "0",
-      "name": "heeft suborganisatie (source)",
+      "name": "heeftSuborganisatie(source)",
       "range": [
         {
           "EA-GUID": "{D79DB8BB-6F72-441d-8741-0E2C17E5E5B3}",
@@ -5097,7 +5093,7 @@
       },
       "maxCardinality": "*",
       "minCardinality": "0",
-      "name": "alternatieve label",
+      "name": "alternatieveLabel",
       "range": [
         {
           "EA-GUID": "{CEE9AF92-964A-4790-B048-A52AE6FBBD0D}",
@@ -5212,7 +5208,7 @@
       },
       "maxCardinality": "1",
       "minCardinality": "0",
-      "name": "als WKT",
+      "name": "alsWkt",
       "range": [
         {
           "EA-GUID": "{84C93140-B809-4837-A55A-7687CA2B83D9}",
@@ -5327,7 +5323,7 @@
       },
       "maxCardinality": "1",
       "minCardinality": "0",
-      "name": "als GML",
+      "name": "alsGml",
       "range": [
         {
           "EA-GUID": "{84C93140-B809-4837-A55A-7687CA2B83D9}",
@@ -6897,7 +6893,7 @@
       },
       "maxCardinality": "1",
       "minCardinality": "0",
-      "name": "geldigeTijd",
+      "name": "geldigetijd",
       "range": [
         {
           "EA-GUID": "{D46C41D0-0D1C-4025-802A-8EF640808F84}",
@@ -7280,7 +7276,7 @@
       "label": {
         "nl": "geobserveerdKenmerk"
       },
-      "name": "geobserveerdKenmerk",
+      "name": "geobserveerdkenmerk",
       "range": [
         {
           "EA-GUID": "{024B3897-0201-4439-B7E9-4FBDD664D902}",
@@ -7433,7 +7429,7 @@
       "label": {
         "nl": "geobserveerdObject"
       },
-      "name": "geobserveerdObject",
+      "name": "geobserveerdobject",
       "range": [
         {
           "EA-GUID": "{7E5654BC-12DE-4d86-8316-55352214A4F2}",
@@ -7991,7 +7987,7 @@
       "label": {
         "nl": "GeneriekeNaam"
       },
-      "name": "GeneriekeNaam",
+      "name": "Generiekenaam",
       "usage": {
         "nl": "Subtypes zijn LokaleNaam en NaamInNaamruimte (resp een naam zonder en een naam met  vermelding van een naamruimte). Datatype van LokaleNaamaam is bvb String of Taalstring, datatype van NaamInNaamruimte is bvb URI. OPMERKING: Meer info over dit datatype in  <a href=\"https://www.iso.org/standard/56734.html\">ISO 19103 Geographic Information - Conceptual schema language</a>."
       }
@@ -8082,7 +8078,7 @@
       "label": {
         "nl": "TemporeleEntiteit"
       },
-      "name": "TemporeleEntiteit",
+      "name": "Temporeleentiteit",
       "usage": {
         "nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn. OPMERKING: Meer info in <a href=\"https://iso.org/standard/26013.html\">ISO 19108 Geographic Information - Temporal schema</a>. Substitutie door een eenvoudiger equivalent bv time:TemporalEntity uit de <a href=\"https://w3.org/TR/owl-time/\">W3C Time Ontology</a> is aanbevolen."
       }
@@ -8180,7 +8176,7 @@
       "label": {
         "nl": "LIDARpuntenwolk"
       },
-      "name": "LIDARpuntenwolk",
+      "name": "Lidarpuntenwolk",
       "usage": {
         "nl": "Bv om een 3D-beeld van het terrein op te bouwen en gebouwen,vegetatie etc te detecteren."
       }
@@ -8538,7 +8534,7 @@
       "label": {
         "nl": "BenoemdeWaarde"
       },
-      "name": "BenoemdeWaarde",
+      "name": "Benoemdewaarde",
       "usage": {
         "nl": "In essentie een waarde en de naam vh type van de waarde. Bv een temperatuur van 21graden Celcius (waarde = 21 graden Celcius, naam = temperatuur)."
       }
@@ -8619,7 +8615,7 @@
       "label": {
         "nl": "RuimtelijkBemonsteringsobject"
       },
-      "name": "RuimtelijkBemonsteringsobject"
+      "name": "Ruimtelijkbemonsteringsobject"
     },
     {
       "@id": "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult",
@@ -8714,7 +8710,7 @@
       "label": {
         "nl": "BeschrijvendResultaat"
       },
-      "name": "BeschrijvendResultaat",
+      "name": "Beschrijvendresultaat",
       "usage": {
         "nl": "Een beschrijvend resultaat kan ook gebruikt worden om een korte beschrijving te voorzien van het resultaat van de kwaliteitsevaluatie, ter begeleiding bij het complete kwantitatieve resultaat, of wanneer er geen kwantitatieve waarde bekomen worden kan."
       }
@@ -8795,7 +8791,7 @@
       "label": {
         "nl": "KwantitatiefResultaat"
       },
-      "name": "KwantitatiefResultaat"
+      "name": "Kwantitatiefresultaat"
     },
     {
       "@id": "http://purl.org/dc/terms/Agent",
@@ -9243,7 +9239,7 @@
       "label": {
         "nl": "3Dobject"
       },
-      "name": "3Dobject",
+      "name": "3dobject",
       "usage": {
         "nl": "Dimensie is te verstaan in wiskundige zin: het minimum aantal coördinaten nodig om een willekeurig punt voor te stellen dat deel uitmaakt van de primitieve. Om een willekeurig punt aan te duiden in de ruimte die het 3Dobject inneemt zijn 3 coördinaten nodig. Een 3DObject heeft daarom lengte, breedte en diepte. Analoog aan de polylijn (di een Curve onstaan door interpolatie tussen twee of meer punten) bestaan er ook in 3 dimensies vormen die gedefinieerd worden door sets van controlepunten. Een 3DObject wordt begrensd door meerdere Vlakken (bv kubus) of door 1 gesloten Vlak (bv bol). Bijkomende grensvlakken vormen mogelijks holtes in het 3DObject. Om binnen- en buitengrenzen te kunnen onderscheiden geldt doorgaans de afspraak dat het 3DObject links ligt van het Vlak waardoor het wordt begrensd."
       }
@@ -9339,7 +9335,7 @@
       "label": {
         "nl": "Getypeerde String"
       },
-      "name": "Getypeerde String",
+      "name": "GetypeerdeString",
       "usage": {
         "nl": "Bvb '20170901' als string en 'datum' als type. Laat automatische interpretatie vd string toe. Te implementeren als Literal."
       }
@@ -9511,7 +9507,7 @@
       "label": {
         "nl": "Decimaal getal"
       },
-      "name": "Decimaal getal",
+      "name": "DecimaalGetal",
       "usage": {
         "nl": "https://www.w3.org/TR/xmlschema-2/#decimal"
       }
@@ -9585,7 +9581,7 @@
       "label": {
         "nl": "type"
       },
-      "name": "type"
+      "name": "Type"
     },
     {
       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -9656,7 +9652,7 @@
       "label": {
         "nl": "Organisatie Activiteit"
       },
-      "name": "Organisatie Activiteit"
+      "name": "OrganisatieActiviteit"
     },
     {
       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -9727,7 +9723,7 @@
       "label": {
         "nl": "Organisatie Classificatie"
       },
-      "name": "Organisatie Classificatie"
+      "name": "OrganisatieClassificatie"
     },
     {
       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -9798,7 +9794,7 @@
       "label": {
         "nl": "Organisatie Status"
       },
-      "name": "Organisatie Status"
+      "name": "OrganisatieStatus"
     },
     {
       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -9869,7 +9865,7 @@
       "label": {
         "nl": "Organisatie Type"
       },
-      "name": "Organisatie Type"
+      "name": "OrganisatieType"
     },
     {
       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -9940,7 +9936,7 @@
       "label": {
         "nl": "type"
       },
-      "name": "type"
+      "name": "Type"
     },
     {
       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -10012,7 +10008,7 @@
       "label": {
         "nl": "Kleur markering"
       },
-      "name": "Kleur markering"
+      "name": "KleurMarkering"
     },
     {
       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -10089,7 +10085,7 @@
       "label": {
         "nl": "Soort markeringsproduct"
       },
-      "name": "Soort markeringsproduct"
+      "name": "SoortMarkeringsproduct"
     },
     {
       "@id": "http://www.w3.org/ns/adms#Identifier",
@@ -10471,7 +10467,7 @@
       "label": {
         "nl": "KleurCodeKOD"
       },
-      "name": "KleurCodeKOD"
+      "name": "Kleurcodekod"
     },
     {
       "@id": "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#ObservatieProcedureType",
@@ -10522,7 +10518,7 @@
       "label": {
         "nl": "ObservatieProcedureType"
       },
-      "name": "ObservatieProcedureType"
+      "name": "Observatieproceduretype"
     },
     {
       "@id": "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#TypeLaag",
@@ -10573,7 +10569,7 @@
       "label": {
         "nl": "TypeLaag"
       },
-      "name": "TypeLaag"
+      "name": "Typelaag"
     },
     {
       "@id": "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#TypeMarkering",
@@ -10624,7 +10620,7 @@
       "label": {
         "nl": "TypeMarkering"
       },
-      "name": "TypeMarkering"
+      "name": "Typemarkering"
     },
     {
       "@id": "https://data.vlaanderen.be/ns/openbaardomein#Deel",
@@ -10780,7 +10776,7 @@
       "label": {
         "nl": "Fysiek object"
       },
-      "name": "Fysiek object"
+      "name": "FysiekObject"
     },
     {
       "@id": "https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Wegmarkering",
@@ -11143,7 +11139,7 @@
       "label": {
         "nl": "AIM object"
       },
-      "name": "AIM object"
+      "name": "AimObject"
     },
     {
       "@id": "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter",
@@ -11209,7 +11205,7 @@
       "label": {
         "nl": "Kwantitatieve waarde in meter"
       },
-      "name": "Kwantitatieve waarde in meter"
+      "name": "KwantitatieveWaardeInMeter"
     },
     {
       "@id": "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInVierkanteMeter",
@@ -11280,7 +11276,7 @@
       "label": {
         "nl": "Kwantitatieve waarde in vierkante meter"
       },
-      "name": "Kwantitatieve waarde in vierkante meter"
+      "name": "KwantitatieveWaardeInVierkanteMeter"
     }
   ],
   "extra": {
@@ -11505,7 +11501,7 @@
       },
       "maxCardinality": "1",
       "minCardinality": "1",
-      "name": "Kleur KOD",
+      "name": "kleurKod",
       "range": [
         {
           "EA-GUID": "{72AACBB8-C313-4e1a-B7DA-DF6C9708C98E}",
@@ -11966,7 +11962,7 @@
       },
       "maxCardinality": "1",
       "minCardinality": "1",
-      "name": "uitgevoerdDoor",
+      "name": "uitgevoerddoor",
       "range": [
         {
           "EA-GUID": "{FC6A1DB2-666B-4cbd-B7D0-0D6F75576C83}",
@@ -11987,7 +11983,7 @@
   "standaardregisterurl": "https://data.vlaanderen.be/doc/applicatieprofiel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05",
   "template": "kwaliteitWegenEnWegmarkeringen-ap.j2",
   "title": "Kwaliteit Wegen en Wegmarkeringen (Applicatieprofiel)",
-  "toolchaincommit": "0091a80d0b44819729e4e289dc814b7a889db350",
+  "toolchaincommit": "7961d06b0089696ee7dda0ab146cddd7953fcc7d",
   "translation": [
     {
       "language": "nl",

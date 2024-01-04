@@ -1,6 +1,15 @@
 {
   "@context": {
     "Adresvoorstelling": "http://www.w3.org/ns/locn#Address",
+    "OrganisatieResource": "https://vmsw.vlaanderen.be/ns/vmsw#OrganisatieResource",
+    "OrganisatieResource.organisatieId": {
+      "@id": "https://vmsw.vlaanderen.be/ns/vmsw#organisatieId",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "OrganisatieResource.organisatieType": {
+      "@id": "https://vmsw.vlaanderen.be/ns/vmsw#organisatieType",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
     "VmswAdres": "http://www.w3.org/ns/locn#Address",
     "VmswAdres.busnummer": {
       "@id": "https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer",
@@ -35,16 +44,21 @@
       "@id": "https://vmsw.vlaanderen.be/ns/vmsw#bebouwingsType",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
+    "VmswWoning.beheerder": {
+      "@id": "https://vmsw.vlaanderen.be/ns/vmsw#beheerder",
+      "@type": "@id"
+    },
     "VmswWoning.bouwjaar": {
       "@id": "https://vmsw.vlaanderen.be/ns/vmsw#bouwjaar",
       "@type": "http://www.w3.org/2001/XMLSchema#integer"
     },
-    "VmswWoning.eigendom": {
-      "@id": "https://vmsw.vlaanderen.be/ns/vmsw#eigendom",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    "VmswWoning.eigenaar": {
+      "@id": "https://vmsw.vlaanderen.be/ns/vmsw#eigenaar",
+      "@type": "@id"
     },
     "VmswWoning.gebouweenheidId": {
-      "@id": "https://vmsw.vlaanderen.be/ns/vmsw#gebouweenheidId",
+      "@container": "@set",
+      "@id": "https://vmsw.vlaanderen.be/ns/vmsw#gebouweenheidIds",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "VmswWoning.organisatieId": {
@@ -55,8 +69,8 @@
       "@id": "https://vmsw.vlaanderen.be/ns/vmsw#statistischeSector",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
-    "VmswWoning.typeEigendom": {
-      "@id": "https://vmsw.vlaanderen.be/ns/vmsw#typeEigendom",
+    "VmswWoning.verhuringsStelsel": {
+      "@id": "https://vmsw.vlaanderen.be/ns/vmsw#verhuringsStelsel",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "VmswWoning.vmswWoningId": {
@@ -65,6 +79,10 @@
     },
     "VmswWoning.wijk": {
       "@id": "https://vmsw.vlaanderen.be/ns/vmsw#wijk",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "VmswWoning.woningStatus": {
+      "@id": "https://vmsw.vlaanderen.be/ns/vmsw#woningStatus",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "VmswWoning.woningType": {

@@ -40,7 +40,7 @@
     },
     {
       "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KenmerkType",
-      "name": "KenmerkType",
+      "name": "Kenmerktype",
       "label": {
         "nl": "KenmerkType"
       },
@@ -56,7 +56,7 @@
     },
     {
       "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk",
-      "name": "KwaliteitsKenmerk",
+      "name": "Kwaliteitskenmerk",
       "label": {
         "nl": "KwaliteitsKenmerk"
       },
@@ -108,7 +108,7 @@
     },
     {
       "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat",
-      "name": "KwaliteitsResultaat",
+      "name": "Kwaliteitsresultaat",
       "label": {
         "nl": "KwaliteitsResultaat"
       },
@@ -124,7 +124,7 @@
     },
     {
       "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor",
-      "name": "KwaliteitsSensor",
+      "name": "Kwaliteitssensor",
       "label": {
         "nl": "KwaliteitsSensor"
       },
@@ -142,7 +142,7 @@
     },
     {
       "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD",
-      "name": "Markering KOD",
+      "name": "MarkeringKod",
       "label": {
         "nl": "Markering KOD"
       },
@@ -158,7 +158,7 @@
     },
     {
       "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject",
-      "name": "OpenbaarDomeinObect",
+      "name": "Openbaardomeinobect",
       "label": {
         "nl": "OpenbaarDomeinObect"
       },
@@ -176,82 +176,23 @@
   ],
   "properties": [
     {
-      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte",
-      "name": "lengte",
+      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor",
+      "name": "uitgevoerddoor",
       "label": {
-        "nl": "lengte"
+        "nl": "uitgevoerdDoor"
       },
-      "sort": "lengte",
+      "sort": "uitgevoerdDoor",
       "description": {
-        "nl": "De lengte van de markering"
-      },
-      "usage": {},
-      "domain": [
-        "https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Markering"
-      ],
-      "range": [
-        "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter"
-      ],
-      "parents": []
-    },
-    {
-      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD",
-      "name": "Kleur KOD",
-      "label": {
-        "nl": "Kleur KOD"
-      },
-      "sort": "Kleur KOD",
-      "description": {
-        "nl": "De kleur van de gebruikte markering."
+        "nl": "Agent die de Observatie heeft uitgevoerd."
       },
       "usage": {
-        "nl": "Niet limitatieve lijst van mogelijke kleuren"
+        "nl": "Dit kan bijvoorbeeld gaan over de machine learning toepassing die de observatie uitvoert"
       },
       "domain": [
-        "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD"
+        "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
       ],
       "range": [
-        "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#KleurCodeKOD"
-      ],
-      "parents": []
-    },
-    {
-      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie",
-      "name": "versie",
-      "label": {
-        "nl": "versie"
-      },
-      "sort": "versie",
-      "description": {
-        "nl": "De versie van de kwaliteitssensor"
-      },
-      "usage": {
-        "nl": "dit kan gaan over de versie van de machine learning toepassing"
-      },
-      "domain": [
-        "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor"
-      ],
-      "range": [
-        "http://www.w3.org/2001/XMLSchema#string"
-      ],
-      "parents": []
-    },
-    {
-      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.specificatie",
-      "name": "specificatie",
-      "label": {
-        "nl": "specificatie"
-      },
-      "sort": "specificatie",
-      "description": {
-        "nl": "Verwijzing naar een document dat de Observatieprocedure beschrijft."
-      },
-      "usage": {},
-      "domain": [
-        "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure"
-      ],
-      "range": [
-        "http://www.w3.org/2001/XMLSchema#anyURI"
+        "http://fixme.com#Agent"
       ],
       "parents": []
     },
@@ -277,23 +218,82 @@
       "parents": []
     },
     {
-      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor",
-      "name": "uitgevoerdDoor",
+      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.specificatie",
+      "name": "specificatie",
       "label": {
-        "nl": "uitgevoerdDoor"
+        "nl": "specificatie"
       },
-      "sort": "uitgevoerdDoor",
+      "sort": "specificatie",
       "description": {
-        "nl": "Agent die de Observatie heeft uitgevoerd."
+        "nl": "Verwijzing naar een document dat de Observatieprocedure beschrijft."
       },
-      "usage": {
-        "nl": "Dit kan bijvoorbeeld gaan over de machine learning toepassing die de observatie uitvoert"
-      },
+      "usage": {},
       "domain": [
-        "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
+        "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure"
       ],
       "range": [
-        "http://fixme.com#Agent"
+        "http://www.w3.org/2001/XMLSchema#anyURI"
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie",
+      "name": "versie",
+      "label": {
+        "nl": "versie"
+      },
+      "sort": "versie",
+      "description": {
+        "nl": "De versie van de kwaliteitssensor"
+      },
+      "usage": {
+        "nl": "dit kan gaan over de versie van de machine learning toepassing"
+      },
+      "domain": [
+        "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD",
+      "name": "kleurKod",
+      "label": {
+        "nl": "Kleur KOD"
+      },
+      "sort": "Kleur KOD",
+      "description": {
+        "nl": "De kleur van de gebruikte markering."
+      },
+      "usage": {
+        "nl": "Niet limitatieve lijst van mogelijke kleuren"
+      },
+      "domain": [
+        "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD"
+      ],
+      "range": [
+        "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#KleurCodeKOD"
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte",
+      "name": "lengte",
+      "label": {
+        "nl": "lengte"
+      },
+      "sort": "lengte",
+      "description": {
+        "nl": "De lengte van de markering"
+      },
+      "usage": {},
+      "domain": [
+        "https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Markering"
+      ],
+      "range": [
+        "https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter"
       ],
       "parents": []
     }
@@ -301,23 +301,13 @@
   "contributors": [
     {
       "role": "A",
-      "first_name": "Nico",
-      "last_name": "Scheldeman",
+      "first_name": "Steve",
+      "last_name": "Baete",
       "affiliation": {
         "name": "Stad Roeselare",
         "website": "https://www.roeselare.be/"
       },
-      "email": "nico.scheldeman@roeselare.be"
-    },
-    {
-      "role": "A",
-      "first_name": "Benny",
-      "last_name": "Meyns",
-      "affiliation": {
-        "name": "Stad Roeselare",
-        "website": "https://www.roeselare.be/"
-      },
-      "email": "benny.meyns@roeselare.be"
+      "email": "steve.baete@roeselare.be"
     },
     {
       "role": "A",
@@ -331,73 +321,33 @@
     },
     {
       "role": "A",
-      "first_name": "Steve",
-      "last_name": "Baete",
+      "first_name": "Benny",
+      "last_name": "Meyns",
       "affiliation": {
         "name": "Stad Roeselare",
         "website": "https://www.roeselare.be/"
       },
-      "email": "steve.baete@roeselare.be"
+      "email": "benny.meyns@roeselare.be"
     },
     {
-      "role": "E",
-      "first_name": "Lorenzo",
-      "last_name": "Vylders",
-      "affiliation": {
-        "name": "Digitaal Vlaanderen",
-        "website": "https://www.vlaanderen.be/digitaal-vlaanderen"
-      },
-      "email": "lorenzo.vylders@vlaanderen.be"
-    },
-    {
-      "role": "E",
-      "first_name": "Eveline",
-      "last_name": "Vlassenroot",
-      "affiliation": {
-        "name": "Digitaal Vlaanderen",
-        "website": "https://www.vlaanderen.be/digitaal-vlaanderen"
-      },
-      "email": "eveline.vlassenroot@vlaanderen.be"
-    },
-    {
-      "role": "E",
-      "first_name": "Laurens",
-      "last_name": "Vercauteren",
-      "affiliation": {
-        "name": "Digitaal Vlaanderen",
-        "website": "https://www.vlaanderen.be/digitaal-vlaanderen"
-      },
-      "email": "laurens.vercauteren@vlaanderen.be"
-    },
-    {
-      "role": "E",
-      "first_name": "Ziggy",
-      "last_name": "Vanlishout",
-      "affiliation": {
-        "name": "Digitaal Vlaanderen",
-        "website": "https://www.vlaanderen.be/digitaal-vlaanderen"
-      },
-      "email": "ziggy.vanlishout@vlaanderen.be"
-    },
-    {
-      "role": "E",
-      "first_name": "Liesbeth",
-      "last_name": "Van der Haegen",
-      "affiliation": {
-        "name": "Digitaal Vlaanderen",
-        "website": "https://www.vlaanderen.be/digitaal-vlaanderen"
-      },
-      "email": "liesbeth.vanderhaegen@vlaanderen.be"
-    },
-    {
-      "role": "E",
-      "first_name": "Arne",
+      "role": "A",
+      "first_name": "Nico",
       "last_name": "Scheldeman",
       "affiliation": {
+        "name": "Stad Roeselare",
+        "website": "https://www.roeselare.be/"
+      },
+      "email": "nico.scheldeman@roeselare.be"
+    },
+    {
+      "role": "E",
+      "first_name": "Veerle",
+      "last_name": "Beyaert",
+      "affiliation": {
         "name": "Digitaal Vlaanderen",
         "website": "https://www.vlaanderen.be/digitaal-vlaanderen"
       },
-      "email": "arne.scheldeman@vlaanderen.be"
+      "email": "veerle.beyaert@vlaanderen.be"
     },
     {
       "role": "E",
@@ -411,23 +361,63 @@
     },
     {
       "role": "E",
-      "first_name": "Veerle",
-      "last_name": "Beyaert",
+      "first_name": "Arne",
+      "last_name": "Scheldeman",
       "affiliation": {
         "name": "Digitaal Vlaanderen",
         "website": "https://www.vlaanderen.be/digitaal-vlaanderen"
       },
-      "email": "veerle.beyaert@vlaanderen.be"
+      "email": "arne.scheldeman@vlaanderen.be"
     },
     {
-      "role": "C",
-      "first_name": "Ide",
-      "last_name": "Vandenbroucke",
+      "role": "E",
+      "first_name": "Liesbeth",
+      "last_name": "Van der Haegen",
       "affiliation": {
-        "name": "Stad Brugge",
-        "website": "https://www.brugge.be/"
+        "name": "Digitaal Vlaanderen",
+        "website": "https://www.vlaanderen.be/digitaal-vlaanderen"
       },
-      "email": "ide.vandenbroucke@brugge.be"
+      "email": "liesbeth.vanderhaegen@vlaanderen.be"
+    },
+    {
+      "role": "E",
+      "first_name": "Ziggy",
+      "last_name": "Vanlishout",
+      "affiliation": {
+        "name": "Digitaal Vlaanderen",
+        "website": "https://www.vlaanderen.be/digitaal-vlaanderen"
+      },
+      "email": "ziggy.vanlishout@vlaanderen.be"
+    },
+    {
+      "role": "E",
+      "first_name": "Laurens",
+      "last_name": "Vercauteren",
+      "affiliation": {
+        "name": "Digitaal Vlaanderen",
+        "website": "https://www.vlaanderen.be/digitaal-vlaanderen"
+      },
+      "email": "laurens.vercauteren@vlaanderen.be"
+    },
+    {
+      "role": "E",
+      "first_name": "Eveline",
+      "last_name": "Vlassenroot",
+      "affiliation": {
+        "name": "Digitaal Vlaanderen",
+        "website": "https://www.vlaanderen.be/digitaal-vlaanderen"
+      },
+      "email": "eveline.vlassenroot@vlaanderen.be"
+    },
+    {
+      "role": "E",
+      "first_name": "Lorenzo",
+      "last_name": "Vylders",
+      "affiliation": {
+        "name": "Digitaal Vlaanderen",
+        "website": "https://www.vlaanderen.be/digitaal-vlaanderen"
+      },
+      "email": "lorenzo.vylders@vlaanderen.be"
     },
     {
       "role": "C",
@@ -438,12 +428,22 @@
         "website": "https://www.brugge.be/"
       },
       "email": "tom.boi@brugge.be"
+    },
+    {
+      "role": "C",
+      "first_name": "Ide",
+      "last_name": "Vandenbroucke",
+      "affiliation": {
+        "name": "Stad Brugge",
+        "website": "https://www.brugge.be/"
+      },
+      "email": "ide.vandenbroucke@brugge.be"
     }
   ],
   "external_terms": [
     {
       "uri": "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult",
-      "name": "BeschrijvendResultaat",
+      "name": "Beschrijvendresultaat",
       "label": {
         "nl": "BeschrijvendResultaat"
       },
@@ -461,7 +461,7 @@
     },
     {
       "uri": "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult",
-      "name": "KwantitatiefResultaat",
+      "name": "Kwantitatiefresultaat",
       "label": {
         "nl": "KwantitatiefResultaat"
       },
@@ -476,66 +476,72 @@
       "show": true
     },
     {
-      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat",
-      "name": "resultaat",
+      "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty",
+      "name": "geobserveerdkenmerk",
       "label": {
-        "nl": "resultaat"
+        "nl": "geobserveerdKenmerk"
       },
       "description": {
-        "nl": "het resultaat van de KwaliteitsObservatie"
-      },
-      "usage": {},
-      "sort": "resultaat",
-      "inscope": true,
-      "indvl": false,
-      "inpackage": false,
-      "show": true
-    },
-    {
-      "uri": "http://www.w3.org/ns/sosa/usedProcedure",
-      "name": "gebruikteProcedure",
-      "label": {
-        "nl": "gebruikteProcedure"
-      },
-      "description": {
-        "nl": "De gebruikte procedure van de observatie."
-      },
-      "usage": {},
-      "sort": "gebruikteProcedure",
-      "inscope": true,
-      "indvl": false,
-      "inpackage": false,
-      "show": true
-    },
-    {
-      "uri": "http://www.w3.org/ns/sosa/madeBySensor",
-      "name": "uitgevoerdMetSensor",
-      "label": {
-        "nl": "uitgevoerdMetSensor"
-      },
-      "description": {
-        "nl": "Sensor waarmee de Observatie is uitgevoerd."
+        "nl": "Kenmerk dat men observeert vh geobserveerdObject."
       },
       "usage": {
-        "nl": "Dit kan gaan over de machine learning toepassing die de luchtfoto's beoordeeld."
+        "nl": "Soms is de procedure waarmee de waarden vh kenmerk worden bekomen indirect, ttz men meet om praktische reden een ander kenmerk dat een proxy is voor het kenmerk dat men werkelijk wil observeren.  Bv om de scheuren in de weg te beoordelen meten we de kleurreflectie op het wegdek. CONSTRAINT: Het geobserveerdKenmerk moet werkelijk een kenmerk zijn van het geobserveerdObject of van een (onder)deel ervan."
       },
-      "sort": "uitgevoerdMetSensor",
+      "sort": "geobserveerdKenmerk",
       "inscope": true,
       "indvl": false,
       "inpackage": false,
       "show": true
     },
     {
-      "uri": "http://purl.org/dc/terms/type",
-      "name": "type",
+      "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.parameter",
+      "name": "parameter",
       "label": {
-        "nl": "type"
+        "nl": "parameter"
       },
       "description": {
-        "nl": "verwijst naar het KenmerkType waarop de kwaliteit beoordeel wordt"
+        "nl": "Willekeurig gegeven gassocieerd met het gebeuren van de Observatie."
       },
-      "usage": {},
-      "sort": "type",
+      "usage": {
+        "nl": "Het gaat hier niet om kenmerken van het geobserveerdObject (die worden al beschreven door het geobserveerdKenmerk) of om parameters geassocieerd met het observatieproces (zoals een instelling van een instrument). Het gaat hier bv om omgevingsparameters die het resultaat kunnen beïnvloeden en van belang zijn om het resultaat correct te interpreteren.  Een voorbeeld is het weer tijdens het moment van het maken van een luchtfoto."
+      },
+      "sort": "parameter",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime",
+      "name": "fenomeentijd",
+      "label": {
+        "nl": "fenomeentijd"
+      },
+      "description": {
+        "nl": "Het moment waarop het resultaat van de Observatie van toepassing was."
+      },
+      "usage": {
+        "nl": "Typisch het moment waarop geobserveerd of bemonsterd werd. Als de Observatie temporeel is en het moment waarop iets plaatsvindt wordt geregistreerd dan is dit meteen ook de fenomeentijd."
+      },
+      "sort": "fenomeentijd",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.validTime",
+      "name": "geldigetijd",
+      "label": {
+        "nl": "geldigeTijd"
+      },
+      "description": {
+        "nl": "Periode waarvoor het resultaat van de Observatie geldt."
+      },
+      "usage": {
+        "nl": "Bv nuttig voor tijdelijke wegmarkeringen."
+      },
+      "sort": "geldigeTijd",
       "inscope": true,
       "indvl": false,
       "inpackage": false,
@@ -590,72 +596,66 @@
       "show": true
     },
     {
-      "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.validTime",
-      "name": "geldigeTijd",
+      "uri": "http://purl.org/dc/terms/type",
+      "name": "type",
       "label": {
-        "nl": "geldigeTijd"
+        "nl": "type"
       },
       "description": {
-        "nl": "Periode waarvoor het resultaat van de Observatie geldt."
+        "nl": "verwijst naar het KenmerkType waarop de kwaliteit beoordeel wordt"
       },
-      "usage": {
-        "nl": "Bv nuttig voor tijdelijke wegmarkeringen."
-      },
-      "sort": "geldigeTijd",
+      "usage": {},
+      "sort": "type",
       "inscope": true,
       "indvl": false,
       "inpackage": false,
       "show": true
     },
     {
-      "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime",
-      "name": "fenomeentijd",
+      "uri": "http://www.w3.org/ns/sosa/madeBySensor",
+      "name": "uitgevoerdmetsensor",
       "label": {
-        "nl": "fenomeentijd"
+        "nl": "uitgevoerdMetSensor"
       },
       "description": {
-        "nl": "Het moment waarop het resultaat van de Observatie van toepassing was."
+        "nl": "Sensor waarmee de Observatie is uitgevoerd."
       },
       "usage": {
-        "nl": "Typisch het moment waarop geobserveerd of bemonsterd werd. Als de Observatie temporeel is en het moment waarop iets plaatsvindt wordt geregistreerd dan is dit meteen ook de fenomeentijd."
+        "nl": "Dit kan gaan over de machine learning toepassing die de luchtfoto's beoordeeld."
       },
-      "sort": "fenomeentijd",
+      "sort": "uitgevoerdMetSensor",
       "inscope": true,
       "indvl": false,
       "inpackage": false,
       "show": true
     },
     {
-      "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.parameter",
-      "name": "parameter",
+      "uri": "http://www.w3.org/ns/sosa/usedProcedure",
+      "name": "gebruikteprocedure",
       "label": {
-        "nl": "parameter"
+        "nl": "gebruikteProcedure"
       },
       "description": {
-        "nl": "Willekeurig gegeven gassocieerd met het gebeuren van de Observatie."
+        "nl": "De gebruikte procedure van de observatie."
       },
-      "usage": {
-        "nl": "Het gaat hier niet om kenmerken van het geobserveerdObject (die worden al beschreven door het geobserveerdKenmerk) of om parameters geassocieerd met het observatieproces (zoals een instelling van een instrument). Het gaat hier bv om omgevingsparameters die het resultaat kunnen beïnvloeden en van belang zijn om het resultaat correct te interpreteren.  Een voorbeeld is het weer tijdens het moment van het maken van een luchtfoto."
-      },
-      "sort": "parameter",
+      "usage": {},
+      "sort": "gebruikteProcedure",
       "inscope": true,
       "indvl": false,
       "inpackage": false,
       "show": true
     },
     {
-      "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty",
-      "name": "geobserveerdKenmerk",
+      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat",
+      "name": "resultaat",
       "label": {
-        "nl": "geobserveerdKenmerk"
+        "nl": "resultaat"
       },
       "description": {
-        "nl": "Kenmerk dat men observeert vh geobserveerdObject."
+        "nl": "het resultaat van de KwaliteitsObservatie"
       },
-      "usage": {
-        "nl": "Soms is de procedure waarmee de waarden vh kenmerk worden bekomen indirect, ttz men meet om praktische reden een ander kenmerk dat een proxy is voor het kenmerk dat men werkelijk wil observeren.  Bv om de scheuren in de weg te beoordelen meten we de kleurreflectie op het wegdek. CONSTRAINT: Het geobserveerdKenmerk moet werkelijk een kenmerk zijn van het geobserveerdObject of van een (onder)deel ervan."
-      },
-      "sort": "geobserveerdKenmerk",
+      "usage": {},
+      "sort": "resultaat",
       "inscope": true,
       "indvl": false,
       "inpackage": false,

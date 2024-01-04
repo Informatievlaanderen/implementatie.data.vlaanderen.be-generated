@@ -72,6 +72,17 @@
                         
                           <dd inlist="" rel="bibo:editor" class="p-author h-card vcard">
                               <span typeof="foaf:Person">
+                              <span class="p-name fn" property="foaf:lastName">De Muynck</span>,
+                              <span class="p-name fn" property="foaf:firstName">Maarten </span>
+                              
+                							
+                                 - <span class="ed_mailto"><a href="mailto:maarten.demuynck@vlaanderen.be" rel="foaf:mbox" class="u-email email">maarten.demuynck@vlaanderen.be</a></span>
+                              
+                							</span>
+                          </dd>
+                        
+                          <dd inlist="" rel="bibo:editor" class="p-author h-card vcard">
+                              <span typeof="foaf:Person">
                               <span class="p-name fn" property="foaf:lastName">Van Nuffelen</span>,
                               <span class="p-name fn" property="foaf:firstName">Bert</span>
                               
@@ -87,8 +98,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-vmsw/tree/280a428e2f1c2e4e79dfec96119132b310087f22">https://github.com/Informatievlaanderen/OSLOthema-im-vmsw/tree/280a428e2f1c2e4e79dfec96119132b310087f22</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-vmsw/blob/280a428e2f1c2e4e79dfec96119132b310087f22/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-im-vmsw/blob/280a428e2f1c2e4e79dfec96119132b310087f22/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-vmsw/tree/2eeb3e28def0eb47a2a060b8d4e47b1573a800ae">https://github.com/Informatievlaanderen/OSLOthema-im-vmsw/tree/2eeb3e28def0eb47a2a060b8d4e47b1573a800ae</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-im-vmsw/blob/2eeb3e28def0eb47a2a060b8d4e47b1573a800ae/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-im-vmsw/blob/2eeb3e28def0eb47a2a060b8d4e47b1573a800ae/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href=""></a></dd>
               <dt>Standaardenregister</dt><dd><a href=""></a></dd>
 
@@ -157,7 +168,8 @@
                     <p>In dit document wordt correct gebruik van de volgende entiteiten toegelicht:
                       <br />
                       |
-                      <a href="#VMSW woning">VMSW woning</a> |
+                      <a href="#Organisatieresource">OrganisatieResource</a> |
+                      <a href="#VmswWoning">VMSW woning</a> |
                     </p>
                   </div>
                   
@@ -167,7 +179,7 @@
                       <br />
                       |
                       <a href="#Adresvoorstelling">Adresvoorstelling</a> |
-                      <a href="#VMSW Adres">VMSW Adres</a> |
+                      <a href="#VmswAdres">VMSW Adres</a> |
                     </p>
                   </div>
                   
@@ -187,29 +199,17 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="VMSW woning"><a href="https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning" data-placement="right">VMSW woning</a></h3>
+              <h3 class="h3" id="Organisatieresource"><a href="https://vmsw.vlaanderen.be/ns/vmsw#OrganisatieResource" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#OrganisatieResource" data-placement="right">OrganisatieResource</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Beschrijving</dt><dd></dd>
+                    <dt>Beschrijving</dt><dd>Gegevens over een organisatie</dd>
                     
 		    
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#VMSW%20woning%3Aadres">adres</a>, 
-                      <a href="#VMSW%20woning%3AbebouwingsType">bebouwingsType</a>, 
-                      <a href="#VMSW%20woning%3Abouwjaar">bouwjaar</a>, 
-                      <a href="#VMSW%20woning%3Aeigendom">eigendom</a>, 
-                      <a href="#VMSW%20woning%3AgebouweenheidId">gebouweenheidId</a>, 
-                      <a href="#VMSW%20woning%3AorganisatieId">organisatieId</a>, 
-                      <a href="#VMSW%20woning%3AstatistischeSector">statistischeSector</a>, 
-                      <a href="#VMSW%20woning%3AtypeEigendom">typeEigendom</a>, 
-                      <a href="#VMSW%20woning%3AvmswWoningId">vmswWoningId</a>, 
-                      <a href="#VMSW%20woning%3Awijk">wijk</a>, 
-                      <a href="#VMSW%20woning%3AwoningType">woningType</a>, 
-                      <a href="#VMSW%20woning%3AwoonmaatschappijWoningCode">woonmaatschappijWoningCode</a>, 
-                      <a href="#VMSW%20woning%3AwoonmaatschappijWoningGroepCode">woonmaatschappijWoningGroepCode</a>, 
-                      <a href="#VMSW%20woning%3AwoonmaatschappijWoningId">woonmaatschappijWoningId</a>.</dd>
+                      <a href="#Organisatieresource%3Aorganisatieid">OrganisatieId</a>, 
+                      <a href="#Organisatieresource%3Aorganisatietype">OrganisatieType</a>.</dd>
                     
                   </dl>
                 </div>
@@ -229,7 +229,98 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="VMSW%20woning%3Aadres" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#adres">
+                      <tr id="Organisatieresource%3Aorganisatieid" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#organisatieId">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://vmsw.vlaanderen.be/ns/vmsw#organisatieId" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#organisatieId" data-placement="right">
+                            OrganisatieId</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Organisatieresource%3Aorganisatietype" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#organisatieType">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://vmsw.vlaanderen.be/ns/vmsw#organisatieType" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#organisatieType" data-placement="right">
+                            OrganisatieType</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="VmswWoning"><a href="https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning" data-placement="right">VMSW woning</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd></dd>
+                    
+		    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#VmswWoning%3Aadres">adres</a>, 
+                      <a href="#VmswWoning%3Abebouwingstype">bebouwingsType</a>, 
+                      <a href="#VmswWoning%3Abeheerder">Beheerder</a>, 
+                      <a href="#VmswWoning%3Abouwjaar">bouwjaar</a>, 
+                      <a href="#VmswWoning%3Aeigenaar">Eigenaar</a>, 
+                      <a href="#VmswWoning%3Agebouweenheidid">gebouweenheidId</a>, 
+                      <a href="#VmswWoning%3Aorganisatieid">organisatieId</a>, 
+                      <a href="#VmswWoning%3Astatistischesector">statistischeSector</a>, 
+                      <a href="#VmswWoning%3Averhuringsstelsel">VerhuringsStelsel</a>, 
+                      <a href="#VmswWoning%3Avmswwoningid">vmswWoningId</a>, 
+                      <a href="#VmswWoning%3Awijk">wijk</a>, 
+                      <a href="#VmswWoning%3Awoningstatus">WoningStatus</a>, 
+                      <a href="#VmswWoning%3Awoningtype">woningType</a>, 
+                      <a href="#VmswWoning%3Awoonmaatschappijwoningcode">woonmaatschappijWoningCode</a>, 
+                      <a href="#VmswWoning%3Awoonmaatschappijwoninggroepcode">woonmaatschappijWoningGroepCode</a>, 
+                      <a href="#VmswWoning%3Awoonmaatschappijwoningid">woonmaatschappijWoningId</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="VmswWoning%3Aadres" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#adres">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://vmsw.vlaanderen.be/ns/vmsw#adres" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#adres" data-placement="right">
@@ -249,7 +340,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="VMSW%20woning%3AbebouwingsType" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#bebouwingsType">
+                      <tr id="VmswWoning%3Abebouwingstype" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#bebouwingsType">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://vmsw.vlaanderen.be/ns/vmsw#bebouwingsType" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#bebouwingsType" data-placement="right">
@@ -269,7 +360,27 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="VMSW%20woning%3Abouwjaar" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#bouwjaar">
+                      <tr id="VmswWoning%3Abeheerder" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#beheerder">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://vmsw.vlaanderen.be/ns/vmsw#beheerder" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#beheerder" data-placement="right">
+                            Beheerder</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#OrganisatieResource" data-placement="right">OrganisatieResource</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="VmswWoning%3Abouwjaar" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#bouwjaar">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://vmsw.vlaanderen.be/ns/vmsw#bouwjaar" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#bouwjaar" data-placement="right">
@@ -289,18 +400,18 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="VMSW%20woning%3Aeigendom" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#eigendom">
+                      <tr id="VmswWoning%3Aeigenaar" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#eigenaar">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://vmsw.vlaanderen.be/ns/vmsw#eigendom" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#eigendom" data-placement="right">
-                            eigendom</a>
+                            <a href="https://vmsw.vlaanderen.be/ns/vmsw#eigenaar" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#eigenaar" data-placement="right">
+                            Eigenaar</a>
                           </code>
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
-                            
+			    
+			    <a href="#OrganisatieResource" data-placement="right">OrganisatieResource</a>
+			    
                           
                         </td>
                         <td>1</td>
@@ -309,10 +420,10 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="VMSW%20woning%3AgebouweenheidId" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#gebouweenheidId">
+                      <tr id="VmswWoning%3Agebouweenheidid" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#gebouweenheidIds">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://vmsw.vlaanderen.be/ns/vmsw#gebouweenheidId" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#gebouweenheidId" data-placement="right">
+                            <a href="https://vmsw.vlaanderen.be/ns/vmsw#gebouweenheidIds" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#gebouweenheidIds" data-placement="right">
                             gebouweenheidId</a>
                           </code>
                         </td>
@@ -323,13 +434,13 @@
                             
                           
                         </td>
-                        <td>1</td>
+                        <td>1..*</td>
                         <td property="rdfs:comment"></td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
                     
-                      <tr id="VMSW%20woning%3AorganisatieId" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#organisatieId">
+                      <tr id="VmswWoning%3Aorganisatieid" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#organisatieId">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://vmsw.vlaanderen.be/ns/vmsw#organisatieId" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#organisatieId" data-placement="right">
@@ -349,7 +460,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="VMSW%20woning%3AstatistischeSector" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#statistischeSector">
+                      <tr id="VmswWoning%3Astatistischesector" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#statistischeSector">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://vmsw.vlaanderen.be/ns/vmsw#statistischeSector" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#statistischeSector" data-placement="right">
@@ -369,11 +480,11 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="VMSW%20woning%3AtypeEigendom" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#typeEigendom">
+                      <tr id="VmswWoning%3Averhuringsstelsel" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#verhuringsStelsel">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://vmsw.vlaanderen.be/ns/vmsw#typeEigendom" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#typeEigendom" data-placement="right">
-                            typeEigendom</a>
+                            <a href="https://vmsw.vlaanderen.be/ns/vmsw#verhuringsStelsel" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#verhuringsStelsel" data-placement="right">
+                            VerhuringsStelsel</a>
                           </code>
                         </td>
                         <td>
@@ -386,10 +497,10 @@
                         <td>1</td>
                         <td property="rdfs:comment"></td>
                         <td property="vann:usageNote"></td>
-                        <td><a href="www.vmsw.be">Link</a></td>
+                        <td></td>
                       </tr>
                     
-                      <tr id="VMSW%20woning%3AvmswWoningId" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#vmswWoningId">
+                      <tr id="VmswWoning%3Avmswwoningid" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#vmswWoningId">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://vmsw.vlaanderen.be/ns/vmsw#vmswWoningId" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#vmswWoningId" data-placement="right">
@@ -409,7 +520,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="VMSW%20woning%3Awijk" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#wijk">
+                      <tr id="VmswWoning%3Awijk" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#wijk">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://vmsw.vlaanderen.be/ns/vmsw#wijk" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#wijk" data-placement="right">
@@ -429,7 +540,27 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="VMSW%20woning%3AwoningType" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#woningType">
+                      <tr id="VmswWoning%3Awoningstatus" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#woningStatus">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://vmsw.vlaanderen.be/ns/vmsw#woningStatus" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#woningStatus" data-placement="right">
+                            WoningStatus</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="VmswWoning%3Awoningtype" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#woningType">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://vmsw.vlaanderen.be/ns/vmsw#woningType" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#woningType" data-placement="right">
@@ -449,7 +580,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="VMSW%20woning%3AwoonmaatschappijWoningCode" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#woonmaatschappijWoningCode">
+                      <tr id="VmswWoning%3Awoonmaatschappijwoningcode" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#woonmaatschappijWoningCode">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://vmsw.vlaanderen.be/ns/vmsw#woonmaatschappijWoningCode" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#woonmaatschappijWoningCode" data-placement="right">
@@ -469,7 +600,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="VMSW%20woning%3AwoonmaatschappijWoningGroepCode" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#woonmaatschappijWoningGroepCode">
+                      <tr id="VmswWoning%3Awoonmaatschappijwoninggroepcode" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#woonmaatschappijWoningGroepCode">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://vmsw.vlaanderen.be/ns/vmsw#woonmaatschappijWoningGroepCode" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#woonmaatschappijWoningGroepCode" data-placement="right">
@@ -489,7 +620,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="VMSW%20woning%3AwoonmaatschappijWoningId" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#woonmaatschappijWoningId">
+                      <tr id="VmswWoning%3Awoonmaatschappijwoningid" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#woonmaatschappijWoningId">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://vmsw.vlaanderen.be/ns/vmsw#woonmaatschappijWoningId" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#woonmaatschappijWoningId" data-placement="right">
@@ -541,7 +672,7 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="VMSW Adres"><a href="http://www.w3.org/ns/locn#Address" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#Address" data-placement="right">VMSW Adres</a></h3>
+              <h3 class="h3" id="VmswAdres"><a href="http://www.w3.org/ns/locn#Address" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#Address" data-placement="right">VMSW Adres</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -557,12 +688,12 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor dit datatype zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#VMSW%20Adres%3Abusnummer">busnummer</a>, 
-                      <a href="#VMSW%20Adres%3Agemeente%20NIS%20code">gemeente NIS code</a>, 
-                      <a href="#VMSW%20Adres%3Agemeentenaam">gemeentenaam</a>, 
-                      <a href="#VMSW%20Adres%3Ahuisnummer">huisnummer</a>, 
-                      <a href="#VMSW%20Adres%3Apostcode">postcode</a>, 
-                      <a href="#VMSW%20Adres%3Astraatnaam">straatnaam</a>.</dd>
+                      <a href="#VmswAdres%3Abusnummer">busnummer</a>, 
+                      <a href="#VmswAdres%3AgemeenteNisCode">gemeente NIS code</a>, 
+                      <a href="#VmswAdres%3Agemeentenaam">gemeentenaam</a>, 
+                      <a href="#VmswAdres%3Ahuisnummer">huisnummer</a>, 
+                      <a href="#VmswAdres%3Apostcode">postcode</a>, 
+                      <a href="#VmswAdres%3Astraatnaam">straatnaam</a>.</dd>
                     
                   </dl>
                 </div>
@@ -582,7 +713,7 @@
 
                     <tbody class="supertype">
                       
-                      <tr id="VMSW%20Adres%3Abusnummer" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer">
+                      <tr id="VmswAdres%3Abusnummer" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer" data-placement="right">busnummer</a>
@@ -601,7 +732,7 @@
                         <td></td>
                       </tr>
                       
-                      <tr id="VMSW%20Adres%3Agemeente%20NIS%20code" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#gemeenteNISCode">
+                      <tr id="VmswAdres%3AgemeenteNisCode" typeof="rdfs:Property" resource="https://vmsw.vlaanderen.be/ns/vmsw#gemeenteNISCode">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://vmsw.vlaanderen.be/ns/vmsw#gemeenteNISCode" data-toggle="tooltip" data-content="https://vmsw.vlaanderen.be/ns/vmsw#gemeenteNISCode" data-placement="right">gemeente NIS code</a>
@@ -620,7 +751,7 @@
                         <td></td>
                       </tr>
                       
-                      <tr id="VMSW%20Adres%3Agemeentenaam" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/adres#gemeentenaam">
+                      <tr id="VmswAdres%3Agemeentenaam" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/adres#gemeentenaam">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://data.vlaanderen.be/ns/adres#gemeentenaam" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/adres#gemeentenaam" data-placement="right">gemeentenaam</a>
@@ -639,7 +770,7 @@
                         <td></td>
                       </tr>
                       
-                      <tr id="VMSW%20Adres%3Ahuisnummer" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer">
+                      <tr id="VmswAdres%3Ahuisnummer" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer" data-placement="right">huisnummer</a>
@@ -658,7 +789,7 @@
                         <td></td>
                       </tr>
                       
-                      <tr id="VMSW%20Adres%3Apostcode" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#postCode">
+                      <tr id="VmswAdres%3Apostcode" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#postCode">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/ns/locn#postCode" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#postCode" data-placement="right">postcode</a>
@@ -677,7 +808,7 @@
                         <td></td>
                       </tr>
                       
-                      <tr id="VMSW%20Adres%3Astraatnaam" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#thoroughfare">
+                      <tr id="VmswAdres%3Astraatnaam" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#thoroughfare">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/ns/locn#thoroughfare" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#thoroughfare" data-placement="right">straatnaam</a>

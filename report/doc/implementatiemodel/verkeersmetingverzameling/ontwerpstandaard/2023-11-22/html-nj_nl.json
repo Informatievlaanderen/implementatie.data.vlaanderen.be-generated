@@ -48,10 +48,14 @@
           "scoped_uri": "#Meting"
         }
       ],
+      "rawTags": {
+        "label-nl": "Verkeerssnelheidsmeting",
+        "definition-nl": "Het vaststellen van de snelheid van voertuigen op een bepaalde locatie op een bepaald tijdstip of gedurende een specifiek tijdsinterval."
+      },
       "properties": [
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk",
-          "name": "geobserveerdKenmerk",
+          "name": "geobserveerdkenmerk",
           "sort": "geobserveerdKenmerk",
           "label": {
             "nl": "geobserveerdKenmerk"
@@ -82,7 +86,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "xUML": "{redefine geobserveerdKenmerk}",
+            "parentURI": "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk",
+            "label-nl": "geobserveerdKenmerk",
+            "definition-nl": "Object dat door de Verkeerssnelheidsmetingen wordt geobserveerd.\t",
+            "name": "Verkeerssnelheidsmeting.geobserveerdKenmerk"
+          }
         },
         {
           "uri": "http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement.result",
@@ -117,7 +128,13 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "resultaat",
+            "ap-definition-nl": "Resultaat van de Verkeerssnelheidsmeting.",
+            "uri": "http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement.result",
+            "ap-label-nl": "resultaat"
+          }
         }
       ]
     },
@@ -141,6 +158,12 @@
           "scoped_uri": "#Verkeerskenmerk"
         }
       ],
+      "rawTags": {
+        "ap-definition-nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer.",
+        "ap-label-nl": "Verkeerssnelheidsmetingkenmerk",
+        "definition-nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer.",
+        "label-nl": "Verkeerssnelheidsmetingkenmerk"
+      },
       "properties": [
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk.kenmerktype",
@@ -175,7 +198,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "kenmerktype",
+            "definition-nl": "Kenmerktype 'snelheid' is het specifieke kenmerktype van de verkeerssnelheidsmeting",
+            "ap-label-nl": "kenmerktype",
+            "ap-definition-nl": "Kenmerktype 'snelheid' is het specifieke kenmerktype van de verkeerssnelheidsmeting",
+            "name": "Verkeerssnelheidsmetingkenmerk.kenmerktype"
+          }
         }
       ]
     },
@@ -206,6 +236,10 @@
           "scoped_uri": "#Telling"
         }
       ],
+      "rawTags": {
+        "label-nl": "Verkeerstelling",
+        "definition-nl": "Het vaststellen van het aantal voertuigen op een bepaalde locatie op een bepaald tijdstip of gedurende een specifiek tijdsinterval."
+      },
       "properties": [
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#tellingresultaat",
@@ -240,11 +274,16 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "tellingresultaat",
+            "definition-nl": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal).",
+            "parentURI": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
+          }
         },
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.geobserveerdKenmerk",
-          "name": "geobserveerdKenmerk",
+          "name": "geobserveerdkenmerk",
           "sort": "geobserveerdKenmerk",
           "label": {
             "nl": "geobserveerdKenmerk"
@@ -275,7 +314,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "xUML": "{redefine geobserveerdKenmerk}",
+            "label-nl": "geobserveerdKenmerk",
+            "definition-nl": "Object dat door de Verkeerstelling wordt geobserveerd.\t",
+            "parentURI": "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk",
+            "name": "Verkeerstelling.geobserveerdKenmerk"
+          }
         }
       ]
     },
@@ -299,6 +345,12 @@
           "scoped_uri": "#Verkeerskenmerk"
         }
       ],
+      "rawTags": {
+        "ap-definition-nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer.",
+        "ap-label-nl": "Verkeerstellingkenmerk",
+        "definition-nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer.",
+        "label-nl": "Verkeerstellingkenmerk"
+      },
       "properties": [
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk.kenmerktype",
@@ -333,7 +385,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "kenmerktype",
+            "definition-nl": "Kenmerktype 'aantal' is het specifieke kenmerktype van de verkeerstelling",
+            "ap-label-nl": "kenmerktype",
+            "ap-definition-nl": "Kenmerktype 'aantal' is het specifieke kenmerktype van de verkeerstelling",
+            "name": "Verkeerstellingkenmerk.kenmerktype"
+          }
         }
       ]
     },
@@ -351,6 +410,13 @@
         "nl": "In de context van Observaties en Metingen is dit een kenmerk van het geobseveerdObject (of van het bemonsterdObject of een onderdeel daarvan) en in principe van alle instanties van dat type geobserveerdObject. Bv Lichaamstemperatuur, Lithologie, ChemischeSamenstelling (resp van een Persoon, een GeologischeEenheid en - meer indirect - van een Monster genomen op een bepaalde plek in een Rivier)."
       },
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Klasse die kenmerken van instanties van om het even welk type vertegenwoordigt.",
+        "ap-label-nl": "Kenmerktype",
+        "ap-usageNote-nl": "In de context van Observaties en Metingen is dit een kenmerk van het geobseveerdObject (of van het bemonsterdObject of een onderdeel daarvan) en in principe van alle instanties van dat type geobserveerdObject. Bv Lichaamstemperatuur, Lithologie, ChemischeSamenstelling (resp van een Persoon, een GeologischeEenheid en - meer indirect - van een Monster genomen op een bepaalde plek in een Rivier).",
+        "label-nl": "Kenmerktype",
+        "uri": "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType"
+      },
       "properties": []
     },
     {
@@ -367,6 +433,13 @@
         "nl": "Doorgaans bij een Observatie waar het belang van een fenomeen te bepalen door te tellen hoe vaak het voorkomt. Bv het observeren vd opkomst bij een verkiezing,het tellen van bio-indicatoren in een watermonster. Datatype vh resultaat is een Integer."
       },
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Observatie waarbij het resultaat een aantal is.",
+        "ap-label-nl": "Telling",
+        "ap-usageNote-nl": "Doorgaans bij een Observatie waar het belang van een fenomeen te bepalen door te tellen hoe vaak het voorkomt. Bv het observeren vd opkomst bij een verkiezing,het tellen van bio-indicatoren in een watermonster. Datatype vh resultaat is een Integer.",
+        "label-nl": "Telling",
+        "uri": "http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation"
+      },
       "properties": []
     },
     {
@@ -383,6 +456,13 @@
         "nl": "Dit is het werkelijk geobserveerdObject. Als rechtstreeks observeren niet kan observeren we een representatief staal, het zgn Bemonsteringsobject. In dat geval is het Domeinobject het bemonsterdObject. OPMERKING: Deze klasse is louter informatief, in praktijk moet ze gesubstitueerd worden door een klasse uit het domein. Bv in het domein Waterkwaliteit zou het domeinobject een instantie vd klasse Rivier kunnen zijn."
       },
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Object uit de reële wereld dat geen Bemonsteringsobject is.",
+        "ap-label-nl": "Domeinobject",
+        "ap-usageNote-nl": "Dit is het werkelijk geobserveerdObject. Als rechtstreeks observeren niet kan observeren we een representatief staal, het zgn Bemonsteringsobject. In dat geval is het Domeinobject het bemonsterdObject. OPMERKING: Deze klasse is louter informatief, in praktijk moet ze gesubstitueerd worden door een klasse uit het domein. Bv in het domein Waterkwaliteit zou het domeinobject een instantie vd klasse Rivier kunnen zijn.",
+        "label-nl": "Domeinobject",
+        "uri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_DomainFeature"
+      },
       "properties": []
     },
     {
@@ -399,6 +479,13 @@
         "nl": "In de context van Observaties en Metingen is dit het geobserveerdObject waarvan een kenmerk wordt geobserveerd. Het geobserveerdObject kan ook een Object zijn dat de werkelijkheid bemonstert (subklasse Bemonsteringsobject). OPGELET: deze klasse is abstract, ze moet gespecialiseerd worden in functie van het applicatiedomein."
       },
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Klasse die instanties van om het even welk type vertegenwoordigt.",
+        "ap-usageNote-nl": "In de context van Observaties en Metingen is dit het geobserveerdObject waarvan een kenmerk wordt geobserveerd. Het geobserveerdObject kan ook een Object zijn dat de werkelijkheid bemonstert (subklasse Bemonsteringsobject). OPGELET: deze klasse is abstract, ze moet gespecialiseerd worden in functie van het applicatiedomein.",
+        "label-nl": "Object",
+        "uri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
+        "ap-label-nl": "Object"
+      },
       "properties": []
     },
     {
@@ -415,6 +502,13 @@
         "nl": "Doorgaans bij een Observatie waar getracht wordt de kwantatieve waarde van een bepaalde grootheid te bepalen. Bv het wegen van een steenmonster, het meten van de watertemperatuur, het bepalen van de ph van een bodemstaal. Het datatype vh resultaat is een KwantitatieveWaarde, ttz een waarde en een eenheid. De grootheid waarvan sprake is het geobserveerdKenmerk."
       },
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Observatie waarbij het resultaat kwantitatief is.",
+        "ap-label-nl": "Meting",
+        "ap-usageNote-nl": "Doorgaans bij een Observatie waar getracht wordt de kwantatieve waarde van een bepaalde grootheid te bepalen. Bv het wegen van een steenmonster, het meten van de watertemperatuur, het bepalen van de ph van een bodemstaal. Het datatype vh resultaat is een KwantitatieveWaarde, ttz een waarde en een eenheid. De grootheid waarvan sprake is het geobserveerdKenmerk.",
+        "label-nl": "Meting",
+        "uri": "http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement"
+      },
       "properties": []
     },
     {
@@ -431,6 +525,13 @@
         "nl": "Het gaat om schattingen van de waarde, maw op de waarde zit een zekere foutmarge. Voorbeelden zijn temperatuur, klasse, kleur. Dit is verschillend van waarden die zijn toegekend en dus geen schattingen zijn zoals naam of prijs.OPMERKING: Voor meer details over deze klasse zie <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/sensoren-en-bemonstering/\">AP Sensoren en Bemonstering</a>."
       },
       "parents": [],
+      "rawTags": {
+        "label-nl": "Observatie",
+        "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation",
+        "ap-usageNote-nl": "Het gaat om schattingen van de waarde, maw op de waarde zit een zekere foutmarge. Voorbeelden zijn temperatuur, klasse, kleur. Dit is verschillend van waarden die zijn toegekend en dus geen schattingen zijn zoals naam of prijs.OPMERKING: Voor meer details over deze klasse zie <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/sensoren-en-bemonstering/\">AP Sensoren en Bemonstering</a>.",
+        "ap-label-nl": "Observatie",
+        "ap-definition-nl": "Het vaststellen van de waarde van een bepaald kenmerk van een Object op een bepaald tijdstip of tussen twee tijdstippen."
+      },
       "properties": []
     },
     {
@@ -447,6 +548,13 @@
         "nl": "Van het Object dat men wil observeren wordt in dat geval een representatief puntvormig deel beschouwd. Voorbeeld is een (Meet)Station. OPMERKING: Meer info over deze klasse in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/observaties-en-metingen/\">OSLO Observaties en Metingen</a> ."
       },
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Een RuimtelijkBemonsteringsobject dat de vorm aanneemt van een Punt.",
+        "ap-label-nl": "Bemonsteringspunt",
+        "ap-usageNote-nl": "Van het Object dat men wil observeren wordt in dat geval een representatief puntvormig deel beschouwd. Voorbeeld is een (Meet)Station. OPMERKING: Meer info over deze klasse in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/observaties-en-metingen/\">OSLO Observaties en Metingen</a> .",
+        "label-nl": "Bemonsteringspunt",
+        "uri": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint"
+      },
       "properties": []
     },
     {
@@ -463,6 +571,13 @@
         "nl": "In het kader van verkeersmetingen is dit bv het bedrijf dat de metingen uitvoert, of de persoon die manuele tellingen doet etc."
       },
       "parents": [],
+      "rawTags": {
+        "label-nl": "Agent",
+        "uri": "http://purl.org/dc/terms/Agent",
+        "ap-label-nl": "Agent",
+        "ap-definition-nl": "Iemand die of iets dat kan handelen of een effect kan teweeg brengen.",
+        "ap-usageNote-nl": "In het kader van verkeersmetingen is dit bv het bedrijf dat de metingen uitvoert, of de persoon die manuele tellingen doet etc."
+      },
       "properties": []
     },
     {
@@ -479,6 +594,13 @@
         "nl": "In deze context het uitvoeren van Observaties, Bemonstering of de Bediening van Actuators. Neemt in praktijk de vorm aan van een workflow, protocol, plan, algoritme,berekeningswijze etc. OPMERKING: Voor meer details over deze klasse zie <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/sensoren-en-bemonstering/\">AP Sensoren en Bemonstering</a>."
       },
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Vastgelegde of officiële manier om iets te doen.",
+        "ap-label-nl": "Procedure",
+        "label-nl": "Procedure",
+        "uri": "http://www.w3.org/ns/sosa/Procedure",
+        "ap-usageNote-nl": "In deze context het uitvoeren van Observaties, Bemonstering of de Bediening van Actuators. Neemt in praktijk de vorm aan van een workflow, protocol, plan, algoritme,berekeningswijze etc. OPMERKING: Voor meer details over deze klasse zie <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/sensoren-en-bemonstering/\">AP Sensoren en Bemonstering</a>."
+      },
       "properties": []
     },
     {
@@ -510,10 +632,19 @@
           "scoped_uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature"
         }
       ],
+      "rawTags": {
+        "label-nl": "Verkeersbemonsteringsobject",
+        "ap-label-nl": "Verkeersbemonsteringsobject",
+        "ap-definition-nl": "Object dat representatief is voor het object waarvan men het Verkeerskenmerk meet.",
+        "ap-usageNote-nl": "Van belang als men dit object niet rechtstreeks kan observeren. Bvb om de snelheid ve Voertuig te bepalen kan men moeilijk dat Voertuig gaan volgen, in plaats daarvan zet men een meetpunt op langs de weg om te zien hoe snel passerende Voertuigen rijden. Gelijkaardig voor bvb verkeersintensiteit: men telt in een meetpunt langs de weg doorkomsten van Voertuigen en gaat ervan uit dat dit cijfer representatief is voor  het Wegsegment (deel van de weg tussen twee opeenvolgende kruispunten). OPGELET: Deze klasse is abstract, ze mag niet geinstantieerd worden. Gebruik in de plaats de subklassen Verkeersmeetpunt of Verkeersmeettraject",
+        "definition-nl": "Object dat representatief is voor het object waarvan men het Verkeerskenmerk meet.",
+        "usageNote-nl": "Van belang als men dit object niet rechtstreeks kan observeren. Bvb om de snelheid ve Voertuig te bepalen kan men moeilijk dat Voertuig gaan volgen, in plaats daarvan zet men een meetpunt op langs de weg om te zien hoe snel passerende Voertuigen rijden. Gelijkaardig voor bvb verkeersintensiteit: men telt in een meetpunt langs de weg doorkomsten van Voertuigen en gaat ervan uit dat dit cijfer representatief is voor  het Wegsegment (deel van de weg tussen twee opeenvolgende kruispunten). OPGELET: Deze klasse is abstract, ze mag niet geinstantieerd worden. Gebruik in de plaats de subklassen Verkeersmeetpunt of Verkeersmeettraject",
+        "package": "OSLO-Verkeersmetingen"
+      },
       "properties": [
         {
           "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#bemonsterdObject",
-          "name": "bemonsterdObject",
+          "name": "bemonsterdobject",
           "sort": "bemonsterdObject",
           "label": {
             "nl": "bemonsterdObject"
@@ -546,7 +677,16 @@
             }
           ],
           "cardinality": "1..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "bemonsterdObject",
+            "parentURI": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
+            "ap-definition-nl": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is.",
+            "definition-nl": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is.",
+            "ap-label-nl": "bemonsterdObject",
+            "usageNote-nl": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt.",
+            "ap-usageNote-nl": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt."
+          }
         }
       ]
     },
@@ -579,6 +719,15 @@
           "scoped_uri": "#Domeinobject"
         }
       ],
+      "rawTags": {
+        "label-nl": "Verkeersdomeinobject",
+        "ap-label-nl": "Verkeersdomeinobject",
+        "ap-definition-nl": "Object uit het verkeersdomein waarvan men een Verkeerskenmerk meet.",
+        "ap-usageNote-nl": "Hieronder verstaan we een real-world object uit het verkeer, ttz een Voertuig of Verkeersdeelnemer of een Wegsegment of gelijkaardig waarover verkeer plaatsvindt. Vallen hier niet onder: Verkeersbemonsteringsobjecten zoals Verkeersmeetpunten of Verkeersmeettrajecten, dat zijn de objecten die het Verkeersdomein bemonsteren. OPGELET: Deze klasse is abstract, ze mag maw niet geinstantieerd worden. Gebruik in de plaats subklassen zoal Wegsegment, Rijstrook, Voertuig etc.",
+        "definition-nl": "Object uit het verkeersdomein waarvan men een Verkeerskenmerk meet.",
+        "usageNote-nl": "Hieronder verstaan we een real-world object uit het verkeer, ttz een Voertuig of Verkeersdeelnemer of een Wegsegment of gelijkaardig waarover verkeer plaatsvindt. Vallen hier niet onder: Verkeersbemonsteringsobjecten zoals Verkeersmeetpunten of Verkeersmeettrajecten, dat zijn de objecten die het Verkeersdomein bemonsteren. OPGELET: Deze klasse is abstract, ze mag maw niet geinstantieerd worden. Gebruik in de plaats subklassen zoal Wegsegment, Rijstrook, Voertuig etc.",
+        "package": "OSLO-Verkeersmetingen"
+      },
       "properties": []
     },
     {
@@ -603,10 +752,17 @@
           "scoped_uri": "#Kenmerktype"
         }
       ],
+      "rawTags": {
+        "label-nl": "Verkeerskenmerk",
+        "ap-label-nl": "Verkeerskenmerk",
+        "ap-definition-nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer.",
+        "definition-nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer.",
+        "usageNote-nl": "Bvb de gemiddelde snelheid van auto's langs een Meetpunt of de verkeersIntensiteit van fietsen op een Wegsegment bvb uitgedrukt in aantal voertuigen of de snelheid van een individueel Voertuig etc."
+      },
       "properties": [
         {
           "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#voertuigType",
-          "name": "voertuigType",
+          "name": "voertuigtype",
           "sort": "voertuigType",
           "label": {
             "nl": "voertuigType"
@@ -639,7 +795,15 @@
             }
           ],
           "cardinality": "1..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "voertuigType",
+            "ap-label-nl": "voertuigType",
+            "ap-definition-nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet.",
+            "ap-usageNote-nl": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc.",
+            "definition-nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet.",
+            "usageNote-nl": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc."
+          }
         }
       ]
     },
@@ -672,6 +836,14 @@
           "scoped_uri": "#Bemonsteringspunt"
         }
       ],
+      "rawTags": {
+        "label-nl": "Verkeersmeetpunt",
+        "ap-label-nl": "Verkeersmeetpunt",
+        "ap-definition-nl": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet.",
+        "ap-usageNote-nl": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft.",
+        "definition-nl": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet.",
+        "usageNote-nl": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft."
+      },
       "properties": [
         {
           "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#verkeersmeetpuntnetwerkreferentie",
@@ -706,7 +878,12 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "verkeersmeetpuntnetwerkreferentie",
+            "definition-nl": "TODO",
+            "parentURI": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt.netwerkreferentie"
+          }
         },
         {
           "uri": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape",
@@ -743,7 +920,14 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "geometrie",
+            "ap-label-nl": "geometrie",
+            "ap-definition-nl": "Vorm- en positiekenmerken van het meetpunt.",
+            "uri": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape",
+            "ap-usageNote-nl": "Datatype vd geometrie is Punt."
+          }
         }
       ]
     },
@@ -769,6 +953,15 @@
           "scoped_uri": "#Observatie"
         }
       ],
+      "rawTags": {
+        "label-nl": "Verkeersmeting",
+        "ap-label-nl": "Verkeersmeting",
+        "ap-definition-nl": "Het vaststellen van de waarde van een bepaald kenmerk van het verkeer op een bepaald tijdstip of tussen twee tijdstippen.",
+        "ap-usageNote-nl": "Verkeer wordt gedefinieerd als de verplaatsing van objecten zoals personen, vracht, data etc over media zoals land, water, lucht, kabels. In de context van dit applicatieprofiel bedoelen we met verkeer het wegverkeer. Verkeer kan betrekking hebben op objecten die zichzelf verplaatsen (al dan niet met een vervoermiddel) of objecten die vervoerd worden, maar ook op objecten waarover verkeer plaatsvindt. De meting kan het vaststellen van de waarde van een kenmerk van een individueel Voertuig of Verkeersdeelnemer tijdens zijn verplaatsing zijn (bvb zijn snelheid of nummerplaat) of van een kenmerk van de infrastructuur zoals een Wegsegment of een Rijstrook waarover het verkeer zich beweegt (bv de verkeersintensiteit). Verkeersmetingen  zijn Observaties, maw op de waarde zit een zekere foutmarge door de gebruikte meettechniek.\n",
+        "definition-nl": "Het vaststellen van de waarde van een bepaald kenmerk van het verkeer op een bepaald tijdstip of tussen twee tijdstippen.",
+        "usageNote-nl": "Verkeer wordt gedefinieerd als de verplaatsing van objecten zoals personen, vracht, data etc over media zoals land, water, lucht, kabels. Verkeer kan betrekking hebben op objecten die zichzelf verplaatsen (al dan niet met een vervoermiddel) of objecten die vervoerd worden, maar ook op objecten waarover verkeer plaatsvindt. De meting kan het vaststellen van de waarde van een kenmerk van een individueel object tijdens zijn verplaatsing zijn (bvb zijn snelheid) of van een kenmerk van de infrastructuur waarover het verkeer zich beweegt (bv de verkeersintensiteit). Verkeersmetingen  zijn Observaties, maw op de waarde zit een zekere foutmarge door de gebruikte meettechniek.\n",
+        "package": "OSLO-Verkeersmetingen"
+      },
       "properties": []
     },
     {
@@ -793,10 +986,18 @@
           "scoped_uri": "https://www.w3.org/TR/vocab-ssn-ext/#sosa:ObservationCollection"
         }
       ],
+      "rawTags": {
+        "label-nl": "Verkeersmetingverzameling",
+        "ap-label-nl": "Verkeersmetingverzameling",
+        "ap-definition-nl": "Collectie van Verkeersmetingen met dezelfde kenmerken.",
+        "ap-usageNote-nl": "Bv metingen die op hetzelfde tijdstip plaatsvonden of hetzelfde Object of kenmerk observeren of door dezelfde Sensor zijn gemaakt. Bvb de metingen van snelheid, voertuigtype etc in eenzelfde Verkeersmeetpunt of de metingen van verkeersintensiteit per uur op eenzelfde Wegsegment etc.",
+        "definition-nl": "Collectie van Verkeersmetingen met dezelfde kenmerken.",
+        "usageNote-nl": "Bv metingen die op hetzelfde tijdstip plaatsvonden of hetzelfde Object of kenmerk observeren of door dezelfde Sensor zijn gemaakt. Bvb de metingen in eenzelfde Verkeersmeetpunt of de metingen op dezelfde infrastructuur etc."
+      },
       "properties": [
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd",
-          "name": "fenomeenTijd",
+          "name": "fenomeentijd",
           "sort": "fenomeenTijd",
           "label": {
             "nl": "fenomeenTijd"
@@ -829,11 +1030,20 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "fenomeenTijd",
+            "ap-label-nl": "fenomeenTijd",
+            "ap-definition-nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is.",
+            "ap-usageNote-nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn.",
+            "package": "VSDS-Verkeersmetingen",
+            "parentURI": "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime",
+            "definition-nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#heeftLid",
-          "name": "heeftLid",
+          "name": "heeftlid",
           "sort": "heeftLid",
           "label": {
             "nl": "heeftLid"
@@ -864,11 +1074,18 @@
             }
           ],
           "cardinality": "1..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "parentURI": "http://www.w3.org/ns/sosa/hasMember",
+            "definition-nl": "Verkeersmeting die tot de verzameling behoort.",
+            "label-nl": "heeftLid",
+            "ap-definition-nl": "Verkeersmeting die tot de verzameling behoort.",
+            "ap-label-nl": "heeftLid"
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#geobserveerdObject",
-          "name": "geobserveerdObject",
+          "name": "geobserveerdobject",
           "sort": "geobserveerdObject",
           "label": {
             "nl": "geobserveerdObject"
@@ -899,11 +1116,15 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "definition-nl": "TODO",
+            "label-nl": "geobserveerdObject"
+          }
         },
         {
           "uri": "http://www.w3.org/ns/sosa/madeBySensor",
-          "name": "uitgevoerdMet",
+          "name": "uitgevoerdmet",
           "sort": "uitgevoerdMet",
           "label": {
             "nl": "uitgevoerdMet"
@@ -934,7 +1155,13 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "uitgevoerdMet",
+            "ap-definition-nl": "De Sensor waarmee de Verkeersmeting werd uitgevoerd.",
+            "uri": "http://www.w3.org/ns/sosa/madeBySensor",
+            "ap-label-nl": "uitgevoerdMet"
+          }
         }
       ]
     },
@@ -960,6 +1187,15 @@
           "scoped_uri": "#Object"
         }
       ],
+      "rawTags": {
+        "label-nl": "Verkeersobject",
+        "ap-label-nl": "Verkeersobject",
+        "ap-definition-nl": "Object waarop of waarlangs zich verkeer voordoet of dat deel uitmaakt vh verkeer.",
+        "ap-usageNote-nl": "OPGELET: Deze klasse is abstract, ze moet gespecialiseerd worden als Verkeersdomeinobject of als Verkeersbemonsteringsobject. Als Verkeersdomeinobject als de meting direct betrekking heeft op het object dat men wil observeren (bvb een Wegsegment of een Voertuig etc) of als Verkeersbemonsteringsobject als de meting onrechtstreeks gebeurt (bvb via een Verkeersmeetpunt gelegen langs een Wegsegment).",
+        "definition-nl": "Object waarop of waarlangs zich verkeer voordoet of dat deel uitmaakt vh verkeer.",
+        "usageNote-nl": "OPGELET: Deze klasse is abstract, ze moet gespecialiseerd worden als Verkeersdomeinobject of als Verkeersbemonsteringsobject. Als Verkeersdomeinobject als de meting direct betrekking heeft op het object dat men wil observeren of als Verkeersbemonsteringsobject als de meting onrechtstreeks gebeurt (bvb via een Verkeersmeetpunt).",
+        "package": "OSLO-Verkeersmetingen"
+      },
       "properties": []
     },
     {
@@ -984,6 +1220,15 @@
           "scoped_uri": "#Verkeersdomeinobject"
         }
       ],
+      "rawTags": {
+        "label-nl": "Wegobject",
+        "ap-label-nl": "Wegobject",
+        "ap-definition-nl": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt.",
+        "ap-usageNote-nl": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken.",
+        "definition-nl": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt.",
+        "usageNote-nl": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken.",
+        "package": "OSLO-Verkeersmetingen"
+      },
       "properties": []
     },
     {
@@ -998,6 +1243,12 @@
       },
       "usage": {},
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Element in een Netwerk dat daarin een functie van belang vervult.",
+        "ap-label-nl": "Netwerkelement",
+        "label-nl": "Netwerkelement",
+        "uri": "https://data.vlaanderen.be/ns/netwerk#Netwerkelement"
+      },
       "properties": []
     },
     {
@@ -1012,6 +1263,12 @@
       },
       "usage": {},
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Eigenschap van een Transportobject.",
+        "ap-label-nl": "Transporteigenschap",
+        "uri": "https://data.vlaanderen.be/ns/transportnetwerk#Transporteigenschap",
+        "label-nl": "Transporteigenschap"
+      },
       "properties": []
     },
     {
@@ -1028,6 +1285,13 @@
         "nl": "OPMERKING: Voor meer details over deze klasse zie <a href=\"https://data.vlaanderen.be/ns/transportnetwerk/\">APTransportnetwerk</a>."
       },
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Lineair ruimtelijk object dat de geometrie en connectiviteit beschrijft tussen twee punten in een Transportnetwerk.",
+        "ap-label-nl": "Transportlink",
+        "ap-usageNote-nl": "OPMERKING: Voor meer details over deze klasse zie <a href=\"https://data.vlaanderen.be/ns/transportnetwerk/\">APTransportnetwerk</a>.",
+        "label-nl": "Transportlink",
+        "uri": "https://data.vlaanderen.be/ns/transportnetwerk#Transportlink"
+      },
       "properties": []
     },
     {
@@ -1057,6 +1321,12 @@
           "scoped_uri": "#Transporteigenschap"
         }
       ],
+      "rawTags": {
+        "label-nl": "Rijrichting",
+        "uri": "https://data.vlaanderen.be/ns/weg#Rijrichting",
+        "ap-label-nl": "Rijrichting",
+        "ap-definition-nl": "Richting waarin het verkeer zich over de weg beweegt."
+      },
       "properties": [
         {
           "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#netwerkreferentieelement",
@@ -1091,7 +1361,13 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "netwerkreferentieelement",
+            "definition-nl": "Verwijzing naar het Netwerkelement Wegsegment waarvoor de Netwerkeigenschap (bijvoorbeeld rijrichting) geldt.",
+            "parentURI": "https://data.vlaanderen.be/ns/netwerk/#netwerkreferentie",
+            "package": "VSDS-Verkeersmetingen"
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/weg#rijrichting",
@@ -1128,7 +1404,14 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "rijrichting",
+            "uri": "https://data.vlaanderen.be/ns/weg#rijrichting",
+            "ap-label-nl": "rijrichting",
+            "ap-definition-nl": "De rijrichting.",
+            "ap-usageNote-nl": "Deze wordt beschreven tov de richting van de geometrie van de weg: gelijklopend met of tegengesteld aan die richting. De richting van de geometrie wordt bepaald door de volgorde waarin de coördinaten op elkaar volgen."
+          }
         }
       ]
     },
@@ -1161,6 +1444,13 @@
           "scoped_uri": "https://data.vlaanderen.be/ns/transportnetwerk#Transportknoop"
         }
       ],
+      "rawTags": {
+        "label-nl": "Wegknoop",
+        "uri": "https://data.vlaanderen.be/ns/weg#Wegknoop",
+        "ap-label-nl": "Wegknoop",
+        "ap-definition-nl": "Significante positie in het Tansportnetwerk die steeds samenvalt met het begin of het einde van een Wegsegment.",
+        "ap-usageNote-nl": "Typisch een kruispunt van wegen of het begin of einde van een weg."
+      },
       "properties": [
         {
           "uri": "https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie",
@@ -1197,7 +1487,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "geometrie",
+            "uri": "https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie",
+            "ap-label-nl": "geometrie",
+            "ap-definition-nl": "Locatie van de Knoop.",
+            "ap-usageNote-nl": "Weergegeven door een Punt."
+          }
         }
       ]
     },
@@ -1228,6 +1525,12 @@
           "scoped_uri": "#Transportlink"
         }
       ],
+      "rawTags": {
+        "label-nl": "Wegsegment",
+        "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment",
+        "ap-label-nl": "Wegsegment",
+        "ap-definition-nl": "Lineair ruimtelijk object dat de geometrie en connectiviteit beschrijft tussen twee punten in een Wegennetwerk."
+      },
       "properties": [
         {
           "uri": "https://data.vlaanderen.be/ns/netwerk/#beginknoop",
@@ -1262,7 +1565,13 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "beginknoop",
+            "uri": "https://data.vlaanderen.be/ns/netwerk/#beginknoop",
+            "ap-label-nl": "beginknoop",
+            "ap-definition-nl": "Knoop die het begin is van het Wegsegment."
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/netwerk#eindknoop",
@@ -1297,7 +1606,13 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-definition-nl": "Knoop die het einde is van het Wegsegment.",
+            "ap-label-nl": "eindknoop",
+            "uri": "https://data.vlaanderen.be/ns/netwerk#eindknoop",
+            "label-nl": "eindknoop"
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn",
@@ -1332,7 +1647,13 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "geometriemiddenlijn",
+            "ap-label-nl": "geometriemiddenlijn",
+            "ap-definition-nl": "Geometrie van de midellijn van het Wegsegment.",
+            "uri": "https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn"
+          }
         }
       ]
     },
@@ -1358,10 +1679,18 @@
           "scoped_uri": "#Procedure"
         }
       ],
+      "rawTags": {
+        "ap-definition-nl": "Een workflow, protocol, plan, algoritme of berekeningswijze waarin wordt gespecifieerd hoe een Observatie moet worden uitgevoerd.",
+        "ap-label-nl": "Observatieprocedure",
+        "label-nl": "Observatieprocedure",
+        "uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure",
+        "ap-usageNote-nl": "De procedure legt uit welke stappen uitgevoerd moeten worden om een reproduceerbaar resultaat te krijgen. Bv de correcte plaatsing van een windmeter (op een welbepaalde hoogte boven het grondoppervlak, bv 10m voor meteorologische waarnemingen). De procedures zijn doorgaans bedoeld om bij meer dan één Bemonstering te worden toegepast.",
+        "package": "OSLO-Verkeersmetingen"
+      },
       "properties": [
         {
           "uri": "http://www.w3.org/ns/ssn/implementedBy",
-          "name": "geïmplementeerdMet",
+          "name": "geïmplementeerdmet",
           "sort": "geïmplementeerdMet",
           "label": {
             "nl": "geïmplementeerdMet"
@@ -1392,7 +1721,13 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-definition-nl": "Sensor waarmee de Observatieprocedure is of moet worden uitgevoerd.",
+            "ap-label-nl": "geïmplementeerdMet",
+            "label-nl": "geïmplementeerdMet",
+            "uri": "http://www.w3.org/ns/ssn/implementedBy"
+          }
         },
         {
           "uri": "http://purl.org/cd/terms/type",
@@ -1427,7 +1762,13 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "type",
+            "ap-label-nl": "type",
+            "ap-definition-nl": "Aard van de Observatieprocedure.",
+            "uri": "http://purl.org/cd/terms/type"
+          }
         }
       ]
     },
@@ -1445,6 +1786,13 @@
         "nl": "Deze componenten kunnen Systemen op zich zijn. In deze context zijn het Systemen die een Observatieprocedure realiseren (typisch een Sensor) of waarmee een Bemonsteringsprocedure wordt uitgevoerd (bv een Boorinstallatie). OPMERKING: Voor meer details over deze klasse zie <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/sensoren-en-bemonstering/\">AP Sensoren en Bemonstering</a>."
       },
       "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Samenhangend geheel van componenten die samen één of meer functies vervullen.",
+        "ap-label-nl": "Systeem",
+        "ap-usageNote-nl": "Deze componenten kunnen Systemen op zich zijn. In deze context zijn het Systemen die een Observatieprocedure realiseren (typisch een Sensor) of waarmee een Bemonsteringsprocedure wordt uitgevoerd (bv een Boorinstallatie). OPMERKING: Voor meer details over deze klasse zie <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/sensoren-en-bemonstering/\">AP Sensoren en Bemonstering</a>.",
+        "label-nl": "Systeem",
+        "uri": "https://www.w3.org/TR/vocab-ssn/#ssn-system"
+      },
       "properties": []
     },
     {
@@ -1469,6 +1817,13 @@
           "scoped_uri": "#Systeem"
         }
       ],
+      "rawTags": {
+        "ap-definition-nl": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden.",
+        "ap-label-nl": "Sensor",
+        "label-nl": "Sensor",
+        "uri": "https://www.w3.org/ns/sosa/Sensor",
+        "ap-usageNote-nl": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
+      },
       "properties": [
         {
           "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#ligging",
@@ -1505,7 +1860,16 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "ligging",
+            "ap-label-nl": "ligging",
+            "ap-definition-nl": "Locatie van de Sensor.",
+            "package": "OSLO-Verkeersmetingen",
+            "definition-nl": "Locatie van de Sensor.",
+            "ap-usageNote-nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren.",
+            "usageNote-nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
+          }
         },
         {
           "uri": "http://www.w3.org/ns/ssn/implements",
@@ -1540,7 +1904,13 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://www.w3.org/ns/ssn/implements",
+            "ap-definition-nl": "Observatieprocedure die door de Sensor wordt toegepast.",
+            "label-nl": "implementeert",
+            "ap-label-nl": "implementeert"
+          }
         }
       ]
     }
@@ -1567,7 +1937,7 @@
       "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#fenomeenTijd",
       "name": {
         "nl": "fenomeenTijd",
-        "undefined": "fenomeenTijd"
+        "undefined": "fenomeentijd"
       },
       "description": {},
       "domain": [
@@ -1599,7 +1969,7 @@
       "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.geobserveerdKenmerk",
       "name": {
         "nl": "geobserveerdKenmerk",
-        "undefined": "geobserveerdKenmerk"
+        "undefined": "geobserveerdkenmerk"
       },
       "description": {},
       "domain": [
@@ -1631,7 +2001,7 @@
       "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk",
       "name": {
         "nl": "geobserveerdKenmerk",
-        "undefined": "geobserveerdKenmerk"
+        "undefined": "geobserveerdkenmerk"
       },
       "description": {},
       "domain": [
@@ -1672,6 +2042,12 @@
       },
       "usage": {},
       "parents": [],
+      "rawTags": {
+        "label-nl": "Lengte",
+        "uri": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Length",
+        "ap-label-nl": "Lengte",
+        "ap-definition-nl": "Afstand tussen twee punten."
+      },
       "properties": []
     },
     {
@@ -1682,6 +2058,7 @@
       "description": {},
       "usage": {},
       "parents": [],
+      "rawTags": {},
       "properties": []
     },
     {
@@ -1706,6 +2083,13 @@
           "scoped_uri": "#Geometrie"
         }
       ],
+      "rawTags": {
+        "label-nl": "lijnstring",
+        "ap-label-nl": "Lijnstring",
+        "ap-definition-nl": "Curve met lineaire interpolatie tussen de punten. Elk opeenvolgend paar punten vormt een lijnsegment. De lijnstring heeft ten minste twee punten.",
+        "ap-usageNote-nl": "Een curve is een 1-dimensioneel geometrisch object gedefinieerd als een sequentie van punten. De interpolatie kan op verschillende manieren gebeuren (bv lineair bij een lijnstring).",
+        "uri": "http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#LineString"
+      },
       "properties": []
     },
     {
@@ -1728,6 +2112,12 @@
           "scoped_uri": "#Geometrie"
         }
       ],
+      "rawTags": {
+        "label-nl": "punt",
+        "ap-label-nl": "Punt",
+        "ap-definition-nl": "en 0-dimensioneel geometrisch object dat een bepaalde locatie in een coördinaatruimte voorstelt. Heeft een x-coördinaat en een y-coördinaat. Kan ook een z-coördinaat (hoogte) en een m-coördinaat (afstand langs een curve) hebben.",
+        "uri": "http://www.opengis.net/ont/sf#Point"
+      },
       "properties": []
     },
     {
@@ -1744,10 +2134,17 @@
         "nl": "Beschrijft deze kenmerken dmv punten, lijnen, polygonen en coördinaten"
       },
       "parents": [],
+      "rawTags": {
+        "label-nl": "geometrie",
+        "uri": "http://www.w3.org/ns/locn#Geometry",
+        "ap-label-nl": "Geometrie",
+        "ap-definition-nl": "Vorm- en positiekenmerken van een object.",
+        "ap-usageNote-nl": "Beschrijft deze kenmerken dmv punten, lijnen, polygonen en coördinaten"
+      },
       "properties": [
         {
           "uri": "http://www.opengis.net/ont/geosparql#asWKT",
-          "name": "WKT",
+          "name": "wkt",
           "sort": "WKT",
           "label": {
             "nl": "WKT"
@@ -1780,11 +2177,18 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "WKT",
+            "ap-label-nl": "WKT",
+            "ap-definition-nl": "Geometrie uitgedrukt in wkt-formaat.",
+            "ap-usageNote-nl": "Gebruik http://www.opengis.net/ont/geosparql#wktLiteral als datatype.",
+            "uri": "http://www.opengis.net/ont/geosparql#asWKT"
+          }
         },
         {
           "uri": "http://www.opengis.net/ont/geosparql#asGML",
-          "name": "GML",
+          "name": "gml",
           "sort": "GML",
           "label": {
             "nl": "GML"
@@ -1817,7 +2221,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "GML",
+            "ap-label-nl": "GML",
+            "ap-definition-nl": "Geometrie uitgedrukt in gml-formaat.",
+            "ap-usageNote-nl": "Gebruik http://www.opengis.net/ont/geosparql#gmlLiteral als datatype.",
+            "uri": "http://www.opengis.net/ont/geosparql#asGML"
+          }
         }
       ]
     },
@@ -1835,11 +2246,18 @@
         "nl": "Te gebruiken als de manier waarop de geografische positie wordt aangeduid pas zal worden vastgelegd bij implementatie. Is deze manier nu al gekend dan moet dit datatype gesubstitueerd worden door klassen of datatypes zoals Geometrie, GeografischeNaam, Adres etc. OPMERKING: Meer info over deze klassen/datatypes in het applicatieprofiel OSLO Generiek - basis."
       },
       "parents": [],
+      "rawTags": {
+        "label-nl": "Locatie",
+        "ap-label-nl": "Locatie",
+        "ap-definition-nl": "Aanduiding van een geografische positie, dmv coördinaten, een toponiem, een adreslabel, een verwijzing naar een plaats/regio, een verwijzing naar een adres of een verwijzing naar een geografisch object.",
+        "ap-usageNote-nl": "Te gebruiken als de manier waarop de geografische positie wordt aangeduid pas zal worden vastgelegd bij implementatie. Is deze manier nu al gekend dan moet dit datatype gesubstitueerd worden door klassen of datatypes zoals Geometrie, GeografischeNaam, Adres etc. OPMERKING: Meer info over deze klassen/datatypes in het applicatieprofiel OSLO Generiek - basis.",
+        "uri": "http://www.w3.org/ns/prov#Location"
+      },
       "properties": []
     },
     {
       "uri": "https://data.vlaanderen.be/ns/netwerk#LineaireReferentie",
-      "name": "LineaireReferentie",
+      "name": "Lineairereferentie",
       "label": {
         "nl": "LineaireReferentie"
       },
@@ -1859,10 +2277,17 @@
           "scoped_uri": "#Linkreferentie"
         }
       ],
+      "rawTags": {
+        "label-nl": "lineaire referentie",
+        "ap-label-nl": "LineaireReferentie",
+        "ap-definition-nl": "Netwerkreferentie beperkt tot een deel van de Link of Linksequentie waarnaar ze verwijst.",
+        "uri": "https://data.vlaanderen.be/ns/netwerk#LineaireReferentie",
+        "ap-usageNote-nl": "Het deel waarvan sprake ligt tiussen de vanPositie en de totPositie op de Link of Linksequentie."
+      },
       "properties": [
         {
           "uri": "https://data.vlaanderen.be/ns/weg#vanPositie",
-          "name": "vanPositie",
+          "name": "vanpositie",
           "sort": "vanPositie",
           "label": {
             "nl": "vanPositie"
@@ -1893,11 +2318,17 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "van positie",
+            "ap-label-nl": "vanPositie",
+            "ap-definition-nl": "Afstand vanaf het begin van de Link of Linksequentie tot waar de Netwerkeigenschap geldt.",
+            "uri": "https://data.vlaanderen.be/ns/netwerk#LineaireReferentie.vanPositie"
+          }
         },
         {
           "uri": "https://data.vlaanderen.be/ns/weg#totPositie",
-          "name": "totPositie",
+          "name": "totpositie",
           "sort": "totPositie",
           "label": {
             "nl": "totPositie"
@@ -1928,7 +2359,13 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "tot positie",
+            "ap-label-nl": "totPositie",
+            "ap-definition-nl": "Afstand vanaf het begin van de Link of Linksequentie vanaf waar de Netwerkeigenschap geldt.",
+            "uri": "https://data.vlaanderen.be/ns/netwerk#LineaireReferentie.totPositie"
+          }
         }
       ]
     },
@@ -1952,10 +2389,16 @@
           "scoped_uri": "#Netwerkreferentie"
         }
       ],
+      "rawTags": {
+        "label-nl": "linkreferentie",
+        "ap-label-nl": "Linkreferentie",
+        "ap-definition-nl": "Netwerkreferentie waarbij het Netwerkelement waar naar verwezen wordt een Link of Linksequentie is.",
+        "uri": "https://data.vlaanderen.be/ns/netwerk#Linkreferentie"
+      },
       "properties": [
         {
           "uri": "https://data.vlaanderen.be/ns/netwerk#toepassingsRichting",
-          "name": "toepassingsRichting",
+          "name": "toepassingsrichting",
           "sort": "toepassingsRichting",
           "label": {
             "nl": "toepassingsRichting"
@@ -1988,7 +2431,14 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "toepassingsrichting",
+            "ap-label-nl": "toepassingsRichting",
+            "ap-definition-nl": "Richting waarvoor de Netwerkeigenschap geldt tov de richting van de geometrie van de Link of Linksequentie.",
+            "uri": "https://data.vlaanderen.be/ns/netwerk#toepassingsRichting",
+            "ap-usageNote-nl": "Mogelijke richtingen zijn gelijklopend met de geometrie, tegengesteld aan de geometrie of beide. Indien gelijklopend of tegengesteld wordt verondersteld dat de eigenschap voorkomt aan de rechterkant van de Link volgens die richting. Bvb als de toepassingsrichting van de straatverlichting gelijklopend is wil dat zeggen dat rechts van de Link straatverlichting aanwezig is."
+          }
         }
       ]
     },
@@ -2006,6 +2456,13 @@
         "nl": "Bvb het Wegsegment waarlangs er straatverlichting is, de Wegknoop met verkeerslichten etc."
       },
       "parents": [],
+      "rawTags": {
+        "label-nl": "netwerkreferentie",
+        "ap-label-nl": "Netwerkreferentie",
+        "ap-definition-nl": "Verwijzing naar het Netwerkelement waarvoor de Netwerkeigenschap geldt.",
+        "uri": "https://data.vlaanderen.be/ns/netwerk#Netwerkreferentie",
+        "ap-usageNote-nl": "Bvb het Wegsegment waarlangs er straatverlichting is, de Wegknoop met verkeerslichten etc."
+      },
       "properties": [
         {
           "uri": "https://data.vlaanderen.be/ns/netwerk#Netwerkreferentie.element",
@@ -2040,7 +2497,13 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "element",
+            "ap-label-nl": "element",
+            "ap-definition-nl": "Verwijzing naar het Netwerkelement.",
+            "uri": "https://data.vlaanderen.be/ns/netwerk#Netwerkreferentie.element"
+          }
         }
       ]
     },
@@ -2064,10 +2527,16 @@
           "scoped_uri": "#Linkreferentie"
         }
       ],
+      "rawTags": {
+        "label-nl": "puntreferentie",
+        "ap-label-nl": "Puntreferentie",
+        "ap-definition-nl": "Netwerkreferentie beperkt tot een punt langs de Link of Linksequentie waarnaar ze verwijst.",
+        "uri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie"
+      },
       "properties": [
         {
           "uri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie.opPositie",
-          "name": "opPositie",
+          "name": "oppositie",
           "sort": "opPositie",
           "label": {
             "nl": "opPositie"
@@ -2098,7 +2567,13 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "op positie",
+            "ap-label-nl": "opPositie",
+            "ap-definition-nl": "Afstand vanaf het begin van de Link of Linksequentie tot het punt waar de Netwerkeigenschap geldt.",
+            "uri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie.opPositie"
+          }
         }
       ]
     }

@@ -83,6 +83,63 @@
   "branchtag": "main",
   "classes": [
     {
+      "@id": "https://vmsw.vlaanderen.be/ns/vmsw#OrganisatieResource",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{F2F0660D-7019-4b72-92F9-B39334737FB6}",
+      "ap-definition-nl": {
+        "nl": "Gegevens over een organisatie"
+      },
+      "ap-label-nl": {
+        "nl": "OrganisatieResource"
+      },
+      "definition": {
+        "nl": "Gegevens over een organisatie"
+      },
+      "extra": {
+        "EA-Guid": "{F2F0660D-7019-4b72-92F9-B39334737FB6}",
+        "EA-Name": "OrganisatieResource",
+        "EA-Package": "VMSW",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "OrganisatieResource"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Gegevens over een organisatie"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Gegevens over een organisatie"
+        },
+        "ap-label-nl": {
+          "nl": "OrganisatieResource"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Gegevens over een organisatie"
+        },
+        "label": {
+          "nl": "OrganisatieResource"
+        },
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "OrganisatieResource"
+      },
+      "name": "Organisatieresource",
+      "parents": []
+    },
+    {
       "@id": "https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{E4CD885B-8B31-46c7-9261-7235CF24CBAA}",
@@ -126,7 +183,7 @@
       "label": {
         "nl": "VMSW woning"
       },
-      "name": "VMSW woning",
+      "name": "VmswWoning",
       "parents": []
     }
   ],
@@ -135,7 +192,7 @@
   "contributors-column": "VMSW",
   "contributors-file": "stakeholders.csv",
   "diagram": "VMSW-Implementatiemodel",
-  "documentcommit": "280a428e2f1c2e4e79dfec96119132b310087f22",
+  "documentcommit": "2eeb3e28def0eb47a2a060b8d4e47b1573a800ae",
   "dummy": 25,
   "eap": "VMSW.eap",
   "editors": [
@@ -143,6 +200,12 @@
       "@type": "foaf:Person",
       "foaf:firstName": "Nick",
       "foaf:lastName": "De Decker"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Maarten ",
+      "foaf:lastName": "De Muynck",
+      "foaf:mbox": "maarten.demuynck@vlaanderen.be"
     },
     {
       "@type": "foaf:Person",
@@ -625,7 +688,7 @@
       "label": {
         "nl": "VMSW Adres"
       },
-      "name": "VMSW Adres",
+      "name": "VmswAdres",
       "usage": {
         "nl": "een adres(voorstelling) volgens VMSW."
       }
@@ -857,12 +920,82 @@
       },
       "maxCardinality": "1",
       "minCardinality": "1",
-      "name": "bebouwingsType",
+      "name": "bebouwingstype",
       "range": [
         {
           "EA-Name": "String",
           "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ]
+    },
+    {
+      "@id": "https://vmsw.vlaanderen.be/ns/vmsw#beheerder",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{11EEB2B3-DA94-4198-BB00-F8788C6B7993}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "Beheerder"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "VmswWoning",
+          "uri": "https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "VmswWoning",
+        "EA-Domain-Guid": "{E4CD885B-8B31-46c7-9261-7235CF24CBAA}",
+        "EA-Guid": "{11EEB2B3-DA94-4198-BB00-F8788C6B7993}",
+        "EA-Name": "beheerder",
+        "EA-Package": "VMSW",
+        "EA-Range": "OrganisatieResource",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{F2F0660D-7019-4b72-92F9-B39334737FB6}",
+          "EA-Name": "OrganisatieResource",
+          "EA-Package": "VMSW",
+          "uri": "https://vmsw.vlaanderen.be/ns/vmsw#OrganisatieResource"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Beheerder"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "Beheerder"
+        },
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": {
+          "nl": "Beheerder"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "Beheerder"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "beheerder",
+      "range": [
+        {
+          "EA-GUID": "{F2F0660D-7019-4b72-92F9-B39334737FB6}",
+          "EA-Name": "OrganisatieResource",
+          "EA-Package": "VMSW",
+          "uri": "https://vmsw.vlaanderen.be/ns/vmsw#OrganisatieResource"
         }
       ]
     },
@@ -935,14 +1068,14 @@
       ]
     },
     {
-      "@id": "https://vmsw.vlaanderen.be/ns/vmsw#eigendom",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{6E87EBF5-30AF-4305-A91A-3F5B0D3B8A4B}",
+      "@id": "https://vmsw.vlaanderen.be/ns/vmsw#eigenaar",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{1ED04A10-F1C9-42cd-AE1F-0CA1DB8680C6}",
       "ap-definition-nl": {
         "nl": "TODO"
       },
       "ap-label-nl": {
-        "nl": "eigendom"
+        "nl": "Eigenaar"
       },
       "codelist": [],
       "domain": [
@@ -954,21 +1087,22 @@
       "extra": {
         "EA-Domain": "VmswWoning",
         "EA-Domain-Guid": "{E4CD885B-8B31-46c7-9261-7235CF24CBAA}",
-        "EA-Guid": "{6E87EBF5-30AF-4305-A91A-3F5B0D3B8A4B}",
-        "EA-Name": "eigendom",
+        "EA-Guid": "{1ED04A10-F1C9-42cd-AE1F-0CA1DB8680C6}",
+        "EA-Name": "eigenaar",
         "EA-Package": "VMSW",
-        "EA-Range": "String",
+        "EA-Range": "OrganisatieResource",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-Name": "String",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
+          "EA-GUID": "{F2F0660D-7019-4b72-92F9-B39334737FB6}",
+          "EA-Name": "OrganisatieResource",
+          "EA-Package": "VMSW",
+          "uri": "https://vmsw.vlaanderen.be/ns/vmsw#OrganisatieResource"
         },
         "RawTags": [
           {
             "key": "label-nl",
             "note": "null",
-            "value": "eigendom"
+            "value": "Eigenaar"
           }
         ],
         "Scope": "FULL_DEFINITON",
@@ -977,33 +1111,34 @@
           "nl": "TODO"
         },
         "ap-label-nl": {
-          "nl": "eigendom"
+          "nl": "Eigenaar"
         },
         "ap-usageNote-nl": "",
         "definition": "",
         "label": {
-          "nl": "eigendom"
+          "nl": "Eigenaar"
         },
         "usage": ""
       },
       "generalization": [],
       "inpackage": "ACTIVE_PACKAGE",
       "label": {
-        "nl": "eigendom"
+        "nl": "Eigenaar"
       },
       "maxCardinality": "1",
       "minCardinality": "1",
-      "name": "eigendom",
+      "name": "eigenaar",
       "range": [
         {
-          "EA-Name": "String",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
+          "EA-GUID": "{F2F0660D-7019-4b72-92F9-B39334737FB6}",
+          "EA-Name": "OrganisatieResource",
+          "EA-Package": "VMSW",
+          "uri": "https://vmsw.vlaanderen.be/ns/vmsw#OrganisatieResource"
         }
       ]
     },
     {
-      "@id": "https://vmsw.vlaanderen.be/ns/vmsw#gebouweenheidId",
+      "@id": "https://vmsw.vlaanderen.be/ns/vmsw#gebouweenheidIds",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{4700B907-82CB-4dd5-BD91-8F34D67122DC}",
       "ap-definition-nl": {
@@ -1023,7 +1158,7 @@
         "EA-Domain": "VmswWoning",
         "EA-Domain-Guid": "{E4CD885B-8B31-46c7-9261-7235CF24CBAA}",
         "EA-Guid": "{4700B907-82CB-4dd5-BD91-8F34D67122DC}",
-        "EA-Name": "gebouweenheidId",
+        "EA-Name": "gebouweenheidIds",
         "EA-Package": "VMSW",
         "EA-Range": "String",
         "EA-Type": "attribute",
@@ -1059,9 +1194,9 @@
       "label": {
         "nl": "gebouweenheidId"
       },
-      "maxCardinality": "1",
+      "maxCardinality": "*",
       "minCardinality": "1",
-      "name": "gebouweenheidId",
+      "name": "gebouweenheidid",
       "range": [
         {
           "EA-Name": "String",
@@ -1139,7 +1274,7 @@
       },
       "maxCardinality": "1",
       "minCardinality": "1",
-      "name": "gemeente NIS code",
+      "name": "gemeenteNisCode",
       "range": [
         {
           "EA-Name": "String",
@@ -1207,7 +1342,143 @@
       },
       "maxCardinality": "1",
       "minCardinality": "1",
-      "name": "organisatieId",
+      "name": "organisatieid",
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ]
+    },
+    {
+      "@id": "https://vmsw.vlaanderen.be/ns/vmsw#organisatieId",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{14024F33-4A86-4a59-BCD4-19B09C6D0FD4}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "OrganisatieId"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "OrganisatieResource",
+          "uri": "https://vmsw.vlaanderen.be/ns/vmsw#OrganisatieResource"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "OrganisatieResource",
+        "EA-Domain-Guid": "{F2F0660D-7019-4b72-92F9-B39334737FB6}",
+        "EA-Guid": "{14024F33-4A86-4a59-BCD4-19B09C6D0FD4}",
+        "EA-Name": "organisatieId",
+        "EA-Package": "VMSW",
+        "EA-Range": "String",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "OrganisatieId"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "OrganisatieId"
+        },
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": {
+          "nl": "OrganisatieId"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "OrganisatieId"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "organisatieid",
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ]
+    },
+    {
+      "@id": "https://vmsw.vlaanderen.be/ns/vmsw#organisatieType",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{99E2EFA6-B194-49eb-8F61-C335F85F3FA3}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "OrganisatieType"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "OrganisatieResource",
+          "uri": "https://vmsw.vlaanderen.be/ns/vmsw#OrganisatieResource"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "OrganisatieResource",
+        "EA-Domain-Guid": "{F2F0660D-7019-4b72-92F9-B39334737FB6}",
+        "EA-Guid": "{99E2EFA6-B194-49eb-8F61-C335F85F3FA3}",
+        "EA-Name": "organisatieType",
+        "EA-Package": "VMSW",
+        "EA-Range": "String",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "OrganisatieType"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "OrganisatieType"
+        },
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": {
+          "nl": "OrganisatieType"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "OrganisatieType"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "organisatietype",
       "range": [
         {
           "EA-Name": "String",
@@ -1275,7 +1546,7 @@
       },
       "maxCardinality": "1",
       "minCardinality": "1",
-      "name": "statistischeSector",
+      "name": "statistischesector",
       "range": [
         {
           "EA-Name": "String",
@@ -1285,15 +1556,14 @@
       ]
     },
     {
-      "@id": "https://vmsw.vlaanderen.be/ns/vmsw#typeEigendom",
+      "@id": "https://vmsw.vlaanderen.be/ns/vmsw#verhuringsStelsel",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{7155B5B8-0A00-4265-9EE3-02D8E7BCEF21}",
-      "ap-codelist": "www.vmsw.be",
+      "EA-Guid": "{CD0D84A5-6E7C-4030-8D64-DB63CE5E91FA}",
       "ap-definition-nl": {
         "nl": "TODO"
       },
       "ap-label-nl": {
-        "nl": "typeEigendom"
+        "nl": "VerhuringsStelsel"
       },
       "codelist": [],
       "domain": [
@@ -1305,8 +1575,8 @@
       "extra": {
         "EA-Domain": "VmswWoning",
         "EA-Domain-Guid": "{E4CD885B-8B31-46c7-9261-7235CF24CBAA}",
-        "EA-Guid": "{7155B5B8-0A00-4265-9EE3-02D8E7BCEF21}",
-        "EA-Name": "typeEigendom",
+        "EA-Guid": "{CD0D84A5-6E7C-4030-8D64-DB63CE5E91FA}",
+        "EA-Name": "verhuringsStelsel",
         "EA-Package": "VMSW",
         "EA-Range": "String",
         "EA-Type": "attribute",
@@ -1319,37 +1589,32 @@
           {
             "key": "label-nl",
             "note": "null",
-            "value": "typeEigendom"
-          },
-          {
-            "key": "ap-codelist",
-            "note": "null",
-            "value": "www.vmsw.be"
+            "value": "VerhuringsStelsel"
           }
         ],
         "Scope": "FULL_DEFINITON",
-        "ap-codelist": "www.vmsw.be",
+        "ap-codelist": "",
         "ap-definition-nl": {
           "nl": "TODO"
         },
         "ap-label-nl": {
-          "nl": "typeEigendom"
+          "nl": "VerhuringsStelsel"
         },
         "ap-usageNote-nl": "",
         "definition": "",
         "label": {
-          "nl": "typeEigendom"
+          "nl": "VerhuringsStelsel"
         },
         "usage": ""
       },
       "generalization": [],
       "inpackage": "ACTIVE_PACKAGE",
       "label": {
-        "nl": "typeEigendom"
+        "nl": "VerhuringsStelsel"
       },
       "maxCardinality": "1",
       "minCardinality": "1",
-      "name": "typeEigendom",
+      "name": "verhuringsstelsel",
       "range": [
         {
           "EA-Name": "String",
@@ -1417,7 +1682,7 @@
       },
       "maxCardinality": "1",
       "minCardinality": "1",
-      "name": "vmswWoningId",
+      "name": "vmswwoningid",
       "range": [
         {
           "EA-Name": "String",
@@ -1495,6 +1760,74 @@
       ]
     },
     {
+      "@id": "https://vmsw.vlaanderen.be/ns/vmsw#woningStatus",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{9CFBDCE3-DA10-42f1-8BB2-3C4E97756E1C}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "WoningStatus"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "VmswWoning",
+          "uri": "https://vmsw.vlaanderen.be/ns/vmsw#VmswWoning"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "VmswWoning",
+        "EA-Domain-Guid": "{E4CD885B-8B31-46c7-9261-7235CF24CBAA}",
+        "EA-Guid": "{9CFBDCE3-DA10-42f1-8BB2-3C4E97756E1C}",
+        "EA-Name": "woningStatus",
+        "EA-Package": "VMSW",
+        "EA-Range": "String",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "WoningStatus"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "WoningStatus"
+        },
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": {
+          "nl": "WoningStatus"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "WoningStatus"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "woningstatus",
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ]
+    },
+    {
       "@id": "https://vmsw.vlaanderen.be/ns/vmsw#woningType",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{EF6A6651-BFD3-4eb9-A714-7AB68556DAEE}",
@@ -1553,7 +1886,7 @@
       },
       "maxCardinality": "1",
       "minCardinality": "1",
-      "name": "woningType",
+      "name": "woningtype",
       "range": [
         {
           "EA-Name": "String",
@@ -1621,7 +1954,7 @@
       },
       "maxCardinality": "1",
       "minCardinality": "1",
-      "name": "woonmaatschappijWoningCode",
+      "name": "woonmaatschappijwoningcode",
       "range": [
         {
           "EA-Name": "String",
@@ -1689,7 +2022,7 @@
       },
       "maxCardinality": "1",
       "minCardinality": "1",
-      "name": "woonmaatschappijWoningGroepCode",
+      "name": "woonmaatschappijwoninggroepcode",
       "range": [
         {
           "EA-Name": "String",
@@ -1757,7 +2090,7 @@
       },
       "maxCardinality": "1",
       "minCardinality": "1",
-      "name": "woonmaatschappijWoningId",
+      "name": "woonmaatschappijwoningid",
       "range": [
         {
           "EA-Name": "String",
@@ -1774,7 +2107,7 @@
   "standaardregisterurl": "",
   "template": "vmsw.j2",
   "title": "ImplementatieModel VMSW",
-  "toolchaincommit": "eb75c7342110092c39f117913a3415ce44b4e51f",
+  "toolchaincommit": "7961d06b0089696ee7dda0ab146cddd7953fcc7d",
   "translation": [
     {
       "language": "nl",
