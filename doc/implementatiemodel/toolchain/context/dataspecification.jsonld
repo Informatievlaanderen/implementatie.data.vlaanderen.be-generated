@@ -1,131 +1,217 @@
 {
   "@context": {
     "AssociationClass": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#AssociationClass",
-    "Class": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class",
-    "Class.parent": {
-      "@container": "@set",
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class.parent.target",
-      "@type": "@id"
+    "Class": {
+      "@context": {
+        "(source)": {
+          "@container": "@set",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class.parent.source",
+          "@type": "@id"
+        },
+        "(target)": {
+          "@container": "@set",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class.parent.target",
+          "@type": "@id"
+        },
+        "definition": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "label": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#label",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "scope": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope",
+          "@type": "@id"
+        },
+        "uri": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "usagenote": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      },
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Class"
     },
-    "DataProperty": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataProperty",
-    "DataType": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType",
-    "DestRoleTag": {
-      "@container": "@set",
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#destRoleTag",
-      "@type": "@id"
+    "DataProperty": {
+      "@context": {
+        "range": {
+          "@container": "@set",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#range",
+          "@type": "@id"
+        }
+      },
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataProperty"
     },
-    "Diagram": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Diagram",
-    "EA-Element": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element",
-    "EA-Tag": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag",
+    "DataType": {
+      "@context": {
+        "definition": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "label": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#label",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "scope": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope",
+          "@type": "@id"
+        },
+        "uri": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "usagenote": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      },
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#DataType"
+    },
+    "Diagram": {
+      "@context": {
+        "class": {
+          "@container": "@set",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#class",
+          "@type": "@id"
+        },
+        "datatype": {
+          "@container": "@set",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#datatype",
+          "@type": "@id"
+        },
+        "licence": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#licence",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "property": {
+          "@container": "@set",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#property",
+          "@type": "@id"
+        }
+      },
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Diagram"
+    },
+    "EA-Element": {
+      "@context": {
+        "DestRoleTag": {
+          "@container": "@set",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#destRoleTag",
+          "@type": "@id"
+        },
+        "SoureRoleTag": {
+          "@container": "@set",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#soureRoleTag",
+          "@type": "@id"
+        },
+        "elementTag": {
+          "@container": "@set",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#elementTag",
+          "@type": "@id"
+        },
+        "guid": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#guid",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "name": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#name",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      },
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Element"
+    },
+    "EA-Tag": {
+      "@context": {
+        "key": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#key",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "note": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#note",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "value": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#value",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      },
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#EA-Tag"
+    },
     "External": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#External",
     "LangString": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-    "ObjectProperty": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ObjectProperty",
-    "Package": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Package",
+    "ObjectProperty": {
+      "@context": {
+        "codelist": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#codelist",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "range": {
+          "@container": "@set",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#range",
+          "@type": "@id"
+        }
+      },
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#ObjectProperty"
+    },
+    "Package": {
+      "@context": {
+        "baseuri": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#baseuri",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      },
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Package"
+    },
     "PredefinedDatatype": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#PredefinedDatatype",
-    "Property": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property",
-    "Property.parent": {
-      "@container": "@set",
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#parent",
-      "@type": "@id"
-    },
-    "SoureRoleTag": {
-      "@container": "@set",
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#soureRoleTag",
-      "@type": "@id"
-    },
-    "baseuri": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#baseuri",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "class": {
-      "@container": "@set",
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#class",
-      "@type": "@id"
-    },
-    "codelist": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#codelist",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "datatype": {
-      "@container": "@set",
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#datatype",
-      "@type": "@id"
-    },
-    "definition": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    },
-    "derived": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#derived",
-      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-    },
-    "domain": {
-      "@container": "@set",
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#domain",
-      "@type": "@id"
-    },
-    "elementTag": {
-      "@container": "@set",
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#elementTag",
-      "@type": "@id"
-    },
-    "guid": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#guid",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "key": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#key",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "label": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#label",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    },
-    "licence": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#licence",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "maxcard": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#maxcard",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "mincard": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#mincard",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "name": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#name",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "note": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#note",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "property": {
-      "@container": "@set",
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#property",
-      "@type": "@id"
-    },
-    "range": {
-      "@container": "@set",
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#range",
-      "@type": "@id"
-    },
-    "scope": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope",
-      "@type": "@id"
-    },
-    "uri": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "usagenote": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    },
-    "value": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#value",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    "Property": {
+      "@context": {
+        "definition": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#definition",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "derived": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#derived",
+          "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "domain": {
+          "@container": "@set",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#domain",
+          "@type": "@id"
+        },
+        "label": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#label",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "maxcard": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#maxcard",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "mincard": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#mincard",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "parent": {
+          "@container": "@set",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#parent",
+          "@type": "@id"
+        },
+        "scope": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#scope",
+          "@type": "@id"
+        },
+        "uri": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#uri",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "usagenote": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#usagenote",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      },
+      "@id": "https://implementatie.data.vlaanderen.be/ns/OSLO-toolchain#Property"
     }
   }
 }

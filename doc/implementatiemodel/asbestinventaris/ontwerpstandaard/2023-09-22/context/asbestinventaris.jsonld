@@ -1,125 +1,190 @@
 {
   "@context": {
     "Afvalfiche": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Afvalfiche",
-    "Analyserapport": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Analyserapport",
-    "Asbestinventaris": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris",
-    "Asbestmateriaal": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestmateriaal",
-    "Attest": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Attest",
-    "Bronfiche": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Bronfiche",
-    "Fiche": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche",
-    "Gebouweenheid": "https://data.vlaanderen.be/ns/gebouw#Gebouweenheid",
-    "InventarisSummary": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#InventarisSummary",
-    "Taalstring": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-    "URi": "http://www.w3.org/2000/01/rdf-schema#Resource",
-    "aanleiding": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aanleiding",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    "Analyserapport": {
+      "@context": {
+        "id": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
+          "@type": "@id"
+        }
+      },
+      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Analyserapport"
     },
-    "aantalAsbestMaterialen": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalAsbestMaterialen",
-      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    "Asbestinventaris": {
+      "@context": {
+        "aanleiding": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aanleiding",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "aantalAsbestMaterialen": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalAsbestMaterialen",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "aantalBeperkingen": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalBeperkingen",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "aantalUitsluitingen": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalUitsluitingen",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "analyseRapport": {
+          "@container": "@set",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#analyserapport",
+          "@type": "@id"
+        },
+        "asbestmateriaal": {
+          "@container": "@set",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestmateriaal",
+          "@type": "@id"
+        },
+        "attest": {
+          "@container": "@set",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attest",
+          "@type": "@id"
+        },
+        "attestNummer": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attestNummer",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geldigTot": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geldigTot",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "gemeenschappelijkDeel": {
+          "@container": "@set",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkDeel",
+          "@type": "@id"
+        },
+        "id": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
+          "@type": "@id"
+        },
+        "locatieBeschrijving": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#locatiebeschrijving",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "resultaat": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#resultaat",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "uitgegevenOp": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#uitgegevenOp",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "vanToepassingOpGemeenschappelijkDeel": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#vanToepassingOpGemeenschappelijkDeel",
+          "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+        }
+      },
+      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestinventaris"
     },
-    "aantalBeperkingen": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalBeperkingen",
-      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    "Asbestmateriaal": {
+      "@context": {
+        "id": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
+          "@type": "@id"
+        }
+      },
+      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Asbestmateriaal"
     },
-    "aantalUitsluitingen": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#aantalUitsluitingen",
-      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    "Attest": {
+      "@context": {
+        "id": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
+          "@type": "@id"
+        }
+      },
+      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Attest"
     },
-    "actie": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#actie",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    "Bronfiche": {
+      "@context": {
+        "mijlpaal": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#mijlpaal",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "risicobeoordeling": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#risicobeoordeling",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      },
+      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Bronfiche"
     },
-    "analyserapport": {
-      "@container": "@set",
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#analyserapport",
-      "@type": "@id"
+    "Fiche": {
+      "@context": {
+        "actie": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#actie",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "asbestmateriaal": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestmateriaal",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "asbestsoort": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestsoort",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "beschrijving": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#beschrijving",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "bindmiddel": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#bindmiddel",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "eenvoudigBereikbaar": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#eenvoudigbereikbaar",
+          "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "gebondenheid": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gebondenheid",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "id": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
+          "@type": "@id"
+        },
+        "omgeving": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#omgeving",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "primaireDrager": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#primairedrager",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      },
+      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#Fiche"
     },
-    "asbestmateriaal": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestmateriaal",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    "Gebouweenheid": {
+      "@context": {
+        "id": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
+          "@type": "@id"
+        }
+      },
+      "@id": "https://data.vlaanderen.be/ns/gebouw#Gebouweenheid"
     },
-    "asbestsoort": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#asbestsoort",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    "InventarisSummary": {
+      "@context": {
+        "id": {
+          "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
+          "@type": "@id"
+        }
+      },
+      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#InventarisSummary"
     },
-    "attest": {
-      "@container": "@set",
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attest",
-      "@type": "@id"
+    "Taalstring": {
+      "@context": {
+        "string": {
+          "@id": "https://data.vlaanderen.be/ns/generiek#string",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "taal": {
+          "@id": "https://data.vlaanderen.be/ns/generiek#taal"
+        }
+      },
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
-    "attestNummer": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#attestNummer",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "beschrijving": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#beschrijving",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    },
-    "bindmiddel": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#bindmiddel",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    },
-    "eenvoudigbereikbaar": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#eenvoudigbereikbaar",
-      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-    },
-    "gebondenheid": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gebondenheid",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    },
-    "geldigTot": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#geldigTot",
-      "@type": "http://www.w3.org/2001/XMLSchema#date"
-    },
-    "gemeenschappelijkDeel": {
-      "@container": "@set",
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#gemeenschappelijkDeel",
-      "@type": "@id"
-    },
-    "id": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#id",
-      "@type": "@id"
-    },
-    "locatiebeschrijving": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#locatiebeschrijving",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    },
-    "mijlpaal": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#mijlpaal",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    },
-    "omgeving": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#omgeving",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    },
-    "primairedrager": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#primairedrager",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    },
-    "resultaat": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#resultaat",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    },
-    "risicobeoordeling": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#risicobeoordeling",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    },
-    "string": {
-      "@id": "https://data.vlaanderen.be/ns/generiek#string",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "taal": {
-      "@id": "https://data.vlaanderen.be/ns/generiek#taal"
-    },
-    "uitgegevenOp": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#uitgegevenOp",
-      "@type": "http://www.w3.org/2001/XMLSchema#date"
-    },
-    "vanToepassingOpGemeenschappelijkDeel": {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/asbestinventaris#vanToepassingOpGemeenschappelijkDeel",
-      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-    }
+    "Uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
   }
 }
