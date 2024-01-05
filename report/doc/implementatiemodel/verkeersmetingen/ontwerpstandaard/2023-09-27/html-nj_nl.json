@@ -243,6 +243,47 @@
       },
       "properties": [
         {
+          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat",
+          "name": "verkeerstelling.tellingresultaat",
+          "sort": "Verkeerstelling.tellingresultaat",
+          "label": {
+            "nl": "Verkeerstelling.tellingresultaat"
+          },
+          "description": {
+            "nl": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Verkeerstelling",
+              "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Double",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#double"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#double",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#double",
+              "range_label": {
+                "nl": "Double"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "Verkeerstelling.tellingresultaat",
+            "definition-nl": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal).",
+            "parentURI": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result",
+            "name": "Verkeerstelling.tellingresultaat"
+          }
+        },
+        {
           "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.geobserveerdKenmerk",
           "name": "verkeerstelling.geobserveerdkenmerk",
           "sort": "Verkeerstelling.geobserveerdKenmerk",
@@ -282,47 +323,6 @@
             "definition-nl": "Object dat door de Verkeerstelling wordt geobserveerd.\t",
             "parentURI": "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk",
             "name": "Verkeerstelling.geobserveerdKenmerk"
-          }
-        },
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling.tellingresultaat",
-          "name": "verkeerstelling.tellingresultaat",
-          "sort": "Verkeerstelling.tellingresultaat",
-          "label": {
-            "nl": "Verkeerstelling.tellingresultaat"
-          },
-          "description": {
-            "nl": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal)."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Verkeerstelling",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Double",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#double"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#double",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#double",
-              "range_label": {
-                "nl": "Double"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "Verkeerstelling.tellingresultaat",
-            "definition-nl": "De waarde van het geobserveerdKenmerk als resultaat van de Verkeerstelling (aantal).",
-            "parentURI": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result",
-            "name": "Verkeerstelling.tellingresultaat"
           }
         }
       ]
@@ -848,6 +848,46 @@
       },
       "properties": [
         {
+          "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#verkeersmeetpuntnetwerkreferentie",
+          "name": "verkeersmeetpuntnetwerkreferentie",
+          "sort": "verkeersmeetpuntnetwerkreferentie",
+          "label": {
+            "nl": "verkeersmeetpuntnetwerkreferentie"
+          },
+          "description": {
+            "nl": "TODO"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Verkeersmeetpunt",
+              "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeetpunt"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Puntreferentie",
+              "range_uri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Puntreferentie",
+              "range_puri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie",
+              "range_label": {
+                "nl": "Puntreferentie"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "verkeersmeetpuntnetwerkreferentie",
+            "definition-nl": "TODO",
+            "parentURI": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen/#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie"
+          }
+        },
+        {
           "uri": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape",
           "name": "geometrie",
           "sort": "geometrie",
@@ -890,46 +930,6 @@
             "uri": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape",
             "ap-usageNote-nl": "Datatype vd geometrie is Punt."
           }
-        },
-        {
-          "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#verkeersmeetpuntnetwerkreferentie",
-          "name": "verkeersmeetpuntnetwerkreferentie",
-          "sort": "verkeersmeetpuntnetwerkreferentie",
-          "label": {
-            "nl": "verkeersmeetpuntnetwerkreferentie"
-          },
-          "description": {
-            "nl": "TODO"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Verkeersmeetpunt",
-              "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeetpunt"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Puntreferentie",
-              "range_uri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Puntreferentie",
-              "range_puri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie",
-              "range_label": {
-                "nl": "Puntreferentie"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "verkeersmeetpuntnetwerkreferentie",
-            "definition-nl": "TODO",
-            "parentURI": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen/#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie"
-          }
         }
       ]
     },
@@ -966,14 +966,14 @@
       },
       "properties": [
         {
-          "uri": "http://www.w3.org/ns/sosa/madeBySensor",
-          "name": "uitgevoerdmet",
-          "sort": "uitgevoerdMet",
+          "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#geobserveerdObject",
+          "name": "geobserveerdobject",
+          "sort": "geobserveerdObject",
           "label": {
-            "nl": "uitgevoerdMet"
+            "nl": "geobserveerdObject"
           },
           "description": {
-            "nl": "De Sensor waarmee de Verkeersmeting werd uitgevoerd."
+            "nl": "TODO"
           },
           "usage": {},
           "domain": [
@@ -984,26 +984,24 @@
           ],
           "range": [
             {
-              "range_label": "Sensor",
-              "range_uri": "https://www.w3.org/ns/sosa/Sensor"
+              "range_label": "Verkeersmeetpunt",
+              "range_uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeetpunt"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Sensor",
-              "range_puri": "https://www.w3.org/ns/sosa/Sensor",
+              "range_uri": "#Verkeersmeetpunt",
+              "range_puri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeetpunt",
               "range_label": {
-                "nl": "Sensor"
+                "nl": "Verkeersmeetpunt"
               }
             }
           ],
           "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
-            "label-nl": "uitgevoerdMet",
-            "ap-definition-nl": "De Sensor waarmee de Verkeersmeting werd uitgevoerd.",
-            "uri": "http://www.w3.org/ns/sosa/madeBySensor",
-            "ap-label-nl": "uitgevoerdMet"
+            "definition-nl": "TODO",
+            "label-nl": "geobserveerdObject"
           }
         },
         {
@@ -1053,14 +1051,14 @@
           }
         },
         {
-          "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#geobserveerdObject",
-          "name": "geobserveerdobject",
-          "sort": "geobserveerdObject",
+          "uri": "http://www.w3.org/ns/sosa/madeBySensor",
+          "name": "uitgevoerdmet",
+          "sort": "uitgevoerdMet",
           "label": {
-            "nl": "geobserveerdObject"
+            "nl": "uitgevoerdMet"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "De Sensor waarmee de Verkeersmeting werd uitgevoerd."
           },
           "usage": {},
           "domain": [
@@ -1071,24 +1069,26 @@
           ],
           "range": [
             {
-              "range_label": "Verkeersmeetpunt",
-              "range_uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeetpunt"
+              "range_label": "Sensor",
+              "range_uri": "https://www.w3.org/ns/sosa/Sensor"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Verkeersmeetpunt",
-              "range_puri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeetpunt",
+              "range_uri": "#Sensor",
+              "range_puri": "https://www.w3.org/ns/sosa/Sensor",
               "range_label": {
-                "nl": "Verkeersmeetpunt"
+                "nl": "Sensor"
               }
             }
           ],
           "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
-            "definition-nl": "TODO",
-            "label-nl": "geobserveerdObject"
+            "label-nl": "uitgevoerdMet",
+            "ap-definition-nl": "De Sensor waarmee de Verkeersmeting werd uitgevoerd.",
+            "uri": "http://www.w3.org/ns/sosa/madeBySensor",
+            "ap-label-nl": "uitgevoerdMet"
           }
         }
       ]
@@ -1462,14 +1462,14 @@
       },
       "properties": [
         {
-          "uri": "https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn",
-          "name": "geometriemiddenlijn",
-          "sort": "geometriemiddenlijn",
+          "uri": "https://data.vlaanderen.be/ns/netwerk/#beginknoop",
+          "name": "beginknoop",
+          "sort": "beginknoop",
           "label": {
-            "nl": "geometriemiddenlijn"
+            "nl": "beginknoop"
           },
           "description": {
-            "nl": "Geometrie van de midellijn van het Wegsegment."
+            "nl": "Knoop die het begin is van het Wegsegment."
           },
           "usage": {},
           "domain": [
@@ -1480,26 +1480,26 @@
           ],
           "range": [
             {
-              "range_label": "LijnString",
-              "range_uri": "http://www.opengis.net/ont/sf#LineString"
+              "range_label": "Wegknoop",
+              "range_uri": "https://data.vlaanderen.be/ns/weg#Wegknoop"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.opengis.net/ont/sf#LineString",
-              "range_puri": "http://www.opengis.net/ont/sf#LineString",
+              "range_uri": "#Wegknoop",
+              "range_puri": "https://data.vlaanderen.be/ns/weg#Wegknoop",
               "range_label": {
-                "nl": "LijnString"
+                "nl": "Wegknoop"
               }
             }
           ],
           "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
-            "label-nl": "geometriemiddenlijn",
-            "ap-label-nl": "geometriemiddenlijn",
-            "ap-definition-nl": "Geometrie van de midellijn van het Wegsegment.",
-            "uri": "https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn"
+            "label-nl": "beginknoop",
+            "uri": "https://data.vlaanderen.be/ns/netwerk/#beginknoop",
+            "ap-label-nl": "beginknoop",
+            "ap-definition-nl": "Knoop die het begin is van het Wegsegment."
           }
         },
         {
@@ -1544,14 +1544,14 @@
           }
         },
         {
-          "uri": "https://data.vlaanderen.be/ns/netwerk/#beginknoop",
-          "name": "beginknoop",
-          "sort": "beginknoop",
+          "uri": "https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn",
+          "name": "geometriemiddenlijn",
+          "sort": "geometriemiddenlijn",
           "label": {
-            "nl": "beginknoop"
+            "nl": "geometriemiddenlijn"
           },
           "description": {
-            "nl": "Knoop die het begin is van het Wegsegment."
+            "nl": "Geometrie van de midellijn van het Wegsegment."
           },
           "usage": {},
           "domain": [
@@ -1562,26 +1562,26 @@
           ],
           "range": [
             {
-              "range_label": "Wegknoop",
-              "range_uri": "https://data.vlaanderen.be/ns/weg#Wegknoop"
+              "range_label": "LijnString",
+              "range_uri": "http://www.opengis.net/ont/sf#LineString"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Wegknoop",
-              "range_puri": "https://data.vlaanderen.be/ns/weg#Wegknoop",
+              "range_uri": "http://www.opengis.net/ont/sf#LineString",
+              "range_puri": "http://www.opengis.net/ont/sf#LineString",
               "range_label": {
-                "nl": "Wegknoop"
+                "nl": "LijnString"
               }
             }
           ],
           "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
-            "label-nl": "beginknoop",
-            "uri": "https://data.vlaanderen.be/ns/netwerk/#beginknoop",
-            "ap-label-nl": "beginknoop",
-            "ap-definition-nl": "Knoop die het begin is van het Wegsegment."
+            "label-nl": "geometriemiddenlijn",
+            "ap-label-nl": "geometriemiddenlijn",
+            "ap-definition-nl": "Geometrie van de midellijn van het Wegsegment.",
+            "uri": "https://data.vlaanderen.be/ns/netwerk#Link.geometriemiddellijn"
           }
         }
       ]
@@ -1617,47 +1617,6 @@
         "package": "OSLO-Verkeersmetingen"
       },
       "properties": [
-        {
-          "uri": "http://purl.org/cd/terms/type",
-          "name": "type",
-          "sort": "type",
-          "label": {
-            "nl": "type"
-          },
-          "description": {
-            "nl": "Aard van de Observatieprocedure."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Observatieprocedure",
-              "uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Observatieproceduretype",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Observatieproceduretype",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "nl": "Observatieproceduretype"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "type",
-            "ap-label-nl": "type",
-            "ap-definition-nl": "Aard van de Observatieprocedure.",
-            "uri": "http://purl.org/cd/terms/type"
-          }
-        },
         {
           "uri": "http://www.w3.org/ns/ssn/implementedBy",
           "name": "geïmplementeerdmet",
@@ -1697,6 +1656,47 @@
             "ap-label-nl": "geïmplementeerdMet",
             "label-nl": "geïmplementeerdMet",
             "uri": "http://www.w3.org/ns/ssn/implementedBy"
+          }
+        },
+        {
+          "uri": "http://purl.org/cd/terms/type",
+          "name": "type",
+          "sort": "type",
+          "label": {
+            "nl": "type"
+          },
+          "description": {
+            "nl": "Aard van de Observatieprocedure."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Observatieprocedure",
+              "uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Observatieproceduretype",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Observatieproceduretype",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Observatieproceduretype"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "type",
+            "ap-label-nl": "type",
+            "ap-definition-nl": "Aard van de Observatieprocedure.",
+            "uri": "http://purl.org/cd/terms/type"
           }
         }
       ]
@@ -1755,47 +1755,6 @@
       },
       "properties": [
         {
-          "uri": "http://www.w3.org/ns/ssn/implements",
-          "name": "implementeert",
-          "sort": "implementeert",
-          "label": {
-            "nl": "implementeert"
-          },
-          "description": {
-            "nl": "Observatieprocedure die door de Sensor wordt toegepast."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Sensor",
-              "uri": "https://www.w3.org/ns/sosa/Sensor"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Observatieprocedure",
-              "range_uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Observatieprocedure",
-              "range_puri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure",
-              "range_label": {
-                "nl": "Observatieprocedure"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://www.w3.org/ns/ssn/implements",
-            "ap-definition-nl": "Observatieprocedure die door de Sensor wordt toegepast.",
-            "label-nl": "implementeert",
-            "ap-label-nl": "implementeert"
-          }
-        },
-        {
           "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#ligging",
           "name": "ligging",
           "sort": "ligging",
@@ -1840,47 +1799,54 @@
             "ap-usageNote-nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren.",
             "usageNote-nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
           }
+        },
+        {
+          "uri": "http://www.w3.org/ns/ssn/implements",
+          "name": "implementeert",
+          "sort": "implementeert",
+          "label": {
+            "nl": "implementeert"
+          },
+          "description": {
+            "nl": "Observatieprocedure die door de Sensor wordt toegepast."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Sensor",
+              "uri": "https://www.w3.org/ns/sosa/Sensor"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Observatieprocedure",
+              "range_uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Observatieprocedure",
+              "range_puri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure",
+              "range_label": {
+                "nl": "Observatieprocedure"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://www.w3.org/ns/ssn/implements",
+            "ap-definition-nl": "Observatieprocedure die door de Sensor wordt toegepast.",
+            "label-nl": "implementeert",
+            "ap-label-nl": "implementeert"
+          }
         }
       ]
     }
   ],
   "properties": [
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement",
-      "name": {
-        "nl": "Rijrichting.netwerkreferentieelement",
-        "undefined": "rijrichting.netwerkreferentieelement"
-      },
-      "description": {},
-      "domain": [
-        null
-      ],
-      "range": [
-        null
-      ],
-      "parents": [
-        "https://data.vlaanderen.be/ns/netwerk/#netwerkreferentie"
-      ]
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk",
-      "name": {
-        "nl": "Verkeerssnelheidsmeting.geobserveerdKenmerk",
-        "undefined": "verkeerssnelheidsmeting.geobserveerdkenmerk"
-      },
-      "description": {},
-      "domain": [
-        null
-      ],
-      "range": [
-        null
-      ],
-      "parents": [
-        "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk"
-      ]
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk.kenmerktype",
+      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk.kenmerktype",
       "name": {
         "nl": "kenmerktype",
         "undefined": "kenmerktype"
@@ -1912,7 +1878,7 @@
       ]
     },
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk.kenmerktype",
+      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk.kenmerktype",
       "name": {
         "nl": "kenmerktype",
         "undefined": "kenmerktype"
@@ -1925,19 +1891,53 @@
         null
       ],
       "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk",
+      "name": {
+        "nl": "Verkeerssnelheidsmeting.geobserveerdKenmerk",
+        "undefined": "verkeerssnelheidsmeting.geobserveerdkenmerk"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": [
+        "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk"
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement",
+      "name": {
+        "nl": "Rijrichting.netwerkreferentieelement",
+        "undefined": "rijrichting.netwerkreferentieelement"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": [
+        "https://data.vlaanderen.be/ns/netwerk/#netwerkreferentie"
+      ]
     }
   ],
   "contributors": [
     {
       "role": "E",
-      "first_name": "Thijs",
-      "last_name": "Geert",
+      "first_name": "Van Ackere",
+      "last_name": "Samuel",
       "affiliation": {}
     },
     {
       "role": "E",
-      "first_name": "Van Ackere",
-      "last_name": "Samuel",
+      "first_name": "Thijs",
+      "last_name": "Geert",
       "affiliation": {}
     }
   ],
@@ -2066,50 +2066,6 @@
       },
       "properties": [
         {
-          "uri": "http://www.opengis.net/ont/geosparql#asGML",
-          "name": "gml",
-          "sort": "GML",
-          "label": {
-            "nl": "GML"
-          },
-          "description": {
-            "nl": "Geometrie uitgedrukt in gml-formaat."
-          },
-          "usage": {
-            "nl": "Gebruik http://www.opengis.net/ont/geosparql#gmlLiteral als datatype."
-          },
-          "domain": [
-            {
-              "EA-Name": "Geometrie",
-              "uri": "http://www.w3.org/ns/locn#Geometry"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Literal",
-              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal",
-              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
-              "range_label": {
-                "nl": "Literal"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "GML",
-            "ap-label-nl": "GML",
-            "ap-definition-nl": "Geometrie uitgedrukt in gml-formaat.",
-            "ap-usageNote-nl": "Gebruik http://www.opengis.net/ont/geosparql#gmlLiteral als datatype.",
-            "uri": "http://www.opengis.net/ont/geosparql#asGML"
-          }
-        },
-        {
           "uri": "http://www.opengis.net/ont/geosparql#asWKT",
           "name": "wkt",
           "sort": "WKT",
@@ -2151,6 +2107,50 @@
             "ap-definition-nl": "Geometrie uitgedrukt in wkt-formaat.",
             "ap-usageNote-nl": "Gebruik http://www.opengis.net/ont/geosparql#wktLiteral als datatype.",
             "uri": "http://www.opengis.net/ont/geosparql#asWKT"
+          }
+        },
+        {
+          "uri": "http://www.opengis.net/ont/geosparql#asGML",
+          "name": "gml",
+          "sort": "GML",
+          "label": {
+            "nl": "GML"
+          },
+          "description": {
+            "nl": "Geometrie uitgedrukt in gml-formaat."
+          },
+          "usage": {
+            "nl": "Gebruik http://www.opengis.net/ont/geosparql#gmlLiteral als datatype."
+          },
+          "domain": [
+            {
+              "EA-Name": "Geometrie",
+              "uri": "http://www.w3.org/ns/locn#Geometry"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Literal",
+              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+              "range_label": {
+                "nl": "Literal"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "GML",
+            "ap-label-nl": "GML",
+            "ap-definition-nl": "Geometrie uitgedrukt in gml-formaat.",
+            "ap-usageNote-nl": "Gebruik http://www.opengis.net/ont/geosparql#gmlLiteral als datatype.",
+            "uri": "http://www.opengis.net/ont/geosparql#asGML"
           }
         }
       ]
@@ -2209,47 +2209,6 @@
       },
       "properties": [
         {
-          "uri": "https://data.vlaanderen.be/ns/weg#totPositie",
-          "name": "totpositie",
-          "sort": "totPositie",
-          "label": {
-            "nl": "totPositie"
-          },
-          "description": {
-            "nl": "Afstand vanaf het begin van de Link of Linksequentie vanaf waar de Netwerkeigenschap geldt."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "LineaireReferentie",
-              "uri": "https://data.vlaanderen.be/ns/netwerk#LineaireReferentie"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Lengte",
-              "range_uri": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Length"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Lengte",
-              "range_puri": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Length",
-              "range_label": {
-                "nl": "Lengte"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "tot positie",
-            "ap-label-nl": "totPositie",
-            "ap-definition-nl": "Afstand vanaf het begin van de Link of Linksequentie vanaf waar de Netwerkeigenschap geldt.",
-            "uri": "https://data.vlaanderen.be/ns/netwerk#LineaireReferentie.totPositie"
-          }
-        },
-        {
           "uri": "https://data.vlaanderen.be/ns/weg#vanPositie",
           "name": "vanpositie",
           "sort": "vanPositie",
@@ -2288,6 +2247,47 @@
             "ap-label-nl": "vanPositie",
             "ap-definition-nl": "Afstand vanaf het begin van de Link of Linksequentie tot waar de Netwerkeigenschap geldt.",
             "uri": "https://data.vlaanderen.be/ns/netwerk#LineaireReferentie.vanPositie"
+          }
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/weg#totPositie",
+          "name": "totpositie",
+          "sort": "totPositie",
+          "label": {
+            "nl": "totPositie"
+          },
+          "description": {
+            "nl": "Afstand vanaf het begin van de Link of Linksequentie vanaf waar de Netwerkeigenschap geldt."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LineaireReferentie",
+              "uri": "https://data.vlaanderen.be/ns/netwerk#LineaireReferentie"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Lengte",
+              "range_uri": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Length"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Lengte",
+              "range_puri": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Length",
+              "range_label": {
+                "nl": "Lengte"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "tot positie",
+            "ap-label-nl": "totPositie",
+            "ap-definition-nl": "Afstand vanaf het begin van de Link of Linksequentie vanaf waar de Netwerkeigenschap geldt.",
+            "uri": "https://data.vlaanderen.be/ns/netwerk#LineaireReferentie.totPositie"
           }
         }
       ]
