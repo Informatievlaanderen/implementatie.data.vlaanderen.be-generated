@@ -1,0 +1,1356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xml:lang="nl" lang="nl" dir="ltr" typeof="bibo:Document " about="" property="dcterms:language" content="nl" prefix="dcterms: http://purl.org/dc/terms/ bibo: http://purl.org/ontology/bibo/ schema: http://schema.org/ w3p: http://www.w3.org/2001/02pd/rec54#" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   
+  <title>Implementatiemodel Grondverzet - Grondboringen</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://dij151upo6vad.cloudfront.net/2.latest/css/vlaanderen-ui.css" />
+  <link rel="stylesheet" href="https://dij151upo6vad.cloudfront.net/2.latest/css/vlaanderen-ui-corporate.css" />
+
+  <link rel="icon" sizes="192x192" href="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/icon-highres-precomposed.png" />
+  <link rel="apple-touch-icon" href="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/touch-icon-iphone-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/touch-icon-ipad-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/touch-icon-iphone-retina-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/touch-icon-ipad-retina-precomposed.png" />
+
+  <meta name="msapplication-square70x70logo" content="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/tile-small.png" />
+  <meta name="msapplication-square150x150logo" content="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/tile-medium.png" />
+  <meta name="msapplication-wide310x150logo" content="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/tile-wide.png" />
+  <meta name="msapplication-square310x310logo" content="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/tile-large.png" />
+  <meta name="msapplication-TileColor" content="#FFE615" />
+</head>
+
+<body>
+
+  <!-- Start page content -->
+  <div class="page">
+    <div class="layout layout--wide">
+      <div class="skiplink">
+        <a rel="nofollow noreferrer" href="#main">Overslaan en naar de algemene inhoud gaan</a>
+      </div>
+    </div>
+    <div class="page">
+      <div class="region">
+        <div class="layout layout--wide">
+          <div class="grid u-hr">
+            <div class="col--9-12 col--1-1--s">
+              <h1 class="h1">Implementatiemodel Grondverzet - Grondboringen</h1>
+
+              <div class="head" role="status" id="status">
+              <dl>
+              <dt>Status</dt><dd><a href="https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard">https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard</a></dd>
+              <dt>Uitgegeven op</dt><dd>2023-10-01</dd>
+              <dt>Deze versie</dt><dd><a href="https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22">https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22</a></dd>
+              
+              
+              </dl>
+              </div>
+
+              <div class="head" role="contentinfo" id="respecHeader">
+                <dl>
+                        
+                          
+                            
+                        
+                          <dt>Auteurs</dt>
+                          
+                          <dd inlist="" rel="foaf:maker" class="p-author h-card vcard">
+                              <span typeof="foaf:Person">
+                              <span class="p-name fn" property="foaf:lastName">AuteurNaam</span>,
+                              <span class="p-name fn" property="foaf:firstName">AuteurVoornaam</span>
+                              
+                              - <a href="https://auteurwebsiteurl" class="p-org org h-org h-card" rel="foaf:workplaceHomepage">AuteurAffiliatie</a>
+                              
+                							
+                               - <span class="ed_mailto"><a href="mailto:auteurvoornaam.auteurnaam@auteurdomein" rel="foaf:mbox" class="u-email email">auteurvoornaam.auteurnaam@auteurdomein</a></span>
+                              
+                              </span>
+                          </dd>
+                          
+                        
+                      
+                      
+                          
+                        
+                        
+                          <dt>Editors</dt>
+                          
+                          <dd inlist="" rel="bibo:editor" class="p-author h-card vcard">
+                              <span typeof="foaf:Person">
+                              <span class="p-name fn" property="foaf:lastName">EditorNaam</span>,
+                              <span class="p-name fn" property="foaf:firstName">EditorVoornaam</span>
+                              
+                                 - <a href="https://editorwebsiteurl" class="p-org org h-org h-card" rel="foaf:workplaceHomepage">EditorAffiliatie</a>
+                              
+                							
+                                 - <span class="ed_mailto"><a href="mailto:editorvoornaam.editornaam@editordomein" rel="foaf:mbox" class="u-email email">editorvoornaam.editornaam@editordomein</a></span>
+                              
+                							</span>
+                          </dd>
+                        
+                        
+                      
+                      
+                          
+                        
+                        
+                        <dt>Medewerkers</dt>
+                          
+                          <dd inlist="" rel="dcterms:contributor" class="p-author h-card vcard">
+                              <span typeof="foaf:Person">
+                              <span class="p-name fn" property="foaf:lastName">MedewerkerNaam</span>,
+                              <span class="p-name fn" property="foaf:firstName">MedewerkerVoornaam</span>
+                              
+                              - <a href="https://medewerkerwebsiteurl" class="p-org org h-org h-card" rel="foaf:workplaceHomepage">MedewerkerAffiliatie</a>
+                              
+                							
+                               - <span class="ed_mailto"><a href="mailto:medewerkervoornaam.medewerkernaam@medewerkerdomein" rel="foaf:mbox" class="u-email email">medewerkervoornaam.medewerkernaam@medewerkerdomein</a></span>
+                              
+							                </span>
+                          </dd>
+                            
+                          
+                        
+                      
+                </dl>
+              </div>
+
+              <div class="head" role="metainfo" id="metainfo">
+              <dl>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/c44bfc9023d5a792fa0d5859dee755bdf1a09df5">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/c44bfc9023d5a792fa0d5859dee755bdf1a09df5</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/c44bfc9023d5a792fa0d5859dee755bdf1a09df5/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/c44bfc9023d5a792fa0d5859dee755bdf1a09df5/CHANGELOG</a></dd>
+              <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-mijnThema/issues">https://github.com/Informatievlaanderen/OSLOthema-mijnThema/issues</a></dd>
+              <dt>Standaardenregister</dt><dd><a href="https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html">https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html</a></dd>
+
+              <dt>Afhankelijkheden</dt><dd>
+                
+		</dd>
+              </dl>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main" itemprop="mainContentOfPage" role="main" tabindex="-1" class="main-content">
+      <div class="layout layout--wide">
+        <div class="grid">
+          <div class="col--8-12 col--12-12--s">
+            <div class="region" id="introduction">
+              <div class="introduction typography">
+              
+                <p>Dit document beschrijft een <strong>implementatiemodel</strong>, in dit geval <strong>Implementatiemodel Grondverzet - Grondboringen</strong>.
+                Een implementatiemodel is een toepassing van vocabularia voor een concreet doel.
+                Het beschrijft in alle detail (zoals kardinaliteiten, codelijsten, datatypes, ...) de gewenste datastructuur.
+                </p>
+              
+              </div>
+            </div>
+
+            <div class="region region--no-space-top typography" id="summary">
+                <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">Samenvatting</h2>
+                
+<p>Dit implementatiemodel is bedoeld voor het beschrijven van Grondboringen.</p>
+<p>Het is een aanpassing voor Grondverzet van het <a href="https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondboringen/">applicatieprofiel OSLO-Grondboringen</a>.</p>
+<p>Tov het applicatieprofiel werden een aantal termen gespecialiseerd (zie <a href="https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen/">vocabularium Grondverzet -Grondboringen</a> voor de formele beschrijving).</p>
+<p>Verder is ook aangegeven welke kenmerken verplicht en welke optioneel zijn.</p>
+
+            </div>
+
+            <div class="region region--no-space-top typography" id="status">
+              <section class="introductory" id="sotd" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
+                <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">Status van dit document</h2>
+                
+<p>(Verwijder dit blok om een geautomatiseerde standaardparagraaf te laten verschijnen.)</p>
+
+              </section>
+            </div>
+
+            <div class="region region--no-space-top typography" id="license">
+              <h2 class="h2">Licentie</h2>
+              
+              <p><span rel="dct:type" property="dct:title" href="http://purl.org/dc/dcmitype/Text" xmlns:dct="http://purl.org/dc/terms/">Deze specificatie</span> van <a rel="cc:attributionURL" property="cc:attributionName" href="http://vlaanderen.be/informatievlaanderen" xmlns:cc="http://creativecommons.org/ns#">Digitaal Vlaanderen</a> is gepubliceerd onder de <a href="https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0" rel="license">"Modellicentie Gratis Hergebruik - v1.0"</a>.</p>
+              
+            </div>
+            <div class="region region--no-space-top typography" id="conformance">
+              <h2 class="h2" id="conformance" aria-level="1" role="heading">Conformiteit</h2>
+              
+              <p>De conformiteit voor implementatiemodellen is <a href="/doc/begeleidend/implementatiemodellen/conformiteit">hier</a> te vinden.</p>
+              
+            </div>
+            <div class="region region--no-space-top" id="overview">
+              <h2 class="h2">Overzicht</h2>
+              <div class="grid">
+                <div class="col--9-12 col--1-1--s typography">
+                  
+                  <div class="region region--no-space-top">
+                    <p>In dit document wordt correct gebruik van de volgende entiteiten toegelicht:
+                      <br />
+                      |
+                      <a href="#Agent">Agent</a> |
+                      <a href="#Bekisting">Bekisting</a> |
+                      <a href="#Boor">Boor</a> |
+                      <a href="#Boorgat">Boorgat</a> |
+                      <a href="#Boorgatdiameter">Boorgatdiameter</a> |
+                      <a href="#Boormethode">Boormethode</a> |
+                      <a href="#Grondboring">Grondboring</a> |
+                    </p>
+                  </div>
+                  
+                  
+                  <div class="region region--no-space-top">
+                    <p> In dit document worden de volgende datatypes toegelicht:
+                      <br />
+                      |
+                      <a href="#Boormethodeinterval">BoormethodeInterval</a> |
+                      <a href="#Geometrie">Geometrie</a> |
+                      <a href="#Lijnstring">Lijnstring</a> |
+                    </p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="region region--no-space-top">
+              <a href="/doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22/html/overview.jpg" target="_blank">
+                 <img src="/doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22/html/overview.jpg" />
+              </a>
+              
+              
+            </div>
+            <div class="region region--no-space-top">
+              <h2 class="h2">Entiteiten</h2>
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Agent"><a href="http://purl.org/dc/terms/Agent" data-toggle="tooltip" data-content="http://purl.org/dc/terms/Agent" data-placement="right">Agent</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Iemand die of iets dat kan handelen of een effect kan teweeg brengen.</dd>
+                    
+		    
+                    <dt>Eigenschappen</dt>
+		    
+                    <dd>Voor deze entiteit zijn geen eigenschappen gedefinieerd.</dd>
+                    
+                  </dl>
+                </div>
+		
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Bekisting"><a href="https://data.vlaanderen.be/ns/grondboringen#Bekisting" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#Bekisting" data-placement="right">Bekisting</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Kenmerken van de afwerking van het boorgat in functie van de diepte.</dd>
+                    
+                    <dt>Gebruik</dt><dd>Bv het gebruikte materiaal en de dikte ervan. Het verloop van de Bekisting wordt voorgesteld als een DiscreetCurvebereik, dwz dat ze verandert in discrete stappen (intervallen) in functie van de diepte.</dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage">DiscreetCurvebereik</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Bekisting%3Abekisting">bekisting</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Bekisting%3Abekisting" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/grondboringen#Bekisting.bekisting">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/grondboringen#Bekisting.bekisting" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#Bekisting.bekisting" data-placement="right">
+                            bekisting</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="https://data.vlaanderen.be/ns/grondboringen#Bekistinginterval" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#Bekistinginterval" data-placement="right">Bekistinginterval</a>
+                            
+                          
+                        </td>
+                        <td>1..*</td>
+                        <td property="rdfs:comment">Verwijzing naar de beschrijving van de bekisting voor een bepaald diepte-interval.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Boor"><a href="https://data.vlaanderen.be/ns/grondboringen#Boor" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#Boor" data-placement="right">Boor</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Het hulpstuk dat kan geplaatst worden in een daartoe geschikte boorhouder van een boormachine en door middel van een draaiende en/of kloppende beweging ronde gate kan aanbrengen in diverse materialen.</dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="http://www.w3.org/ns/sosa/Sampler">Bemonsteraar</a>, 
+                        <a href="http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage">DiscreetCurvebereik</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Boor%3Atype">type</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Boor%3Atype" typeof="rdfs:Property" resource="http://purl.org/dc/terms/type">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://purl.org/dc/terms/type" data-toggle="tooltip" data-content="http://purl.org/dc/terms/type" data-placement="right">
+                            type</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="https://data.vlaanderen.be/ns/grondboringen#BoortypeInterval" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#BoortypeInterval" data-placement="right">BoortypeInterval</a>
+                            
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Verwijzing naar de beschrijving van het type Boor voor een bepaald diepteinterval.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Boorgat"><a href="http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole" data-placement="right">Boorgat</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Curve ontstaan door het boren van een gat in een vast medium.</dd>
+                    
+                    <dt>Gebruik</dt><dd>Laat toe om bv de variatie van een bepaald fenomeen langs die curve te observeren, bv de gelaagdheid van de ondergrond (typisch op basis van de boorkern of stalen daaruit genomen).</dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="http://def.isotc211.org/iso19156/2011/SamplingCurve#SF_SamplingCurve">Bemonsteringscurve</a>, 
+                        <a href="http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature">Bemonsteringsobject</a>, 
+                        <a href="https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject">BO_RuimtelijkBemonsteringsobject</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Boorgat%3Aaangenomengrondwaterstand">aangenomenGrondwaterstand</a>, 
+                      <a href="#Boorgat%3Abekisting">bekisting</a>, 
+                      <a href="#Boorgat%3Aboordiameter">boordiameter</a>, 
+                      <a href="#Boorgat%3Aboringlengte">boringLengte</a>, 
+                      <a href="#Boorgat%3Adiepte">diepte</a>, 
+                      <a href="#Boorgat%3Agehostplatform">gehostPlatform</a>, 
+                      <a href="#Boorgat%3Ageometrie">geometrie</a>, 
+                      <a href="#Boorgat%3Aisresultaatvan">isResultaatVan</a>, 
+                      <a href="#Boorgat%3Aligging">ligging</a>, 
+                      <a href="#Boorgat%3Amaaiveld">maaiveld</a>, 
+                      <a href="#Boorgat%3Apositionelenauwkeurigheid">positioneleNauwkeurigheid</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Boorgat%3Aaangenomengrondwaterstand" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/grondboringen#aangenomenGrondwaterstand">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/grondboringen#aangenomenGrondwaterstand" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#aangenomenGrondwaterstand" data-placement="right">
+                            aangenomenGrondwaterstand</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="https://schema.org/QuantitativeValue" data-toggle="tooltip" data-content="https://schema.org/QuantitativeValue" data-placement="right">KwantitatieveWaarde</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">De Grondwaterstand in het Boorgat, al dan niet gebaseerd op meerdere Observaties.</td>
+                        <td property="vann:usageNote">Die Observaties kunnen ook apart beschreven worden.</td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Boorgat%3Abekisting" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/grondboringen#Boorgat.bekisting">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/grondboringen#Boorgat.bekisting" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#Boorgat.bekisting" data-placement="right">
+                            bekisting</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Bekisting" data-placement="right">Bekisting</a>
+			    
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">Verwijzing naar de beschrijving van de Bekisting van het Boorgat.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Boorgat%3Aboordiameter" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/grondboringen#boordiameter">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/grondboringen#boordiameter" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#boordiameter" data-placement="right">
+                            boordiameter</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Boorgatdiameter" data-placement="right">Boorgatdiameter</a>
+			    
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">Verwijzing naar de beschrijving van de Boordiameter van het Boorgat.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Boorgat%3Aboringlengte" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/grondboringen#boringLengte">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/grondboringen#boringLengte" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#boringLengte" data-placement="right">
+                            boringLengte</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="https://schema.org/QuantitativeValue" data-toggle="tooltip" data-content="https://schema.org/QuantitativeValue" data-placement="right">KwantitatieveWaarde</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">Lengte van de Grondboring.</td>
+                        <td property="vann:usageNote">Zoals verstrekt door de dataleverancier. Kan bv afgeleid zijn uit de geometrie van de Grondboring maar ook uit bv het resultaat van de LithologischeInterpretatie of de lengte is gemeten op het terrein.</td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Boorgat%3Adiepte" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.diepte">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.diepte" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.diepte" data-placement="right">
+                            diepte</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="https://data.vlaanderen.be/ns/bodem-en-ondergrond#Diepte" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/bodem-en-ondergrond#Diepte" data-placement="right">Diepte</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">De diepte van het Boorgat.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Boorgat%3Agehostplatform" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.hostedProcedure">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.hostedProcedure" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.hostedProcedure" data-placement="right">
+                            gehostPlatform</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://def.isotc211.org/iso19156/2011/Observation#OM_Process" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Observation#OM_Process" data-placement="right">Proces</a>
+                            
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Procedure die of instrument dat in of op het Boorgat is geïnstalleerd.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Boorgat%3Ageometrie" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie" data-placement="right">
+                            geometrie</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Lijnstring" data-placement="right">Lijnstring</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Lijnstring die de vorm van de Grondboring beschrijft.</td>
+                        <td property="vann:usageNote">Loopt van de boorkraag (die zowel boven, op als onder het maaiveld - of ander referentievlak - kan liggen) tot het verste punt van de boring. Coördinaten worden minimaal in 2D maar bij voorkeur in 2.5D gegeven.</td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Boorgat%3Aisresultaatvan" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/grondboringen#isResultaatVan">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/grondboringen#isResultaatVan" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#isResultaatVan" data-placement="right">
+                            isResultaatVan</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Grondboring" data-placement="right">Grondboring</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Grondboring waarvan het Boorgat het resultaat is.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Boorgat%3Aligging" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.ligging">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.ligging" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.ligging" data-placement="right">
+                            ligging</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/ns/prov#Location" data-toggle="tooltip" data-content="http://www.w3.org/ns/prov#Location" data-placement="right">Locatie</a>
+                            
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Aanvullende indicatie van de ligging van het Boorgat.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Boorgat%3Amaaiveld" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld" data-placement="right">
+                            maaiveld</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="https://data.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld" data-placement="right">Maaiveld</a>
+                            
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Het maaiveld van het Boorgat.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Boorgat%3Apositionelenauwkeurigheid" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.positionalAccuracy">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.positionalAccuracy" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.positionalAccuracy" data-placement="right">
+                            positioneleNauwkeurigheid</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://def.isotc211.org/iso19115/2006/DataQualityInformation#DQ_PositionalAccuracy" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19115/2006/DataQualityInformation#DQ_PositionalAccuracy" data-placement="right">PositioneleNauwkeurigheid</a>
+                            
+                          
+                        </td>
+                        <td>0..2</td>
+                        <td property="rdfs:comment">De nauwkeurigheid van de positie van het Boorgat.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Boorgatdiameter"><a href="https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter" data-placement="right">Boorgatdiameter</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Diameter van het boorgat in functie van de diepte.</dd>
+                    
+                    <dt>Gebruik</dt><dd>Het verloop van de diameter wordt voorgesteld als een DiscreetCurvebereik, dwz dat ze verandert in discrete stappen (intervallen) in functie van de diepte.</dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage">DiscreetCurvebereik</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Boorgatdiameter%3Adiameter">diameter</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Boorgatdiameter%3Adiameter" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter.diameter">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter.diameter" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter.diameter" data-placement="right">
+                            diameter</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameterinterval" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameterinterval" data-placement="right">Boorgatdiameterinterval</a>
+                            
+                          
+                        </td>
+                        <td>1..*</td>
+                        <td property="rdfs:comment">Verwijzing naar de beschrijving van de boorgatdiameter voor een bepaald diepteinterval.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Boormethode"><a href="https://data.vlaanderen.be/ns/grondboringen#Boormethode" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#Boormethode" data-placement="right">Boormethode</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Methode waarmee geboord werd in functie van de diepte.</dd>
+                    
+                    <dt>Gebruik</dt><dd>Het verloop van de methode wordt voorgesteld als een DiscreetCurvebereik, dwz dat ze verandert in discrete stappen (intervallen) in functie van de diepte.</dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage">DiscreetCurvebereik</a>, 
+                        <a href="http://www.w3.org/ns/sosa/om#SamplingProcedure">Bemonsteringsprocedure</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Boormethode%3Ainclinatietype">inclinatietype</a>, 
+                      <a href="#Boormethode%3Amethode">methode</a>, 
+                      <a href="#Boormethode%3Astartpunt">startpunt</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Boormethode%3Ainclinatietype" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/grondboringen#inclinatietype">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/grondboringen#inclinatietype" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#inclinatietype" data-placement="right">
+                            inclinatietype</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2004/02/skos/core#Concept" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#Concept" data-placement="right">Boringinclinatietype</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">Algemene aanduiding van de richting waaronder werd geboord.</td>
+                        <td property="vann:usageNote">Verticaal, schuin, horizontaal...</td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Boormethode%3Amethode" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/grondboringen#Boormethode.methode">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/grondboringen#Boormethode.methode" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#Boormethode.methode" data-placement="right">
+                            methode</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#BoormethodeInterval" data-placement="right">BoormethodeInterval</a>
+			    
+                          
+                        </td>
+                        <td>1..*</td>
+                        <td property="rdfs:comment">Verwijzing naar de beschrijving van de boormethode voor een bepaald diepteinterval.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Boormethode%3Astartpunt" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/grondboringen#startpunt">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/grondboringen#startpunt" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#startpunt" data-placement="right">
+                            startpunt</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2004/02/skos/core#Concept" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#Concept" data-placement="right">Boringstartpunttype</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">Aard van het oppervlak waarop de boorkraag is geplaatst.</td>
+                        <td property="vann:usageNote">Doorgaans het maaiveld maar andere mogelijkheden zijn bv bouwput, boortafel, dijk, bestaand boorgat</td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Grondboring"><a href="https://data.vlaanderen.be/ns/grondboringen#Grondboring" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#Grondboring" data-placement="right">Grondboring</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>De handeling van het boren van een smalle schacht in de grond.</dd>
+                    
+                    <dt>Gebruik</dt><dd>Onder "grond" verstaan we hier het deel van de aardkorst onder het aardoppervlak. Het slaat zowel op de bodem als op wat zich daaronder bevindt (en hier ondergrond wordt genoemd).</dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="http://www.w3.org/ns/sosa/Sampling">Bemonstering</a>, 
+                        <a href="https://data.vlaanderen.be/ns/bodem-en-ondergrond#Boring">Boring</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Grondboring%3Abemonsteringstijdstip">bemonsteringstijdstip</a>, 
+                      <a href="#Grondboring%3Aboorder">boorder</a>, 
+                      <a href="#Grondboring%3Aboormeester">boormeester</a>, 
+                      <a href="#Grondboring%3Adoel">doel</a>, 
+                      <a href="#Grondboring%3Agebruikteprocedure">gebruikteProcedure</a>, 
+                      <a href="#Grondboring%3Aidentificator">identificator</a>, 
+                      <a href="#Grondboring%3Aresultaat">resultaat</a>, 
+                      <a href="#Grondboring%3Auitgevoerdmet">uitgevoerdMet</a>, 
+                      <a href="#Grondboring%3Awettelijkkader">wettelijkKader</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Grondboring%3Abemonsteringstijdstip" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip" data-placement="right">
+                            bemonsteringstijdstip</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#date" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#date" data-placement="right">Date</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Moment waarop de Bemonstering werd afgerond.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Grondboring%3Aboorder" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/grondboringen#boorder">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/grondboringen#boorder" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#boorder" data-placement="right">
+                            boorder</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Agent" data-placement="right">Agent</a>
+			    
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">Diegene die de Boring heeft uitgevoerd.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Grondboring%3Aboormeester" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/grondboringen#boormeester">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/grondboringen#boormeester" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#boormeester" data-placement="right">
+                            boormeester</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Agent" data-placement="right">Agent</a>
+			    
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">Opzichter bij de Boring.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Grondboring%3Adoel" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/grondboringen#doel">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/grondboringen#doel" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#doel" data-placement="right">
+                            doel</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2004/02/skos/core#Concept" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#Concept" data-placement="right">Boringdoeltype</a>
+                            
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Reden waarom de Grondboring werd uitgevoerd.</td>
+                        <td property="vann:usageNote">Vb exploitatie, onderzoek, bemaling etc.</td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Grondboring%3Agebruikteprocedure" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure" data-placement="right">
+                            gebruikteProcedure</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Boormethode" data-placement="right">Boormethode</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Boormethode die werd gevolgd bij de Grondboring.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Grondboring%3Aidentificator" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator" data-placement="right">
+                            identificator</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/ns/adms#Identifier" data-toggle="tooltip" data-content="http://www.w3.org/ns/adms#Identifier" data-placement="right">Identificator</a>
+                            
+                          
+                        </td>
+                        <td>1..*</td>
+                        <td property="rdfs:comment">Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert.</td>
+                        <td property="vann:usageNote">Bv het boornummer.</td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Grondboring%3Aresultaat" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/grondboringen#resultaat">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/grondboringen#resultaat" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#resultaat" data-placement="right">
+                            resultaat</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Boorgat" data-placement="right">Boorgat</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Het resultaat van de uitgevoerde grondboring.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Grondboring%3Auitgevoerdmet" typeof="rdfs:Property" resource="http://www.w3.org/ns/sosa/madeBySampler">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/sosa/madeBySampler" data-toggle="tooltip" data-content="http://www.w3.org/ns/sosa/madeBySampler" data-placement="right">
+                            uitgevoerdMet</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Boor" data-placement="right">Boor</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Boor waarmee de Bemonstering is uitgevoerd.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Grondboring%3Awettelijkkader" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/grondboringen#wettelijkKader">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/grondboringen#wettelijkKader" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#wettelijkKader" data-placement="right">
+                            wettelijkKader</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring" data-placement="right">WettelijkKaderBoring</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">Het kader dat vastlegt wat behoort tot de wet.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+
+            
+            <div class="region region--no-space-top">
+              <h2 class="h2">Datatypes</h2>
+            </div>
+            
+            <div class="region region--no-space-top">
+              
+              <h3 class="h3" id="Boormethodeinterval"><a href="https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval" data-placement="right">BoormethodeInterval</a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Beschrijving van de Boormethode voor een bepaald diepte-interval.</dd>
+                    
+                    <dt>Gebruik</dt><dd>Specialisatie van een CurveWaardepaar, dit is een Curve en de waarde die eraan is toegekend. De waarde is hier de beschrijving van de Boormethode van een Grondboring, terwijl de Curve aangeeft op welke dieptes deze beschrijving geldig is. De Curve van de Grondboring wordt hierbij als referentiesysteem gebruikt. OPGELET: Als de Curve van de Grondboring niet recht in de grond werd geboord zijn de opgegeven dieptes eerder afstanden langs deze Curve.</dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="http://def.isotc211.org/iso19123/2005/CoverageCore#CV_CurveValuePair">CurveWaardepaar</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor dit datatype zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Boormethodeinterval%3Ageometrie">geometrie</a>, 
+                      <a href="#Boormethodeinterval%3Amethode">methode</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                      
+                      <tr id="Boormethodeinterval%3Ageometrie" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#BoormethodeInterval.geometrie">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#BoormethodeInterval.geometrie" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#BoormethodeInterval.geometrie" data-placement="right">geometrie</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Lijnstring" data-placement="right">Lijnstring</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Geometrie van het interval.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Boormethodeinterval%3Amethode" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode" data-placement="right">methode</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2004/02/skos/core#Concept" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#Concept" data-placement="right">BoormethodeType</a>
+                            
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Methode van de Boring.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+                
+            </div>
+            
+            <div class="region region--no-space-top">
+              
+              <h3 class="h3" id="Geometrie"><a href="http://www.w3.org/ns/locn#Geometry" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#Geometry" data-placement="right">Geometrie</a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Vorm- en positiekenmerken van een object.</dd>
+                    
+		    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor dit datatype zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Geometrie%3Agml">gml</a>, 
+                      <a href="#Geometrie%3Aopmeting">opmeting</a>, 
+                      <a href="#Geometrie%3Awkt">wkt</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                      
+                      <tr id="Geometrie%3Agml" typeof="rdfs:Property" resource="http://www.opengis.net/ont/geosparql#asGML">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.opengis.net/ont/geosparql#asGML" data-toggle="tooltip" data-content="http://www.opengis.net/ont/geosparql#asGML" data-placement="right">gml</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2000/01/rdf-schema#Literal" data-toggle="tooltip" data-content="http://www.w3.org/2000/01/rdf-schema#Literal" data-placement="right">GetypeerdeString</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">Geometrie uitgedrukt in gml-formaat.</td>
+                        <td property="vann:usageNote">Gebruik <a href="http://www.opengis.net/ont/geosparql#gmlLiteral">gmlliteral</a> als datatype.</td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Geometrie%3Aopmeting" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting" data-placement="right">opmeting</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="https://data.vlaanderen.be/ns/generiek#Opmeting" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/generiek#Opmeting" data-placement="right">Opmeting</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">De manier waarop de geometrie werd bepaald.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Geometrie%3Awkt" typeof="rdfs:Property" resource="http://www.opengis.net/ont/geosparql#asWKT">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.opengis.net/ont/geosparql#asWKT" data-toggle="tooltip" data-content="http://www.opengis.net/ont/geosparql#asWKT" data-placement="right">wkt</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2000/01/rdf-schema#Literal" data-toggle="tooltip" data-content="http://www.w3.org/2000/01/rdf-schema#Literal" data-placement="right">GetypeerdeString</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">Geometrie uitgedrukt in wkt-formaat.</td>
+                        <td property="vann:usageNote">Gebruik <a href="http://www.opengis.net/ont/geosparql#wktLiteral">wktliteral</a> als datatype.</td>
+                        <td></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+                
+            </div>
+            
+            <div class="region region--no-space-top">
+              
+              <h3 class="h3" id="Lijnstring"><a href="http://www.opengis.net/ont/sf#LineString" data-toggle="tooltip" data-content="http://www.opengis.net/ont/sf#LineString" data-placement="right">Lijnstring</a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Curve met lineaire interpolatie tussen de punten. Elk opeenvolgend paar punten vormt een lijnsegment. De lijnstring heeft ten minste twee punten.</dd>
+                    
+                    <dt>Gebruik</dt><dd>Een curve is een 1-dimensioneel geometrisch object gedefinieerd als een sequentie van punten. De interpolatie kan op verschillende manieren gebeuren (bv lineair bij een lijnstring).</dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="#Geometrie">Geometrie</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		    
+                    <dd>Voor dit datatype zijn geen eigenschappen gedefinieerd.</dd>
+                    
+                  </dl>
+                </div>
+		
+            </div>
+            
+            
+            <div class="region region--no-space-top" id="jsonld">
+                <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">JSON-LD context</h2>
+                (niet normatief)
+                
+                <p>Een herbruikbare JSON-LD context definitie voor dit implementatiemodel is terug te vinden op: <a href="/doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22/context/grondverzet-grondboringen-im.jsonld" target="_blank">/doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22/context/grondverzet-grondboringen-im.jsonld</a></p>
+                
+            </div>
+            <div class="region region--no-space-top" id="shacl">
+                <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">SHACL template</h2>
+                (niet normatief)
+                
+                <p>Een herbruikbare SHACL template definitie voor dit implementatiemodel is terug te vinden op: <a href="/doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22/shacl/grondverzet-grondboringen-im-SHACL.ttl" target="_blank">/doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22/shacl/grondverzet-grondboringen-im-SHACL.ttl</a></p>
+                
+            </div>
+          </div>
+          <div class="col--3-12 col--12-12--s col--4-12--m push--1-12 push--reset--m" id="sideNav">
+              <nav class="side-navigation js-sticky region" id="sideNav">
+                  <div class="side-navigation__content js-scrollspy">
+                      <div class="side-navigation__group">
+                          <ul>
+                              <li class="side-navigation__item">
+                                  <a href="#introduction">Inleiding</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#summary">Samenvatting</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#status">Status van dit document</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#license">Licentie</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#conformance">Conformiteit</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#overview">Overzicht</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#jsonld">JSON-LD Context</a>
+                              </li>
+                              <li class="side-navigation__item">
+                                  <a href="#shacl">SHACL template</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+    <!-- End page content -->
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="https://dij151upo6vad.cloudfront.net/2.latest/js/vlaanderen-ui.js"></script>
+
+  <style>
+    @media screen {  /* hide from IE3 */
+      a[href]:hover { background: #ffa }
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    tr:nth-child(even) td     { background-color:#eee; }
+
+    dt, dd { margin-top: 0; margin-bottom: 0 } /* opera 3.50 */
+    dt { font-weight: bold }
+
+    pre, code { font-family: monospace } /* navigator 4 requires this */
+
+    em {
+          font-style: italic;
+    }
+
+    img {
+       width: 100%;
+    }
+
+    .tooltip {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 800;
+      display: none;
+      max-width: 128rem;
+      background: #fff;
+      border: 1px solid #ccc;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-size: 1.4rem;
+      color: #000;
+      background-clip: padding-box;
+    }
+  </style>
+</body>
+</html>
