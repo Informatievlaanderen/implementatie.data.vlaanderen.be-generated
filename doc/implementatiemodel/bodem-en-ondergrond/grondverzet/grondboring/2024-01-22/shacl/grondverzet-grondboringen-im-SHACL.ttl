@@ -98,13 +98,13 @@
   shacl:description "Grondboring waarvan het Boorgat het resultaat is."@nl;
   shacl:maxCount 1;
   shacl:name "isResultaatVan"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/grondboringen#isResultaatVan> .
+  shacl:path <http://www.w3.org/ns/sosa/isResultOf> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#BoorgatShape/323501fd679162303e804b107d55055c2f2ce59e> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Boorgat.isResultaatVan";
   shacl:class <https://data.vlaanderen.be/ns/grondboringen#Grondboring>;
   shacl:description "Grondboring waarvan het Boorgat het resultaat is."@nl;
   shacl:name "isResultaatVan"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/grondboringen#isResultaatVan> .
+  shacl:path <http://www.w3.org/ns/sosa/isResultOf> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#BoorgatShape/32d052a18f088f1afe35c6354047fdb10d5479dd> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Boorgat.aangenomenGrondwaterstand";
   shacl:class schemas:QuantitativeValue;
@@ -122,7 +122,7 @@
   shacl:description "Grondboring waarvan het Boorgat het resultaat is."@nl;
   shacl:minCount 1;
   shacl:name "isResultaatVan"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/grondboringen#isResultaatVan> .
+  shacl:path <http://www.w3.org/ns/sosa/isResultOf> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#BoorgatShape/6bdbc5157124b302cc9bf28ff5abf928f859badd> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Boorgat.positioneleNauwkeurigheid";
   shacl:description "De nauwkeurigheid van de positie van het Boorgat."@nl;
@@ -373,13 +373,13 @@
   shacl:class <http://www.w3.org/ns/adms#Identifier>;
   shacl:description "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."@nl;
   shacl:name "identificator"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator> .
+  shacl:path <http://www.w3.org/ns/adms#identifier> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/09ed995683a26095de4577d13e597160f260ecb2> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.resultaat";
   shacl:class <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole>;
   shacl:description "Het resultaat van de uitgevoerde grondboring."@nl;
   shacl:name "resultaat"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/grondboringen#resultaat> .
+  shacl:path <http://www.w3.org/ns/sosa/hasResult> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/1577ed08c179238e234b11af1f5672b5d2614526> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.uitgevoerdMet";
   shacl:class <https://data.vlaanderen.be/ns/grondboringen#Boor>;
@@ -391,25 +391,25 @@
   shacl:description "Het resultaat van de uitgevoerde grondboring."@nl;
   shacl:minCount 1;
   shacl:name "resultaat"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/grondboringen#resultaat> .
+  shacl:path <http://www.w3.org/ns/sosa/hasResult> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/2353f88cee6bcc5ed296824e9ab2a8820fcd96dc> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.gebruikteProcedure";
   shacl:description "Boormethode die werd gevolgd bij de Grondboring."@nl;
   shacl:maxCount 1;
   shacl:name "gebruikteProcedure"@nl;
-  shacl:path <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure> .
+  shacl:path <http://www.w3.org/ns/sosa/usedProcedure> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/48db12f64a123c44de0a2a4b3add9ca5e7d022d2> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.wettelijkKader";
   shacl:description "Het kader dat vastlegt wat behoort tot de wet."@nl;
   shacl:maxCount 1;
   shacl:name "wettelijkKader"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/grondboringen#wettelijkKader> .
+  shacl:path <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.wettelijkKader> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/7afa0066b3a4f97d47d51ff39171ffd92d38f090> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.gebruikteProcedure";
   shacl:class <https://data.vlaanderen.be/ns/grondboringen#Boormethode>;
   shacl:description "Boormethode die werd gevolgd bij de Grondboring."@nl;
   shacl:name "gebruikteProcedure"@nl;
-  shacl:path <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure> .
+  shacl:path <http://www.w3.org/ns/sosa/usedProcedure> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/806dacc51b530a17850a552ce0cb724ec7cbbc93> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.uitgevoerdMet";
   shacl:description "Boor waarmee de Bemonstering is uitgevoerd."@nl;
@@ -421,13 +421,13 @@
   shacl:datatype xsd:date;
   shacl:description "Moment waarop de Bemonstering werd afgerond."@nl;
   shacl:name "bemonsteringstijdstip"@nl;
-  shacl:path <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip> .
+  shacl:path <http://www.w3.org/ns/sosa/resultTime> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/972d73e7a13100b66c0c2f44466edac47aa1ab28> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.identificator";
   shacl:description "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."@nl;
   shacl:minCount 1;
   shacl:name "identificator"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator> .
+  shacl:path <http://www.w3.org/ns/adms#identifier> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/9909eafa370b04d51be542b1334f0d653ce9b153> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.boorder";
   shacl:description "Diegene die de Boring heeft uitgevoerd."@nl;
@@ -439,7 +439,7 @@
   shacl:description "Boormethode die werd gevolgd bij de Grondboring."@nl;
   shacl:minCount 1;
   shacl:name "gebruikteProcedure"@nl;
-  shacl:path <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure> .
+  shacl:path <http://www.w3.org/ns/sosa/usedProcedure> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/9ebc30e6f69b143b3fb9e8f970b33803baf4daa9> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.boormeester";
   shacl:description "Opzichter bij de Boring."@nl;
@@ -451,7 +451,7 @@
   shacl:description "Moment waarop de Bemonstering werd afgerond."@nl;
   shacl:maxCount 1;
   shacl:name "bemonsteringstijdstip"@nl;
-  shacl:path <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip> .
+  shacl:path <http://www.w3.org/ns/sosa/resultTime> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/c6998757a81917032e375281f3fcd052f8c77ba3> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.boorder";
   shacl:class dc:Agent;
@@ -469,7 +469,7 @@
   shacl:class skos:Concept;
   shacl:description "Reden waarom de Grondboring werd uitgevoerd."@nl;
   shacl:name "doel"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/grondboringen#doel> .
+  shacl:path <https://data.vlaanderen.be/ns/sensoren-en-bemonstering/#Bemonstering.doel> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/e7fa4f717d657a7ec29e000dc85d6d977df36c27> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.uitgevoerdMet";
   shacl:description "Boor waarmee de Bemonstering is uitgevoerd."@nl;
@@ -481,19 +481,19 @@
   shacl:class <https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring>;
   shacl:description "Het kader dat vastlegt wat behoort tot de wet."@nl;
   shacl:name "wettelijkKader"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/grondboringen#wettelijkKader> .
+  shacl:path <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.wettelijkKader> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/fb6ef3f37406c3cb9df029e482a520e136898356> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.bemonsteringstijdstip";
   shacl:description "Moment waarop de Bemonstering werd afgerond."@nl;
   shacl:minCount 1;
   shacl:name "bemonsteringstijdstip"@nl;
-  shacl:path <https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip> .
+  shacl:path <http://www.w3.org/ns/sosa/resultTime> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/fc134bbb026523e6afde205e88de56ae056be099> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.resultaat";
   shacl:description "Het resultaat van de uitgevoerde grondboring."@nl;
   shacl:maxCount 1;
   shacl:name "resultaat"@nl;
-  shacl:path <https://data.vlaanderen.be/ns/grondboringen#resultaat> .
+  shacl:path <http://www.w3.org/ns/sosa/hasResult> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#LijnStringShape> a shacl:NodeShape;
   shacl:closed false;

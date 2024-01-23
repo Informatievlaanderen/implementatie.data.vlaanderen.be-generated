@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/00e2abbde01fd4341d4750e7eb130c8f5652954f",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/00e2abbde01fd4341d4750e7eb130c8f5652954f/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/93aaf2b33cd7f7084ffd6a4e363f6cc576e5f681",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/93aaf2b33cd7f7084ffd6a4e363f6cc576e5f681/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-mijnThema/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
@@ -106,46 +106,6 @@
             "parentURI": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.shape",
             "package": "Grondverzet-Grondboringen",
             "usageNote-nl": "Loopt van de boorkraag (die zowel boven, op als onder het maaiveld - of ander referentievlak - kan liggen) tot het verste punt van de boring. Coördinaten worden minimaal in 2D maar bij voorkeur in 2.5D gegeven."
-          }
-        },
-        {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#isResultaatVan",
-          "name": "isresultaatvan",
-          "sort": "isResultaatVan",
-          "label": {
-            "nl": "isResultaatVan"
-          },
-          "description": {
-            "nl": "Grondboring waarvan het Boorgat het resultaat is."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Boorgat",
-              "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Grondboring",
-              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Grondboring",
-              "range_puri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring",
-              "range_label": {
-                "nl": "Grondboring"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "isResultaatVan",
-            "parentURI": "http://www.w3.org/ns/sosa/isresultOf",
-            "definition-nl": "Grondboring waarvan het Boorgat het resultaat is."
           }
         },
         {
@@ -429,6 +389,47 @@
             "label-nl": "diepte",
             "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.diepte",
             "ap-definition-nl": "De diepte van het Boorgat."
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/sosa/isResultOf",
+          "name": "isresultaatvan",
+          "sort": "isResultaatVan",
+          "label": {
+            "nl": "isResultaatVan"
+          },
+          "description": {
+            "nl": "Grondboring waarvan het Boorgat het resultaat is."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Boorgat",
+              "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Grondboring",
+              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Grondboring",
+              "range_puri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring",
+              "range_label": {
+                "nl": "Grondboring"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "isResultaatVan",
+            "parentURI": "http://www.w3.org/ns/sosa/isresultOf",
+            "uri": "http://www.w3.org/ns/sosa/isResultOf",
+            "definition-nl": "Grondboring waarvan het Boorgat het resultaat is."
           }
         },
         {
@@ -947,172 +948,7 @@
       },
       "properties": [
         {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure",
-          "name": "gebruikteprocedure",
-          "sort": "gebruikteProcedure",
-          "label": {
-            "nl": "gebruikteProcedure"
-          },
-          "description": {
-            "nl": "Boormethode die werd gevolgd bij de Grondboring."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Grondboring",
-              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Boormethode",
-              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Boormethode",
-              "range_puri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode",
-              "range_label": {
-                "nl": "Boormethode"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "gebruikteProcedure",
-            "name": "gebruikteProcedure",
-            "definition-nl": "Boormethode die werd gevolgd bij de Grondboring.",
-            "package": "Grondverzet-Grondboringen",
-            "parentURI": "http://www.w3.org/ns/sosa/usedProcedure"
-          }
-        },
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip",
-          "name": "bemonsteringstijdstip",
-          "sort": "bemonsteringstijdstip",
-          "label": {
-            "nl": "bemonsteringstijdstip"
-          },
-          "description": {
-            "nl": "Moment waarop de Bemonstering werd afgerond."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Grondboring",
-              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Date",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#date"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#date",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#date",
-              "range_label": {
-                "nl": "Date"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "bemonsteringstijdstip",
-            "ap-label-nl": "bemonsteringstijdstip",
-            "ap-definition-nl": "Moment waarop de Bemonstering werd afgerond.",
-            "parentURI": "http://www.w3.org/ns/sosa/resultTime",
-            "package": "Grondverzet-Grondboringen",
-            "definition-nl": "Moment waarop de Bemonstering werd afgerond."
-          }
-        },
-        {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKader",
-          "name": "wettelijkkader",
-          "sort": "wettelijkKader",
-          "label": {
-            "nl": "wettelijkKader"
-          },
-          "description": {
-            "nl": "Het kader dat vastlegt wat behoort tot de wet."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Grondboring",
-              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "WettelijkKaderBoring",
-              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring",
-              "range_puri": "https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring",
-              "range_label": {
-                "nl": "WettelijkKaderBoring"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "wettelijkKader",
-            "definition-nl": "Het kader dat vastlegt wat behoort tot de wet.",
-            "parentURI": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.wettelijkKader"
-          }
-        },
-        {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#resultaat",
-          "name": "resultaat",
-          "sort": "resultaat",
-          "label": {
-            "nl": "resultaat"
-          },
-          "description": {
-            "nl": "Het resultaat van de uitgevoerde grondboring."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Grondboring",
-              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Boorgat",
-              "range_uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Boorgat",
-              "range_puri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole",
-              "range_label": {
-                "nl": "Boorgat"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "parentURI": "http://www.w3.org/ns/sosa/hasResult",
-            "definition-nl": "Het resultaat van de uitgevoerde grondboring.",
-            "label-nl": "resultaat"
-          }
-        },
-        {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#doel",
+          "uri": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering/#Bemonstering.doel",
           "name": "doel",
           "sort": "doel",
           "label": {
@@ -1151,7 +987,49 @@
             "label-nl": "doel",
             "definition-nl": "Reden waarom de Grondboring werd uitgevoerd.",
             "usageNote-nl": "Vb exploitatie, onderzoek, bemaling etc.",
-            "parentURI": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.doel"
+            "parentURI": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.doel",
+            "uri": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering/#Bemonstering.doel"
+          }
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.wettelijkKader",
+          "name": "wettelijkkader",
+          "sort": "wettelijkKader",
+          "label": {
+            "nl": "wettelijkKader"
+          },
+          "description": {
+            "nl": "Het kader dat vastlegt wat behoort tot de wet."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Grondboring",
+              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "WettelijkKaderBoring",
+              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring",
+              "range_puri": "https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring",
+              "range_label": {
+                "nl": "WettelijkKaderBoring"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "wettelijkKader",
+            "definition-nl": "Het kader dat vastlegt wat behoort tot de wet.",
+            "parentURI": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.wettelijkKader",
+            "uri": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.wettelijkKader"
           }
         },
         {
@@ -1191,7 +1069,8 @@
           "rawTags": {
             "label-nl": "boormeester",
             "definition-nl": "Opzichter bij de Boring.",
-            "parentURI": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor"
+            "parentURI": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor",
+            "uri": "https://data.vlaanderen.be/ns/grondboringen#boormeester"
           }
         },
         {
@@ -1231,22 +1110,21 @@
           "rawTags": {
             "label-nl": "boorder",
             "definition-nl": "Diegene die de Boring heeft uitgevoerd.",
-            "parentURI": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor"
+            "parentURI": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor",
+            "uri": "https://data.vlaanderen.be/ns/grondboringen#boorder"
           }
         },
         {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator",
-          "name": "identificator",
-          "sort": "identificator",
+          "uri": "http://www.w3.org/ns/sosa/usedProcedure",
+          "name": "gebruikteprocedure",
+          "sort": "gebruikteProcedure",
           "label": {
-            "nl": "identificator"
+            "nl": "gebruikteProcedure"
           },
           "description": {
-            "nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
+            "nl": "Boormethode die werd gevolgd bij de Grondboring."
           },
-          "usage": {
-            "nl": "Bv het boornummer."
-          },
+          "usage": {},
           "domain": [
             {
               "EA-Name": "Grondboring",
@@ -1255,26 +1133,72 @@
           ],
           "range": [
             {
-              "range_label": "Identificator",
-              "range_uri": "http://www.w3.org/ns/adms#Identifier"
+              "range_label": "Boormethode",
+              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/ns/adms#Identifier",
-              "range_puri": "http://www.w3.org/ns/adms#Identifier",
+              "range_uri": "#Boormethode",
+              "range_puri": "https://data.vlaanderen.be/ns/grondboringen#Boormethode",
               "range_label": {
-                "nl": "Identificator"
+                "nl": "Boormethode"
               }
             }
           ],
-          "cardinality": "1..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
-            "label-nl": "identificator",
-            "definition-nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert.",
-            "usageNote-nl": "Bv het boornummer.",
-            "name": "Grondboring.identificator"
+            "uri": "http://www.w3.org/ns/sosa/usedProcedure",
+            "label-nl": "gebruikteProcedure",
+            "name": "gebruikteProcedure",
+            "definition-nl": "Boormethode die werd gevolgd bij de Grondboring.",
+            "package": "Grondverzet-Grondboringen",
+            "parentURI": "http://www.w3.org/ns/sosa/usedProcedure"
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/sosa/resultTime",
+          "name": "bemonsteringstijdstip",
+          "sort": "bemonsteringstijdstip",
+          "label": {
+            "nl": "bemonsteringstijdstip"
+          },
+          "description": {
+            "nl": "Moment waarop de Bemonstering werd afgerond."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Grondboring",
+              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Date",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#date"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_label": {
+                "nl": "Date"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "bemonsteringstijdstip",
+            "ap-label-nl": "bemonsteringstijdstip",
+            "ap-definition-nl": "Moment waarop de Bemonstering werd afgerond.",
+            "parentURI": "http://www.w3.org/ns/sosa/resultTime",
+            "package": "Grondverzet-Grondboringen",
+            "definition-nl": "Moment waarop de Bemonstering werd afgerond.",
+            "uri": "http://www.w3.org/ns/sosa/resultTime"
           }
         },
         {
@@ -1318,6 +1242,91 @@
             "label-nl": "uitgevoerdMet",
             "uri": "http://www.w3.org/ns/sosa/madeBySampler"
           }
+        },
+        {
+          "uri": "http://www.w3.org/ns/sosa/hasResult",
+          "name": "resultaat",
+          "sort": "resultaat",
+          "label": {
+            "nl": "resultaat"
+          },
+          "description": {
+            "nl": "Het resultaat van de uitgevoerde grondboring."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Grondboring",
+              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Boorgat",
+              "range_uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Boorgat",
+              "range_puri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole",
+              "range_label": {
+                "nl": "Boorgat"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "parentURI": "http://www.w3.org/ns/sosa/hasResult",
+            "uri": "http://www.w3.org/ns/sosa/hasResult",
+            "definition-nl": "Het resultaat van de uitgevoerde grondboring.",
+            "label-nl": "resultaat"
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/adms#identifier",
+          "name": "identificator",
+          "sort": "identificator",
+          "label": {
+            "nl": "identificator"
+          },
+          "description": {
+            "nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
+          },
+          "usage": {
+            "nl": "Bv het boornummer."
+          },
+          "domain": [
+            {
+              "EA-Name": "Grondboring",
+              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Identificator",
+              "range_uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/ns/adms#Identifier",
+              "range_puri": "http://www.w3.org/ns/adms#Identifier",
+              "range_label": {
+                "nl": "Identificator"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "identificator",
+            "definition-nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert.",
+            "usageNote-nl": "Bv het boornummer.",
+            "name": "Grondboring.identificator",
+            "uri": "http://www.w3.org/ns/adms#identifier"
+          }
         }
       ]
     }
@@ -1338,23 +1347,6 @@
       ],
       "parents": [
         "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.shape"
-      ]
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure",
-      "name": {
-        "nl": "gebruikteProcedure",
-        "undefined": "gebruikteprocedure"
-      },
-      "description": {},
-      "domain": [
-        null
-      ],
-      "range": [
-        null
-      ],
-      "parents": [
-        "http://www.w3.org/ns/sosa/usedProcedure"
       ]
     },
     {
