@@ -547,275 +547,6 @@
       "sh:targetClass": "http://www.w3.org/ns/sosa/Procedure"
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersbemonsteringsobjectShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersbemonsteringsobjectShape/59b9347ab72afa0c39a2c50ed656780c82fba2dc",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersbemonsteringsobject.bemonsterdObject",
-          "sh:class": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersdomeinobject",
-          "sh:description": {
-            "nl": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
-          },
-          "sh:name": {
-            "nl": "bemonsterdObject"
-          },
-          "sh:path": "https://data.vlaanderen.be/ns/Verkeersmetingen#bemonsterdObject"
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersbemonsteringsobjectShape/7dc9be25e8708bd3eb46ed61288f2a193eea5d61",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersbemonsteringsobject.bemonsterdObject",
-          "sh:description": {
-            "nl": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "nl": "bemonsterdObject"
-          },
-          "sh:path": "https://data.vlaanderen.be/ns/Verkeersmetingen#bemonsterdObject"
-        }
-      ],
-      "sh:targetClass": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersbemonsteringsobject"
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersdomeinobjectShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersdomeinobject"
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerskenmerkShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerskenmerkShape/c53c1376f59495ae14f591145811007941ec95a9",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerskenmerk.voertuigType",
-          "sh:description": {
-            "nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "nl": "voertuigType"
-          },
-          "sh:path": "https://data.vlaanderen.be/ns/Verkeersmetingen#voertuigType"
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerskenmerkShape/c742cfa98ba46c4292837e5fe05fbf3f2cbca5d3",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerskenmerk.voertuigType",
-          "sh:class": "https://data.vlaanderen.be/ns/transportnetwerk#Voertuigtype",
-          "sh:description": {
-            "nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
-          },
-          "sh:name": {
-            "nl": "voertuigType"
-          },
-          "sh:path": "https://data.vlaanderen.be/ns/Verkeersmetingen#voertuigType"
-        }
-      ],
-      "sh:targetClass": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk"
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmeetpuntShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmeetpuntShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeetpunt.geometrie",
-          "sh:description": {
-            "nl": "Vorm- en positiekenmerken van het meetpunt."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "nl": "geometrie"
-          },
-          "sh:path": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape"
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmeetpuntShape/722a1f18cabb107c684fe4ca857876ade00b0d01",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeetpunt.geometrie",
-          "sh:class": "http://www.opengis.net/ont/sf#Point",
-          "sh:description": {
-            "nl": "Vorm- en positiekenmerken van het meetpunt."
-          },
-          "sh:name": {
-            "nl": "geometrie"
-          },
-          "sh:path": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape"
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmeetpuntShape/4d2c98bf74c787097e04d3f0fcb0f87ee31b849a",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie",
-          "sh:class": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie",
-          "sh:description": {
-            "nl": "TODO"
-          },
-          "sh:name": {
-            "nl": "verkeersmeetpuntnetwerkreferentie"
-          },
-          "sh:path": "https://data.vlaanderen.be/ns/Verkeersmetingen#verkeersmeetpuntnetwerkreferentie"
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmeetpuntShape/6671f3df53b1417a425162900c4a685dcbcfbc33",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie",
-          "sh:description": {
-            "nl": "TODO"
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "nl": "verkeersmeetpuntnetwerkreferentie"
-          },
-          "sh:path": "https://data.vlaanderen.be/ns/Verkeersmetingen#verkeersmeetpuntnetwerkreferentie"
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmeetpuntShape/80d746b7bc38757a0a0ce94cf1fe831bf65b863f",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie",
-          "sh:description": {
-            "nl": "TODO"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "nl": "verkeersmeetpuntnetwerkreferentie"
-          },
-          "sh:path": "https://data.vlaanderen.be/ns/Verkeersmetingen#verkeersmeetpuntnetwerkreferentie"
-        }
-      ],
-      "sh:targetClass": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeetpunt"
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/197106ad0cb4018b29e87acb4c3be7026e6ba087",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting.fenomeenTijd",
-          "sh:description": {
-            "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "nl": "fenomeenTijd"
-          },
-          "sh:path": "https://data.vlaanderen.be/ns/Verkeersmetingen#fenomeenTijd"
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/3f9e90796cef453d4c89590ccef204f96f43e944",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting.fenomeenTijd",
-          "sh:class": "http://fixme.com#TemporeleEntiteit",
-          "sh:description": {
-            "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
-          },
-          "sh:name": {
-            "nl": "fenomeenTijd"
-          },
-          "sh:path": "https://data.vlaanderen.be/ns/Verkeersmetingen#fenomeenTijd"
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/9373b012767c975cbce90bd23a5bd885a2bbe616",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting.fenomeenTijd",
-          "sh:description": {
-            "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "nl": "fenomeenTijd"
-          },
-          "sh:path": "https://data.vlaanderen.be/ns/Verkeersmetingen#fenomeenTijd"
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/02392d5801878f9e5a93fa1f9b524558c2d2be0d",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting.geobserveerdObject",
-          "sh:description": {
-            "nl": "TODO"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "nl": "geobserveerdObject"
-          },
-          "sh:path": "https://data.vlaanderen.be/ns/Verkeersmetingen#geobserveerdObject"
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/b4fef4e71702ab03a51fad45549ce17a4cd6d8ca",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting.geobserveerdObject",
-          "sh:description": {
-            "nl": "TODO"
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "nl": "geobserveerdObject"
-          },
-          "sh:path": "https://data.vlaanderen.be/ns/Verkeersmetingen#geobserveerdObject"
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/c98db63081606ff3cead34428d27ce68f0deb45e",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting.geobserveerdObject",
-          "sh:class": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeetpunt",
-          "sh:description": {
-            "nl": "TODO"
-          },
-          "sh:name": {
-            "nl": "geobserveerdObject"
-          },
-          "sh:path": "https://data.vlaanderen.be/ns/Verkeersmetingen#geobserveerdObject"
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/1577ed08c179238e234b11af1f5672b5d2614526",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting.uitgevoerdMet",
-          "sh:class": "https://www.w3.org/ns/sosa/Sensor",
-          "sh:description": {
-            "nl": "De Sensor waarmee de Verkeersmeting werd uitgevoerd."
-          },
-          "sh:name": {
-            "nl": "uitgevoerdMet"
-          },
-          "sh:path": "http://www.w3.org/ns/sosa/madeBySensor"
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/806dacc51b530a17850a552ce0cb724ec7cbbc93",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting.uitgevoerdMet",
-          "sh:description": {
-            "nl": "De Sensor waarmee de Verkeersmeting werd uitgevoerd."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "nl": "uitgevoerdMet"
-          },
-          "sh:path": "http://www.w3.org/ns/sosa/madeBySensor"
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/e7fa4f717d657a7ec29e000dc85d6d977df36c27",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting.uitgevoerdMet",
-          "sh:description": {
-            "nl": "De Sensor waarmee de Verkeersmeting werd uitgevoerd."
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "nl": "uitgevoerdMet"
-          },
-          "sh:path": "http://www.w3.org/ns/sosa/madeBySensor"
-        }
-      ],
-      "sh:targetClass": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting"
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersobjectShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersobject"
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegobjectShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "https://data.vlaanderen.be/ns/Verkeersmetingen#Wegobject"
-    },
-    {
       "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#LineaireReferentieShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -1047,6 +778,275 @@
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "https://data.vlaanderen.be/ns/transportnetwerk#Transportlink"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersbemonsteringsobjectShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersbemonsteringsobjectShape/59b9347ab72afa0c39a2c50ed656780c82fba2dc",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersbemonsteringsobject.bemonsterdObject",
+          "sh:class": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersdomeinobject",
+          "sh:description": {
+            "nl": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
+          },
+          "sh:name": {
+            "nl": "bemonsterdObject"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersbemonsteringsobjectShape/7dc9be25e8708bd3eb46ed61288f2a193eea5d61",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersbemonsteringsobject.bemonsterdObject",
+          "sh:description": {
+            "nl": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "bemonsterdObject"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject"
+        }
+      ],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersbemonsteringsobject"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersdomeinobjectShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersdomeinobject"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerskenmerkShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerskenmerkShape/c53c1376f59495ae14f591145811007941ec95a9",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerskenmerk.voertuigType",
+          "sh:description": {
+            "nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "voertuigType"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeerskenmerkShape/c742cfa98ba46c4292837e5fe05fbf3f2cbca5d3",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeerskenmerk.voertuigType",
+          "sh:class": "https://data.vlaanderen.be/ns/transportnetwerk#Voertuigtype",
+          "sh:description": {
+            "nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
+          },
+          "sh:name": {
+            "nl": "voertuigType"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType"
+        }
+      ],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmeetpuntShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmeetpuntShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeetpunt.geometrie",
+          "sh:description": {
+            "nl": "Vorm- en positiekenmerken van het meetpunt."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "geometrie"
+          },
+          "sh:path": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmeetpuntShape/722a1f18cabb107c684fe4ca857876ade00b0d01",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeetpunt.geometrie",
+          "sh:class": "http://www.opengis.net/ont/sf#Point",
+          "sh:description": {
+            "nl": "Vorm- en positiekenmerken van het meetpunt."
+          },
+          "sh:name": {
+            "nl": "geometrie"
+          },
+          "sh:path": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmeetpuntShape/4d2c98bf74c787097e04d3f0fcb0f87ee31b849a",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie",
+          "sh:class": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie",
+          "sh:description": {
+            "nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
+          },
+          "sh:name": {
+            "nl": "verkeersmeetpuntnetwerkreferentie"
+          },
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen/#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmeetpuntShape/6671f3df53b1417a425162900c4a685dcbcfbc33",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie",
+          "sh:description": {
+            "nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "verkeersmeetpuntnetwerkreferentie"
+          },
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen/#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmeetpuntShape/80d746b7bc38757a0a0ce94cf1fe831bf65b863f",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie",
+          "sh:description": {
+            "nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "verkeersmeetpuntnetwerkreferentie"
+          },
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen/#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie"
+        }
+      ],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/197106ad0cb4018b29e87acb4c3be7026e6ba087",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting.fenomeenTijd",
+          "sh:description": {
+            "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "fenomeenTijd"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#fenomeenTijd"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/3f9e90796cef453d4c89590ccef204f96f43e944",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting.fenomeenTijd",
+          "sh:class": "http://fixme.com#TemporeleEntiteit",
+          "sh:description": {
+            "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+          },
+          "sh:name": {
+            "nl": "fenomeenTijd"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#fenomeenTijd"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/9373b012767c975cbce90bd23a5bd885a2bbe616",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting.fenomeenTijd",
+          "sh:description": {
+            "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "fenomeenTijd"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#fenomeenTijd"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/02392d5801878f9e5a93fa1f9b524558c2d2be0d",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting.geobserveerdObject",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "geobserveerdObject"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/b4fef4e71702ab03a51fad45549ce17a4cd6d8ca",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting.geobserveerdObject",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "geobserveerdObject"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/c98db63081606ff3cead34428d27ce68f0deb45e",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting.geobserveerdObject",
+          "sh:class": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt",
+          "sh:description": {
+            "nl": "TODO"
+          },
+          "sh:name": {
+            "nl": "geobserveerdObject"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/1577ed08c179238e234b11af1f5672b5d2614526",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting.uitgevoerdMet",
+          "sh:class": "https://www.w3.org/ns/sosa/Sensor",
+          "sh:description": {
+            "nl": "De Sensor waarmee de Verkeersmeting werd uitgevoerd."
+          },
+          "sh:name": {
+            "nl": "uitgevoerdMet"
+          },
+          "sh:path": "http://www.w3.org/ns/sosa/madeBySensor"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/806dacc51b530a17850a552ce0cb724ec7cbbc93",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting.uitgevoerdMet",
+          "sh:description": {
+            "nl": "De Sensor waarmee de Verkeersmeting werd uitgevoerd."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "uitgevoerdMet"
+          },
+          "sh:path": "http://www.w3.org/ns/sosa/madeBySensor"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersmetingShape/e7fa4f717d657a7ec29e000dc85d6d977df36c27",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#Verkeersmeting.uitgevoerdMet",
+          "sh:description": {
+            "nl": "De Sensor waarmee de Verkeersmeting werd uitgevoerd."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "uitgevoerdMet"
+          },
+          "sh:path": "http://www.w3.org/ns/sosa/madeBySensor"
+        }
+      ],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#VerkeersobjectShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersobject"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#WegobjectShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/verkeersmetingen#Wegobject"
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27#RijrichtingShape",
@@ -1354,7 +1354,7 @@
           "sh:name": {
             "nl": "ligging"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/Verkeersmetingen#ligging"
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#ligging"
         }
       ],
       "sh:targetClass": "https://www.w3.org/ns/sosa/Sensor"

@@ -41,7 +41,7 @@
         "nl": "Het vaststellen van de snelheid van voertuigen op een bepaalde locatie op een bepaald tijdstip of gedurende een specifiek tijdsinterval."
       },
       "parents": [
-        "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting",
+        "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting",
         "http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement"
       ]
     },
@@ -55,7 +55,7 @@
         "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
       },
       "parents": [
-        "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk"
+        "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk"
       ]
     },
     {
@@ -68,7 +68,7 @@
         "nl": "Het vaststellen van het aantal voertuigen op een bepaalde locatie op een bepaald tijdstip of gedurende een specifiek tijdsinterval."
       },
       "parents": [
-        "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting",
+        "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting",
         "http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation"
       ]
     },
@@ -82,7 +82,7 @@
         "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
       },
       "parents": [
-        "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk"
+        "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk"
       ]
     }
   ],
@@ -103,6 +103,23 @@
     }
   ],
   "properties": [
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen/#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "label": {
+        "nl": "verkeersmeetpuntnetwerkreferentie"
+      },
+      "definition": {
+        "nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
+      },
+      "domain": [
+        "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt"
+      ],
+      "range": [
+        "https://data.vlaanderen.be/ns/netwerk#Puntreferentie"
+      ],
+      "generalization": []
+    },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk.kenmerktype",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
