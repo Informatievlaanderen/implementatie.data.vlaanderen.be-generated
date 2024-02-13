@@ -55,7 +55,7 @@
         <rdfs:isDefinedBy rdf:resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen"/>
         <rdfs:label xml:lang="nl">Verkeerssnelheidsmeting</rdfs:label>
         <rdfs:comment xml:lang="nl">Het vaststellen van de snelheid van voertuigen op een bepaalde locatie op een bepaald tijdstip of gedurende een specifiek tijdsinterval.</rdfs:comment>
-        <rdfs:subClassOf rdf:resource="https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting"/>
+        <rdfs:subClassOf rdf:resource="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting"/>
         <rdfs:subClassOf rdf:resource="http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement"/>
       </owl:Class>
     </rdfs:domain>
@@ -64,7 +64,7 @@
         <rdfs:isDefinedBy rdf:resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen"/>
         <rdfs:label xml:lang="nl">Verkeerssnelheidsmetingkenmerk</rdfs:label>
         <rdfs:comment xml:lang="nl">Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer.</rdfs:comment>
-        <rdfs:subClassOf rdf:resource="https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk"/>
+        <rdfs:subClassOf rdf:resource="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk"/>
       </owl:Class>
     </rdfs:range>
     <rdfs:subPropertyOf rdf:resource="https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk"/>
@@ -85,7 +85,7 @@
         <rdfs:isDefinedBy rdf:resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen"/>
         <rdfs:label xml:lang="nl">Verkeerstelling</rdfs:label>
         <rdfs:comment xml:lang="nl">Het vaststellen van het aantal voertuigen op een bepaalde locatie op een bepaald tijdstip of gedurende een specifiek tijdsinterval.</rdfs:comment>
-        <rdfs:subClassOf rdf:resource="https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting"/>
+        <rdfs:subClassOf rdf:resource="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting"/>
         <rdfs:subClassOf rdf:resource="http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation"/>
       </owl:Class>
     </rdfs:domain>
@@ -94,7 +94,7 @@
         <rdfs:isDefinedBy rdf:resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen"/>
         <rdfs:label xml:lang="nl">Verkeerstellingkenmerk</rdfs:label>
         <rdfs:comment xml:lang="nl">Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer.</rdfs:comment>
-        <rdfs:subClassOf rdf:resource="https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk"/>
+        <rdfs:subClassOf rdf:resource="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk"/>
       </owl:Class>
     </rdfs:range>
     <rdfs:subPropertyOf rdf:resource="https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk"/>
@@ -113,5 +113,12 @@
     <rdfs:comment xml:lang="nl">Kenmerktype 'aantal' is het specifieke kenmerktype van de verkeerstelling</rdfs:comment>
     <rdfs:domain rdf:resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk"/>
     <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen/#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie">
+    <rdfs:isDefinedBy rdf:resource="https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen"/>
+    <rdfs:label xml:lang="nl">verkeersmeetpuntnetwerkreferentie</rdfs:label>
+    <rdfs:comment xml:lang="nl">Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt"/>
+    <rdfs:range rdf:resource="https://data.vlaanderen.be/ns/netwerk#Puntreferentie"/>
   </owl:ObjectProperty>
 </rdf:RDF>

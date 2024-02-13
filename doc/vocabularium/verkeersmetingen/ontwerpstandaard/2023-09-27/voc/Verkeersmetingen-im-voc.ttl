@@ -56,6 +56,13 @@ skos:Concept a rdfs:Class;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen>;
   rdfs:range skos:Concept .
 
+<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen/#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie> a owl:ObjectProperty;
+  rdfs:label "verkeersmeetpuntnetwerkreferentie"@nl;
+  rdfs:comment "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen>;
+  rdfs:range <https://data.vlaanderen.be/ns/netwerk#Puntreferentie> .
+
 <http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement.result> a rdf:Property;
   rdfs:label "resultaat"@nl .
 
@@ -63,27 +70,27 @@ skos:Concept a rdfs:Class;
   rdfs:label "Verkeerssnelheidsmeting"@nl;
   rdfs:comment "Het vaststellen van de snelheid van voertuigen op een bepaalde locatie op een bepaald tijdstip of gedurende een specifiek tijdsinterval."@nl;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen>;
-  rdfs:subClassOf <https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting>,
+  rdfs:subClassOf <https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting>,
     <http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement> .
 
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmetingkenmerk> a owl:Class;
   rdfs:label "Verkeerssnelheidsmetingkenmerk"@nl;
   rdfs:comment "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."@nl;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen>;
-  rdfs:subClassOf <https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk> .
+  rdfs:subClassOf <https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk> .
 
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstelling> a owl:Class;
   rdfs:label "Verkeerstelling"@nl;
   rdfs:comment "Het vaststellen van het aantal voertuigen op een bepaalde locatie op een bepaald tijdstip of gedurende een specifiek tijdsinterval."@nl;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen>;
-  rdfs:subClassOf <https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting>,
+  rdfs:subClassOf <https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting>,
     <http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation> .
 
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk> a owl:Class;
   rdfs:label "Verkeerstellingkenmerk"@nl;
   rdfs:comment "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."@nl;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen>;
-  rdfs:subClassOf <https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk> .
+  rdfs:subClassOf <https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk> .
 
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen> a owl:Ontology;
   rdfs:label "Verkeersmetingen-im-voc"@en,
