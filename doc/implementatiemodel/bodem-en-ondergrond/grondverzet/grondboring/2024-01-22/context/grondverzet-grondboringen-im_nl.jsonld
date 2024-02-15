@@ -1,141 +1,8 @@
 {
   "@context": {
-    "Agent": "http://purl.org/dc/terms/Agent",
-    "Bekisting": {
-      "@context": {
-        "bekisting": {
-          "@container": "@set",
-          "@id": "https://data.vlaanderen.be/ns/grondboringen#Bekisting.bekisting",
-          "@type": "@id"
-        }
-      },
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#Bekisting"
-    },
-    "Boor": {
-      "@context": {
-        "type": {
-          "@container": "@set",
-          "@id": "http://purl.org/dc/terms/type",
-          "@type": "@id"
-        }
-      },
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#Boor"
-    },
-    "Boorgat": {
-      "@context": {
-        "aangenomenGrondwaterstand": {
-          "@id": "https://data.vlaanderen.be/ns/grondboringen#aangenomenGrondwaterstand",
-          "@type": "@id"
-        },
-        "bekisting": {
-          "@id": "https://data.vlaanderen.be/ns/grondboringen#Boorgat.bekisting",
-          "@type": "@id"
-        },
-        "boordiameter": {
-          "@id": "https://data.vlaanderen.be/ns/grondboringen#boordiameter",
-          "@type": "@id"
-        },
-        "boringLengte": {
-          "@id": "https://data.vlaanderen.be/ns/grondboringen#boringLengte",
-          "@type": "@id"
-        },
-        "diepte": {
-          "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.diepte",
-          "@type": "@id"
-        },
-        "gehostPlatform": {
-          "@container": "@set",
-          "@id": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.hostedProcedure",
-          "@type": "@id"
-        },
-        "geometrie": {
-          "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
-          "@type": "@id"
-        },
-        "isResultaatVan": {
-          "@id": "http://www.w3.org/ns/sosa/isResultOf",
-          "@type": "@id"
-        },
-        "ligging": {
-          "@container": "@set",
-          "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.ligging",
-          "@type": "@id"
-        },
-        "maaiveld": {
-          "@container": "@set",
-          "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld",
-          "@type": "@id"
-        },
-        "positioneleNauwkeurigheid": {
-          "@container": "@set",
-          "@id": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.positionalAccuracy",
-          "@type": "@id"
-        }
-      },
-      "@id": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-    },
-    "Boorgatdiameter": {
-      "@context": {
-        "diameter": {
-          "@container": "@set",
-          "@id": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter.diameter",
-          "@type": "@id"
-        }
-      },
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter"
-    },
-    "Boormethode": {
-      "@context": {
-        "inclinatietype": {
-          "@id": "https://data.vlaanderen.be/ns/grondboringen#inclinatietype",
-          "@type": "@id"
-        },
-        "methode": {
-          "@container": "@set",
-          "@id": "https://data.vlaanderen.be/ns/grondboringen#Boormethode.methode",
-          "@type": "@id"
-        },
-        "startpunt": {
-          "@id": "https://data.vlaanderen.be/ns/grondboringen#startpunt",
-          "@type": "@id"
-        }
-      },
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
-    },
-    "BoormethodeInterval": {
-      "@context": {
-        "geometrie": {
-          "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#BoormethodeInterval.geometrie",
-          "@type": "@id"
-        },
-        "methode": {
-          "@id": "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode",
-          "@type": "@id"
-        }
-      },
-      "@id": "https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval"
-    },
-    "Geometrie": {
-      "@context": {
-        "gml": {
-          "@id": "http://www.opengis.net/ont/geosparql#asGML"
-        },
-        "opmeting": {
-          "@id": "https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting",
-          "@type": "@id"
-        },
-        "wkt": {
-          "@id": "http://www.opengis.net/ont/geosparql#asWKT"
-        }
-      },
-      "@id": "http://www.w3.org/ns/locn#Geometry"
-    },
+    "Boringdoeltype": "http://www.w3.org/2004/02/skos/core#Concept",
     "Grondboring": {
       "@context": {
-        "bemonsteringstijdstip": {
-          "@id": "http://www.w3.org/ns/sosa/resultTime",
-          "@type": "http://www.w3.org/2001/XMLSchema#date"
-        },
         "boorder": {
           "@id": "https://data.vlaanderen.be/ns/grondboringen#boorder",
           "@type": "@id"
@@ -146,33 +13,33 @@
         },
         "doel": {
           "@container": "@set",
-          "@id": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering/#Bemonstering.doel",
-          "@type": "@id"
-        },
-        "gebruikteProcedure": {
-          "@id": "http://www.w3.org/ns/sosa/usedProcedure",
+          "@id": "https://data.vlaanderen.be/ns/grondboringen#doel",
           "@type": "@id"
         },
         "identificator": {
           "@container": "@set",
-          "@id": "http://www.w3.org/ns/adms#identifier",
-          "@type": "@id"
-        },
-        "resultaat": {
-          "@id": "http://www.w3.org/ns/sosa/hasResult",
-          "@type": "@id"
-        },
-        "uitgevoerdMet": {
-          "@id": "http://www.w3.org/ns/sosa/madeBySampler",
+          "@id": "https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator",
           "@type": "@id"
         },
         "wettelijkKader": {
-          "@id": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.wettelijkKader",
-          "@type": "@id"
+          "@id": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKader"
         }
       },
       "@id": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
     },
-    "Lijnstring": "http://www.opengis.net/ont/sf#LineString"
+    "Identificator": "http://www.w3.org/ns/adms#Identifier",
+    "WettelijkKaderBoring": {
+      "@context": {
+        "wettelijkKaderBoorder": {
+          "@id": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoorder",
+          "@type": "@id"
+        },
+        "wettelijkKaderBoring": {
+          "@id": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoring",
+          "@type": "@id"
+        }
+      },
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring"
+    }
   }
 }
