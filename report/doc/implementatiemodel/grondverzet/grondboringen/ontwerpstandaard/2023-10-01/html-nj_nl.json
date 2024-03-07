@@ -12,8 +12,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/319348022a9c3aaf5101a2709c43b667f40e9bd0",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/319348022a9c3aaf5101a2709c43b667f40e9bd0/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/648c829c761be21110a7bb72bd9f6e4b8522d547",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/648c829c761be21110a7bb72bd9f6e4b8522d547/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-mijnThema/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
@@ -109,46 +109,6 @@
       },
       "properties": [
         {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#isResultaatVan",
-          "name": "isresultaatvan",
-          "sort": "isResultaatVan",
-          "label": {
-            "nl": "isResultaatVan"
-          },
-          "description": {
-            "nl": "Grondboring waarvan het Boorgat het resultaat is."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Boorgat",
-              "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Grondboring",
-              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Grondboring",
-              "range_puri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring",
-              "range_label": {
-                "nl": "Grondboring"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "isResultaatVan",
-            "parentURI": "http://www.w3.org/ns/sosa/isresultOf",
-            "definition-nl": "Grondboring waarvan het Boorgat het resultaat is."
-          }
-        },
-        {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#boringLengte",
           "name": "boringlengte",
           "sort": "boringLengte",
@@ -175,7 +135,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "https://schema.org/QuantitativeValue",
+              "range_uri": "#KwantitatieveWaarde",
               "range_puri": "https://schema.org/QuantitativeValue",
               "range_label": {
                 "nl": "KwantitatieveWaarde"
@@ -256,7 +216,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "https://schema.org/QuantitativeValue",
+              "range_uri": "#KwantitatieveWaarde",
               "range_puri": "https://schema.org/QuantitativeValue",
               "range_label": {
                 "nl": "KwantitatieveWaarde"
@@ -432,6 +392,46 @@
           }
         },
         {
+          "uri": "http://www.w3.org/ns/sosa/isresultOf",
+          "name": "isresultaatvan",
+          "sort": "isResultaatVan",
+          "label": {
+            "nl": "isResultaatVan"
+          },
+          "description": {
+            "nl": "Grondboring waarvan het Boorgat het resultaat is."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Boorgat",
+              "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Grondboring",
+              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Grondboring",
+              "range_puri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring",
+              "range_label": {
+                "nl": "Grondboring"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://www.w3.org/ns/sosa/isresultOf",
+            "label-nl": "isResultaatVan",
+            "definition-nl": "Grondboring waarvan het Boorgat het resultaat is."
+          }
+        },
+        {
           "uri": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.shape",
           "name": "geometrie",
           "sort": "geometrie",
@@ -453,13 +453,13 @@
           "range": [
             {
               "range_label": "Curve",
-              "range_uri": "http://www.opengis.net/ont/geosparql#Curve"
+              "range_uri": "http://www.opengis.net/ont/sf#Curve"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Curve",
-              "range_puri": "http://www.opengis.net/ont/geosparql#Curve",
+              "range_puri": "http://www.opengis.net/ont/sf#Curve",
               "range_label": {
                 "nl": "Curve"
               }
@@ -655,91 +655,6 @@
       },
       "properties": [
         {
-          "uri": "https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator",
-          "name": "identificator",
-          "sort": "identificator",
-          "label": {
-            "nl": "identificator"
-          },
-          "description": {
-            "nl": "Verwijzing naar de informatie die het Bemonsteringsobject uniek identificeert."
-          },
-          "usage": {
-            "nl": "Bv het uniek nummer dat aan een Monster wordt toegekend of het numer van een meetstation."
-          },
-          "domain": [
-            {
-              "EA-Name": "Bemonsteringsobject",
-              "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Identificator",
-              "range_uri": "http://www.w3.org/ns/adms#Identifier"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Identificator",
-              "range_puri": "http://www.w3.org/ns/adms#Identifier",
-              "range_label": {
-                "nl": "Identificator"
-              }
-            }
-          ],
-          "cardinality": "1..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "identificator",
-            "definition-nl": "Verwijzing naar de informatie die het Bemonsteringsobject uniek identificeert.",
-            "usageNote-nl": "Bv het uniek nummer dat aan een Monster wordt toegekend of het numer van een meetstation.",
-            "name": "Bemonsteringsobject.identificator"
-          }
-        },
-        {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Bemonsteringsobject.bemonsterdObject",
-          "name": "bemonsterdobject",
-          "sort": "bemonsterdObject",
-          "label": {
-            "nl": "bemonsterdObject"
-          },
-          "description": {
-            "nl": "Het Grondobject dat wordt bemonsterd."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Bemonsteringsobject",
-              "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Grondobject",
-              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#Grondobject"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Grondobject",
-              "range_puri": "https://data.vlaanderen.be/ns/grondboringen#Grondobject",
-              "range_label": {
-                "nl": "Grondobject"
-              }
-            }
-          ],
-          "cardinality": "1..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "name": "Bemonsteringsobject.bemonsterdObject",
-            "package": "OSLO-Grondboringen",
-            "definition-nl": "Het Grondobject dat wordt bemonsterd.",
-            "parentURI": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
-            "label-nl": "bemonsterdObject"
-          }
-        },
-        {
           "uri": "http://www.w3.org/ns/sosa/isResultOf",
           "name": "isresultaatvan",
           "sort": "isResultaatVan",
@@ -778,6 +693,49 @@
             "ap-definition-nl": "Verwijzing naar de Bemonstering waarvan dit Bemonsteringsobject het resultaat is.",
             "label-nl": "isResultaatVan",
             "uri": "http://www.w3.org/ns/sosa/isResultOf"
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/adms#identifier",
+          "name": "identificator",
+          "sort": "identificator",
+          "label": {
+            "nl": "identificator"
+          },
+          "description": {
+            "nl": "Verwijzing naar de informatie die het Bemonsteringsobject uniek identificeert."
+          },
+          "usage": {
+            "nl": "Bv het uniek nummer dat aan een Monster wordt toegekend of het numer van een meetstation."
+          },
+          "domain": [
+            {
+              "EA-Name": "Bemonsteringsobject",
+              "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Identificator",
+              "range_uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Identificator",
+              "range_puri": "http://www.w3.org/ns/adms#Identifier",
+              "range_label": {
+                "nl": "Identificator"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "identificator",
+            "uri": "http://www.w3.org/ns/adms#identifier",
+            "ap-usageNote-nl": "Bv het uniek nummer dat aan een Monster wordt toegekend of het numer van een meetstation.",
+            "ap-definition-nl": "Verwijzing naar de informatie die het Bemonsteringsobject uniek identificeert."
           }
         },
         {
@@ -862,6 +820,47 @@
             "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SamplingFeatureComplex.relatedSamplingFeature",
             "ap-label-nl": "geassocieerdBemonsteringsobject",
             "label-nl": "geassocieerdBemonsteringsobject"
+          }
+        },
+        {
+          "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
+          "name": "bemonsterdobject",
+          "sort": "bemonsterdObject",
+          "label": {
+            "nl": "bemonsterdObject"
+          },
+          "description": {
+            "nl": "Het Grondobject dat wordt bemonsterd."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Bemonsteringsobject",
+              "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Grondobject",
+              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#Grondobject"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Grondobject",
+              "range_puri": "https://data.vlaanderen.be/ns/grondboringen#Grondobject",
+              "range_label": {
+                "nl": "Grondobject"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
+            "name": "Bemonsteringsobject.bemonsterdObject",
+            "definition-nl": "Het Grondobject dat wordt bemonsterd.",
+            "label-nl": "bemonsterdObject"
           }
         },
         {
@@ -1459,48 +1458,6 @@
           }
         },
         {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Bemonstering.bemonsterdObject",
-          "name": "bemonsterdobject",
-          "sort": "bemonsterdObject",
-          "label": {
-            "nl": "bemonsterdObject"
-          },
-          "description": {
-            "nl": "Het Grondobject dat wordt bemonsterd."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Bemonstering",
-              "uri": "http://www.w3.org/ns/sosa/Sampling"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Grondobject",
-              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#Grondobject"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Grondobject",
-              "range_puri": "https://data.vlaanderen.be/ns/grondboringen#Grondobject",
-              "range_label": {
-                "nl": "Grondobject"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "bemonsterdObject",
-            "package": "OSLO-Grondboringen",
-            "parentURI": "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
-            "name": "Bemonstering.bemonsterdObject",
-            "definition-nl": "Het Grondobject dat wordt bemonsterd."
-          }
-        },
-        {
           "uri": "http://www.w3.org/ns/sosa/usedProcedure",
           "name": "gebruikteprocedure",
           "sort": "gebruikteProcedure",
@@ -1561,13 +1518,13 @@
           "range": [
             {
               "range_label": "TemporeleEntiteit",
-              "range_uri": "http://www.w3.org/2006/time#TemporalEntity"
+              "range_uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#TemporeleEntiteit",
-              "range_puri": "http://www.w3.org/2006/time#TemporalEntity",
+              "range_puri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object",
               "range_label": {
                 "nl": "TemporeleEntiteit"
               }
@@ -1662,6 +1619,47 @@
             "label-nl": "resultaat",
             "ap-definition-nl": "Bemonsteringsobject dat bij de Bemonstering werd verkregen.",
             "uri": "http://www.w3.org/ns/sosa/hasResult"
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
+          "name": "bemonsterdobject",
+          "sort": "bemonsterdObject",
+          "label": {
+            "nl": "bemonsterdObject"
+          },
+          "description": {
+            "nl": "Het Grondobject dat wordt bemonsterd."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Bemonstering",
+              "uri": "http://www.w3.org/ns/sosa/Sampling"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Grondobject",
+              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#Grondobject"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Grondobject",
+              "range_puri": "https://data.vlaanderen.be/ns/grondboringen#Grondobject",
+              "range_label": {
+                "nl": "Grondobject"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "bemonsterdObject",
+            "uri": "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
+            "name": "Bemonstering.bemonsterdObject",
+            "definition-nl": "Het Grondobject dat wordt bemonsterd."
           }
         },
         {
@@ -2532,7 +2530,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#Erkenningtype",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept",
               "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
               "range_label": {
                 "nl": "Erkenningtype"
@@ -2618,7 +2616,7 @@
       },
       "properties": [
         {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Bekisting.bekisting",
+          "uri": "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage.element",
           "name": "bekisting",
           "sort": "bekisting",
           "label": {
@@ -2654,8 +2652,7 @@
           "rawTags": {
             "label-nl": "bekisting",
             "definition-nl": "Verwijzing naar de beschrijving van de bekisting voor een bepaald diepte-interval.",
-            "parentURI": "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage.element",
-            "name": "Bekisting.bekisting"
+            "uri": "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage.element"
           }
         }
       ]
@@ -2727,7 +2724,7 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "xUML": "{redefines ^type, element}",
+            "xUML": "{redefines type, element}",
             "label-nl": "type",
             "uri": "http://purl.org/dc/terms/type",
             "ap-definition-nl": "Verwijzing naar de beschrijving van het type Boor voor een bepaald diepteinterval."
@@ -2764,7 +2761,7 @@
       },
       "properties": [
         {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter.diameter",
+          "uri": "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage.element",
           "name": "diameter",
           "sort": "diameter",
           "label": {
@@ -2800,8 +2797,7 @@
           "rawTags": {
             "label-nl": "diameter",
             "definition-nl": "Verwijzing naar de beschrijving van de boorgatdiameter voor een bepaald diepteinterval.",
-            "parentURI": "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage.element",
-            "name": "Boorgatdiameter.diameter"
+            "uri": "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage.element"
           }
         }
       ]
@@ -2962,7 +2958,7 @@
           "rawTags": {
             "label-nl": "methode",
             "definition-nl": "Verwijzing naar de beschrijving van de boormethode voor een bepaald diepteinterval.",
-            "xUML": "{redefines ^type, element}",
+            "xUML": "{redefines type, element}",
             "name": "Boormethode.methode"
           }
         }
@@ -3004,7 +3000,7 @@
       },
       "properties": [
         {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKader",
+          "uri": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.wettelijkKader",
           "name": "wettelijkkader",
           "sort": "wettelijkKader",
           "label": {
@@ -3040,51 +3036,12 @@
           "rawTags": {
             "label-nl": "wettelijkKader",
             "definition-nl": "Het kader dat vastlegt wat behoort tot de wet.",
-            "parentURI": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.wettelijkKader"
+            "name": "Bemonstering.wettelijkKader",
+            "uri": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.wettelijkKader"
           }
         },
         {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#resultaat",
-          "name": "resultaat",
-          "sort": "resultaat",
-          "label": {
-            "nl": "resultaat"
-          },
-          "description": {
-            "nl": "Het resultaat van de uitgevoerde grondboring."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Grondboring",
-              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Boorgat",
-              "range_uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Boorgat",
-              "range_puri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole",
-              "range_label": {
-                "nl": "Boorgat"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "parentURI": "http://www.w3.org/ns/sosa/hasResult",
-            "definition-nl": "Het resultaat van de uitgevoerde grondboring.",
-            "label-nl": "resultaat"
-          }
-        },
-        {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#doel",
+          "uri": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.doel",
           "name": "doel",
           "sort": "doel",
           "label": {
@@ -3123,7 +3080,8 @@
             "label-nl": "doel",
             "definition-nl": "Reden waarom de Grondboring werd uitgevoerd.",
             "usageNote-nl": "Vb exploitatie, onderzoek, bemaling etc.",
-            "parentURI": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.doel"
+            "name": "Bemonstering.doel",
+            "uri": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.doel"
           }
         },
         {
@@ -3207,7 +3165,47 @@
           }
         },
         {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator",
+          "uri": "http://www.w3.org/ns/sosa/hasResult",
+          "name": "resultaat",
+          "sort": "resultaat",
+          "label": {
+            "nl": "resultaat"
+          },
+          "description": {
+            "nl": "Het resultaat van de uitgevoerde grondboring."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Grondboring",
+              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Boorgat",
+              "range_uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Boorgat",
+              "range_puri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole",
+              "range_label": {
+                "nl": "Boorgat"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://www.w3.org/ns/sosa/hasResult",
+            "definition-nl": "Het resultaat van de uitgevoerde grondboring.",
+            "label-nl": "resultaat"
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/adms#identifier",
           "name": "identificator",
           "sort": "identificator",
           "label": {
@@ -3244,9 +3242,9 @@
           "codelist_uri": "",
           "rawTags": {
             "label-nl": "identificator",
-            "definition-nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert.",
-            "usageNote-nl": "Bv het boornummer.",
-            "name": "Grondboring.identificator"
+            "uri": "http://www.w3.org/ns/adms#identifier",
+            "ap-usageNote-nl": "Bv het boornummer.",
+            "ap-definition-nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
           }
         }
       ]
@@ -3287,7 +3285,7 @@
       },
       "properties": [
         {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#monstertype",
+          "uri": "http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.specimenType",
           "name": "monstertype",
           "sort": "monstertype",
           "label": {
@@ -3324,53 +3322,9 @@
           "codelist_uri": "",
           "rawTags": {
             "label-nl": "monstertype",
-            "definition-nl": "Materiële vorm die het Grondmonster aanneemt.",
-            "usageNote-nl": "Bv of het gespoeld, gestoken, gekernd is.",
-            "parentURI": "http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.specimenType"
-          }
-        },
-        {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#materiaalklasse",
-          "name": "materiaalklasse",
-          "sort": "materiaalklasse",
-          "label": {
-            "nl": "materiaalklasse"
-          },
-          "description": {
-            "nl": "Basisclassificatie vh materiaal waaruit het Grondmonster bestaat."
-          },
-          "usage": {
-            "nl": "Bv bodem, gesteente"
-          },
-          "domain": [
-            {
-              "EA-Name": "Grondmonster",
-              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondmonster"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Materiaalklasse",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Materiaalklasse",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "nl": "Materiaalklasse"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "materiaalklasse",
-            "definition-nl": "Basisclassificatie vh materiaal waaruit het Grondmonster bestaat.",
-            "usageNote-nl": "Bv bodem, gesteente",
-            "name": "materiaalklasse",
-            "parentURI": "http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.materialClass"
+            "uri": "http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.specimenType",
+            "ap-usageNote-nl": "Bv of het gespoeld, gestoken, gekernd is.",
+            "ap-definition-nl": "Materiële vorm die het Grondmonster aanneemt."
           }
         },
         {
@@ -3497,6 +3451,49 @@
             "definition-nl": "Plaats waar het Monster werd genomen.",
             "uri": "http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingLocation",
             "ap-usageNote-nl": "Als het Monster een geassocieerdBemonsteringsobject heeft dat ondubbelzinnig gelocaliseerd is dan is dit attribuut overbodig. Uitzondering in dat geval is wanneer de plaats tov het Bemonsteringsobject daarbij van belang is, bv de diepte waarop een grondmonster is genomen bij een boring. Datatype is Geometrie om naast puntlocaties ook een ruimere begrenzing te kunnen opgeven (bv een diepte-interval in het geval van een grondmonster)."
+          }
+        },
+        {
+          "uri": "http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.materialClass",
+          "name": "materiaalklasse",
+          "sort": "materiaalklasse",
+          "label": {
+            "nl": "materiaalklasse"
+          },
+          "description": {
+            "nl": "Basisclassificatie vh materiaal waaruit het Grondmonster bestaat."
+          },
+          "usage": {
+            "nl": "Bv bodem, gesteente"
+          },
+          "domain": [
+            {
+              "EA-Name": "Grondmonster",
+              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondmonster"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Materiaalklasse",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Materiaalklasse",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Materiaalklasse"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "materiaalklasse",
+            "uri": "http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.materialClass",
+            "ap-usageNote-nl": "Bv bodem, gesteente",
+            "ap-definition-nl": "Basisclassificatie vh materiaal waaruit het Grondmonster bestaat."
           }
         },
         {
@@ -3790,112 +3787,6 @@
       "properties": []
     },
     {
-      "uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Period",
-      "name": "Periode",
-      "label": {
-        "nl": "Periode"
-      },
-      "sort": "Periode",
-      "description": {
-        "nl": "Een 1-dimensionele geometrische primitieve in de tijd."
-      },
-      "usage": {
-        "nl": "Vergelijkbaar met een Curve in de ruimte, maar ipv een interval tussen twee punten in de ruimte gaat het hier over een interval tussen twee punten op de tijdsas. De bijbehorende tijdsduur is de temporele afstand tussen die twee punten (vergelijkbaar met de afstand tussen twee punten in de ruimte). OPMERKING: Meer info in <a href=\"https://iso.org/standard/26013.html\">ISO 19108 Geographic Information - Temporal schema</a>. Substitutie door een eenvoudiger equivalent bv time:Interval uit de <a href=\"https://w3.org/TR/owl-time/\">W3C Time Ontology</a> is aanbevolen."
-      },
-      "parents": [
-        {
-          "label": "Dekking",
-          "name": "Dekking",
-          "package": "DublinCore",
-          "uri": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Dekking",
-          "scoped_uri": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Dekking"
-        }
-      ],
-      "rawTags": {
-        "label-nl": "Periode",
-        "uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Period",
-        "ap-definition-nl": "Een 1-dimensionele geometrische primitieve in de tijd.",
-        "ap-usageNote-nl": "Vergelijkbaar met een Curve in de ruimte, maar ipv een interval tussen twee punten in de ruimte gaat het hier over een interval tussen twee punten op de tijdsas. De bijbehorende tijdsduur is de temporele afstand tussen die twee punten (vergelijkbaar met de afstand tussen twee punten in de ruimte). OPMERKING: Meer info in <a href=\"https://iso.org/standard/26013.html\">ISO 19108 Geographic Information - Temporal schema</a>. Substitutie door een eenvoudiger equivalent bv time:Interval uit de <a href=\"https://w3.org/TR/owl-time/\">W3C Time Ontology</a> is aanbevolen.",
-        "ap-label-nl": "Periode"
-      },
-      "properties": [
-        {
-          "uri": "http://www.w3.org/2006/time#hasEnd",
-          "name": "tot",
-          "sort": "tot",
-          "label": {
-            "nl": "tot"
-          },
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Periode",
-              "uri": "http://www.w3.org/2006/time#ProperInterval"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Moment",
-              "range_uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Instant"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Moment",
-              "range_puri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Instant",
-              "range_label": {
-                "nl": "Moment"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://www.w3.org/2006/time#hasEnd",
-            "label-nl": "tot"
-          }
-        },
-        {
-          "uri": "http://www.w3.org/2006/time#hasBeginning",
-          "name": "van",
-          "sort": "van",
-          "label": {
-            "nl": "van"
-          },
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Periode",
-              "uri": "http://www.w3.org/2006/time#ProperInterval"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Moment",
-              "range_uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Instant"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Moment",
-              "range_puri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Instant",
-              "range_label": {
-                "nl": "Moment"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://www.w3.org/2006/time#hasBeginning",
-            "label-nl": "van"
-          }
-        }
-      ]
-    },
-    {
       "uri": "http://def.isotc211.org/iso19115/2006/DataQualityInformation#DQ_PositionalAccuracy",
       "name": "Positionelenauwkeurigheid",
       "label": {
@@ -4026,7 +3917,7 @@
             "uri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue.value",
             "ap-definition-nl": "Kwalitatieve of kwantitatieve invulling van de waarde.",
             "ap-label-nl": "waarde",
-            "usageNote-nl": "Het datatype Any moet gesubstitueerd worden door iets concreter zoals Agent of <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/observaties-en-metingen/#Maat\">Maat</a>."
+            "ap-usageNote-nl": "Het datatype Any moet gesubstitueerd worden door iets concreter zoals Agent of <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/observaties-en-metingen/#Maat\">Maat</a>."
           }
         },
         {
@@ -4073,7 +3964,7 @@
       ]
     },
     {
-      "uri": "http://www.opengis.net/ont/geosparql#Curve",
+      "uri": "http://www.opengis.net/ont/sf#Curve",
       "name": "Curve",
       "label": {
         "nl": "Curve"
@@ -4096,7 +3987,7 @@
       ],
       "rawTags": {
         "label-nl": "Curve",
-        "uri": "http://www.opengis.net/ont/geosparql#Curve",
+        "uri": "http://www.opengis.net/ont/sf#Curve",
         "ap-label-nl": "Curve",
         "ap-definition-nl": "Een 1-dimensionele geometrische primitieve.",
         "ap-usageNote-nl": "Dimensie is te verstaan in wiskundige zin: het minimum aantal coördinaten nodig om een willekeurig punt voor te stellen dat deel uitmaakt van de primitieve. In het coördinaatsysteem dat door een Curve zelf gevormd wordt volstaat 1 coördinaat om een punt op de Curve te lokaliseren, bv de afstand langs de Curve vanaf het vertrekpunt. Een Curve heeft een lengte maar geen breedte of hoogte, wat niet wegneemt dat ze door de 3D ruimte kan kronkelen. Curves worden doorgaans voorgesteld door polylijnen, dit zijn sets van opeenvolgende punten waarbij de tussenliggende punten van de Curve bekomen worden dmv interpolatie. Als de interpolatiemethode lineair is krijg je een Lijnstring (een hoekige lijn die de opeenvolgende punten verbindt middels een rechte lijn), andere manieren om te interpoleren resulteren in circulaire bogen, cubic splines, Bézier curves etc (waarbij de controlepunten niet noodzakelijk op de Curve liggen). Een Curve wordt begrensd door zijn begin- en eindpunt."
@@ -4280,8 +4171,8 @@
       "parents": [],
       "rawTags": {
         "label-nl": "TemporeleEntiteit",
-        "uri": "http://www.w3.org/2006/time#TemporalEntity",
         "ap-definition-nl": "Abstracte klasse voor temporele objecten.",
+        "uri": "http://www.w3.org/2006/time#TemporalEntity",
         "ap-usageNote-nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn.",
         "ap-label-nl": "TemporeleEntiteit"
       },
@@ -4852,6 +4743,27 @@
       ]
     },
     {
+      "uri": "https://data.vlaanderen.be/ns/generiek#StandaardEenheid",
+      "name": "Standaardeenheid",
+      "label": {
+        "nl": "StandaardEenheid"
+      },
+      "sort": "StandaardEenheid",
+      "description": {
+        "nl": "Eenheid vastgelegd door een standaardiserende organisatie."
+      },
+      "usage": {
+        "nl": "Datatype kan een URI zijn of een GetypeerdeString. In het eerste geval wordt verwezen naar op het web gepubliceerde eenheden, bij voorkeur deze van qudt, bv. voor <a href=\"http://qudt.org/vocab/unit/M\">meter</a>. In het geval van een GetypeerdeString gaat de voorkeur naar de UCUM-codes, bv <a href=\"http://w3id.org/lindt/custom_datatypes#ucumunit\">km/h</a>."
+      },
+      "parents": [],
+      "rawTags": {
+        "ap-usageNote-nl": "Datatype kan een URI zijn of een GetypeerdeString. In het eerste geval wordt verwezen naar op het web gepubliceerde eenheden, bij voorkeur deze van qudt, bv. voor <a href=\"http://qudt.org/vocab/unit/M\">meter</a>. In het geval van een GetypeerdeString gaat de voorkeur naar de UCUM-codes, bv <a href=\"http://w3id.org/lindt/custom_datatypes#ucumunit\">km/h</a>.",
+        "definition-nl": "Eenheid vastgelegd door een standaardiserende organisatie.",
+        "label-nl": "StandaardEenheid"
+      },
+      "properties": []
+    },
+    {
       "uri": "https://data.vlaanderen.be/ns/grondboringen#Bekistinginterval",
       "name": "Bekistinginterval",
       "label": {
@@ -4938,16 +4850,16 @@
           ],
           "range": [
             {
-              "range_label": "Double",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#double"
+              "range_label": "KwantitatieveWaarde",
+              "range_uri": "https://schema.org/QuantitativeValue"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#double",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#double",
+              "range_uri": "#KwantitatieveWaarde",
+              "range_puri": "https://schema.org/QuantitativeValue",
               "range_label": {
-                "nl": "Double"
+                "nl": "KwantitatieveWaarde"
               }
             }
           ],
@@ -4955,7 +4867,8 @@
           "codelist_uri": "",
           "rawTags": {
             "label-nl": "dikte",
-            "definition-nl": "Dikte van de Bekisting."
+            "definition-nl": "Dikte van de Bekisting.",
+            "parentURI": "http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.value"
           }
         },
         {
@@ -4978,13 +4891,13 @@
           "range": [
             {
               "range_label": "Curve",
-              "range_uri": "http://www.opengis.net/ont/geosparql#Curve"
+              "range_uri": "http://www.opengis.net/ont/sf#Curve"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Curve",
-              "range_puri": "http://www.opengis.net/ont/geosparql#Curve",
+              "range_puri": "http://www.opengis.net/ont/sf#Curve",
               "range_label": {
                 "nl": "Curve"
               }
@@ -5029,7 +4942,7 @@
       },
       "properties": [
         {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameterinterval.diameter",
+          "uri": "http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.value",
           "name": "diameter",
           "sort": "diameter",
           "label": {
@@ -5047,16 +4960,16 @@
           ],
           "range": [
             {
-              "range_label": "Double",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#double"
+              "range_label": "KwantitatieveWaarde",
+              "range_uri": "https://schema.org/QuantitativeValue"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#double",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#double",
+              "range_uri": "#KwantitatieveWaarde",
+              "range_puri": "https://schema.org/QuantitativeValue",
               "range_label": {
-                "nl": "Double"
+                "nl": "KwantitatieveWaarde"
               }
             }
           ],
@@ -5065,8 +4978,8 @@
           "rawTags": {
             "label-nl": "diameter",
             "definition-nl": "Diameter van het Boorgat.",
-            "parentURI": "http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.value",
-            "name": "Boorgatdiameterinterval.diameter"
+            "name": "Boorgatdiameterinterval.diameter",
+            "uri": "http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.value"
           }
         },
         {
@@ -5089,13 +5002,13 @@
           "range": [
             {
               "range_label": "Curve",
-              "range_uri": "http://www.opengis.net/ont/geosparql#Curve"
+              "range_uri": "http://www.opengis.net/ont/sf#Curve"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Curve",
-              "range_puri": "http://www.opengis.net/ont/geosparql#Curve",
+              "range_puri": "http://www.opengis.net/ont/sf#Curve",
               "range_label": {
                 "nl": "Curve"
               }
@@ -5140,7 +5053,7 @@
       },
       "properties": [
         {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode",
+          "uri": "http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.value",
           "name": "methode",
           "sort": "methode",
           "label": {
@@ -5176,8 +5089,8 @@
           "rawTags": {
             "label-nl": "methode",
             "definition-nl": "Methode van de Boring.",
-            "parentURI": "http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.value",
-            "name": "Boormethodeinterval.methode"
+            "name": "Boormethodeinterval.methode",
+            "uri": "http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.value"
           }
         },
         {
@@ -5200,13 +5113,13 @@
           "range": [
             {
               "range_label": "Curve",
-              "range_uri": "http://www.opengis.net/ont/geosparql#Curve"
+              "range_uri": "http://www.opengis.net/ont/sf#Curve"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Curve",
-              "range_puri": "http://www.opengis.net/ont/geosparql#Curve",
+              "range_puri": "http://www.opengis.net/ont/sf#Curve",
               "range_label": {
                 "nl": "Curve"
               }
@@ -5243,7 +5156,7 @@
       },
       "properties": [
         {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#type",
+          "uri": "http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.value",
           "name": "type",
           "sort": "type",
           "label": {
@@ -5279,7 +5192,7 @@
           "rawTags": {
             "label-nl": "type",
             "definition-nl": "Soort Boor.",
-            "parentURI": "http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.value"
+            "uri": "http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.value"
           }
         },
         {
@@ -5302,13 +5215,13 @@
           "range": [
             {
               "range_label": "Curve",
-              "range_uri": "http://www.opengis.net/ont/geosparql#Curve"
+              "range_uri": "http://www.opengis.net/ont/sf#Curve"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Curve",
-              "range_puri": "http://www.opengis.net/ont/geosparql#Curve",
+              "range_puri": "http://www.opengis.net/ont/sf#Curve",
               "range_label": {
                 "nl": "Curve"
               }
@@ -5320,6 +5233,176 @@
             "label-nl": "geometrie",
             "definition-nl": "Geometrie van het interval.",
             "uri": "http://def.isotc211.org/iso19123/2005/CoverageCore#CV_CurveValuePair.geometry"
+          }
+        }
+      ]
+    },
+    {
+      "uri": "https://schema.org/Number",
+      "name": "Getal",
+      "label": {
+        "nl": "Getal"
+      },
+      "sort": "Getal",
+      "description": {
+        "nl": "Aanduiding van een hoeveelheid."
+      },
+      "usage": {
+        "nl": "OPMERKING: Te substitueren door de primitieve datatypes waarmee een hoeveelheid kan worden aangeduid. Zie <a href=\"https://www.w3.org/TR/xmlschema-2/\">xsd datatypes</a> Integer, Float, Decimal, Double etc."
+      },
+      "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Aanduiding van een hoeveelheid.",
+        "ap-usageNote-nl": "OPMERKING: Te substitueren door de primitieve datatypes waarmee een hoeveelheid kan worden aangeduid. Zie <a href=\"https://www.w3.org/TR/xmlschema-2/\">xsd datatypes</a> Integer, Float, Decimal, Double etc.",
+        "label-nl": "Getal",
+        "uri": "https://schema.org/Number"
+      },
+      "properties": []
+    },
+    {
+      "uri": "https://schema.org/QuantitativeValue",
+      "name": "Kwantitatievewaarde",
+      "label": {
+        "nl": "KwantitatieveWaarde"
+      },
+      "sort": "KwantitatieveWaarde",
+      "description": {
+        "nl": "Aanduiding van de kwantiteit van een bepaald kenmerk van een object."
+      },
+      "usage": {
+        "nl": "Bv de hoogte van een object,het gewicht,de temperatuur etc. Het gaat om een kenmerk dat numeriek uitgedrukt kan worden en in een bepaalde eenheid. Kwalitatieve aanduidingen zoals hoog,laag ed vallen hier dus niet onder."
+      },
+      "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Aanduiding van de kwantiteit van een bepaald kenmerk van een object.",
+        "ap-usageNote-nl": "Bv de hoogte van een object,het gewicht,de temperatuur etc. Het gaat om een kenmerk dat numeriek uitgedrukt kan worden en in een bepaalde eenheid. Kwalitatieve aanduidingen zoals hoog,laag ed vallen hier dus niet onder.",
+        "label-nl": "KwantitatieveWaarde",
+        "uri": "https://schema.org/QuantitativeValue"
+      },
+      "properties": [
+        {
+          "uri": "https://schema.org/value",
+          "name": "waarde",
+          "sort": "waarde",
+          "label": {
+            "nl": "waarde"
+          },
+          "description": {
+            "nl": "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "KwantitatieveWaarde",
+              "uri": "https://schema.org/QuantitativeValue"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Getal",
+              "range_uri": "https://schema.org/Number"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Getal",
+              "range_puri": "https://schema.org/Number",
+              "range_label": {
+                "nl": "Getal"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "https://schema.org/value",
+            "label-nl": "waarde",
+            "ap-definition-nl": "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."
+          }
+        },
+        {
+          "uri": "https://schema.org/unitText",
+          "name": "eenheid",
+          "sort": "eenheid",
+          "label": {
+            "nl": "eenheid"
+          },
+          "description": {
+            "nl": "De eenheid waarin de waarde is uitgedrukt."
+          },
+          "usage": {
+            "nl": "Te gebruiken als geen standaard eenheid gekend is."
+          },
+          "domain": [
+            {
+              "EA-Name": "KwantitatieveWaarde",
+              "uri": "https://schema.org/QuantitativeValue"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-label-nl": "eenheid",
+            "uri": "https://schema.org/unitText",
+            "label-nl": "eenheid",
+            "ap-definition-nl": "De eenheid waarin de waarde is uitgedrukt.",
+            "ap-usageNote-nl": "Te gebruiken als geen standaard eenheid gekend is."
+          }
+        },
+        {
+          "uri": "https://schema.org/unitCode",
+          "name": "standaardEenheid",
+          "sort": "standaard eenheid",
+          "label": {
+            "nl": "standaard eenheid"
+          },
+          "description": {
+            "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "KwantitatieveWaarde",
+              "uri": "https://schema.org/QuantitativeValue"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "StandaardEenheid",
+              "range_uri": "https://data.vlaanderen.be/ns/generiek#StandaardEenheid"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#StandaardEenheid",
+              "range_puri": "https://data.vlaanderen.be/ns/generiek#StandaardEenheid",
+              "range_label": {
+                "nl": "StandaardEenheid"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-label-nl": "standaard eenheid",
+            "ap-definition-nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt.",
+            "label-nl": "standaardEenheid",
+            "uri": "https://schema.org/unitCode"
           }
         }
       ]
