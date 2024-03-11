@@ -16,19 +16,6 @@
       }
     },
     {
-      "EA-Guid": "{F87FFF6F-4E3E-4aee-A694-44D62AED3E63}",
-      "name": "Maat",
-      "label": {
-        "nl": "Maat"
-      },
-      "definition": {
-        "nl": "Een (af)gemeten hoeveelheid ve bepaalde grootheid, uitgedrukt in een bepaalde eenheid."
-      },
-      "usage": {
-        "nl": "Implementeren zoals beschreven in <a href=\"https://www.iso.org/standard/56734.html\">ISO19103</a> of substitueren door een <a href=\"https://schema.org/QuantitativeValue\">schema.org:QuantitativeValue</a> of <a href=\"https://qudt.org/schema/qudt/QuantityValue\">qudt:QuantityValue</a>. Waarde en eenheid moeten afzonderlijk worden beschreven, de eenheid dmv een Literal (bvb <a href=\"https://ci.mines-stetienne.fr/lindt/v4/custom_datatypes#ucumunit\">ucum:ucumunit</a> of <a href=\"https://def.isotc211.org/ontologies/iso19103/2015/MeasureTypes.rdf\">iso:UnitOfMeasure.uomIdentifier</a>) of door een <a href=\"https://qudt.org/schema/qudt/Unit\">qudt:Unit</a> of <a href=\"http://www.w3.org/2004/02/skos/core#Concept\">skos:Concept</a>."
-      }
-    },
-    {
       "EA-Guid": "{E4513A1B-8FBA-4876-939B-41DD9137DD80}",
       "name": "Positionelenauwkeurigheid",
       "label": {
@@ -198,6 +185,10 @@
       }
     },
     {
+      "EA-Guid": "{8F392E1A-2F27-49f5-8A23-17398C13E046}",
+      "name": ""
+    },
+    {
       "EA-Guid": "{41322168-5A85-4353-93F3-291FFF4805C6}",
       "name": "Agent",
       "label": {
@@ -205,6 +196,13 @@
       },
       "definition": {
         "nl": "Iemand die of iets dat kan handelen of een effect kan teweeg brengen."
+      }
+    },
+    {
+      "EA-Guid": "{1C8ADFF6-5078-4074-AA87-F0C6E8842717}",
+      "name": "Eenheid",
+      "label": {
+        "nl": "Eenheid"
       }
     },
     {
@@ -229,13 +227,7 @@
     },
     {
       "EA-Guid": "{0758B4BB-A510-43a0-8185-895644A5EC4B}",
-      "name": "Concept",
-      "label": {
-        "nl": "Concept"
-      },
-      "definition": {
-        "nl": "TODO"
-      }
+      "name": ""
     },
     {
       "EA-Guid": "{F2B19162-BF2F-4bd8-8255-1ED88B61D18E}",
@@ -630,19 +622,6 @@
       }
     },
     {
-      "EA-Guid": "{03980252-8847-4e5c-8004-726E2C8E50B1}",
-      "name": "Standaardeenheid",
-      "label": {
-        "nl": "StandaardEenheid"
-      },
-      "definition": {
-        "nl": "Eenheid vastgelegd door een standaardiserende organisatie."
-      },
-      "usage": {
-        "nl": "Datatype kan een URI zijn of een GetypeerdeString. In het eerste geval wordt verwezen naar op het web gepubliceerde eenheden, bij voorkeur deze van qudt, bv. voor <a href=\"http://qudt.org/vocab/unit/M\">meter</a>. In het geval van een GetypeerdeString gaat de voorkeur naar de UCUM-codes, bv <a href=\"http://w3id.org/lindt/custom_datatypes#ucumunit\">km/h</a>."
-      }
-    },
-    {
       "EA-Guid": "{F1A18898-6EEA-40e6-8EF1-6792AF6379CC}",
       "name": "Wettelijkkader",
       "label": {
@@ -803,19 +782,6 @@
       }
     },
     {
-      "EA-Guid": "{43C7CF52-F9B7-49f5-A068-50D5351139C8}",
-      "name": "Getal",
-      "label": {
-        "nl": "Getal"
-      },
-      "definition": {
-        "nl": "Aanduiding van een hoeveelheid."
-      },
-      "usage": {
-        "nl": "OPMERKING: Te substitueren door de primitieve datatypes waarmee een hoeveelheid kan worden aangeduid. Zie <a href=\"https://www.w3.org/TR/xmlschema-2/\">xsd datatypes</a> Integer, Float, Decimal, Double etc."
-      }
-    },
-    {
       "EA-Guid": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
       "name": "Kwantitatievewaarde",
       "label": {
@@ -844,29 +810,6 @@
   ],
   "externalproperties": [
     {
-      "EA-Guid": "{695FE943-3564-451a-B7F4-3C06DBB47B33}",
-      "name": "waarde",
-      "label": {
-        "nl": "waarde"
-      },
-      "definition": {
-        "nl": "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."
-      }
-    },
-    {
-      "EA-Guid": "{250F947B-1A2B-4b1d-B8F1-AA8E66DD8ED3}",
-      "name": "eenheid",
-      "label": {
-        "nl": "eenheid"
-      },
-      "definition": {
-        "nl": "De eenheid waarin de waarde is uitgedrukt."
-      },
-      "usage": {
-        "nl": "Te gebruiken als geen standaard eenheid gekend is."
-      }
-    },
-    {
       "EA-Guid": "{A0866BF1-5A5E-4dd4-A095-7491A1661B08}",
       "name": "standaardEenheid",
       "label": {
@@ -874,6 +817,16 @@
       },
       "definition": {
         "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+      }
+    },
+    {
+      "EA-Guid": "{695FE943-3564-451a-B7F4-3C06DBB47B33}",
+      "name": "waarde",
+      "label": {
+        "nl": "waarde"
+      },
+      "definition": {
+        "nl": "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."
       }
     },
     {
@@ -1360,16 +1313,6 @@
       }
     },
     {
-      "EA-Guid": "{7F49631F-BD1E-4a44-9838-0D87E1CF7C95}",
-      "name": "resultaat",
-      "label": {
-        "nl": "resultaat"
-      },
-      "definition": {
-        "nl": "Bemonsteringsobject dat bij de Bemonstering werd verkregen."
-      }
-    },
-    {
       "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
       "name": "resultaat",
       "label": {
@@ -1377,6 +1320,16 @@
       },
       "definition": {
         "nl": "Het resultaat van de uitgevoerde grondboring."
+      }
+    },
+    {
+      "EA-Guid": "{7F49631F-BD1E-4a44-9838-0D87E1CF7C95}",
+      "name": "resultaat",
+      "label": {
+        "nl": "resultaat"
+      },
+      "definition": {
+        "nl": "Bemonsteringsobject dat bij de Bemonstering werd verkregen."
       }
     },
     {

@@ -103,15 +103,105 @@
   "contributors-column": "MijnKolom",
   "contributors-file": "stakeholders.csv",
   "diagram": "IM-Grondboringen",
-  "documentcommit": "4b54dc7f0498e0bdacd8db956e80edbb93d4fe42",
-  "dummy": "geert22",
+  "documentcommit": "c8705b90908e6fcfc75f07c0b8c5c92f68111848",
+  "dummy": "geert23",
   "eap": "Grondverzet-test.EAP",
   "editors": [],
   "examples": true,
   "externalproperties": [
     {
-      "@id": "https://schema.org/value",
+      "@id": "https://qudt.org/schema/qudt/unit",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{A0866BF1-5A5E-4dd4-A095-7491A1661B08}",
+      "ap-definition-nl": {
+        "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+      },
+      "ap-label-nl": {
+        "nl": "standaard eenheid"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+      },
+      "domain": [
+        {
+          "EA-Name": "KwantitatieveWaarde",
+          "uri": "https://qudt.org/schema/qudt/QuantityValue"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "KwantitatieveWaarde",
+        "EA-Domain-Guid": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
+        "EA-Guid": "{A0866BF1-5A5E-4dd4-A095-7491A1661B08}",
+        "EA-Name": "standaardEenheid",
+        "EA-Package": "QUDT",
+        "EA-Range": "Concept",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{8F392E1A-2F27-49f5-8A23-17398C13E046}",
+          "EA-Name": "Concept",
+          "EA-Package": "skos",
+          "uri": "http://fixme.com#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "standaard eenheid"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "standaardEenheid"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://qudt.org/schema/qudt/unit"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+        },
+        "ap-label-nl": {
+          "nl": "standaard eenheid"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+        },
+        "label": {
+          "nl": "standaard eenheid"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "standaard eenheid"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "standaardEenheid",
+      "range": [
+        {
+          "EA-GUID": "{8F392E1A-2F27-49f5-8A23-17398C13E046}",
+          "EA-Name": "Concept",
+          "EA-Package": "skos",
+          "uri": "http://fixme.com#Concept"
+        }
+      ]
+    },
+    {
+      "@id": "https://qudt.org/schema/qudt//value",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{695FE943-3564-451a-B7F4-3C06DBB47B33}",
       "ap-definition-nl": {
         "nl": "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."
@@ -126,7 +216,7 @@
       "domain": [
         {
           "EA-Name": "KwantitatieveWaarde",
-          "uri": "https://schema.org/QuantitativeValue"
+          "uri": "https://qudt.org/schema/qudt/QuantityValue"
         }
       ],
       "extra": {
@@ -134,20 +224,19 @@
         "EA-Domain-Guid": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
         "EA-Guid": "{695FE943-3564-451a-B7F4-3C06DBB47B33}",
         "EA-Name": "waarde",
-        "EA-Package": "OSLO-Generiek",
-        "EA-Range": "Getal",
+        "EA-Package": "QUDT",
+        "EA-Range": "Literal",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{43C7CF52-F9B7-49f5-A068-50D5351139C8}",
-          "EA-Name": "Getal",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "https://schema.org/Number"
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
         },
         "RawTags": [
           {
             "key": "uri",
             "note": "null",
-            "value": "https://schema.org/value"
+            "value": "https://qudt.org/schema/qudt//value"
           },
           {
             "key": "label-nl",
@@ -187,203 +276,9 @@
       "name": "waarde",
       "range": [
         {
-          "EA-GUID": "{43C7CF52-F9B7-49f5-A068-50D5351139C8}",
-          "EA-Name": "Getal",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "https://schema.org/Number"
-        }
-      ]
-    },
-    {
-      "@id": "https://schema.org/unitText",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{250F947B-1A2B-4b1d-B8F1-AA8E66DD8ED3}",
-      "ap-definition-nl": {
-        "nl": "De eenheid waarin de waarde is uitgedrukt."
-      },
-      "ap-label-nl": {
-        "nl": "eenheid"
-      },
-      "ap-usageNote-nl": {
-        "nl": "Te gebruiken als geen standaard eenheid gekend is."
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "De eenheid waarin de waarde is uitgedrukt."
-      },
-      "domain": [
-        {
-          "EA-Name": "KwantitatieveWaarde",
-          "uri": "https://schema.org/QuantitativeValue"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "KwantitatieveWaarde",
-        "EA-Domain-Guid": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
-        "EA-Guid": "{250F947B-1A2B-4b1d-B8F1-AA8E66DD8ED3}",
-        "EA-Name": "eenheid",
-        "EA-Package": "OSLO-Generiek",
-        "EA-Range": "String",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-Name": "String",
+          "EA-Name": "Literal",
           "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
-        },
-        "RawTags": [
-          {
-            "key": "ap-label-nl",
-            "note": "null",
-            "value": "eenheid"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "https://schema.org/unitText"
-          },
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "eenheid"
-          },
-          {
-            "key": "ap-definition-nl",
-            "note": "null",
-            "value": "De eenheid waarin de waarde is uitgedrukt."
-          },
-          {
-            "key": "ap-usageNote-nl",
-            "note": "null",
-            "value": "Te gebruiken als geen standaard eenheid gekend is."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "De eenheid waarin de waarde is uitgedrukt."
-        },
-        "ap-label-nl": {
-          "nl": "eenheid"
-        },
-        "ap-usageNote-nl": {
-          "nl": "Te gebruiken als geen standaard eenheid gekend is."
-        },
-        "definition": {
-          "nl": "De eenheid waarin de waarde is uitgedrukt."
-        },
-        "label": {
-          "nl": "eenheid"
-        },
-        "usage": {
-          "nl": "Te gebruiken als geen standaard eenheid gekend is."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "eenheid"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "0",
-      "name": "eenheid",
-      "range": [
-        {
-          "EA-Name": "String",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
-        }
-      ],
-      "usage": {
-        "nl": "Te gebruiken als geen standaard eenheid gekend is."
-      }
-    },
-    {
-      "@id": "https://schema.org/unitCode",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{A0866BF1-5A5E-4dd4-A095-7491A1661B08}",
-      "ap-definition-nl": {
-        "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
-      },
-      "ap-label-nl": {
-        "nl": "standaard eenheid"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
-      },
-      "domain": [
-        {
-          "EA-Name": "KwantitatieveWaarde",
-          "uri": "https://schema.org/QuantitativeValue"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "KwantitatieveWaarde",
-        "EA-Domain-Guid": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
-        "EA-Guid": "{A0866BF1-5A5E-4dd4-A095-7491A1661B08}",
-        "EA-Name": "standaardEenheid",
-        "EA-Package": "OSLO-Generiek",
-        "EA-Range": "StandaardEenheid",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{03980252-8847-4e5c-8004-726E2C8E50B1}",
-          "EA-Name": "StandaardEenheid",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "https://data.vlaanderen.be/ns/generiek#StandaardEenheid"
-        },
-        "RawTags": [
-          {
-            "key": "ap-label-nl",
-            "note": "null",
-            "value": "standaard eenheid"
-          },
-          {
-            "key": "ap-definition-nl",
-            "note": "null",
-            "value": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
-          },
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "standaardEenheid"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "https://schema.org/unitCode"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
-        },
-        "ap-label-nl": {
-          "nl": "standaard eenheid"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
-        },
-        "label": {
-          "nl": "standaard eenheid"
-        },
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "standaard eenheid"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "0",
-      "name": "standaardEenheid",
-      "range": [
-        {
-          "EA-GUID": "{03980252-8847-4e5c-8004-726E2C8E50B1}",
-          "EA-Name": "StandaardEenheid",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "https://data.vlaanderen.be/ns/generiek#StandaardEenheid"
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
         }
       ]
     },
@@ -2135,7 +2030,7 @@
         "EA-Range": "KwantitatieveWaarde",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
+          "EA-GUID": "{1E46B529-0F8C-4fef-9D8B-3B86DCB6855E}",
           "EA-Name": "KwantitatieveWaarde",
           "EA-Package": "OSLO-Generiek",
           "uri": "https://schema.org/QuantitativeValue"
@@ -2186,7 +2081,7 @@
       "name": "dikte",
       "range": [
         {
-          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
+          "EA-GUID": "{1E46B529-0F8C-4fef-9D8B-3B86DCB6855E}",
           "EA-Name": "KwantitatieveWaarde",
           "EA-Package": "OSLO-Generiek",
           "uri": "https://schema.org/QuantitativeValue"
@@ -2222,7 +2117,7 @@
         "EA-Range": "KwantitatieveWaarde",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
+          "EA-GUID": "{1E46B529-0F8C-4fef-9D8B-3B86DCB6855E}",
           "EA-Name": "KwantitatieveWaarde",
           "EA-Package": "OSLO-Generiek",
           "uri": "https://schema.org/QuantitativeValue"
@@ -2273,7 +2168,7 @@
       "name": "boringlengte",
       "range": [
         {
-          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
+          "EA-GUID": "{1E46B529-0F8C-4fef-9D8B-3B86DCB6855E}",
           "EA-Name": "KwantitatieveWaarde",
           "EA-Package": "OSLO-Generiek",
           "uri": "https://schema.org/QuantitativeValue"
@@ -2581,7 +2476,7 @@
         "EA-Range": "KwantitatieveWaarde",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
+          "EA-GUID": "{1E46B529-0F8C-4fef-9D8B-3B86DCB6855E}",
           "EA-Name": "KwantitatieveWaarde",
           "EA-Package": "OSLO-Generiek",
           "uri": "https://schema.org/QuantitativeValue"
@@ -2632,7 +2527,7 @@
       "name": "aangenomengrondwaterstand",
       "range": [
         {
-          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
+          "EA-GUID": "{1E46B529-0F8C-4fef-9D8B-3B86DCB6855E}",
           "EA-Name": "KwantitatieveWaarde",
           "EA-Package": "OSLO-Generiek",
           "uri": "https://schema.org/QuantitativeValue"
@@ -4700,6 +4595,111 @@
     {
       "@id": "http://www.w3.org/ns/sosa/hasResult",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
+      "ap-definition-nl": {
+        "nl": "Het resultaat van de uitgevoerde grondboring."
+      },
+      "ap-label-nl": {
+        "nl": "resultaat"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Het resultaat van de uitgevoerde grondboring."
+      },
+      "domain": [
+        {
+          "EA-Name": "Grondboring",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "uri",
+            "note": "http://www.w3.org/ns/sosa/hasResult",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Het resultaat van de uitgevoerde grondboring.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "resultaat",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Grondboring",
+        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+        "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
+        "EA-Name": "resultaat",
+        "EA-Package": "",
+        "EA-Range": "Boorgat",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
+          "EA-Name": "Boorgat",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "http://www.w3.org/ns/sosa/hasResult",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Het resultaat van de uitgevoerde grondboring.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "resultaat",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Het resultaat van de uitgevoerde grondboring."
+        },
+        "ap-label-nl": {
+          "nl": "resultaat"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Het resultaat van de uitgevoerde grondboring."
+        },
+        "derived": "false",
+        "destRole": "resultaat",
+        "label": {
+          "nl": "resultaat"
+        },
+        "sourceRole": "isResultaatVan",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "resultaat"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "resultaat",
+      "range": [
+        {
+          "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
+          "EA-Name": "Boorgat",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/ns/sosa/hasResult",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{7F49631F-BD1E-4a44-9838-0D87E1CF7C95}",
       "ap-definition-nl": {
         "nl": "Bemonsteringsobject dat bij de Bemonstering werd verkregen."
@@ -4809,111 +4809,6 @@
           "EA-Name": "Bemonsteringsobject",
           "EA-Package": "OSLO-ObservatiesEnMetingen",
           "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature"
-        }
-      ]
-    },
-    {
-      "@id": "http://www.w3.org/ns/sosa/hasResult",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
-      "ap-definition-nl": {
-        "nl": "Het resultaat van de uitgevoerde grondboring."
-      },
-      "ap-label-nl": {
-        "nl": "resultaat"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "Het resultaat van de uitgevoerde grondboring."
-      },
-      "domain": [
-        {
-          "EA-Name": "Grondboring",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "uri",
-            "note": "http://www.w3.org/ns/sosa/hasResult",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-nl",
-            "note": "Het resultaat van de uitgevoerde grondboring.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-nl",
-            "note": "resultaat",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Grondboring",
-        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
-        "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
-        "EA-Name": "resultaat",
-        "EA-Package": "",
-        "EA-Range": "Boorgat",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-          "EA-Name": "Boorgat",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "http://www.w3.org/ns/sosa/hasResult",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-nl",
-            "note": "Het resultaat van de uitgevoerde grondboring.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-nl",
-            "note": "resultaat",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Het resultaat van de uitgevoerde grondboring."
-        },
-        "ap-label-nl": {
-          "nl": "resultaat"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "Het resultaat van de uitgevoerde grondboring."
-        },
-        "derived": "false",
-        "destRole": "resultaat",
-        "label": {
-          "nl": "resultaat"
-        },
-        "sourceRole": "isResultaatVan",
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "resultaat"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "1",
-      "name": "resultaat",
-      "range": [
-        {
-          "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-          "EA-Name": "Boorgat",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
         }
       ]
     },
@@ -7132,13 +7027,13 @@
         "EA-Guid": "{676E8A26-4713-4784-88EC-43812C8BAFD9}",
         "EA-Name": "^grootte",
         "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "Maat",
+        "EA-Range": "KwantitatieveWaarde",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{F87FFF6F-4E3E-4aee-A694-44D62AED3E63}",
-          "EA-Name": "Maat",
-          "EA-Package": "OSLO-ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure"
+          "EA-GUID": "{1E46B529-0F8C-4fef-9D8B-3B86DCB6855E}",
+          "EA-Name": "KwantitatieveWaarde",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "https://schema.org/QuantitativeValue"
         },
         "RawTags": [
           {
@@ -7193,10 +7088,10 @@
       "name": "grootte",
       "range": [
         {
-          "EA-GUID": "{F87FFF6F-4E3E-4aee-A694-44D62AED3E63}",
-          "EA-Name": "Maat",
-          "EA-Package": "OSLO-ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure"
+          "EA-GUID": "{1E46B529-0F8C-4fef-9D8B-3B86DCB6855E}",
+          "EA-Name": "KwantitatieveWaarde",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "https://schema.org/QuantitativeValue"
         }
       ],
       "usage": {
@@ -8887,7 +8782,7 @@
         "EA-Range": "KwantitatieveWaarde",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
+          "EA-GUID": "{1E46B529-0F8C-4fef-9D8B-3B86DCB6855E}",
           "EA-Name": "KwantitatieveWaarde",
           "EA-Package": "OSLO-Generiek",
           "uri": "https://schema.org/QuantitativeValue"
@@ -8941,7 +8836,7 @@
       "name": "diameter",
       "range": [
         {
-          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
+          "EA-GUID": "{1E46B529-0F8C-4fef-9D8B-3B86DCB6855E}",
           "EA-Name": "KwantitatieveWaarde",
           "EA-Package": "OSLO-Generiek",
           "uri": "https://schema.org/QuantitativeValue"
@@ -9369,87 +9264,6 @@
       "name": "Generiekenaam",
       "usage": {
         "nl": "Subtypes zijn LokaleNaam en NaamInNaamruimte (resp een naam zonder en een naam met  vermelding van een naamruimte). Datatype van LokaleNaamaam is bvb String of Taalstring, datatype van NaamInNaamruimte is bvb URI. OPMERKING: Meer info over dit datatype in  <a href=\"https://www.iso.org/standard/56734.html\">ISO 19103 Geographic Information - Conceptual schema language</a>."
-      }
-    },
-    {
-      "@id": "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{F87FFF6F-4E3E-4aee-A694-44D62AED3E63}",
-      "ap-definition-nl": {
-        "nl": "Een (af)gemeten hoeveelheid ve bepaalde grootheid, uitgedrukt in een bepaalde eenheid."
-      },
-      "ap-label-nl": {
-        "nl": "Maat"
-      },
-      "ap-usageNote-nl": {
-        "nl": "Implementeren zoals beschreven in <a href=\"https://www.iso.org/standard/56734.html\">ISO19103</a> of substitueren door een <a href=\"https://schema.org/QuantitativeValue\">schema.org:QuantitativeValue</a> of <a href=\"https://qudt.org/schema/qudt/QuantityValue\">qudt:QuantityValue</a>. Waarde en eenheid moeten afzonderlijk worden beschreven, de eenheid dmv een Literal (bvb <a href=\"https://ci.mines-stetienne.fr/lindt/v4/custom_datatypes#ucumunit\">ucum:ucumunit</a> of <a href=\"https://def.isotc211.org/ontologies/iso19103/2015/MeasureTypes.rdf\">iso:UnitOfMeasure.uomIdentifier</a>) of door een <a href=\"https://qudt.org/schema/qudt/Unit\">qudt:Unit</a> of <a href=\"http://www.w3.org/2004/02/skos/core#Concept\">skos:Concept</a>."
-      },
-      "definition": {
-        "nl": "Een (af)gemeten hoeveelheid ve bepaalde grootheid, uitgedrukt in een bepaalde eenheid."
-      },
-      "extra": {
-        "EA-Guid": "{F87FFF6F-4E3E-4aee-A694-44D62AED3E63}",
-        "EA-Name": "Maat",
-        "EA-Package": "OSLO-ObservatiesEnMetingen",
-        "EA-Parents": "",
-        "EA-Parents2": [],
-        "EA-Type": "CLASS",
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "Maat"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure"
-          },
-          {
-            "key": "ap-definition-nl",
-            "note": "null",
-            "value": "Een (af)gemeten hoeveelheid ve bepaalde grootheid, uitgedrukt in een bepaalde eenheid."
-          },
-          {
-            "key": "ap-label-nl",
-            "note": "null",
-            "value": "Maat"
-          },
-          {
-            "key": "ap-usageNote-nl",
-            "note": "Implementeren zoals beschreven in <a href=\"https://www.iso.org/standard/56734.html\">ISO19103</a> of substitueren door een <a href=\"https://schema.org/QuantitativeValue\">schema.org:QuantitativeValue</a> of <a href=\"https://qudt.org/schema/qudt/QuantityValue\">qudt:QuantityValue</a>. Waarde en eenheid moeten afzonderlijk worden beschreven, de eenheid dmv een Literal (bvb <a href=\"https://ci.mines-stetienne.fr/lindt/v4/custom_datatypes#ucumunit\">ucum:ucumunit</a> of <a href=\"https://def.isotc211.org/ontologies/iso19103/2015/MeasureTypes.rdf\">iso:UnitOfMeasure.uomIdentifier</a>) of door een <a href=\"https://qudt.org/schema/qudt/Unit\">qudt:Unit</a> of <a href=\"http://www.w3.org/2004/02/skos/core#Concept\">skos:Concept</a>.",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Een (af)gemeten hoeveelheid ve bepaalde grootheid, uitgedrukt in een bepaalde eenheid."
-        },
-        "ap-label-nl": {
-          "nl": "Maat"
-        },
-        "ap-usageNote-nl": {
-          "nl": "Implementeren zoals beschreven in <a href=\"https://www.iso.org/standard/56734.html\">ISO19103</a> of substitueren door een <a href=\"https://schema.org/QuantitativeValue\">schema.org:QuantitativeValue</a> of <a href=\"https://qudt.org/schema/qudt/QuantityValue\">qudt:QuantityValue</a>. Waarde en eenheid moeten afzonderlijk worden beschreven, de eenheid dmv een Literal (bvb <a href=\"https://ci.mines-stetienne.fr/lindt/v4/custom_datatypes#ucumunit\">ucum:ucumunit</a> of <a href=\"https://def.isotc211.org/ontologies/iso19103/2015/MeasureTypes.rdf\">iso:UnitOfMeasure.uomIdentifier</a>) of door een <a href=\"https://qudt.org/schema/qudt/Unit\">qudt:Unit</a> of <a href=\"http://www.w3.org/2004/02/skos/core#Concept\">skos:Concept</a>."
-        },
-        "definition": {
-          "nl": "Een (af)gemeten hoeveelheid ve bepaalde grootheid, uitgedrukt in een bepaalde eenheid."
-        },
-        "label": {
-          "nl": "Maat"
-        },
-        "parentclasses": "",
-        "usage": {
-          "nl": "Implementeren zoals beschreven in <a href=\"https://www.iso.org/standard/56734.html\">ISO19103</a> of substitueren door een <a href=\"https://schema.org/QuantitativeValue\">schema.org:QuantitativeValue</a> of <a href=\"https://qudt.org/schema/qudt/QuantityValue\">qudt:QuantityValue</a>. Waarde en eenheid moeten afzonderlijk worden beschreven, de eenheid dmv een Literal (bvb <a href=\"https://ci.mines-stetienne.fr/lindt/v4/custom_datatypes#ucumunit\">ucum:ucumunit</a> of <a href=\"https://def.isotc211.org/ontologies/iso19103/2015/MeasureTypes.rdf\">iso:UnitOfMeasure.uomIdentifier</a>) of door een <a href=\"https://qudt.org/schema/qudt/Unit\">qudt:Unit</a> of <a href=\"http://www.w3.org/2004/02/skos/core#Concept\">skos:Concept</a>."
-        }
-      },
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "Maat"
-      },
-      "name": "Maat",
-      "usage": {
-        "nl": "Implementeren zoals beschreven in <a href=\"https://www.iso.org/standard/56734.html\">ISO19103</a> of substitueren door een <a href=\"https://schema.org/QuantitativeValue\">schema.org:QuantitativeValue</a> of <a href=\"https://qudt.org/schema/qudt/QuantityValue\">qudt:QuantityValue</a>. Waarde en eenheid moeten afzonderlijk worden beschreven, de eenheid dmv een Literal (bvb <a href=\"https://ci.mines-stetienne.fr/lindt/v4/custom_datatypes#ucumunit\">ucum:ucumunit</a> of <a href=\"https://def.isotc211.org/ontologies/iso19103/2015/MeasureTypes.rdf\">iso:UnitOfMeasure.uomIdentifier</a>) of door een <a href=\"https://qudt.org/schema/qudt/Unit\">qudt:Unit</a> of <a href=\"http://www.w3.org/2004/02/skos/core#Concept\">skos:Concept</a>."
       }
     },
     {
@@ -10492,6 +10306,36 @@
       }
     },
     {
+      "@id": "http://fixme.com#Concept",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{8F392E1A-2F27-49f5-8A23-17398C13E046}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{8F392E1A-2F27-49f5-8A23-17398C13E046}",
+        "EA-Name": "Concept",
+        "EA-Package": "skos",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": "",
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": "",
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "name": ""
+    },
+    {
       "@id": "http://purl.org/dc/terms/Agent",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{41322168-5A85-4353-93F3-291FFF4805C6}",
@@ -10551,6 +10395,64 @@
         "nl": "Agent"
       },
       "name": "Agent"
+    },
+    {
+      "@id": "http://qudt.org/2.1/schema/qudt/Unit",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{1C8ADFF6-5078-4074-AA87-F0C6E8842717}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "Eenheid"
+      },
+      "extra": {
+        "EA-Guid": "{1C8ADFF6-5078-4074-AA87-F0C6E8842717}",
+        "EA-Name": "Eenheid",
+        "EA-Package": "QUDT",
+        "EA-Parents": "Concept",
+        "EA-Parents2": [
+          {
+            "label": "",
+            "name": "Concept",
+            "package": "skos",
+            "uri": "http://fixme.com#Concept"
+          }
+        ],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://qudt.org/2.1/schema/qudt/Unit"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Eenheid"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "Eenheid"
+        },
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": {
+          "nl": "Eenheid"
+        },
+        "parentclasses": "http://fixme.com#Concept",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Eenheid"
+      },
+      "name": "Eenheid"
     },
     {
       "@id": "http://www.opengis.net/ont/sf#Curve",
@@ -10698,12 +10600,6 @@
       "ap-definition-nl": {
         "nl": "TODO"
       },
-      "ap-label-nl": {
-        "nl": "Concept"
-      },
-      "definition": {
-        "nl": "TODO"
-      },
       "extra": {
         "EA-Guid": "{0758B4BB-A510-43a0-8185-895644A5EC4B}",
         "EA-Name": "LegaleVerschijningsvormtype",
@@ -10716,16 +10612,6 @@
             "key": "uri",
             "note": "null",
             "value": "http://www.w3.org/2004/02/skos/core#Concept"
-          },
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "Concept"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "TODO"
           }
         ],
         "Scope": "NOTHING",
@@ -10733,24 +10619,15 @@
         "ap-definition-nl": {
           "nl": "TODO"
         },
-        "ap-label-nl": {
-          "nl": "Concept"
-        },
+        "ap-label-nl": "",
         "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "TODO"
-        },
-        "label": {
-          "nl": "Concept"
-        },
+        "definition": "",
+        "label": "",
         "parentclasses": "",
         "usage": ""
       },
       "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "Concept"
-      },
-      "name": "Concept"
+      "name": ""
     },
     {
       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -13255,77 +13132,6 @@
       "name": "Opmeting"
     },
     {
-      "@id": "https://data.vlaanderen.be/ns/generiek#StandaardEenheid",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{03980252-8847-4e5c-8004-726E2C8E50B1}",
-      "ap-definition-nl": {
-        "nl": "Eenheid vastgelegd door een standaardiserende organisatie."
-      },
-      "ap-label-nl": {
-        "nl": "StandaardEenheid"
-      },
-      "ap-usageNote-nl": {
-        "nl": "Datatype kan een URI zijn of een GetypeerdeString. In het eerste geval wordt verwezen naar op het web gepubliceerde eenheden, bij voorkeur deze van qudt, bv. voor <a href=\"http://qudt.org/vocab/unit/M\">meter</a>. In het geval van een GetypeerdeString gaat de voorkeur naar de UCUM-codes, bv <a href=\"http://w3id.org/lindt/custom_datatypes#ucumunit\">km/h</a>."
-      },
-      "definition": {
-        "nl": "Eenheid vastgelegd door een standaardiserende organisatie."
-      },
-      "extra": {
-        "EA-Guid": "{03980252-8847-4e5c-8004-726E2C8E50B1}",
-        "EA-Name": "StandaardEenheid",
-        "EA-Package": "OSLO-Generiek",
-        "EA-Parents": "",
-        "EA-Parents2": [],
-        "EA-Type": "DATATYPE",
-        "RawTags": [
-          {
-            "key": "ap-usageNote-nl",
-            "note": "Datatype kan een URI zijn of een GetypeerdeString. In het eerste geval wordt verwezen naar op het web gepubliceerde eenheden, bij voorkeur deze van qudt, bv. voor <a href=\"http://qudt.org/vocab/unit/M\">meter</a>. In het geval van een GetypeerdeString gaat de voorkeur naar de UCUM-codes, bv <a href=\"http://w3id.org/lindt/custom_datatypes#ucumunit\">km/h</a>.",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "Eenheid vastgelegd door een standaardiserende organisatie."
-          },
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "StandaardEenheid"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Eenheid vastgelegd door een standaardiserende organisatie."
-        },
-        "ap-label-nl": {
-          "nl": "StandaardEenheid"
-        },
-        "ap-usageNote-nl": {
-          "nl": "Datatype kan een URI zijn of een GetypeerdeString. In het eerste geval wordt verwezen naar op het web gepubliceerde eenheden, bij voorkeur deze van qudt, bv. voor <a href=\"http://qudt.org/vocab/unit/M\">meter</a>. In het geval van een GetypeerdeString gaat de voorkeur naar de UCUM-codes, bv <a href=\"http://w3id.org/lindt/custom_datatypes#ucumunit\">km/h</a>."
-        },
-        "definition": {
-          "nl": "Eenheid vastgelegd door een standaardiserende organisatie."
-        },
-        "label": {
-          "nl": "StandaardEenheid"
-        },
-        "parentclasses": "",
-        "usage": {
-          "nl": "Datatype kan een URI zijn of een GetypeerdeString. In het eerste geval wordt verwezen naar op het web gepubliceerde eenheden, bij voorkeur deze van qudt, bv. voor <a href=\"http://qudt.org/vocab/unit/M\">meter</a>. In het geval van een GetypeerdeString gaat de voorkeur naar de UCUM-codes, bv <a href=\"http://w3id.org/lindt/custom_datatypes#ucumunit\">km/h</a>."
-        }
-      },
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "StandaardEenheid"
-      },
-      "name": "Standaardeenheid",
-      "usage": {
-        "nl": "Datatype kan een URI zijn of een GetypeerdeString. In het eerste geval wordt verwezen naar op het web gepubliceerde eenheden, bij voorkeur deze van qudt, bv. voor <a href=\"http://qudt.org/vocab/unit/M\">meter</a>. In het geval van een GetypeerdeString gaat de voorkeur naar de UCUM-codes, bv <a href=\"http://w3id.org/lindt/custom_datatypes#ucumunit\">km/h</a>."
-      }
-    },
-    {
       "@id": "https://data.vlaanderen.be/ns/generiek#WettelijkKader",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{F1A18898-6EEA-40e6-8EF1-6792AF6379CC}",
@@ -14255,83 +14061,7 @@
       "name": "Wettelijkkaderboring"
     },
     {
-      "@id": "https://schema.org/Number",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{43C7CF52-F9B7-49f5-A068-50D5351139C8}",
-      "ap-definition-nl": {
-        "nl": "Aanduiding van een hoeveelheid."
-      },
-      "ap-label-nl": {
-        "nl": "Getal"
-      },
-      "ap-usageNote-nl": {
-        "nl": "OPMERKING: Te substitueren door de primitieve datatypes waarmee een hoeveelheid kan worden aangeduid. Zie <a href=\"https://www.w3.org/TR/xmlschema-2/\">xsd datatypes</a> Integer, Float, Decimal, Double etc."
-      },
-      "definition": {
-        "nl": "Aanduiding van een hoeveelheid."
-      },
-      "extra": {
-        "EA-Guid": "{43C7CF52-F9B7-49f5-A068-50D5351139C8}",
-        "EA-Name": "Getal",
-        "EA-Package": "OSLO-Generiek",
-        "EA-Parents": "",
-        "EA-Parents2": [],
-        "EA-Type": "DATATYPE",
-        "RawTags": [
-          {
-            "key": "ap-definition-nl",
-            "note": "null",
-            "value": "Aanduiding van een hoeveelheid."
-          },
-          {
-            "key": "ap-usageNote-nl",
-            "note": "null",
-            "value": "OPMERKING: Te substitueren door de primitieve datatypes waarmee een hoeveelheid kan worden aangeduid. Zie <a href=\"https://www.w3.org/TR/xmlschema-2/\">xsd datatypes</a> Integer, Float, Decimal, Double etc."
-          },
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "Getal"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "https://schema.org/Number"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Aanduiding van een hoeveelheid."
-        },
-        "ap-label-nl": {
-          "nl": "Getal"
-        },
-        "ap-usageNote-nl": {
-          "nl": "OPMERKING: Te substitueren door de primitieve datatypes waarmee een hoeveelheid kan worden aangeduid. Zie <a href=\"https://www.w3.org/TR/xmlschema-2/\">xsd datatypes</a> Integer, Float, Decimal, Double etc."
-        },
-        "definition": {
-          "nl": "Aanduiding van een hoeveelheid."
-        },
-        "label": {
-          "nl": "Getal"
-        },
-        "parentclasses": "",
-        "usage": {
-          "nl": "OPMERKING: Te substitueren door de primitieve datatypes waarmee een hoeveelheid kan worden aangeduid. Zie <a href=\"https://www.w3.org/TR/xmlschema-2/\">xsd datatypes</a> Integer, Float, Decimal, Double etc."
-        }
-      },
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "Getal"
-      },
-      "name": "Getal",
-      "usage": {
-        "nl": "OPMERKING: Te substitueren door de primitieve datatypes waarmee een hoeveelheid kan worden aangeduid. Zie <a href=\"https://www.w3.org/TR/xmlschema-2/\">xsd datatypes</a> Integer, Float, Decimal, Double etc."
-      }
-    },
-    {
-      "@id": "https://schema.org/QuantitativeValue",
+      "@id": "https://qudt.org/schema/qudt/QuantityValue",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
       "ap-definition-nl": {
@@ -14349,7 +14079,7 @@
       "extra": {
         "EA-Guid": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
         "EA-Name": "KwantitatieveWaarde",
-        "EA-Package": "OSLO-Generiek",
+        "EA-Package": "QUDT",
         "EA-Parents": "",
         "EA-Parents2": [],
         "EA-Type": "DATATYPE",
@@ -14372,7 +14102,7 @@
           {
             "key": "uri",
             "note": "null",
-            "value": "https://schema.org/QuantitativeValue"
+            "value": "https://qudt.org/schema/qudt/QuantityValue"
           }
         ],
         "Scope": "NOTHING",
@@ -14517,7 +14247,7 @@
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
   "template": "grondverzet-grondboringen-im.j2",
   "title": "Implementatiemodel Grondverzet - Grondboringen",
-  "toolchaincommit": "cc4687a26ba92b6efc624ef746485e6249946cdb",
+  "toolchaincommit": "e3ebab7767899e7ace04940f48f62a7d495ec09d",
   "translation": [
     {
       "language": "nl",
