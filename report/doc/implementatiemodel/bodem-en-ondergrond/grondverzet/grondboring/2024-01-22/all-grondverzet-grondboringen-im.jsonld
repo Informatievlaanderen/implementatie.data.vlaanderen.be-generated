@@ -9758,6 +9758,110 @@
             "@id": "http://www.w3.org/ns/sosa/hasResult",
             "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
             "name": "resultaat",
+            "inpackage": "OTHER_PACKAGE",
+            "definition": {
+                "nl": "Het resultaat van de uitgevoerde grondboring."
+            },
+            "label": {
+                "nl": "resultaat"
+            },
+            "ap-label-nl": {
+                "nl": "resultaat"
+            },
+            "ap-definition-nl": {
+                "nl": "Het resultaat van de uitgevoerde grondboring."
+            },
+            "extra": {
+                "EA-Name": "resultaat",
+                "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
+                "derived": "false",
+                "EA-Package": "",
+                "EA-Type": "connector",
+                "EA-Domain": "Grondboring",
+                "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+                "EA-Range": "Boorgat",
+                "RangeData": {
+                    "EA-Name": "Boorgat",
+                    "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
+                    "EA-Package": "OSLO-Grondboringen",
+                    "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+                },
+                "sourceRole": "isResultaatVan",
+                "destRole": "resultaat",
+                "label": {
+                    "nl": "resultaat"
+                },
+                "definition": {
+                    "nl": "Het resultaat van de uitgevoerde grondboring."
+                },
+                "usage": "",
+                "ap-label-nl": {
+                    "nl": "resultaat"
+                },
+                "ap-definition-nl": {
+                    "nl": "Het resultaat van de uitgevoerde grondboring."
+                },
+                "ap-usageNote-nl": "",
+                "ap-codelist": "",
+                "RawTags": [
+                    {
+                        "key": "uri",
+                        "value": "NOTE",
+                        "note": "http://www.w3.org/ns/sosa/hasResult"
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "NOTE",
+                        "note": "Het resultaat van de uitgevoerde grondboring."
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "NOTE",
+                        "note": "resultaat"
+                    }
+                ],
+                "DestRoleTags": [
+                    {
+                        "key": "uri",
+                        "value": "NOTE",
+                        "note": "http://www.w3.org/ns/sosa/hasResult"
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "NOTE",
+                        "note": "Het resultaat van de uitgevoerde grondboring."
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "NOTE",
+                        "note": "resultaat"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring",
+                    "EA-Name": "Grondboring"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Boorgat",
+                    "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
+                    "EA-Package": "OSLO-Grondboringen",
+                    "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "1",
+            "maxCardinality": "1"
+        },
+        {
+            "@id": "http://www.w3.org/ns/sosa/hasResult",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "resultaat",
             "inpackage": "UNKNOWN",
             "definition": {
                 "nl": "Bemonsteringsobject dat bij de Bemonstering werd verkregen."
@@ -9867,110 +9971,6 @@
             "generalization": [],
             "minCardinality": "1",
             "maxCardinality": "*"
-        },
-        {
-            "@id": "http://www.w3.org/ns/sosa/hasResult",
-            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-            "name": "resultaat",
-            "inpackage": "OTHER_PACKAGE",
-            "definition": {
-                "nl": "Het resultaat van de uitgevoerde grondboring."
-            },
-            "label": {
-                "nl": "resultaat"
-            },
-            "ap-label-nl": {
-                "nl": "resultaat"
-            },
-            "ap-definition-nl": {
-                "nl": "Het resultaat van de uitgevoerde grondboring."
-            },
-            "extra": {
-                "EA-Name": "resultaat",
-                "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
-                "derived": "false",
-                "EA-Package": "",
-                "EA-Type": "connector",
-                "EA-Domain": "Grondboring",
-                "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
-                "EA-Range": "Boorgat",
-                "RangeData": {
-                    "EA-Name": "Boorgat",
-                    "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-                    "EA-Package": "OSLO-Grondboringen",
-                    "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-                },
-                "sourceRole": "isResultaatVan",
-                "destRole": "resultaat",
-                "label": {
-                    "nl": "resultaat"
-                },
-                "definition": {
-                    "nl": "Het resultaat van de uitgevoerde grondboring."
-                },
-                "usage": "",
-                "ap-label-nl": {
-                    "nl": "resultaat"
-                },
-                "ap-definition-nl": {
-                    "nl": "Het resultaat van de uitgevoerde grondboring."
-                },
-                "ap-usageNote-nl": "",
-                "ap-codelist": "",
-                "RawTags": [
-                    {
-                        "key": "uri",
-                        "value": "NOTE",
-                        "note": "http://www.w3.org/ns/sosa/hasResult"
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "NOTE",
-                        "note": "Het resultaat van de uitgevoerde grondboring."
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "NOTE",
-                        "note": "resultaat"
-                    }
-                ],
-                "DestRoleTags": [
-                    {
-                        "key": "uri",
-                        "value": "NOTE",
-                        "note": "http://www.w3.org/ns/sosa/hasResult"
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "NOTE",
-                        "note": "Het resultaat van de uitgevoerde grondboring."
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "NOTE",
-                        "note": "resultaat"
-                    }
-                ],
-                "Scope": "NOTHING"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring",
-                    "EA-Name": "Grondboring"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "Boorgat",
-                    "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-                    "EA-Package": "OSLO-Grondboringen",
-                    "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "1",
-            "maxCardinality": "1"
         },
         {
             "@id": "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
@@ -14317,8 +14317,11 @@
     "filename": "config/grondverzet-test.json",
     "navigation": {},
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet",
+    "shaclgenerator": {
+        "parameters": ""
+    },
     "urlref": "/doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22",
     "documentcommit": "99baf6f569ef57e229582330fa410626efa8a527",
-    "toolchaincommit": "7cee0e3f073c3f23efa7ad89afcd56d964fd5592",
+    "toolchaincommit": "4e5e4625b175c7410a2425f59a5bcc466cbf8bcd",
     "hostname": "https://implementatie.data.vlaanderen.be/"
 }
