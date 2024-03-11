@@ -1,0 +1,304 @@
+{
+  "@context": {
+    "@vocab": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22",
+    "qb": "http://purl.org/linked-data/cube#",
+    "qb:codeList": {
+      "@id": "qb:codeList",
+      "@type": "@id"
+    },
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdf:first": {
+      "@type": "@id"
+    },
+    "rdf:rest": {
+      "@type": "@id"
+    },
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rdfs:comment": {
+      "@id": "rdfs:comment"
+    },
+    "sh": "http://www.w3.org/ns/shacl#",
+    "sh:and": {
+      "@container": "@set",
+      "@id": "sh:and",
+      "@type": "@id"
+    },
+    "sh:class": {
+      "@id": "sh:class",
+      "@type": "@id"
+    },
+    "sh:datatype": {
+      "@id": "sh:datatype",
+      "@type": "@id"
+    },
+    "sh:description": {
+      "@container": "@language",
+      "@id": "sh:description"
+    },
+    "sh:hasValue": {
+      "@id": "sh:hasValue",
+      "@type": "@id"
+    },
+    "sh:in": {
+      "@container": "@set",
+      "@id": "sh:in",
+      "@type": "@id"
+    },
+    "sh:maxCount": {
+      "@id": "sh:maxCount",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "sh:minCount": {
+      "@id": "sh:minCount",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "sh:name": {
+      "@container": "@language",
+      "@id": "sh:name"
+    },
+    "sh:node": {
+      "@id": "sh:node",
+      "@type": "@id"
+    },
+    "sh:nodeKind": {
+      "@id": "sh:nodeKind",
+      "@type": "@id"
+    },
+    "sh:or": {
+      "@container": "@set",
+      "@id": "sh:or",
+      "@type": "@id"
+    },
+    "sh:path": {
+      "@id": "sh:path",
+      "@type": "@id"
+    },
+    "sh:property": {
+      "@id": "sh:property",
+      "@type": "@id"
+    },
+    "sh:severity": {
+      "@id": "sh:severity",
+      "@type": "@id"
+    },
+    "sh:targetClass": {
+      "@id": "sh:targetClass",
+      "@type": "@id"
+    },
+    "sh:uniqueLang": {
+      "@id": "sh:uniqueLang",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "shapes": {
+      "@id": "rdfs:member",
+      "@type": "@id"
+    },
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "vl": "https://purl.eu/ns/shacl#",
+    "vl:message": {
+      "@container": "@language",
+      "@id": "vl:message"
+    }
+  },
+  "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22",
+  "shapes": [
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#BoringdoeltypeShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#IdentificatorShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/ns/adms#Identifier"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/9909eafa370b04d51be542b1334f0d653ce9b153",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.boorder",
+          "sh:description": {
+            "nl": "Diegene die de Boring heeft uitgevoerd."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "boorder"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boorder"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/c6998757a81917032e375281f3fcd052f8c77ba3",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.boorder",
+          "sh:class": "http://purl.org/dc/terms/Agent",
+          "sh:description": {
+            "nl": "Diegene die de Boring heeft uitgevoerd."
+          },
+          "sh:name": {
+            "nl": "boorder"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boorder"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/9ebc30e6f69b143b3fb9e8f970b33803baf4daa9",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.boormeester",
+          "sh:description": {
+            "nl": "Opzichter bij de Boring."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "boormeester"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boormeester"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/cef45fe50b2b44250cd536067b2b16e6dfb8b03c",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.boormeester",
+          "sh:class": "http://purl.org/dc/terms/Agent",
+          "sh:description": {
+            "nl": "Opzichter bij de Boring."
+          },
+          "sh:name": {
+            "nl": "boormeester"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boormeester"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/dded78cb6f2b8c34d17d2b01917af9c00654bb31",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.doel",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "nl": "Reden waarom de Grondboring werd uitgevoerd."
+          },
+          "sh:name": {
+            "nl": "doel"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#doel"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.identificator",
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
+          "sh:description": {
+            "nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
+          },
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.identificator",
+          "sh:description": {
+            "nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/48db12f64a123c44de0a2a4b3add9ca5e7d022d2",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.wettelijkKader",
+          "sh:description": {
+            "nl": "Het kader dat vastlegt wat behoort tot de wet."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "wettelijkKader"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKader"
+        }
+      ],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoringShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoringShape/15159c4ce00e344867fc13bcde7b1ee5b30f56a1",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoring.wettelijkKaderBoorder",
+          "sh:description": {
+            "nl": "Toelating van de Boorder om Boringen te verrichten."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "wettelijkKaderBoorder"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoorder"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoringShape/4fc183a7a243c15664b3ef3cc549d2dfdac11722",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoring.wettelijkKaderBoorder",
+          "sh:description": {
+            "nl": "Toelating van de Boorder om Boringen te verrichten."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "wettelijkKaderBoorder"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoorder"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoringShape/ceeafdea2bdd34f43fa21b03ccdf5cc69f59b283",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoring.wettelijkKaderBoorder",
+          "sh:class": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Erkenning",
+          "sh:description": {
+            "nl": "Toelating van de Boorder om Boringen te verrichten."
+          },
+          "sh:name": {
+            "nl": "wettelijkKaderBoorder"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoorder"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoringShape/3c3089f3a074611d3138c7af2170ccb9c1472f87",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoring.wettelijkKaderBoring",
+          "sh:class": "https://data.europa.eu/eli/ontology#LegalExpression",
+          "sh:description": {
+            "nl": "Direct of indirect bewijs dat de Boring wettelijk in orde is."
+          },
+          "sh:name": {
+            "nl": "wettelijkKaderBoring"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoring"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoringShape/83bb25bbc3a921a9b1249e4f26de08e1a9c0322b",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoring.wettelijkKaderBoring",
+          "sh:description": {
+            "nl": "Direct of indirect bewijs dat de Boring wettelijk in orde is."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "wettelijkKaderBoring"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoring"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoringShape/d551cec20a161c8c82bffb3400f2f34d544d1f8f",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoring.wettelijkKaderBoring",
+          "sh:description": {
+            "nl": "Direct of indirect bewijs dat de Boring wettelijk in orde is."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "wettelijkKaderBoring"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoring"
+        }
+      ],
+      "sh:targetClass": "https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring"
+    }
+  ]
+}

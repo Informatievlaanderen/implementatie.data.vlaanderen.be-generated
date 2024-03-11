@@ -1,0 +1,411 @@
+{
+  "metadata": {
+    "title": "Implementatiemodel Grondverzet - Grondboringen",
+    "uri": "https://implementatie.data.vlaanderen.be/ns/grondverzet",
+    "issued": "2024-02-15",
+    "baseURI": "https://implementatie.data.vlaanderen.be/ns/grondverzet#",
+    "filename": "grondverzet-grondboringen-im",
+    "navigation": {
+      "self": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22"
+    },
+    "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+    "documenttype": "ap",
+    "documentconfig": {},
+    "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+    "statuslabel": "Ontwerp Standaard",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/99baf6f569ef57e229582330fa410626efa8a527",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/99baf6f569ef57e229582330fa410626efa8a527/CHANGELOG",
+    "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-mijnThema/issues",
+    "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
+    "usesVocs": [],
+    "usesAPs": []
+  },
+  "classes": [
+    {
+      "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring",
+      "name": "Grondboring",
+      "label": {
+        "nl": "Grondboring"
+      },
+      "sort": "Grondboring",
+      "description": {
+        "nl": "De handeling van het boren van een smalle schacht in de grond."
+      },
+      "usage": {
+        "nl": "Onder \"grond\" verstaan we hier het deel van de aardkorst onder het aardoppervlak. Het slaat zowel op de bodem als op wat zich daaronder bevindt (en hier ondergrond wordt genoemd)."
+      },
+      "parents": [
+        {
+          "label": "Bemonstering",
+          "name": "Bemonstering",
+          "package": "SSN/SOSA",
+          "uri": "http://www.w3.org/ns/sosa/Sampling",
+          "scoped_uri": "http://www.w3.org/ns/sosa/Sampling"
+        },
+        {
+          "label": "Boring",
+          "name": "Boring",
+          "package": "OSLO-BodemEnOndergrond",
+          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Boring",
+          "scoped_uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Boring"
+        }
+      ],
+      "rawTags": {
+        "label-nl": "Grondboring",
+        "definition-nl": "De handeling van het boren van een smalle schacht in de grond.",
+        "usageNote-nl": "Onder \"grond\" verstaan we hier het deel van de aardkorst onder het aardoppervlak. Het slaat zowel op de bodem als op wat zich daaronder bevindt (en hier ondergrond wordt genoemd)."
+      },
+      "properties": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKader",
+          "name": "wettelijkkader",
+          "sort": "wettelijkKader",
+          "label": {
+            "nl": "wettelijkKader"
+          },
+          "description": {
+            "nl": "Het kader dat vastlegt wat behoort tot de wet."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Grondboring",
+              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+            }
+          ],
+          "range": [],
+          "scopedrange": [],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "wettelijkKader",
+            "definition-nl": "Het kader dat vastlegt wat behoort tot de wet.",
+            "parentURI": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.wettelijkKader"
+          }
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#doel",
+          "name": "doel",
+          "sort": "doel",
+          "label": {
+            "nl": "doel"
+          },
+          "description": {
+            "nl": "Reden waarom de Grondboring werd uitgevoerd."
+          },
+          "usage": {
+            "nl": "Vb exploitatie, onderzoek, bemaling etc."
+          },
+          "domain": [
+            {
+              "EA-Name": "Grondboring",
+              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Boringdoeltype",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Boringdoeltype",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Boringdoeltype"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "doel",
+            "definition-nl": "Reden waarom de Grondboring werd uitgevoerd.",
+            "usageNote-nl": "Vb exploitatie, onderzoek, bemaling etc.",
+            "parentURI": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.doel"
+          }
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#boormeester",
+          "name": "boormeester",
+          "sort": "boormeester",
+          "label": {
+            "nl": "boormeester"
+          },
+          "description": {
+            "nl": "Opzichter bij de Boring."
+          },
+          "usage": {
+            "nl": "Voorlopig veronderstellen we maximaal 1 maar dit moet nog afgetoetst worden."
+          },
+          "domain": [
+            {
+              "EA-Name": "Grondboring",
+              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Agent",
+              "range_uri": "http://purl.org/dc/terms/Agent"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://purl.org/dc/terms/Agent",
+              "range_puri": "http://purl.org/dc/terms/Agent",
+              "range_label": {
+                "nl": "Agent"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "boormeester",
+            "definition-nl": "Opzichter bij de Boring.",
+            "parentURI": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor",
+            "ap-usageNote-nl": "Voorlopig veronderstellen we maximaal 1 maar dit moet nog afgetoetst worden."
+          }
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#boorder",
+          "name": "boorder",
+          "sort": "boorder",
+          "label": {
+            "nl": "boorder"
+          },
+          "description": {
+            "nl": "Diegene die de Boring heeft uitgevoerd."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Grondboring",
+              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Agent",
+              "range_uri": "http://purl.org/dc/terms/Agent"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://purl.org/dc/terms/Agent",
+              "range_puri": "http://purl.org/dc/terms/Agent",
+              "range_label": {
+                "nl": "Agent"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "boorder",
+            "definition-nl": "Diegene die de Boring heeft uitgevoerd.",
+            "parentURI": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor"
+          }
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator",
+          "name": "identificator",
+          "sort": "identificator",
+          "label": {
+            "nl": "identificator"
+          },
+          "description": {
+            "nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
+          },
+          "usage": {
+            "nl": "Deze lijst omvat alle mogelijke identicaties voor ee grondboring.\r\nBy default, zal steeds de URI van grondboring meegegeven worden als ook andere identificatoren zoals het boornummer of KBIN-BGD.\r\n"
+          },
+          "domain": [
+            {
+              "EA-Name": "Grondboring",
+              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Identificator",
+              "range_uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Identificator",
+              "range_puri": "http://www.w3.org/ns/adms#Identifier",
+              "range_label": {
+                "nl": "Identificator"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "identificator",
+            "definition-nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert.",
+            "usageNote-nl": "Deze lijst omvat alle mogelijke identicaties voor ee grondboring.\r\nBy default, zal steeds de URI van grondboring meegegeven worden als ook andere identificatoren zoals het boornummer of KBIN-BGD.\r\n",
+            "name": "Grondboring.identificator"
+          }
+        }
+      ]
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring",
+      "name": "Wettelijkkaderboring",
+      "label": {
+        "nl": "WettelijkKaderBoring"
+      },
+      "sort": "WettelijkKaderBoring",
+      "description": {
+        "nl": "Beschrijft in welke mate voldaan is aan de wetgeving mbt Boringen."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "WettelijkKader",
+          "name": "WettelijkKader",
+          "package": "OSLO-Generiek",
+          "uri": "https://data.vlaanderen.be/ns/generiek#WettelijkKader",
+          "scoped_uri": "https://data.vlaanderen.be/ns/generiek#WettelijkKader"
+        }
+      ],
+      "rawTags": {
+        "label-nl": "WettelijkKaderBoring",
+        "definition-nl": "Beschrijft in welke mate voldaan is aan de wetgeving mbt Boringen."
+      },
+      "properties": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoring",
+          "name": "wettelijkkaderboring",
+          "sort": "wettelijkKaderBoring",
+          "label": {
+            "nl": "wettelijkKaderBoring"
+          },
+          "description": {
+            "nl": "Direct of indirect bewijs dat de Boring wettelijk in orde is."
+          },
+          "usage": {
+            "nl": "Bv de Vergunning die is verkregen of de Melding die van de Boring is gemaakt. OPMERKING: Als deze info niet beschikbaar is gebruik dan het type LegaleVerschijningsvorm ipv zijn subklassen en geef de reden op in het attribuut Legaleverschijningsvorm.beschrijving."
+          },
+          "domain": [
+            {
+              "EA-Name": "WettelijkKaderBoring",
+              "uri": "https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "LegaleVerschijningsvorm",
+              "range_uri": "https://data.europa.eu/eli/ontology#LegalExpression"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "https://data.europa.eu/eli/ontology#LegalExpression",
+              "range_puri": "https://data.europa.eu/eli/ontology#LegalExpression",
+              "range_label": {
+                "nl": "LegaleVerschijningsvorm"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "wettelijkKaderBoring",
+            "definition-nl": "Direct of indirect bewijs dat de Boring wettelijk in orde is.",
+            "usageNote-nl": "Bv de Vergunning die is verkregen of de Melding die van de Boring is gemaakt. OPMERKING: Als deze info niet beschikbaar is gebruik dan het type LegaleVerschijningsvorm ipv zijn subklassen en geef de reden op in het attribuut Legaleverschijningsvorm.beschrijving."
+          }
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoorder",
+          "name": "wettelijkkaderboorder",
+          "sort": "wettelijkKaderBoorder",
+          "label": {
+            "nl": "wettelijkKaderBoorder"
+          },
+          "description": {
+            "nl": "Toelating van de Boorder om Boringen te verrichten."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "WettelijkKaderBoring",
+              "uri": "https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Erkenning",
+              "range_uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Erkenning"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Erkenning",
+              "range_puri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Erkenning",
+              "range_label": {
+                "nl": "Erkenning"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "wettelijkKaderBoorder",
+            "definition-nl": "Toelating van de Boorder om Boringen te verrichten."
+          }
+        }
+      ]
+    }
+  ],
+  "properties": [],
+  "contributors": [
+    {
+      "role": "A",
+      "first_name": "Bert",
+      "last_name": "Van Nuffelen",
+      "affiliation": {
+        "name": "Digitaal Vlaanderen"
+      }
+    },
+    {
+      "role": "A",
+      "first_name": "Geert",
+      "last_name": "Thijs",
+      "affiliation": {
+        "name": "Digitaal Vlaanderen"
+      }
+    }
+  ],
+  "datatypes": [
+    {
+      "uri": "http://www.w3.org/ns/adms#Identifier",
+      "name": "Identificator",
+      "label": {
+        "nl": "Identificator"
+      },
+      "sort": "Identificator",
+      "description": {
+        "nl": "Informatie gebruikt om een object uniek te identificeren."
+      },
+      "usage": {
+        "nl": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem. OPMERKING: Meer info over dit datatype in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/\">OSLO Generiek - basis</a>."
+      },
+      "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Informatie gebruikt om een object uniek te identificeren.",
+        "ap-usageNote-nl": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem. OPMERKING: Meer info over dit datatype in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/\">OSLO Generiek - basis</a>.",
+        "label-nl": "Identificator",
+        "uri": "http://www.w3.org/ns/adms#Identifier"
+      },
+      "properties": []
+    }
+  ],
+  "parents": [],
+  "documentroot": "/doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22"
+}

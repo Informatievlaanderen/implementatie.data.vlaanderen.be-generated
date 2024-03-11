@@ -1,0 +1,1070 @@
+{
+  "@context": {
+    "affiliation": {
+      "@id": "http://schema.org/affiliation"
+    },
+    "authors": {
+      "@id": "foaf:maker",
+      "@type": "foaf:Person"
+    },
+    "classes": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "contributors": {
+      "@id": "dcterms:contributor",
+      "@type": "foaf:Person"
+    },
+    "datatypes": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "domain": {
+      "@id": "rdfs:domain"
+    },
+    "editors": {
+      "@id": "rec:editor",
+      "@type": "foaf:Person"
+    },
+    "externals": {
+      "@id": "rdfs:seeAlso",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class"
+    },
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "generalization": {
+      "@id": "rdfs:subPropertyOf"
+    },
+    "issued": {
+      "@id": "dcterms:issued"
+    },
+    "label": {
+      "@container": "@language",
+      "@id": "rdfs:label"
+    },
+    "maxCardinality": {
+      "@id": "sh:maxCount"
+    },
+    "minCardinality": {
+      "@id": "sh:minCount"
+    },
+    "modified": {
+      "@id": "dcterms:modified",
+      "@type": "xsd:date"
+    },
+    "name": {
+      "@id": "rdfs:label"
+    },
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "person": "http://www.w3.org/ns/person#",
+    "properties": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "qb": "http://purl.org/linked-data/cube#",
+    "range": {
+      "@id": "rdfs:range"
+    },
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rec": "http://www.w3.org/2001/02pd/rec54#",
+    "sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
+    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+    "sh": "http://w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "vann": "http://purl.org/vocab/vann/",
+    "vlaanderen": "http://data.vlaanderen.be/ns/",
+    "void": "http://rdfs.org/ns/void#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet",
+  "@type": "http://www.w3.org/2002/07/owl#Ontology",
+  "authors": [
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Digitaal Vlaanderen"
+      },
+      "foaf:firstName": "Bert",
+      "foaf:lastName": "Van Nuffelen"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Digitaal Vlaanderen"
+      },
+      "foaf:firstName": "Geert",
+      "foaf:lastName": "Thijs"
+    }
+  ],
+  "baseURI": "https://implementatie.data.vlaanderen.be/ns/grondverzet#",
+  "branchtag": "main",
+  "classes": [],
+  "config": "config/config-ap.json",
+  "contributors": [],
+  "contributors-column": "MijnKolom",
+  "contributors-file": "stakeholders.csv",
+  "diagram": "Grondverzet",
+  "documentcommit": "99baf6f569ef57e229582330fa410626efa8a527",
+  "dummy": "13",
+  "eap": "Grondverzet.EAP",
+  "editors": [],
+  "examples": true,
+  "externalproperties": [
+    {
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoring",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{BFA9D347-E842-4c28-8D48-D4266B99585A}",
+      "ap-definition-nl": {
+        "nl": "Direct of indirect bewijs dat de Boring wettelijk in orde is."
+      },
+      "ap-label-nl": {
+        "nl": "wettelijkKaderBoring"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Direct of indirect bewijs dat de Boring wettelijk in orde is."
+      },
+      "domain": [
+        {
+          "EA-Name": "WettelijkKaderBoring",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "WettelijkKaderBoring",
+        "EA-Domain-Guid": "{932F5443-1EE5-42c2-82E2-7007E203D6CD}",
+        "EA-Guid": "{BFA9D347-E842-4c28-8D48-D4266B99585A}",
+        "EA-Name": "wettelijkKaderBoring",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "LegaleVerschijningsvorm",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{D89502AC-C1B8-4c5a-9D77-5F6FD767FE4E}",
+          "EA-Name": "LegaleVerschijningsvorm",
+          "EA-Package": "OSLO-Besluit",
+          "uri": "https://data.europa.eu/eli/ontology#LegalExpression"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "wettelijkKaderBoring"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Direct of indirect bewijs dat de Boring wettelijk in orde is."
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "Bv de Vergunning die is verkregen of de Melding die van de Boring is gemaakt. OPMERKING: Als deze info niet beschikbaar is gebruik dan het type LegaleVerschijningsvorm ipv zijn subklassen en geef de reden op in het attribuut Legaleverschijningsvorm.beschrijving.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Direct of indirect bewijs dat de Boring wettelijk in orde is."
+        },
+        "ap-label-nl": {
+          "nl": "wettelijkKaderBoring"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Direct of indirect bewijs dat de Boring wettelijk in orde is."
+        },
+        "label": {
+          "nl": "wettelijkKaderBoring"
+        },
+        "usage": {
+          "nl": "Bv de Vergunning die is verkregen of de Melding die van de Boring is gemaakt. OPMERKING: Als deze info niet beschikbaar is gebruik dan het type LegaleVerschijningsvorm ipv zijn subklassen en geef de reden op in het attribuut Legaleverschijningsvorm.beschrijving."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "wettelijkKaderBoring"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "wettelijkkaderboring",
+      "range": [
+        {
+          "EA-GUID": "{D89502AC-C1B8-4c5a-9D77-5F6FD767FE4E}",
+          "EA-Name": "LegaleVerschijningsvorm",
+          "EA-Package": "OSLO-Besluit",
+          "uri": "https://data.europa.eu/eli/ontology#LegalExpression"
+        }
+      ],
+      "usage": {
+        "nl": "Bv de Vergunning die is verkregen of de Melding die van de Boring is gemaakt. OPMERKING: Als deze info niet beschikbaar is gebruik dan het type LegaleVerschijningsvorm ipv zijn subklassen en geef de reden op in het attribuut Legaleverschijningsvorm.beschrijving."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoorder",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{7C3F3C78-CB04-4187-A3A8-2C7D31AABBB3}",
+      "ap-definition-nl": {
+        "nl": "Toelating van de Boorder om Boringen te verrichten."
+      },
+      "ap-label-nl": {
+        "nl": "wettelijkKaderBoorder"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Toelating van de Boorder om Boringen te verrichten."
+      },
+      "domain": [
+        {
+          "EA-Name": "WettelijkKaderBoring",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "WettelijkKaderBoring",
+        "EA-Domain-Guid": "{932F5443-1EE5-42c2-82E2-7007E203D6CD}",
+        "EA-Guid": "{7C3F3C78-CB04-4187-A3A8-2C7D31AABBB3}",
+        "EA-Name": "wettelijkKaderBoorder",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "Erkenning",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{737B1EB5-9A9A-4efa-A85E-B5A06D59A8D3}",
+          "EA-Name": "Erkenning",
+          "EA-Package": "OSLO-BodemEnOndergrond",
+          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Erkenning"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "wettelijkKaderBoorder"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Toelating van de Boorder om Boringen te verrichten."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Toelating van de Boorder om Boringen te verrichten."
+        },
+        "ap-label-nl": {
+          "nl": "wettelijkKaderBoorder"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Toelating van de Boorder om Boringen te verrichten."
+        },
+        "label": {
+          "nl": "wettelijkKaderBoorder"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "wettelijkKaderBoorder"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "wettelijkkaderboorder",
+      "range": [
+        {
+          "EA-GUID": "{737B1EB5-9A9A-4efa-A85E-B5A06D59A8D3}",
+          "EA-Name": "Erkenning",
+          "EA-Package": "OSLO-BodemEnOndergrond",
+          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Erkenning"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKader",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "EA-Guid": "{B110E2E5-E77B-4146-8876-7C235A5B2247}",
+      "ap-definition-nl": {
+        "nl": "Het kader dat vastlegt wat behoort tot de wet."
+      },
+      "ap-label-nl": {
+        "nl": "wettelijkKader"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Het kader dat vastlegt wat behoort tot de wet."
+      },
+      "domain": [
+        {
+          "EA-Name": "Grondboring",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Grondboring",
+        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+        "EA-Guid": "{B110E2E5-E77B-4146-8876-7C235A5B2247}",
+        "EA-Name": "wettelijkKader",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "null",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "",
+          "EA-Package": "",
+          "uri": "null"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "wettelijkKader"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Het kader dat vastlegt wat behoort tot de wet."
+          },
+          {
+            "key": "parentURI",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.wettelijkKader"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Het kader dat vastlegt wat behoort tot de wet."
+        },
+        "ap-label-nl": {
+          "nl": "wettelijkKader"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Het kader dat vastlegt wat behoort tot de wet."
+        },
+        "label": {
+          "nl": "wettelijkKader"
+        },
+        "usage": ""
+      },
+      "generalization": [
+        "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.wettelijkKader"
+      ],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "wettelijkKader"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "wettelijkkader",
+      "range": []
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#doel",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{BD2A820D-885E-4ca8-8686-50AC15D68B95}",
+      "ap-definition-nl": {
+        "nl": "Reden waarom de Grondboring werd uitgevoerd."
+      },
+      "ap-label-nl": {
+        "nl": "doel"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Reden waarom de Grondboring werd uitgevoerd."
+      },
+      "domain": [
+        {
+          "EA-Name": "Grondboring",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Grondboring",
+        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+        "EA-Guid": "{BD2A820D-885E-4ca8-8686-50AC15D68B95}",
+        "EA-Name": "doel",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "Boringdoeltype",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{5447AC73-3B35-4483-9297-EC7BCA306B39}",
+          "EA-Name": "Boringdoeltype",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "doel"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Reden waarom de Grondboring werd uitgevoerd."
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "null",
+            "value": "Vb exploitatie, onderzoek, bemaling etc."
+          },
+          {
+            "key": "parentURI",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.doel"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Reden waarom de Grondboring werd uitgevoerd."
+        },
+        "ap-label-nl": {
+          "nl": "doel"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Reden waarom de Grondboring werd uitgevoerd."
+        },
+        "label": {
+          "nl": "doel"
+        },
+        "usage": {
+          "nl": "Vb exploitatie, onderzoek, bemaling etc."
+        }
+      },
+      "generalization": [
+        "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.doel"
+      ],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "doel"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "doel",
+      "range": [
+        {
+          "EA-GUID": "{5447AC73-3B35-4483-9297-EC7BCA306B39}",
+          "EA-Name": "Boringdoeltype",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ],
+      "usage": {
+        "nl": "Vb exploitatie, onderzoek, bemaling etc."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#boormeester",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{02B3D701-BCCD-4230-87A7-77B9E64AF054}",
+      "ap-definition-nl": {
+        "nl": "Opzichter bij de Boring."
+      },
+      "ap-label-nl": {
+        "nl": "boormeester"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Voorlopig veronderstellen we maximaal 1 maar dit moet nog afgetoetst worden."
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Opzichter bij de Boring."
+      },
+      "domain": [
+        {
+          "EA-Name": "Grondboring",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Grondboring",
+        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+        "EA-Guid": "{02B3D701-BCCD-4230-87A7-77B9E64AF054}",
+        "EA-Name": "boormeester",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "Agent",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+          "EA-Name": "Agent",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://purl.org/dc/terms/Agent"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "boormeester"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Opzichter bij de Boring."
+          },
+          {
+            "key": "parentURI",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Voorlopig veronderstellen we maximaal 1 maar dit moet nog afgetoetst worden.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Opzichter bij de Boring."
+        },
+        "ap-label-nl": {
+          "nl": "boormeester"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Voorlopig veronderstellen we maximaal 1 maar dit moet nog afgetoetst worden."
+        },
+        "definition": {
+          "nl": "Opzichter bij de Boring."
+        },
+        "label": {
+          "nl": "boormeester"
+        },
+        "usage": {
+          "nl": "Voorlopig veronderstellen we maximaal 1 maar dit moet nog afgetoetst worden."
+        }
+      },
+      "generalization": [
+        "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor"
+      ],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "boormeester"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "boormeester",
+      "range": [
+        {
+          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+          "EA-Name": "Agent",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://purl.org/dc/terms/Agent"
+        }
+      ],
+      "usage": {
+        "nl": "Voorlopig veronderstellen we maximaal 1 maar dit moet nog afgetoetst worden."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#boorder",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{3D672591-1A0F-4787-86CE-90725C19307B}",
+      "ap-definition-nl": {
+        "nl": "Diegene die de Boring heeft uitgevoerd."
+      },
+      "ap-label-nl": {
+        "nl": "boorder"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Diegene die de Boring heeft uitgevoerd."
+      },
+      "domain": [
+        {
+          "EA-Name": "Grondboring",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Grondboring",
+        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+        "EA-Guid": "{3D672591-1A0F-4787-86CE-90725C19307B}",
+        "EA-Name": "boorder",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "Agent",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+          "EA-Name": "Agent",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://purl.org/dc/terms/Agent"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "boorder"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Diegene die de Boring heeft uitgevoerd."
+          },
+          {
+            "key": "parentURI",
+            "note": "null",
+            "value": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Diegene die de Boring heeft uitgevoerd."
+        },
+        "ap-label-nl": {
+          "nl": "boorder"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Diegene die de Boring heeft uitgevoerd."
+        },
+        "label": {
+          "nl": "boorder"
+        },
+        "usage": ""
+      },
+      "generalization": [
+        "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor"
+      ],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "boorder"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "boorder",
+      "range": [
+        {
+          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+          "EA-Name": "Agent",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://purl.org/dc/terms/Agent"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{C170A4F2-9F5B-413b-9238-67B041746509}",
+      "ap-definition-nl": {
+        "nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
+      },
+      "ap-label-nl": {
+        "nl": "identificator"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
+      },
+      "domain": [
+        {
+          "EA-Name": "Grondboring",
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Grondboring",
+        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+        "EA-Guid": "{C170A4F2-9F5B-413b-9238-67B041746509}",
+        "EA-Name": "identificator",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Range": "Identificator",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+          "EA-Name": "Identificator",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/ns/adms#Identifier"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "identificator"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "Deze lijst omvat alle mogelijke identicaties voor ee grondboring.\r\nBy default, zal steeds de URI van grondboring meegegeven worden als ook andere identificatoren zoals het boornummer of KBIN-BGD.\r\n",
+            "value": "NOTE"
+          },
+          {
+            "key": "name",
+            "note": "null",
+            "value": "Grondboring.identificator"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
+        },
+        "ap-label-nl": {
+          "nl": "identificator"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."
+        },
+        "label": {
+          "nl": "identificator"
+        },
+        "usage": {
+          "nl": "Deze lijst omvat alle mogelijke identicaties voor ee grondboring.\r\nBy default, zal steeds de URI van grondboring meegegeven worden als ook andere identificatoren zoals het boornummer of KBIN-BGD.\r\n"
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "identificator"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "1",
+      "name": "identificator",
+      "range": [
+        {
+          "EA-GUID": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+          "EA-Name": "Identificator",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/ns/adms#Identifier"
+        }
+      ],
+      "usage": {
+        "nl": "Deze lijst omvat alle mogelijke identicaties voor ee grondboring.\r\nBy default, zal steeds de URI van grondboring meegegeven worden als ook andere identificatoren zoals het boornummer of KBIN-BGD.\r\n"
+      }
+    }
+  ],
+  "externals": [
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{5447AC73-3B35-4483-9297-EC7BCA306B39}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "Boringdoeltype"
+      },
+      "definition": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{5447AC73-3B35-4483-9297-EC7BCA306B39}",
+        "EA-Name": "Boringdoeltype",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "ENUMERATION",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Boringdoeltype"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "TODO"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "Boringdoeltype"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "TODO"
+        },
+        "label": {
+          "nl": "Boringdoeltype"
+        },
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Boringdoeltype"
+      },
+      "name": "Boringdoeltype"
+    },
+    {
+      "@id": "http://www.w3.org/ns/adms#Identifier",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+      "ap-definition-nl": {
+        "nl": "Informatie gebruikt om een object uniek te identificeren."
+      },
+      "ap-label-nl": {
+        "nl": "Identificator"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem. OPMERKING: Meer info over dit datatype in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/\">OSLO Generiek - basis</a>."
+      },
+      "definition": {
+        "nl": "Informatie gebruikt om een object uniek te identificeren."
+      },
+      "extra": {
+        "EA-Guid": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+        "EA-Name": "Identificator",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Informatie gebruikt om een object uniek te identificeren."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem. OPMERKING: Meer info over dit datatype in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/\">OSLO Generiek - basis</a>.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Identificator"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/adms#Identifier"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Informatie gebruikt om een object uniek te identificeren."
+        },
+        "ap-label-nl": {
+          "nl": "Identificator"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem. OPMERKING: Meer info over dit datatype in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/\">OSLO Generiek - basis</a>."
+        },
+        "definition": {
+          "nl": "Informatie gebruikt om een object uniek te identificeren."
+        },
+        "label": {
+          "nl": "Identificator"
+        },
+        "parentclasses": "",
+        "usage": {
+          "nl": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem. OPMERKING: Meer info over dit datatype in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/\">OSLO Generiek - basis</a>."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Identificator"
+      },
+      "name": "Identificator",
+      "usage": {
+        "nl": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem. OPMERKING: Meer info over dit datatype in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/\">OSLO Generiek - basis</a>."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#Grondboring",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+      "ap-definition-nl": {
+        "nl": "De handeling van het boren van een smalle schacht in de grond."
+      },
+      "ap-label-nl": {
+        "nl": "Grondboring"
+      },
+      "definition": {
+        "nl": "De handeling van het boren van een smalle schacht in de grond."
+      },
+      "extra": {
+        "EA-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+        "EA-Name": "Grondboring",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Parents": "",
+        "EA-Parents2": [
+          {
+            "label": "Bemonstering",
+            "name": "Bemonstering",
+            "package": "SSN/SOSA",
+            "uri": "http://www.w3.org/ns/sosa/Sampling"
+          },
+          {
+            "label": "Boring",
+            "name": "Boring",
+            "package": "OSLO-BodemEnOndergrond",
+            "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Boring"
+          }
+        ],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Grondboring"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "De handeling van het boren van een smalle schacht in de grond."
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "null",
+            "value": "Onder \"grond\" verstaan we hier het deel van de aardkorst onder het aardoppervlak. Het slaat zowel op de bodem als op wat zich daaronder bevindt (en hier ondergrond wordt genoemd)."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "De handeling van het boren van een smalle schacht in de grond."
+        },
+        "ap-label-nl": {
+          "nl": "Grondboring"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "De handeling van het boren van een smalle schacht in de grond."
+        },
+        "label": {
+          "nl": "Grondboring"
+        },
+        "parentclasses": "http://www.w3.org/ns/sosa/Sampling, https://data.vlaanderen.be/ns/bodem-en-ondergrond#Boring",
+        "usage": {
+          "nl": "Onder \"grond\" verstaan we hier het deel van de aardkorst onder het aardoppervlak. Het slaat zowel op de bodem als op wat zich daaronder bevindt (en hier ondergrond wordt genoemd)."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Grondboring"
+      },
+      "name": "Grondboring",
+      "usage": {
+        "nl": "Onder \"grond\" verstaan we hier het deel van de aardkorst onder het aardoppervlak. Het slaat zowel op de bodem als op wat zich daaronder bevindt (en hier ondergrond wordt genoemd)."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{932F5443-1EE5-42c2-82E2-7007E203D6CD}",
+      "ap-definition-nl": {
+        "nl": "Beschrijft in welke mate voldaan is aan de wetgeving mbt Boringen."
+      },
+      "ap-label-nl": {
+        "nl": "WettelijkKaderBoring"
+      },
+      "definition": {
+        "nl": "Beschrijft in welke mate voldaan is aan de wetgeving mbt Boringen."
+      },
+      "extra": {
+        "EA-Guid": "{932F5443-1EE5-42c2-82E2-7007E203D6CD}",
+        "EA-Name": "WettelijkKaderBoring",
+        "EA-Package": "OSLO-Grondboringen",
+        "EA-Parents": "",
+        "EA-Parents2": [
+          {
+            "label": "WettelijkKader",
+            "name": "WettelijkKader",
+            "package": "OSLO-Generiek",
+            "uri": "https://data.vlaanderen.be/ns/generiek#WettelijkKader"
+          }
+        ],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "WettelijkKaderBoring"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Beschrijft in welke mate voldaan is aan de wetgeving mbt Boringen."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Beschrijft in welke mate voldaan is aan de wetgeving mbt Boringen."
+        },
+        "ap-label-nl": {
+          "nl": "WettelijkKaderBoring"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Beschrijft in welke mate voldaan is aan de wetgeving mbt Boringen."
+        },
+        "label": {
+          "nl": "WettelijkKaderBoring"
+        },
+        "parentclasses": "https://data.vlaanderen.be/ns/generiek#WettelijkKader",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "WettelijkKaderBoring"
+      },
+      "name": "Wettelijkkaderboring"
+    }
+  ],
+  "extra": {
+    "EA-Guid": "{C2AF8A01-7376-4092-A202-0B84812FC3E4}",
+    "EA-Name": "Grondverzet",
+    "RawTags": [
+      {
+        "key": "baseURI",
+        "note": "null",
+        "value": "https://implementatie.data.vlaanderen.be/ns/grondverzet#"
+      }
+    ],
+    "baseURI": "https://implementatie.data.vlaanderen.be/ns/grondverzet#",
+    "issued": "TODO",
+    "license": "TODO"
+  },
+  "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-mijnThema/issues",
+  "filename": "config/grondverzet.json",
+  "hostname": "https://implementatie.data.vlaanderen.be/",
+  "issued": "TODO",
+  "label": {
+    "en": "grondverzet-grondboringen-im",
+    "nl": "grondverzet-grondboringen-im"
+  },
+  "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+  "name": "grondverzet-grondboringen-im",
+  "navigation": {},
+  "properties": [],
+  "publication-date": "2024-02-15",
+  "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+  "repository": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet",
+  "site": "site-skeleton/grondverzet-grondboringen",
+  "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
+  "template": "grondverzet-grondboringen-im.j2",
+  "title": "Implementatiemodel Grondverzet - Grondboringen",
+  "toolchaincommit": "3ffbb87ee0363ed37a94375ff071857821c6bc44",
+  "translation": [
+    {
+      "language": "nl",
+      "mergefile": "grondverzet-grondboringen-im_nl_merged.json",
+      "template": "grondverzet-grondboringen-im.j2",
+      "title": "Implementatiemodel Grondverzet - Grondboringen",
+      "translationjson": "grondverzet-grondboringen-im_nl.json"
+    }
+  ],
+  "type": "ap",
+  "urlref": "/doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22"
+}

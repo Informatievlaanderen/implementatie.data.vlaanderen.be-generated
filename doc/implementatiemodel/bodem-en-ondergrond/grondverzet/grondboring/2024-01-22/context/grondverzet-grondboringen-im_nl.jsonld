@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "Boringdoeltype": "http://www.w3.org/2004/02/skos/core#Concept",
+    "Grondboring": {
+      "@context": {
+        "boorder": {
+          "@id": "https://data.vlaanderen.be/ns/grondboringen#boorder",
+          "@type": "@id"
+        },
+        "boormeester": {
+          "@id": "https://data.vlaanderen.be/ns/grondboringen#boormeester",
+          "@type": "@id"
+        },
+        "doel": {
+          "@container": "@set",
+          "@id": "https://data.vlaanderen.be/ns/grondboringen#doel",
+          "@type": "@id"
+        },
+        "identificator": {
+          "@container": "@set",
+          "@id": "https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator",
+          "@type": "@id"
+        },
+        "wettelijkKader": {
+          "@id": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKader"
+        }
+      },
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+    },
+    "Identificator": "http://www.w3.org/ns/adms#Identifier",
+    "WettelijkKaderBoring": {
+      "@context": {
+        "wettelijkKaderBoorder": {
+          "@id": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoorder",
+          "@type": "@id"
+        },
+        "wettelijkKaderBoring": {
+          "@id": "https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoring",
+          "@type": "@id"
+        }
+      },
+      "@id": "https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring"
+    }
+  }
+}

@@ -1,0 +1,125 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix shacl: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22> rdfs:member <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#BoringdoeltypeShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#IdentificatorShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoringShape> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#BoringdoeltypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/9909eafa370b04d51be542b1334f0d653ce9b153>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/c6998757a81917032e375281f3fcd052f8c77ba3>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/9ebc30e6f69b143b3fb9e8f970b33803baf4daa9>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/cef45fe50b2b44250cd536067b2b16e6dfb8b03c>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/dded78cb6f2b8c34d17d2b01917af9c00654bb31>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/972d73e7a13100b66c0c2f44466edac47aa1ab28>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/48db12f64a123c44de0a2a4b3add9ca5e7d022d2>;
+  shacl:targetClass <https://data.vlaanderen.be/ns/grondboringen#Grondboring> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.identificator";
+  shacl:class <http://www.w3.org/ns/adms#Identifier>;
+  shacl:description "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."@nl;
+  shacl:name "identificator"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/48db12f64a123c44de0a2a4b3add9ca5e7d022d2> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.wettelijkKader";
+  shacl:description "Het kader dat vastlegt wat behoort tot de wet."@nl;
+  shacl:maxCount 1;
+  shacl:name "wettelijkKader"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/grondboringen#wettelijkKader> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/972d73e7a13100b66c0c2f44466edac47aa1ab28> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.identificator";
+  shacl:description "Verwijzing naar de informatie die de activiteit van de Bemonstering uniek identificeert."@nl;
+  shacl:minCount 1;
+  shacl:name "identificator"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/grondboringen#Grondboring.identificator> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/9909eafa370b04d51be542b1334f0d653ce9b153> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.boorder";
+  shacl:description "Diegene die de Boring heeft uitgevoerd."@nl;
+  shacl:maxCount 1;
+  shacl:name "boorder"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/grondboringen#boorder> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/9ebc30e6f69b143b3fb9e8f970b33803baf4daa9> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.boormeester";
+  shacl:description "Opzichter bij de Boring."@nl;
+  shacl:maxCount 1;
+  shacl:name "boormeester"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/grondboringen#boormeester> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/c6998757a81917032e375281f3fcd052f8c77ba3> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.boorder";
+  shacl:class dc:Agent;
+  shacl:description "Diegene die de Boring heeft uitgevoerd."@nl;
+  shacl:name "boorder"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/grondboringen#boorder> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/cef45fe50b2b44250cd536067b2b16e6dfb8b03c> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.boormeester";
+  shacl:class dc:Agent;
+  shacl:description "Opzichter bij de Boring."@nl;
+  shacl:name "boormeester"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/grondboringen#boormeester> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#GrondboringShape/dded78cb6f2b8c34d17d2b01917af9c00654bb31> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#Grondboring.doel";
+  shacl:class skos:Concept;
+  shacl:description "Reden waarom de Grondboring werd uitgevoerd."@nl;
+  shacl:name "doel"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/grondboringen#doel> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#IdentificatorShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://www.w3.org/ns/adms#Identifier> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoringShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoringShape/15159c4ce00e344867fc13bcde7b1ee5b30f56a1>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoringShape/4fc183a7a243c15664b3ef3cc549d2dfdac11722>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoringShape/ceeafdea2bdd34f43fa21b03ccdf5cc69f59b283>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoringShape/3c3089f3a074611d3138c7af2170ccb9c1472f87>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoringShape/83bb25bbc3a921a9b1249e4f26de08e1a9c0322b>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoringShape/d551cec20a161c8c82bffb3400f2f34d544d1f8f>;
+  shacl:targetClass <https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoringShape/15159c4ce00e344867fc13bcde7b1ee5b30f56a1> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoring.wettelijkKaderBoorder";
+  shacl:description "Toelating van de Boorder om Boringen te verrichten."@nl;
+  shacl:minCount 1;
+  shacl:name "wettelijkKaderBoorder"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoorder> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoringShape/3c3089f3a074611d3138c7af2170ccb9c1472f87> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoring.wettelijkKaderBoring";
+  shacl:class <https://data.europa.eu/eli/ontology#LegalExpression>;
+  shacl:description "Direct of indirect bewijs dat de Boring wettelijk in orde is."@nl;
+  shacl:name "wettelijkKaderBoring"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoring> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoringShape/4fc183a7a243c15664b3ef3cc549d2dfdac11722> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoring.wettelijkKaderBoorder";
+  shacl:description "Toelating van de Boorder om Boringen te verrichten."@nl;
+  shacl:maxCount 1;
+  shacl:name "wettelijkKaderBoorder"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoorder> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoringShape/83bb25bbc3a921a9b1249e4f26de08e1a9c0322b> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoring.wettelijkKaderBoring";
+  shacl:description "Direct of indirect bewijs dat de Boring wettelijk in orde is."@nl;
+  shacl:minCount 1;
+  shacl:name "wettelijkKaderBoring"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoring> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoringShape/ceeafdea2bdd34f43fa21b03ccdf5cc69f59b283> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoring.wettelijkKaderBoorder";
+  shacl:class <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Erkenning>;
+  shacl:description "Toelating van de Boorder om Boringen te verrichten."@nl;
+  shacl:name "wettelijkKaderBoorder"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoorder> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoringShape/d551cec20a161c8c82bffb3400f2f34d544d1f8f> rdfs:seeAlso "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondverzet/grondboring/2024-01-22#WettelijkKaderBoring.wettelijkKaderBoring";
+  shacl:description "Direct of indirect bewijs dat de Boring wettelijk in orde is."@nl;
+  shacl:maxCount 1;
+  shacl:name "wettelijkKaderBoring"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoring> .
