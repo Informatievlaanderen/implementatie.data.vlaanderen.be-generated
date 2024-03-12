@@ -103,9 +103,9 @@
   "contributors-column": "MijnKolom",
   "contributors-file": "stakeholders.csv",
   "diagram": "IM-Grondboringen",
-  "documentcommit": "c8705b90908e6fcfc75f07c0b8c5c92f68111848",
-  "dummy": "geert23",
-  "eap": "Grondverzet-test.EAP",
+  "documentcommit": "f677965ac574374b6a5bb387471d46e543ac6fe8",
+  "dummy": "geert24",
+  "eap": "Grondverzet.EAP",
   "editors": [],
   "examples": true,
   "externalproperties": [
@@ -141,7 +141,7 @@
           "EA-GUID": "{8F392E1A-2F27-49f5-8A23-17398C13E046}",
           "EA-Name": "Concept",
           "EA-Package": "skos",
-          "uri": "http://fixme.com#Concept"
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
         },
         "RawTags": [
           {
@@ -195,7 +195,7 @@
           "EA-GUID": "{8F392E1A-2F27-49f5-8A23-17398C13E046}",
           "EA-Name": "Concept",
           "EA-Package": "skos",
-          "uri": "http://fixme.com#Concept"
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
         }
       ]
     },
@@ -10306,36 +10306,6 @@
       }
     },
     {
-      "@id": "http://fixme.com#Concept",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{8F392E1A-2F27-49f5-8A23-17398C13E046}",
-      "ap-definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Guid": "{8F392E1A-2F27-49f5-8A23-17398C13E046}",
-        "EA-Name": "Concept",
-        "EA-Package": "skos",
-        "EA-Parents": "",
-        "EA-Parents2": [],
-        "EA-Type": "CLASS",
-        "RawTags": [],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "TODO"
-        },
-        "ap-label-nl": "",
-        "ap-usageNote-nl": "",
-        "definition": "",
-        "label": "",
-        "parentclasses": "",
-        "usage": ""
-      },
-      "inpackage": "OTHER_PACKAGE",
-      "name": ""
-    },
-    {
       "@id": "http://purl.org/dc/terms/Agent",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{41322168-5A85-4353-93F3-291FFF4805C6}",
@@ -10406,6 +10376,9 @@
       "ap-label-nl": {
         "nl": "Eenheid"
       },
+      "definition": {
+        "nl": "TODO"
+      },
       "extra": {
         "EA-Guid": "{1C8ADFF6-5078-4074-AA87-F0C6E8842717}",
         "EA-Name": "Eenheid",
@@ -10413,10 +10386,10 @@
         "EA-Parents": "Concept",
         "EA-Parents2": [
           {
-            "label": "",
+            "label": "Concept",
             "name": "Concept",
             "package": "skos",
-            "uri": "http://fixme.com#Concept"
+            "uri": "http://www.w3.org/2004/02/skos/core#Concept"
           }
         ],
         "EA-Type": "CLASS",
@@ -10430,6 +10403,11 @@
             "key": "label-nl",
             "note": "null",
             "value": "Eenheid"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "TODO"
           }
         ],
         "Scope": "NOTHING",
@@ -10441,11 +10419,13 @@
           "nl": "Eenheid"
         },
         "ap-usageNote-nl": "",
-        "definition": "",
+        "definition": {
+          "nl": "TODO"
+        },
         "label": {
           "nl": "Eenheid"
         },
-        "parentclasses": "http://fixme.com#Concept",
+        "parentclasses": "http://www.w3.org/2004/02/skos/core#Concept",
         "usage": ""
       },
       "inpackage": "OTHER_PACKAGE",
@@ -11473,6 +11453,57 @@
         "nl": "Boortype"
       },
       "name": "Boortype"
+    },
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{8F392E1A-2F27-49f5-8A23-17398C13E046}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "Concept"
+      },
+      "extra": {
+        "EA-Guid": "{8F392E1A-2F27-49f5-8A23-17398C13E046}",
+        "EA-Name": "Concept",
+        "EA-Package": "skos",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Concept"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "Concept"
+        },
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": {
+          "nl": "Concept"
+        },
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Concept"
+      },
+      "name": "Concept"
     },
     {
       "@id": "http://www.w3.org/2006/time#Instant",
@@ -14226,7 +14257,7 @@
     "license": "TODO"
   },
   "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-mijnThema/issues",
-  "filename": "config/grondverzet-test.json",
+  "filename": "config/grondverzet.json",
   "hostname": "https://implementatie.data.vlaanderen.be/",
   "issued": "TODO",
   "label": {
@@ -14247,7 +14278,7 @@
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
   "template": "grondverzet-grondboringen-im.j2",
   "title": "Implementatiemodel Grondverzet - Grondboringen",
-  "toolchaincommit": "e3ebab7767899e7ace04940f48f62a7d495ec09d",
+  "toolchaincommit": "04fe94b3f8699f8773cafd0dc8152ecda27075bb",
   "translation": [
     {
       "language": "nl",

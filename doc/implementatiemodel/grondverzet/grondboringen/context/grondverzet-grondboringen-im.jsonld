@@ -356,6 +356,7 @@
     },
     "DiscreetCurvebereik": "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage",
     "Domeinobject": "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature",
+    "Eenheid": "http://qudt.org/2.1/schema/qudt/Unit",
     "Erkenning": {
       "@context": {
         "type": {
@@ -381,7 +382,6 @@
       },
       "@id": "http://www.w3.org/ns/locn#Geometry"
     },
-    "Getal": "https://schema.org/Number",
     "Grondboring": {
       "@context": {
         "boorder": {
@@ -470,20 +470,15 @@
     },
     "KwantitatieveWaarde": {
       "@context": {
-        "eenheid": {
-          "@id": "https://schema.org/unitText",
-          "@type": "http://www.w3.org/2001/XMLSchema#string"
-        },
         "standaardEenheid": {
-          "@id": "https://schema.org/unitCode",
+          "@id": "https://qudt.org/schema/qudt/unit",
           "@type": "@id"
         },
         "waarde": {
-          "@id": "https://schema.org/value",
-          "@type": "@id"
+          "@id": "https://qudt.org/schema/qudt//value"
         }
       },
-      "@id": "https://schema.org/QuantitativeValue"
+      "@id": "https://qudt.org/schema/qudt/QuantityValue"
     },
     "LegaleVerschijningsvorm": {
       "@context": {
@@ -506,6 +501,7 @@
       },
       "@id": "https://data.europa.eu/eli/ontology#LegalExpression"
     },
+    "LegaleVerschijningsvormtype": "http://www.w3.org/2004/02/skos/core#Concept",
     "Locatie": "http://www.w3.org/ns/prov#Location",
     "Maaiveld": {
       "@context": {
@@ -521,7 +517,6 @@
       "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld"
     },
     "Maaiveldtype": "http://www.w3.org/2004/02/skos/core#Concept",
-    "Maat": "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure",
     "MateriaalBekistingtype": "http://www.w3.org/2004/02/skos/core#Concept",
     "Materiaalklasse": "http://www.w3.org/2004/02/skos/core#Concept",
     "Moment": {
@@ -580,7 +575,6 @@
     "Procedure": "http://www.w3.org/ns/sosa/Procedure",
     "Proces": "http://def.isotc211.org/iso19156/2011/Observation#OM_Process",
     "Rechtsgrond": "https://data.europa.eu/eli/ontology#LegalResource",
-    "StandaardEenheid": "https://data.vlaanderen.be/ns/generiek#StandaardEenheid",
     "Systeem": "https://www.w3.org/TR/vocab-ssn/#ssn-system",
     "TemporeleEntiteit": "http://www.w3.org/2006/time#TemporalEntity",
     "WettelijkKader": "https://data.vlaanderen.be/ns/generiek#WettelijkKader",
