@@ -8904,122 +8904,8 @@
             "maxCardinality": "*"
         },
         {
-            "@id": "http://www.w3.org/ns/sosa/usedProcedure",
-            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-            "name": "gebruikteprocedure",
-            "inpackage": "OTHER_PACKAGE",
-            "definition": {
-                "nl": "Bemonsteringsprocedure die werd gevolgd bij de Bemonstering."
-            },
-            "label": {
-                "nl": "gebruikteProcedure"
-            },
-            "ap-label-nl": {
-                "nl": "gebruikteProcedure"
-            },
-            "ap-definition-nl": {
-                "nl": "Bemonsteringsprocedure die werd gevolgd bij de Bemonstering."
-            },
-            "extra": {
-                "EA-Name": "gebruikteProcedure",
-                "EA-Guid": "{9B98C612-53AB-4722-A30A-C712DEB27161}",
-                "derived": "false",
-                "EA-Package": "",
-                "EA-Type": "connector",
-                "EA-Domain": "Bemonstering",
-                "EA-Domain-Guid": "{44FD2D82-E36D-4810-8B25-41092B6E188E}",
-                "EA-Range": "Bemonsteringsprocedure",
-                "RangeData": {
-                    "EA-Name": "Bemonsteringsprocedure",
-                    "EA-GUID": "{E4054C15-3FB1-4567-B729-6FBB1CE393FF}",
-                    "EA-Package": "SSN/SOSA",
-                    "uri": "http://www.w3.org/ns/sosa/om#SamplingProcedure"
-                },
-                "sourceRole": "null",
-                "destRole": "gebruikteProcedure",
-                "label": {
-                    "nl": "gebruikteProcedure"
-                },
-                "definition": {
-                    "nl": "Bemonsteringsprocedure die werd gevolgd bij de Bemonstering."
-                },
-                "usage": "",
-                "ap-label-nl": {
-                    "nl": "gebruikteProcedure"
-                },
-                "ap-definition-nl": {
-                    "nl": "Bemonsteringsprocedure die werd gevolgd bij de Bemonstering."
-                },
-                "ap-usageNote-nl": "",
-                "ap-codelist": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "NOTE",
-                        "note": "gebruikteProcedure"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "NOTE",
-                        "note": "Bemonsteringsprocedure die werd gevolgd bij de Bemonstering."
-                    },
-                    {
-                        "key": "uri",
-                        "value": "NOTE",
-                        "note": "http://www.w3.org/ns/sosa/usedProcedure"
-                    },
-                    {
-                        "key": "ap-label-nl",
-                        "value": "NOTE",
-                        "note": "gebruikteProcedure"
-                    }
-                ],
-                "DestRoleTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "NOTE",
-                        "note": "gebruikteProcedure"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "NOTE",
-                        "note": "Bemonsteringsprocedure die werd gevolgd bij de Bemonstering."
-                    },
-                    {
-                        "key": "uri",
-                        "value": "NOTE",
-                        "note": "http://www.w3.org/ns/sosa/usedProcedure"
-                    },
-                    {
-                        "key": "ap-label-nl",
-                        "value": "NOTE",
-                        "note": "gebruikteProcedure"
-                    }
-                ],
-                "Scope": "NOTHING"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://www.w3.org/ns/sosa/Sampling",
-                    "EA-Name": "Bemonstering"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "Bemonsteringsprocedure",
-                    "EA-GUID": "{E4054C15-3FB1-4567-B729-6FBB1CE393FF}",
-                    "EA-Package": "SSN/SOSA",
-                    "uri": "http://www.w3.org/ns/sosa/om#SamplingProcedure"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "0",
-            "maxCardinality": "*"
-        },
-        {
             "@id": "http://www.w3.org/ns/sosa/resultTime",
-            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
             "name": "bemonsteringstijdstip",
             "inpackage": "OTHER_PACKAGE",
             "definition": {
@@ -9041,12 +8927,11 @@
                 "EA-Type": "attribute",
                 "EA-Domain": "Bemonstering",
                 "EA-Domain-Guid": "{44FD2D82-E36D-4810-8B25-41092B6E188E}",
-                "EA-Range": "TemporeleEntiteit",
+                "EA-Range": "null",
                 "RangeData": {
-                    "EA-Name": "TemporeleEntiteit",
-                    "EA-GUID": "{04E7C7CC-21B9-40eb-A773-299FEEEAA5ED}",
-                    "EA-Package": "OSLO-ObservatiesEnMetingen",
-                    "uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object"
+                    "EA-Name": "",
+                    "EA-Package": "",
+                    "uri": "null"
                 },
                 "label": {
                     "nl": "bemonsteringstijdstip"
@@ -9094,14 +8979,7 @@
                     "EA-Name": "Bemonstering"
                 }
             ],
-            "range": [
-                {
-                    "EA-Name": "TemporeleEntiteit",
-                    "EA-GUID": "{04E7C7CC-21B9-40eb-A773-299FEEEAA5ED}",
-                    "EA-Package": "OSLO-ObservatiesEnMetingen",
-                    "uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object"
-                }
-            ],
+            "range": [],
             "generalization": [],
             "minCardinality": "1",
             "maxCardinality": "1"
@@ -9556,110 +9434,6 @@
             "@id": "http://www.w3.org/ns/sosa/hasResult",
             "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
             "name": "resultaat",
-            "inpackage": "OTHER_PACKAGE",
-            "definition": {
-                "nl": "Het resultaat van de uitgevoerde grondboring."
-            },
-            "label": {
-                "nl": "resultaat"
-            },
-            "ap-label-nl": {
-                "nl": "resultaat"
-            },
-            "ap-definition-nl": {
-                "nl": "Het resultaat van de uitgevoerde grondboring."
-            },
-            "extra": {
-                "EA-Name": "resultaat",
-                "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
-                "derived": "false",
-                "EA-Package": "",
-                "EA-Type": "connector",
-                "EA-Domain": "Grondboring",
-                "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
-                "EA-Range": "Boorgat",
-                "RangeData": {
-                    "EA-Name": "Boorgat",
-                    "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-                    "EA-Package": "OSLO-Grondboringen",
-                    "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-                },
-                "sourceRole": "isResultaatVan",
-                "destRole": "resultaat",
-                "label": {
-                    "nl": "resultaat"
-                },
-                "definition": {
-                    "nl": "Het resultaat van de uitgevoerde grondboring."
-                },
-                "usage": "",
-                "ap-label-nl": {
-                    "nl": "resultaat"
-                },
-                "ap-definition-nl": {
-                    "nl": "Het resultaat van de uitgevoerde grondboring."
-                },
-                "ap-usageNote-nl": "",
-                "ap-codelist": "",
-                "RawTags": [
-                    {
-                        "key": "uri",
-                        "value": "NOTE",
-                        "note": "http://www.w3.org/ns/sosa/hasResult"
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "NOTE",
-                        "note": "Het resultaat van de uitgevoerde grondboring."
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "NOTE",
-                        "note": "resultaat"
-                    }
-                ],
-                "DestRoleTags": [
-                    {
-                        "key": "uri",
-                        "value": "NOTE",
-                        "note": "http://www.w3.org/ns/sosa/hasResult"
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "NOTE",
-                        "note": "Het resultaat van de uitgevoerde grondboring."
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "NOTE",
-                        "note": "resultaat"
-                    }
-                ],
-                "Scope": "NOTHING"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring",
-                    "EA-Name": "Grondboring"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "Boorgat",
-                    "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-                    "EA-Package": "OSLO-Grondboringen",
-                    "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "1",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "http://www.w3.org/ns/sosa/hasResult",
-            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-            "name": "resultaat",
             "inpackage": "UNKNOWN",
             "definition": {
                 "nl": "Bemonsteringsobject dat bij de Bemonstering werd verkregen."
@@ -9769,6 +9543,110 @@
             "generalization": [],
             "minCardinality": "1",
             "maxCardinality": "*"
+        },
+        {
+            "@id": "http://www.w3.org/ns/sosa/hasResult",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "resultaat",
+            "inpackage": "OTHER_PACKAGE",
+            "definition": {
+                "nl": "Het resultaat van de uitgevoerde grondboring."
+            },
+            "label": {
+                "nl": "resultaat"
+            },
+            "ap-label-nl": {
+                "nl": "resultaat"
+            },
+            "ap-definition-nl": {
+                "nl": "Het resultaat van de uitgevoerde grondboring."
+            },
+            "extra": {
+                "EA-Name": "resultaat",
+                "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
+                "derived": "false",
+                "EA-Package": "",
+                "EA-Type": "connector",
+                "EA-Domain": "Grondboring",
+                "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+                "EA-Range": "Boorgat",
+                "RangeData": {
+                    "EA-Name": "Boorgat",
+                    "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
+                    "EA-Package": "OSLO-Grondboringen",
+                    "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+                },
+                "sourceRole": "isResultaatVan",
+                "destRole": "resultaat",
+                "label": {
+                    "nl": "resultaat"
+                },
+                "definition": {
+                    "nl": "Het resultaat van de uitgevoerde grondboring."
+                },
+                "usage": "",
+                "ap-label-nl": {
+                    "nl": "resultaat"
+                },
+                "ap-definition-nl": {
+                    "nl": "Het resultaat van de uitgevoerde grondboring."
+                },
+                "ap-usageNote-nl": "",
+                "ap-codelist": "",
+                "RawTags": [
+                    {
+                        "key": "uri",
+                        "value": "NOTE",
+                        "note": "http://www.w3.org/ns/sosa/hasResult"
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "NOTE",
+                        "note": "Het resultaat van de uitgevoerde grondboring."
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "NOTE",
+                        "note": "resultaat"
+                    }
+                ],
+                "DestRoleTags": [
+                    {
+                        "key": "uri",
+                        "value": "NOTE",
+                        "note": "http://www.w3.org/ns/sosa/hasResult"
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "NOTE",
+                        "note": "Het resultaat van de uitgevoerde grondboring."
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "NOTE",
+                        "note": "resultaat"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring",
+                    "EA-Name": "Grondboring"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Boorgat",
+                    "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
+                    "EA-Package": "OSLO-Grondboringen",
+                    "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "1",
+            "maxCardinality": "1"
         },
         {
             "@id": "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
