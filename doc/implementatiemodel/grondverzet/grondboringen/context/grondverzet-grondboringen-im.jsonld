@@ -56,7 +56,8 @@
           "@type": "@id"
         },
         "bemonsteringstijdstip": {
-          "@id": "http://www.w3.org/ns/sosa/resultTime"
+          "@id": "http://www.w3.org/ns/sosa/resultTime",
+          "@type": "@id"
         },
         "conditie": {
           "@container": "@set",
@@ -448,7 +449,26 @@
     },
     "Grondobjecttype": "http://www.w3.org/2004/02/skos/core#Concept",
     "Herkomst": "http://def.isotc211.org/iso19115/2006/DataQualityInformation#LI_Lineage",
-    "Identificator": "http://www.w3.org/ns/adms#Identifier",
+    "Identificator": {
+      "@context": {
+        "identificator": {
+          "@id": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        "toegekendDoor": {
+          "@id": "http://purl.org/dc/terms/creator",
+          "@type": "@id"
+        },
+        "toegekendDoor (string)": {
+          "@id": "http://www.w3.org/ns/adms#schemaAgency",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "toegekendOp": {
+          "@id": "http://purl.org/dc/terms/issued",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      },
+      "@id": "http://www.w3.org/ns/adms#Identifier"
+    },
     "Input": {
       "@context": {
         "referentie": {

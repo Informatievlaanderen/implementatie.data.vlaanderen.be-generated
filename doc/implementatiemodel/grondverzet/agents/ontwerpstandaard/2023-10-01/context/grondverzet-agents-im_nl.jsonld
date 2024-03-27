@@ -3,19 +3,19 @@
     "AdresVoorstelling": {
       "@context": {
         "busnummer": {
-          "@id": "https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer",
+          "@id": "https://vocab.belgif.be/ns/address#AddressRepresentation.boxNumber",
           "@type": "http://www.w3.org/2001/XMLSchema#string"
         },
         "gemeentenaam": {
-          "@id": "https://data.vlaanderen.be/ns/adres#gemeentenaam",
+          "@id": "https://vocab.belgif.be/ns/address#municipalityName",
           "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
         },
         "huisnummer": {
-          "@id": "https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer",
+          "@id": "https://vocab.belgif.be/ns/address#AddressRepresentation.houseNumber",
           "@type": "http://www.w3.org/2001/XMLSchema#string"
         },
         "land": {
-          "@id": "https://data.vlaanderen.be/ns/adres#land",
+          "@id": "https://vocab.belgif.be/ns/address#country",
           "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
         },
         "postbus": {
@@ -38,7 +38,27 @@
       "@id": "http://www.w3.org/ns/locn#Address"
     },
     "Agent": "http://purl.org/dc/terms/Agent",
-    "Contactinfo": "http://schema.org/ContactPoint",
+    "Contactinfo": {
+      "@context": {
+        "adres": {
+          "@id": "http://www.w3.org/ns/locn#address",
+          "@type": "@id"
+        },
+        "email": {
+          "@id": "http://schema.org/email",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "telefoon": {
+          "@id": "http://schema.org/telephone",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "website": {
+          "@id": "http://xmlns.com/foaf/0.1/page",
+          "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+        }
+      },
+      "@id": "http://schema.org/ContactPoint"
+    },
     "GeregistreerdPersoon": {
       "@context": {
         "registratie": {
@@ -69,7 +89,26 @@
       },
       "@id": "http://www.w3.org/ns/regorg#RegisteredOrganization"
     },
-    "Identificator": "http://www.w3.org/ns/adms#Identifier",
+    "Identificator": {
+      "@context": {
+        "identificator": {
+          "@id": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        "toegekendDoor": {
+          "@id": "http://purl.org/dc/terms/creator",
+          "@type": "@id"
+        },
+        "toegekendDoor (string)": {
+          "@id": "http://www.w3.org/ns/adms#schemaAgency",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "toegekendOp": {
+          "@id": "http://purl.org/dc/terms/issued",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      },
+      "@id": "http://www.w3.org/ns/adms#Identifier"
+    },
     "Organisatie": {
       "@context": {
         "contactinfo": {

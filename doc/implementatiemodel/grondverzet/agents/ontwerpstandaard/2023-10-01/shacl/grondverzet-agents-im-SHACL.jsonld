@@ -51,14 +51,103 @@
       "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#ContactInfoShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
-      "sh:property": [],
+      "sh:property": [
+        {
+          "sh:class": "http://www.w3.org/ns/locn#Address",
+          "sh:description": {
+            "nl": "Adres dat men kan aanschrijven of bezoeken."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "adres"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#address"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "nl": "Email-adres waarnaar men kan mailen."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "email"
+          },
+          "sh:path": "http://schema.org/email"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "nl": "Telefoonnummer waarop men kan bellen."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "telefoon"
+          },
+          "sh:path": "http://schema.org/telephone"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+          "sh:description": {
+            "nl": "Website waarnaar men kan surfen."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "website"
+          },
+          "sh:path": "http://xmlns.com/foaf/0.1/page"
+        }
+      ],
       "sh:targetClass": "http://schema.org/ContactPoint"
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#IdentificatorShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
-      "sh:property": [],
+      "sh:property": [
+        {
+          "sh:description": {
+            "nl": "String gebruikt om het object uniek te identificeren."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        {
+          "sh:class": "http://purl.org/dc/terms/Agent",
+          "sh:description": {
+            "nl": "Link naar de agent die de identificator heeft uitgegeven."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "toegekend door"
+          },
+          "sh:path": "http://purl.org/dc/terms/creator"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "nl": "Naam vd agent die de identificator heeft toegekend."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "toegekend door (String)"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#schemaAgency"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "sh:description": {
+            "nl": "Tijdstip waarop de identificator werd uitgegeven."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "toegekend op"
+          },
+          "sh:path": "http://purl.org/dc/terms/issued"
+        }
+      ],
       "sh:targetClass": "http://www.w3.org/ns/adms#Identifier"
     },
     {
@@ -68,38 +157,53 @@
       "sh:property": [
         {
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "nl": "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben."
+          },
           "sh:maxCount": "1",
           "sh:name": {
             "nl": "busnummer"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer"
+          "sh:path": "https://vocab.belgif.be/ns/address#AddressRepresentation.boxNumber"
         },
         {
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "nl": "Gemeentenaam van het adres."
+          },
           "sh:maxCount": "1",
           "sh:name": {
             "nl": "gemeentenaam"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/adres#gemeentenaam"
+          "sh:path": "https://vocab.belgif.be/ns/address#municipalityName"
         },
         {
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "nl": "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen."
+          },
           "sh:maxCount": "1",
           "sh:name": {
             "nl": "huisnummer"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer"
+          "sh:path": "https://vocab.belgif.be/ns/address#AddressRepresentation.houseNumber"
         },
         {
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "nl": "Land waarin het adres gelegen is."
+          },
           "sh:maxCount": "1",
           "sh:name": {
             "nl": "land"
           },
-          "sh:path": "https://data.vlaanderen.be/ns/adres#land"
+          "sh:path": "https://vocab.belgif.be/ns/address#country"
         },
         {
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "nl": "Postbusnummer in een postkantoor."
+          },
           "sh:maxCount": "1",
           "sh:name": {
             "nl": "postbus"
@@ -108,6 +212,9 @@
         },
         {
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "nl": "Code waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid."
+          },
           "sh:maxCount": "1",
           "sh:name": {
             "nl": "postcode"
@@ -116,6 +223,9 @@
         },
         {
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "nl": "Straatnaam van het adres."
+          },
           "sh:maxCount": "1",
           "sh:name": {
             "nl": "straatnaam"
@@ -124,9 +234,12 @@
         },
         {
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "nl": "Het complete adres in één string, al dan niet geformatteerd."
+          },
           "sh:maxCount": "1",
           "sh:name": {
-            "nl": "volledig adres"
+            "nl": "volledig Adres"
           },
           "sh:path": "http://www.w3.org/ns/locn#fullAddress"
         }

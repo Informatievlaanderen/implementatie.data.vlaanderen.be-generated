@@ -20,43 +20,51 @@
   shacl:closed false;
   shacl:property [
     shacl:datatype xsd:string;
+    shacl:description "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben."@nl;
     shacl:maxCount 1;
     shacl:name "busnummer"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer>
+    shacl:path <https://vocab.belgif.be/ns/address#AddressRepresentation.boxNumber>
   ], [
     shacl:datatype rdf:langString;
+    shacl:description "Gemeentenaam van het adres."@nl;
     shacl:maxCount 1;
     shacl:name "gemeentenaam"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/adres#gemeentenaam>
+    shacl:path <https://vocab.belgif.be/ns/address#municipalityName>
   ], [
     shacl:datatype xsd:string;
+    shacl:description "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen."@nl;
     shacl:maxCount 1;
     shacl:name "huisnummer"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer>
+    shacl:path <https://vocab.belgif.be/ns/address#AddressRepresentation.houseNumber>
   ], [
     shacl:datatype rdf:langString;
+    shacl:description "Land waarin het adres gelegen is."@nl;
     shacl:maxCount 1;
     shacl:name "land"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/adres#land>
+    shacl:path <https://vocab.belgif.be/ns/address#country>
   ], [
     shacl:datatype xsd:string;
+    shacl:description "Postbusnummer in een postkantoor."@nl;
     shacl:maxCount 1;
     shacl:name "postbus"@nl;
     shacl:path <http://www.w3.org/ns/locn#poBox>
   ], [
     shacl:datatype xsd:string;
+    shacl:description "Code waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid."@nl;
     shacl:maxCount 1;
     shacl:name "postcode"@nl;
     shacl:path <http://www.w3.org/ns/locn#postCode>
   ], [
     shacl:datatype rdf:langString;
+    shacl:description "Straatnaam van het adres."@nl;
     shacl:maxCount 1;
     shacl:name "straatnaam"@nl;
     shacl:path <http://www.w3.org/ns/locn#thoroughfare>
   ], [
     shacl:datatype rdf:langString;
+    shacl:description "Het complete adres in één string, al dan niet geformatteerd."@nl;
     shacl:maxCount 1;
-    shacl:name "volledig adres"@nl;
+    shacl:name "volledig Adres"@nl;
     shacl:path <http://www.w3.org/ns/locn#fullAddress>
   ];
   shacl:targetClass <http://www.w3.org/ns/locn#Address> .
@@ -67,6 +75,31 @@
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#ContactInfoShape> a shacl:NodeShape;
   shacl:closed false;
+  shacl:property [
+    shacl:class <http://www.w3.org/ns/locn#Address>;
+    shacl:description "Adres dat men kan aanschrijven of bezoeken."@nl;
+    shacl:maxCount 1;
+    shacl:name "adres"@nl;
+    shacl:path <http://www.w3.org/ns/locn#address>
+  ], [
+    shacl:datatype xsd:string;
+    shacl:description "Email-adres waarnaar men kan mailen."@nl;
+    shacl:maxCount 1;
+    shacl:name "email"@nl;
+    shacl:path schema:email
+  ], [
+    shacl:datatype xsd:string;
+    shacl:description "Telefoonnummer waarop men kan bellen."@nl;
+    shacl:maxCount 1;
+    shacl:name "telefoon"@nl;
+    shacl:path schema:telephone
+  ], [
+    shacl:datatype xsd:anyURI;
+    shacl:description "Website waarnaar men kan surfen."@nl;
+    shacl:maxCount 1;
+    shacl:name "website"@nl;
+    shacl:path foaf:page
+  ];
   shacl:targetClass schema:ContactPoint .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#GeregistreerdPersoonShape> a shacl:NodeShape;
@@ -114,6 +147,30 @@
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#IdentificatorShape> a shacl:NodeShape;
   shacl:closed false;
+  shacl:property [
+    shacl:description "String gebruikt om het object uniek te identificeren."@nl;
+    shacl:maxCount 1;
+    shacl:name "identificator"@nl;
+    shacl:path skos:notation
+  ], [
+    shacl:class dc:Agent;
+    shacl:description "Link naar de agent die de identificator heeft uitgegeven."@nl;
+    shacl:maxCount 1;
+    shacl:name "toegekend door"@nl;
+    shacl:path dc:creator
+  ], [
+    shacl:datatype xsd:string;
+    shacl:description "Naam vd agent die de identificator heeft toegekend."@nl;
+    shacl:maxCount 1;
+    shacl:name "toegekend door (String)"@nl;
+    shacl:path <http://www.w3.org/ns/adms#schemaAgency>
+  ], [
+    shacl:datatype xsd:dateTime;
+    shacl:description "Tijdstip waarop de identificator werd uitgegeven."@nl;
+    shacl:maxCount 1;
+    shacl:name "toegekend op"@nl;
+    shacl:path dc:issued
+  ];
   shacl:targetClass <http://www.w3.org/ns/adms#Identifier> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#OrganisatieShape> a shacl:NodeShape;
