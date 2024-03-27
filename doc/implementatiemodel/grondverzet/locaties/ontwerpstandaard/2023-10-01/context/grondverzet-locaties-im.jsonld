@@ -1,0 +1,132 @@
+{
+  "@context": {
+    "Adresvoorstelling": {
+      "@context": {
+        "administratieveEenheidNiveau1": {
+          "@id": "http://www.w3.org/ns/locn#adminUnitL1",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "administratieveEenheidNiveau2": {
+          "@id": "http://www.w3.org/ns/locn#adminUnitL2",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "adresgebied": {
+          "@id": "http://www.w3.org/ns/locn#addressArea",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "busnummer": {
+          "@id": "https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "gemeentenaam": {
+          "@id": "https://data.vlaanderen.be/ns/adres#gemeentenaam",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "huisnummer": {
+          "@id": "https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "land": {
+          "@id": "https://data.vlaanderen.be/ns/adres#land",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "locatieaanduiding": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/locn#locatorDesignator",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "locatienaam": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/locn#locatorName",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "postbus": {
+          "@id": "http://www.w3.org/ns/locn#poBox",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "postcode": {
+          "@id": "http://www.w3.org/ns/locn#postCode",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "postnaam": {
+          "@id": "http://www.w3.org/ns/locn#postName",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "straatnaam": {
+          "@id": "http://www.w3.org/ns/locn#thoroughfare",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "verwijstNaar": {
+          "@id": "https://data.vlaanderen.be/ns/adres#verwijstNaar",
+          "@type": "@id"
+        },
+        "volledigAdres": {
+          "@id": "http://www.w3.org/ns/locn#fullAddress",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      },
+      "@id": "http://www.w3.org/ns/locn#Address"
+    },
+    "BelgischAdres": "https://data.vlaanderen.be/ns/adres#Adres",
+    "DirectePositie": {
+      "@context": {
+        "gml": {
+          "@id": "http://www.opengis.net/ont/geosparql#asGML"
+        },
+        "opmeting": {
+          "@id": "https://data.vlaanderen.be/ns/generiek#DirectePositie.opmeting",
+          "@type": "@id"
+        },
+        "wkt": {
+          "@id": "http://www.opengis.net/ont/geosparql#asWKT"
+        }
+      },
+      "@id": "https://data.vlaanderen.be/ns/generiek#DirectePositie"
+    },
+    "GeografischeNaam": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+    "Geometrie": {
+      "@context": {
+        "gml": {
+          "@id": "http://www.opengis.net/ont/geosparql#asGML"
+        },
+        "opmeting": {
+          "@id": "https://data.vlaanderen.be/ns/generiek#DirectePositie.opmeting",
+          "@type": "@id"
+        },
+        "wkt": {
+          "@id": "http://www.opengis.net/ont/geosparql#asWKT"
+        }
+      },
+      "@id": "http://www.w3.org/ns/locn#Geometry"
+    },
+    "Locatie": "http://www.w3.org/ns/prov#Location",
+    "Opmeting": {
+      "@context": {
+        "methode": {
+          "@id": "https://data.vlaanderen.be/ns/generiek#Opmeting.methode",
+          "@type": "@id"
+        },
+        "uitgevoerdDoor": {
+          "@id": "https://data.vlaanderen.be/ns/generiek#Opmeting.uitgevoerdDoor",
+          "@type": "@id"
+        }
+      },
+      "@id": "https://data.vlaanderen.be/ns/generiek#Opmeting"
+    },
+    "Opmetingmethode": "http://www.w3.org/2004/02/skos/core#Concept",
+    "Plaats": {
+      "@context": {
+        "geometrie": {
+          "@id": "http://www.w3.org/ns/locn#geometry",
+          "@type": "@id"
+        },
+        "plaatsnaam": {
+          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      },
+      "@id": "http://purl.org/dc/terms/Location"
+    },
+    "RuimtelijkObject": "http://fixme.com#RuimtelijkObject"
+  }
+}
