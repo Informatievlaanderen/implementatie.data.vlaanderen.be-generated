@@ -1,0 +1,158 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix shacl: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01> <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01shapes> <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#AgentShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#ContactInfoShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#IdentificatorShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#AdresvoorstellingShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#OrganisatieShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#PersoonShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#GeregistreerdeOrganisatieShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#GeregistreerdPersoonShape> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#AdresvoorstellingShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:datatype xsd:string;
+    shacl:maxCount 1;
+    shacl:name "busnummer"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:maxCount 1;
+    shacl:name "gemeentenaam"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/adres#gemeentenaam>
+  ], [
+    shacl:datatype xsd:string;
+    shacl:maxCount 1;
+    shacl:name "huisnummer"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:maxCount 1;
+    shacl:name "land"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/adres#land>
+  ], [
+    shacl:datatype xsd:string;
+    shacl:maxCount 1;
+    shacl:name "postbus"@nl;
+    shacl:path <http://www.w3.org/ns/locn#poBox>
+  ], [
+    shacl:datatype xsd:string;
+    shacl:maxCount 1;
+    shacl:name "postcode"@nl;
+    shacl:path <http://www.w3.org/ns/locn#postCode>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:maxCount 1;
+    shacl:name "straatnaam"@nl;
+    shacl:path <http://www.w3.org/ns/locn#thoroughfare>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:maxCount 1;
+    shacl:name "volledig adres"@nl;
+    shacl:path <http://www.w3.org/ns/locn#fullAddress>
+  ];
+  shacl:targetClass <http://www.w3.org/ns/locn#Address> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#AgentShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass dc:Agent .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#ContactInfoShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass schema:ContactPoint .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#GeregistreerdPersoonShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:description "Identificatiecode vd persoon ih register."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "registratie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#registratie>
+  ];
+  shacl:targetClass <https://data.vlaanderen.be/ns/persoon#GeregistreerdPersoon> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#GeregistreerdeOrganisatieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class skos:Concept;
+    shacl:description "Geeft aan of de rechtspersoonlijkheid van de geregistreerde organisatie deze is van een natuurlijk persoon of van een rechtspersoon. "@nl;
+    shacl:maxCount 1;
+    shacl:name "rechtspersoonlijkheid"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/organisatie#rechtspersoonlijkheid>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Juridisch statuut van de geregistreerde organisatie."@nl;
+    shacl:maxCount 1;
+    shacl:name "rechtsvorm"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/organisatie#rechtsvorm>
+  ], [
+    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:description "Identificator dat de organisatie verkreeg bij registratie."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "registratie"@nl;
+    shacl:path <http://www.w3.org/ns/regorg#registration>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Wettelijk geregistreerde naam vd organisatie."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "wettelijke naam"@nl;
+    shacl:path <http://www.w3.org/ns/regorg#legalName>
+  ];
+  shacl:targetClass <http://www.w3.org/ns/regorg#RegisteredOrganization> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#IdentificatorShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://www.w3.org/ns/adms#Identifier> .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#OrganisatieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class schema:ContactPoint;
+    shacl:description "Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren."@nl;
+    shacl:name "contactinfo"@nl;
+    shacl:path schema:contactPoint
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Naam waarmee de organisatie bij voorkeur wordt aangeduid."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "voorkeursnaam"@nl;
+    shacl:path skos:prefLabel
+  ];
+  shacl:targetClass org:Organization .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/agents/ontwerpstandaard/2023-10-01#PersoonShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:datatype xsd:string;
+    shacl:description "Gedeelte van de volledige naam vd persoon ontvangen van de vorige generatie."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "achternaam"@nl;
+    shacl:path foaf:familyName
+  ], [
+    shacl:class schema:ContactPoint;
+    shacl:description "Informatie zoals email, telefoon... die toelaat de Persoon te contacteren."@nl;
+    shacl:maxCount 1;
+    shacl:name "contactinfo"@nl;
+    shacl:path schema:contactPoint
+  ], [
+    shacl:datatype xsd:string;
+    shacl:description "Naam die een kind bij geboorte wordt gegeven. Onderscheidt het kind van de andere kinderen in de familie."@nl;
+    shacl:minCount 1;
+    shacl:name "voornaam"@nl;
+    shacl:path foaf:givenName
+  ];
+  shacl:targetClass <http://www.w3.org/ns/person#Person> .

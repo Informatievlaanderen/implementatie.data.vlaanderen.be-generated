@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "AdresVoorstelling": {
+      "@context": {
+        "busnummer": {
+          "@id": "https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "gemeentenaam": {
+          "@id": "https://data.vlaanderen.be/ns/adres#gemeentenaam",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "huisnummer": {
+          "@id": "https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "land": {
+          "@id": "https://data.vlaanderen.be/ns/adres#land",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "postbus": {
+          "@id": "http://www.w3.org/ns/locn#poBox",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "postcode": {
+          "@id": "http://www.w3.org/ns/locn#postCode",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "straatnaam": {
+          "@id": "http://www.w3.org/ns/locn#thoroughfare",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "volledigAdres": {
+          "@id": "http://www.w3.org/ns/locn#fullAddress",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      },
+      "@id": "http://www.w3.org/ns/locn#Address"
+    },
+    "Agent": "http://purl.org/dc/terms/Agent",
+    "Contactinfo": "http://schema.org/ContactPoint",
+    "GeregistreerdPersoon": {
+      "@context": {
+        "registratie": {
+          "@id": "https://data.vlaanderen.be/ns/persoon#registratie",
+          "@type": "@id"
+        }
+      },
+      "@id": "https://data.vlaanderen.be/ns/persoon#GeregistreerdPersoon"
+    },
+    "GeregistreerdeOrganisatie": {
+      "@context": {
+        "rechtspersoonlijkheid": {
+          "@id": "https://data.vlaanderen.be/ns/organisatie#rechtspersoonlijkheid",
+          "@type": "@id"
+        },
+        "rechtsvorm": {
+          "@id": "https://data.vlaanderen.be/ns/organisatie#rechtsvorm",
+          "@type": "@id"
+        },
+        "registratie": {
+          "@id": "http://www.w3.org/ns/regorg#registration",
+          "@type": "@id"
+        },
+        "wettelijkeNaam": {
+          "@id": "http://www.w3.org/ns/regorg#legalName",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      },
+      "@id": "http://www.w3.org/ns/regorg#RegisteredOrganization"
+    },
+    "Identificator": "http://www.w3.org/ns/adms#Identifier",
+    "Organisatie": {
+      "@context": {
+        "contactinfo": {
+          "@container": "@set",
+          "@id": "http://schema.org/contactPoint",
+          "@type": "@id"
+        },
+        "voorkeursnaam": {
+          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      },
+      "@id": "http://www.w3.org/ns/org#Organization"
+    },
+    "Persoon": {
+      "@context": {
+        "achternaam": {
+          "@id": "http://xmlns.com/foaf/0.1/familyName",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "contactinfo": {
+          "@id": "http://schema.org/contactPoint",
+          "@type": "@id"
+        },
+        "voornaam": {
+          "@container": "@set",
+          "@id": "http://xmlns.com/foaf/0.1/givenName",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      },
+      "@id": "http://www.w3.org/ns/person#Person"
+    }
+  }
+}
