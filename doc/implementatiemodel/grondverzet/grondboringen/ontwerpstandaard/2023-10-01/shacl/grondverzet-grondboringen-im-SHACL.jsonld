@@ -48,13 +48,6 @@
       "sh:targetClass": "http://def.isotc211.org/iso19103/2005/Names#GenericName"
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#MaatShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure"
-    },
-    {
       "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#PositioneleNauwkeurigheidShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -375,11 +368,32 @@
       "sh:targetClass": "http://purl.org/dc/terms/Agent"
     },
     {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#EenheidShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://qudt.org/2.1/schema/qudt/Unit"
+    },
+    {
       "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#CurveShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.opengis.net/ont/sf#Curve"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#NaamInNaamruimteShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#LokaleNaamShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2001/XMLSchema#string"
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#OpmetingmethodeShape",
@@ -501,6 +515,13 @@
       "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#ConceptShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    {
       "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#MomentShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -554,7 +575,51 @@
       "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#IdentificatorShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
-      "sh:property": [],
+      "sh:property": [
+        {
+          "sh:description": {
+            "nl": "String gebruikt om het object uniek te identificeren."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        {
+          "sh:class": "http://purl.org/dc/terms/Agent",
+          "sh:description": {
+            "nl": "Link naar de agent die de identificator heeft uitgegeven."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "toegekend door"
+          },
+          "sh:path": "http://purl.org/dc/terms/creator"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "nl": "Naam vd agent die de identificator heeft toegekend."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "toegekend door (String)"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#schemaAgency"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "sh:description": {
+            "nl": "Tijdstip waarop de identificator werd uitgegeven."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "toegekend op"
+          },
+          "sh:path": "http://purl.org/dc/terms/issued"
+        }
+      ],
       "sh:targetClass": "http://www.w3.org/ns/adms#Identifier"
     },
     {
@@ -697,16 +762,6 @@
             "nl": "doel"
           },
           "sh:path": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.doel"
-        },
-        {
-          "sh:class": "http://www.w3.org/ns/sosa/om#SamplingProcedure",
-          "sh:description": {
-            "nl": "Bemonsteringsprocedure die werd gevolgd bij de Bemonstering."
-          },
-          "sh:name": {
-            "nl": "gebruikteProcedure"
-          },
-          "sh:path": "http://www.w3.org/ns/sosa/usedProcedure"
         },
         {
           "sh:class": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht",
@@ -1120,13 +1175,6 @@
       "sh:targetClass": "https://data.vlaanderen.be/ns/generiek#Opmeting"
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#StandaardEenheidShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "https://data.vlaanderen.be/ns/generiek#StandaardEenheid"
-    },
-    {
       "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#WettelijkKaderShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -1473,7 +1521,7 @@
           "sh:path": "http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingTime"
         },
         {
-          "sh:class": "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure",
+          "sh:class": "https://schema.org/QuantitativeValue",
           "sh:description": {
             "nl": "De fysieke omvang van het monster."
           },
@@ -1572,30 +1620,12 @@
       "sh:targetClass": "https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring"
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#GetalShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "https://schema.org/Number"
-    },
-    {
       "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#KwantitatieveWaardeShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
-          "sh:description": {
-            "nl": "De eenheid waarin de waarde is uitgedrukt."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "nl": "eenheid"
-          },
-          "sh:path": "https://schema.org/unitText"
-        },
-        {
-          "sh:class": "https://data.vlaanderen.be/ns/generiek#StandaardEenheid",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
             "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
           },
@@ -1603,10 +1633,9 @@
           "sh:name": {
             "nl": "standaard eenheid"
           },
-          "sh:path": "https://schema.org/unitCode"
+          "sh:path": "https://qudt.org/schema/qudt/hasUnit"
         },
         {
-          "sh:class": "https://schema.org/Number",
           "sh:description": {
             "nl": "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."
           },
@@ -1615,10 +1644,10 @@
           "sh:name": {
             "nl": "waarde"
           },
-          "sh:path": "https://schema.org/value"
+          "sh:path": "https://qudt.org/schema/qudt//value"
         }
       ],
-      "sh:targetClass": "https://schema.org/QuantitativeValue"
+      "sh:targetClass": "https://qudt.org/schema/qudt/QuantityValue"
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#SysteemShape",
