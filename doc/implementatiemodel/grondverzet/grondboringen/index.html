@@ -91,8 +91,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/81d1af024751a871f99ecdb00a0fd3ae73801df3">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/81d1af024751a871f99ecdb00a0fd3ae73801df3</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/81d1af024751a871f99ecdb00a0fd3ae73801df3/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/81d1af024751a871f99ecdb00a0fd3ae73801df3/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/907c789a9c714e0b13104a617dc12f47d11e9659">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/907c789a9c714e0b13104a617dc12f47d11e9659</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/907c789a9c714e0b13104a617dc12f47d11e9659/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/907c789a9c714e0b13104a617dc12f47d11e9659/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/issues">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/issues</a></dd>
               <dt>Standaardenregister</dt><dd><a href="https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html">https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html</a></dd>
 
@@ -227,7 +227,9 @@
                       <a href="#Opmeting">Opmeting</a> |
                       <a href="#Periode">Periode</a> |
                       <a href="#Positionelenauwkeurigheid">PositioneleNauwkeurigheid</a> |
+                      <a href="#String">String</a> |
                       <a href="#Temporeleentiteit">TemporeleEntiteit</a> |
+                      <a href="#Uri">URI</a> |
                     </p>
                   </div>
                   
@@ -3286,7 +3288,7 @@
                   <dl>
                     <dt>Beschrijving</dt><dd>Abstracte klasse van alle namen in een naamruimte.</dd>
                     
-                    <dt>Gebruik</dt><dd>Subtypes zijn LokaleNaam en NaamInNaamruimte (resp een naam zonder en een naam met  vermelding van een naamruimte). Datatype van LokaleNaamaam is bvb String of Taalstring, datatype van NaamInNaamruimte is bvb URI. OPMERKING: Meer info over dit datatype in  <a href="https://www.iso.org/standard/56734.html">ISO 19103 Geographic Information - Conceptual schema language</a>.</dd>
+                    <dt>Gebruik</dt><dd>Subtypes zijn LokaleNaam en NaamInNaamruimte (resp een naam zonder en een naam met  vermelding van een naamruimte). Datatype van LokaleNaam is bvb String of Taalstring, datatype van NaamInNaamruimte is bvb URI. OPMERKING: Meer info over dit datatype in  <a href="https://www.iso.org/standard/56734.html">ISO 19103 Geographic Information - Conceptual schema language</a>.</dd>
                     
 		    
                     <dt>Eigenschappen</dt>
@@ -3639,7 +3641,7 @@
                   <dl>
                     <dt>Beschrijving</dt><dd>Aanduiding van een geografische positie, dmv coördinaten, een toponiem, een adreslabel, een verwijzing naar een plaats/regio of verwijzing naar een adres.</dd>
                     
-                    <dt>Gebruik</dt><dd>Te gebruiken als de manier waarop de geografische positie wordt aangeduid pas zal worden vastgelegd bij implementatie. Is deze manier nu al gekend dan moet dit datatype gesubstitueerd worden door klassen of datatypes zoals Geometrie, GeografischeNaam, Adres etc. OPMERKING: Meer info over deze klassen/datatypes in het applicatieprofiel <a href="https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/">OSLO Generiek - basis</a>.</dd>
+                    <dt>Gebruik</dt><dd>Te gebruiken als de manier waarop de geografische positie wordt aangeduid pas zal worden vastgelegd bij implementatie. Is deze manier nu al gekend dan moet dit datatype gesubstitueerd worden door klassen of datatypes zoals Geometrie, GeografischeNaam, Adres etc. Meer info over deze klasse in het <a href="https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/locaties/">IM-Agents.</dd>
                     
 		     
 		    <dt>Subklasse van <dt><dd>
@@ -3976,6 +3978,28 @@
             
             <div class="region region--no-space-top">
               
+              <h3 class="h3" id="String"><a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>TODO</dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="#GeneriekeNaam">GeneriekeNaam</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		    
+                    <dd>Voor dit datatype zijn geen eigenschappen gedefinieerd.</dd>
+                    
+                  </dl>
+                </div>
+		
+            </div>
+            
+            <div class="region region--no-space-top">
+              
               <h3 class="h3" id="TemporeleEntiteit"><a href="http://www.w3.org/2006/time#TemporalEntity" data-toggle="tooltip" data-content="http://www.w3.org/2006/time#TemporalEntity" data-placement="right">TemporeleEntiteit</a></h3>
 	      
                 <div class="region region--no-space-top">
@@ -3985,6 +4009,28 @@
                     <dt>Gebruik</dt><dd>Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn.</dd>
                     
 		    
+                    <dt>Eigenschappen</dt>
+		    
+                    <dd>Voor dit datatype zijn geen eigenschappen gedefinieerd.</dd>
+                    
+                  </dl>
+                </div>
+		
+            </div>
+            
+            <div class="region region--no-space-top">
+              
+              <h3 class="h3" id="URI"><a href="http://www.w3.org/2001/XMLSchema#anyURI" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#anyURI" data-placement="right">URI</a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>TODO</dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="#GeneriekeNaam">GeneriekeNaam</a>
+		   </dd>
+                    
                     <dt>Eigenschappen</dt>
 		    
                     <dd>Voor dit datatype zijn geen eigenschappen gedefinieerd.</dd>

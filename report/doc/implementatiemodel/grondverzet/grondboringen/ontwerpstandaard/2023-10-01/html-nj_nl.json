@@ -12,8 +12,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/81d1af024751a871f99ecdb00a0fd3ae73801df3",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/81d1af024751a871f99ecdb00a0fd3ae73801df3/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/907c789a9c714e0b13104a617dc12f47d11e9659",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/907c789a9c714e0b13104a617dc12f47d11e9659/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
@@ -1012,7 +1012,8 @@
       "rawTags": {
         "ap-definition-nl": "Iemand die of iets dat kan handelen of een effect kan teweeg brengen.",
         "label-nl": "Agent",
-        "uri": "http://purl.org/dc/terms/Agent"
+        "uri": "http://purl.org/dc/terms/Agent",
+        "ap-usageNote": "Meer info over deze klasse in het <a href=\"https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/agents/\">IM-Agents."
       },
       "properties": []
     },
@@ -3756,14 +3757,14 @@
         "nl": "Abstracte klasse van alle namen in een naamruimte."
       },
       "usage": {
-        "nl": "Subtypes zijn LokaleNaam en NaamInNaamruimte (resp een naam zonder en een naam met  vermelding van een naamruimte). Datatype van LokaleNaamaam is bvb String of Taalstring, datatype van NaamInNaamruimte is bvb URI. OPMERKING: Meer info over dit datatype in  <a href=\"https://www.iso.org/standard/56734.html\">ISO 19103 Geographic Information - Conceptual schema language</a>."
+        "nl": "Subtypes zijn LokaleNaam en NaamInNaamruimte (resp een naam zonder en een naam met  vermelding van een naamruimte). Datatype van LokaleNaam is bvb String of Taalstring, datatype van NaamInNaamruimte is bvb URI. OPMERKING: Meer info over dit datatype in  <a href=\"https://www.iso.org/standard/56734.html\">ISO 19103 Geographic Information - Conceptual schema language</a>."
       },
       "parents": [],
       "rawTags": {
         "label-nl": "GeneriekeNaam",
         "uri": "http://def.isotc211.org/iso19103/2005/Names#GenericName",
         "ap-definition-nl": "Abstracte klasse van alle namen in een naamruimte.",
-        "ap-usageNote-nl": "Subtypes zijn LokaleNaam en NaamInNaamruimte (resp een naam zonder en een naam met  vermelding van een naamruimte). Datatype van LokaleNaamaam is bvb String of Taalstring, datatype van NaamInNaamruimte is bvb URI. OPMERKING: Meer info over dit datatype in  <a href=\"https://www.iso.org/standard/56734.html\">ISO 19103 Geographic Information - Conceptual schema language</a>.",
+        "ap-usageNote-nl": "Subtypes zijn LokaleNaam en NaamInNaamruimte (resp een naam zonder en een naam met  vermelding van een naamruimte). Datatype van LokaleNaam is bvb String of Taalstring, datatype van NaamInNaamruimte is bvb URI. OPMERKING: Meer info over dit datatype in  <a href=\"https://www.iso.org/standard/56734.html\">ISO 19103 Geographic Information - Conceptual schema language</a>.",
         "ap-label-nl": "GeneriekeNaam"
       },
       "properties": []
@@ -3973,6 +3974,62 @@
         "ap-label-nl": "Curve",
         "ap-definition-nl": "Een 1-dimensionele geometrische primitieve.",
         "ap-usageNote-nl": "Dimensie is te verstaan in wiskundige zin: het minimum aantal coördinaten nodig om een willekeurig punt voor te stellen dat deel uitmaakt van de primitieve. In het coördinaatsysteem dat door een Curve zelf gevormd wordt volstaat 1 coördinaat om een punt op de Curve te lokaliseren, bv de afstand langs de Curve vanaf het vertrekpunt. Een Curve heeft een lengte maar geen breedte of hoogte, wat niet wegneemt dat ze door de 3D ruimte kan kronkelen. Curves worden doorgaans voorgesteld door polylijnen, dit zijn sets van opeenvolgende punten waarbij de tussenliggende punten van de Curve bekomen worden dmv interpolatie. Als de interpolatiemethode lineair is krijg je een Lijnstring (een hoekige lijn die de opeenvolgende punten verbindt middels een rechte lijn), andere manieren om te interpoleren resulteren in circulaire bogen, cubic splines, Bézier curves etc (waarbij de controlepunten niet noodzakelijk op de Curve liggen). Een Curve wordt begrensd door zijn begin- en eindpunt."
+      },
+      "properties": []
+    },
+    {
+      "uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+      "name": "Uri",
+      "label": {
+        "nl": "URI"
+      },
+      "sort": "URI",
+      "description": {
+        "nl": "TODO"
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "GeneriekeNaam",
+          "name": "GeneriekeNaam",
+          "package": "OSLO-ObservatiesEnMetingen",
+          "uri": "http://def.isotc211.org/iso19103/2005/Names#GenericName",
+          "scoped_uri": "#GeneriekeNaam"
+        }
+      ],
+      "rawTags": {
+        "uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "label-nl": "URI",
+        "definition-nl": "TODO",
+        "literal": "true"
+      },
+      "properties": []
+    },
+    {
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "name": "String",
+      "label": {
+        "nl": "String"
+      },
+      "sort": "String",
+      "description": {
+        "nl": "TODO"
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "GeneriekeNaam",
+          "name": "GeneriekeNaam",
+          "package": "OSLO-ObservatiesEnMetingen",
+          "uri": "http://def.isotc211.org/iso19103/2005/Names#GenericName",
+          "scoped_uri": "#GeneriekeNaam"
+        }
+      ],
+      "rawTags": {
+        "uri": "http://www.w3.org/2001/XMLSchema#string",
+        "label-nl": "String",
+        "definition-nl": "TODO",
+        "literal": "true"
       },
       "properties": []
     },
@@ -4509,7 +4566,7 @@
         "nl": "Aanduiding van een geografische positie, dmv coördinaten, een toponiem, een adreslabel, een verwijzing naar een plaats/regio of verwijzing naar een adres."
       },
       "usage": {
-        "nl": "Te gebruiken als de manier waarop de geografische positie wordt aangeduid pas zal worden vastgelegd bij implementatie. Is deze manier nu al gekend dan moet dit datatype gesubstitueerd worden door klassen of datatypes zoals Geometrie, GeografischeNaam, Adres etc. OPMERKING: Meer info over deze klassen/datatypes in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/\">OSLO Generiek - basis</a>."
+        "nl": "Te gebruiken als de manier waarop de geografische positie wordt aangeduid pas zal worden vastgelegd bij implementatie. Is deze manier nu al gekend dan moet dit datatype gesubstitueerd worden door klassen of datatypes zoals Geometrie, GeografischeNaam, Adres etc. Meer info over deze klasse in het <a href=\"https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/locaties/\">IM-Agents."
       },
       "parents": [
         {
@@ -4522,7 +4579,7 @@
       ],
       "rawTags": {
         "ap-definition-nl": "Aanduiding van een geografische positie, dmv coördinaten, een toponiem, een adreslabel, een verwijzing naar een plaats/regio of verwijzing naar een adres.",
-        "ap-usageNote-nl": "Te gebruiken als de manier waarop de geografische positie wordt aangeduid pas zal worden vastgelegd bij implementatie. Is deze manier nu al gekend dan moet dit datatype gesubstitueerd worden door klassen of datatypes zoals Geometrie, GeografischeNaam, Adres etc. OPMERKING: Meer info over deze klassen/datatypes in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/\">OSLO Generiek - basis</a>.",
+        "ap-usageNote-nl": "Te gebruiken als de manier waarop de geografische positie wordt aangeduid pas zal worden vastgelegd bij implementatie. Is deze manier nu al gekend dan moet dit datatype gesubstitueerd worden door klassen of datatypes zoals Geometrie, GeografischeNaam, Adres etc. Meer info over deze klasse in het <a href=\"https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/locaties/\">IM-Agents.",
         "label-nl": "Locatie",
         "uri": "http://www.w3.org/ns/prov#Location"
       },
