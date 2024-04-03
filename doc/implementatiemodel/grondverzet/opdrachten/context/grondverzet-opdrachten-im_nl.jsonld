@@ -1,0 +1,103 @@
+{
+  "@context": {
+    "Agent": "http://purl.org/dc/terms/Agent",
+    "Identificator": {
+      "@context": {
+        "identificator": {
+          "@id": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        "toegekendDoor": {
+          "@id": "http://purl.org/dc/terms/creator",
+          "@type": "@id"
+        },
+        "toegekendDoor (string)": {
+          "@id": "http://www.w3.org/ns/adms#schemaAgency",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "toegekendOp": {
+          "@id": "http://purl.org/dc/terms/issued",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      },
+      "@id": "http://www.w3.org/ns/adms#Identifier"
+    },
+    "Locatie": "http://www.w3.org/ns/prov#Location",
+    "Moment": {
+      "@context": {
+        "inXsdDateTime": {
+          "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      },
+      "@id": "http://www.w3.org/2006/time#Instant"
+    },
+    "Opdracht": {
+      "@context": {
+        "beschrijving": {
+          "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#beschrijving",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "dataleverancier": {
+          "@container": "@set",
+          "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#dataleverancier",
+          "@type": "@id"
+        },
+        "identificator": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/adms#identifier",
+          "@type": "@id"
+        },
+        "ligging": {
+          "@container": "@set",
+          "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#ligging",
+          "@type": "@id"
+        },
+        "opdrachtgever": {
+          "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#opdrachtgever",
+          "@type": "@id"
+        },
+        "opdrachtnemer": {
+          "@container": "@set",
+          "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#opdrachtnemer",
+          "@type": "@id"
+        },
+        "referentie": {
+          "@container": "@set",
+          "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#referentie",
+          "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+        },
+        "resultaat": {
+          "@container": "@set",
+          "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#resultaat",
+          "@type": "@id"
+        },
+        "tijdstip": {
+          "@container": "@set",
+          "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#tijdstip",
+          "@type": "@id"
+        },
+        "type": {
+          "@container": "@set",
+          "@id": "http://purl.org/dc/terms/type",
+          "@type": "@id"
+        }
+      },
+      "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht"
+    },
+    "OpdrachtType": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#OpdrachtType",
+    "Periode": {
+      "@context": {
+        "tot": {
+          "@id": "http://www.w3.org/2006/time#hasEnd",
+          "@type": "@id"
+        },
+        "van": {
+          "@id": "http://www.w3.org/2006/time#hasBeginning",
+          "@type": "@id"
+        }
+      },
+      "@id": "http://www.w3.org/2006/time#ProperInterval"
+    },
+    "TemporeleEntiteit": "http://www.w3.org/2006/time#TemporalEntity"
+  }
+}

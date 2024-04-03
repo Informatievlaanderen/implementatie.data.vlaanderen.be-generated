@@ -1,0 +1,2080 @@
+{
+  "@context": {
+    "affiliation": {
+      "@id": "http://schema.org/affiliation"
+    },
+    "authors": {
+      "@id": "foaf:maker",
+      "@type": "foaf:Person"
+    },
+    "classes": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "contributors": {
+      "@id": "dcterms:contributor",
+      "@type": "foaf:Person"
+    },
+    "datatypes": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "domain": {
+      "@id": "rdfs:domain"
+    },
+    "editors": {
+      "@id": "rec:editor",
+      "@type": "foaf:Person"
+    },
+    "externals": {
+      "@id": "rdfs:seeAlso",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class"
+    },
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "generalization": {
+      "@id": "rdfs:subPropertyOf"
+    },
+    "issued": {
+      "@id": "dcterms:issued"
+    },
+    "label": {
+      "@container": "@language",
+      "@id": "rdfs:label"
+    },
+    "maxCardinality": {
+      "@id": "sh:maxCount"
+    },
+    "minCardinality": {
+      "@id": "sh:minCount"
+    },
+    "modified": {
+      "@id": "dcterms:modified",
+      "@type": "xsd:date"
+    },
+    "name": {
+      "@id": "rdfs:label"
+    },
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "person": "http://www.w3.org/ns/person#",
+    "properties": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "qb": "http://purl.org/linked-data/cube#",
+    "range": {
+      "@id": "rdfs:range"
+    },
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rec": "http://www.w3.org/2001/02pd/rec54#",
+    "sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
+    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+    "sh": "http://w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "vann": "http://purl.org/vocab/vann/",
+    "vlaanderen": "http://data.vlaanderen.be/ns/",
+    "void": "http://rdfs.org/ns/void#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "https://implementatie.data.vlaanderen.be/ns/opdrachten",
+  "@type": "http://www.w3.org/2002/07/owl#Ontology",
+  "authors": [
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Digitaal Vlaanderen"
+      },
+      "foaf:firstName": "Bert",
+      "foaf:lastName": "Van Nuffelen"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Digitaal Vlaanderen"
+      },
+      "foaf:firstName": "Geert",
+      "foaf:lastName": "Thijs"
+    }
+  ],
+  "baseURI": "https://implementatie.data.vlaanderen.be/ns/opdrachten#",
+  "branchtag": "main",
+  "classes": [],
+  "config": "config/config-ap.json",
+  "contributors": [],
+  "contributors-column": "MijnKolom",
+  "contributors-file": "stakeholders.csv",
+  "diagram": "IM-Opdrachten",
+  "documentcommit": "c2304f578f22adfb2240899165aab16738b25bd1",
+  "dummy": "geert01",
+  "eap": "Grondverzet.EAP",
+  "editors": [],
+  "examples": true,
+  "externalproperties": [
+    {
+      "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#tijdstip",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{BEBC3C54-E89A-4f44-933A-58DB21F5E14E}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "tijdstip"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Opdracht",
+          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Opdracht",
+        "EA-Domain-Guid": "{E2DBE2C7-E4C2-4c22-A2F9-05FF27DE823E}",
+        "EA-Guid": "{BEBC3C54-E89A-4f44-933A-58DB21F5E14E}",
+        "EA-Name": "tijdstip",
+        "EA-Package": "OSLO-BodemEnOndergrond",
+        "EA-Range": "TemporeleEntiteit",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{60B8DAA9-EC34-4b43-B523-61241721FD77}",
+          "EA-Name": "TemporeleEntiteit",
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#TemporalEntity"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "tijdstip"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "TODO"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "tijdstip"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "TODO"
+        },
+        "label": {
+          "nl": "tijdstip"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "tijdstip"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "1",
+      "name": "tijdstip",
+      "range": [
+        {
+          "EA-GUID": "{60B8DAA9-EC34-4b43-B523-61241721FD77}",
+          "EA-Name": "TemporeleEntiteit",
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#TemporalEntity"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#resultaat",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{A3385881-8EA0-48f7-9BDD-4F471A1F36B4}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "resultaat"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Opdracht",
+          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Opdracht",
+        "EA-Domain-Guid": "{E2DBE2C7-E4C2-4c22-A2F9-05FF27DE823E}",
+        "EA-Guid": "{A3385881-8EA0-48f7-9BDD-4F471A1F36B4}",
+        "EA-Name": "resultaat",
+        "EA-Package": "OSLO-BodemEnOndergrond",
+        "EA-Range": "Any",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{72F67A3D-E2A1-449c-8D39-7493C3E3F717}",
+          "EA-Name": "Any",
+          "EA-Package": "OSLO-ObservatiesEnMetingen",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "resultaat"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "TODO"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "resultaat"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "TODO"
+        },
+        "label": {
+          "nl": "resultaat"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "resultaat"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "resultaat",
+      "range": [
+        {
+          "EA-GUID": "{72F67A3D-E2A1-449c-8D39-7493C3E3F717}",
+          "EA-Name": "Any",
+          "EA-Package": "OSLO-ObservatiesEnMetingen",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#referentie",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{F86D0055-F785-4bf3-B020-04115F7D3EF0}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "referentie"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Opdracht",
+          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Opdracht",
+        "EA-Domain-Guid": "{E2DBE2C7-E4C2-4c22-A2F9-05FF27DE823E}",
+        "EA-Guid": "{F86D0055-F785-4bf3-B020-04115F7D3EF0}",
+        "EA-Name": "referentie",
+        "EA-Package": "OSLO-BodemEnOndergrond",
+        "EA-Range": "URI",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "URI",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#anyURI"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "referentie"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "TODO"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "referentie"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "TODO"
+        },
+        "label": {
+          "nl": "referentie"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "referentie"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "referentie",
+      "range": [
+        {
+          "EA-Name": "URI",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#anyURI"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#opdrachtnemer",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{9A15EEEA-FB9D-4bf2-9BFE-1126423C0F8A}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "opdrachtnemer"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Opdracht",
+          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Opdracht",
+        "EA-Domain-Guid": "{E2DBE2C7-E4C2-4c22-A2F9-05FF27DE823E}",
+        "EA-Guid": "{9A15EEEA-FB9D-4bf2-9BFE-1126423C0F8A}",
+        "EA-Name": "opdrachtnemer",
+        "EA-Package": "OSLO-BodemEnOndergrond",
+        "EA-Range": "Agent",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+          "EA-Name": "Agent",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://purl.org/dc/terms/Agent"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "opdrachtnemer"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "TODO"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "opdrachtnemer"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "TODO"
+        },
+        "label": {
+          "nl": "opdrachtnemer"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "opdrachtnemer"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "opdrachtnemer",
+      "range": [
+        {
+          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+          "EA-Name": "Agent",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://purl.org/dc/terms/Agent"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#opdrachtgever",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{9DF94129-E3B2-4280-B580-E7BCCE98D961}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "opdrachtgever"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Opdracht",
+          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Opdracht",
+        "EA-Domain-Guid": "{E2DBE2C7-E4C2-4c22-A2F9-05FF27DE823E}",
+        "EA-Guid": "{9DF94129-E3B2-4280-B580-E7BCCE98D961}",
+        "EA-Name": "opdrachtgever",
+        "EA-Package": "OSLO-BodemEnOndergrond",
+        "EA-Range": "Agent",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+          "EA-Name": "Agent",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://purl.org/dc/terms/Agent"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "opdrachtgever"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "TODO"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "opdrachtgever"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "TODO"
+        },
+        "label": {
+          "nl": "opdrachtgever"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "opdrachtgever"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "opdrachtgever",
+      "range": [
+        {
+          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+          "EA-Name": "Agent",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://purl.org/dc/terms/Agent"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#ligging",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{7A25E824-D593-4fd0-8C63-D961239BF92A}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "ligging"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Opdracht",
+          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Opdracht",
+        "EA-Domain-Guid": "{E2DBE2C7-E4C2-4c22-A2F9-05FF27DE823E}",
+        "EA-Guid": "{7A25E824-D593-4fd0-8C63-D961239BF92A}",
+        "EA-Name": "ligging",
+        "EA-Package": "OSLO-BodemEnOndergrond",
+        "EA-Range": "Locatie",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{FCF68A7F-66EB-447d-B907-B64B950C22D5}",
+          "EA-Name": "Locatie",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/ns/prov#Location"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "ligging"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "TODO"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "ligging"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "TODO"
+        },
+        "label": {
+          "nl": "ligging"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "ligging"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "ligging",
+      "range": [
+        {
+          "EA-GUID": "{FCF68A7F-66EB-447d-B907-B64B950C22D5}",
+          "EA-Name": "Locatie",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/ns/prov#Location"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#dataleverancier",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{B10C1523-F978-4e61-9A23-66DA4A1F90D2}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "dataleverancier"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Opdracht",
+          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Opdracht",
+        "EA-Domain-Guid": "{E2DBE2C7-E4C2-4c22-A2F9-05FF27DE823E}",
+        "EA-Guid": "{B10C1523-F978-4e61-9A23-66DA4A1F90D2}",
+        "EA-Name": "dataleverancier",
+        "EA-Package": "OSLO-BodemEnOndergrond",
+        "EA-Range": "Agent",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+          "EA-Name": "Agent",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://purl.org/dc/terms/Agent"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "dataleverancier"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "TODO"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "dataleverancier"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "TODO"
+        },
+        "label": {
+          "nl": "dataleverancier"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "dataleverancier"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "dataleverancier",
+      "range": [
+        {
+          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+          "EA-Name": "Agent",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://purl.org/dc/terms/Agent"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#beschrijving",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{E0A2905E-E937-4d00-B1CF-517A25B1986E}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "beschrijving"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Opdracht",
+          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Opdracht",
+        "EA-Domain-Guid": "{E2DBE2C7-E4C2-4c22-A2F9-05FF27DE823E}",
+        "EA-Guid": "{E0A2905E-E937-4d00-B1CF-517A25B1986E}",
+        "EA-Name": "beschrijving",
+        "EA-Package": "OSLO-BodemEnOndergrond",
+        "EA-Range": "LangString",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "beschrijving"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "TODO"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "beschrijving"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "TODO"
+        },
+        "label": {
+          "nl": "beschrijving"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "beschrijving"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "beschrijving",
+      "range": [
+        {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/ns/adms#schemaAgency",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{A4CB330C-3849-4f95-88CC-6933EA5B6FA4}",
+      "ap-definition-nl": {
+        "nl": "Naam vd agent die de identificator heeft toegekend."
+      },
+      "ap-label-nl": {
+        "nl": "toegekend door (String)"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Naam vd agent die de identificator heeft toegekend."
+      },
+      "domain": [
+        {
+          "EA-Name": "Identificator",
+          "uri": "http://www.w3.org/ns/adms#Identifier"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Identificator",
+        "EA-Domain-Guid": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+        "EA-Guid": "{A4CB330C-3849-4f95-88CC-6933EA5B6FA4}",
+        "EA-Name": "toegekendDoorString",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Range": "String",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/adms#schemaAgency"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "toegekendDoorString"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "toegekend door (String)"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Naam vd agent die de identificator heeft toegekend."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Naam vd agent die de identificator heeft toegekend."
+        },
+        "ap-label-nl": {
+          "nl": "toegekend door (String)"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Naam vd agent die de identificator heeft toegekend."
+        },
+        "label": {
+          "nl": "toegekend door (String)"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "toegekend door (String)"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "toegekendDoor(string)",
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/ns/adms#identifier",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{F5ED3FA3-A4EB-42ad-94DE-6430640D804D}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "identificator"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Opdracht",
+          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Opdracht",
+        "EA-Domain-Guid": "{E2DBE2C7-E4C2-4c22-A2F9-05FF27DE823E}",
+        "EA-Guid": "{F5ED3FA3-A4EB-42ad-94DE-6430640D804D}",
+        "EA-Name": "identificator",
+        "EA-Package": "OSLO-BodemEnOndergrond",
+        "EA-Range": "Identificator",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+          "EA-Name": "Identificator",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/ns/adms#Identifier"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "identificator"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "TODO"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/adms#identifier"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "identificator"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "TODO"
+        },
+        "label": {
+          "nl": "identificator"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "identificator"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "identificator",
+      "range": [
+        {
+          "EA-GUID": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+          "EA-Name": "Identificator",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/ns/adms#Identifier"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{4DE58BB1-2BB6-4c78-91EF-4C6629261107}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "inXSDDateTime"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "Moment",
+          "uri": "http://www.w3.org/2006/time#Instant"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Moment",
+        "EA-Domain-Guid": "{17A76449-20D9-49c7-A43A-100B7928C0F5}",
+        "EA-Guid": "{4DE58BB1-2BB6-4c78-91EF-4C6629261107}",
+        "EA-Name": "inXSDDateTime",
+        "EA-Package": "W3C-Time",
+        "EA-Range": "DateTime",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "inXSDDateTime"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2006/time#inXSDDateTime"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "inXSDDateTime"
+        },
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": {
+          "nl": "inXSDDateTime"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "inXSDDateTime"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "inxsddatetime",
+      "range": [
+        {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/2006/time#hasEnd",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{381DAA11-49A2-4f6d-AB13-0B345E1A3F16}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "tot"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "Periode",
+          "uri": "http://www.w3.org/2006/time#ProperInterval"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Periode",
+        "EA-Domain-Guid": "{859C2F4C-3B1B-4b2c-9441-CFD05207C5DD}",
+        "EA-Guid": "{381DAA11-49A2-4f6d-AB13-0B345E1A3F16}",
+        "EA-Name": "^tot",
+        "EA-Package": "W3C-Time",
+        "EA-Range": "Moment",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{17A76449-20D9-49c7-A43A-100B7928C0F5}",
+          "EA-Name": "Moment",
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#Instant"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2006/time#hasEnd"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "tot"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "tot"
+        },
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": {
+          "nl": "tot"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "tot"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "tot",
+      "range": [
+        {
+          "EA-GUID": "{17A76449-20D9-49c7-A43A-100B7928C0F5}",
+          "EA-Name": "Moment",
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#Instant"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/2006/time#hasBeginning",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{9A351803-5000-4c81-B1B5-41E46FBAC709}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "van"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "Periode",
+          "uri": "http://www.w3.org/2006/time#ProperInterval"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Periode",
+        "EA-Domain-Guid": "{859C2F4C-3B1B-4b2c-9441-CFD05207C5DD}",
+        "EA-Guid": "{9A351803-5000-4c81-B1B5-41E46FBAC709}",
+        "EA-Name": "^van",
+        "EA-Package": "W3C-Time",
+        "EA-Range": "Moment",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{17A76449-20D9-49c7-A43A-100B7928C0F5}",
+          "EA-Name": "Moment",
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#Instant"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2006/time#hasBeginning"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "van"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "van"
+        },
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": {
+          "nl": "van"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "van"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "van",
+      "range": [
+        {
+          "EA-GUID": "{17A76449-20D9-49c7-A43A-100B7928C0F5}",
+          "EA-Name": "Moment",
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#Instant"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#notation",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{66756B82-7C96-4e3c-8166-85C1FF11DAAF}",
+      "ap-definition-nl": {
+        "nl": "String gebruikt om het object uniek te identificeren."
+      },
+      "ap-label-nl": {
+        "nl": "identificator"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator."
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "String gebruikt om het object uniek te identificeren."
+      },
+      "domain": [
+        {
+          "EA-Name": "Identificator",
+          "uri": "http://www.w3.org/ns/adms#Identifier"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Identificator",
+        "EA-Domain-Guid": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+        "EA-Guid": "{66756B82-7C96-4e3c-8166-85C1FF11DAAF}",
+        "EA-Name": "identificator",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Range": "Literal",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "RawTags": [
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "identificator"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2004/02/skos/core#notation"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "identificator"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "String gebruikt om het object uniek te identificeren."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "String gebruikt om het object uniek te identificeren."
+        },
+        "ap-label-nl": {
+          "nl": "identificator"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator."
+        },
+        "definition": {
+          "nl": "String gebruikt om het object uniek te identificeren."
+        },
+        "label": {
+          "nl": "identificator"
+        },
+        "usage": {
+          "nl": "Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "identificator"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "identificator",
+      "range": [
+        {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      ],
+      "usage": {
+        "nl": "Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator."
+      }
+    },
+    {
+      "@id": "http://purl.org/dc/terms/type",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{1C07B326-8A0A-4779-941D-78EDF81A8195}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "type"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Opdracht",
+          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Opdracht",
+        "EA-Domain-Guid": "{E2DBE2C7-E4C2-4c22-A2F9-05FF27DE823E}",
+        "EA-Guid": "{1C07B326-8A0A-4779-941D-78EDF81A8195}",
+        "EA-Name": "type",
+        "EA-Package": "OSLO-BodemEnOndergrond",
+        "EA-Range": "OpdrachtType",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{C6B966AD-CA32-4aa7-8EF1-6DAEC66D072E}",
+          "EA-Name": "OpdrachtType",
+          "EA-Package": "OSLO-BodemEnOndergrond",
+          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#OpdrachtType"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "type"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "TODO"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://purl.org/dc/terms/type"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "type"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "TODO"
+        },
+        "label": {
+          "nl": "type"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "type"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "1",
+      "name": "type",
+      "range": [
+        {
+          "EA-GUID": "{C6B966AD-CA32-4aa7-8EF1-6DAEC66D072E}",
+          "EA-Name": "OpdrachtType",
+          "EA-Package": "OSLO-BodemEnOndergrond",
+          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#OpdrachtType"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{A158B091-A5BE-43f7-B1EC-445EFE480A6D}",
+      "ap-definition-nl": {
+        "nl": "Tijdstip waarop de identificator werd uitgegeven."
+      },
+      "ap-label-nl": {
+        "nl": "toegekend op"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Tijdstip waarop de identificator werd uitgegeven."
+      },
+      "domain": [
+        {
+          "EA-Name": "Identificator",
+          "uri": "http://www.w3.org/ns/adms#Identifier"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Identificator",
+        "EA-Domain-Guid": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+        "EA-Guid": "{A158B091-A5BE-43f7-B1EC-445EFE480A6D}",
+        "EA-Name": "toegekendOp",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Range": "DateTime",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://purl.org/dc/terms/issued"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "toegekendOp"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "toegekend op"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Tijdstip waarop de identificator werd uitgegeven."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Tijdstip waarop de identificator werd uitgegeven."
+        },
+        "ap-label-nl": {
+          "nl": "toegekend op"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Tijdstip waarop de identificator werd uitgegeven."
+        },
+        "label": {
+          "nl": "toegekend op"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "toegekend op"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "toegekendOp",
+      "range": [
+        {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.org/dc/terms/creator",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{4FAE8804-F472-41ad-8BEE-A0AE10098A1E}",
+      "ap-definition-nl": {
+        "nl": "Link naar de agent die de identificator heeft uitgegeven."
+      },
+      "ap-label-nl": {
+        "nl": "toegekend door"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Link naar de agent die de identificator heeft uitgegeven."
+      },
+      "domain": [
+        {
+          "EA-Name": "Identificator",
+          "uri": "http://www.w3.org/ns/adms#Identifier"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Identificator",
+        "EA-Domain-Guid": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+        "EA-Guid": "{4FAE8804-F472-41ad-8BEE-A0AE10098A1E}",
+        "EA-Name": "toegekendDoor",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Range": "Agent",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+          "EA-Name": "Agent",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://purl.org/dc/terms/Agent"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://purl.org/dc/terms/creator"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "toegekendDoor"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "toegekend door"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Link naar de agent die de identificator heeft uitgegeven."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Link naar de agent die de identificator heeft uitgegeven."
+        },
+        "ap-label-nl": {
+          "nl": "toegekend door"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Link naar de agent die de identificator heeft uitgegeven."
+        },
+        "label": {
+          "nl": "toegekend door"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "toegekend door"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "toegekendDoor",
+      "range": [
+        {
+          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+          "EA-Name": "Agent",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://purl.org/dc/terms/Agent"
+        }
+      ]
+    }
+  ],
+  "externals": [
+    {
+      "@id": "http://purl.org/dc/terms/Agent",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+      "ap-definition-nl": {
+        "nl": "Iemand die of iets dat kan handelen of een effect kan teweeg brengen."
+      },
+      "ap-label-nl": {
+        "nl": "Agent"
+      },
+      "definition": {
+        "nl": "Iemand die of iets dat kan handelen of een effect kan teweeg brengen."
+      },
+      "extra": {
+        "EA-Guid": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+        "EA-Name": "Agent",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Iemand die of iets dat kan handelen of een effect kan teweeg brengen."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Agent"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://purl.org/dc/terms/Agent"
+          },
+          {
+            "key": "ap-usageNote",
+            "note": "Meer info over deze klasse in het <a href=\"https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/agents/\">IM-Agents.",
+            "value": "Meer info over deze klasse in het <a href=\"https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/agents/\">IM-Agents."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Iemand die of iets dat kan handelen of een effect kan teweeg brengen."
+        },
+        "ap-label-nl": {
+          "nl": "Agent"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Iemand die of iets dat kan handelen of een effect kan teweeg brengen."
+        },
+        "label": {
+          "nl": "Agent"
+        },
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Agent"
+      },
+      "name": "Agent"
+    },
+    {
+      "@id": "http://www.w3.org/2006/time#Instant",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{17A76449-20D9-49c7-A43A-100B7928C0F5}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "Moment"
+      },
+      "extra": {
+        "EA-Guid": "{17A76449-20D9-49c7-A43A-100B7928C0F5}",
+        "EA-Name": "Moment",
+        "EA-Package": "W3C-Time",
+        "EA-Parents": "TemporeleEntiteit",
+        "EA-Parents2": [
+          {
+            "label": "TemporeleEntiteit",
+            "name": "TemporeleEntiteit",
+            "package": "W3C-Time",
+            "uri": "http://www.w3.org/2006/time#TemporalEntity"
+          }
+        ],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Moment"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2006/time#Instant"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "Moment"
+        },
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": {
+          "nl": "Moment"
+        },
+        "parentclasses": "http://www.w3.org/2006/time#TemporalEntity",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Moment"
+      },
+      "name": "Moment"
+    },
+    {
+      "@id": "http://www.w3.org/2006/time#ProperInterval",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{859C2F4C-3B1B-4b2c-9441-CFD05207C5DD}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "Periode"
+      },
+      "extra": {
+        "EA-Guid": "{859C2F4C-3B1B-4b2c-9441-CFD05207C5DD}",
+        "EA-Name": "Periode",
+        "EA-Package": "W3C-Time",
+        "EA-Parents": "TemporeleEntiteit",
+        "EA-Parents2": [
+          {
+            "label": "TemporeleEntiteit",
+            "name": "TemporeleEntiteit",
+            "package": "W3C-Time",
+            "uri": "http://www.w3.org/2006/time#TemporalEntity"
+          }
+        ],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Periode"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2006/time#ProperInterval"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "Periode"
+        },
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": {
+          "nl": "Periode"
+        },
+        "parentclasses": "http://www.w3.org/2006/time#TemporalEntity",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Periode"
+      },
+      "name": "Periode"
+    },
+    {
+      "@id": "http://www.w3.org/2006/time#TemporalEntity",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{60B8DAA9-EC34-4b43-B523-61241721FD77}",
+      "ap-definition-nl": {
+        "nl": "Abstracte klasse voor temporele objecten."
+      },
+      "ap-label-nl": {
+        "nl": "TemporeleEntiteit"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn."
+      },
+      "definition": {
+        "nl": "Abstracte klasse voor temporele objecten."
+      },
+      "extra": {
+        "EA-Guid": "{60B8DAA9-EC34-4b43-B523-61241721FD77}",
+        "EA-Name": "TemporeleEntiteit",
+        "EA-Package": "W3C-Time",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "TemporeleEntiteit"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Abstracte klasse voor temporele objecten."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2006/time#TemporalEntity"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn.",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "TemporeleEntiteit"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Abstracte klasse voor temporele objecten."
+        },
+        "ap-label-nl": {
+          "nl": "TemporeleEntiteit"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn."
+        },
+        "definition": {
+          "nl": "Abstracte klasse voor temporele objecten."
+        },
+        "label": {
+          "nl": "TemporeleEntiteit"
+        },
+        "parentclasses": "",
+        "usage": {
+          "nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "TemporeleEntiteit"
+      },
+      "name": "Temporeleentiteit",
+      "usage": {
+        "nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn."
+      }
+    },
+    {
+      "@id": "http://www.w3.org/ns/adms#Identifier",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+      "ap-definition-nl": {
+        "nl": "Informatie gebruikt om een object uniek te identificeren."
+      },
+      "ap-label-nl": {
+        "nl": "Identificator"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem."
+      },
+      "definition": {
+        "nl": "Informatie gebruikt om een object uniek te identificeren."
+      },
+      "extra": {
+        "EA-Guid": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+        "EA-Name": "Identificator",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Informatie gebruikt om een object uniek te identificeren."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem.",
+            "value": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Identificator"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/adms#Identifier"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Informatie gebruikt om een object uniek te identificeren."
+        },
+        "ap-label-nl": {
+          "nl": "Identificator"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem."
+        },
+        "definition": {
+          "nl": "Informatie gebruikt om een object uniek te identificeren."
+        },
+        "label": {
+          "nl": "Identificator"
+        },
+        "parentclasses": "",
+        "usage": {
+          "nl": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Identificator"
+      },
+      "name": "Identificator",
+      "usage": {
+        "nl": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem."
+      }
+    },
+    {
+      "@id": "http://www.w3.org/ns/prov#Location",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{FCF68A7F-66EB-447d-B907-B64B950C22D5}",
+      "ap-definition-nl": {
+        "nl": "Aanduiding van een geografische positie, dmv coördinaten, een toponiem, een adreslabel, een verwijzing naar een plaats/regio of verwijzing naar een adres."
+      },
+      "ap-label-nl": {
+        "nl": "Locatie"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Te gebruiken als de manier waarop de geografische positie wordt aangeduid pas zal worden vastgelegd bij implementatie. Is deze manier nu al gekend dan moet dit datatype gesubstitueerd worden door klassen of datatypes zoals Geometrie, GeografischeNaam, Adres etc. Meer info over deze klasse in het <a href=\"https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/locaties/\">IM-Agents."
+      },
+      "definition": {
+        "nl": "Aanduiding van een geografische positie, dmv coördinaten, een toponiem, een adreslabel, een verwijzing naar een plaats/regio of verwijzing naar een adres."
+      },
+      "extra": {
+        "EA-Guid": "{FCF68A7F-66EB-447d-B907-B64B950C22D5}",
+        "EA-Name": "Locatie",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Parents": "",
+        "EA-Parents2": [
+          {
+            "label": "Dekking",
+            "name": "Dekking",
+            "package": "DublinCore",
+            "uri": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Dekking"
+          }
+        ],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Aanduiding van een geografische positie, dmv coördinaten, een toponiem, een adreslabel, een verwijzing naar een plaats/regio of verwijzing naar een adres."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Te gebruiken als de manier waarop de geografische positie wordt aangeduid pas zal worden vastgelegd bij implementatie. Is deze manier nu al gekend dan moet dit datatype gesubstitueerd worden door klassen of datatypes zoals Geometrie, GeografischeNaam, Adres etc. Meer info over deze klasse in het <a href=\"https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/locaties/\">IM-Agents.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Locatie"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/prov#Location"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Aanduiding van een geografische positie, dmv coördinaten, een toponiem, een adreslabel, een verwijzing naar een plaats/regio of verwijzing naar een adres."
+        },
+        "ap-label-nl": {
+          "nl": "Locatie"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Te gebruiken als de manier waarop de geografische positie wordt aangeduid pas zal worden vastgelegd bij implementatie. Is deze manier nu al gekend dan moet dit datatype gesubstitueerd worden door klassen of datatypes zoals Geometrie, GeografischeNaam, Adres etc. Meer info over deze klasse in het <a href=\"https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/locaties/\">IM-Agents."
+        },
+        "definition": {
+          "nl": "Aanduiding van een geografische positie, dmv coördinaten, een toponiem, een adreslabel, een verwijzing naar een plaats/regio of verwijzing naar een adres."
+        },
+        "label": {
+          "nl": "Locatie"
+        },
+        "parentclasses": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Dekking",
+        "usage": {
+          "nl": "Te gebruiken als de manier waarop de geografische positie wordt aangeduid pas zal worden vastgelegd bij implementatie. Is deze manier nu al gekend dan moet dit datatype gesubstitueerd worden door klassen of datatypes zoals Geometrie, GeografischeNaam, Adres etc. Meer info over deze klasse in het <a href=\"https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/locaties/\">IM-Agents."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Locatie"
+      },
+      "name": "Locatie",
+      "usage": {
+        "nl": "Te gebruiken als de manier waarop de geografische positie wordt aangeduid pas zal worden vastgelegd bij implementatie. Is deze manier nu al gekend dan moet dit datatype gesubstitueerd worden door klassen of datatypes zoals Geometrie, GeografischeNaam, Adres etc. Meer info over deze klasse in het <a href=\"https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/locaties/\">IM-Agents."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{E2DBE2C7-E4C2-4c22-A2F9-05FF27DE823E}",
+      "ap-definition-nl": {
+        "nl": "Toegewezen taak."
+      },
+      "ap-label-nl": {
+        "nl": "Opdracht"
+      },
+      "definition": {
+        "nl": "Toegewezen taak."
+      },
+      "extra": {
+        "EA-Guid": "{E2DBE2C7-E4C2-4c22-A2F9-05FF27DE823E}",
+        "EA-Name": "Opdracht",
+        "EA-Package": "OSLO-BodemEnOndergrond",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Opdracht"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Toegewezen taak."
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "null",
+            "value": "In deze context de taak om Observaties of Bemonsteringen uit te voeren."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Toegewezen taak."
+        },
+        "ap-label-nl": {
+          "nl": "Opdracht"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Toegewezen taak."
+        },
+        "label": {
+          "nl": "Opdracht"
+        },
+        "parentclasses": "",
+        "usage": {
+          "nl": "In deze context de taak om Observaties of Bemonsteringen uit te voeren."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Opdracht"
+      },
+      "name": "Opdracht",
+      "usage": {
+        "nl": "In deze context de taak om Observaties of Bemonsteringen uit te voeren."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#OpdrachtType",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{C6B966AD-CA32-4aa7-8EF1-6DAEC66D072E}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{C6B966AD-CA32-4aa7-8EF1-6DAEC66D072E}",
+        "EA-Name": "OpdrachtType",
+        "EA-Package": "OSLO-BodemEnOndergrond",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "ENUMERATION",
+        "RawTags": [],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": "",
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": "",
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "name": ""
+    }
+  ],
+  "extra": {
+    "EA-Guid": "{CD2B496D-2866-4e2c-A4DA-845EEF604ED9}",
+    "EA-Name": "IM-Opdrachten",
+    "RawTags": [
+      {
+        "key": "baseURI",
+        "note": "null",
+        "value": "https://implementatie.data.vlaanderen.be/ns/opdrachten#"
+      }
+    ],
+    "baseURI": "https://implementatie.data.vlaanderen.be/ns/opdrachten#",
+    "issued": "TODO",
+    "license": "TODO"
+  },
+  "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/issues",
+  "filename": "config/grondverzet.json",
+  "hostname": "https://implementatie.data.vlaanderen.be/",
+  "issued": "TODO",
+  "label": {
+    "en": "grondverzet-opdrachten-im",
+    "nl": "grondverzet-opdrachten-im"
+  },
+  "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+  "name": "grondverzet-opdrachten-im",
+  "navigation": {},
+  "properties": [],
+  "publication-date": "2024-03-11",
+  "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+  "repository": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet",
+  "shaclgenerator": {
+    "parameters": ""
+  },
+  "site": "site-skeleton/grondverzet-opdrachten",
+  "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
+  "template": "grondverzet-grondboringen-im.j2",
+  "title": "Implementatiemodel Grondverzet - Opdrachten",
+  "toolchaincommit": "a7d47a7ece9e95cff21a8b94ff8708dc5e052b5c",
+  "translation": [
+    {
+      "language": "nl",
+      "mergefile": "grondverzet-opdrachten-im_nl_merged.json",
+      "template": "grondverzet-grondboringen-im.j2",
+      "title": "Implementatiemodel Grondverzet - Opdrachten",
+      "translationjson": "grondverzet-opdrachten-im_nl.json"
+    }
+  ],
+  "type": "ap",
+  "urlref": "/doc/implementatiemodel/grondverzet/opdrachten/ontwerpstandaard/2023-10-01"
+}
