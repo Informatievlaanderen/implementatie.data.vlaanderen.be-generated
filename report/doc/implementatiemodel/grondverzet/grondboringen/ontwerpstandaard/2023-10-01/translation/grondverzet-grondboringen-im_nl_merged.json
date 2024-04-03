@@ -100,110 +100,20 @@
   "classes": [],
   "config": "config/config-ap.json",
   "contextgenerator": {
-    "parameters": ""
+    "parameters": "-d -l label"
   },
   "contributors": [],
   "contributors-column": "MijnKolom",
   "contributors-file": "stakeholders.csv",
   "diagram": "IM-Grondboringen",
-  "documentcommit": "725eba857fd3b34735225f2ecd58ae3fc10dbee4",
+  "documentcommit": "97abeaa54f2462796b52f76cf3223775020a08e2",
   "dummy": "geert34",
   "eap": "Grondverzet.EAP",
   "editors": [],
   "examples": true,
   "externalproperties": [
     {
-      "@id": "https://qudt.org/schema/qudt/hasUnit",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{A0866BF1-5A5E-4dd4-A095-7491A1661B08}",
-      "ap-definition-nl": {
-        "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
-      },
-      "ap-label-nl": {
-        "nl": "standaard eenheid"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
-      },
-      "domain": [
-        {
-          "EA-Name": "KwantitatieveWaarde",
-          "uri": "https://qudt.org/schema/qudt/QuantityValue"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "KwantitatieveWaarde",
-        "EA-Domain-Guid": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
-        "EA-Guid": "{A0866BF1-5A5E-4dd4-A095-7491A1661B08}",
-        "EA-Name": "eenheid",
-        "EA-Package": "QUDT",
-        "EA-Range": "Concept",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{8F392E1A-2F27-49f5-8A23-17398C13E046}",
-          "EA-Name": "Concept",
-          "EA-Package": "skos",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-        },
-        "RawTags": [
-          {
-            "key": "ap-label-nl",
-            "note": "null",
-            "value": "standaard eenheid"
-          },
-          {
-            "key": "ap-definition-nl",
-            "note": "null",
-            "value": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
-          },
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "eenheid"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "https://qudt.org/schema/qudt/hasUnit"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
-        },
-        "ap-label-nl": {
-          "nl": "standaard eenheid"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
-        },
-        "label": {
-          "nl": "standaard eenheid"
-        },
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "standaard eenheid"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "0",
-      "name": "standaardEenheid",
-      "range": [
-        {
-          "EA-GUID": "{8F392E1A-2F27-49f5-8A23-17398C13E046}",
-          "EA-Name": "Concept",
-          "EA-Package": "skos",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-        }
-      ]
-    },
-    {
-      "@id": "https://qudt.org/schema/qudt//value",
+      "@id": "https://qudt.org/schema/qudt/value",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{695FE943-3564-451a-B7F4-3C06DBB47B33}",
       "ap-definition-nl": {
@@ -239,7 +149,7 @@
           {
             "key": "uri",
             "note": "null",
-            "value": "https://qudt.org/schema/qudt//value"
+            "value": "https://qudt.org/schema/qudt/value"
           },
           {
             "key": "label-nl",
@@ -282,6 +192,96 @@
           "EA-Name": "Literal",
           "EA-Package": "",
           "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      ]
+    },
+    {
+      "@id": "https://qudt.org/schema/qudt/hasUnit",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{A0866BF1-5A5E-4dd4-A095-7491A1661B08}",
+      "ap-definition-nl": {
+        "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+      },
+      "ap-label-nl": {
+        "nl": "eenheid"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+      },
+      "domain": [
+        {
+          "EA-Name": "KwantitatieveWaarde",
+          "uri": "https://qudt.org/schema/qudt/QuantityValue"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "KwantitatieveWaarde",
+        "EA-Domain-Guid": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
+        "EA-Guid": "{A0866BF1-5A5E-4dd4-A095-7491A1661B08}",
+        "EA-Name": "eenheid",
+        "EA-Package": "QUDT",
+        "EA-Range": "Concept",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{8F392E1A-2F27-49f5-8A23-17398C13E046}",
+          "EA-Name": "Concept",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "eenheid"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "eenheid"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://qudt.org/schema/qudt/hasUnit"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+        },
+        "ap-label-nl": {
+          "nl": "eenheid"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+        },
+        "label": {
+          "nl": "eenheid"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "eenheid"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "eenheid",
+      "range": [
+        {
+          "EA-GUID": "{8F392E1A-2F27-49f5-8A23-17398C13E046}",
+          "EA-Name": "Concept",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
         }
       ]
     },
@@ -2033,10 +2033,10 @@
         "EA-Range": "KwantitatieveWaarde",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{1E46B529-0F8C-4fef-9D8B-3B86DCB6855E}",
+          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
           "EA-Name": "KwantitatieveWaarde",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "https://schema.org/QuantitativeValue"
+          "EA-Package": "QUDT",
+          "uri": "https://qudt.org/schema/qudt/QuantityValue"
         },
         "RawTags": [
           {
@@ -2084,10 +2084,10 @@
       "name": "dikte",
       "range": [
         {
-          "EA-GUID": "{1E46B529-0F8C-4fef-9D8B-3B86DCB6855E}",
+          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
           "EA-Name": "KwantitatieveWaarde",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "https://schema.org/QuantitativeValue"
+          "EA-Package": "QUDT",
+          "uri": "https://qudt.org/schema/qudt/QuantityValue"
         }
       ]
     },
@@ -2120,10 +2120,10 @@
         "EA-Range": "KwantitatieveWaarde",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{1E46B529-0F8C-4fef-9D8B-3B86DCB6855E}",
+          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
           "EA-Name": "KwantitatieveWaarde",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "https://schema.org/QuantitativeValue"
+          "EA-Package": "QUDT",
+          "uri": "https://qudt.org/schema/qudt/QuantityValue"
         },
         "RawTags": [
           {
@@ -2171,10 +2171,10 @@
       "name": "boringlengte",
       "range": [
         {
-          "EA-GUID": "{1E46B529-0F8C-4fef-9D8B-3B86DCB6855E}",
+          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
           "EA-Name": "KwantitatieveWaarde",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "https://schema.org/QuantitativeValue"
+          "EA-Package": "QUDT",
+          "uri": "https://qudt.org/schema/qudt/QuantityValue"
         }
       ],
       "usage": {
@@ -2479,10 +2479,10 @@
         "EA-Range": "KwantitatieveWaarde",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{1E46B529-0F8C-4fef-9D8B-3B86DCB6855E}",
+          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
           "EA-Name": "KwantitatieveWaarde",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "https://schema.org/QuantitativeValue"
+          "EA-Package": "QUDT",
+          "uri": "https://qudt.org/schema/qudt/QuantityValue"
         },
         "RawTags": [
           {
@@ -2530,10 +2530,10 @@
       "name": "aangenomengrondwaterstand",
       "range": [
         {
-          "EA-GUID": "{1E46B529-0F8C-4fef-9D8B-3B86DCB6855E}",
+          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
           "EA-Name": "KwantitatieveWaarde",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "https://schema.org/QuantitativeValue"
+          "EA-Package": "QUDT",
+          "uri": "https://qudt.org/schema/qudt/QuantityValue"
         }
       ],
       "usage": {
@@ -3356,13 +3356,13 @@
         "EA-Guid": "{6CD2F53D-FC3B-4c4c-90B6-1EF0EB54C73C}",
         "EA-Name": "^diepte",
         "EA-Package": "OSLO-Grondboringen",
-        "EA-Range": "Diepte",
+        "EA-Range": "KwantitatieveWaarde",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{2F646ECE-32AB-4301-8A89-0F6F7D410F68}",
-          "EA-Name": "Diepte",
-          "EA-Package": "OSLO-BodemEnOndergrond",
-          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Diepte"
+          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
+          "EA-Name": "KwantitatieveWaarde",
+          "EA-Package": "QUDT",
+          "uri": "https://qudt.org/schema/qudt/QuantityValue"
         },
         "RawTags": [
           {
@@ -3408,10 +3408,10 @@
       "name": "diepte",
       "range": [
         {
-          "EA-GUID": "{2F646ECE-32AB-4301-8A89-0F6F7D410F68}",
-          "EA-Name": "Diepte",
-          "EA-Package": "OSLO-BodemEnOndergrond",
-          "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Diepte"
+          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
+          "EA-Name": "KwantitatieveWaarde",
+          "EA-Package": "QUDT",
+          "uri": "https://qudt.org/schema/qudt/QuantityValue"
         }
       ]
     },
@@ -3969,10 +3969,10 @@
         "EA-Range": "TemporeleEntiteit",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{04E7C7CC-21B9-40eb-A773-299FEEEAA5ED}",
+          "EA-GUID": "{60B8DAA9-EC34-4b43-B523-61241721FD77}",
           "EA-Name": "TemporeleEntiteit",
-          "EA-Package": "OSLO-ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object"
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#TemporalEntity"
         },
         "RawTags": [
           {
@@ -4023,10 +4023,10 @@
       "name": "bemonsteringstijdstip",
       "range": [
         {
-          "EA-GUID": "{04E7C7CC-21B9-40eb-A773-299FEEEAA5ED}",
+          "EA-GUID": "{60B8DAA9-EC34-4b43-B523-61241721FD77}",
           "EA-Name": "TemporeleEntiteit",
-          "EA-Package": "OSLO-ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object"
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#TemporalEntity"
         }
       ]
     },
@@ -5287,10 +5287,10 @@
         "EA-Range": "Moment",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{388B5260-7D3C-4e3e-987D-1B72D7516075}",
+          "EA-GUID": "{17A76449-20D9-49c7-A43A-100B7928C0F5}",
           "EA-Name": "Moment",
-          "EA-Package": "OSLO-ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Instant"
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#Instant"
         },
         "RawTags": [
           {
@@ -5329,10 +5329,10 @@
       "name": "tot",
       "range": [
         {
-          "EA-GUID": "{388B5260-7D3C-4e3e-987D-1B72D7516075}",
+          "EA-GUID": "{17A76449-20D9-49c7-A43A-100B7928C0F5}",
           "EA-Name": "Moment",
-          "EA-Package": "OSLO-ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Instant"
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#Instant"
         }
       ]
     },
@@ -5362,10 +5362,10 @@
         "EA-Range": "Moment",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{388B5260-7D3C-4e3e-987D-1B72D7516075}",
+          "EA-GUID": "{17A76449-20D9-49c7-A43A-100B7928C0F5}",
           "EA-Name": "Moment",
-          "EA-Package": "OSLO-ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Instant"
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#Instant"
         },
         "RawTags": [
           {
@@ -5404,10 +5404,10 @@
       "name": "van",
       "range": [
         {
-          "EA-GUID": "{388B5260-7D3C-4e3e-987D-1B72D7516075}",
+          "EA-GUID": "{17A76449-20D9-49c7-A43A-100B7928C0F5}",
           "EA-Name": "Moment",
-          "EA-Package": "OSLO-ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Instant"
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#Instant"
         }
       ]
     },
@@ -7287,10 +7287,10 @@
         "EA-Range": "KwantitatieveWaarde",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{1E46B529-0F8C-4fef-9D8B-3B86DCB6855E}",
+          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
           "EA-Name": "KwantitatieveWaarde",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "https://schema.org/QuantitativeValue"
+          "EA-Package": "QUDT",
+          "uri": "https://qudt.org/schema/qudt/QuantityValue"
         },
         "RawTags": [
           {
@@ -7345,10 +7345,10 @@
       "name": "grootte",
       "range": [
         {
-          "EA-GUID": "{1E46B529-0F8C-4fef-9D8B-3B86DCB6855E}",
+          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
           "EA-Name": "KwantitatieveWaarde",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "https://schema.org/QuantitativeValue"
+          "EA-Package": "QUDT",
+          "uri": "https://qudt.org/schema/qudt/QuantityValue"
         }
       ],
       "usage": {
@@ -7384,10 +7384,10 @@
         "EA-Range": "Periode",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{AA000383-DD43-474f-91BE-E6D84D2B6CDC}",
+          "EA-GUID": "{859C2F4C-3B1B-4b2c-9441-CFD05207C5DD}",
           "EA-Name": "Periode",
-          "EA-Package": "OSLO-ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Period"
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#ProperInterval"
         },
         "RawTags": [
           {
@@ -7433,10 +7433,10 @@
       "name": "bemonsteringstijdstip",
       "range": [
         {
-          "EA-GUID": "{AA000383-DD43-474f-91BE-E6D84D2B6CDC}",
+          "EA-GUID": "{859C2F4C-3B1B-4b2c-9441-CFD05207C5DD}",
           "EA-Name": "Periode",
-          "EA-Package": "OSLO-ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Period"
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#ProperInterval"
         }
       ]
     },
@@ -9039,10 +9039,10 @@
         "EA-Range": "KwantitatieveWaarde",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{1E46B529-0F8C-4fef-9D8B-3B86DCB6855E}",
+          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
           "EA-Name": "KwantitatieveWaarde",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "https://schema.org/QuantitativeValue"
+          "EA-Package": "QUDT",
+          "uri": "https://qudt.org/schema/qudt/QuantityValue"
         },
         "RawTags": [
           {
@@ -9093,10 +9093,10 @@
       "name": "diameter",
       "range": [
         {
-          "EA-GUID": "{1E46B529-0F8C-4fef-9D8B-3B86DCB6855E}",
+          "EA-GUID": "{5756CEDF-1C21-48b3-9F6B-D5AFA1BAF9AC}",
           "EA-Name": "KwantitatieveWaarde",
-          "EA-Package": "OSLO-Generiek",
-          "uri": "https://schema.org/QuantitativeValue"
+          "EA-Package": "QUDT",
+          "uri": "https://qudt.org/schema/qudt/QuantityValue"
         }
       ]
     },
@@ -13238,62 +13238,6 @@
       }
     },
     {
-      "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Diepte",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{2F646ECE-32AB-4301-8A89-0F6F7D410F68}",
-      "ap-definition-nl": {
-        "nl": "Verticale maat naar beneden vanaf het grondoppervlak."
-      },
-      "ap-label-nl": {
-        "nl": "Diepte"
-      },
-      "definition": {
-        "nl": "Verticale maat naar beneden vanaf het grondoppervlak."
-      },
-      "extra": {
-        "EA-Guid": "{2F646ECE-32AB-4301-8A89-0F6F7D410F68}",
-        "EA-Name": "Diepte",
-        "EA-Package": "OSLO-BodemEnOndergrond",
-        "EA-Parents": "",
-        "EA-Parents2": [],
-        "EA-Type": "DATATYPE",
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "Diepte"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "Verticale maat naar beneden vanaf het grondoppervlak."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Verticale maat naar beneden vanaf het grondoppervlak."
-        },
-        "ap-label-nl": {
-          "nl": "Diepte"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "Verticale maat naar beneden vanaf het grondoppervlak."
-        },
-        "label": {
-          "nl": "Diepte"
-        },
-        "parentclasses": "",
-        "usage": ""
-      },
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "Diepte"
-      },
-      "name": "Diepte"
-    },
-    {
       "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Erkenning",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{737B1EB5-9A9A-4efa-A85E-B5A06D59A8D3}",
@@ -14726,7 +14670,7 @@
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
   "template": "grondverzet-grondboringen-im.j2",
   "title": "Implementatiemodel Grondverzet - Grondboringen",
-  "toolchaincommit": "3fc424d6f9f0a5ce98262c4ca2b04884c67c1e79",
+  "toolchaincommit": "5a623fd12ed6a9c41c00ec277fa30dbff0a38c57",
   "translation": [
     {
       "language": "nl",

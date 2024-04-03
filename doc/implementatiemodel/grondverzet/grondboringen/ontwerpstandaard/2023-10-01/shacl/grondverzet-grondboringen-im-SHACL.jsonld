@@ -81,7 +81,7 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Diepte",
+          "sh:class": "https://qudt.org/schema/qudt/QuantityValue",
           "sh:description": {
             "nl": "De diepte van het Boorgat."
           },
@@ -145,7 +145,7 @@
           "sh:path": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.positionalAccuracy"
         },
         {
-          "sh:class": "https://schema.org/QuantitativeValue",
+          "sh:class": "https://qudt.org/schema/qudt/QuantityValue",
           "sh:description": {
             "nl": "De Grondwaterstand in het Boorgat, al dan niet gebaseerd op meerdere Observaties."
           },
@@ -178,7 +178,7 @@
           "sh:path": "https://data.vlaanderen.be/ns/grondboringen#boordiameter"
         },
         {
-          "sh:class": "https://schema.org/QuantitativeValue",
+          "sh:class": "https://qudt.org/schema/qudt/QuantityValue",
           "sh:description": {
             "nl": "Lengte van de Grondboring."
           },
@@ -544,7 +544,7 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Instant",
+          "sh:class": "http://www.w3.org/2006/time#Instant",
           "sh:maxCount": "1",
           "sh:minCount": "1",
           "sh:name": {
@@ -553,7 +553,7 @@
           "sh:path": "http://www.w3.org/2006/time#hasEnd"
         },
         {
-          "sh:class": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Instant",
+          "sh:class": "http://www.w3.org/2006/time#Instant",
           "sh:maxCount": "1",
           "sh:minCount": "1",
           "sh:name": {
@@ -732,7 +732,7 @@
           "sh:path": "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
         },
         {
-          "sh:class": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object",
+          "sh:class": "http://www.w3.org/2006/time#TemporalEntity",
           "sh:description": {
             "nl": "Moment waarop de Bemonstering werd afgerond."
           },
@@ -1039,13 +1039,6 @@
       "sh:targetClass": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Boring"
     },
     {
-      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#DiepteShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Diepte"
-    },
-    {
       "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#ErkenningShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -1218,7 +1211,7 @@
           "sh:path": "http://def.isotc211.org/iso19123/2005/CoverageCore#CV_CurveValuePair.geometry"
         },
         {
-          "sh:class": "https://schema.org/QuantitativeValue",
+          "sh:class": "https://qudt.org/schema/qudt/QuantityValue",
           "sh:description": {
             "nl": "Dikte van de Bekisting."
           },
@@ -1299,7 +1292,7 @@
           "sh:path": "http://def.isotc211.org/iso19123/2005/CoverageCore#CV_CurveValuePair.geometry"
         },
         {
-          "sh:class": "https://schema.org/QuantitativeValue",
+          "sh:class": "https://qudt.org/schema/qudt/QuantityValue",
           "sh:description": {
             "nl": "Diameter van het Boorgat."
           },
@@ -1509,7 +1502,7 @@
           "sh:path": "http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingLocation"
         },
         {
-          "sh:class": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Period",
+          "sh:class": "http://www.w3.org/2006/time#ProperInterval",
           "sh:description": {
             "nl": "Moment waarop het Grondmonster is genomen."
           },
@@ -1521,7 +1514,7 @@
           "sh:path": "http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingTime"
         },
         {
-          "sh:class": "https://schema.org/QuantitativeValue",
+          "sh:class": "https://qudt.org/schema/qudt/QuantityValue",
           "sh:description": {
             "nl": "De fysieke omvang van het monster."
           },
@@ -1631,7 +1624,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "nl": "standaard eenheid"
+            "nl": "eenheid"
           },
           "sh:path": "https://qudt.org/schema/qudt/hasUnit"
         },
@@ -1644,7 +1637,7 @@
           "sh:name": {
             "nl": "waarde"
           },
-          "sh:path": "https://qudt.org/schema/qudt//value"
+          "sh:path": "https://qudt.org/schema/qudt/value"
         }
       ],
       "sh:targetClass": "https://qudt.org/schema/qudt/QuantityValue"

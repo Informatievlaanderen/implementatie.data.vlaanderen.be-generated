@@ -3,7 +3,6 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schemas: <https://schema.org/> .
 @prefix shacl: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -62,7 +61,6 @@
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BesluitShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BO_RuimtelijkBemonsteringsobjectShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoringShape>,
-    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#DiepteShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#ErkenningShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#MaaiveldShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#OpdrachtShape>,
@@ -114,7 +112,7 @@
     shacl:name "geometrie"@nl;
     shacl:path <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_CurveValuePair.geometry>
   ], [
-    shacl:class schemas:QuantitativeValue;
+    shacl:class <https://qudt.org/schema/qudt/QuantityValue>;
     shacl:description "Dikte van de Bekisting."@nl;
     shacl:maxCount 1;
     shacl:minCount 1;
@@ -165,7 +163,7 @@
     shacl:name "bemonsterdObject"@nl;
     shacl:path <http://www.w3.org/ns/sosa/hasFeatureOfInterest>
   ], [
-    shacl:class <http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object>;
+    shacl:class <http://www.w3.org/2006/time#TemporalEntity>;
     shacl:description "Moment waarop de Bemonstering werd afgerond."@nl;
     shacl:maxCount 1;
     shacl:minCount 1;
@@ -376,7 +374,7 @@
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#BoorgatShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
-    shacl:class <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Diepte>;
+    shacl:class <https://qudt.org/schema/qudt/QuantityValue>;
     shacl:description "De diepte van het Boorgat."@nl;
     shacl:maxCount 1;
     shacl:name "diepte"@nl;
@@ -410,7 +408,7 @@
     shacl:name "positioneleNauwkeurigheid"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.positionalAccuracy>
   ], [
-    shacl:class schemas:QuantitativeValue;
+    shacl:class <https://qudt.org/schema/qudt/QuantityValue>;
     shacl:description "De Grondwaterstand in het Boorgat, al dan niet gebaseerd op meerdere Observaties."@nl;
     shacl:maxCount 1;
     shacl:name "aangenomenGrondwaterstand"@nl;
@@ -428,7 +426,7 @@
     shacl:name "boordiameter"@nl;
     shacl:path <https://data.vlaanderen.be/ns/grondboringen#boordiameter>
   ], [
-    shacl:class schemas:QuantitativeValue;
+    shacl:class <https://qudt.org/schema/qudt/QuantityValue>;
     shacl:description "Lengte van de Grondboring."@nl;
     shacl:maxCount 1;
     shacl:name "boringLengte"@nl;
@@ -464,7 +462,7 @@
     shacl:name "geometrie"@nl;
     shacl:path <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_CurveValuePair.geometry>
   ], [
-    shacl:class schemas:QuantitativeValue;
+    shacl:class <https://qudt.org/schema/qudt/QuantityValue>;
     shacl:description "Diameter van het Boorgat."@nl;
     shacl:maxCount 1;
     shacl:minCount 1;
@@ -569,10 +567,6 @@
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#CurveWaardepaarShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_CurveValuePair> .
-
-<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#DiepteShape> a shacl:NodeShape;
-  shacl:closed false;
-  shacl:targetClass <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Diepte> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#DirectePositieShape> a shacl:NodeShape;
   shacl:closed false;
@@ -694,14 +688,14 @@
     shacl:name "bemonsteringsplaats"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingLocation>
   ], [
-    shacl:class <http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Period>;
+    shacl:class <http://www.w3.org/2006/time#ProperInterval>;
     shacl:description "Moment waarop het Grondmonster is genomen."@nl;
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "bemonsteringstijdstip"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingTime>
   ], [
-    shacl:class schemas:QuantitativeValue;
+    shacl:class <https://qudt.org/schema/qudt/QuantityValue>;
     shacl:description "De fysieke omvang van het monster."@nl;
     shacl:maxCount 1;
     shacl:name "grootte"@nl;
@@ -802,14 +796,14 @@
     shacl:class skos:Concept;
     shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."@nl;
     shacl:maxCount 1;
-    shacl:name "standaard eenheid"@nl;
+    shacl:name "eenheid"@nl;
     shacl:path <https://qudt.org/schema/qudt/hasUnit>
   ], [
     shacl:description "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."@nl;
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "waarde"@nl;
-    shacl:path <https://qudt.org/schema/qudt//value>
+    shacl:path <https://qudt.org/schema/qudt/value>
   ];
   shacl:targetClass <https://qudt.org/schema/qudt/QuantityValue> .
 
@@ -954,13 +948,13 @@
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#PeriodeShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
-    shacl:class <http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Instant>;
+    shacl:class <http://www.w3.org/2006/time#Instant>;
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "tot"@nl;
     shacl:path <http://www.w3.org/2006/time#hasEnd>
   ], [
-    shacl:class <http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Instant>;
+    shacl:class <http://www.w3.org/2006/time#Instant>;
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "van"@nl;
