@@ -91,8 +91,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/725eba857fd3b34735225f2ecd58ae3fc10dbee4">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/725eba857fd3b34735225f2ecd58ae3fc10dbee4</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/725eba857fd3b34735225f2ecd58ae3fc10dbee4/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/725eba857fd3b34735225f2ecd58ae3fc10dbee4/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/4edafbffc9dc64f1439483ef0fd52ebfeddf688c">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/4edafbffc9dc64f1439483ef0fd52ebfeddf688c</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/4edafbffc9dc64f1439483ef0fd52ebfeddf688c/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/4edafbffc9dc64f1439483ef0fd52ebfeddf688c/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/issues">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/issues</a></dd>
               <dt>Standaardenregister</dt><dd><a href="https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html">https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html</a></dd>
 
@@ -214,7 +214,6 @@
                       <a href="#Boortypeinterval">BoortypeInterval</a> |
                       <a href="#Curve">Curve</a> |
                       <a href="#Curvewaardepaar">CurveWaardepaar</a> |
-                      <a href="#Diepte">Diepte</a> |
                       <a href="#Directepositie">DirectePositie</a> |
                       <a href="#Generiekenaam">GeneriekeNaam</a> |
                       <a href="#Geometrie">Geometrie</a> |
@@ -1308,7 +1307,7 @@
                         <td>
 			  
                              
-                                            <a href="#Diepte" data-placement="right">Diepte</a>
+                                            <a href="#KwantitatieveWaarde" data-placement="right">KwantitatieveWaarde</a>
                              
                          
                         </td>
@@ -2010,7 +2009,7 @@
                              
                          
                         </td>
-                        <td>1</td>
+                        <td>0..1</td>
                         <td property="rdfs:comment">Moment waarop het Grondmonster is genomen.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
@@ -3159,24 +3158,6 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="Diepte"><a href="https://data.vlaanderen.be/ns/bodem-en-ondergrond#Diepte" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/bodem-en-ondergrond#Diepte" data-placement="right">Diepte</a></h3>
-	      
-                <div class="region region--no-space-top">
-                  <dl>
-                    <dt>Beschrijving</dt><dd>Verticale maat naar beneden vanaf het grondoppervlak.</dd>
-                    
-		    
-                    <dt>Eigenschappen</dt>
-		    
-                    <dd>Voor dit datatype zijn geen eigenschappen gedefinieerd.</dd>
-                    
-                  </dl>
-                </div>
-		
-            </div>
-            
-            <div class="region region--no-space-top">
-              
               <h3 class="h3" id="DirectePositie"><a href="https://data.vlaanderen.be/ns/generiek#DirectePositie" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/generiek#DirectePositie" data-placement="right">DirectePositie</a></h3>
 	      
                 <div class="region region--no-space-top">
@@ -3565,7 +3546,7 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor dit datatype zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#KwantitatieveWaarde.standaardeenheid">standaard eenheid</a>, 
+                      <a href="#KwantitatieveWaarde.eenheid">eenheid</a>, 
                       <a href="#KwantitatieveWaarde.waarde">waarde</a>.</dd>
                     
                   </dl>
@@ -3586,10 +3567,10 @@
 
                     <tbody class="supertype">
                       
-                      <tr id="KwantitatieveWaarde.standaardeenheid" typeof="rdfs:Property" resource="https://qudt.org/schema/qudt/hasUnit">
+                      <tr id="KwantitatieveWaarde.eenheid" typeof="rdfs:Property" resource="https://qudt.org/schema/qudt/hasUnit">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://qudt.org/schema/qudt/hasUnit" data-toggle="tooltip" data-content="https://qudt.org/schema/qudt/hasUnit" data-placement="right">standaard eenheid</a>
+                            <a href="https://qudt.org/schema/qudt/hasUnit" data-toggle="tooltip" data-content="https://qudt.org/schema/qudt/hasUnit" data-placement="right">eenheid</a>
                           </code>
                         </td>
                         <td>
@@ -3605,10 +3586,10 @@
                         <td></td>
                       </tr>
                       
-                      <tr id="KwantitatieveWaarde.waarde" typeof="rdfs:Property" resource="https://qudt.org/schema/qudt//value">
+                      <tr id="KwantitatieveWaarde.waarde" typeof="rdfs:Property" resource="https://qudt.org/schema/qudt/value">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://qudt.org/schema/qudt//value" data-toggle="tooltip" data-content="https://qudt.org/schema/qudt//value" data-placement="right">waarde</a>
+                            <a href="https://qudt.org/schema/qudt/value" data-toggle="tooltip" data-content="https://qudt.org/schema/qudt/value" data-placement="right">waarde</a>
                           </code>
                         </td>
                         <td>
