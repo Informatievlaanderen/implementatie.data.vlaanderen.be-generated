@@ -12,8 +12,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/4edafbffc9dc64f1439483ef0fd52ebfeddf688c",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/4edafbffc9dc64f1439483ef0fd52ebfeddf688c/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/f2e887e04de078c98b9a82a8a08fedfd35d621d8",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/f2e887e04de078c98b9a82a8a08fedfd35d621d8/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
@@ -530,6 +530,47 @@
             "uri": "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.hostedProcedure",
             "ap-definition-nl": "Procedure die of instrument dat in of op het Boorgat is geïnstalleerd."
           }
+        },
+        {
+          "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
+          "name": "bemonsterdobject",
+          "sort": "bemonsterdObject",
+          "label": {
+            "nl": "bemonsterdObject"
+          },
+          "description": {
+            "nl": "Het Grondobject dat wordt bemonsterd."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Boorgat",
+              "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Grondobject",
+              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#Grondobject"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Grondobject",
+              "range_puri": "https://data.vlaanderen.be/ns/grondboringen#Grondobject",
+              "range_label": {
+                "nl": "Grondobject"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
+            "name": "Bemonsteringsobject.bemonsterdObject",
+            "definition-nl": "Het Grondobject dat wordt bemonsterd.",
+            "label-nl": "bemonsterdObject"
+          }
         }
       ]
     },
@@ -807,9 +848,11 @@
             "nl": "bemonsterdObject"
           },
           "description": {
-            "nl": "Het Grondobject dat wordt bemonsterd."
+            "nl": "Verwijzing naar het Object dat men wil bemonsteren."
           },
-          "usage": {},
+          "usage": {
+            "nl": "Bv een profiel bemonstert een water- of atmosferische kolom, een peilput bemonstert het water in een watervoerende laag, een weefselstaal bemonstert een deel van een organisme."
+          },
           "domain": [
             {
               "EA-Name": "Bemonsteringsobject",
@@ -818,16 +861,16 @@
           ],
           "range": [
             {
-              "range_label": "Grondobject",
-              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#Grondobject"
+              "range_label": "Object",
+              "range_uri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Grondobject",
-              "range_puri": "https://data.vlaanderen.be/ns/grondboringen#Grondobject",
+              "range_uri": "#Object",
+              "range_puri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
               "range_label": {
-                "nl": "Grondobject"
+                "nl": "Object"
               }
             }
           ],
@@ -835,9 +878,9 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
-            "name": "Bemonsteringsobject.bemonsterdObject",
-            "definition-nl": "Het Grondobject dat wordt bemonsterd.",
-            "label-nl": "bemonsterdObject"
+            "label-nl": "bemonsterdObject",
+            "ap-definition-nl": "Verwijzing naar het Object dat men wil bemonsteren.",
+            "ap-usageNote-nl": "Bv een profiel bemonstert een water- of atmosferische kolom, een peilput bemonstert het water in een watervoerende laag, een weefselstaal bemonstert een deel van een organisme."
           }
         },
         {
@@ -1041,6 +1084,29 @@
         "uri": "http://qudt.org/2.1/schema/qudt/Unit",
         "label-nl": "Eenheid",
         "definition-nl": "TODO"
+      },
+      "properties": []
+    },
+    {
+      "uri": "http://www.w3.org/2000/01/rdf-schema#Resource",
+      "name": "Any",
+      "label": {
+        "nl": "Any"
+      },
+      "sort": "Any",
+      "description": {
+        "nl": "Instanties van  om het even welk type."
+      },
+      "usage": {
+        "nl": "Te substitueren door een geschikte klasse of datatype."
+      },
+      "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Instanties van  om het even welk type.",
+        "ap-usageNote-nl": "Te substitueren door een geschikte klasse of datatype.",
+        "label-nl": "Any",
+        "uri": "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "ap-label-nl": "Any"
       },
       "properties": []
     },
@@ -3886,7 +3952,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Resource",
+              "range_uri": "#Any",
               "range_puri": "http://www.w3.org/2000/01/rdf-schema#Resource",
               "range_label": {
                 "nl": "Any"

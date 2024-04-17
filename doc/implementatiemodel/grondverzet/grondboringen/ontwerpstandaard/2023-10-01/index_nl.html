@@ -91,8 +91,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/4edafbffc9dc64f1439483ef0fd52ebfeddf688c">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/4edafbffc9dc64f1439483ef0fd52ebfeddf688c</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/4edafbffc9dc64f1439483ef0fd52ebfeddf688c/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/4edafbffc9dc64f1439483ef0fd52ebfeddf688c/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/f2e887e04de078c98b9a82a8a08fedfd35d621d8">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/f2e887e04de078c98b9a82a8a08fedfd35d621d8</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/f2e887e04de078c98b9a82a8a08fedfd35d621d8/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/f2e887e04de078c98b9a82a8a08fedfd35d621d8/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/issues">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/issues</a></dd>
               <dt>Standaardenregister</dt><dd><a href="https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html">https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html</a></dd>
 
@@ -165,6 +165,7 @@
                       <br />
                       |
                       <a href="#Agent">Agent</a> |
+                      <a href="#Any">Any</a> |
                       <a href="#Bekisting">Bekisting</a> |
                       <a href="#Bemonsteraar">Bemonsteraar</a> |
                       <a href="#Bemonstering">Bemonstering</a> |
@@ -252,6 +253,24 @@
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Iemand die of iets dat kan handelen of een effect kan teweeg brengen.</dd>
+                    
+		    
+                    <dt>Eigenschappen</dt>
+		    
+                    <dd>Voor deze entiteit zijn geen eigenschappen gedefinieerd.</dd>
+                    
+                  </dl>
+                </div>
+		
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Any"><a href="http://www.w3.org/2000/01/rdf-schema#Resource" data-toggle="tooltip" data-content="http://www.w3.org/2000/01/rdf-schema#Resource" data-placement="right">Any</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Instanties van  om het even welk type.</dd>
+                    
+                    <dt>Gebruik</dt><dd>Te substitueren door een geschikte klasse of datatype.</dd>
                     
 		    
                     <dt>Eigenschappen</dt>
@@ -747,13 +766,13 @@
                         <td>
 			  
                              
-                                            <a href="#Grondobject" data-placement="right">Grondobject</a>
+                                            <a href="#Object" data-placement="right">Object</a>
                              
                          
                         </td>
                         <td>1..*</td>
-                        <td property="rdfs:comment">Het Grondobject dat wordt bemonsterd.</td>
-                        <td property="vann:usageNote"></td>
+                        <td property="rdfs:comment">Verwijzing naar het Object dat men wil bemonsteren.</td>
+                        <td property="vann:usageNote">Bv een profiel bemonstert een water- of atmosferische kolom, een peilput bemonstert het water in een watervoerende laag, een weefselstaal bemonstert een deel van een organisme.</td>
                         <td></td>
                       </tr>
                     
@@ -1189,6 +1208,7 @@
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
                       <a href="#Boorgat.aangenomenGrondwaterstand">aangenomenGrondwaterstand</a>, 
                       <a href="#Boorgat.bekisting">bekisting</a>, 
+                      <a href="#Boorgat.bemonsterdObject">bemonsterdObject</a>, 
                       <a href="#Boorgat.boordiameter">boordiameter</a>, 
                       <a href="#Boorgat.boringLengte">boringLengte</a>, 
                       <a href="#Boorgat.diepte">diepte</a>, 
@@ -1253,6 +1273,26 @@
                         </td>
                         <td>0..1</td>
                         <td property="rdfs:comment">Verwijzing naar de beschrijving van de Bekisting van het Boorgat.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Boorgat.bemonsterdObject" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature" data-placement="right">
+                            bemonsterdObject</a>
+                          </code>
+                        </td>
+                        <td>
+			  
+                             
+                                            <a href="#Grondobject" data-placement="right">Grondobject</a>
+                             
+                         
+                        </td>
+                        <td>1..*</td>
+                        <td property="rdfs:comment">Het Grondobject dat wordt bemonsterd.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -2848,10 +2888,7 @@
                         <td>
 			  
                              
-                                            <a href="#Any"
-                                               data-toggle="tooltip"
-                                               data-content="http://www.w3.org/2000/01/rdf-schema#Resource"
-                                               data-placement="right">Any</a>
+                                            <a href="#Any" data-placement="right">Any</a>
                              
                          
                         </td>

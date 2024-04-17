@@ -1440,6 +1440,86 @@
             "name": "Curve"
         },
         {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Resource",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "inpackage": "OTHER_PACKAGE",
+            "ap-usageNote-nl": {
+                "nl": "Te substitueren door een geschikte klasse of datatype."
+            },
+            "usage": {
+                "nl": "Te substitueren door een geschikte klasse of datatype."
+            },
+            "definition": {
+                "nl": "Instanties van  om het even welk type."
+            },
+            "label": {
+                "nl": "Any"
+            },
+            "ap-label-nl": {
+                "nl": "Any"
+            },
+            "ap-definition-nl": {
+                "nl": "Instanties van  om het even welk type."
+            },
+            "extra": {
+                "EA-Name": "Any",
+                "EA-Guid": "{72F67A3D-E2A1-449c-8D39-7493C3E3F717}",
+                "EA-Package": "OSLO-ObservatiesEnMetingen",
+                "EA-Type": "CLASS",
+                "EA-Parents": "",
+                "EA-Parents2": [],
+                "parentclasses": "",
+                "label": {
+                    "nl": "Any"
+                },
+                "definition": {
+                    "nl": "Instanties van  om het even welk type."
+                },
+                "usage": {
+                    "nl": "Te substitueren door een geschikte klasse of datatype."
+                },
+                "ap-label-nl": {
+                    "nl": "Any"
+                },
+                "ap-definition-nl": {
+                    "nl": "Instanties van  om het even welk type."
+                },
+                "ap-usageNote-nl": {
+                    "nl": "Te substitueren door een geschikte klasse of datatype."
+                },
+                "ap-codelist": "",
+                "RawTags": [
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "Instanties van  om het even welk type.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-usageNote-nl",
+                        "value": "Te substitueren door een geschikte klasse of datatype.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "Any",
+                        "note": "null"
+                    },
+                    {
+                        "key": "uri",
+                        "value": "http://www.w3.org/2000/01/rdf-schema#Resource",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "Any",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "name": "Any"
+        },
+        {
             "@id": "http://www.w3.org/2001/XMLSchema#anyURI",
             "@type": "http://www.w3.org/2002/07/owl#Class",
             "inpackage": "OTHER_PACKAGE",
@@ -13192,7 +13272,7 @@
             "@id": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
             "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
             "name": "bemonsterdobject",
-            "inpackage": "UNKNOWN",
+            "inpackage": "OTHER_PACKAGE",
             "definition": {
                 "nl": "Het Grondobject dat wordt bemonsterd."
             },
@@ -13211,8 +13291,8 @@
                 "derived": "false",
                 "EA-Package": "",
                 "EA-Type": "connector",
-                "EA-Domain": "Bemonsteringsobject",
-                "EA-Domain-Guid": "{C684A48D-5F7E-4f30-813C-520EDB9C6EB6}",
+                "EA-Domain": "Boorgat",
+                "EA-Domain-Guid": "{C38DBB1A-EB18-4590-A878-37846E648571}",
                 "EA-Range": "Grondobject",
                 "RangeData": {
                     "EA-Name": "Grondobject",
@@ -13286,8 +13366,8 @@
             "codelist": [],
             "domain": [
                 {
-                    "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature",
-                    "EA-Name": "Bemonsteringsobject"
+                    "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole",
+                    "EA-Name": "Boorgat"
                 }
             ],
             "range": [
@@ -13296,6 +13376,105 @@
                     "EA-GUID": "{EA846113-411A-4178-82F1-41620381EA32}",
                     "EA-Package": "OSLO-Grondboringen",
                     "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondobject"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "1",
+            "maxCardinality": "*"
+        },
+        {
+            "@id": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "bemonsterdobject",
+            "inpackage": "OTHER_PACKAGE",
+            "ap-usageNote-nl": {
+                "nl": "Bv een profiel bemonstert een water- of atmosferische kolom, een peilput bemonstert het water in een watervoerende laag, een weefselstaal bemonstert een deel van een organisme."
+            },
+            "usage": {
+                "nl": "Bv een profiel bemonstert een water- of atmosferische kolom, een peilput bemonstert het water in een watervoerende laag, een weefselstaal bemonstert een deel van een organisme."
+            },
+            "definition": {
+                "nl": "Verwijzing naar het Object dat men wil bemonsteren."
+            },
+            "label": {
+                "nl": "bemonsterdObject"
+            },
+            "ap-label-nl": {
+                "nl": "bemonsterdObject"
+            },
+            "ap-definition-nl": {
+                "nl": "Verwijzing naar het Object dat men wil bemonsteren."
+            },
+            "extra": {
+                "EA-Name": "bemonsterdObject",
+                "EA-Guid": "{C8C224D7-724B-4cc3-B049-8772C12D75C1}",
+                "EA-Package": "OSLO-ObservatiesEnMetingen",
+                "EA-Type": "attribute",
+                "EA-Domain": "Bemonsteringsobject",
+                "EA-Domain-Guid": "{C684A48D-5F7E-4f30-813C-520EDB9C6EB6}",
+                "EA-Range": "Object",
+                "RangeData": {
+                    "EA-Name": "Object",
+                    "EA-GUID": "{2755A4AE-FE29-4950-8975-3C828B732715}",
+                    "EA-Package": "OSLO-ObservatiesEnMetingen",
+                    "uri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature"
+                },
+                "label": {
+                    "nl": "bemonsterdObject"
+                },
+                "definition": {
+                    "nl": "Verwijzing naar het Object dat men wil bemonsteren."
+                },
+                "usage": {
+                    "nl": "Bv een profiel bemonstert een water- of atmosferische kolom, een peilput bemonstert het water in een watervoerende laag, een weefselstaal bemonstert een deel van een organisme."
+                },
+                "ap-label-nl": {
+                    "nl": "bemonsterdObject"
+                },
+                "ap-definition-nl": {
+                    "nl": "Verwijzing naar het Object dat men wil bemonsteren."
+                },
+                "ap-usageNote-nl": {
+                    "nl": "Bv een profiel bemonstert een water- of atmosferische kolom, een peilput bemonstert het water in een watervoerende laag, een weefselstaal bemonstert een deel van een organisme."
+                },
+                "ap-codelist": "",
+                "RawTags": [
+                    {
+                        "key": "uri",
+                        "value": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
+                        "note": "null"
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "bemonsterdObject",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "Verwijzing naar het Object dat men wil bemonsteren.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-usageNote-nl",
+                        "value": "Bv een profiel bemonstert een water- of atmosferische kolom, een peilput bemonstert het water in een watervoerende laag, een weefselstaal bemonstert een deel van een organisme.",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature",
+                    "EA-Name": "Bemonsteringsobject"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Object",
+                    "EA-GUID": "{2755A4AE-FE29-4950-8975-3C828B732715}",
+                    "EA-Package": "OSLO-ObservatiesEnMetingen",
+                    "uri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature"
                 }
             ],
             "generalization": [],

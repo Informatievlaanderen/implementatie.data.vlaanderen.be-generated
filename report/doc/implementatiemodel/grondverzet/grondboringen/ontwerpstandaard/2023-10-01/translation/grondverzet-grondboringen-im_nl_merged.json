@@ -106,8 +106,8 @@
   "contributors-column": "MijnKolom",
   "contributors-file": "stakeholders.csv",
   "diagram": "IM-Grondboringen",
-  "documentcommit": "4edafbffc9dc64f1439483ef0fd52ebfeddf688c",
-  "dummy": "geert35",
+  "documentcommit": "f2e887e04de078c98b9a82a8a08fedfd35d621d8",
+  "dummy": "geert36",
   "eap": "Grondverzet.EAP",
   "editors": [],
   "examples": true,
@@ -8161,8 +8161,8 @@
       },
       "domain": [
         {
-          "EA-Name": "Bemonsteringsobject",
-          "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature"
+          "EA-Name": "Boorgat",
+          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
         }
       ],
       "extra": {
@@ -8188,8 +8188,8 @@
             "value": "NOTE"
           }
         ],
-        "EA-Domain": "Bemonsteringsobject",
-        "EA-Domain-Guid": "{C684A48D-5F7E-4f30-813C-520EDB9C6EB6}",
+        "EA-Domain": "Boorgat",
+        "EA-Domain-Guid": "{C38DBB1A-EB18-4590-A878-37846E648571}",
         "EA-Guid": "{D5BDE302-63FE-49b7-9784-D9ED2BAB7AFD}",
         "EA-Name": "bemonsterdObject",
         "EA-Package": "",
@@ -8244,7 +8244,7 @@
         "usage": ""
       },
       "generalization": [],
-      "inpackage": "UNKNOWN",
+      "inpackage": "OTHER_PACKAGE",
       "label": {
         "nl": "bemonsterdObject"
       },
@@ -8259,6 +8259,106 @@
           "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondobject"
         }
       ]
+    },
+    {
+      "@id": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{C8C224D7-724B-4cc3-B049-8772C12D75C1}",
+      "ap-definition-nl": {
+        "nl": "Verwijzing naar het Object dat men wil bemonsteren."
+      },
+      "ap-label-nl": {
+        "nl": "bemonsterdObject"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Bv een profiel bemonstert een water- of atmosferische kolom, een peilput bemonstert het water in een watervoerende laag, een weefselstaal bemonstert een deel van een organisme."
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Verwijzing naar het Object dat men wil bemonsteren."
+      },
+      "domain": [
+        {
+          "EA-Name": "Bemonsteringsobject",
+          "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Bemonsteringsobject",
+        "EA-Domain-Guid": "{C684A48D-5F7E-4f30-813C-520EDB9C6EB6}",
+        "EA-Guid": "{C8C224D7-724B-4cc3-B049-8772C12D75C1}",
+        "EA-Name": "bemonsterdObject",
+        "EA-Package": "OSLO-ObservatiesEnMetingen",
+        "EA-Range": "Object",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{2755A4AE-FE29-4950-8975-3C828B732715}",
+          "EA-Name": "Object",
+          "EA-Package": "OSLO-ObservatiesEnMetingen",
+          "uri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "bemonsterdObject"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Verwijzing naar het Object dat men wil bemonsteren."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "Bv een profiel bemonstert een water- of atmosferische kolom, een peilput bemonstert het water in een watervoerende laag, een weefselstaal bemonstert een deel van een organisme."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Verwijzing naar het Object dat men wil bemonsteren."
+        },
+        "ap-label-nl": {
+          "nl": "bemonsterdObject"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Bv een profiel bemonstert een water- of atmosferische kolom, een peilput bemonstert het water in een watervoerende laag, een weefselstaal bemonstert een deel van een organisme."
+        },
+        "definition": {
+          "nl": "Verwijzing naar het Object dat men wil bemonsteren."
+        },
+        "label": {
+          "nl": "bemonsterdObject"
+        },
+        "usage": {
+          "nl": "Bv een profiel bemonstert een water- of atmosferische kolom, een peilput bemonstert het water in een watervoerende laag, een weefselstaal bemonstert een deel van een organisme."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "bemonsterdObject"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "1",
+      "name": "bemonsterdobject",
+      "range": [
+        {
+          "EA-GUID": "{2755A4AE-FE29-4950-8975-3C828B732715}",
+          "EA-Name": "Object",
+          "EA-Package": "OSLO-ObservatiesEnMetingen",
+          "uri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature"
+        }
+      ],
+      "usage": {
+        "nl": "Bv een profiel bemonstert een water- of atmosferische kolom, een peilput bemonstert het water in een watervoerende laag, een weefselstaal bemonstert een deel van een organisme."
+      }
     },
     {
       "@id": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.parameter",
@@ -10782,6 +10882,87 @@
       "name": "Curve",
       "usage": {
         "nl": "Dimensie is te verstaan in wiskundige zin: het minimum aantal coördinaten nodig om een willekeurig punt voor te stellen dat deel uitmaakt van de primitieve. In het coördinaatsysteem dat door een Curve zelf gevormd wordt volstaat 1 coördinaat om een punt op de Curve te lokaliseren, bv de afstand langs de Curve vanaf het vertrekpunt. Een Curve heeft een lengte maar geen breedte of hoogte, wat niet wegneemt dat ze door de 3D ruimte kan kronkelen. Curves worden doorgaans voorgesteld door polylijnen, dit zijn sets van opeenvolgende punten waarbij de tussenliggende punten van de Curve bekomen worden dmv interpolatie. Als de interpolatiemethode lineair is krijg je een Lijnstring (een hoekige lijn die de opeenvolgende punten verbindt middels een rechte lijn), andere manieren om te interpoleren resulteren in circulaire bogen, cubic splines, Bézier curves etc (waarbij de controlepunten niet noodzakelijk op de Curve liggen). Een Curve wordt begrensd door zijn begin- en eindpunt."
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#Resource",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{72F67A3D-E2A1-449c-8D39-7493C3E3F717}",
+      "ap-definition-nl": {
+        "nl": "Instanties van  om het even welk type."
+      },
+      "ap-label-nl": {
+        "nl": "Any"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Te substitueren door een geschikte klasse of datatype."
+      },
+      "definition": {
+        "nl": "Instanties van  om het even welk type."
+      },
+      "extra": {
+        "EA-Guid": "{72F67A3D-E2A1-449c-8D39-7493C3E3F717}",
+        "EA-Name": "Any",
+        "EA-Package": "OSLO-ObservatiesEnMetingen",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Instanties van  om het even welk type."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "Te substitueren door een geschikte klasse of datatype."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Any"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2000/01/rdf-schema#Resource"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "Any"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Instanties van  om het even welk type."
+        },
+        "ap-label-nl": {
+          "nl": "Any"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Te substitueren door een geschikte klasse of datatype."
+        },
+        "definition": {
+          "nl": "Instanties van  om het even welk type."
+        },
+        "label": {
+          "nl": "Any"
+        },
+        "parentclasses": "",
+        "usage": {
+          "nl": "Te substitueren door een geschikte klasse of datatype."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Any"
+      },
+      "name": "Any",
+      "usage": {
+        "nl": "Te substitueren door een geschikte klasse of datatype."
       }
     },
     {
@@ -14670,7 +14851,7 @@
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
   "template": "grondverzet-grondboringen-im.j2",
   "title": "Implementatiemodel Grondverzet - Grondboringen",
-  "toolchaincommit": "3802eea55c212747740d4f77865a1367f2c151d3",
+  "toolchaincommit": "c93c013d31dd9d45591bea4ce2e225073af2871a",
   "translation": [
     {
       "language": "nl",

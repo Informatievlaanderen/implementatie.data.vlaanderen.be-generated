@@ -167,6 +167,17 @@
           "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boorgat.bekisting"
         },
         {
+          "sh:class": "https://data.vlaanderen.be/ns/grondboringen#Grondobject",
+          "sh:description": {
+            "nl": "Het Grondobject dat wordt bemonsterd."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "bemonsterdObject"
+          },
+          "sh:path": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature"
+        },
+        {
           "sh:class": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter",
           "sh:description": {
             "nl": "Verwijzing naar de beschrijving van de Boordiameter van het Boorgat."
@@ -262,9 +273,9 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "https://data.vlaanderen.be/ns/grondboringen#Grondobject",
+          "sh:class": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
           "sh:description": {
-            "nl": "Het Grondobject dat wordt bemonsterd."
+            "nl": "Verwijzing naar het Object dat men wil bemonsteren."
           },
           "sh:minCount": "1",
           "sh:name": {
@@ -380,6 +391,13 @@
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.opengis.net/ont/sf#Curve"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#AnyShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2000/01/rdf-schema#Resource"
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01#NaamInNaamruimteShape",
