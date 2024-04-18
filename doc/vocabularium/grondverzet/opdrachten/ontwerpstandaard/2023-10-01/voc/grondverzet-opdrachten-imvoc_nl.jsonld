@@ -5,7 +5,7 @@
     "foaf:mbox": "mailto:info@data.specs.org",
     "foaf:name": "Data Specifications Organisation"
   },
-  "@id": "http://fixme.com",
+  "@id": "https://implementatie.data.vlaanderen.be/ns/opdrachten",
   "@type": "http://www.w3.org/2002/07/owl#Ontology",
   "label": {
     "en": "grondverzet-opdrachten-imvoc",
@@ -36,212 +36,167 @@
   "navigation": {},
   "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
   "publication-date": "2024-03-11",
-  "classes": [
+  "classes": [],
+  "externals": [
     {
-      "@id": "http://fixme.com#RuimtelijkObject",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "name": {
+        "nl": "Opdracht"
+      },
+      "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht",
+      "@type": "rdfs:Class"
+    }
+  ],
+  "properties": [
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/opdrachten#tijdstip",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "label": {
-        "nl": "RuimtelijkObject"
+        "nl": "tijdstip"
       },
       "definition": {
         "nl": "TODO"
       },
-      "parents": [
+      "domain": [
+        "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht"
+      ],
+      "range": [
+        "http://www.w3.org/2006/time#TemporalEntity"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/opdrachten#resultaat",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "label": {
+        "nl": "resultaat"
+      },
+      "definition": {
+        "nl": "TODO"
+      },
+      "domain": [
+        "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht"
+      ],
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Resource"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/opdrachten#referentie",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "label": {
+        "nl": "referentie"
+      },
+      "definition": {
+        "nl": "TODO"
+      },
+      "domain": [
+        "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#anyURI"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/opdrachten#opdrachtnemer",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "label": {
+        "nl": "opdrachtnemer"
+      },
+      "definition": {
+        "nl": "TODO"
+      },
+      "domain": [
+        "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht"
+      ],
+      "range": [
+        "http://purl.org/dc/terms/Agent"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/opdrachten#opdrachtgever",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "label": {
+        "nl": "opdrachtgever"
+      },
+      "definition": {
+        "nl": "TODO"
+      },
+      "domain": [
+        "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht"
+      ],
+      "range": [
+        "http://purl.org/dc/terms/Agent"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/opdrachten#ligging",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "label": {
+        "nl": "ligging"
+      },
+      "definition": {
+        "nl": "TODO"
+      },
+      "domain": [
+        "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht"
+      ],
+      "range": [
         "http://www.w3.org/ns/prov#Location"
-      ]
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/opdrachten#dataleverancier",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "label": {
+        "nl": "dataleverancier"
+      },
+      "definition": {
+        "nl": "TODO"
+      },
+      "domain": [
+        "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht"
+      ],
+      "range": [
+        "http://purl.org/dc/terms/Agent"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/opdrachten#beschrijving",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "label": {
+        "nl": "beschrijving"
+      },
+      "definition": {
+        "nl": "TODO"
+      },
+      "domain": [
+        "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht"
+      ],
+      "range": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+      ],
+      "generalization": []
     }
   ],
-  "externals": [
-    {
-      "name": {
-        "nl": "Geografische Naam"
-      },
-      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": {
-        "nl": "Adresvoorstelling"
-      },
-      "@id": "http://www.w3.org/ns/locn#Address",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": {
-        "nl": "Geometrie"
-      },
-      "@id": "http://www.w3.org/ns/locn#Geometry",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": {
-        "nl": "Locatie"
-      },
-      "@id": "http://www.w3.org/ns/prov#Location",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": {
-        "nl": "Belgisch Adres"
-      },
-      "@id": "https://data.vlaanderen.be/ns/adres#Adres",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": {
-        "nl": "DirectePositie"
-      },
-      "@id": "https://data.vlaanderen.be/ns/generiek#DirectePositie",
-      "@type": "rdfs:Class"
-    }
-  ],
-  "properties": [],
   "externalproperties": [
     {
       "name": {
-        "nl": "opmeting"
+        "nl": "identificator"
       },
-      "@id": "https://data.vlaanderen.be/ns/generiek#DirectePositie.opmeting",
+      "@id": "http://www.w3.org/ns/adms#identifier",
       "@type": "rdf:Property"
     },
     {
       "name": {
-        "nl": "opmeting"
+        "nl": "type"
       },
-      "@id": "https://data.vlaanderen.be/ns/generiek#DirectePositie.opmeting",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "nl": "verwijstNaar"
-      },
-      "@id": "https://data.vlaanderen.be/ns/adres#verwijstNaar",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "nl": "land"
-      },
-      "@id": "https://data.vlaanderen.be/ns/adres#land",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "nl": "gemeentenaam"
-      },
-      "@id": "https://data.vlaanderen.be/ns/adres#gemeentenaam",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "nl": "huisnummer"
-      },
-      "@id": "https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "nl": "busnummer"
-      },
-      "@id": "https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "nl": "straatnaam"
-      },
-      "@id": "http://www.w3.org/ns/locn#thoroughfare",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "nl": "postnaam"
-      },
-      "@id": "http://www.w3.org/ns/locn#postName",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "nl": "postcode"
-      },
-      "@id": "http://www.w3.org/ns/locn#postCode",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "nl": "postbus"
-      },
-      "@id": "http://www.w3.org/ns/locn#poBox",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "nl": "locatienaam"
-      },
-      "@id": "http://www.w3.org/ns/locn#locatorName",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "nl": "locatieaanduiding"
-      },
-      "@id": "http://www.w3.org/ns/locn#locatorDesignator",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "nl": "volledig adres"
-      },
-      "@id": "http://www.w3.org/ns/locn#fullAddress",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "nl": "administratieve eenheid niveau 2"
-      },
-      "@id": "http://www.w3.org/ns/locn#adminUnitL2",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "nl": "administratieve eenheid niveau 1"
-      },
-      "@id": "http://www.w3.org/ns/locn#adminUnitL1",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "nl": "adresgebied"
-      },
-      "@id": "http://www.w3.org/ns/locn#addressArea",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "nl": "wkt"
-      },
-      "@id": "http://www.opengis.net/ont/geosparql#asWKT",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "nl": "wkt"
-      },
-      "@id": "http://www.opengis.net/ont/geosparql#asWKT",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "nl": "gml"
-      },
-      "@id": "http://www.opengis.net/ont/geosparql#asGML",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "nl": "gml"
-      },
-      "@id": "http://www.opengis.net/ont/geosparql#asGML",
+      "@id": "http://purl.org/dc/terms/type",
       "@type": "rdf:Property"
     }
   ],

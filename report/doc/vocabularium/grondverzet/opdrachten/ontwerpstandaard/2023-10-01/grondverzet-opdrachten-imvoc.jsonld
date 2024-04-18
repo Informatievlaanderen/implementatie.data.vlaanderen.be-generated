@@ -76,7 +76,7 @@
             "@id": "rdfs:seeAlso"
         }
     },
-    "@id": "http://fixme.com",
+    "@id": "https://implementatie.data.vlaanderen.be/ns/opdrachten",
     "@type": "http://www.w3.org/2002/07/owl#Ontology",
     "label": {
         "nl": "grondverzet-opdrachten-imvoc",
@@ -88,12 +88,18 @@
         "nl": "TODO"
     },
     "extra": {
-        "EA-Name": "IM-Locaties",
-        "EA-Guid": "{6FA93BE9-5475-45e1-AD4F-E620EEE98CFA}",
+        "EA-Name": "IM-Opdrachten",
+        "EA-Guid": "{CD2B496D-2866-4e2c-A4DA-845EEF604ED9}",
         "title-nl": "TODO",
         "issued": "TODO",
         "license": "TODO",
-        "RawTags": []
+        "RawTags": [
+            {
+                "key": "baseURI",
+                "value": "https://implementatie.data.vlaanderen.be/ns/opdrachten#",
+                "note": "null"
+            }
+        ]
     },
     "authors": [
         {
@@ -115,46 +121,48 @@
     ],
     "editors": [],
     "contributors": [],
-    "classes": [
+    "classes": [],
+    "properties": [
         {
-            "@id": "http://fixme.com#RuimtelijkObject",
-            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "@id": "https://implementatie.data.vlaanderen.be/ns/opdrachten#tijdstip",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "tijdstip",
+            "inpackage": "ACTIVE_PACKAGE",
             "label-nl": {
-                "nl": "RuimtelijkObject"
+                "nl": "tijdstip"
             },
             "definition": {
                 "nl": "TODO"
             },
             "label": {
-                "nl": "RuimtelijkObject"
+                "nl": "tijdstip"
             },
             "definition-nl": {
                 "nl": "TODO"
             },
             "extra": {
-                "EA-Name": "RuimtelijkObject",
-                "EA-Guid": "{5AC434B8-FE7F-4676-B274-70129DD97579}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "CLASS",
-                "EA-Parents": "Locatie",
-                "EA-Parents2": [
-                    {
-                        "name": "Locatie",
-                        "label": "Locatie",
-                        "package": "IM-Locaties",
-                        "uri": "http://www.w3.org/ns/prov#Location"
-                    }
-                ],
-                "parentclasses": "http://www.w3.org/ns/prov#Location",
+                "EA-Name": "tijdstip",
+                "EA-Guid": "{1A983F6B-8C4F-43e2-A9CB-6A6F00CC2817}",
+                "EA-Package": "IM-Opdrachten",
+                "EA-Type": "attribute",
+                "EA-Domain": "Opdracht",
+                "EA-Domain-Guid": "{71A997DD-37D9-4fcd-B71A-5837DABB2846}",
+                "EA-Range": "TemporeleEntiteit",
+                "RangeData": {
+                    "EA-Name": "TemporeleEntiteit",
+                    "EA-GUID": "{60B8DAA9-EC34-4b43-B523-61241721FD77}",
+                    "EA-Package": "W3C-Time",
+                    "uri": "http://www.w3.org/2006/time#TemporalEntity"
+                },
                 "label": {
-                    "nl": "RuimtelijkObject"
+                    "nl": "tijdstip"
                 },
                 "definition": {
                     "nl": "TODO"
                 },
                 "usage": "",
                 "label-nl": {
-                    "nl": "RuimtelijkObject"
+                    "nl": "tijdstip"
                 },
                 "definition-nl": {
                     "nl": "TODO"
@@ -170,7 +178,7 @@
                 "RawTags": [
                     {
                         "key": "label-nl",
-                        "value": "RuimtelijkObject",
+                        "value": "tijdstip",
                         "note": "null"
                     },
                     {
@@ -181,58 +189,68 @@
                 ],
                 "Scope": "FULL_DEFINITON"
             },
-            "inpackage": "ACTIVE_PACKAGE",
-            "name": "Ruimtelijkobject",
-            "parents": [
-                "http://www.w3.org/ns/prov#Location"
-            ]
-        }
-    ],
-    "properties": [],
-    "externals": [
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht",
+                    "EA-Name": "Opdracht"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "TemporeleEntiteit",
+                    "EA-GUID": "{60B8DAA9-EC34-4b43-B523-61241721FD77}",
+                    "EA-Package": "W3C-Time",
+                    "uri": "http://www.w3.org/2006/time#TemporalEntity"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "1",
+            "maxCardinality": "*"
+        },
         {
-            "@id": "http://purl.org/dc/terms/Location",
-            "@type": "http://www.w3.org/2002/07/owl#Class",
-            "inpackage": "OTHER_PACKAGE",
+            "@id": "https://implementatie.data.vlaanderen.be/ns/opdrachten#resultaat",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "resultaat",
+            "inpackage": "ACTIVE_PACKAGE",
             "label-nl": {
-                "nl": "Locatie"
+                "nl": "resultaat"
             },
             "definition": {
-                "nl": "Een ruimtelijk gebied of benoemde plaats."
+                "nl": "TODO"
             },
             "label": {
-                "nl": "Locatie"
+                "nl": "resultaat"
             },
             "definition-nl": {
-                "nl": "Een ruimtelijk gebied of benoemde plaats."
+                "nl": "TODO"
             },
             "extra": {
-                "EA-Name": "Plaats",
-                "EA-Guid": "{5134254E-B3D2-4471-872A-B3E7FC521472}",
-                "EA-Package": "OSLO-Generiek",
-                "EA-Type": "CLASS",
-                "EA-Parents": "Locatie",
-                "EA-Parents2": [
-                    {
-                        "name": "Locatie",
-                        "label": "Locatie",
-                        "package": "IM-Locaties",
-                        "uri": "http://www.w3.org/ns/prov#Location"
-                    }
-                ],
-                "parentclasses": "http://www.w3.org/ns/prov#Location",
+                "EA-Name": "resultaat",
+                "EA-Guid": "{21B097B0-B02C-4abd-9099-7ED253D3D003}",
+                "EA-Package": "IM-Opdrachten",
+                "EA-Type": "attribute",
+                "EA-Domain": "Opdracht",
+                "EA-Domain-Guid": "{71A997DD-37D9-4fcd-B71A-5837DABB2846}",
+                "EA-Range": "Any",
+                "RangeData": {
+                    "EA-Name": "Any",
+                    "EA-GUID": "{72F67A3D-E2A1-449c-8D39-7493C3E3F717}",
+                    "EA-Package": "OSLO-ObservatiesEnMetingen",
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
+                },
                 "label": {
-                    "nl": "Locatie"
+                    "nl": "resultaat"
                 },
                 "definition": {
-                    "nl": "Een ruimtelijk gebied of benoemde plaats."
+                    "nl": "TODO"
                 },
                 "usage": "",
                 "label-nl": {
-                    "nl": "Locatie"
+                    "nl": "resultaat"
                 },
                 "definition-nl": {
-                    "nl": "Een ruimtelijk gebied of benoemde plaats."
+                    "nl": "TODO"
                 },
                 "usageNote-nl": "",
                 "label-en": "",
@@ -244,70 +262,573 @@
                 "sameAs": "",
                 "RawTags": [
                     {
-                        "key": "ap-defition-nl",
-                        "value": "Een ruimtelijk gebied of benoemde plaats.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-label-nl",
-                        "value": "Plaats",
+                        "key": "label-nl",
+                        "value": "resultaat",
                         "note": "null"
                     },
                     {
                         "key": "definition-nl",
-                        "value": "Een ruimtelijk gebied of benoemde plaats.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "Locatie",
-                        "note": "null"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "http://purl.org/dc/terms/Location",
+                        "value": "TODO",
                         "note": "null"
                     }
                 ],
-                "Scope": "NOTHING"
+                "Scope": "FULL_DEFINITON"
             },
-            "name": "Locatie"
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht",
+                    "EA-Name": "Opdracht"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Any",
+                    "EA-GUID": "{72F67A3D-E2A1-449c-8D39-7493C3E3F717}",
+                    "EA-Package": "OSLO-ObservatiesEnMetingen",
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "0",
+            "maxCardinality": "*"
         },
         {
-            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-            "@type": "http://www.w3.org/2002/07/owl#Class",
-            "inpackage": "OTHER_PACKAGE",
+            "@id": "https://implementatie.data.vlaanderen.be/ns/opdrachten#referentie",
+            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+            "name": "referentie",
+            "inpackage": "ACTIVE_PACKAGE",
             "label-nl": {
-                "nl": "Geografische Naam"
+                "nl": "referentie"
+            },
+            "definition": {
+                "nl": "TODO"
             },
             "label": {
-                "nl": "Geografische Naam"
+                "nl": "referentie"
             },
             "definition-nl": {
                 "nl": "TODO"
             },
             "extra": {
-                "EA-Name": "GeografischeNaam",
-                "EA-Guid": "{170C4271-35D8-4c7f-9241-0165A2B3AEEB}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "CLASS",
-                "EA-Parents": "Locatie",
-                "EA-Parents2": [
+                "EA-Name": "referentie",
+                "EA-Guid": "{F2DAB95C-49E6-4469-A8D7-7672EC3014CB}",
+                "EA-Package": "IM-Opdrachten",
+                "EA-Type": "attribute",
+                "EA-Domain": "Opdracht",
+                "EA-Domain-Guid": "{71A997DD-37D9-4fcd-B71A-5837DABB2846}",
+                "EA-Range": "URI",
+                "RangeData": {
+                    "EA-Name": "URI",
+                    "EA-Package": "",
+                    "uri": "http://www.w3.org/2001/XMLSchema#anyURI"
+                },
+                "label": {
+                    "nl": "referentie"
+                },
+                "definition": {
+                    "nl": "TODO"
+                },
+                "usage": "",
+                "label-nl": {
+                    "nl": "referentie"
+                },
+                "definition-nl": {
+                    "nl": "TODO"
+                },
+                "usageNote-nl": "",
+                "label-en": "",
+                "definition-en": "",
+                "usageNote-en": "",
+                "equivalent": "",
+                "subclass": "",
+                "subclass1": "",
+                "sameAs": "",
+                "RawTags": [
                     {
-                        "name": "Locatie",
-                        "label": "Locatie",
-                        "package": "IM-Locaties",
-                        "uri": "http://www.w3.org/ns/prov#Location"
+                        "key": "label-nl",
+                        "value": "referentie",
+                        "note": "null"
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "TODO",
+                        "note": "null"
                     }
                 ],
-                "parentclasses": "http://www.w3.org/ns/prov#Location",
+                "Scope": "FULL_DEFINITON"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht",
+                    "EA-Name": "Opdracht"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "URI",
+                    "EA-Package": "",
+                    "uri": "http://www.w3.org/2001/XMLSchema#anyURI"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "0",
+            "maxCardinality": "*"
+        },
+        {
+            "@id": "https://implementatie.data.vlaanderen.be/ns/opdrachten#opdrachtnemer",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "opdrachtnemer",
+            "inpackage": "ACTIVE_PACKAGE",
+            "label-nl": {
+                "nl": "opdrachtnemer"
+            },
+            "definition": {
+                "nl": "TODO"
+            },
+            "label": {
+                "nl": "opdrachtnemer"
+            },
+            "definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "opdrachtnemer",
+                "EA-Guid": "{0322BD81-66E5-4a84-82F5-EAFE193AF30F}",
+                "EA-Package": "IM-Opdrachten",
+                "EA-Type": "attribute",
+                "EA-Domain": "Opdracht",
+                "EA-Domain-Guid": "{71A997DD-37D9-4fcd-B71A-5837DABB2846}",
+                "EA-Range": "Agent",
+                "RangeData": {
+                    "EA-Name": "Agent",
+                    "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://purl.org/dc/terms/Agent"
+                },
                 "label": {
-                    "nl": "Geografische Naam"
+                    "nl": "opdrachtnemer"
+                },
+                "definition": {
+                    "nl": "TODO"
+                },
+                "usage": "",
+                "label-nl": {
+                    "nl": "opdrachtnemer"
+                },
+                "definition-nl": {
+                    "nl": "TODO"
+                },
+                "usageNote-nl": "",
+                "label-en": "",
+                "definition-en": "",
+                "usageNote-en": "",
+                "equivalent": "",
+                "subclass": "",
+                "subclass1": "",
+                "sameAs": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "opdrachtnemer",
+                        "note": "null"
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "TODO",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "FULL_DEFINITON"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht",
+                    "EA-Name": "Opdracht"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Agent",
+                    "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://purl.org/dc/terms/Agent"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "0",
+            "maxCardinality": "*"
+        },
+        {
+            "@id": "https://implementatie.data.vlaanderen.be/ns/opdrachten#opdrachtgever",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "opdrachtgever",
+            "inpackage": "ACTIVE_PACKAGE",
+            "label-nl": {
+                "nl": "opdrachtgever"
+            },
+            "definition": {
+                "nl": "TODO"
+            },
+            "label": {
+                "nl": "opdrachtgever"
+            },
+            "definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "opdrachtgever",
+                "EA-Guid": "{15160440-66DF-4ec9-A938-E33F0967418C}",
+                "EA-Package": "IM-Opdrachten",
+                "EA-Type": "attribute",
+                "EA-Domain": "Opdracht",
+                "EA-Domain-Guid": "{71A997DD-37D9-4fcd-B71A-5837DABB2846}",
+                "EA-Range": "Agent",
+                "RangeData": {
+                    "EA-Name": "Agent",
+                    "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://purl.org/dc/terms/Agent"
+                },
+                "label": {
+                    "nl": "opdrachtgever"
+                },
+                "definition": {
+                    "nl": "TODO"
+                },
+                "usage": "",
+                "label-nl": {
+                    "nl": "opdrachtgever"
+                },
+                "definition-nl": {
+                    "nl": "TODO"
+                },
+                "usageNote-nl": "",
+                "label-en": "",
+                "definition-en": "",
+                "usageNote-en": "",
+                "equivalent": "",
+                "subclass": "",
+                "subclass1": "",
+                "sameAs": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "opdrachtgever",
+                        "note": "null"
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "TODO",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "FULL_DEFINITON"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht",
+                    "EA-Name": "Opdracht"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Agent",
+                    "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://purl.org/dc/terms/Agent"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "1",
+            "maxCardinality": "1"
+        },
+        {
+            "@id": "https://implementatie.data.vlaanderen.be/ns/opdrachten#ligging",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "ligging",
+            "inpackage": "ACTIVE_PACKAGE",
+            "label-nl": {
+                "nl": "ligging"
+            },
+            "definition": {
+                "nl": "TODO"
+            },
+            "label": {
+                "nl": "ligging"
+            },
+            "definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "ligging",
+                "EA-Guid": "{D9A78301-73F5-4f19-9CB8-6813F1EA8584}",
+                "EA-Package": "IM-Opdrachten",
+                "EA-Type": "attribute",
+                "EA-Domain": "Opdracht",
+                "EA-Domain-Guid": "{71A997DD-37D9-4fcd-B71A-5837DABB2846}",
+                "EA-Range": "Locatie",
+                "RangeData": {
+                    "EA-Name": "Locatie",
+                    "EA-GUID": "{FCF68A7F-66EB-447d-B907-B64B950C22D5}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://www.w3.org/ns/prov#Location"
+                },
+                "label": {
+                    "nl": "ligging"
+                },
+                "definition": {
+                    "nl": "TODO"
+                },
+                "usage": "",
+                "label-nl": {
+                    "nl": "ligging"
+                },
+                "definition-nl": {
+                    "nl": "TODO"
+                },
+                "usageNote-nl": "",
+                "label-en": "",
+                "definition-en": "",
+                "usageNote-en": "",
+                "equivalent": "",
+                "subclass": "",
+                "subclass1": "",
+                "sameAs": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "ligging",
+                        "note": "null"
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "TODO",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "FULL_DEFINITON"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht",
+                    "EA-Name": "Opdracht"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Locatie",
+                    "EA-GUID": "{FCF68A7F-66EB-447d-B907-B64B950C22D5}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://www.w3.org/ns/prov#Location"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "0",
+            "maxCardinality": "*"
+        },
+        {
+            "@id": "https://implementatie.data.vlaanderen.be/ns/opdrachten#dataleverancier",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "dataleverancier",
+            "inpackage": "ACTIVE_PACKAGE",
+            "label-nl": {
+                "nl": "dataleverancier"
+            },
+            "definition": {
+                "nl": "TODO"
+            },
+            "label": {
+                "nl": "dataleverancier"
+            },
+            "definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "dataleverancier",
+                "EA-Guid": "{F4AFEB57-D701-4097-9C4A-AB8D0F8FEDEC}",
+                "EA-Package": "IM-Opdrachten",
+                "EA-Type": "attribute",
+                "EA-Domain": "Opdracht",
+                "EA-Domain-Guid": "{71A997DD-37D9-4fcd-B71A-5837DABB2846}",
+                "EA-Range": "Agent",
+                "RangeData": {
+                    "EA-Name": "Agent",
+                    "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://purl.org/dc/terms/Agent"
+                },
+                "label": {
+                    "nl": "dataleverancier"
+                },
+                "definition": {
+                    "nl": "TODO"
+                },
+                "usage": "",
+                "label-nl": {
+                    "nl": "dataleverancier"
+                },
+                "definition-nl": {
+                    "nl": "TODO"
+                },
+                "usageNote-nl": "",
+                "label-en": "",
+                "definition-en": "",
+                "usageNote-en": "",
+                "equivalent": "",
+                "subclass": "",
+                "subclass1": "",
+                "sameAs": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "dataleverancier",
+                        "note": "null"
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "TODO",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "FULL_DEFINITON"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht",
+                    "EA-Name": "Opdracht"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Agent",
+                    "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://purl.org/dc/terms/Agent"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "0",
+            "maxCardinality": "*"
+        },
+        {
+            "@id": "https://implementatie.data.vlaanderen.be/ns/opdrachten#beschrijving",
+            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+            "name": "beschrijving",
+            "inpackage": "ACTIVE_PACKAGE",
+            "label-nl": {
+                "nl": "beschrijving"
+            },
+            "definition": {
+                "nl": "TODO"
+            },
+            "label": {
+                "nl": "beschrijving"
+            },
+            "definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "beschrijving",
+                "EA-Guid": "{4D3D63E2-CD67-4ffc-A0F1-FEB4731E4034}",
+                "EA-Package": "IM-Opdrachten",
+                "EA-Type": "attribute",
+                "EA-Domain": "Opdracht",
+                "EA-Domain-Guid": "{71A997DD-37D9-4fcd-B71A-5837DABB2846}",
+                "EA-Range": "LangString",
+                "RangeData": {
+                    "EA-Name": "LangString",
+                    "EA-Package": "",
+                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                },
+                "label": {
+                    "nl": "beschrijving"
+                },
+                "definition": {
+                    "nl": "TODO"
+                },
+                "usage": "",
+                "label-nl": {
+                    "nl": "beschrijving"
+                },
+                "definition-nl": {
+                    "nl": "TODO"
+                },
+                "usageNote-nl": "",
+                "label-en": "",
+                "definition-en": "",
+                "usageNote-en": "",
+                "equivalent": "",
+                "subclass": "",
+                "subclass1": "",
+                "sameAs": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "beschrijving",
+                        "note": "null"
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "TODO",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "FULL_DEFINITON"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht",
+                    "EA-Name": "Opdracht"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "LangString",
+                    "EA-Package": "",
+                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "0",
+            "maxCardinality": "1"
+        }
+    ],
+    "externals": [
+        {
+            "@id": "http://purl.org/dc/terms/Agent",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "inpackage": "OTHER_PACKAGE",
+            "label-nl": {
+                "nl": "Agent"
+            },
+            "label": {
+                "nl": "Agent"
+            },
+            "definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "Agent",
+                "EA-Guid": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+                "EA-Package": "OSLO-Generiek",
+                "EA-Type": "CLASS",
+                "EA-Parents": "",
+                "EA-Parents2": [],
+                "parentclasses": "",
+                "label": {
+                    "nl": "Agent"
                 },
                 "definition": "",
                 "usage": "",
                 "label-nl": {
-                    "nl": "Geografische Naam"
+                    "nl": "Agent"
                 },
                 "definition-nl": {
                     "nl": "TODO"
@@ -323,62 +844,128 @@
                 "RawTags": [
                     {
                         "key": "ap-definition-nl",
-                        "value": "Benaming toegekend aan of gebruikt voor een geografisch object.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "Te implementeren als Langstring.",
+                        "value": "Iemand die of iets dat kan handelen of een effect kan teweeg brengen.",
                         "note": "null"
                     },
                     {
                         "key": "label-nl",
-                        "value": "Geografische Naam",
-                        "note": "null"
-                    },
-                    {
-                        "key": "literal",
-                        "value": "true",
+                        "value": "Agent",
                         "note": "null"
                     },
                     {
                         "key": "uri",
-                        "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+                        "value": "http://purl.org/dc/terms/Agent",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-usageNote",
+                        "value": "Meer info over deze klasse in het <a href=\"https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/agents/\">IM-Agents.",
+                        "note": "Meer info over deze klasse in het <a href=\"https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/agents/\">IM-Agents."
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "name": "Agent"
+        },
+        {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Resource",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "inpackage": "OTHER_PACKAGE",
+            "label-nl": {
+                "nl": "Any"
+            },
+            "label": {
+                "nl": "Any"
+            },
+            "definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "Any",
+                "EA-Guid": "{72F67A3D-E2A1-449c-8D39-7493C3E3F717}",
+                "EA-Package": "OSLO-ObservatiesEnMetingen",
+                "EA-Type": "CLASS",
+                "EA-Parents": "",
+                "EA-Parents2": [],
+                "parentclasses": "",
+                "label": {
+                    "nl": "Any"
+                },
+                "definition": "",
+                "usage": "",
+                "label-nl": {
+                    "nl": "Any"
+                },
+                "definition-nl": {
+                    "nl": "TODO"
+                },
+                "usageNote-nl": "",
+                "label-en": "",
+                "definition-en": "",
+                "usageNote-en": "",
+                "equivalent": "",
+                "subclass": "",
+                "subclass1": "",
+                "sameAs": "",
+                "RawTags": [
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "Instanties van  om het even welk type.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-usageNote-nl",
+                        "value": "Te substitueren door een geschikte klasse of datatype.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "Any",
+                        "note": "null"
+                    },
+                    {
+                        "key": "uri",
+                        "value": "http://www.w3.org/2000/01/rdf-schema#Resource",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "Any",
                         "note": "null"
                     }
                 ],
-                "Scope": "TRANSLATIONS_ONLY"
+                "Scope": "NOTHING"
             },
-            "name": "GeografischeNaam"
+            "name": "Any"
         },
         {
             "@id": "http://www.w3.org/2004/02/skos/core#Concept",
             "@type": "http://www.w3.org/2002/07/owl#Class",
             "inpackage": "OTHER_PACKAGE",
             "label-nl": {
-                "nl": "Opmetingmethode"
+                "nl": "OpdrachtType"
             },
             "label": {
-                "nl": "Opmetingmethode"
+                "nl": "OpdrachtType"
             },
             "definition-nl": {
                 "nl": "TODO"
             },
             "extra": {
-                "EA-Name": "Opmetingmethode",
-                "EA-Guid": "{5B873956-B910-4762-9FBA-1A0C9ED8127E}",
-                "EA-Package": "OSLO-Generiek",
+                "EA-Name": "OpdrachtType",
+                "EA-Guid": "{C6B966AD-CA32-4aa7-8EF1-6DAEC66D072E}",
+                "EA-Package": "OSLO-BodemEnOndergrond",
                 "EA-Type": "ENUMERATION",
                 "EA-Parents": "",
                 "EA-Parents2": [],
                 "parentclasses": "",
                 "label": {
-                    "nl": "Opmetingmethode"
+                    "nl": "OpdrachtType"
                 },
                 "definition": "",
                 "usage": "",
                 "label-nl": {
-                    "nl": "Opmetingmethode"
+                    "nl": "OpdrachtType"
                 },
                 "definition-nl": {
                     "nl": "TODO"
@@ -394,7 +981,7 @@
                 "RawTags": [
                     {
                         "key": "label-nl",
-                        "value": "Opmetingmethode",
+                        "value": "OpdrachtType",
                         "note": "null"
                     },
                     {
@@ -405,43 +992,43 @@
                 ],
                 "Scope": "NOTHING"
             },
-            "name": "Opmetingmethode"
+            "name": "Opdrachttype"
         },
         {
-            "@id": "http://www.w3.org/ns/locn#Address",
+            "@id": "http://www.w3.org/2006/time#Instant",
             "@type": "http://www.w3.org/2002/07/owl#Class",
             "inpackage": "OTHER_PACKAGE",
             "label-nl": {
-                "nl": "Adresvoorstelling"
+                "nl": "Moment"
             },
             "label": {
-                "nl": "Adresvoorstelling"
+                "nl": "Moment"
             },
             "definition-nl": {
                 "nl": "TODO"
             },
             "extra": {
-                "EA-Name": "Adresvoorstelling",
-                "EA-Guid": "{FB0B809C-F09C-4051-AC02-8B9AB42E4003}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "CLASS",
-                "EA-Parents": "Locatie",
+                "EA-Name": "Moment",
+                "EA-Guid": "{17A76449-20D9-49c7-A43A-100B7928C0F5}",
+                "EA-Package": "W3C-Time",
+                "EA-Type": "DATATYPE",
+                "EA-Parents": "TemporeleEntiteit",
                 "EA-Parents2": [
                     {
-                        "name": "Locatie",
-                        "label": "Locatie",
-                        "package": "IM-Locaties",
-                        "uri": "http://www.w3.org/ns/prov#Location"
+                        "name": "TemporeleEntiteit",
+                        "label": "TemporeleEntiteit",
+                        "package": "W3C-Time",
+                        "uri": "http://www.w3.org/2006/time#TemporalEntity"
                     }
                 ],
-                "parentclasses": "http://www.w3.org/ns/prov#Location",
+                "parentclasses": "http://www.w3.org/2006/time#TemporalEntity",
                 "label": {
-                    "nl": "Adresvoorstelling"
+                    "nl": "Moment"
                 },
                 "definition": "",
                 "usage": "",
                 "label-nl": {
-                    "nl": "Adresvoorstelling"
+                    "nl": "Moment"
                 },
                 "definition-nl": {
                     "nl": "TODO"
@@ -456,75 +1043,182 @@
                 "sameAs": "",
                 "RawTags": [
                     {
+                        "key": "label-nl",
+                        "value": "Moment",
+                        "note": "null"
+                    },
+                    {
+                        "key": "uri",
+                        "value": "http://www.w3.org/2006/time#Instant",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "name": "Moment"
+        },
+        {
+            "@id": "http://www.w3.org/2006/time#ProperInterval",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "inpackage": "OTHER_PACKAGE",
+            "label-nl": {
+                "nl": "Periode"
+            },
+            "label": {
+                "nl": "Periode"
+            },
+            "definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "Periode",
+                "EA-Guid": "{859C2F4C-3B1B-4b2c-9441-CFD05207C5DD}",
+                "EA-Package": "W3C-Time",
+                "EA-Type": "DATATYPE",
+                "EA-Parents": "TemporeleEntiteit",
+                "EA-Parents2": [
+                    {
+                        "name": "TemporeleEntiteit",
+                        "label": "TemporeleEntiteit",
+                        "package": "W3C-Time",
+                        "uri": "http://www.w3.org/2006/time#TemporalEntity"
+                    }
+                ],
+                "parentclasses": "http://www.w3.org/2006/time#TemporalEntity",
+                "label": {
+                    "nl": "Periode"
+                },
+                "definition": "",
+                "usage": "",
+                "label-nl": {
+                    "nl": "Periode"
+                },
+                "definition-nl": {
+                    "nl": "TODO"
+                },
+                "usageNote-nl": "",
+                "label-en": "",
+                "definition-en": "",
+                "usageNote-en": "",
+                "equivalent": "",
+                "subclass": "",
+                "subclass1": "",
+                "sameAs": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "Periode",
+                        "note": "null"
+                    },
+                    {
+                        "key": "uri",
+                        "value": "http://www.w3.org/2006/time#ProperInterval",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "name": "Periode"
+        },
+        {
+            "@id": "http://www.w3.org/2006/time#TemporalEntity",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "inpackage": "OTHER_PACKAGE",
+            "label-nl": {
+                "nl": "TemporeleEntiteit"
+            },
+            "label": {
+                "nl": "TemporeleEntiteit"
+            },
+            "definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "TemporeleEntiteit",
+                "EA-Guid": "{60B8DAA9-EC34-4b43-B523-61241721FD77}",
+                "EA-Package": "W3C-Time",
+                "EA-Type": "DATATYPE",
+                "EA-Parents": "",
+                "EA-Parents2": [],
+                "parentclasses": "",
+                "label": {
+                    "nl": "TemporeleEntiteit"
+                },
+                "definition": "",
+                "usage": "",
+                "label-nl": {
+                    "nl": "TemporeleEntiteit"
+                },
+                "definition-nl": {
+                    "nl": "TODO"
+                },
+                "usageNote-nl": "",
+                "label-en": "",
+                "definition-en": "",
+                "usageNote-en": "",
+                "equivalent": "",
+                "subclass": "",
+                "subclass1": "",
+                "sameAs": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "TemporeleEntiteit",
+                        "note": "null"
+                    },
+                    {
                         "key": "ap-definition-nl",
-                        "value": "Meer leesbare voorstelling met enkel de basisgegevens van het adres,bedoeld voor het gebruik van een adres als attribuut van een ander object.",
-                        "note": " "
+                        "value": "Abstracte klasse voor temporele objecten.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "uri",
+                        "value": "http://www.w3.org/2006/time#TemporalEntity",
+                        "note": "null"
                     },
                     {
                         "key": "ap-usageNote-nl",
                         "value": "NOTE",
-                        "note": "Bv als attribuut ve persoon of gebouw... De adresvoorstelling heeft niet enkel betrekking op Belgische adressen, ze kan gebruikt worden om buitenlandse adressen weer te geven (waar mogelijk andere adresaanduidingen dan huisnummer of busnummer worden gebruikt of waar adrescomponenten zoals adresgebieden voorkomen)."
+                        "note": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn."
                     },
                     {
-                        "key": "isCollection",
-                        "value": "false",
-                        "note": "Values: true,false\r\nDefault: false\r\nDescription: Identifies the class as a collection\r\n"
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "Adresvoorstelling",
-                        "note": "null"
-                    },
-                    {
-                        "key": "noPropertyType",
-                        "value": "false",
-                        "note": "Values: true,false\r\nDefault: false\r\nDescription: Suppress creation of a named complex type ( property type ) that supports inline or byReference encoding\r\n"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "http://www.w3.org/ns/locn#Address",
+                        "key": "ap-label-nl",
+                        "value": "TemporeleEntiteit",
                         "note": "null"
                     }
                 ],
-                "Scope": "TRANSLATIONS_ONLY"
+                "Scope": "NOTHING"
             },
-            "name": "Adresvoorstelling"
+            "name": "Temporeleentiteit"
         },
         {
-            "@id": "http://www.w3.org/ns/locn#Geometry",
+            "@id": "http://www.w3.org/ns/adms#Identifier",
             "@type": "http://www.w3.org/2002/07/owl#Class",
             "inpackage": "OTHER_PACKAGE",
             "label-nl": {
-                "nl": "Geometrie"
+                "nl": "Identificator"
             },
             "label": {
-                "nl": "Geometrie"
+                "nl": "Identificator"
             },
             "definition-nl": {
                 "nl": "TODO"
             },
             "extra": {
-                "EA-Name": "Geometrie",
-                "EA-Guid": "{E2B0BCB9-B3C9-4d71-8739-CDFD72ECCE78}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "CLASS",
-                "EA-Parents": "Locatie",
-                "EA-Parents2": [
-                    {
-                        "name": "Locatie",
-                        "label": "Locatie",
-                        "package": "IM-Locaties",
-                        "uri": "http://www.w3.org/ns/prov#Location"
-                    }
-                ],
-                "parentclasses": "http://www.w3.org/ns/prov#Location",
+                "EA-Name": "Identificator",
+                "EA-Guid": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+                "EA-Package": "OSLO-Generiek",
+                "EA-Type": "DATATYPE",
+                "EA-Parents": "",
+                "EA-Parents2": [],
+                "parentclasses": "",
                 "label": {
-                    "nl": "Geometrie"
+                    "nl": "Identificator"
                 },
                 "definition": "",
                 "usage": "",
                 "label-nl": {
-                    "nl": "Geometrie"
+                    "nl": "Identificator"
                 },
                 "definition-nl": {
                     "nl": "TODO"
@@ -540,23 +1234,28 @@
                 "RawTags": [
                     {
                         "key": "ap-definition-nl",
-                        "value": "Vorm- en positiekenmerken van een object.",
+                        "value": "Informatie gebruikt om een object uniek te identificeren.",
                         "note": "null"
                     },
                     {
+                        "key": "ap-usageNote-nl",
+                        "value": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem.",
+                        "note": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem."
+                    },
+                    {
                         "key": "label-nl",
-                        "value": "Geometrie",
+                        "value": "Identificator",
                         "note": "null"
                     },
                     {
                         "key": "uri",
-                        "value": "http://www.w3.org/ns/locn#Geometry",
+                        "value": "http://www.w3.org/ns/adms#Identifier",
                         "note": "null"
                     }
                 ],
-                "Scope": "TRANSLATIONS_ONLY"
+                "Scope": "NOTHING"
             },
-            "name": "Geometrie"
+            "name": "Identificator"
         },
         {
             "@id": "http://www.w3.org/ns/prov#Location",
@@ -573,12 +1272,19 @@
             },
             "extra": {
                 "EA-Name": "Locatie",
-                "EA-Guid": "{EEB74515-3815-445e-98FE-CC55D98AE659}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "CLASS",
+                "EA-Guid": "{FCF68A7F-66EB-447d-B907-B64B950C22D5}",
+                "EA-Package": "OSLO-Generiek",
+                "EA-Type": "DATATYPE",
                 "EA-Parents": "",
-                "EA-Parents2": [],
-                "parentclasses": "",
+                "EA-Parents2": [
+                    {
+                        "name": "Dekking",
+                        "label": "Dekking",
+                        "package": "DublinCore",
+                        "uri": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Dekking"
+                    }
+                ],
+                "parentclasses": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Dekking",
                 "label": {
                     "nl": "Locatie"
                 },
@@ -601,13 +1307,13 @@
                 "RawTags": [
                     {
                         "key": "ap-definition-nl",
-                        "value": "Aanduiding van een geografische positie,dmv coördinaten,een toponiem,een adreslabel,een verwijzing naar een plaats/regio of verwijzing naar een adres.",
+                        "value": "Aanduiding van een geografische positie, dmv coördinaten, een toponiem, een adreslabel, een verwijzing naar een plaats/regio of verwijzing naar een adres.",
                         "note": "null"
                     },
                     {
                         "key": "ap-usageNote-nl",
                         "value": "NOTE",
-                        "note": "Te gebruiken als de manier waarop de geografische positie wordt aangeduid pas zal worden vastgelegd bij implementatie. Is deze manier nu al gekend dan moet dit datatype gesubstitueerd worden door klassen of datatypes zoals Geometrie, GeografischeNaam, Adres etc."
+                        "note": "Te gebruiken als de manier waarop de geografische positie wordt aangeduid pas zal worden vastgelegd bij implementatie. Is deze manier nu al gekend dan moet dit datatype gesubstitueerd worden door klassen of datatypes zoals Geometrie, GeografischeNaam, Adres etc. Meer info over deze klasse in het <a href=\"https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/locaties/\">IM-Agents."
                     },
                     {
                         "key": "label-nl",
@@ -620,53 +1326,130 @@
                         "note": "null"
                     }
                 ],
-                "Scope": "TRANSLATIONS_ONLY"
+                "Scope": "NOTHING"
             },
             "name": "Locatie"
         },
         {
-            "@id": "https://data.vlaanderen.be/ns/adres#Adres",
+            "@id": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht",
             "@type": "http://www.w3.org/2002/07/owl#Class",
             "inpackage": "OTHER_PACKAGE",
             "label-nl": {
-                "nl": "Belgisch Adres"
+                "nl": "Opdracht"
+            },
+            "usage": {
+                "nl": "In deze context de taak om Observaties of Bemonsteringen uit te voeren."
+            },
+            "usageNote-nl": {
+                "nl": "In deze context de taak om Observaties of Bemonsteringen uit te voeren."
             },
             "definition": {
-                "nl": "Informatie die toelaat om in België op een gestructureerde en unieke manier te verwijzen naar een \"gebouweenheid\", \"gebouw\", een ligplaats, een standplaats of een perceel op basis van de naam van de gemeente, de straatnaam en het huisnummer eventueel aangevuld met een busnummer en met een postcode."
+                "nl": "Toegewezen taak."
             },
             "label": {
-                "nl": "Belgisch Adres"
+                "nl": "Opdracht"
             },
             "definition-nl": {
-                "nl": "Informatie die toelaat om in België op een gestructureerde en unieke manier te verwijzen naar een \"gebouweenheid\", \"gebouw\", een ligplaats, een standplaats of een perceel op basis van de naam van de gemeente, de straatnaam en het huisnummer eventueel aangevuld met een busnummer en met een postcode."
+                "nl": "Toegewezen taak."
             },
             "extra": {
-                "EA-Name": "Adres",
-                "EA-Guid": "{B649B65C-15E9-451b-8907-5F26F77223D7}",
-                "EA-Package": "IM-Locaties",
+                "EA-Name": "Opdracht",
+                "EA-Guid": "{71A997DD-37D9-4fcd-B71A-5837DABB2846}",
+                "EA-Package": "IM-Opdrachten",
                 "EA-Type": "CLASS",
-                "EA-Parents": "Locatie",
-                "EA-Parents2": [
-                    {
-                        "name": "Locatie",
-                        "label": "Locatie",
-                        "package": "IM-Locaties",
-                        "uri": "http://www.w3.org/ns/prov#Location"
-                    }
-                ],
-                "parentclasses": "http://www.w3.org/ns/prov#Location",
+                "EA-Parents": "",
+                "EA-Parents2": [],
+                "parentclasses": "",
                 "label": {
-                    "nl": "Belgisch Adres"
+                    "nl": "Opdracht"
                 },
                 "definition": {
-                    "nl": "Informatie die toelaat om in België op een gestructureerde en unieke manier te verwijzen naar een \"gebouweenheid\", \"gebouw\", een ligplaats, een standplaats of een perceel op basis van de naam van de gemeente, de straatnaam en het huisnummer eventueel aangevuld met een busnummer en met een postcode."
+                    "nl": "Toegewezen taak."
                 },
-                "usage": "",
+                "usage": {
+                    "nl": "In deze context de taak om Observaties of Bemonsteringen uit te voeren."
+                },
                 "label-nl": {
-                    "nl": "Belgisch Adres"
+                    "nl": "Opdracht"
                 },
                 "definition-nl": {
-                    "nl": "Informatie die toelaat om in België op een gestructureerde en unieke manier te verwijzen naar een \"gebouweenheid\", \"gebouw\", een ligplaats, een standplaats of een perceel op basis van de naam van de gemeente, de straatnaam en het huisnummer eventueel aangevuld met een busnummer en met een postcode."
+                    "nl": "Toegewezen taak."
+                },
+                "usageNote-nl": {
+                    "nl": "In deze context de taak om Observaties of Bemonsteringen uit te voeren."
+                },
+                "label-en": "",
+                "definition-en": "",
+                "usageNote-en": "",
+                "equivalent": "",
+                "subclass": "",
+                "subclass1": "",
+                "sameAs": "",
+                "RawTags": [
+                    {
+                        "key": "definition-nl",
+                        "value": "Toegewezen taak.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "Opdracht",
+                        "note": "null"
+                    },
+                    {
+                        "key": "usageNote-nl",
+                        "value": "In deze context de taak om Observaties of Bemonsteringen uit te voeren.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "uri",
+                        "value": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "TRANSLATIONS_ONLY"
+            },
+            "name": "Opdracht"
+        }
+    ],
+    "externalproperties": [
+        {
+            "@id": "http://www.w3.org/ns/adms#schemaAgency",
+            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+            "name": "toegekenddoorstring",
+            "inpackage": "OTHER_PACKAGE",
+            "label-nl": {
+                "nl": "toegekendDoorString"
+            },
+            "label": {
+                "nl": "toegekendDoorString"
+            },
+            "definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "toegekendDoorString",
+                "EA-Guid": "{A4CB330C-3849-4f95-88CC-6933EA5B6FA4}",
+                "EA-Package": "OSLO-Generiek",
+                "EA-Type": "attribute",
+                "EA-Domain": "Identificator",
+                "EA-Domain-Guid": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+                "EA-Range": "String",
+                "RangeData": {
+                    "EA-Name": "String",
+                    "EA-Package": "",
+                    "uri": "http://www.w3.org/2001/XMLSchema#string"
+                },
+                "label": {
+                    "nl": "toegekendDoorString"
+                },
+                "definition": "",
+                "usage": "",
+                "label-nl": {
+                    "nl": "toegekendDoorString"
+                },
+                "definition-nl": {
+                    "nl": "TODO"
                 },
                 "usageNote-nl": "",
                 "label-en": "",
@@ -678,151 +1461,86 @@
                 "sameAs": "",
                 "RawTags": [
                     {
-                        "key": "ap-definition-nl",
-                        "value": "Informatie die toelaat om op een gestructureerde en unieke manier te verwijzen naar een gebouweenheid,een ligplaats,een standplaats of een perceel op basis van een gemeentenaam,een straatnaam,een huisnummer en eventueel een busnummer en een postcode.",
-                        "note": " "
-                    },
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "NOTE",
-                        "note": "De definitie heeft betrekking op Belgische adressen. In andere landen kan een adres eventueel verwijzen naar andere geografisch objecten (niet gebouweenheid of perceel) of bestaan uit andere aanduidingen (verschillend van huisnummer en busnummer) of uit andere componenten dan straatnaam, gemeentenaam of postcode. Alternatieve adresaanduidingen dan huisnummer of busnummer (bv ingangaanduiding, trapaanduiding, verdiepaanduiding...) of een gebouwnaam of kamernaam ed zijn mogelijk dmv een associatie met adresuitbreiding. Uitwisseling van buitenlandse adressen moet gebeuren mbv het object adresvoorstelling."
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "NOTE",
-                        "note": "Informatie die toelaat om in België op een gestructureerde en unieke manier te verwijzen naar een \"gebouweenheid\", \"gebouw\", een ligplaats, een standplaats of een perceel op basis van de naam van de gemeente, de straatnaam en het huisnummer eventueel aangevuld met een busnummer en met een postcode."
+                        "key": "uri",
+                        "value": "http://www.w3.org/ns/adms#schemaAgency",
+                        "note": "null"
                     },
                     {
                         "key": "label-nl",
-                        "value": "Belgisch Adres",
-                        "note": "x"
+                        "value": "toegekendDoorString",
+                        "note": "null"
                     },
                     {
-                        "key": "uri",
-                        "value": "https://data.vlaanderen.be/ns/adres#Adres",
+                        "key": "ap-label-nl",
+                        "value": "toegekend door (String)",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "Naam vd agent die de identificator heeft toegekend.",
                         "note": "null"
                     }
                 ],
-                "Scope": "TRANSLATIONS_ONLY"
+                "Scope": "NOTHING"
             },
-            "name": "BelgischAdres"
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "http://www.w3.org/ns/adms#Identifier",
+                    "EA-Name": "Identificator"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "String",
+                    "EA-Package": "",
+                    "uri": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "0",
+            "maxCardinality": "1"
         },
         {
-            "@id": "https://data.vlaanderen.be/ns/generiek#DirectePositie",
-            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "@id": "http://www.w3.org/ns/adms#identifier",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "identificator",
             "inpackage": "OTHER_PACKAGE",
             "label-nl": {
-                "nl": "DirectePositie"
-            },
-            "usage": {
-                "nl": "Typisch gebruikt om de geometrie van een ruimtelijk object te beschrijven of de geometrische primitieven (bv punt, Lijn, Vlak...) waaruit dat object is samengesteld. Een DirectePositie kan echter ook op zichzelf staan om een positie in de ruimte te beschrijven. De positie wordt gegeven in een coördinaatreferentiesysteem. Dat referentiesysteem wordt expliciet bij de DirectePositie opgegeven, tenzij deze deel uitmaakt van een ruimtelijk object (bv een geometrische primitieve) waar al een referentiesysteem wordt vermeld. Ter info: Een coördinaatreferentiesysteem verschilt van een indirect ruimtelijk referentiesysteem in die zin dat posities direct dmv coördinaten worden opgegeven ipv indirect door een adres of plaatsnaam."
-            },
-            "usageNote-nl": {
-                "nl": "Typisch gebruikt om de geometrie van een ruimtelijk object te beschrijven of de geometrische primitieven (bv punt, Lijn, Vlak...) waaruit dat object is samengesteld. Een DirectePositie kan echter ook op zichzelf staan om een positie in de ruimte te beschrijven. De positie wordt gegeven in een coördinaatreferentiesysteem. Dat referentiesysteem wordt expliciet bij de DirectePositie opgegeven, tenzij deze deel uitmaakt van een ruimtelijk object (bv een geometrische primitieve) waar al een referentiesysteem wordt vermeld. Ter info: Een coördinaatreferentiesysteem verschilt van een indirect ruimtelijk referentiesysteem in die zin dat posities direct dmv coördinaten worden opgegeven ipv indirect door een adres of plaatsnaam."
+                "nl": "identificator"
             },
             "definition": {
-                "nl": "Houder van de coördinaten van een positie in een coördinaatreferentiesysteem."
+                "nl": "TODO"
             },
             "label": {
-                "nl": "DirectePositie"
-            },
-            "definition-nl": {
-                "nl": "Houder van de coördinaten van een positie in een coördinaatreferentiesysteem."
-            },
-            "extra": {
-                "EA-Name": "DirectePositie",
-                "EA-Guid": "{62B4D9BF-3579-43fb-824E-FA0232D35F39}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "CLASS",
-                "EA-Parents": "Locatie",
-                "EA-Parents2": [
-                    {
-                        "name": "Locatie",
-                        "label": "Locatie",
-                        "package": "IM-Locaties",
-                        "uri": "http://www.w3.org/ns/prov#Location"
-                    }
-                ],
-                "parentclasses": "http://www.w3.org/ns/prov#Location",
-                "label": {
-                    "nl": "DirectePositie"
-                },
-                "definition": {
-                    "nl": "Houder van de coördinaten van een positie in een coördinaatreferentiesysteem."
-                },
-                "usage": {
-                    "nl": "Typisch gebruikt om de geometrie van een ruimtelijk object te beschrijven of de geometrische primitieven (bv punt, Lijn, Vlak...) waaruit dat object is samengesteld. Een DirectePositie kan echter ook op zichzelf staan om een positie in de ruimte te beschrijven. De positie wordt gegeven in een coördinaatreferentiesysteem. Dat referentiesysteem wordt expliciet bij de DirectePositie opgegeven, tenzij deze deel uitmaakt van een ruimtelijk object (bv een geometrische primitieve) waar al een referentiesysteem wordt vermeld. Ter info: Een coördinaatreferentiesysteem verschilt van een indirect ruimtelijk referentiesysteem in die zin dat posities direct dmv coördinaten worden opgegeven ipv indirect door een adres of plaatsnaam."
-                },
-                "label-nl": {
-                    "nl": "DirectePositie"
-                },
-                "definition-nl": {
-                    "nl": "Houder van de coördinaten van een positie in een coördinaatreferentiesysteem."
-                },
-                "usageNote-nl": {
-                    "nl": "Typisch gebruikt om de geometrie van een ruimtelijk object te beschrijven of de geometrische primitieven (bv punt, Lijn, Vlak...) waaruit dat object is samengesteld. Een DirectePositie kan echter ook op zichzelf staan om een positie in de ruimte te beschrijven. De positie wordt gegeven in een coördinaatreferentiesysteem. Dat referentiesysteem wordt expliciet bij de DirectePositie opgegeven, tenzij deze deel uitmaakt van een ruimtelijk object (bv een geometrische primitieve) waar al een referentiesysteem wordt vermeld. Ter info: Een coördinaatreferentiesysteem verschilt van een indirect ruimtelijk referentiesysteem in die zin dat posities direct dmv coördinaten worden opgegeven ipv indirect door een adres of plaatsnaam."
-                },
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "definition-nl",
-                        "value": "Houder van de coördinaten van een positie in een coördinaatreferentiesysteem.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "DirectePositie",
-                        "note": "null"
-                    },
-                    {
-                        "key": "usageNote-nl",
-                        "value": "NOTE",
-                        "note": "Typisch gebruikt om de geometrie van een ruimtelijk object te beschrijven of de geometrische primitieven (bv punt, Lijn, Vlak...) waaruit dat object is samengesteld. Een DirectePositie kan echter ook op zichzelf staan om een positie in de ruimte te beschrijven. De positie wordt gegeven in een coördinaatreferentiesysteem. Dat referentiesysteem wordt expliciet bij de DirectePositie opgegeven, tenzij deze deel uitmaakt van een ruimtelijk object (bv een geometrische primitieve) waar al een referentiesysteem wordt vermeld. Ter info: Een coördinaatreferentiesysteem verschilt van een indirect ruimtelijk referentiesysteem in die zin dat posities direct dmv coördinaten worden opgegeven ipv indirect door een adres of plaatsnaam."
-                    },
-                    {
-                        "key": "uri",
-                        "value": "https://data.vlaanderen.be/ns/generiek#DirectePositie",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "name": "Directepositie"
-        },
-        {
-            "@id": "https://data.vlaanderen.be/ns/generiek#Opmeting",
-            "@type": "http://www.w3.org/2002/07/owl#Class",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "Opmeting"
-            },
-            "label": {
-                "nl": "Opmeting"
+                "nl": "identificator"
             },
             "definition-nl": {
                 "nl": "TODO"
             },
             "extra": {
-                "EA-Name": "Opmeting",
-                "EA-Guid": "{BFD25136-77A8-41d2-A135-26FA75EC9287}",
-                "EA-Package": "OSLO-Generiek",
-                "EA-Type": "DATATYPE",
-                "EA-Parents": "",
-                "EA-Parents2": [],
-                "parentclasses": "",
-                "label": {
-                    "nl": "Opmeting"
+                "EA-Name": "identificator",
+                "EA-Guid": "{3DED8582-0FFB-4bde-B67C-73A250506CEB}",
+                "EA-Package": "IM-Opdrachten",
+                "EA-Type": "attribute",
+                "EA-Domain": "Opdracht",
+                "EA-Domain-Guid": "{71A997DD-37D9-4fcd-B71A-5837DABB2846}",
+                "EA-Range": "Identificator",
+                "RangeData": {
+                    "EA-Name": "Identificator",
+                    "EA-GUID": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://www.w3.org/ns/adms#Identifier"
                 },
-                "definition": "",
+                "label": {
+                    "nl": "identificator"
+                },
+                "definition": {
+                    "nl": "TODO"
+                },
                 "usage": "",
                 "label-nl": {
-                    "nl": "Opmeting"
+                    "nl": "identificator"
                 },
                 "definition-nl": {
                     "nl": "TODO"
@@ -838,45 +1556,571 @@
                 "RawTags": [
                     {
                         "key": "label-nl",
-                        "value": "Opmeting",
+                        "value": "identificator",
                         "note": "null"
                     },
                     {
-                        "key": "ap-definition-nl",
-                        "value": "Het bepalen van de precieze omvang van iets door het te meten.",
+                        "key": "definition-nl",
+                        "value": "TODO",
+                        "note": "null"
+                    },
+                    {
+                        "key": "uri",
+                        "value": "http://www.w3.org/ns/adms#identifier",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "TRANSLATIONS_ONLY"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht",
+                    "EA-Name": "Opdracht"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Identificator",
+                    "EA-GUID": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+                    "EA-Package": "OSLO-Generiek",
+                    "uri": "http://www.w3.org/ns/adms#Identifier"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "0",
+            "maxCardinality": "*"
+        },
+        {
+            "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+            "name": "inxsddatetime",
+            "inpackage": "OTHER_PACKAGE",
+            "label-nl": {
+                "nl": "inXSDDateTime"
+            },
+            "label": {
+                "nl": "inXSDDateTime"
+            },
+            "definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "inXSDDateTime",
+                "EA-Guid": "{4DE58BB1-2BB6-4c78-91EF-4C6629261107}",
+                "EA-Package": "W3C-Time",
+                "EA-Type": "attribute",
+                "EA-Domain": "Moment",
+                "EA-Domain-Guid": "{17A76449-20D9-49c7-A43A-100B7928C0F5}",
+                "EA-Range": "DateTime",
+                "RangeData": {
+                    "EA-Name": "DateTime",
+                    "EA-Package": "",
+                    "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+                },
+                "label": {
+                    "nl": "inXSDDateTime"
+                },
+                "definition": "",
+                "usage": "",
+                "label-nl": {
+                    "nl": "inXSDDateTime"
+                },
+                "definition-nl": {
+                    "nl": "TODO"
+                },
+                "usageNote-nl": "",
+                "label-en": "",
+                "definition-en": "",
+                "usageNote-en": "",
+                "equivalent": "",
+                "subclass": "",
+                "subclass1": "",
+                "sameAs": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "inXSDDateTime",
+                        "note": "null"
+                    },
+                    {
+                        "key": "uri",
+                        "value": "http://www.w3.org/2006/time#inXSDDateTime",
                         "note": "null"
                     }
                 ],
                 "Scope": "NOTHING"
             },
-            "name": "Opmeting"
-        }
-    ],
-    "externalproperties": [
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "http://www.w3.org/2006/time#Instant",
+                    "EA-Name": "Moment"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "DateTime",
+                    "EA-Package": "",
+                    "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "1",
+            "maxCardinality": "1"
+        },
         {
-            "@id": "https://data.vlaanderen.be/ns/generiek#Opmeting.uitgevoerdDoor",
+            "@id": "http://www.w3.org/2006/time#hasEnd",
             "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-            "name": "uitgevoerddoor",
+            "name": "tot",
             "inpackage": "OTHER_PACKAGE",
             "label-nl": {
-                "nl": "uitgevoerdDoor"
-            },
-            "definition": {
-                "nl": "Agent die de Opmeting heeft uitgevoerd."
+                "nl": "tot"
             },
             "label": {
-                "nl": "uitgevoerdDoor"
+                "nl": "tot"
             },
             "definition-nl": {
-                "nl": "Agent die de Opmeting heeft uitgevoerd."
+                "nl": "TODO"
             },
             "extra": {
-                "EA-Name": "uitgevoerdDoor",
-                "EA-Guid": "{EB48EB0C-3E46-48a0-9276-AB2492ECD655}",
+                "EA-Name": "^tot",
+                "EA-Guid": "{381DAA11-49A2-4f6d-AB13-0B345E1A3F16}",
+                "EA-Package": "W3C-Time",
+                "EA-Type": "attribute",
+                "EA-Domain": "Periode",
+                "EA-Domain-Guid": "{859C2F4C-3B1B-4b2c-9441-CFD05207C5DD}",
+                "EA-Range": "Moment",
+                "RangeData": {
+                    "EA-Name": "Moment",
+                    "EA-GUID": "{17A76449-20D9-49c7-A43A-100B7928C0F5}",
+                    "EA-Package": "W3C-Time",
+                    "uri": "http://www.w3.org/2006/time#Instant"
+                },
+                "label": {
+                    "nl": "tot"
+                },
+                "definition": "",
+                "usage": "",
+                "label-nl": {
+                    "nl": "tot"
+                },
+                "definition-nl": {
+                    "nl": "TODO"
+                },
+                "usageNote-nl": "",
+                "label-en": "",
+                "definition-en": "",
+                "usageNote-en": "",
+                "equivalent": "",
+                "subclass": "",
+                "subclass1": "",
+                "sameAs": "",
+                "RawTags": [
+                    {
+                        "key": "uri",
+                        "value": "http://www.w3.org/2006/time#hasEnd",
+                        "note": "null"
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "tot",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "http://www.w3.org/2006/time#ProperInterval",
+                    "EA-Name": "Periode"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Moment",
+                    "EA-GUID": "{17A76449-20D9-49c7-A43A-100B7928C0F5}",
+                    "EA-Package": "W3C-Time",
+                    "uri": "http://www.w3.org/2006/time#Instant"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "1",
+            "maxCardinality": "1"
+        },
+        {
+            "@id": "http://www.w3.org/2006/time#hasBeginning",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "van",
+            "inpackage": "OTHER_PACKAGE",
+            "label-nl": {
+                "nl": "van"
+            },
+            "label": {
+                "nl": "van"
+            },
+            "definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "^van",
+                "EA-Guid": "{9A351803-5000-4c81-B1B5-41E46FBAC709}",
+                "EA-Package": "W3C-Time",
+                "EA-Type": "attribute",
+                "EA-Domain": "Periode",
+                "EA-Domain-Guid": "{859C2F4C-3B1B-4b2c-9441-CFD05207C5DD}",
+                "EA-Range": "Moment",
+                "RangeData": {
+                    "EA-Name": "Moment",
+                    "EA-GUID": "{17A76449-20D9-49c7-A43A-100B7928C0F5}",
+                    "EA-Package": "W3C-Time",
+                    "uri": "http://www.w3.org/2006/time#Instant"
+                },
+                "label": {
+                    "nl": "van"
+                },
+                "definition": "",
+                "usage": "",
+                "label-nl": {
+                    "nl": "van"
+                },
+                "definition-nl": {
+                    "nl": "TODO"
+                },
+                "usageNote-nl": "",
+                "label-en": "",
+                "definition-en": "",
+                "usageNote-en": "",
+                "equivalent": "",
+                "subclass": "",
+                "subclass1": "",
+                "sameAs": "",
+                "RawTags": [
+                    {
+                        "key": "uri",
+                        "value": "http://www.w3.org/2006/time#hasBeginning",
+                        "note": "null"
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "van",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "http://www.w3.org/2006/time#ProperInterval",
+                    "EA-Name": "Periode"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Moment",
+                    "EA-GUID": "{17A76449-20D9-49c7-A43A-100B7928C0F5}",
+                    "EA-Package": "W3C-Time",
+                    "uri": "http://www.w3.org/2006/time#Instant"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "1",
+            "maxCardinality": "1"
+        },
+        {
+            "@id": "http://www.w3.org/2004/02/skos/core#notation",
+            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+            "name": "identificator",
+            "inpackage": "OTHER_PACKAGE",
+            "label-nl": {
+                "nl": "identificator"
+            },
+            "label": {
+                "nl": "identificator"
+            },
+            "definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "identificator",
+                "EA-Guid": "{66756B82-7C96-4e3c-8166-85C1FF11DAAF}",
                 "EA-Package": "OSLO-Generiek",
                 "EA-Type": "attribute",
-                "EA-Domain": "Opmeting",
-                "EA-Domain-Guid": "{BFD25136-77A8-41d2-A135-26FA75EC9287}",
+                "EA-Domain": "Identificator",
+                "EA-Domain-Guid": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+                "EA-Range": "Literal",
+                "RangeData": {
+                    "EA-Name": "Literal",
+                    "EA-Package": "",
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+                },
+                "label": {
+                    "nl": "identificator"
+                },
+                "definition": "",
+                "usage": "",
+                "label-nl": {
+                    "nl": "identificator"
+                },
+                "definition-nl": {
+                    "nl": "TODO"
+                },
+                "usageNote-nl": "",
+                "label-en": "",
+                "definition-en": "",
+                "usageNote-en": "",
+                "equivalent": "",
+                "subclass": "",
+                "subclass1": "",
+                "sameAs": "",
+                "RawTags": [
+                    {
+                        "key": "ap-label-nl",
+                        "value": "identificator",
+                        "note": "null"
+                    },
+                    {
+                        "key": "uri",
+                        "value": "http://www.w3.org/2004/02/skos/core#notation",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-usageNote-nl",
+                        "value": "Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "identificator",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "String gebruikt om het object uniek te identificeren.",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "http://www.w3.org/ns/adms#Identifier",
+                    "EA-Name": "Identificator"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Literal",
+                    "EA-Package": "",
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "0",
+            "maxCardinality": "1"
+        },
+        {
+            "@id": "http://purl.org/dc/terms/type",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "type",
+            "inpackage": "OTHER_PACKAGE",
+            "label-nl": {
+                "nl": "type"
+            },
+            "definition": {
+                "nl": "TODO"
+            },
+            "label": {
+                "nl": "type"
+            },
+            "definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "type",
+                "EA-Guid": "{B1BFBBF5-513B-484e-BB3C-57FB700B6FAE}",
+                "EA-Package": "IM-Opdrachten",
+                "EA-Type": "attribute",
+                "EA-Domain": "Opdracht",
+                "EA-Domain-Guid": "{71A997DD-37D9-4fcd-B71A-5837DABB2846}",
+                "EA-Range": "OpdrachtType",
+                "RangeData": {
+                    "EA-Name": "OpdrachtType",
+                    "EA-GUID": "{C6B966AD-CA32-4aa7-8EF1-6DAEC66D072E}",
+                    "EA-Package": "OSLO-BodemEnOndergrond",
+                    "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+                },
+                "label": {
+                    "nl": "type"
+                },
+                "definition": {
+                    "nl": "TODO"
+                },
+                "usage": "",
+                "label-nl": {
+                    "nl": "type"
+                },
+                "definition-nl": {
+                    "nl": "TODO"
+                },
+                "usageNote-nl": "",
+                "label-en": "",
+                "definition-en": "",
+                "usageNote-en": "",
+                "equivalent": "",
+                "subclass": "",
+                "subclass1": "",
+                "sameAs": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "type",
+                        "note": "null"
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "TODO",
+                        "note": "null"
+                    },
+                    {
+                        "key": "uri",
+                        "value": "http://purl.org/dc/terms/type",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "TRANSLATIONS_ONLY"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht",
+                    "EA-Name": "Opdracht"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "OpdrachtType",
+                    "EA-GUID": "{C6B966AD-CA32-4aa7-8EF1-6DAEC66D072E}",
+                    "EA-Package": "OSLO-BodemEnOndergrond",
+                    "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "1",
+            "maxCardinality": "*"
+        },
+        {
+            "@id": "http://purl.org/dc/terms/issued",
+            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+            "name": "toegekendop",
+            "inpackage": "OTHER_PACKAGE",
+            "label-nl": {
+                "nl": "toegekendOp"
+            },
+            "label": {
+                "nl": "toegekendOp"
+            },
+            "definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "toegekendOp",
+                "EA-Guid": "{A158B091-A5BE-43f7-B1EC-445EFE480A6D}",
+                "EA-Package": "OSLO-Generiek",
+                "EA-Type": "attribute",
+                "EA-Domain": "Identificator",
+                "EA-Domain-Guid": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+                "EA-Range": "DateTime",
+                "RangeData": {
+                    "EA-Name": "DateTime",
+                    "EA-Package": "",
+                    "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+                },
+                "label": {
+                    "nl": "toegekendOp"
+                },
+                "definition": "",
+                "usage": "",
+                "label-nl": {
+                    "nl": "toegekendOp"
+                },
+                "definition-nl": {
+                    "nl": "TODO"
+                },
+                "usageNote-nl": "",
+                "label-en": "",
+                "definition-en": "",
+                "usageNote-en": "",
+                "equivalent": "",
+                "subclass": "",
+                "subclass1": "",
+                "sameAs": "",
+                "RawTags": [
+                    {
+                        "key": "uri",
+                        "value": "http://purl.org/dc/terms/issued",
+                        "note": "null"
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "toegekendOp",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "toegekend op",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "Tijdstip waarop de identificator werd uitgegeven.",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "http://www.w3.org/ns/adms#Identifier",
+                    "EA-Name": "Identificator"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "DateTime",
+                    "EA-Package": "",
+                    "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "0",
+            "maxCardinality": "1"
+        },
+        {
+            "@id": "http://purl.org/dc/terms/creator",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "toegekenddoor",
+            "inpackage": "OTHER_PACKAGE",
+            "label-nl": {
+                "nl": "toegekendDoor"
+            },
+            "label": {
+                "nl": "toegekendDoor"
+            },
+            "definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "toegekendDoor",
+                "EA-Guid": "{4FAE8804-F472-41ad-8BEE-A0AE10098A1E}",
+                "EA-Package": "OSLO-Generiek",
+                "EA-Type": "attribute",
+                "EA-Domain": "Identificator",
+                "EA-Domain-Guid": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
                 "EA-Range": "Agent",
                 "RangeData": {
                     "EA-Name": "Agent",
@@ -885,17 +2129,15 @@
                     "uri": "http://purl.org/dc/terms/Agent"
                 },
                 "label": {
-                    "nl": "uitgevoerdDoor"
+                    "nl": "toegekendDoor"
                 },
-                "definition": {
-                    "nl": "Agent die de Opmeting heeft uitgevoerd."
-                },
+                "definition": "",
                 "usage": "",
                 "label-nl": {
-                    "nl": "uitgevoerdDoor"
+                    "nl": "toegekendDoor"
                 },
                 "definition-nl": {
-                    "nl": "Agent die de Opmeting heeft uitgevoerd."
+                    "nl": "TODO"
                 },
                 "usageNote-nl": "",
                 "label-en": "",
@@ -907,18 +2149,23 @@
                 "sameAs": "",
                 "RawTags": [
                     {
+                        "key": "uri",
+                        "value": "http://purl.org/dc/terms/creator",
+                        "note": "null"
+                    },
+                    {
                         "key": "label-nl",
-                        "value": "uitgevoerdDoor",
+                        "value": "toegekendDoor",
                         "note": "null"
                     },
                     {
-                        "key": "definition-nl",
-                        "value": "Agent die de Opmeting heeft uitgevoerd.",
+                        "key": "ap-label-nl",
+                        "value": "toegekend door",
                         "note": "null"
                     },
                     {
-                        "key": "name",
-                        "value": "Opmeting.uitgevoerdDoor",
+                        "key": "ap-definition-nl",
+                        "value": "Link naar de agent die de identificator heeft uitgegeven.",
                         "note": "null"
                     }
                 ],
@@ -927,8 +2174,8 @@
             "codelist": [],
             "domain": [
                 {
-                    "uri": "https://data.vlaanderen.be/ns/generiek#Opmeting",
-                    "EA-Name": "Opmeting"
+                    "uri": "http://www.w3.org/ns/adms#Identifier",
+                    "EA-Name": "Identificator"
                 }
             ],
             "range": [
@@ -937,2193 +2184,6 @@
                     "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
                     "EA-Package": "OSLO-Generiek",
                     "uri": "http://purl.org/dc/terms/Agent"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "1",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "https://data.vlaanderen.be/ns/generiek#Opmeting.methode",
-            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-            "name": "methode",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "methode"
-            },
-            "definition": {
-                "nl": "Aard van de gebruikte methode."
-            },
-            "label": {
-                "nl": "methode"
-            },
-            "definition-nl": {
-                "nl": "Aard van de gebruikte methode."
-            },
-            "extra": {
-                "EA-Name": "methode",
-                "EA-Guid": "{0CBDFFBD-6DDA-452b-9220-65E76BEE3635}",
-                "EA-Package": "OSLO-Generiek",
-                "EA-Type": "attribute",
-                "EA-Domain": "Opmeting",
-                "EA-Domain-Guid": "{BFD25136-77A8-41d2-A135-26FA75EC9287}",
-                "EA-Range": "Opmetingmethode",
-                "RangeData": {
-                    "EA-Name": "Opmetingmethode",
-                    "EA-GUID": "{5B873956-B910-4762-9FBA-1A0C9ED8127E}",
-                    "EA-Package": "OSLO-Generiek",
-                    "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-                },
-                "label": {
-                    "nl": "methode"
-                },
-                "definition": {
-                    "nl": "Aard van de gebruikte methode."
-                },
-                "usage": "",
-                "label-nl": {
-                    "nl": "methode"
-                },
-                "definition-nl": {
-                    "nl": "Aard van de gebruikte methode."
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "methode",
-                        "note": "null"
-                    },
-                    {
-                        "key": "name",
-                        "value": "Opmeting.methode",
-                        "note": "null"
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "Aard van de gebruikte methode.",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "NOTHING"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "https://data.vlaanderen.be/ns/generiek#Opmeting",
-                    "EA-Name": "Opmeting"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "Opmetingmethode",
-                    "EA-GUID": "{5B873956-B910-4762-9FBA-1A0C9ED8127E}",
-                    "EA-Package": "OSLO-Generiek",
-                    "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "1",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "https://data.vlaanderen.be/ns/generiek#DirectePositie.opmeting",
-            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-            "name": "opmeting",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "opmeting"
-            },
-            "definition": {
-                "nl": "De manier waarop de geometrie werd bepaald."
-            },
-            "label": {
-                "nl": "opmeting"
-            },
-            "definition-nl": {
-                "nl": "De manier waarop de geometrie werd bepaald."
-            },
-            "extra": {
-                "EA-Name": "opmeting",
-                "EA-Guid": "{96BF9848-5BE9-4d6c-8E7B-8BD0823C6C86}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "attribute",
-                "EA-Domain": "Geometrie",
-                "EA-Domain-Guid": "{E2B0BCB9-B3C9-4d71-8739-CDFD72ECCE78}",
-                "EA-Range": "Opmeting",
-                "RangeData": {
-                    "EA-Name": "Opmeting",
-                    "EA-GUID": "{BFD25136-77A8-41d2-A135-26FA75EC9287}",
-                    "EA-Package": "OSLO-Generiek",
-                    "uri": "https://data.vlaanderen.be/ns/generiek#Opmeting"
-                },
-                "label": {
-                    "nl": "opmeting"
-                },
-                "definition": {
-                    "nl": "De manier waarop de geometrie werd bepaald."
-                },
-                "usage": "",
-                "label-nl": {
-                    "nl": "opmeting"
-                },
-                "definition-nl": {
-                    "nl": "De manier waarop de geometrie werd bepaald."
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "opmeting",
-                        "note": "null"
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "De manier waarop de geometrie werd bepaald.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "name",
-                        "value": "Geometrie.opmeting",
-                        "note": "null"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "https://data.vlaanderen.be/ns/generiek#DirectePositie.opmeting",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://www.w3.org/ns/locn#Geometry",
-                    "EA-Name": "Geometrie"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "Opmeting",
-                    "EA-GUID": "{BFD25136-77A8-41d2-A135-26FA75EC9287}",
-                    "EA-Package": "OSLO-Generiek",
-                    "uri": "https://data.vlaanderen.be/ns/generiek#Opmeting"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "0",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "https://data.vlaanderen.be/ns/generiek#DirectePositie.opmeting",
-            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-            "name": "opmeting",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "opmeting"
-            },
-            "definition": {
-                "nl": "De manier waarop de positie werd bepaald."
-            },
-            "label": {
-                "nl": "opmeting"
-            },
-            "definition-nl": {
-                "nl": "De manier waarop de positie werd bepaald."
-            },
-            "extra": {
-                "EA-Name": "opmeting",
-                "EA-Guid": "{769183B6-2938-4c9c-89D8-9AFD5605CA62}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "attribute",
-                "EA-Domain": "DirectePositie",
-                "EA-Domain-Guid": "{62B4D9BF-3579-43fb-824E-FA0232D35F39}",
-                "EA-Range": "Opmeting",
-                "RangeData": {
-                    "EA-Name": "Opmeting",
-                    "EA-GUID": "{BFD25136-77A8-41d2-A135-26FA75EC9287}",
-                    "EA-Package": "OSLO-Generiek",
-                    "uri": "https://data.vlaanderen.be/ns/generiek#Opmeting"
-                },
-                "label": {
-                    "nl": "opmeting"
-                },
-                "definition": {
-                    "nl": "De manier waarop de positie werd bepaald."
-                },
-                "usage": "",
-                "label-nl": {
-                    "nl": "opmeting"
-                },
-                "definition-nl": {
-                    "nl": "De manier waarop de positie werd bepaald."
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "opmeting",
-                        "note": "null"
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "De manier waarop de positie werd bepaald.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "name",
-                        "value": "DirectePositie.opmeting",
-                        "note": "null"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "https://data.vlaanderen.be/ns/generiek#DirectePositie.opmeting",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "https://data.vlaanderen.be/ns/generiek#DirectePositie",
-                    "EA-Name": "DirectePositie"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "Opmeting",
-                    "EA-GUID": "{BFD25136-77A8-41d2-A135-26FA75EC9287}",
-                    "EA-Package": "OSLO-Generiek",
-                    "uri": "https://data.vlaanderen.be/ns/generiek#Opmeting"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "0",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "https://data.vlaanderen.be/ns/adres#verwijstNaar",
-            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-            "name": "verwijstnaar",
-            "inpackage": "ACTIVE_PACKAGE",
-            "label-nl": {
-                "nl": "verwijstNaar"
-            },
-            "label": {
-                "nl": "verwijstNaar"
-            },
-            "definition-nl": {
-                "nl": "TODO"
-            },
-            "extra": {
-                "EA-Name": "verwijstNaar",
-                "EA-Guid": "{7A1073A0-04FA-4fe8-AAC6-3F5EC42FD7F6}",
-                "derived": "false",
-                "EA-Package": "",
-                "EA-Type": "connector",
-                "EA-Domain": "Adresvoorstelling",
-                "EA-Domain-Guid": "{FB0B809C-F09C-4051-AC02-8B9AB42E4003}",
-                "EA-Range": "Adres",
-                "RangeData": {
-                    "EA-Name": "Adres",
-                    "EA-GUID": "{B649B65C-15E9-451b-8907-5F26F77223D7}",
-                    "EA-Package": "IM-Locaties",
-                    "uri": "https://data.vlaanderen.be/ns/adres#Adres"
-                },
-                "sourceRole": "null",
-                "destRole": "verwijstNaar",
-                "label": {
-                    "nl": "verwijstNaar"
-                },
-                "definition": "",
-                "usage": "",
-                "label-nl": {
-                    "nl": "verwijstNaar"
-                },
-                "definition-nl": {
-                    "nl": "TODO"
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "NOTE",
-                        "note": "Dit kan enkel voor Belgische adressen aangezien onder adres een Belgisch adres wordt verstaan."
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "NOTE",
-                        "note": "Adres waarvan de adresvoorstelling is afgeleid."
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "NOTE",
-                        "note": "verwijstNaar"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "NOTE",
-                        "note": "https://data.vlaanderen.be/ns/adres#verwijstNaar"
-                    }
-                ],
-                "DestRoleTags": [
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "NOTE",
-                        "note": "Dit kan enkel voor Belgische adressen aangezien onder adres een Belgisch adres wordt verstaan."
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "NOTE",
-                        "note": "Adres waarvan de adresvoorstelling is afgeleid."
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "NOTE",
-                        "note": "verwijstNaar"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "NOTE",
-                        "note": "https://data.vlaanderen.be/ns/adres#verwijstNaar"
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://www.w3.org/ns/locn#Address",
-                    "EA-Name": "Adresvoorstelling"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "Adres",
-                    "EA-GUID": "{B649B65C-15E9-451b-8907-5F26F77223D7}",
-                    "EA-Package": "IM-Locaties",
-                    "uri": "https://data.vlaanderen.be/ns/adres#Adres"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "0",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "https://data.vlaanderen.be/ns/adres#land",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "land",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "land"
-            },
-            "label": {
-                "nl": "land"
-            },
-            "definition-nl": {
-                "nl": "TODO"
-            },
-            "extra": {
-                "EA-Name": "land",
-                "EA-Guid": "{5FFF661F-58ED-4c87-8D7E-8E966EB96F1B}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "attribute",
-                "EA-Domain": "Adresvoorstelling",
-                "EA-Domain-Guid": "{FB0B809C-F09C-4051-AC02-8B9AB42E4003}",
-                "EA-Range": "LangString",
-                "RangeData": {
-                    "EA-Name": "LangString",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                },
-                "label": {
-                    "nl": "land"
-                },
-                "definition": "",
-                "usage": "",
-                "label-nl": {
-                    "nl": "land"
-                },
-                "definition-nl": {
-                    "nl": "TODO"
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "parentURI",
-                        "value": "http://www.w3.org/ns/locn#adminUnitL1",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Land waarin het adres gelegen is.",
-                        "note": " "
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "land",
-                        "note": "null"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "https://data.vlaanderen.be/ns/adres#land",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://www.w3.org/ns/locn#Address",
-                    "EA-Name": "Adresvoorstelling"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "LangString",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                }
-            ],
-            "generalization": [
-                "http://www.w3.org/ns/locn#adminUnitL1"
-            ],
-            "minCardinality": "0",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "https://data.vlaanderen.be/ns/adres#gemeentenaam",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "gemeentenaam",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "gemeentenaam"
-            },
-            "label": {
-                "nl": "gemeentenaam"
-            },
-            "definition-nl": {
-                "nl": "TODO"
-            },
-            "extra": {
-                "EA-Name": "gemeentenaam",
-                "EA-Guid": "{6BD1B6C5-BC68-4b4e-AED9-A4E421A14707}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "attribute",
-                "EA-Domain": "Adresvoorstelling",
-                "EA-Domain-Guid": "{FB0B809C-F09C-4051-AC02-8B9AB42E4003}",
-                "EA-Range": "LangString",
-                "RangeData": {
-                    "EA-Name": "LangString",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                },
-                "label": {
-                    "nl": "gemeentenaam"
-                },
-                "definition": "",
-                "usage": "",
-                "label-nl": {
-                    "nl": "gemeentenaam"
-                },
-                "definition-nl": {
-                    "nl": "TODO"
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "gemeentenaam",
-                        "note": "null"
-                    },
-                    {
-                        "key": "parentURI",
-                        "value": "http://www.w3.org/ns/locn#postName",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Gemeentenaam vh adres.",
-                        "note": " "
-                    },
-                    {
-                        "key": "uri",
-                        "value": "https://data.vlaanderen.be/ns/adres#gemeentenaam",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://www.w3.org/ns/locn#Address",
-                    "EA-Name": "Adresvoorstelling"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "LangString",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                }
-            ],
-            "generalization": [
-                "http://www.w3.org/ns/locn#postName"
-            ],
-            "minCardinality": "0",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "huisnummer",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "huisnummer"
-            },
-            "label": {
-                "nl": "huisnummer"
-            },
-            "definition-nl": {
-                "nl": "TODO"
-            },
-            "extra": {
-                "EA-Name": "huisnummer",
-                "EA-Guid": "{79ECAEE4-5323-4906-8FC7-E8590DB4E9B4}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "attribute",
-                "EA-Domain": "Adresvoorstelling",
-                "EA-Domain-Guid": "{FB0B809C-F09C-4051-AC02-8B9AB42E4003}",
-                "EA-Range": "String",
-                "RangeData": {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
-                },
-                "label": {
-                    "nl": "huisnummer"
-                },
-                "definition": "",
-                "usage": "",
-                "label-nl": {
-                    "nl": "huisnummer"
-                },
-                "definition-nl": {
-                    "nl": "TODO"
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "name",
-                        "value": "Adresvoorstelling.huisnummer",
-                        "note": "null"
-                    },
-                    {
-                        "key": "parentURI",
-                        "value": "http://www.w3.org/ns/locn#locatorDesignator",
-                        "note": "null"
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "huisnummer",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen.",
-                        "note": " "
-                    },
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "Specialisatie van Adresvoorstelling:locatieaanduiding tbv Belgische adressen.",
-                        "note": " "
-                    },
-                    {
-                        "key": "uri",
-                        "value": "https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://www.w3.org/ns/locn#Address",
-                    "EA-Name": "Adresvoorstelling"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
-                }
-            ],
-            "generalization": [
-                "http://www.w3.org/ns/locn#locatorDesignator"
-            ],
-            "minCardinality": "0",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "busnummer",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "busnummer"
-            },
-            "label": {
-                "nl": "busnummer"
-            },
-            "definition-nl": {
-                "nl": "TODO"
-            },
-            "extra": {
-                "EA-Name": "busnummer",
-                "EA-Guid": "{6BE5CB1C-D797-415a-94EB-8602347A8791}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "attribute",
-                "EA-Domain": "Adresvoorstelling",
-                "EA-Domain-Guid": "{FB0B809C-F09C-4051-AC02-8B9AB42E4003}",
-                "EA-Range": "String",
-                "RangeData": {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
-                },
-                "label": {
-                    "nl": "busnummer"
-                },
-                "definition": "",
-                "usage": "",
-                "label-nl": {
-                    "nl": "busnummer"
-                },
-                "definition-nl": {
-                    "nl": "TODO"
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "Specialisatie van Adresvoorstelling:locatieaanduiding tbv Belgische adressen.",
-                        "note": " "
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "busnummer",
-                        "note": "null"
-                    },
-                    {
-                        "key": "name",
-                        "value": "Adresvoorstelling.busnummer",
-                        "note": "null"
-                    },
-                    {
-                        "key": "parentURI",
-                        "value": "http://www.w3.org/ns/locn#locatorDesignator",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben.",
-                        "note": " "
-                    },
-                    {
-                        "key": "uri",
-                        "value": "https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://www.w3.org/ns/locn#Address",
-                    "EA-Name": "Adresvoorstelling"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
-                }
-            ],
-            "generalization": [
-                "http://www.w3.org/ns/locn#locatorDesignator"
-            ],
-            "minCardinality": "0",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "http://www.w3.org/ns/locn#thoroughfare",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "straatnaam",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "straatnaam"
-            },
-            "label": {
-                "nl": "straatnaam"
-            },
-            "definition-nl": {
-                "nl": "TODO"
-            },
-            "extra": {
-                "EA-Name": "straatnaam",
-                "EA-Guid": "{2EFD378C-AE8F-4b6b-B26A-A31BE20E85CB}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "attribute",
-                "EA-Domain": "Adresvoorstelling",
-                "EA-Domain-Guid": "{FB0B809C-F09C-4051-AC02-8B9AB42E4003}",
-                "EA-Range": "LangString",
-                "RangeData": {
-                    "EA-Name": "LangString",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                },
-                "label": {
-                    "nl": "straatnaam"
-                },
-                "definition": "",
-                "usage": "",
-                "label-nl": {
-                    "nl": "straatnaam"
-                },
-                "definition-nl": {
-                    "nl": "TODO"
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "straatnaam",
-                        "note": "null"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "http://www.w3.org/ns/locn#thoroughfare",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Straatnaam vh adres.",
-                        "note": " "
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://www.w3.org/ns/locn#Address",
-                    "EA-Name": "Adresvoorstelling"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "LangString",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "0",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "http://www.w3.org/ns/locn#postName",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "postnaam",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "postnaam"
-            },
-            "label": {
-                "nl": "postnaam"
-            },
-            "definition-nl": {
-                "nl": "TODO"
-            },
-            "extra": {
-                "EA-Name": "postnaam",
-                "EA-Guid": "{21770359-2E40-488e-B851-BC7CA9B637AD}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "attribute",
-                "EA-Domain": "Adresvoorstelling",
-                "EA-Domain-Guid": "{FB0B809C-F09C-4051-AC02-8B9AB42E4003}",
-                "EA-Range": "LangString",
-                "RangeData": {
-                    "EA-Name": "LangString",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                },
-                "label": {
-                    "nl": "postnaam"
-                },
-                "definition": "",
-                "usage": "",
-                "label-nl": {
-                    "nl": "postnaam"
-                },
-                "definition-nl": {
-                    "nl": "TODO"
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "uri",
-                        "value": "http://www.w3.org/ns/locn#postName",
-                        "note": "null"
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "postnaam",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Naam waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid.",
-                        "note": " "
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://www.w3.org/ns/locn#Address",
-                    "EA-Name": "Adresvoorstelling"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "LangString",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "0",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "http://www.w3.org/ns/locn#postCode",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "postcode",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "postcode"
-            },
-            "label": {
-                "nl": "postcode"
-            },
-            "definition-nl": {
-                "nl": "TODO"
-            },
-            "extra": {
-                "EA-Name": "postcode",
-                "EA-Guid": "{B1CEF7C6-10AD-4f6c-BCCB-EC2FD7B46531}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "attribute",
-                "EA-Domain": "Adresvoorstelling",
-                "EA-Domain-Guid": "{FB0B809C-F09C-4051-AC02-8B9AB42E4003}",
-                "EA-Range": "String",
-                "RangeData": {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
-                },
-                "label": {
-                    "nl": "postcode"
-                },
-                "definition": "",
-                "usage": "",
-                "label-nl": {
-                    "nl": "postcode"
-                },
-                "definition-nl": {
-                    "nl": "TODO"
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "postcode",
-                        "note": "null"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "http://www.w3.org/ns/locn#postCode",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Code waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid.",
-                        "note": " "
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://www.w3.org/ns/locn#Address",
-                    "EA-Name": "Adresvoorstelling"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "0",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "http://www.w3.org/ns/locn#poBox",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "postbus",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "postbus"
-            },
-            "label": {
-                "nl": "postbus"
-            },
-            "definition-nl": {
-                "nl": "TODO"
-            },
-            "extra": {
-                "EA-Name": "postbus",
-                "EA-Guid": "{EEA35CCA-B1BB-4eb1-B00C-E470AF55B090}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "attribute",
-                "EA-Domain": "Adresvoorstelling",
-                "EA-Domain-Guid": "{FB0B809C-F09C-4051-AC02-8B9AB42E4003}",
-                "EA-Range": "String",
-                "RangeData": {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
-                },
-                "label": {
-                    "nl": "postbus"
-                },
-                "definition": "",
-                "usage": "",
-                "label-nl": {
-                    "nl": "postbus"
-                },
-                "definition-nl": {
-                    "nl": "TODO"
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "postbus",
-                        "note": "null"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "http://www.w3.org/ns/locn#poBox",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Postbusnummer in een postkantoor.",
-                        "note": " "
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://www.w3.org/ns/locn#Address",
-                    "EA-Name": "Adresvoorstelling"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "0",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "http://www.w3.org/ns/locn#locatorName",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "locatienaam",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "locatienaam"
-            },
-            "label": {
-                "nl": "locatienaam"
-            },
-            "definition-nl": {
-                "nl": "TODO"
-            },
-            "extra": {
-                "EA-Name": "locatienaam",
-                "EA-Guid": "{DA04B2B8-0F8D-4f7c-A292-F91E0F8D9A35}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "attribute",
-                "EA-Domain": "Adresvoorstelling",
-                "EA-Domain-Guid": "{FB0B809C-F09C-4051-AC02-8B9AB42E4003}",
-                "EA-Range": "LangString",
-                "RangeData": {
-                    "EA-Name": "LangString",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                },
-                "label": {
-                    "nl": "locatienaam"
-                },
-                "definition": "",
-                "usage": "",
-                "label-nl": {
-                    "nl": "locatienaam"
-                },
-                "definition-nl": {
-                    "nl": "TODO"
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "locatienaam",
-                        "note": "null"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "http://www.w3.org/ns/locn#locatorName",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Naam of omschrijving vh het geografisch object dat de adreslocator aanduidt.",
-                        "note": " "
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://www.w3.org/ns/locn#Address",
-                    "EA-Name": "Adresvoorstelling"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "LangString",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "0",
-            "maxCardinality": "*"
-        },
-        {
-            "@id": "http://www.w3.org/ns/locn#locatorDesignator",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "locatieaanduiding",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "locatieaanduiding"
-            },
-            "label": {
-                "nl": "locatieaanduiding"
-            },
-            "definition-nl": {
-                "nl": "TODO"
-            },
-            "extra": {
-                "EA-Name": "locatieaanduiding",
-                "EA-Guid": "{1C2EADB7-6F49-4803-BAD8-534155D3CA91}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "attribute",
-                "EA-Domain": "Adresvoorstelling",
-                "EA-Domain-Guid": "{FB0B809C-F09C-4051-AC02-8B9AB42E4003}",
-                "EA-Range": "String",
-                "RangeData": {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
-                },
-                "label": {
-                    "nl": "locatieaanduiding"
-                },
-                "definition": "",
-                "usage": "",
-                "label-nl": {
-                    "nl": "locatieaanduiding"
-                },
-                "definition-nl": {
-                    "nl": "TODO"
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "locatieaanduiding",
-                        "note": "null"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "http://www.w3.org/ns/locn#locatorDesignator",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Alfanumerieke code die de adreslocator uniek identificeert binnen de straat, administratieve eenheid etc.",
-                        "note": " "
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://www.w3.org/ns/locn#Address",
-                    "EA-Name": "Adresvoorstelling"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "String",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2001/XMLSchema#string"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "0",
-            "maxCardinality": "*"
-        },
-        {
-            "@id": "http://www.w3.org/ns/locn#geometry",
-            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-            "name": "geometrieVanDePlaatsOfHetGebied.",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "Geometrie van de plaats of het gebied."
-            },
-            "definition": {
-                "nl": "Geometrie van de plaats of het gebied."
-            },
-            "label": {
-                "nl": "Geometrie van de plaats of het gebied."
-            },
-            "definition-nl": {
-                "nl": "Geometrie van de plaats of het gebied."
-            },
-            "extra": {
-                "EA-Name": "geometrie",
-                "EA-Guid": "{DB06CC23-D17A-4f83-8D22-397E4DE99006}",
-                "EA-Package": "OSLO-Generiek",
-                "EA-Type": "attribute",
-                "EA-Domain": "Plaats",
-                "EA-Domain-Guid": "{5134254E-B3D2-4471-872A-B3E7FC521472}",
-                "EA-Range": "Geometrie",
-                "RangeData": {
-                    "EA-Name": "Geometrie",
-                    "EA-GUID": "{5720A716-474C-4451-B7ED-50C2423DC51D}",
-                    "EA-Package": "OSLO-Generiek",
-                    "uri": "http://www.w3.org/ns/locn#Geometry"
-                },
-                "label": {
-                    "nl": "Geometrie van de plaats of het gebied."
-                },
-                "definition": {
-                    "nl": "Geometrie van de plaats of het gebied."
-                },
-                "usage": "",
-                "label-nl": {
-                    "nl": "Geometrie van de plaats of het gebied."
-                },
-                "definition-nl": {
-                    "nl": "Geometrie van de plaats of het gebied."
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "definition-nl",
-                        "value": "Geometrie van de plaats of het gebied.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "Geometrie van de plaats of het gebied.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Geometrie van de plaats of het gebied.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-label-nl",
-                        "value": "geometrie",
-                        "note": "null"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "http://www.w3.org/ns/locn#geometry",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "NOTHING"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://purl.org/dc/terms/Location",
-                    "EA-Name": "Plaats"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "Geometrie",
-                    "EA-GUID": "{5720A716-474C-4451-B7ED-50C2423DC51D}",
-                    "EA-Package": "OSLO-Generiek",
-                    "uri": "http://www.w3.org/ns/locn#Geometry"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "0",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "http://www.w3.org/ns/locn#fullAddress",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "volledigAdres",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "volledig adres"
-            },
-            "label": {
-                "nl": "volledig adres"
-            },
-            "definition-nl": {
-                "nl": "TODO"
-            },
-            "extra": {
-                "EA-Name": "volledigAdres",
-                "EA-Guid": "{DE6069B6-AE15-4870-B265-E209E347BCB1}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "attribute",
-                "EA-Domain": "Adresvoorstelling",
-                "EA-Domain-Guid": "{FB0B809C-F09C-4051-AC02-8B9AB42E4003}",
-                "EA-Range": "LangString",
-                "RangeData": {
-                    "EA-Name": "LangString",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                },
-                "label": {
-                    "nl": "volledig adres"
-                },
-                "definition": "",
-                "usage": "",
-                "label-nl": {
-                    "nl": "volledig adres"
-                },
-                "definition-nl": {
-                    "nl": "TODO"
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Het complete adres in één string, al dan niet geformatteerd.",
-                        "note": " "
-                    },
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "Vermijdt fouten tgv het opsplitsen ve adres in zijn onderdelen. Geeft de voorgeschreven volgorde vd verschillende onderdelen weer. ",
-                        "note": " "
-                    },
-                    {
-                        "key": "uri",
-                        "value": "http://www.w3.org/ns/locn#fullAddress",
-                        "note": "null"
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "volledig adres",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://www.w3.org/ns/locn#Address",
-                    "EA-Name": "Adresvoorstelling"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "LangString",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "0",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "http://www.w3.org/ns/locn#adminUnitL2",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "administratieveEenheidNiveau2",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "administratieve eenheid niveau 2"
-            },
-            "label": {
-                "nl": "administratieve eenheid niveau 2"
-            },
-            "definition-nl": {
-                "nl": "TODO"
-            },
-            "extra": {
-                "EA-Name": "administratieveEenheidNiveau2",
-                "EA-Guid": "{0D1468A6-6B9B-4be5-A93B-CC39C72A7D85}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "attribute",
-                "EA-Domain": "Adresvoorstelling",
-                "EA-Domain-Guid": "{FB0B809C-F09C-4051-AC02-8B9AB42E4003}",
-                "EA-Range": "LangString",
-                "RangeData": {
-                    "EA-Name": "LangString",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                },
-                "label": {
-                    "nl": "administratieve eenheid niveau 2"
-                },
-                "definition": "",
-                "usage": "",
-                "label-nl": {
-                    "nl": "administratieve eenheid niveau 2"
-                },
-                "definition-nl": {
-                    "nl": "TODO"
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "administratieve eenheid niveau 2",
-                        "note": "null"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "http://www.w3.org/ns/locn#adminUnitL2",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "De regio vh adres, doorgaans een provincie of deelstaat of gelijkaardig gebied dat typisch meerdere plaatsen omvat.",
-                        "note": " "
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://www.w3.org/ns/locn#Address",
-                    "EA-Name": "Adresvoorstelling"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "LangString",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "0",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "http://www.w3.org/ns/locn#adminUnitL1",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "administratieveEenheidNiveau1",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "administratieve eenheid niveau 1"
-            },
-            "label": {
-                "nl": "administratieve eenheid niveau 1"
-            },
-            "definition-nl": {
-                "nl": "TODO"
-            },
-            "extra": {
-                "EA-Name": "administratieveEenheidNiveau1",
-                "EA-Guid": "{66360398-08FE-4247-9211-1D7A6B807AF5}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "attribute",
-                "EA-Domain": "Adresvoorstelling",
-                "EA-Domain-Guid": "{FB0B809C-F09C-4051-AC02-8B9AB42E4003}",
-                "EA-Range": "LangString",
-                "RangeData": {
-                    "EA-Name": "LangString",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                },
-                "label": {
-                    "nl": "administratieve eenheid niveau 1"
-                },
-                "definition": "",
-                "usage": "",
-                "label-nl": {
-                    "nl": "administratieve eenheid niveau 1"
-                },
-                "definition-nl": {
-                    "nl": "TODO"
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "administratieve eenheid niveau 1",
-                        "note": "null"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "http://www.w3.org/ns/locn#adminUnitL1",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Hoogste Administratieve eenheid vh adres, doorgaans een land.",
-                        "note": " "
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://www.w3.org/ns/locn#Address",
-                    "EA-Name": "Adresvoorstelling"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "LangString",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "0",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "http://www.w3.org/ns/locn#addressArea",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "adresgebied",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "adresgebied"
-            },
-            "label": {
-                "nl": "adresgebied"
-            },
-            "definition-nl": {
-                "nl": "TODO"
-            },
-            "extra": {
-                "EA-Name": "adresgebied",
-                "EA-Guid": "{6B417363-8320-4c42-832E-43A9B0FCEBD3}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "attribute",
-                "EA-Domain": "Adresvoorstelling",
-                "EA-Domain-Guid": "{FB0B809C-F09C-4051-AC02-8B9AB42E4003}",
-                "EA-Range": "LangString",
-                "RangeData": {
-                    "EA-Name": "LangString",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                },
-                "label": {
-                    "nl": "adresgebied"
-                },
-                "definition": "",
-                "usage": "",
-                "label-nl": {
-                    "nl": "adresgebied"
-                },
-                "definition-nl": {
-                    "nl": "TODO"
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "adresgebied",
-                        "note": "null"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "http://www.w3.org/ns/locn#addressArea",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Naam ve geografisch gebied of plaats die een aantal adresseerbare objecten groepeert om deze te adresseren zonder dat het gebied of de plaats een administratieve eenheid is",
-                        "note": " "
-                    },
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "Bvb de naam vh gehucht waarin het adres ligt.",
-                        "note": " "
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://www.w3.org/ns/locn#Address",
-                    "EA-Name": "Adresvoorstelling"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "LangString",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "0",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "plaatsnaam",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "plaatsnaam"
-            },
-            "definition": {
-                "nl": "Naam van de plaats of van het gebied."
-            },
-            "label": {
-                "nl": "plaatsnaam"
-            },
-            "definition-nl": {
-                "nl": "Naam van de plaats of van het gebied."
-            },
-            "extra": {
-                "EA-Name": "plaatsnaam",
-                "EA-Guid": "{0BD88679-A67F-47f7-BE79-D994A4419AA3}",
-                "EA-Package": "OSLO-Generiek",
-                "EA-Type": "attribute",
-                "EA-Domain": "Plaats",
-                "EA-Domain-Guid": "{5134254E-B3D2-4471-872A-B3E7FC521472}",
-                "EA-Range": "GeografischeNaam",
-                "RangeData": {
-                    "EA-Name": "GeografischeNaam",
-                    "EA-GUID": "{4EB78236-D8BF-40a5-9A5B-121F0583DB45}",
-                    "EA-Package": "OSLO-Generiek",
-                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                },
-                "label": {
-                    "nl": "plaatsnaam"
-                },
-                "definition": {
-                    "nl": "Naam van de plaats of van het gebied."
-                },
-                "usage": "",
-                "label-nl": {
-                    "nl": "plaatsnaam"
-                },
-                "definition-nl": {
-                    "nl": "Naam van de plaats of van het gebied."
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "plaatsnaam",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-defintion-nl",
-                        "value": "Naam van de plaats of van het gebied.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-label-nl",
-                        "value": "plaatsnaam",
-                        "note": "null"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "http://www.w3.org/2000/01/rdf-schema#label",
-                        "note": "null"
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "Naam van de plaats of van het gebied.",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "NOTHING"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://purl.org/dc/terms/Location",
-                    "EA-Name": "Plaats"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "GeografischeNaam",
-                    "EA-GUID": "{4EB78236-D8BF-40a5-9A5B-121F0583DB45}",
-                    "EA-Package": "OSLO-Generiek",
-                    "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "0",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "http://www.opengis.net/ont/geosparql#asWKT",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "wkt",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "wkt"
-            },
-            "label": {
-                "nl": "wkt"
-            },
-            "definition-nl": {
-                "nl": "TODO"
-            },
-            "extra": {
-                "EA-Name": "wkt",
-                "EA-Guid": "{9EC2B06E-4E55-43cc-AA4D-358839C41EF1}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "attribute",
-                "EA-Domain": "Geometrie",
-                "EA-Domain-Guid": "{E2B0BCB9-B3C9-4d71-8739-CDFD72ECCE78}",
-                "EA-Range": "Literal",
-                "RangeData": {
-                    "EA-Name": "Literal",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-                },
-                "label": {
-                    "nl": "wkt"
-                },
-                "definition": "",
-                "usage": "",
-                "label-nl": {
-                    "nl": "wkt"
-                },
-                "definition-nl": {
-                    "nl": "TODO"
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "ap-label-nl",
-                        "value": "wkt",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#wktLiteral\">wktliteral</a> als datatype.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "http://www.opengis.net/ont/geosparql#asWKT",
-                        "note": "null"
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "wkt",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Geometrie uitgedrukt in wkt-formaat.",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://www.w3.org/ns/locn#Geometry",
-                    "EA-Name": "Geometrie"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "Literal",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "0",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "http://www.opengis.net/ont/geosparql#asWKT",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "wkt",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "wkt"
-            },
-            "definition": {
-                "nl": "Directe positie uitgedrukt in wkt-formaat."
-            },
-            "label": {
-                "nl": "wkt"
-            },
-            "definition-nl": {
-                "nl": "Directe positie uitgedrukt in wkt-formaat."
-            },
-            "extra": {
-                "EA-Name": "wkt",
-                "EA-Guid": "{95EC52BB-0FD7-4097-BECF-74B0DDF88FC3}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "attribute",
-                "EA-Domain": "DirectePositie",
-                "EA-Domain-Guid": "{62B4D9BF-3579-43fb-824E-FA0232D35F39}",
-                "EA-Range": "Literal",
-                "RangeData": {
-                    "EA-Name": "Literal",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-                },
-                "label": {
-                    "nl": "wkt"
-                },
-                "definition": {
-                    "nl": "Directe positie uitgedrukt in wkt-formaat."
-                },
-                "usage": "",
-                "label-nl": {
-                    "nl": "wkt"
-                },
-                "definition-nl": {
-                    "nl": "Directe positie uitgedrukt in wkt-formaat."
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "wkt",
-                        "note": "null"
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "Directe positie uitgedrukt in wkt-formaat.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "http://www.opengis.net/ont/geosparql#asWKT",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#wktLiteral\">wktliteral</a> als datatype.",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "https://data.vlaanderen.be/ns/generiek#DirectePositie",
-                    "EA-Name": "DirectePositie"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "Literal",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "0",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "http://www.opengis.net/ont/geosparql#asGML",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "gml",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "gml"
-            },
-            "label": {
-                "nl": "gml"
-            },
-            "definition-nl": {
-                "nl": "TODO"
-            },
-            "extra": {
-                "EA-Name": "gml",
-                "EA-Guid": "{88B468C9-F8AD-4d79-9A14-6DE80C34E479}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "attribute",
-                "EA-Domain": "Geometrie",
-                "EA-Domain-Guid": "{E2B0BCB9-B3C9-4d71-8739-CDFD72ECCE78}",
-                "EA-Range": "Literal",
-                "RangeData": {
-                    "EA-Name": "Literal",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-                },
-                "label": {
-                    "nl": "gml"
-                },
-                "definition": "",
-                "usage": "",
-                "label-nl": {
-                    "nl": "gml"
-                },
-                "definition-nl": {
-                    "nl": "TODO"
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "ap-label-nl",
-                        "value": "gml",
-                        "note": "null"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "http://www.opengis.net/ont/geosparql#asGML",
-                        "note": "null"
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "gml",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#gmlLiteral\">gmlliteral</a> als datatype.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Geometrie uitgedrukt in gml-formaat.",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://www.w3.org/ns/locn#Geometry",
-                    "EA-Name": "Geometrie"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "Literal",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "0",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "http://www.opengis.net/ont/geosparql#asGML",
-            "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-            "name": "gml",
-            "inpackage": "OTHER_PACKAGE",
-            "label-nl": {
-                "nl": "gml"
-            },
-            "definition": {
-                "nl": "Directe positie uitgedrukt in gml-formaat."
-            },
-            "label": {
-                "nl": "gml"
-            },
-            "definition-nl": {
-                "nl": "Directe positie uitgedrukt in gml-formaat."
-            },
-            "extra": {
-                "EA-Name": "gml",
-                "EA-Guid": "{0296EE93-6EBB-4ea6-927F-02BA96AEBB1F}",
-                "EA-Package": "IM-Locaties",
-                "EA-Type": "attribute",
-                "EA-Domain": "DirectePositie",
-                "EA-Domain-Guid": "{62B4D9BF-3579-43fb-824E-FA0232D35F39}",
-                "EA-Range": "Literal",
-                "RangeData": {
-                    "EA-Name": "Literal",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-                },
-                "label": {
-                    "nl": "gml"
-                },
-                "definition": {
-                    "nl": "Directe positie uitgedrukt in gml-formaat."
-                },
-                "usage": "",
-                "label-nl": {
-                    "nl": "gml"
-                },
-                "definition-nl": {
-                    "nl": "Directe positie uitgedrukt in gml-formaat."
-                },
-                "usageNote-nl": "",
-                "label-en": "",
-                "definition-en": "",
-                "usageNote-en": "",
-                "equivalent": "",
-                "subclass": "",
-                "subclass1": "",
-                "sameAs": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "gml",
-                        "note": "null"
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "Directe positie uitgedrukt in gml-formaat.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "http://www.opengis.net/ont/geosparql#asGML",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "Gebruik <a href=\"http://www.opengis.net/ont/geosparql#gmlLiteral\">gmlliteral</a> als datatype.",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "https://data.vlaanderen.be/ns/generiek#DirectePositie",
-                    "EA-Name": "DirectePositie"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "Literal",
-                    "EA-Package": "",
-                    "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
                 }
             ],
             "generalization": [],
