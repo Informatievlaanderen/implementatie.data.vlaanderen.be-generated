@@ -5,7 +5,7 @@
     "foaf:mbox": "mailto:info@data.specs.org",
     "foaf:name": "Data Specifications Organisation"
   },
-  "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen",
+  "@id": "http://fixme.com",
   "@type": "http://www.w3.org/2002/07/owl#Ontology",
   "label": {
     "en": "grondverzet-grondboringen-imvoc",
@@ -15,126 +15,30 @@
     {
       "@type": "foaf:Person",
       "affiliation": {
-        "foaf:homepage": "https://auteurwebsiteurl",
-        "foaf:name": "AuteurAffiliatie"
+        "foaf:name": "Digitaal Vlaanderen"
       },
-      "foaf:firstName": "AuteurVoornaam",
-      "foaf:lastName": "AuteurNaam",
-      "foaf:mbox": "mailto:auteurvoornaam.auteurnaam@auteurdomein"
-    }
-  ],
-  "editors": [
+      "foaf:firstName": "Bert",
+      "foaf:lastName": "Van Nuffelen"
+    },
     {
       "@type": "foaf:Person",
       "affiliation": {
-        "foaf:homepage": "https://editorwebsiteurl",
-        "foaf:name": "EditorAffiliatie"
+        "foaf:name": "Digitaal Vlaanderen"
       },
-      "foaf:firstName": "EditorVoornaam",
-      "foaf:lastName": "EditorNaam",
-      "foaf:mbox": "mailto:editorvoornaam.editornaam@editordomein"
+      "foaf:firstName": "Geert",
+      "foaf:lastName": "Thijs"
     }
   ],
-  "contributors": [
-    {
-      "@type": "foaf:Person",
-      "affiliation": {
-        "foaf:homepage": "https://medewerkerwebsiteurl",
-        "foaf:name": "MedewerkerAffiliatie"
-      },
-      "foaf:firstName": "MedewerkerVoornaam",
-      "foaf:lastName": "MedewerkerNaam",
-      "foaf:mbox": "mailto:medewerkervoornaam.medewerkernaam@medewerkerdomein"
-    }
-  ],
+  "editors": [],
+  "contributors": [],
   "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
   "issued": "TODO",
   "navigation": {},
   "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
-  "publication-date": "2023-10-01",
+  "publication-date": "2024-03-11",
   "classes": [],
   "externals": [],
-  "properties": [
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#BoormethodeInterval.geometrie",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "label": {
-        "nl": "geometrie"
-      },
-      "definition": {
-        "nl": "Geometrie van het interval."
-      },
-      "domain": [
-        "https://data.vlaanderen.be/ns/grondboringen#BoormethodeInterval"
-      ],
-      "range": [
-        "http://www.opengis.net/ont/sf#LineString"
-      ],
-      "generalization": [
-        "https://data.vlaanderen.be/ns/grondboringen#Boormethodeinterval.methode"
-      ]
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#bemonsteringstijdstip",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "label": {
-        "nl": "bemonsteringstijdstip"
-      },
-      "definition": {
-        "nl": "Moment waarop de Bemonstering werd afgerond."
-      },
-      "domain": [
-        "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-      ],
-      "range": [
-        "http://www.w3.org/2001/XMLSchema#date"
-      ],
-      "generalization": [
-        "http://www.w3.org/ns/sosa/resultTime"
-      ]
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#gebruikteProcedure",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "label": {
-        "nl": "gebruikteProcedure"
-      },
-      "definition": {
-        "nl": "Boormethode die werd gevolgd bij de Grondboring."
-      },
-      "domain": [
-        "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-      ],
-      "range": [
-        "https://data.vlaanderen.be/ns/grondboringen#Boormethode"
-      ],
-      "generalization": [
-        "http://www.w3.org/ns/sosa/usedProcedure"
-      ]
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/grondverzet/grondboringen#geometrie",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "label": {
-        "nl": "geometrie"
-      },
-      "definition": {
-        "nl": "Lijnstring die de vorm van de Grondboring beschrijft."
-      },
-      "usage": {
-        "nl": "Loopt van de boorkraag (die zowel boven, op als onder het maaiveld - of ander referentievlak - kan liggen) tot het verste punt van de boring. Coördinaten worden minimaal in 2D maar bij voorkeur in 2.5D gegeven."
-      },
-      "domain": [
-        "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-      ],
-      "range": [
-        "http://www.opengis.net/ont/sf#LineString"
-      ],
-      "generalization": [
-        "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.shape"
-      ]
-    }
-  ],
+  "properties": [],
   "externalproperties": [],
   "@context": {
     "vlaanderen": "http://data.vlaanderen.be/ns/",
