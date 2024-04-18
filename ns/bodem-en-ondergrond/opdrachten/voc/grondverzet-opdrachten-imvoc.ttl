@@ -12,56 +12,57 @@
 
 <https://implementatie.data.vlaanderen.be/ns/opdrachten#beschrijving> a owl:DatatypeProperty;
   rdfs:label "beschrijving"@nl;
-  rdfs:comment "TODO"@nl;
+  rdfs:comment "Beschrijving van de Opdracht."@nl;
   rdfs:domain <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/opdrachten>;
   rdfs:range rdf:langString .
 
 <https://implementatie.data.vlaanderen.be/ns/opdrachten#dataleverancier> a owl:ObjectProperty;
   rdfs:label "dataleverancier"@nl;
-  rdfs:comment "TODO"@nl;
+  rdfs:comment "Verstrekker van data die bij de uitvoering van de Opdracht is geproduceerd."@nl;
   rdfs:domain <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/opdrachten>;
   rdfs:range dc:Agent .
 
 <https://implementatie.data.vlaanderen.be/ns/opdrachten#ligging> a owl:ObjectProperty;
   rdfs:label "ligging"@nl;
-  rdfs:comment "TODO"@nl;
+  rdfs:comment "Aanduiding van de locatie waar de Opdracht plaatsvindt."@nl;
   rdfs:domain <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/opdrachten>;
   rdfs:range prov:Location .
 
 <https://implementatie.data.vlaanderen.be/ns/opdrachten#opdrachtgever> a owl:ObjectProperty;
   rdfs:label "opdrachtgever"@nl;
-  rdfs:comment "TODO"@nl;
+  rdfs:comment "Agent die de opdracht heeft geïnitieerd."@nl;
   rdfs:domain <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/opdrachten>;
   rdfs:range dc:Agent .
 
 <https://implementatie.data.vlaanderen.be/ns/opdrachten#opdrachtnemer> a owl:ObjectProperty;
   rdfs:label "opdrachtnemer"@nl;
-  rdfs:comment "TODO"@nl;
+  rdfs:comment "Agent die de opdracht aan heeft genomen."@nl;
   rdfs:domain <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/opdrachten>;
   rdfs:range dc:Agent .
 
 <https://implementatie.data.vlaanderen.be/ns/opdrachten#referentie> a owl:DatatypeProperty;
   rdfs:label "referentie"@nl;
-  rdfs:comment "TODO"@nl;
+  rdfs:comment "Verwijzing naar bijkomende documentatie over de opdracht."@nl;
   rdfs:domain <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/opdrachten>;
   rdfs:range xsd:anyURI .
 
 <https://implementatie.data.vlaanderen.be/ns/opdrachten#resultaat> a owl:ObjectProperty;
   rdfs:label "resultaat"@nl;
-  rdfs:comment "TODO"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Typisch de Observaties die ihkv de opdracht plaatsvonden en/of de Monsters die tbv daarvan werden genomen of de Grondboringen of andere bemonsteringsactiviteiten die ihkv de Opdracht plaatsvonden."@nl;
+  rdfs:comment "Verwijzing naar een resultaat van de Opdracht."@nl;
   rdfs:domain <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/opdrachten>;
   rdfs:range rdfs:Resource .
 
 <https://implementatie.data.vlaanderen.be/ns/opdrachten#tijdstip> a owl:ObjectProperty;
   rdfs:label "tijdstip"@nl;
-  rdfs:comment "TODO"@nl;
+  rdfs:comment "Tijdstip waarop of periode waarin de Opdracht plaatsvindt."@nl;
   rdfs:domain <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/opdrachten>;
   rdfs:range <http://www.w3.org/2006/time#TemporalEntity> .

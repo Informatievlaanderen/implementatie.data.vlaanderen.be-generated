@@ -76,7 +76,7 @@
     "void": "http://rdfs.org/ns/void#",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
-  "@id": "http://fixme.com",
+  "@id": "https://implementatie.data.vlaanderen.be/ns/bodem-en-ondergrond/locaties",
   "@type": "http://www.w3.org/2002/07/owl#Ontology",
   "authors": [
     {
@@ -96,20 +96,21 @@
       "foaf:lastName": "Thijs"
     }
   ],
+  "baseURI": "https://implementatie.data.vlaanderen.be/ns/bodem-en-ondergrond/locaties#",
   "branchtag": "main",
   "classes": [
     {
-      "@id": "http://fixme.com#RuimtelijkObject",
+      "@id": "https://implementatie.data.vlaanderen.be/ns/bodem-en-ondergrond/locaties#RuimtelijkObject",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{5AC434B8-FE7F-4676-B274-70129DD97579}",
       "ap-definition-nl": {
-        "nl": "TODO"
+        "nl": "Object met een geografische positie."
       },
       "ap-label-nl": {
         "nl": "RuimtelijkObject"
       },
       "definition": {
-        "nl": "TODO"
+        "nl": "Object met een geografische positie."
       },
       "extra": {
         "EA-Guid": "{5AC434B8-FE7F-4676-B274-70129DD97579}",
@@ -134,26 +135,33 @@
           {
             "key": "definition-nl",
             "note": "null",
-            "value": "TODO"
+            "value": "Object met een geografische positie."
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "null",
+            "value": "Bvb een perceel, een gebouw, een Wegsegment etc."
           }
         ],
         "Scope": "FULL_DEFINITON",
         "ap-codelist": "",
         "ap-definition-nl": {
-          "nl": "TODO"
+          "nl": "Object met een geografische positie."
         },
         "ap-label-nl": {
           "nl": "RuimtelijkObject"
         },
         "ap-usageNote-nl": "",
         "definition": {
-          "nl": "TODO"
+          "nl": "Object met een geografische positie."
         },
         "label": {
           "nl": "RuimtelijkObject"
         },
         "parentclasses": "http://www.w3.org/ns/prov#Location",
-        "usage": ""
+        "usage": {
+          "nl": "Bvb een perceel, een gebouw, een Wegsegment etc."
+        }
       },
       "inpackage": "ACTIVE_PACKAGE",
       "label": {
@@ -162,7 +170,10 @@
       "name": "Ruimtelijkobject",
       "parents": [
         "http://www.w3.org/ns/prov#Location"
-      ]
+      ],
+      "usage": {
+        "nl": "Bvb een perceel, een gebouw, een Wegsegment etc."
+      }
     }
   ],
   "config": "config/config-ap.json",
@@ -173,8 +184,8 @@
   "contributors-column": "MijnKolom",
   "contributors-file": "stakeholders.csv",
   "diagram": "IM-Locaties",
-  "documentcommit": "e3b5bafe2e31f05a2ebc2ac6dc528be74a9d1bc5",
-  "dummy": "geert05",
+  "documentcommit": "b059a60c5b1fbd2a67a5367c034da8c32cf6eda3",
+  "dummy": "geert06",
   "eap": "Grondverzet.EAP",
   "editors": [],
   "examples": true,
@@ -3188,7 +3199,14 @@
   "extra": {
     "EA-Guid": "{6FA93BE9-5475-45e1-AD4F-E620EEE98CFA}",
     "EA-Name": "IM-Locaties",
-    "RawTags": [],
+    "RawTags": [
+      {
+        "key": "baseURI",
+        "note": "null",
+        "value": "https://implementatie.data.vlaanderen.be/ns/bodem-en-ondergrond/locaties#"
+      }
+    ],
+    "baseURI": "https://implementatie.data.vlaanderen.be/ns/bodem-en-ondergrond/locaties#",
     "issued": "TODO",
     "license": "TODO"
   },
@@ -3214,7 +3232,7 @@
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
   "template": "grondverzet-locaties-im.j2",
   "title": "Implementatiemodel Bodem en Ondergrond - Locaties",
-  "toolchaincommit": "3db690efbf445306723b099d89d72e88f5a89257",
+  "toolchaincommit": "8b9412885f76afe17fb6e4904b20c145763111de",
   "translation": [
     {
       "language": "nl",
