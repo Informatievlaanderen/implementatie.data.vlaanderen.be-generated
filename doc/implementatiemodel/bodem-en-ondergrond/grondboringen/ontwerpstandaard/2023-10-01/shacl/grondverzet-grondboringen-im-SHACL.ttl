@@ -77,7 +77,7 @@
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2023-10-01#BoormethodeIntervalShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2023-10-01#BoortypeIntervalShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2023-10-01#GrondboringShape>,
-    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2023-10-01#GrondmonsterShape>,
+    <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2023-10-01#BO_MonsterShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2023-10-01#GrondobjectShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2023-10-01#WettelijkKaderBoringShape>,
     <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2023-10-01#KwantitatieveWaardeShape>,
@@ -91,6 +91,48 @@
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2023-10-01#AnyShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass rdfs:Resource .
+
+<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2023-10-01#BO_MonsterShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://www.w3.org/ns/locn#Geometry>;
+    shacl:description "Plaats waar het Monster werd genomen."@nl;
+    shacl:maxCount 1;
+    shacl:name "bemonsteringsplaats"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingLocation>
+  ], [
+    shacl:class <http://www.w3.org/2006/time#ProperInterval>;
+    shacl:description "Moment waarop het Grondmonster is genomen."@nl;
+    shacl:maxCount 1;
+    shacl:name "bemonsteringstijdstip"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingTime>
+  ], [
+    shacl:class <https://qudt.org/schema/qudt/QuantityValue>;
+    shacl:description "De fysieke omvang van het monster."@nl;
+    shacl:maxCount 1;
+    shacl:name "grootte"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.size>
+  ], [
+    shacl:class prov:Location;
+    shacl:description "Plaats waar het Monster wordt bewaard."@nl;
+    shacl:maxCount 1;
+    shacl:name "huidigeLocatie"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.currentLocation>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Basisclassificatie vh materiaal waaruit het Grondmonster bestaat."@nl;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "materiaalklasse"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.materialClass>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Materiële vorm die het Grondmonster aanneemt."@nl;
+    shacl:maxCount 1;
+    shacl:name "monstertype"@nl;
+    shacl:path <http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.specimenType>
+  ];
+  shacl:targetClass <https://data.vlaanderen.be/ns/grondboringen#Grondmonster> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2023-10-01#BO_RuimtelijkBemonsteringsobjectShape> a shacl:NodeShape;
   shacl:closed false;
@@ -689,48 +731,6 @@
     shacl:path <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.wettelijkKader>
   ];
   shacl:targetClass <https://data.vlaanderen.be/ns/grondboringen#Grondboring> .
-
-<https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2023-10-01#GrondmonsterShape> a shacl:NodeShape;
-  shacl:closed false;
-  shacl:property [
-    shacl:class <http://www.w3.org/ns/locn#Geometry>;
-    shacl:description "Plaats waar het Monster werd genomen."@nl;
-    shacl:maxCount 1;
-    shacl:name "bemonsteringsplaats"@nl;
-    shacl:path <http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingLocation>
-  ], [
-    shacl:class <http://www.w3.org/2006/time#ProperInterval>;
-    shacl:description "Moment waarop het Grondmonster is genomen."@nl;
-    shacl:maxCount 1;
-    shacl:name "bemonsteringstijdstip"@nl;
-    shacl:path <http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingTime>
-  ], [
-    shacl:class <https://qudt.org/schema/qudt/QuantityValue>;
-    shacl:description "De fysieke omvang van het monster."@nl;
-    shacl:maxCount 1;
-    shacl:name "grootte"@nl;
-    shacl:path <http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.size>
-  ], [
-    shacl:class prov:Location;
-    shacl:description "Plaats waar het Monster wordt bewaard."@nl;
-    shacl:maxCount 1;
-    shacl:name "huidigeLocatie"@nl;
-    shacl:path <http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.currentLocation>
-  ], [
-    shacl:class skos:Concept;
-    shacl:description "Basisclassificatie vh materiaal waaruit het Grondmonster bestaat."@nl;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "materiaalklasse"@nl;
-    shacl:path <http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.materialClass>
-  ], [
-    shacl:class skos:Concept;
-    shacl:description "Materiële vorm die het Grondmonster aanneemt."@nl;
-    shacl:maxCount 1;
-    shacl:name "monstertype"@nl;
-    shacl:path <http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.specimenType>
-  ];
-  shacl:targetClass <https://data.vlaanderen.be/ns/grondboringen#Grondmonster> .
 
 <https://implementatie.data.vlaanderen.be//doc/implementatiemodel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2023-10-01#GrondmonstertypeShape> a shacl:NodeShape;
   shacl:closed false;

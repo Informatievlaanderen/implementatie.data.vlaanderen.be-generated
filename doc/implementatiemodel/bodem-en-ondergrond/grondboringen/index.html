@@ -91,8 +91,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/8f38cb31ef9323f34d16e86161a04acf15ed9158">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/8f38cb31ef9323f34d16e86161a04acf15ed9158</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/8f38cb31ef9323f34d16e86161a04acf15ed9158/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/8f38cb31ef9323f34d16e86161a04acf15ed9158/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/5f9a94c455bd4e89fe596d8314009396317c0c95">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/5f9a94c455bd4e89fe596d8314009396317c0c95</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/5f9a94c455bd4e89fe596d8314009396317c0c95/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/5f9a94c455bd4e89fe596d8314009396317c0c95/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/issues">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/issues</a></dd>
               <dt>Standaardenregister</dt><dd><a href="https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html">https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html</a></dd>
 
@@ -174,6 +174,7 @@
                       <a href="#Bemonsteringsprocedure">Bemonsteringsprocedure</a> |
                       <a href="#Bemonsteringsproces">BemonsteringsProces</a> |
                       <a href="#Besluit">Besluit</a> |
+                      <a href="#Bo_monster">BO_Monster</a> |
                       <a href="#Bo_ruimtelijkbemonsteringsobject">BO_RuimtelijkBemonsteringsobject</a> |
                       <a href="#Boor">Boor</a> |
                       <a href="#Boorgat">Boorgat</a> |
@@ -186,7 +187,6 @@
                       <a href="#Eenheid">Eenheid</a> |
                       <a href="#Erkenning">Erkenning</a> |
                       <a href="#Grondboring">Grondboring</a> |
-                      <a href="#Grondmonster">Grondmonster</a> |
                       <a href="#Grondobject">Grondobject</a> |
                       <a href="#Input">Input</a> |
                       <a href="#Legaleverschijningsvorm">LegaleVerschijningsvorm</a> |
@@ -1110,6 +1110,174 @@
             </div>
             
               <div class="region region--no-space-top">
+              <h3 class="h3" id="BO_Monster"><a href="https://data.vlaanderen.be/ns/grondboringen#Grondmonster" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#Grondmonster" data-placement="right">BO_Monster</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Monster genomen uit de grond voor observatie ex situ.</dd>
+                    
+                    <dt>Gebruik</dt><dd>In deze context beperken we ons tot Grondmonsters verkregen dmv een Grondboring. De observatie gebeurt doorgaans in een labo.</dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="#Monster">Monster</a>, 
+                        <a href="#Bemonsteringsobject">Bemonsteringsobject</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#BO_Monster.bemonsteringsplaats">bemonsteringsplaats</a>, 
+                      <a href="#BO_Monster.bemonsteringstijdstip">bemonsteringstijdstip</a>, 
+                      <a href="#BO_Monster.grootte">grootte</a>, 
+                      <a href="#BO_Monster.huidigeLocatie">huidigeLocatie</a>, 
+                      <a href="#BO_Monster.materiaalklasse">materiaalklasse</a>, 
+                      <a href="#BO_Monster.monstertype">monstertype</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="BO_Monster.bemonsteringsplaats" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingLocation">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingLocation" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingLocation" data-placement="right">
+                            bemonsteringsplaats</a>
+                          </code>
+                        </td>
+                        <td>
+			  
+                             
+                                            <a href="#Geometrie" data-placement="right">Geometrie</a>
+                             
+                         
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">Plaats waar het Monster werd genomen.</td>
+                        <td property="vann:usageNote">Als het Monster een geassocieerdBemonsteringsobject heeft dat ondubbelzinnig gelocaliseerd is dan is dit attribuut overbodig. Uitzondering in dat geval is wanneer de plaats tov het Bemonsteringsobject daarbij van belang is, bv de diepte waarop een grondmonster is genomen bij een boring. Datatype is Geometrie om naast puntlocaties ook een ruimere begrenzing te kunnen opgeven (bv een diepte-interval in het geval van een grondmonster).</td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="BO_Monster.bemonsteringstijdstip" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingTime">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingTime" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingTime" data-placement="right">
+                            bemonsteringstijdstip</a>
+                          </code>
+                        </td>
+                        <td>
+			  
+                             
+                                            <a href="#Periode" data-placement="right">Periode</a>
+                             
+                         
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">Moment waarop het Grondmonster is genomen.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="BO_Monster.grootte" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.size">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.size" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.size" data-placement="right">
+                            grootte</a>
+                          </code>
+                        </td>
+                        <td>
+			  
+                             
+                                            <a href="#KwantitatieveWaarde" data-placement="right">KwantitatieveWaarde</a>
+                             
+                         
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">De fysieke omvang van het monster.</td>
+                        <td property="vann:usageNote">Afhankelijk van het materiaaltype gaat dit over lengte, massa, volume edm.</td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="BO_Monster.huidigeLocatie" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.currentLocation">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.currentLocation" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.currentLocation" data-placement="right">
+                            huidigeLocatie</a>
+                          </code>
+                        </td>
+                        <td>
+			  
+                             
+                                            <a href="#Locatie" data-placement="right">Locatie</a>
+                             
+                         
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">Plaats waar het Monster wordt bewaard.</td>
+                        <td property="vann:usageNote">Dit is typisch een indirecte aanduiding  van de locatie bv een verwijzing naar de Organisatie waar het Monster wordt bewaard en evt de positie daarbinnen (schap in een opslagplaats of lade in een museum).</td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="BO_Monster.materiaalklasse" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.materialClass">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.materialClass" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.materialClass" data-placement="right">
+                            materiaalklasse</a>
+                          </code>
+                        </td>
+                        <td>
+			  
+                             
+                                            <a href="#Materiaalklasse" data-placement="right">Materiaalklasse</a>
+                             
+                         
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Basisclassificatie vh materiaal waaruit het Grondmonster bestaat.</td>
+                        <td property="vann:usageNote">Bv bodem, gesteente</td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="BO_Monster.monstertype" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.specimenType">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.specimenType" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.specimenType" data-placement="right">
+                            monstertype</a>
+                          </code>
+                        </td>
+                        <td>
+			  
+                             
+                                            <a href="#Grondmonstertype" data-placement="right">Grondmonstertype</a>
+                             
+                         
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">Materiële vorm die het Grondmonster aanneemt.</td>
+                        <td property="vann:usageNote">Bv of het gespoeld, gestoken, gekernd is.</td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
               <h3 class="h3" id="BO_RuimtelijkBemonsteringsobject"><a href="https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject" data-placement="right">BO_RuimtelijkBemonsteringsobject</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
@@ -1964,174 +2132,6 @@
                         <td>0..1</td>
                         <td property="rdfs:comment">Het kader dat vastlegt wat behoort tot de wet.</td>
                         <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                    </tbody>
-                  </table>
-                </div>
-      			  
-            </div>
-            
-              <div class="region region--no-space-top">
-              <h3 class="h3" id="Grondmonster"><a href="https://data.vlaanderen.be/ns/grondboringen#Grondmonster" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/grondboringen#Grondmonster" data-placement="right">Grondmonster</a></h3>
-                <div class="region region--no-space-top">
-                  <dl>
-                    <dt>Beschrijving</dt><dd>Monster genomen uit de grond voor observatie ex situ.</dd>
-                    
-                    <dt>Gebruik</dt><dd>In deze context beperken we ons tot Grondmonsters verkregen dmv een Grondboring. De observatie gebeurt doorgaans in een labo.</dd>
-                    
-		     
-		    <dt>Subklasse van <dt><dd>
-                        <a href="#Monster">Monster</a>, 
-                        <a href="#Bemonsteringsobject">Bemonsteringsobject</a>
-		   </dd>
-                    
-                    <dt>Eigenschappen</dt>
-		     
-                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Grondmonster.bemonsteringsplaats">bemonsteringsplaats</a>, 
-                      <a href="#Grondmonster.bemonsteringstijdstip">bemonsteringstijdstip</a>, 
-                      <a href="#Grondmonster.grootte">grootte</a>, 
-                      <a href="#Grondmonster.huidigeLocatie">huidigeLocatie</a>, 
-                      <a href="#Grondmonster.materiaalklasse">materiaalklasse</a>, 
-                      <a href="#Grondmonster.monstertype">monstertype</a>.</dd>
-                    
-                  </dl>
-                </div>
-		 
-                <div class="u-table-overflow">
-                  <table class="data-table">
-                    <thead>
-                      <tr class="data-table__header">
-                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
-                        <th class="data-table__header-title--sortable">Verwacht Type</th>
-                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
-                        <th class="data-table__header-title--sortable">Beschrijving</th>
-                        <th class="data-table__header-title--sortable">Gebruik</th>
-                        <th class="data-table__header-title--sortable">Codelijst</th>
-                      </tr>
-                    </thead>
-
-                    <tbody class="supertype">
-                    
-                      <tr id="Grondmonster.bemonsteringsplaats" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingLocation">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingLocation" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingLocation" data-placement="right">
-                            bemonsteringsplaats</a>
-                          </code>
-                        </td>
-                        <td>
-			  
-                             
-                                            <a href="#Geometrie" data-placement="right">Geometrie</a>
-                             
-                         
-                        </td>
-                        <td>0..1</td>
-                        <td property="rdfs:comment">Plaats waar het Monster werd genomen.</td>
-                        <td property="vann:usageNote">Als het Monster een geassocieerdBemonsteringsobject heeft dat ondubbelzinnig gelocaliseerd is dan is dit attribuut overbodig. Uitzondering in dat geval is wanneer de plaats tov het Bemonsteringsobject daarbij van belang is, bv de diepte waarop een grondmonster is genomen bij een boring. Datatype is Geometrie om naast puntlocaties ook een ruimere begrenzing te kunnen opgeven (bv een diepte-interval in het geval van een grondmonster).</td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="Grondmonster.bemonsteringstijdstip" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingTime">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingTime" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.samplingTime" data-placement="right">
-                            bemonsteringstijdstip</a>
-                          </code>
-                        </td>
-                        <td>
-			  
-                             
-                                            <a href="#Periode" data-placement="right">Periode</a>
-                             
-                         
-                        </td>
-                        <td>0..1</td>
-                        <td property="rdfs:comment">Moment waarop het Grondmonster is genomen.</td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="Grondmonster.grootte" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.size">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.size" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.size" data-placement="right">
-                            grootte</a>
-                          </code>
-                        </td>
-                        <td>
-			  
-                             
-                                            <a href="#KwantitatieveWaarde" data-placement="right">KwantitatieveWaarde</a>
-                             
-                         
-                        </td>
-                        <td>0..1</td>
-                        <td property="rdfs:comment">De fysieke omvang van het monster.</td>
-                        <td property="vann:usageNote">Afhankelijk van het materiaaltype gaat dit over lengte, massa, volume edm.</td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="Grondmonster.huidigeLocatie" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.currentLocation">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.currentLocation" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.currentLocation" data-placement="right">
-                            huidigeLocatie</a>
-                          </code>
-                        </td>
-                        <td>
-			  
-                             
-                                            <a href="#Locatie" data-placement="right">Locatie</a>
-                             
-                         
-                        </td>
-                        <td>0..1</td>
-                        <td property="rdfs:comment">Plaats waar het Monster wordt bewaard.</td>
-                        <td property="vann:usageNote">Dit is typisch een indirecte aanduiding  van de locatie bv een verwijzing naar de Organisatie waar het Monster wordt bewaard en evt de positie daarbinnen (schap in een opslagplaats of lade in een museum).</td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="Grondmonster.materiaalklasse" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.materialClass">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.materialClass" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.materialClass" data-placement="right">
-                            materiaalklasse</a>
-                          </code>
-                        </td>
-                        <td>
-			  
-                             
-                                            <a href="#Materiaalklasse" data-placement="right">Materiaalklasse</a>
-                             
-                         
-                        </td>
-                        <td>1</td>
-                        <td property="rdfs:comment">Basisclassificatie vh materiaal waaruit het Grondmonster bestaat.</td>
-                        <td property="vann:usageNote">Bv bodem, gesteente</td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="Grondmonster.monstertype" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.specimenType">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.specimenType" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen.specimenType" data-placement="right">
-                            monstertype</a>
-                          </code>
-                        </td>
-                        <td>
-			  
-                             
-                                            <a href="#Grondmonstertype" data-placement="right">Grondmonstertype</a>
-                             
-                         
-                        </td>
-                        <td>0..1</td>
-                        <td property="rdfs:comment">Materiële vorm die het Grondmonster aanneemt.</td>
-                        <td property="vann:usageNote">Bv of het gespoeld, gestoken, gekernd is.</td>
                         <td></td>
                       </tr>
                     

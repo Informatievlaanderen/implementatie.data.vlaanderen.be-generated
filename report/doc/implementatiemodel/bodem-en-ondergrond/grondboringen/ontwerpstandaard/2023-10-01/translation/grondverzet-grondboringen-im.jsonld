@@ -4982,16 +4982,16 @@
         "nl": "Monster genomen uit de grond voor observatie ex situ."
       },
       "label": {
-        "nl": "Grondmonster"
+        "nl": "BO_Monster"
       },
       "ap-label-nl": {
-        "nl": "Grondmonster"
+        "nl": "BO_Monster"
       },
       "ap-definition-nl": {
         "nl": "Monster genomen uit de grond voor observatie ex situ."
       },
       "extra": {
-        "EA-Name": "Grondmonster",
+        "EA-Name": "BO_Monster",
         "EA-Guid": "{C858560E-C138-4223-AD4E-FC5284AA3FDE}",
         "EA-Package": "OSLO-Grondboringen",
         "EA-Type": "CLASS",
@@ -5012,7 +5012,7 @@
         ],
         "parentclasses": "http://def.isotc211.org/iso19156/2011/Specimen#SF_Specimen, http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature",
         "label": {
-          "nl": "Grondmonster"
+          "nl": "BO_Monster"
         },
         "definition": {
           "nl": "Monster genomen uit de grond voor observatie ex situ."
@@ -5021,7 +5021,7 @@
           "nl": "In deze context beperken we ons tot Grondmonsters verkregen dmv een Grondboring. De observatie gebeurt doorgaans in een labo."
         },
         "ap-label-nl": {
-          "nl": "Grondmonster"
+          "nl": "BO_Monster"
         },
         "ap-definition-nl": {
           "nl": "Monster genomen uit de grond voor observatie ex situ."
@@ -5031,7 +5031,7 @@
         "RawTags": [
           {
             "key": "label-nl",
-            "value": "Grondmonster",
+            "value": "BO_Monster",
             "note": "null"
           },
           {
@@ -5043,11 +5043,16 @@
             "key": "usageNote-nl",
             "value": "In deze context beperken we ons tot Grondmonsters verkregen dmv een Grondboring. De observatie gebeurt doorgaans in een labo.",
             "note": "null"
+          },
+          {
+            "key": "name",
+            "value": "Grondmonster",
+            "note": "null"
           }
         ],
         "Scope": "NOTHING"
       },
-      "name": "Grondmonster"
+      "name": "Bo_monster"
     },
     {
       "@id": "https://data.vlaanderen.be/ns/grondboringen#Grondobject",
@@ -9666,110 +9671,6 @@
       "@id": "http://www.w3.org/ns/sosa/hasResult",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "name": "resultaat",
-      "inpackage": "OTHER_PACKAGE",
-      "definition": {
-        "nl": "Het resultaat van de uitgevoerde grondboring."
-      },
-      "label": {
-        "nl": "resultaat"
-      },
-      "ap-label-nl": {
-        "nl": "resultaat"
-      },
-      "ap-definition-nl": {
-        "nl": "Het resultaat van de uitgevoerde grondboring."
-      },
-      "extra": {
-        "EA-Name": "resultaat",
-        "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "Grondboring",
-        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
-        "EA-Range": "Boorgat",
-        "RangeData": {
-          "EA-Name": "Boorgat",
-          "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-        },
-        "sourceRole": "isResultaatVan",
-        "destRole": "resultaat",
-        "label": {
-          "nl": "resultaat"
-        },
-        "definition": {
-          "nl": "Het resultaat van de uitgevoerde grondboring."
-        },
-        "usage": "",
-        "ap-label-nl": {
-          "nl": "resultaat"
-        },
-        "ap-definition-nl": {
-          "nl": "Het resultaat van de uitgevoerde grondboring."
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [
-          {
-            "key": "definition-nl",
-            "value": "NOTE",
-            "note": "Het resultaat van de uitgevoerde grondboring."
-          },
-          {
-            "key": "uri",
-            "value": "NOTE",
-            "note": "http://www.w3.org/ns/sosa/hasResult"
-          },
-          {
-            "key": "label-nl",
-            "value": "NOTE",
-            "note": "resultaat"
-          }
-        ],
-        "DestRoleTags": [
-          {
-            "key": "definition-nl",
-            "value": "NOTE",
-            "note": "Het resultaat van de uitgevoerde grondboring."
-          },
-          {
-            "key": "uri",
-            "value": "NOTE",
-            "note": "http://www.w3.org/ns/sosa/hasResult"
-          },
-          {
-            "key": "label-nl",
-            "value": "NOTE",
-            "note": "resultaat"
-          }
-        ],
-        "Scope": "NOTHING"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring",
-          "EA-Name": "Grondboring"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "Boorgat",
-          "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
-    },
-    {
-      "@id": "http://www.w3.org/ns/sosa/hasResult",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "resultaat",
       "inpackage": "UNKNOWN",
       "definition": {
         "nl": "Bemonsteringsobject dat bij de Bemonstering werd verkregen."
@@ -9879,6 +9780,110 @@
       "generalization": [],
       "minCardinality": "1",
       "maxCardinality": "*"
+    },
+    {
+      "@id": "http://www.w3.org/ns/sosa/hasResult",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "resultaat",
+      "inpackage": "OTHER_PACKAGE",
+      "definition": {
+        "nl": "Het resultaat van de uitgevoerde grondboring."
+      },
+      "label": {
+        "nl": "resultaat"
+      },
+      "ap-label-nl": {
+        "nl": "resultaat"
+      },
+      "ap-definition-nl": {
+        "nl": "Het resultaat van de uitgevoerde grondboring."
+      },
+      "extra": {
+        "EA-Name": "resultaat",
+        "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "Grondboring",
+        "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+        "EA-Range": "Boorgat",
+        "RangeData": {
+          "EA-Name": "Boorgat",
+          "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+        },
+        "sourceRole": "isResultaatVan",
+        "destRole": "resultaat",
+        "label": {
+          "nl": "resultaat"
+        },
+        "definition": {
+          "nl": "Het resultaat van de uitgevoerde grondboring."
+        },
+        "usage": "",
+        "ap-label-nl": {
+          "nl": "resultaat"
+        },
+        "ap-definition-nl": {
+          "nl": "Het resultaat van de uitgevoerde grondboring."
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "Het resultaat van de uitgevoerde grondboring."
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://www.w3.org/ns/sosa/hasResult"
+          },
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "resultaat"
+          }
+        ],
+        "DestRoleTags": [
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "Het resultaat van de uitgevoerde grondboring."
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://www.w3.org/ns/sosa/hasResult"
+          },
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "resultaat"
+          }
+        ],
+        "Scope": "NOTHING"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring",
+          "EA-Name": "Grondboring"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Boorgat",
+          "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
+          "EA-Package": "OSLO-Grondboringen",
+          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
     },
     {
       "@id": "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
@@ -12366,7 +12371,7 @@
         "EA-Guid": "{76A0D186-B1BD-48f2-AC8F-A39042C524FA}",
         "EA-Package": "OSLO-Grondboringen",
         "EA-Type": "attribute",
-        "EA-Domain": "Grondmonster",
+        "EA-Domain": "BO_Monster",
         "EA-Domain-Guid": "{C858560E-C138-4223-AD4E-FC5284AA3FDE}",
         "EA-Range": "Grondmonstertype",
         "RangeData": {
@@ -12422,7 +12427,7 @@
       "domain": [
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondmonster",
-          "EA-Name": "Grondmonster"
+          "EA-Name": "BO_Monster"
         }
       ],
       "range": [
@@ -12465,7 +12470,7 @@
         "EA-Guid": "{676E8A26-4713-4784-88EC-43812C8BAFD9}",
         "EA-Package": "OSLO-Grondboringen",
         "EA-Type": "attribute",
-        "EA-Domain": "Grondmonster",
+        "EA-Domain": "BO_Monster",
         "EA-Domain-Guid": "{C858560E-C138-4223-AD4E-FC5284AA3FDE}",
         "EA-Range": "KwantitatieveWaarde",
         "RangeData": {
@@ -12521,7 +12526,7 @@
       "domain": [
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondmonster",
-          "EA-Name": "Grondmonster"
+          "EA-Name": "BO_Monster"
         }
       ],
       "range": [
@@ -12558,7 +12563,7 @@
         "EA-Guid": "{62DF9361-718E-48f7-A2B6-78EE64B4CFE2}",
         "EA-Package": "OSLO-Grondboringen",
         "EA-Type": "attribute",
-        "EA-Domain": "Grondmonster",
+        "EA-Domain": "BO_Monster",
         "EA-Domain-Guid": "{C858560E-C138-4223-AD4E-FC5284AA3FDE}",
         "EA-Range": "Periode",
         "RangeData": {
@@ -12605,7 +12610,7 @@
       "domain": [
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondmonster",
-          "EA-Name": "Grondmonster"
+          "EA-Name": "BO_Monster"
         }
       ],
       "range": [
@@ -12648,7 +12653,7 @@
         "EA-Guid": "{08260904-7ACD-4ad4-BFE3-37D99E1D5C9F}",
         "EA-Package": "OSLO-Grondboringen",
         "EA-Type": "attribute",
-        "EA-Domain": "Grondmonster",
+        "EA-Domain": "BO_Monster",
         "EA-Domain-Guid": "{C858560E-C138-4223-AD4E-FC5284AA3FDE}",
         "EA-Range": "Geometrie",
         "RangeData": {
@@ -12704,7 +12709,7 @@
       "domain": [
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondmonster",
-          "EA-Name": "Grondmonster"
+          "EA-Name": "BO_Monster"
         }
       ],
       "range": [
@@ -12747,7 +12752,7 @@
         "EA-Guid": "{945621D8-E629-465e-85F3-357CEEBEEB35}",
         "EA-Package": "OSLO-Grondboringen",
         "EA-Type": "attribute",
-        "EA-Domain": "Grondmonster",
+        "EA-Domain": "BO_Monster",
         "EA-Domain-Guid": "{C858560E-C138-4223-AD4E-FC5284AA3FDE}",
         "EA-Range": "Materiaalklasse",
         "RangeData": {
@@ -12803,7 +12808,7 @@
       "domain": [
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondmonster",
-          "EA-Name": "Grondmonster"
+          "EA-Name": "BO_Monster"
         }
       ],
       "range": [
@@ -12846,7 +12851,7 @@
         "EA-Guid": "{A6920A37-7BFE-4c09-ABAC-4E5EFE67F172}",
         "EA-Package": "OSLO-Grondboringen",
         "EA-Type": "attribute",
-        "EA-Domain": "Grondmonster",
+        "EA-Domain": "BO_Monster",
         "EA-Domain-Guid": "{C858560E-C138-4223-AD4E-FC5284AA3FDE}",
         "EA-Range": "Locatie",
         "RangeData": {
@@ -12902,7 +12907,7 @@
       "domain": [
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondmonster",
-          "EA-Name": "Grondmonster"
+          "EA-Name": "BO_Monster"
         }
       ],
       "range": [
@@ -14717,7 +14722,7 @@
   "contextgenerator": {
     "parameters": "-d -l label"
   },
-  "dummy": "geert41",
+  "dummy": "geert42",
   "examples": true,
   "filename": "config/grondverzet.json",
   "navigation": {},
@@ -14726,8 +14731,8 @@
     "parameters": ""
   },
   "urlref": "/doc/implementatiemodel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2023-10-01",
-  "documentcommit": "8f38cb31ef9323f34d16e86161a04acf15ed9158",
-  "toolchaincommit": "209d11a7222255b3d2eacfb41003a63cdaae86d0",
+  "documentcommit": "5f9a94c455bd4e89fe596d8314009396317c0c95",
+  "toolchaincommit": "748f26862c323fc8b51dfbcb4a97438397864e36",
   "hostname": "https://implementatie.data.vlaanderen.be/",
   "translation": [
     {
