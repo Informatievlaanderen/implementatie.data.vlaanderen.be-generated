@@ -2673,16 +2673,16 @@
             "@type": "http://www.w3.org/2002/07/owl#Class",
             "inpackage": "OTHER_PACKAGE",
             "definition": {
-                "nl": "TODO"
+                "nl": "TemporeleEntiteit "
             },
             "label": {
-                "nl": "Moment"
+                "nl": "Moment met omvang en duur nul."
             },
             "ap-label-nl": {
-                "nl": "Moment"
+                "nl": "Moment met omvang en duur nul."
             },
             "ap-definition-nl": {
-                "nl": "TODO"
+                "nl": "TemporeleEntiteit "
             },
             "extra": {
                 "EA-Name": "Moment",
@@ -2700,24 +2700,24 @@
                 ],
                 "parentclasses": "http://www.w3.org/2006/time#TemporalEntity",
                 "label": {
-                    "nl": "Moment"
+                    "nl": "Moment met omvang en duur nul."
                 },
                 "definition": {
-                    "nl": "TODO"
+                    "nl": "TemporeleEntiteit "
                 },
                 "usage": "",
                 "ap-label-nl": {
-                    "nl": "Moment"
+                    "nl": "Moment met omvang en duur nul."
                 },
                 "ap-definition-nl": {
-                    "nl": "TODO"
+                    "nl": "TemporeleEntiteit "
                 },
                 "ap-usageNote-nl": "",
                 "ap-codelist": "",
                 "RawTags": [
                     {
                         "key": "label-nl",
-                        "value": "Moment",
+                        "value": "Moment met omvang en duur nul.",
                         "note": "null"
                     },
                     {
@@ -2727,18 +2727,21 @@
                     },
                     {
                         "key": "definition-nl",
-                        "value": "TODO",
+                        "value": "TemporeleEntiteit ",
                         "note": "null"
                     }
                 ],
                 "Scope": "NOTHING"
             },
-            "name": "Moment"
+            "name": "MomentMetOmvangEnDuurNul."
         },
         {
             "@id": "http://www.w3.org/2006/time#ProperInterval",
             "@type": "http://www.w3.org/2002/07/owl#Class",
             "inpackage": "OTHER_PACKAGE",
+            "definition": {
+                "nl": "TemporeleEntiteit waarvan de omvang en duurtijd verschilt van nul, ttz waarvoor de begin- en eindwaarde verschillend zijn."
+            },
             "label": {
                 "nl": "Periode"
             },
@@ -2746,7 +2749,7 @@
                 "nl": "Periode"
             },
             "ap-definition-nl": {
-                "nl": "TODO"
+                "nl": "TemporeleEntiteit waarvan de omvang en duurtijd verschilt van nul, ttz waarvoor de begin- en eindwaarde verschillend zijn."
             },
             "extra": {
                 "EA-Name": "Periode",
@@ -2766,13 +2769,15 @@
                 "label": {
                     "nl": "Periode"
                 },
-                "definition": "",
+                "definition": {
+                    "nl": "TemporeleEntiteit waarvan de omvang en duurtijd verschilt van nul, ttz waarvoor de begin- en eindwaarde verschillend zijn."
+                },
                 "usage": "",
                 "ap-label-nl": {
                     "nl": "Periode"
                 },
                 "ap-definition-nl": {
-                    "nl": "TODO"
+                    "nl": "TemporeleEntiteit waarvan de omvang en duurtijd verschilt van nul, ttz waarvoor de begin- en eindwaarde verschillend zijn."
                 },
                 "ap-usageNote-nl": "",
                 "ap-codelist": "",
@@ -2785,6 +2790,11 @@
                     {
                         "key": "uri",
                         "value": "http://www.w3.org/2006/time#ProperInterval",
+                        "note": "null"
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "TemporeleEntiteit waarvan de omvang en duurtijd verschilt van nul, ttz waarvoor de begin- en eindwaarde verschillend zijn.",
                         "note": "null"
                     }
                 ],
@@ -9656,6 +9666,110 @@
             "@id": "http://www.w3.org/ns/sosa/hasResult",
             "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
             "name": "resultaat",
+            "inpackage": "OTHER_PACKAGE",
+            "definition": {
+                "nl": "Het resultaat van de uitgevoerde grondboring."
+            },
+            "label": {
+                "nl": "resultaat"
+            },
+            "ap-label-nl": {
+                "nl": "resultaat"
+            },
+            "ap-definition-nl": {
+                "nl": "Het resultaat van de uitgevoerde grondboring."
+            },
+            "extra": {
+                "EA-Name": "resultaat",
+                "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
+                "derived": "false",
+                "EA-Package": "",
+                "EA-Type": "connector",
+                "EA-Domain": "Grondboring",
+                "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
+                "EA-Range": "Boorgat",
+                "RangeData": {
+                    "EA-Name": "Boorgat",
+                    "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
+                    "EA-Package": "OSLO-Grondboringen",
+                    "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+                },
+                "sourceRole": "isResultaatVan",
+                "destRole": "resultaat",
+                "label": {
+                    "nl": "resultaat"
+                },
+                "definition": {
+                    "nl": "Het resultaat van de uitgevoerde grondboring."
+                },
+                "usage": "",
+                "ap-label-nl": {
+                    "nl": "resultaat"
+                },
+                "ap-definition-nl": {
+                    "nl": "Het resultaat van de uitgevoerde grondboring."
+                },
+                "ap-usageNote-nl": "",
+                "ap-codelist": "",
+                "RawTags": [
+                    {
+                        "key": "definition-nl",
+                        "value": "NOTE",
+                        "note": "Het resultaat van de uitgevoerde grondboring."
+                    },
+                    {
+                        "key": "uri",
+                        "value": "NOTE",
+                        "note": "http://www.w3.org/ns/sosa/hasResult"
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "NOTE",
+                        "note": "resultaat"
+                    }
+                ],
+                "DestRoleTags": [
+                    {
+                        "key": "definition-nl",
+                        "value": "NOTE",
+                        "note": "Het resultaat van de uitgevoerde grondboring."
+                    },
+                    {
+                        "key": "uri",
+                        "value": "NOTE",
+                        "note": "http://www.w3.org/ns/sosa/hasResult"
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "NOTE",
+                        "note": "resultaat"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring",
+                    "EA-Name": "Grondboring"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Boorgat",
+                    "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
+                    "EA-Package": "OSLO-Grondboringen",
+                    "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "1",
+            "maxCardinality": "1"
+        },
+        {
+            "@id": "http://www.w3.org/ns/sosa/hasResult",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "resultaat",
             "inpackage": "UNKNOWN",
             "definition": {
                 "nl": "Bemonsteringsobject dat bij de Bemonstering werd verkregen."
@@ -9765,110 +9879,6 @@
             "generalization": [],
             "minCardinality": "1",
             "maxCardinality": "*"
-        },
-        {
-            "@id": "http://www.w3.org/ns/sosa/hasResult",
-            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-            "name": "resultaat",
-            "inpackage": "OTHER_PACKAGE",
-            "definition": {
-                "nl": "Het resultaat van de uitgevoerde grondboring."
-            },
-            "label": {
-                "nl": "resultaat"
-            },
-            "ap-label-nl": {
-                "nl": "resultaat"
-            },
-            "ap-definition-nl": {
-                "nl": "Het resultaat van de uitgevoerde grondboring."
-            },
-            "extra": {
-                "EA-Name": "resultaat",
-                "EA-Guid": "{A1A40C09-96B8-43db-84F6-EA252F1D5C67}",
-                "derived": "false",
-                "EA-Package": "",
-                "EA-Type": "connector",
-                "EA-Domain": "Grondboring",
-                "EA-Domain-Guid": "{82CE4FE2-7C8F-4038-92DF-6B1E0BBBA73E}",
-                "EA-Range": "Boorgat",
-                "RangeData": {
-                    "EA-Name": "Boorgat",
-                    "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-                    "EA-Package": "OSLO-Grondboringen",
-                    "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-                },
-                "sourceRole": "isResultaatVan",
-                "destRole": "resultaat",
-                "label": {
-                    "nl": "resultaat"
-                },
-                "definition": {
-                    "nl": "Het resultaat van de uitgevoerde grondboring."
-                },
-                "usage": "",
-                "ap-label-nl": {
-                    "nl": "resultaat"
-                },
-                "ap-definition-nl": {
-                    "nl": "Het resultaat van de uitgevoerde grondboring."
-                },
-                "ap-usageNote-nl": "",
-                "ap-codelist": "",
-                "RawTags": [
-                    {
-                        "key": "definition-nl",
-                        "value": "NOTE",
-                        "note": "Het resultaat van de uitgevoerde grondboring."
-                    },
-                    {
-                        "key": "uri",
-                        "value": "NOTE",
-                        "note": "http://www.w3.org/ns/sosa/hasResult"
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "NOTE",
-                        "note": "resultaat"
-                    }
-                ],
-                "DestRoleTags": [
-                    {
-                        "key": "definition-nl",
-                        "value": "NOTE",
-                        "note": "Het resultaat van de uitgevoerde grondboring."
-                    },
-                    {
-                        "key": "uri",
-                        "value": "NOTE",
-                        "note": "http://www.w3.org/ns/sosa/hasResult"
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "NOTE",
-                        "note": "resultaat"
-                    }
-                ],
-                "Scope": "NOTHING"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring",
-                    "EA-Name": "Grondboring"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "Boorgat",
-                    "EA-GUID": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-                    "EA-Package": "OSLO-Grondboringen",
-                    "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "1",
-            "maxCardinality": "1"
         },
         {
             "@id": "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
@@ -10359,7 +10369,7 @@
             "name": "inxsddatetime",
             "inpackage": "OTHER_PACKAGE",
             "definition": {
-                "nl": "TODO"
+                "nl": "Positie in de tijd uitgedrukt dmv xsd:dateTime."
             },
             "label": {
                 "nl": "inXSDDateTime"
@@ -10368,7 +10378,7 @@
                 "nl": "inXSDDateTime"
             },
             "ap-definition-nl": {
-                "nl": "TODO"
+                "nl": "Positie in de tijd uitgedrukt dmv xsd:dateTime."
             },
             "extra": {
                 "EA-Name": "inXSDDateTime",
@@ -10387,14 +10397,14 @@
                     "nl": "inXSDDateTime"
                 },
                 "definition": {
-                    "nl": "TODO"
+                    "nl": "Positie in de tijd uitgedrukt dmv xsd:dateTime."
                 },
                 "usage": "",
                 "ap-label-nl": {
                     "nl": "inXSDDateTime"
                 },
                 "ap-definition-nl": {
-                    "nl": "TODO"
+                    "nl": "Positie in de tijd uitgedrukt dmv xsd:dateTime."
                 },
                 "ap-usageNote-nl": "",
                 "ap-codelist": "",
@@ -10411,7 +10421,7 @@
                     },
                     {
                         "key": "definition-nl",
-                        "value": "TODO",
+                        "value": "Positie in de tijd uitgedrukt dmv xsd:dateTime.",
                         "note": "null"
                     }
                 ],
@@ -10441,7 +10451,7 @@
             "name": "tot",
             "inpackage": "OTHER_PACKAGE",
             "definition": {
-                "nl": "TODO"
+                "nl": "Einde ve TemporeleEntiteit."
             },
             "label": {
                 "nl": "tot"
@@ -10450,7 +10460,7 @@
                 "nl": "tot"
             },
             "ap-definition-nl": {
-                "nl": "TODO"
+                "nl": "Einde ve TemporeleEntiteit."
             },
             "extra": {
                 "EA-Name": "^tot",
@@ -10470,14 +10480,14 @@
                     "nl": "tot"
                 },
                 "definition": {
-                    "nl": "TODO"
+                    "nl": "Einde ve TemporeleEntiteit."
                 },
                 "usage": "",
                 "ap-label-nl": {
                     "nl": "tot"
                 },
                 "ap-definition-nl": {
-                    "nl": "TODO"
+                    "nl": "Einde ve TemporeleEntiteit."
                 },
                 "ap-usageNote-nl": "",
                 "ap-codelist": "",
@@ -10494,7 +10504,7 @@
                     },
                     {
                         "key": "definition-nl",
-                        "value": "TODO",
+                        "value": "Einde ve TemporeleEntiteit.",
                         "note": "null"
                     }
                 ],
@@ -10525,7 +10535,7 @@
             "name": "van",
             "inpackage": "OTHER_PACKAGE",
             "definition": {
-                "nl": "TODO"
+                "nl": "Start ve TemporeleEntiteit."
             },
             "label": {
                 "nl": "van"
@@ -10534,7 +10544,7 @@
                 "nl": "van"
             },
             "ap-definition-nl": {
-                "nl": "TODO"
+                "nl": "Start ve TemporeleEntiteit."
             },
             "extra": {
                 "EA-Name": "^van",
@@ -10554,14 +10564,14 @@
                     "nl": "van"
                 },
                 "definition": {
-                    "nl": "TODO"
+                    "nl": "Start ve TemporeleEntiteit."
                 },
                 "usage": "",
                 "ap-label-nl": {
                     "nl": "van"
                 },
                 "ap-definition-nl": {
-                    "nl": "TODO"
+                    "nl": "Start ve TemporeleEntiteit."
                 },
                 "ap-usageNote-nl": "",
                 "ap-codelist": "",
@@ -10578,7 +10588,7 @@
                     },
                     {
                         "key": "definition-nl",
-                        "value": "TODO",
+                        "value": "Start ve TemporeleEntiteit.",
                         "note": "null"
                     }
                 ],
@@ -14707,7 +14717,7 @@
     "contextgenerator": {
         "parameters": "-d -l label"
     },
-    "dummy": "geert40",
+    "dummy": "geert41",
     "examples": true,
     "filename": "config/grondverzet.json",
     "navigation": {},
@@ -14716,7 +14726,7 @@
         "parameters": ""
     },
     "urlref": "/doc/implementatiemodel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2023-10-01",
-    "documentcommit": "b059a60c5b1fbd2a67a5367c034da8c32cf6eda3",
-    "toolchaincommit": "8b9412885f76afe17fb6e4904b20c145763111de",
+    "documentcommit": "8f38cb31ef9323f34d16e86161a04acf15ed9158",
+    "toolchaincommit": "209d11a7222255b3d2eacfb41003a63cdaae86d0",
     "hostname": "https://implementatie.data.vlaanderen.be/"
 }

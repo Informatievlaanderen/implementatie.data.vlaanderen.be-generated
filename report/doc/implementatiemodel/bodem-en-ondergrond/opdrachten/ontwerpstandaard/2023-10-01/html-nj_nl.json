@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/b059a60c5b1fbd2a67a5367c034da8c32cf6eda3",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/b059a60c5b1fbd2a67a5367c034da8c32cf6eda3/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/8f38cb31ef9323f34d16e86161a04acf15ed9158",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/8f38cb31ef9323f34d16e86161a04acf15ed9158/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
@@ -596,13 +596,13 @@
   "datatypes": [
     {
       "uri": "http://www.w3.org/2006/time#Instant",
-      "name": "Moment",
+      "name": "MomentMetOmvangEnDuurNul.",
       "label": {
-        "nl": "Moment"
+        "nl": "Moment met omvang en duur nul."
       },
-      "sort": "Moment",
+      "sort": "Moment met omvang en duur nul.",
       "description": {
-        "nl": "TODO"
+        "nl": "TemporeleEntiteit "
       },
       "usage": {},
       "parents": [
@@ -615,9 +615,9 @@
         }
       ],
       "rawTags": {
-        "label-nl": "Moment",
+        "label-nl": "Moment met omvang en duur nul.",
         "uri": "http://www.w3.org/2006/time#Instant",
-        "definition-nl": "TODO"
+        "definition-nl": "TemporeleEntiteit "
       },
       "properties": [
         {
@@ -628,7 +628,7 @@
             "nl": "inXSDDateTime"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "Positie in de tijd uitgedrukt dmv xsd:dateTime."
           },
           "usage": {},
           "domain": [
@@ -657,7 +657,7 @@
           "rawTags": {
             "label-nl": "inXSDDateTime",
             "uri": "http://www.w3.org/2006/time#inXSDDateTime",
-            "definition-nl": "TODO"
+            "definition-nl": "Positie in de tijd uitgedrukt dmv xsd:dateTime."
           }
         }
       ]
@@ -669,7 +669,9 @@
         "nl": "Periode"
       },
       "sort": "Periode",
-      "description": {},
+      "description": {
+        "nl": "TemporeleEntiteit waarvan de omvang en duurtijd verschilt van nul, ttz waarvoor de begin- en eindwaarde verschillend zijn."
+      },
       "usage": {},
       "parents": [
         {
@@ -682,7 +684,8 @@
       ],
       "rawTags": {
         "label-nl": "Periode",
-        "uri": "http://www.w3.org/2006/time#ProperInterval"
+        "uri": "http://www.w3.org/2006/time#ProperInterval",
+        "definition-nl": "TemporeleEntiteit waarvan de omvang en duurtijd verschilt van nul, ttz waarvoor de begin- en eindwaarde verschillend zijn."
       },
       "properties": [
         {
@@ -693,7 +696,7 @@
             "nl": "tot"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "Einde ve TemporeleEntiteit."
           },
           "usage": {},
           "domain": [
@@ -710,10 +713,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#Moment",
+              "range_uri": "#Moment met omvang en duur nul.",
               "range_puri": "http://www.w3.org/2006/time#Instant",
               "range_label": {
-                "nl": "Moment"
+                "nl": "Moment met omvang en duur nul."
               }
             }
           ],
@@ -722,7 +725,7 @@
           "rawTags": {
             "uri": "http://www.w3.org/2006/time#hasEnd",
             "label-nl": "tot",
-            "definition-nl": "TODO"
+            "definition-nl": "Einde ve TemporeleEntiteit."
           }
         },
         {
@@ -733,7 +736,7 @@
             "nl": "van"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "Start ve TemporeleEntiteit."
           },
           "usage": {},
           "domain": [
@@ -750,10 +753,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#Moment",
+              "range_uri": "#Moment met omvang en duur nul.",
               "range_puri": "http://www.w3.org/2006/time#Instant",
               "range_label": {
-                "nl": "Moment"
+                "nl": "Moment met omvang en duur nul."
               }
             }
           ],
@@ -762,7 +765,7 @@
           "rawTags": {
             "uri": "http://www.w3.org/2006/time#hasBeginning",
             "label-nl": "van",
-            "definition-nl": "TODO"
+            "definition-nl": "Start ve TemporeleEntiteit."
           }
         }
       ]
