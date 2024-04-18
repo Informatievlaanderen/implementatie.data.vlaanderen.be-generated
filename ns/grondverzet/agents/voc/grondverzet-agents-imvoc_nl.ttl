@@ -1,0 +1,30 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://fixme.com> a owl:Ontology;
+  rdfs:label "grondverzet-agents-imvoc"@en,
+    "grondverzet-agents-imvoc"@nl;
+  dc:issued "TODO";
+  dc:license "https://creativecommons.org/publicdomain/zero/1.0/",
+    <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>;
+  dc:mediator [
+    foaf:homepage <https://data.specs.org>;
+    foaf:mbox <mailto:info@data.specs.org>;
+    foaf:name "Data Specifications Organisation"
+  ];
+  foaf:maker [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Bert";
+    foaf:lastName "Van Nuffelen"
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Geert";
+    foaf:lastName "Thijs"
+  ] .
