@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht> a rdfs:Class;
+  rdfs:label "Opdracht"@nl .
+
+<https://implementatie.data.vlaanderen.be/ns/opdrachten#beschrijving> a owl:DatatypeProperty;
+  rdfs:label "beschrijving"@nl;
+  rdfs:comment "TODO"@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/opdrachten>;
+  rdfs:range rdf:langString .
+
+<https://implementatie.data.vlaanderen.be/ns/opdrachten#dataleverancier> a owl:ObjectProperty;
+  rdfs:label "dataleverancier"@nl;
+  rdfs:comment "TODO"@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/opdrachten>;
+  rdfs:range dc:Agent .
+
+<https://implementatie.data.vlaanderen.be/ns/opdrachten#ligging> a owl:ObjectProperty;
+  rdfs:label "ligging"@nl;
+  rdfs:comment "TODO"@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/opdrachten>;
+  rdfs:range prov:Location .
+
+<https://implementatie.data.vlaanderen.be/ns/opdrachten#opdrachtgever> a owl:ObjectProperty;
+  rdfs:label "opdrachtgever"@nl;
+  rdfs:comment "TODO"@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/opdrachten>;
+  rdfs:range dc:Agent .
+
+<https://implementatie.data.vlaanderen.be/ns/opdrachten#opdrachtnemer> a owl:ObjectProperty;
+  rdfs:label "opdrachtnemer"@nl;
+  rdfs:comment "TODO"@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/opdrachten>;
+  rdfs:range dc:Agent .
+
+<https://implementatie.data.vlaanderen.be/ns/opdrachten#referentie> a owl:DatatypeProperty;
+  rdfs:label "referentie"@nl;
+  rdfs:comment "TODO"@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/opdrachten>;
+  rdfs:range xsd:anyURI .
+
+<https://implementatie.data.vlaanderen.be/ns/opdrachten#resultaat> a owl:ObjectProperty;
+  rdfs:label "resultaat"@nl;
+  rdfs:comment "TODO"@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/opdrachten>;
+  rdfs:range rdfs:Resource .
+
+<https://implementatie.data.vlaanderen.be/ns/opdrachten#tijdstip> a owl:ObjectProperty;
+  rdfs:label "tijdstip"@nl;
+  rdfs:comment "TODO"@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/opdrachten>;
+  rdfs:range <http://www.w3.org/2006/time#TemporalEntity> .
+
+dc:type a rdf:Property;
+  rdfs:label "type"@nl .
+
+<http://www.w3.org/ns/adms#identifier> a rdf:Property;
+  rdfs:label "identificator"@nl .
+
+<https://implementatie.data.vlaanderen.be/ns/opdrachten> a owl:Ontology;
+  rdfs:label "grondverzet-opdrachten-imvoc"@en,
+    "grondverzet-opdrachten-imvoc"@nl;
+  dc:issued "TODO";
+  dc:license "https://creativecommons.org/publicdomain/zero/1.0/",
+    <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>;
+  dc:mediator [
+    foaf:homepage <https://data.specs.org>;
+    foaf:mbox <mailto:info@data.specs.org>;
+    foaf:name "Data Specifications Organisation"
+  ];
+  rdfs:seeAlso <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht>,
+    <http://www.w3.org/ns/adms#identifier>,
+    dc:type;
+  foaf:maker [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Bert";
+    foaf:lastName "Van Nuffelen"
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Geert";
+    foaf:lastName "Thijs"
+  ] .

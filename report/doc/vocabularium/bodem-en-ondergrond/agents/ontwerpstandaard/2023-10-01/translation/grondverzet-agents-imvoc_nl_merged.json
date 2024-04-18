@@ -1,0 +1,3560 @@
+{
+  "@context": {
+    "affiliation": {
+      "@id": "http://schema.org/affiliation"
+    },
+    "authors": {
+      "@id": "foaf:maker",
+      "@type": "foaf:Person"
+    },
+    "classes": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "contributors": {
+      "@id": "dcterms:contributor",
+      "@type": "foaf:Person"
+    },
+    "datatypes": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "domain": {
+      "@id": "rdfs:domain"
+    },
+    "editors": {
+      "@id": "rec:editor",
+      "@type": "foaf:Person"
+    },
+    "externals": {
+      "@id": "rdfs:seeAlso",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class"
+    },
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "generalization": {
+      "@id": "rdfs:subPropertyOf"
+    },
+    "issued": {
+      "@id": "dcterms:issued"
+    },
+    "label": {
+      "@container": "@language",
+      "@id": "rdfs:label"
+    },
+    "maxCardinality": {
+      "@id": "sh:maxCount"
+    },
+    "minCardinality": {
+      "@id": "sh:minCount"
+    },
+    "modified": {
+      "@id": "dcterms:modified",
+      "@type": "xsd:date"
+    },
+    "name": {
+      "@id": "rdfs:label"
+    },
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "person": "http://www.w3.org/ns/person#",
+    "properties": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "qb": "http://purl.org/linked-data/cube#",
+    "range": {
+      "@id": "rdfs:range"
+    },
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rec": "http://www.w3.org/2001/02pd/rec54#",
+    "sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
+    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+    "sh": "http://w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "vann": "http://purl.org/vocab/vann/",
+    "vlaanderen": "http://data.vlaanderen.be/ns/",
+    "void": "http://rdfs.org/ns/void#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "http://fixme.com",
+  "@type": "http://www.w3.org/2002/07/owl#Ontology",
+  "authors": [
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Digitaal Vlaanderen"
+      },
+      "foaf:firstName": "Bert",
+      "foaf:lastName": "Van Nuffelen"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Digitaal Vlaanderen"
+      },
+      "foaf:firstName": "Geert",
+      "foaf:lastName": "Thijs"
+    }
+  ],
+  "branchtag": "main",
+  "classes": [],
+  "config": "config/config-voc.json",
+  "contributors": [],
+  "contributors-column": "MijnKolom",
+  "contributors-file": "stakeholders.csv",
+  "diagram": "IM-Agents",
+  "documentcommit": "ed6f5cfe42becd4ca3c274b9049f0fd3cd7f4777",
+  "dummy": "geert02",
+  "eap": "Grondverzet.EAP",
+  "editors": [],
+  "examples": false,
+  "externalproperties": [
+    {
+      "@id": "https://vocab.belgif.be/ns/address#municipalityName",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{AF8F3DFA-7957-4007-B245-8388F8EF12F7}",
+      "codelist": [],
+      "definition": {
+        "nl": "Gemeentenaam van het adres."
+      },
+      "definition-en": {
+        "en": "Municipal name from address."
+      },
+      "definition-nl": {
+        "nl": "Gemeentenaam van het adres."
+      },
+      "domain": [
+        {
+          "EA-Name": "Adresvoorstelling",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Adresvoorstelling",
+        "EA-Domain-Guid": "{D0FEA8B9-937D-450b-81B9-2887B1CD1E08}",
+        "EA-Guid": "{AF8F3DFA-7957-4007-B245-8388F8EF12F7}",
+        "EA-Name": "gemeentenaam",
+        "EA-Package": "OSLO-Adres",
+        "EA-Range": "LangString",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "gemeentenaam"
+          },
+          {
+            "key": "parentURI",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#postName"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": " ",
+            "value": "Gemeentenaam van het adres."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": " ",
+            "value": " "
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "Municipal name from address."
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "municipality name"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "gemeentenaam"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Gemeentenaam van het adres."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://vocab.belgif.be/ns/address#municipalityName"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": {
+          "nl": "Gemeentenaam van het adres."
+        },
+        "definition-en": {
+          "en": "Municipal name from address."
+        },
+        "definition-nl": {
+          "nl": "Gemeentenaam van het adres."
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "gemeentenaam"
+        },
+        "label-en": {
+          "en": "municipality name"
+        },
+        "label-nl": {
+          "nl": "gemeentenaam"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [
+        "http://www.w3.org/ns/locn#postName"
+      ],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "gemeentenaam"
+      },
+      "label-en": {
+        "en": "municipality name"
+      },
+      "label-nl": {
+        "nl": "gemeentenaam"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "gemeentenaam",
+      "range": [
+        {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ]
+    },
+    {
+      "@id": "https://vocab.belgif.be/ns/address#country",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{963A5085-B4AC-48fb-BBE8-B3F94EEFC47E}",
+      "codelist": [],
+      "definition": {
+        "nl": "Land waarin het adres gelegen is."
+      },
+      "definition-en": {
+        "en": "Country in which the address is located."
+      },
+      "definition-nl": {
+        "nl": "Land waarin het adres gelegen is."
+      },
+      "domain": [
+        {
+          "EA-Name": "Adresvoorstelling",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Adresvoorstelling",
+        "EA-Domain-Guid": "{D0FEA8B9-937D-450b-81B9-2887B1CD1E08}",
+        "EA-Guid": "{963A5085-B4AC-48fb-BBE8-B3F94EEFC47E}",
+        "EA-Name": "land",
+        "EA-Package": "OSLO-Adres",
+        "EA-Range": "LangString",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "parentURI",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#adminUnitL1"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": " ",
+            "value": "Land waarin het adres gelegen is."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": " ",
+            "value": " "
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "land"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "Country in which the address is located."
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "country"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "land"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Land waarin het adres gelegen is."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://vocab.belgif.be/ns/address#country"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": {
+          "nl": "Land waarin het adres gelegen is."
+        },
+        "definition-en": {
+          "en": "Country in which the address is located."
+        },
+        "definition-nl": {
+          "nl": "Land waarin het adres gelegen is."
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "land"
+        },
+        "label-en": {
+          "en": "country"
+        },
+        "label-nl": {
+          "nl": "land"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [
+        "http://www.w3.org/ns/locn#adminUnitL1"
+      ],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "land"
+      },
+      "label-en": {
+        "en": "country"
+      },
+      "label-nl": {
+        "nl": "land"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "land",
+      "range": [
+        {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ]
+    },
+    {
+      "@id": "https://vocab.belgif.be/ns/address#AddressRepresentation.houseNumber",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{E67F6ABD-8D7D-4978-B85D-25DEB866AF00}",
+      "codelist": [],
+      "definition": {
+        "nl": "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen."
+      },
+      "definition-en": {
+        "en": "Alphanumeric code officially assigned to building units, moorings, pitches or plots."
+      },
+      "definition-nl": {
+        "nl": "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen."
+      },
+      "domain": [
+        {
+          "EA-Name": "Adresvoorstelling",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Adresvoorstelling",
+        "EA-Domain-Guid": "{D0FEA8B9-937D-450b-81B9-2887B1CD1E08}",
+        "EA-Guid": "{E67F6ABD-8D7D-4978-B85D-25DEB866AF00}",
+        "EA-Name": "huisnummer",
+        "EA-Package": "OSLO-Adres",
+        "EA-Range": "String",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "RawTags": [
+          {
+            "key": "parentURI",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#locatorDesignator"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "huisnummer"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": " ",
+            "value": "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": " ",
+            "value": "Specialisatie van Adresvoorstelling:locatieaanduiding tbv Belgische adressen."
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "Alphanumeric code officially assigned to building units, moorings, pitches or plots."
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "house number"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "Specialization of Address representation: location indication for Belgian addresses."
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "huisnummer"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://vocab.belgif.be/ns/address#AddressRepresentation.houseNumber"
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "null",
+            "value": "Specialisatie van Adresvoorstelling:locatieaanduiding tbv Belgische adressen."
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": {
+          "nl": "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen."
+        },
+        "definition-en": {
+          "en": "Alphanumeric code officially assigned to building units, moorings, pitches or plots."
+        },
+        "definition-nl": {
+          "nl": "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen."
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "huisnummer"
+        },
+        "label-en": {
+          "en": "house number"
+        },
+        "label-nl": {
+          "nl": "huisnummer"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": {
+          "nl": "Specialisatie van Adresvoorstelling:locatieaanduiding tbv Belgische adressen."
+        },
+        "usageNote-en": {
+          "en": "Specialization of Address representation: location indication for Belgian addresses."
+        },
+        "usageNote-nl": {
+          "nl": "Specialisatie van Adresvoorstelling:locatieaanduiding tbv Belgische adressen."
+        }
+      },
+      "generalization": [
+        "http://www.w3.org/ns/locn#locatorDesignator"
+      ],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "huisnummer"
+      },
+      "label-en": {
+        "en": "house number"
+      },
+      "label-nl": {
+        "nl": "huisnummer"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "huisnummer",
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ],
+      "usage": {
+        "nl": "Specialisatie van Adresvoorstelling:locatieaanduiding tbv Belgische adressen."
+      },
+      "usageNote-en": {
+        "en": "Specialization of Address representation: location indication for Belgian addresses."
+      },
+      "usageNote-nl": {
+        "nl": "Specialisatie van Adresvoorstelling:locatieaanduiding tbv Belgische adressen."
+      }
+    },
+    {
+      "@id": "https://vocab.belgif.be/ns/address#AddressRepresentation.boxNumber",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{389C00A1-045C-46d5-B7A8-FF3B4A8B0494}",
+      "codelist": [],
+      "definition": {
+        "nl": "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben."
+      },
+      "definition-en": {
+        "en": "Officially assigned alphanumeric code added to the house number to distinguish multiple building units, pitches, moorings or plots that have the same house number."
+      },
+      "definition-nl": {
+        "nl": "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben."
+      },
+      "domain": [
+        {
+          "EA-Name": "Adresvoorstelling",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Adresvoorstelling",
+        "EA-Domain-Guid": "{D0FEA8B9-937D-450b-81B9-2887B1CD1E08}",
+        "EA-Guid": "{389C00A1-045C-46d5-B7A8-FF3B4A8B0494}",
+        "EA-Name": "busnummer",
+        "EA-Package": "OSLO-Adres",
+        "EA-Range": "String",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "RawTags": [
+          {
+            "key": "ap-usageNote-nl",
+            "note": " ",
+            "value": "Specialisatie van Adresvoorstelling.locatieaanduiding tbv Belgische adressen."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "busnummer"
+          },
+          {
+            "key": "parentURI",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#locatorDesignator"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": " ",
+            "value": "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben."
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "Officially assigned alphanumeric code added to the house number to distinguish multiple building units, pitches, moorings or plots that have the same house number."
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "box number"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "Specialisation of Address Presentation:location indication for Belgian addresses."
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "busnummer"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://vocab.belgif.be/ns/address#AddressRepresentation.boxNumber"
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "null",
+            "value": "Specialisatie van Adresvoorstelling.locatieaanduiding tbv Belgische adressen."
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": {
+          "nl": "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben."
+        },
+        "definition-en": {
+          "en": "Officially assigned alphanumeric code added to the house number to distinguish multiple building units, pitches, moorings or plots that have the same house number."
+        },
+        "definition-nl": {
+          "nl": "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben."
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "busnummer"
+        },
+        "label-en": {
+          "en": "box number"
+        },
+        "label-nl": {
+          "nl": "busnummer"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": {
+          "nl": "Specialisatie van Adresvoorstelling.locatieaanduiding tbv Belgische adressen."
+        },
+        "usageNote-en": {
+          "en": "Specialisation of Address Presentation:location indication for Belgian addresses."
+        },
+        "usageNote-nl": {
+          "nl": "Specialisatie van Adresvoorstelling.locatieaanduiding tbv Belgische adressen."
+        }
+      },
+      "generalization": [
+        "http://www.w3.org/ns/locn#locatorDesignator"
+      ],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "busnummer"
+      },
+      "label-en": {
+        "en": "box number"
+      },
+      "label-nl": {
+        "nl": "busnummer"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "busnummer",
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ],
+      "usage": {
+        "nl": "Specialisatie van Adresvoorstelling.locatieaanduiding tbv Belgische adressen."
+      },
+      "usageNote-en": {
+        "en": "Specialisation of Address Presentation:location indication for Belgian addresses."
+      },
+      "usageNote-nl": {
+        "nl": "Specialisatie van Adresvoorstelling.locatieaanduiding tbv Belgische adressen."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/persoon#registratie",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{B0C2DCEB-FD48-455a-89C0-6A897D4174C5}",
+      "codelist": [],
+      "definition": {
+        "nl": "Identificatiecode vd persoon ih register."
+      },
+      "definition-nl": {
+        "nl": "Identificatiecode vd persoon ih register."
+      },
+      "domain": [
+        {
+          "EA-Name": "GeregistreerdPersoon",
+          "uri": "https://data.vlaanderen.be/ns/persoon#GeregistreerdPersoon"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "GeregistreerdPersoon",
+        "EA-Domain-Guid": "{6FDD97F4-D6C3-4739-83C1-1421FC5C36AF}",
+        "EA-Guid": "{B0C2DCEB-FD48-455a-89C0-6A897D4174C5}",
+        "EA-Name": "registratie",
+        "EA-Package": "OSLO-Persoon",
+        "EA-Range": "Identificator",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+          "EA-Name": "Identificator",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/ns/adms#Identifier"
+        },
+        "RawTags": [
+          {
+            "key": "ap-usageNote-nl",
+            "note": " ",
+            "value": " "
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Identificatiecode vd persoon ih register."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "registratie"
+          },
+          {
+            "key": "parentURI",
+            "note": "null",
+            "value": "http://www.w3.org/ns/adms#Identifier"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": " ",
+            "value": "Identificatiecode vd persoon ih register."
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": {
+          "nl": "Identificatiecode vd persoon ih register."
+        },
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "Identificatiecode vd persoon ih register."
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "registratie"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "registratie"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [
+        "http://www.w3.org/ns/adms#Identifier"
+      ],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "registratie"
+      },
+      "label-nl": {
+        "nl": "registratie"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "registratie",
+      "range": [
+        {
+          "EA-GUID": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+          "EA-Name": "Identificator",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/ns/adms#Identifier"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/organisatie#rechtsvorm",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{02EAD727-2A78-4af7-8385-1E099E16FE5F}",
+      "codelist": [],
+      "definition": {
+        "nl": "Juridisch statuut van de Geregistreerde Organisatie."
+      },
+      "definition-nl": {
+        "nl": "Juridisch statuut van de Geregistreerde Organisatie."
+      },
+      "domain": [
+        {
+          "EA-Name": "GeregistreerdeOrganisatie",
+          "uri": "http://www.w3.org/ns/regorg#RegisteredOrganization"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "GeregistreerdeOrganisatie",
+        "EA-Domain-Guid": "{0F05038F-04FD-49c7-AC74-6E3F771B76CE}",
+        "EA-Guid": "{02EAD727-2A78-4af7-8385-1E099E16FE5F}",
+        "EA-Name": "rechtsvorm",
+        "EA-Package": "OSLO-Organisatie - Copy",
+        "EA-Range": "Rechtsvormtype",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{203BED19-C267-486d-9D3F-CC1D324FA8D3}",
+          "EA-Name": "Rechtsvormtype",
+          "EA-Package": "OSLO-Organisatie - Copy",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "ap-usageNote-nl",
+            "note": " ",
+            "value": "Stemt in de KBO overeen met rechtsvorm, bvb NV, VZW, Stad/Gemeente, OCMW etc."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "rechtsvorm"
+          },
+          {
+            "key": "parentURI",
+            "note": "null",
+            "value": "http://www.w3.org/ns/regorg#orgType"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Juridisch statuut van de Geregistreerde Organisatie."
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "null",
+            "value": "Bvb NV, VZW, Stad/Gemeente, OCMW etc."
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": " ",
+            "value": "Juridisch statuut van de geregistreerde organisatie."
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": {
+          "nl": "Juridisch statuut van de Geregistreerde Organisatie."
+        },
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "Juridisch statuut van de Geregistreerde Organisatie."
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "rechtsvorm"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "rechtsvorm"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": {
+          "nl": "Bvb NV, VZW, Stad/Gemeente, OCMW etc."
+        },
+        "usageNote-en": "",
+        "usageNote-nl": {
+          "nl": "Bvb NV, VZW, Stad/Gemeente, OCMW etc."
+        }
+      },
+      "generalization": [
+        "http://www.w3.org/ns/regorg#orgType"
+      ],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "rechtsvorm"
+      },
+      "label-nl": {
+        "nl": "rechtsvorm"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "rechtsvorm",
+      "range": [
+        {
+          "EA-GUID": "{203BED19-C267-486d-9D3F-CC1D324FA8D3}",
+          "EA-Name": "Rechtsvormtype",
+          "EA-Package": "OSLO-Organisatie - Copy",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ],
+      "usage": {
+        "nl": "Bvb NV, VZW, Stad/Gemeente, OCMW etc."
+      },
+      "usageNote-nl": {
+        "nl": "Bvb NV, VZW, Stad/Gemeente, OCMW etc."
+      }
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/organisatie#rechtspersoonlijkheid",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{AE676D24-39BD-4189-8309-BA4048FE7CFA}",
+      "codelist": [],
+      "definition": {
+        "nl": "Geeft aan of de rechtspersoonlijkheid van de Geregistreerde Organisatie deze is van een natuurlijk persoon of van een rechtspersoon. "
+      },
+      "definition-nl": {
+        "nl": "Geeft aan of de rechtspersoonlijkheid van de Geregistreerde Organisatie deze is van een natuurlijk persoon of van een rechtspersoon. "
+      },
+      "domain": [
+        {
+          "EA-Name": "GeregistreerdeOrganisatie",
+          "uri": "http://www.w3.org/ns/regorg#RegisteredOrganization"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "GeregistreerdeOrganisatie",
+        "EA-Domain-Guid": "{0F05038F-04FD-49c7-AC74-6E3F771B76CE}",
+        "EA-Guid": "{AE676D24-39BD-4189-8309-BA4048FE7CFA}",
+        "EA-Name": "rechtspersoonlijkheid",
+        "EA-Package": "OSLO-Organisatie - Copy",
+        "EA-Range": "Rechtspersoonlijkheidtype",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{E6D1770F-0BD9-402d-87C7-365FED5420B2}",
+          "EA-Name": "Rechtspersoonlijkheidtype",
+          "EA-Package": "OSLO-Organisatie - Copy",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": " ",
+            "value": "Geeft aan of de rechtspersoonlijkheid van de geregistreerde organisatie deze is van een natuurlijk persoon of van een rechtspersoon. "
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Een rechtspersoon is een juridische constructie die een organisatie dezelfde rechtspersoonlijkheid geeft als een natuurlijk persoon (kan bv ook schulden hebben, contracten afsluiten, aangeklaagd worden etc). Vb privaatrechterlijke rechtspersonen: vennootschappen, vzw's etc.; vb publiekrechterlijke rechtspersonen: steden, gemeenten etc. Een feitelijke vereniging is in principe geen rechtspersoon maar wordt als ze geregistreerd is id KBO toch als dusdanig geklasseerd.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "rechtspersoonlijkheid"
+          },
+          {
+            "key": "parentURI",
+            "note": "null",
+            "value": "http://www.w3.org/ns/regorg#orgType"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Geeft aan of de rechtspersoonlijkheid van de Geregistreerde Organisatie deze is van een natuurlijk persoon of van een rechtspersoon. "
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "Een rechtspersoon is een juridische constructie die een Organisatie dezelfde rechtspersoonlijkheid geeft als een natuurlijk persoon (kan bv ook schulden hebben, contracten afsluiten, aangeklaagd worden etc). Vb privaatrechterlijke rechtspersonen: vennootschappen, vzw's etc.; vb publiekrechterlijke rechtspersonen: steden, gemeenten etc. Een feitelijke vereniging is in principe geen rechtspersoon.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": {
+          "nl": "Geeft aan of de rechtspersoonlijkheid van de Geregistreerde Organisatie deze is van een natuurlijk persoon of van een rechtspersoon. "
+        },
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "Geeft aan of de rechtspersoonlijkheid van de Geregistreerde Organisatie deze is van een natuurlijk persoon of van een rechtspersoon. "
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "rechtspersoonlijkheid"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "rechtspersoonlijkheid"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": {
+          "nl": "Een rechtspersoon is een juridische constructie die een Organisatie dezelfde rechtspersoonlijkheid geeft als een natuurlijk persoon (kan bv ook schulden hebben, contracten afsluiten, aangeklaagd worden etc). Vb privaatrechterlijke rechtspersonen: vennootschappen, vzw's etc.; vb publiekrechterlijke rechtspersonen: steden, gemeenten etc. Een feitelijke vereniging is in principe geen rechtspersoon."
+        },
+        "usageNote-en": "",
+        "usageNote-nl": {
+          "nl": "Een rechtspersoon is een juridische constructie die een Organisatie dezelfde rechtspersoonlijkheid geeft als een natuurlijk persoon (kan bv ook schulden hebben, contracten afsluiten, aangeklaagd worden etc). Vb privaatrechterlijke rechtspersonen: vennootschappen, vzw's etc.; vb publiekrechterlijke rechtspersonen: steden, gemeenten etc. Een feitelijke vereniging is in principe geen rechtspersoon."
+        }
+      },
+      "generalization": [
+        "http://www.w3.org/ns/regorg#orgType"
+      ],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "rechtspersoonlijkheid"
+      },
+      "label-nl": {
+        "nl": "rechtspersoonlijkheid"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "rechtspersoonlijkheid",
+      "range": [
+        {
+          "EA-GUID": "{E6D1770F-0BD9-402d-87C7-365FED5420B2}",
+          "EA-Name": "Rechtspersoonlijkheidtype",
+          "EA-Package": "OSLO-Organisatie - Copy",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ],
+      "usage": {
+        "nl": "Een rechtspersoon is een juridische constructie die een Organisatie dezelfde rechtspersoonlijkheid geeft als een natuurlijk persoon (kan bv ook schulden hebben, contracten afsluiten, aangeklaagd worden etc). Vb privaatrechterlijke rechtspersonen: vennootschappen, vzw's etc.; vb publiekrechterlijke rechtspersonen: steden, gemeenten etc. Een feitelijke vereniging is in principe geen rechtspersoon."
+      },
+      "usageNote-nl": {
+        "nl": "Een rechtspersoon is een juridische constructie die een Organisatie dezelfde rechtspersoonlijkheid geeft als een natuurlijk persoon (kan bv ook schulden hebben, contracten afsluiten, aangeklaagd worden etc). Vb privaatrechterlijke rechtspersonen: vennootschappen, vzw's etc.; vb publiekrechterlijke rechtspersonen: steden, gemeenten etc. Een feitelijke vereniging is in principe geen rechtspersoon."
+      }
+    },
+    {
+      "@id": "http://xmlns.com/foaf/0.1/page",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{321C322F-4CCE-47f0-BFE8-E266A3EAF633}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "ContactInfo",
+          "uri": "http://schema.org/ContactPoint"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "ContactInfo",
+        "EA-Domain-Guid": "{B71C2849-A8B3-409c-84FD-72920B19B6C0}",
+        "EA-Guid": "{321C322F-4CCE-47f0-BFE8-E266A3EAF633}",
+        "EA-Name": "website",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Range": "URI",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "URI",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#anyURI"
+        },
+        "RawTags": [
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "website"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Website waarnaar men kan surfen."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": " "
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "pagina"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://xmlns.com/foaf/0.1/page"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "pagina"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "pagina"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "pagina"
+      },
+      "label-nl": {
+        "nl": "pagina"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "pagina",
+      "range": [
+        {
+          "EA-Name": "URI",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#anyURI"
+        }
+      ]
+    },
+    {
+      "@id": "http://xmlns.com/foaf/0.1/givenName",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{2407CFEA-68A8-4c57-9C4B-7F28536C54BC}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Persoon",
+          "uri": "http://www.w3.org/ns/person#Person"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Persoon",
+        "EA-Domain-Guid": "{5CDD9AB6-A72D-4057-A37B-1F37C91CF356}",
+        "EA-Guid": "{2407CFEA-68A8-4c57-9C4B-7F28536C54BC}",
+        "EA-Name": "voornaam",
+        "EA-Package": "OSLO-Persoon",
+        "EA-Range": "String",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "RawTags": [
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "voornaam"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": " ",
+            "value": " "
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://xmlns.com/foaf/0.1/givenName"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "gegeven naam"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": " ",
+            "value": "Naam die een kind bij geboorte wordt gegeven. Onderscheidt het kind van de andere kinderen in de familie."
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "gegeven naam"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "gegeven naam"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "gegeven naam"
+      },
+      "label-nl": {
+        "nl": "gegeven naam"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "1",
+      "name": "gegevenNaam",
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ]
+    },
+    {
+      "@id": "http://xmlns.com/foaf/0.1/familyName",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{0247BDDD-4089-4c05-B434-8E4FED64BF4F}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Persoon",
+          "uri": "http://www.w3.org/ns/person#Person"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Persoon",
+        "EA-Domain-Guid": "{5CDD9AB6-A72D-4057-A37B-1F37C91CF356}",
+        "EA-Guid": "{0247BDDD-4089-4c05-B434-8E4FED64BF4F}",
+        "EA-Name": "achternaam",
+        "EA-Package": "OSLO-Persoon",
+        "EA-Range": "String",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "RawTags": [
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "achternaam"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": " ",
+            "value": "Ook wel familienaam genoemd omdat de achternaam een familiale verwantschap aanduidt."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://xmlns.com/foaf/0.1/familyName"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "familienaam"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": " ",
+            "value": "Gedeelte van de volledige naam vd persoon ontvangen van de vorige generatie."
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "familienaam"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "familienaam"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "familienaam"
+      },
+      "label-nl": {
+        "nl": "familienaam"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "familienaam",
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/ns/regorg#registration",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{EDD0BAFB-0949-4d02-B135-C6DABE03791C}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "GeregistreerdeOrganisatie",
+          "uri": "http://www.w3.org/ns/regorg#RegisteredOrganization"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "GeregistreerdeOrganisatie",
+        "EA-Domain-Guid": "{0F05038F-04FD-49c7-AC74-6E3F771B76CE}",
+        "EA-Guid": "{EDD0BAFB-0949-4d02-B135-C6DABE03791C}",
+        "EA-Name": "registratie",
+        "EA-Package": "OSLO-Organisatie - Copy",
+        "EA-Range": "Identificator",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+          "EA-Name": "Identificator",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/ns/adms#Identifier"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "registratie"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": " ",
+            "value": "Identificator dat de organisatie verkreeg bij registratie."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": " ",
+            "value": "In de KBO is dit het ondernemingsnummer."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/regorg#registration"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "registratie"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "registratie"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "registratie"
+      },
+      "label-nl": {
+        "nl": "registratie"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "registratie",
+      "range": [
+        {
+          "EA-GUID": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+          "EA-Name": "Identificator",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/ns/adms#Identifier"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/ns/regorg#legalName",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{F8A82440-7BDF-474a-B8AB-96219E72A7F1}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "GeregistreerdeOrganisatie",
+          "uri": "http://www.w3.org/ns/regorg#RegisteredOrganization"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "GeregistreerdeOrganisatie",
+        "EA-Domain-Guid": "{0F05038F-04FD-49c7-AC74-6E3F771B76CE}",
+        "EA-Guid": "{F8A82440-7BDF-474a-B8AB-96219E72A7F1}",
+        "EA-Name": "wettelijkeNaam",
+        "EA-Package": "OSLO-Organisatie - Copy",
+        "EA-Range": "LangString",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "wettelijke naam"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": " ",
+            "value": "Wettelijk geregistreerde naam vd organisatie."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": " ",
+            "value": "Evt in verschillende talen."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/regorg#legalName"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "wettelijke naam"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "wettelijke naam"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "wettelijke naam"
+      },
+      "label-nl": {
+        "nl": "wettelijke naam"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "wettelijkeNaam",
+      "range": [
+        {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/ns/locn#thoroughfare",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{E6D1B2D7-A638-462a-B57E-FB33B818BF3E}",
+      "codelist": [],
+      "definition": {
+        "nl": "Straatnaam van het adres."
+      },
+      "definition-en": {
+        "en": "Street name of address."
+      },
+      "definition-nl": {
+        "nl": "Straatnaam van het adres."
+      },
+      "domain": [
+        {
+          "EA-Name": "Adresvoorstelling",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Adresvoorstelling",
+        "EA-Domain-Guid": "{D0FEA8B9-937D-450b-81B9-2887B1CD1E08}",
+        "EA-Guid": "{E6D1B2D7-A638-462a-B57E-FB33B818BF3E}",
+        "EA-Name": "straatnaam",
+        "EA-Package": "OSLO-Adres",
+        "EA-Range": "LangString",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "straatnaam"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#thoroughfare"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": " ",
+            "value": "Straatnaam van het adres."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": " ",
+            "value": " "
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "Street name of address."
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "street name"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "straatnaam"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Straatnaam van het adres."
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": {
+          "nl": "Straatnaam van het adres."
+        },
+        "definition-en": {
+          "en": "Street name of address."
+        },
+        "definition-nl": {
+          "nl": "Straatnaam van het adres."
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "straatnaam"
+        },
+        "label-en": {
+          "en": "street name"
+        },
+        "label-nl": {
+          "nl": "straatnaam"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "straatnaam"
+      },
+      "label-en": {
+        "en": "street name"
+      },
+      "label-nl": {
+        "nl": "straatnaam"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "straatnaam",
+      "range": [
+        {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/ns/locn#postCode",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{AB4B2105-4B5F-41d4-BF8A-6E81C477AC4F}",
+      "codelist": [],
+      "definition": {
+        "nl": "Code waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid."
+      },
+      "definition-en": {
+        "en": "Code denoting the geographical area that groups addresses for postal purposes."
+      },
+      "definition-nl": {
+        "nl": "Code waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid."
+      },
+      "domain": [
+        {
+          "EA-Name": "Adresvoorstelling",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Adresvoorstelling",
+        "EA-Domain-Guid": "{D0FEA8B9-937D-450b-81B9-2887B1CD1E08}",
+        "EA-Guid": "{AB4B2105-4B5F-41d4-BF8A-6E81C477AC4F}",
+        "EA-Name": "postcode",
+        "EA-Package": "OSLO-Adres",
+        "EA-Range": "String",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "postcode"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#postCode"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": " ",
+            "value": "Code waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": " ",
+            "value": " "
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "Code denoting the geographical area that groups addresses for postal purposes."
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "postal code"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "postcode"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Code waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid."
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": {
+          "nl": "Code waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid."
+        },
+        "definition-en": {
+          "en": "Code denoting the geographical area that groups addresses for postal purposes."
+        },
+        "definition-nl": {
+          "nl": "Code waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid."
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "postcode"
+        },
+        "label-en": {
+          "en": "postal code"
+        },
+        "label-nl": {
+          "nl": "postcode"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "postcode"
+      },
+      "label-en": {
+        "en": "postal code"
+      },
+      "label-nl": {
+        "nl": "postcode"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "postcode",
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/ns/locn#poBox",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{9CA2398C-6D0C-48bd-B688-3003A7858094}",
+      "codelist": [],
+      "definition": {
+        "nl": "Postbusnummer in een postkantoor."
+      },
+      "definition-en": {
+        "en": "PO Box number in a post office."
+      },
+      "definition-nl": {
+        "nl": "Postbusnummer in een postkantoor."
+      },
+      "domain": [
+        {
+          "EA-Name": "Adresvoorstelling",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Adresvoorstelling",
+        "EA-Domain-Guid": "{D0FEA8B9-937D-450b-81B9-2887B1CD1E08}",
+        "EA-Guid": "{9CA2398C-6D0C-48bd-B688-3003A7858094}",
+        "EA-Name": "postbus",
+        "EA-Package": "OSLO-Adres",
+        "EA-Range": "String",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "postbus"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#poBox"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": " ",
+            "value": "Postbusnummer in een postkantoor."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": " ",
+            "value": " "
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "PO Box number in a post office."
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "PO box"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "postbus"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Postbusnummer in een postkantoor."
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": {
+          "nl": "Postbusnummer in een postkantoor."
+        },
+        "definition-en": {
+          "en": "PO Box number in a post office."
+        },
+        "definition-nl": {
+          "nl": "Postbusnummer in een postkantoor."
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "postbus"
+        },
+        "label-en": {
+          "en": "PO box"
+        },
+        "label-nl": {
+          "nl": "postbus"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "postbus"
+      },
+      "label-en": {
+        "en": "PO box"
+      },
+      "label-nl": {
+        "nl": "postbus"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "postbus",
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/ns/locn#fullAddress",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{93C2FB21-088F-4522-B50D-A280E8EA2CD4}",
+      "codelist": [],
+      "definition": {
+        "nl": "Het complete adres in één string, al dan niet geformatteerd."
+      },
+      "definition-en": {
+        "en": "The complete address in one string, formatted or not."
+      },
+      "definition-nl": {
+        "nl": "Het complete adres in één string, al dan niet geformatteerd."
+      },
+      "domain": [
+        {
+          "EA-Name": "Adresvoorstelling",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Adresvoorstelling",
+        "EA-Domain-Guid": "{D0FEA8B9-937D-450b-81B9-2887B1CD1E08}",
+        "EA-Guid": "{93C2FB21-088F-4522-B50D-A280E8EA2CD4}",
+        "EA-Name": "volledigAdres",
+        "EA-Package": "OSLO-Adres",
+        "EA-Range": "LangString",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": " ",
+            "value": "Het complete adres in één string, al dan niet geformatteerd."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": " ",
+            "value": "Vermijdt fouten tgv het opsplitsen ve adres in zijn onderdelen. Geeft de voorgeschreven volgorde vd verschillende onderdelen weer."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#fullAddress"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "volledig Adres"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "The complete address in one string, formatted or not."
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "full address"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "Avoids errors when splitting an address into its components. Displays the prescribed order of the different parts."
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "volledig Adres"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Het complete adres in één string, al dan niet geformatteerd."
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "null",
+            "value": "Vermijdt fouten tgv het opsplitsen ve adres in zijn onderdelen. Geeft de voorgeschreven volgorde vd verschillende onderdelen weer."
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": {
+          "nl": "Het complete adres in één string, al dan niet geformatteerd."
+        },
+        "definition-en": {
+          "en": "The complete address in one string, formatted or not."
+        },
+        "definition-nl": {
+          "nl": "Het complete adres in één string, al dan niet geformatteerd."
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "volledig Adres"
+        },
+        "label-en": {
+          "en": "full address"
+        },
+        "label-nl": {
+          "nl": "volledig Adres"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": {
+          "nl": "Vermijdt fouten tgv het opsplitsen ve adres in zijn onderdelen. Geeft de voorgeschreven volgorde vd verschillende onderdelen weer."
+        },
+        "usageNote-en": {
+          "en": "Avoids errors when splitting an address into its components. Displays the prescribed order of the different parts."
+        },
+        "usageNote-nl": {
+          "nl": "Vermijdt fouten tgv het opsplitsen ve adres in zijn onderdelen. Geeft de voorgeschreven volgorde vd verschillende onderdelen weer."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "volledig Adres"
+      },
+      "label-en": {
+        "en": "full address"
+      },
+      "label-nl": {
+        "nl": "volledig Adres"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "volledigAdres",
+      "range": [
+        {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "usage": {
+        "nl": "Vermijdt fouten tgv het opsplitsen ve adres in zijn onderdelen. Geeft de voorgeschreven volgorde vd verschillende onderdelen weer."
+      },
+      "usageNote-en": {
+        "en": "Avoids errors when splitting an address into its components. Displays the prescribed order of the different parts."
+      },
+      "usageNote-nl": {
+        "nl": "Vermijdt fouten tgv het opsplitsen ve adres in zijn onderdelen. Geeft de voorgeschreven volgorde vd verschillende onderdelen weer."
+      }
+    },
+    {
+      "@id": "http://www.w3.org/ns/locn#address",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{226EF61B-04BA-47a8-8F28-766268AEA344}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "ContactInfo",
+          "uri": "http://schema.org/ContactPoint"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "ContactInfo",
+        "EA-Domain-Guid": "{B71C2849-A8B3-409c-84FD-72920B19B6C0}",
+        "EA-Guid": "{226EF61B-04BA-47a8-8F28-766268AEA344}",
+        "EA-Name": "adres",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Range": "Adresvoorstelling",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{D0FEA8B9-937D-450b-81B9-2887B1CD1E08}",
+          "EA-Name": "Adresvoorstelling",
+          "EA-Package": "OSLO-Adres",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "adres"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#address"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": " "
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Adres dat men kan aanschrijven of bezoeken."
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "adres"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "adres"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "adres"
+      },
+      "label-nl": {
+        "nl": "adres"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "adres",
+      "range": [
+        {
+          "EA-GUID": "{D0FEA8B9-937D-450b-81B9-2887B1CD1E08}",
+          "EA-Name": "Adresvoorstelling",
+          "EA-Package": "OSLO-Adres",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/ns/adms#schemaAgency",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{A4CB330C-3849-4f95-88CC-6933EA5B6FA4}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Identificator",
+          "uri": "http://www.w3.org/ns/adms#Identifier"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Identificator",
+        "EA-Domain-Guid": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+        "EA-Guid": "{A4CB330C-3849-4f95-88CC-6933EA5B6FA4}",
+        "EA-Name": "toegekendDoorString",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Range": "String",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/adms#schemaAgency"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "toegekendDoorString"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "toegekend door (String)"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Naam vd agent die de identificator heeft toegekend."
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "toegekendDoorString"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "toegekendDoorString"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "toegekendDoorString"
+      },
+      "label-nl": {
+        "nl": "toegekendDoorString"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "toegekenddoorstring",
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{DE424F89-1A2E-4f3f-A7A0-D884E7D5F285}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Organisatie",
+          "uri": "http://www.w3.org/ns/org#Organization"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Organisatie",
+        "EA-Domain-Guid": "{7F94DBDE-BF3B-4f1d-8A20-10ABFCF4E838}",
+        "EA-Guid": "{DE424F89-1A2E-4f3f-A7A0-D884E7D5F285}",
+        "EA-Name": "voorkeursnaam",
+        "EA-Package": "OSLO-Organisatie - Copy",
+        "EA-Range": "LangString",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "voorkeursnaam"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": " ",
+            "value": " "
+          },
+          {
+            "key": "uri",
+            "note": "In de Usage Note staat: \"It is recommended that SKOS lexical labels should be used to label the Organization. In particular skos:prefLabel for the primary (e.g. legally recognized name), skos:altLabel for alternative names (trading names, colloquial names) and skos:notation to denote codes from a code list. Alternative names: Collective, Body, Group.\" Komt in CPOV letterlijk voor.",
+            "value": "http://www.w3.org/2004/02/skos/core#prefLabel"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "voorkeurslabel"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": " ",
+            "value": "Naam waarmee de organisatie bij voorkeur wordt aangeduid."
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "voorkeurslabel"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "voorkeurslabel"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "voorkeurslabel"
+      },
+      "label-nl": {
+        "nl": "voorkeurslabel"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "voorkeurslabel",
+      "range": [
+        {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#notation",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{66756B82-7C96-4e3c-8166-85C1FF11DAAF}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Identificator",
+          "uri": "http://www.w3.org/ns/adms#Identifier"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Identificator",
+        "EA-Domain-Guid": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+        "EA-Guid": "{66756B82-7C96-4e3c-8166-85C1FF11DAAF}",
+        "EA-Name": "identificator",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Range": "Literal",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "RawTags": [
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "identificator"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2004/02/skos/core#notation"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "identificator"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "String gebruikt om het object uniek te identificeren."
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "identificator"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "identificator"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "identificator"
+      },
+      "label-nl": {
+        "nl": "identificator"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "identificator",
+      "range": [
+        {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      ]
+    },
+    {
+      "@id": "http://schema.org/telephone",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{B9018025-62F3-4135-8BF1-101AB3AAC608}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "ContactInfo",
+          "uri": "http://schema.org/ContactPoint"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "ContactInfo",
+        "EA-Domain-Guid": "{B71C2849-A8B3-409c-84FD-72920B19B6C0}",
+        "EA-Guid": "{B9018025-62F3-4135-8BF1-101AB3AAC608}",
+        "EA-Name": "telefoon",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Range": "String",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Telefoonnummer waarop men kan bellen."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": " "
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "telefoon"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://schema.org/telephone"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "telefoon"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "telefoon"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "telefoon"
+      },
+      "label-nl": {
+        "nl": "telefoon"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "telefoon",
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ]
+    },
+    {
+      "@id": "http://schema.org/email",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{305FA515-1002-4ecc-892D-0F56D0216BA6}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "ContactInfo",
+          "uri": "http://schema.org/ContactPoint"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "ContactInfo",
+        "EA-Domain-Guid": "{B71C2849-A8B3-409c-84FD-72920B19B6C0}",
+        "EA-Guid": "{305FA515-1002-4ecc-892D-0F56D0216BA6}",
+        "EA-Name": "email",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Range": "String",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Email-adres waarnaar men kan mailen."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": " "
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "email"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://schema.org/email"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "email"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "email"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "email"
+      },
+      "label-nl": {
+        "nl": "email"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "email",
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ]
+    },
+    {
+      "@id": "http://schema.org/contactPoint",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{ED8A5530-C8B2-41e6-9EE4-51AC3BDD0680}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Persoon",
+          "uri": "http://www.w3.org/ns/person#Person"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Persoon",
+        "EA-Domain-Guid": "{5CDD9AB6-A72D-4057-A37B-1F37C91CF356}",
+        "EA-Guid": "{ED8A5530-C8B2-41e6-9EE4-51AC3BDD0680}",
+        "EA-Name": "contactinfo",
+        "EA-Package": "OSLO-Persoon",
+        "EA-Range": "ContactInfo",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{B71C2849-A8B3-409c-84FD-72920B19B6C0}",
+          "EA-Name": "ContactInfo",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://schema.org/ContactPoint"
+        },
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": " ",
+            "value": "Informatie zoals email, telefoon... die toelaat de Persoon te contacteren."
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "contactinfo"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": " ",
+            "value": " "
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "contactpunt"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://schema.org/contactPoint"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "contactpunt"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "contactpunt"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "contactpunt"
+      },
+      "label-nl": {
+        "nl": "contactpunt"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "contactpunt",
+      "range": [
+        {
+          "EA-GUID": "{B71C2849-A8B3-409c-84FD-72920B19B6C0}",
+          "EA-Name": "ContactInfo",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://schema.org/ContactPoint"
+        }
+      ]
+    },
+    {
+      "@id": "http://schema.org/contactPoint",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{2F4578A7-7EED-440f-A5E1-B463AC283E2C}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Organisatie",
+          "uri": "http://www.w3.org/ns/org#Organization"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Organisatie",
+        "EA-Domain-Guid": "{7F94DBDE-BF3B-4f1d-8A20-10ABFCF4E838}",
+        "EA-Guid": "{2F4578A7-7EED-440f-A5E1-B463AC283E2C}",
+        "EA-Name": "contactinfo",
+        "EA-Package": "OSLO-Organisatie - Copy",
+        "EA-Range": "ContactInfo",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{B71C2849-A8B3-409c-84FD-72920B19B6C0}",
+          "EA-Name": "ContactInfo",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://schema.org/ContactPoint"
+        },
+        "RawTags": [
+          {
+            "key": "ap-usageNote-nl",
+            "note": " ",
+            "value": " "
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "contactpunt"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": " ",
+            "value": "Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren."
+          },
+          {
+            "key": "uri",
+            "note": "Uit CPOV.",
+            "value": "http://schema.org/contactPoint"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "contactinfo"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "contactpunt"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "contactpunt"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "contactpunt"
+      },
+      "label-nl": {
+        "nl": "contactpunt"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "contactpunt",
+      "range": [
+        {
+          "EA-GUID": "{B71C2849-A8B3-409c-84FD-72920B19B6C0}",
+          "EA-Name": "ContactInfo",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://schema.org/ContactPoint"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{A158B091-A5BE-43f7-B1EC-445EFE480A6D}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Identificator",
+          "uri": "http://www.w3.org/ns/adms#Identifier"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Identificator",
+        "EA-Domain-Guid": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+        "EA-Guid": "{A158B091-A5BE-43f7-B1EC-445EFE480A6D}",
+        "EA-Name": "toegekendOp",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Range": "DateTime",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://purl.org/dc/terms/issued"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "toegekendOp"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "toegekend op"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Tijdstip waarop de identificator werd uitgegeven."
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "toegekendOp"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "toegekendOp"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "toegekendOp"
+      },
+      "label-nl": {
+        "nl": "toegekendOp"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "toegekendop",
+      "range": [
+        {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.org/dc/terms/creator",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{4FAE8804-F472-41ad-8BEE-A0AE10098A1E}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Identificator",
+          "uri": "http://www.w3.org/ns/adms#Identifier"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Identificator",
+        "EA-Domain-Guid": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+        "EA-Guid": "{4FAE8804-F472-41ad-8BEE-A0AE10098A1E}",
+        "EA-Name": "toegekendDoor",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Range": "Agent",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+          "EA-Name": "Agent",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://purl.org/dc/terms/Agent"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://purl.org/dc/terms/creator"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "toegekendDoor"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "toegekend door"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Link naar de agent die de identificator heeft uitgegeven."
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "toegekendDoor"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "toegekendDoor"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "toegekendDoor"
+      },
+      "label-nl": {
+        "nl": "toegekendDoor"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "toegekenddoor",
+      "range": [
+        {
+          "EA-GUID": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+          "EA-Name": "Agent",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://purl.org/dc/terms/Agent"
+        }
+      ]
+    }
+  ],
+  "externals": [
+    {
+      "@id": "http://purl.org/dc/terms/Agent",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{41322168-5A85-4353-93F3-291FFF4805C6}",
+        "EA-Name": "Agent",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Iemand die of iets dat kan handelen of een effect kan teweeg brengen."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Agent"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://purl.org/dc/terms/Agent"
+          },
+          {
+            "key": "ap-usageNote",
+            "note": "Meer info over deze klasse in het <a href=\"https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/agents/\">IM-Agents.",
+            "value": "Meer info over deze klasse in het <a href=\"https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/agents/\">IM-Agents."
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "Agent"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "Agent"
+        },
+        "parentclasses": "",
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Agent"
+      },
+      "label-nl": {
+        "nl": "Agent"
+      },
+      "name": "Agent"
+    },
+    {
+      "@id": "http://schema.org/ContactPoint",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{B71C2849-A8B3-409c-84FD-72920B19B6C0}",
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{B71C2849-A8B3-409c-84FD-72920B19B6C0}",
+        "EA-Name": "ContactInfo",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren."
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "Contactinfo"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Contactpunt"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://schema.org/ContactPoint"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "Contactpunt"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "Contactpunt"
+        },
+        "parentclasses": "",
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Contactpunt"
+      },
+      "label-nl": {
+        "nl": "Contactpunt"
+      },
+      "name": "Contactpunt"
+    },
+    {
+      "@id": "http://www.w3.org/ns/adms#Identifier",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{B1C659DC-4064-49c9-AE51-0204F8FDC921}",
+        "EA-Name": "Identificator",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Informatie gebruikt om een object uniek te identificeren."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem.",
+            "value": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Identificator"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/adms#Identifier"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "Identificator"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "Identificator"
+        },
+        "parentclasses": "",
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Identificator"
+      },
+      "label-nl": {
+        "nl": "Identificator"
+      },
+      "name": "Identificator"
+    },
+    {
+      "@id": "http://www.w3.org/ns/locn#Address",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{D0FEA8B9-937D-450b-81B9-2887B1CD1E08}",
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{D0FEA8B9-937D-450b-81B9-2887B1CD1E08}",
+        "EA-Name": "Adresvoorstelling",
+        "EA-Package": "OSLO-Adres",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "isCollection",
+            "note": "Values: true,false\nDefault: false\nDescription: Identifies the class as a collection\n",
+            "value": "false"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Adres Voorstelling"
+          },
+          {
+            "key": "noPropertyType",
+            "note": "Values: true,false\nDefault: false\nDescription: Suppress creation of a named complex type ( property type ) that supports inline or byReference encoding\n",
+            "value": "false"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#Address"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "Adres Voorstelling"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "Adres Voorstelling"
+        },
+        "parentclasses": "",
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Adres Voorstelling"
+      },
+      "label-nl": {
+        "nl": "Adres Voorstelling"
+      },
+      "name": "AdresVoorstelling"
+    },
+    {
+      "@id": "http://www.w3.org/ns/org#Organization",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{7F94DBDE-BF3B-4f1d-8A20-10ABFCF4E838}",
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{7F94DBDE-BF3B-4f1d-8A20-10ABFCF4E838}",
+        "EA-Name": "Organisatie",
+        "EA-Package": "OSLO-Organisatie - Copy",
+        "EA-Parents": "Agent",
+        "EA-Parents2": [
+          {
+            "label": "Agent",
+            "name": "Agent",
+            "package": "OSLO-Generiek",
+            "uri": "http://purl.org/dc/terms/Agent"
+          }
+        ],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "Een aantal mensen georganiseerd in een gemeenschap of andere sociale, commerciële of politieke structuur. De groep heeft een gemeenschappelijk doel of bestaansreden die de individuele leden ervan overstijgt en kan handelen als agent. Een organisatie heeft dikwijls een hiërarchische structuur.",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": " ",
+            "value": " "
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Organisatie"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/org#Organization"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "Organisatie"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "Organisatie"
+        },
+        "parentclasses": "http://purl.org/dc/terms/Agent",
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Organisatie"
+      },
+      "label-nl": {
+        "nl": "Organisatie"
+      },
+      "name": "Organisatie"
+    },
+    {
+      "@id": "http://www.w3.org/ns/person#Person",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{5CDD9AB6-A72D-4057-A37B-1F37C91CF356}",
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{5CDD9AB6-A72D-4057-A37B-1F37C91CF356}",
+        "EA-Name": "Persoon",
+        "EA-Package": "OSLO-Persoon",
+        "EA-Parents": "Agent",
+        "EA-Parents2": [
+          {
+            "label": "Agent",
+            "name": "Agent",
+            "package": "OSLO-Generiek",
+            "uri": "http://purl.org/dc/terms/Agent"
+          }
+        ],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": " ",
+            "value": "Natuurlijk persoon."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "In de rechtspraak betreft het een persoon (in de wettelijke betekenis, ttz met eigen rechtspersoonlijkheid) van de menselijke soort, ttz een fysiek persoon. Tegenhanger is de rechtspersoon, een juridische constructie die een private of publieke organisatie dezelfde rechtspersoonlijkheid geeft als een natuurlijk persoon (kan bv ook schulden hebben, contracten afsluiten, aangeklaagd worden etc).",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Persoon"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/person#Person"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "Persoon"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "Persoon"
+        },
+        "parentclasses": "http://purl.org/dc/terms/Agent",
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Persoon"
+      },
+      "label-nl": {
+        "nl": "Persoon"
+      },
+      "name": "Persoon"
+    },
+    {
+      "@id": "http://www.w3.org/ns/regorg#RegisteredOrganization",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{0F05038F-04FD-49c7-AC74-6E3F771B76CE}",
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{0F05038F-04FD-49c7-AC74-6E3F771B76CE}",
+        "EA-Name": "GeregistreerdeOrganisatie",
+        "EA-Package": "OSLO-Organisatie - Copy",
+        "EA-Parents": "Organisatie",
+        "EA-Parents2": [
+          {
+            "label": "Formele Organisatie",
+            "name": "FormeleOrganisatie",
+            "package": "OSLO-Organisatie - Copy",
+            "uri": "http://www.w3.org/ns/org#FormalOrganization"
+          },
+          {
+            "label": "Organisatie",
+            "name": "Organisatie",
+            "package": "OSLO-Organisatie - Copy",
+            "uri": "http://www.w3.org/ns/org#Organization"
+          }
+        ],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": " ",
+            "value": "Organisatie met een juridisch statuut vastgelegd door registratie. Vergelijk met een formele organisatie waarbij dit statuut ook op een andere manier verkregen kan zijn."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": " ",
+            "value": "In België moeten oa volgende organisaties zich registreren: vennootschap (nv,bvba etc),eenmanszaak,overheidsorgaan,stichting Bij registratie krijgt de organisatie een ondernemingsnummer en worden zijn gegevens ingevoerd in de KBO."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Geregistreerde Organisatie"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/regorg#RegisteredOrganization"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "Geregistreerde Organisatie"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "Geregistreerde Organisatie"
+        },
+        "parentclasses": "http://www.w3.org/ns/org#FormalOrganization, http://www.w3.org/ns/org#Organization",
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Geregistreerde Organisatie"
+      },
+      "label-nl": {
+        "nl": "Geregistreerde Organisatie"
+      },
+      "name": "GeregistreerdeOrganisatie"
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/persoon#GeregistreerdPersoon",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{6FDD97F4-D6C3-4739-83C1-1421FC5C36AF}",
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{6FDD97F4-D6C3-4739-83C1-1421FC5C36AF}",
+        "EA-Name": "GeregistreerdPersoon",
+        "EA-Package": "OSLO-Persoon",
+        "EA-Parents": "Persoon",
+        "EA-Parents2": [
+          {
+            "label": "Persoon",
+            "name": "Persoon",
+            "package": "OSLO-Persoon",
+            "uri": "http://www.w3.org/ns/person#Person"
+          }
+        ],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": " ",
+            "value": "Persoon waarvan de gegevens zijn ingeschreven in een register."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Doorgaans is dit register een bevolkingsregister maar het kan bv ook een kiesregister zijn. De ingeschreven gegevens hebben betrekking op de identeit (vb naam en voornaam) en de Verblijfplaats vd persoon en op belangrijke levensgebeurtenissen zoals geboorte, huwelijk, overlijden etc. Deze gegevens worden typisch geregistreerd door de overheid, ze bieden de ingeschreven persoon wettelijke bescherming en laten de overheid toe om basisstatistieken op te stellen over zijn bevolking.",
+            "value": "NOTE"
+          },
+          {
+            "key": "defintion-nl",
+            "note": "null",
+            "value": "Persoon waarvan de gegevens zijn ingeschreven in een register."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Geregistreerd Persoon"
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "Doorgaans is dit register een bevolkingsregister maar het kan bv ook een kiesregister zijn. De ingeschreven gegevens hebben betrekking op de identeit (vb Naam en Voornaam) en de Verblijfplaats vd Persoon en op belangrijke levensgebeurtenissen zoals Geboorte, Huwelijk, Overlijden etc. Deze gegevens worden typisch geregistreerd door de overheid, ze bieden de ingeschreven Persoon wettelijke bescherming en laten de overheid toe om basisstatistieken op te stellen over zijn bevolking.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "Geregistreerd Persoon"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "Geregistreerd Persoon"
+        },
+        "parentclasses": "http://www.w3.org/ns/person#Person",
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": {
+          "nl": "Doorgaans is dit register een bevolkingsregister maar het kan bv ook een kiesregister zijn. De ingeschreven gegevens hebben betrekking op de identeit (vb Naam en Voornaam) en de Verblijfplaats vd Persoon en op belangrijke levensgebeurtenissen zoals Geboorte, Huwelijk, Overlijden etc. Deze gegevens worden typisch geregistreerd door de overheid, ze bieden de ingeschreven Persoon wettelijke bescherming en laten de overheid toe om basisstatistieken op te stellen over zijn bevolking."
+        },
+        "usageNote-en": "",
+        "usageNote-nl": {
+          "nl": "Doorgaans is dit register een bevolkingsregister maar het kan bv ook een kiesregister zijn. De ingeschreven gegevens hebben betrekking op de identeit (vb Naam en Voornaam) en de Verblijfplaats vd Persoon en op belangrijke levensgebeurtenissen zoals Geboorte, Huwelijk, Overlijden etc. Deze gegevens worden typisch geregistreerd door de overheid, ze bieden de ingeschreven Persoon wettelijke bescherming en laten de overheid toe om basisstatistieken op te stellen over zijn bevolking."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Geregistreerd Persoon"
+      },
+      "label-nl": {
+        "nl": "Geregistreerd Persoon"
+      },
+      "name": "GeregistreerdPersoon",
+      "usage": {
+        "nl": "Doorgaans is dit register een bevolkingsregister maar het kan bv ook een kiesregister zijn. De ingeschreven gegevens hebben betrekking op de identeit (vb Naam en Voornaam) en de Verblijfplaats vd Persoon en op belangrijke levensgebeurtenissen zoals Geboorte, Huwelijk, Overlijden etc. Deze gegevens worden typisch geregistreerd door de overheid, ze bieden de ingeschreven Persoon wettelijke bescherming en laten de overheid toe om basisstatistieken op te stellen over zijn bevolking."
+      },
+      "usageNote-nl": {
+        "nl": "Doorgaans is dit register een bevolkingsregister maar het kan bv ook een kiesregister zijn. De ingeschreven gegevens hebben betrekking op de identeit (vb Naam en Voornaam) en de Verblijfplaats vd Persoon en op belangrijke levensgebeurtenissen zoals Geboorte, Huwelijk, Overlijden etc. Deze gegevens worden typisch geregistreerd door de overheid, ze bieden de ingeschreven Persoon wettelijke bescherming en laten de overheid toe om basisstatistieken op te stellen over zijn bevolking."
+      }
+    }
+  ],
+  "extra": {
+    "EA-Guid": "{D3900A2F-3158-47cb-A8D4-6BAB1149F3D0}",
+    "EA-Name": "IM-Agents",
+    "RawTags": [],
+    "issued": "TODO",
+    "license": "TODO",
+    "title-nl": "TODO"
+  },
+  "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/issues",
+  "filename": "config/grondverzet.json",
+  "hostname": "https://implementatie.data.vlaanderen.be/",
+  "issued": "TODO",
+  "label": {
+    "en": "grondverzet-agents-imvoc",
+    "nl": "grondverzet-agents-imvoc"
+  },
+  "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+  "name": "grondverzet-agents-imvoc",
+  "navigation": {},
+  "properties": [],
+  "publication-date": "2024-03-11",
+  "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+  "repository": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet",
+  "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
+  "template": "grondverzet-grondboringen-voc.j2",
+  "title": "Vocabularium Implementatiemodel Bodem en Ondergrond - Agents",
+  "title-nl": {
+    "nl": "TODO"
+  },
+  "toolchaincommit": "fbd38e0e95ee92a3401add5d8dac32b815cfe5b1",
+  "translation": [
+    {
+      "language": "nl",
+      "mergefile": "grondverzet-agents-imvoc_nl_merged.json",
+      "template": "grondverzet-grondboringen-voc.j2",
+      "title": "Vocabularium Implementatiemodel Bodem en Ondergrond - Agents",
+      "translationjson": "grondverzet-agents-imvoc_nl.json"
+    }
+  ],
+  "type": "voc",
+  "urlref": "/doc/vocabularium/bodem-en-ondergrond/agents/ontwerpstandaard/2023-10-01"
+}
