@@ -91,8 +91,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/7f29935f037fd6c8d75d447068a25dc67ba4852b">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/7f29935f037fd6c8d75d447068a25dc67ba4852b</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/7f29935f037fd6c8d75d447068a25dc67ba4852b/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/7f29935f037fd6c8d75d447068a25dc67ba4852b/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/e7941e85ad09560644472396fd12f776df56293d">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/e7941e85ad09560644472396fd12f776df56293d</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/e7941e85ad09560644472396fd12f776df56293d/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/e7941e85ad09560644472396fd12f776df56293d/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/issues">https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/issues</a></dd>
               <dt>Standaardenregister</dt><dd><a href="https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html">https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html</a></dd>
 
@@ -500,13 +500,13 @@
                         <td>
 			  
                              
-                                            <a href="#Grondobject" data-placement="right">Grondobject</a>
+                                            <a href="#Object" data-placement="right">Object</a>
                              
                          
                         </td>
                         <td>1</td>
-                        <td property="rdfs:comment">Het Grondobject dat wordt bemonsterd.</td>
-                        <td property="vann:usageNote"></td>
+                        <td property="rdfs:comment">Object dat wordt bemonsterd.</td>
+                        <td property="vann:usageNote">Bv de Persoon waarvan een bloedstaal wordt genomen.</td>
                         <td></td>
                       </tr>
                     
@@ -1376,7 +1376,6 @@
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
                       <a href="#Boorgat.aangenomenGrondwaterstand">aangenomenGrondwaterstand</a>, 
                       <a href="#Boorgat.bekisting">bekisting</a>, 
-                      <a href="#Boorgat.bemonsterdObject">bemonsterdObject</a>, 
                       <a href="#Boorgat.boordiameter">boordiameter</a>, 
                       <a href="#Boorgat.boringLengte">boringLengte</a>, 
                       <a href="#Boorgat.diepte">diepte</a>, 
@@ -1441,26 +1440,6 @@
                         </td>
                         <td>0..1</td>
                         <td property="rdfs:comment">Verwijzing naar de beschrijving van de Bekisting van het Boorgat.</td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="Boorgat.bemonsterdObject" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature" data-placement="right">
-                            bemonsterdObject</a>
-                          </code>
-                        </td>
-                        <td>
-			  
-                             
-                                            <a href="#Grondobject" data-placement="right">Grondobject</a>
-                             
-                         
-                        </td>
-                        <td>1..*</td>
-                        <td property="rdfs:comment">Het Grondobject dat wordt bemonsterd.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -1878,14 +1857,61 @@
                     
                     <dt>Gebruik</dt><dd>Dit is het werkelijk geobserveerdObject. Als rechtstreeks observeren niet kan observeren we een representatief staal, het zgn Bemonsteringsobject. In dat geval is het Domeinobject het bemonsterdObject. OPMERKING: Deze klasse is louter informatief, in praktijk moet ze gesubstitueerd worden door een klasse uit het domein. Bv in het domein Waterkwaliteit zou het domeinobject een instantie vd klasse Rivier kunnen zijn.</dd>
                     
-		    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="#Object">Object</a>
+		   </dd>
+                    
                     <dt>Eigenschappen</dt>
-		    
-                    <dd>Voor deze entiteit zijn geen eigenschappen gedefinieerd.</dd>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Domeinobject.type">type</a>.</dd>
                     
                   </dl>
                 </div>
-		
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Domeinobject.type" typeof="rdfs:Property" resource="http://purl.org/dc/terms/type">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://purl.org/dc/terms/type" data-toggle="tooltip" data-content="http://purl.org/dc/terms/type" data-placement="right">
+                            type</a>
+                          </code>
+                        </td>
+                        <td>
+			  
+                             
+                                            <a href="#Domeinobjecttype"
+                                               data-toggle="tooltip"
+                                               data-content="http://www.w3.org/2004/02/skos/core#Concept"
+                                               data-placement="right">Domeinobjecttype</a>
+                             
+                         
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">Aard van het Domeinobject.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
             </div>
             
               <div class="region region--no-space-top">
@@ -2434,7 +2460,7 @@
                   <dl>
                     <dt>Beschrijving</dt><dd>Klasse die instanties van om het even welk type vertegenwoordigt.</dd>
                     
-                    <dt>Gebruik</dt><dd>In de context van Observaties en Metingen is dit het geobserveerdObject waarvan een kenmerk wordt geobserveerd. Het geobserveerdObject kan ook een Object zijn dat de werkelijkheid bemonstert (subklasse Bemonsteringsobject). OPGELET: deze klasse is abstract, ze moet gespecialiseerd worden in functie van het applicatiedomein. OPMERKING: Meer info over deze klasse in het applicatieprofiel <a href="https://data.vlaanderen.be/doc/applicatieprofiel/observaties-en-metingen/">OSLO Observaties en Metingen</a>.</dd>
+                    <dt>Gebruik</dt><dd>In de context van Observaties en Metingen is dit het geobserveerdObject waarvan een kenmerk wordt geobserveerd. Het geobserveerdObject kan ook een Object zijn dat de werkelijkheid bemonstert (subklasse Bemonsteringsobject). OPGELET: deze klasse is abstract, ze moet gespecialiseerd worden in functie van het applicatiedomein.</dd>
                     
 		    
                     <dt>Eigenschappen</dt>

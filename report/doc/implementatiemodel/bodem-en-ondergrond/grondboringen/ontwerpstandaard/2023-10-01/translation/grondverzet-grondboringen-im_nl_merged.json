@@ -106,8 +106,8 @@
   "contributors-column": "MijnKolom",
   "contributors-file": "stakeholders.csv",
   "diagram": "IM-Grondboringen",
-  "documentcommit": "7f29935f037fd6c8d75d447068a25dc67ba4852b",
-  "dummy": "geert44",
+  "documentcommit": "e7941e85ad09560644472396fd12f776df56293d",
+  "dummy": "geert45",
   "eap": "Grondverzet.EAP",
   "editors": [],
   "examples": true,
@@ -4703,16 +4703,19 @@
     {
       "@id": "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{AB2CDDE3-8633-481d-B2E9-EE0F9219D71C}",
+      "EA-Guid": "{48D5FFCA-843D-44ef-97D1-A99D8FB623A3}",
       "ap-definition-nl": {
-        "nl": "Het Grondobject dat wordt bemonsterd."
+        "nl": "Object dat wordt bemonsterd."
       },
       "ap-label-nl": {
         "nl": "bemonsterdObject"
       },
+      "ap-usageNote-nl": {
+        "nl": "Bv de Persoon waarvan een bloedstaal wordt genomen."
+      },
       "codelist": [],
       "definition": {
-        "nl": "Het Grondobject dat wordt bemonsterd."
+        "nl": "Object dat wordt bemonsterd."
       },
       "domain": [
         {
@@ -4723,8 +4726,18 @@
       "extra": {
         "DestRoleTags": [
           {
-            "key": "label-nl",
+            "key": "ap-label-nl",
             "note": "bemonsterdObject",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Bv de Persoon waarvan een bloedstaal wordt genomen.",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "Object dat wordt bemonsterd.",
             "value": "NOTE"
           },
           {
@@ -4733,33 +4746,38 @@
             "value": "NOTE"
           },
           {
-            "key": "name",
-            "note": "Bemonstering.bemonsterdObject",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-nl",
-            "note": "Het Grondobject dat wordt bemonsterd.",
+            "key": "label-nl",
+            "note": "bemonsterdObject",
             "value": "NOTE"
           }
         ],
         "EA-Domain": "Bemonstering",
         "EA-Domain-Guid": "{44FD2D82-E36D-4810-8B25-41092B6E188E}",
-        "EA-Guid": "{AB2CDDE3-8633-481d-B2E9-EE0F9219D71C}",
+        "EA-Guid": "{48D5FFCA-843D-44ef-97D1-A99D8FB623A3}",
         "EA-Name": "bemonsterdObject",
         "EA-Package": "",
-        "EA-Range": "Grondobject",
+        "EA-Range": "Object",
         "EA-Type": "connector",
         "RangeData": {
-          "EA-GUID": "{EA846113-411A-4178-82F1-41620381EA32}",
-          "EA-Name": "Grondobject",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondobject"
+          "EA-GUID": "{2755A4AE-FE29-4950-8975-3C828B732715}",
+          "EA-Name": "Object",
+          "EA-Package": "OSLO-ObservatiesEnMetingen",
+          "uri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature"
         },
         "RawTags": [
           {
-            "key": "label-nl",
+            "key": "ap-label-nl",
             "note": "bemonsterdObject",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Bv de Persoon waarvan een bloedstaal wordt genomen.",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "Object dat wordt bemonsterd.",
             "value": "NOTE"
           },
           {
@@ -4768,27 +4786,24 @@
             "value": "NOTE"
           },
           {
-            "key": "name",
-            "note": "Bemonstering.bemonsterdObject",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-nl",
-            "note": "Het Grondobject dat wordt bemonsterd.",
+            "key": "label-nl",
+            "note": "bemonsterdObject",
             "value": "NOTE"
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-nl": {
-          "nl": "Het Grondobject dat wordt bemonsterd."
+          "nl": "Object dat wordt bemonsterd."
         },
         "ap-label-nl": {
           "nl": "bemonsterdObject"
         },
-        "ap-usageNote-nl": "",
+        "ap-usageNote-nl": {
+          "nl": "Bv de Persoon waarvan een bloedstaal wordt genomen."
+        },
         "definition": {
-          "nl": "Het Grondobject dat wordt bemonsterd."
+          "nl": "Object dat wordt bemonsterd."
         },
         "derived": "false",
         "destRole": "bemonsterdObject",
@@ -4796,7 +4811,9 @@
           "nl": "bemonsterdObject"
         },
         "sourceRole": "null",
-        "usage": ""
+        "usage": {
+          "nl": "Bv de Persoon waarvan een bloedstaal wordt genomen."
+        }
       },
       "generalization": [],
       "inpackage": "UNKNOWN",
@@ -4808,12 +4825,15 @@
       "name": "bemonsterdobject",
       "range": [
         {
-          "EA-GUID": "{EA846113-411A-4178-82F1-41620381EA32}",
-          "EA-Name": "Grondobject",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondobject"
+          "EA-GUID": "{2755A4AE-FE29-4950-8975-3C828B732715}",
+          "EA-Name": "Object",
+          "EA-Package": "OSLO-ObservatiesEnMetingen",
+          "uri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature"
         }
-      ]
+      ],
+      "usage": {
+        "nl": "Bv de Persoon waarvan een bloedstaal wordt genomen."
+      }
     },
     {
       "@id": "http://www.w3.org/ns/adms#schemaAgency",
@@ -6840,6 +6860,96 @@
       }
     },
     {
+      "@id": "http://purl.org/dc/terms/type",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{39F96FD0-8A54-4d39-94D2-66ADDF4850A5}",
+      "ap-definition-nl": {
+        "nl": "Aard van het Domeinobject."
+      },
+      "ap-label-nl": {
+        "nl": "type"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Aard van het Domeinobject."
+      },
+      "domain": [
+        {
+          "EA-Name": "Domeinobject",
+          "uri": "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Domeinobject",
+        "EA-Domain-Guid": "{08B7CB4C-CED2-4c73-8944-3EC8FC6D026F}",
+        "EA-Guid": "{39F96FD0-8A54-4d39-94D2-66ADDF4850A5}",
+        "EA-Name": "type",
+        "EA-Package": "OSLO-ObservatiesEnMetingen",
+        "EA-Range": "Domeinobjecttype",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{48D7AAA3-0FA2-4fc7-9C2D-3D691E663B44}",
+          "EA-Name": "Domeinobjecttype",
+          "EA-Package": "OSLO-SensorenEnBemonstering",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "type"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://purl.org/dc/terms/type"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "type"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Aard van het Domeinobject."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Aard van het Domeinobject."
+        },
+        "ap-label-nl": {
+          "nl": "type"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Aard van het Domeinobject."
+        },
+        "label": {
+          "nl": "type"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "type"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "type",
+      "range": [
+        {
+          "EA-GUID": "{48D7AAA3-0FA2-4fc7-9C2D-3D691E663B44}",
+          "EA-Name": "Domeinobjecttype",
+          "EA-Package": "OSLO-SensorenEnBemonstering",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ]
+    },
+    {
       "@id": "http://purl.org/dc/terms/subject",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{7B02338B-D323-4f2e-9AE4-9139519DB66B}",
@@ -8178,122 +8288,7 @@
     {
       "@id": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{D5BDE302-63FE-49b7-9784-D9ED2BAB7AFD}",
-      "ap-definition-nl": {
-        "nl": "Het Grondobject dat wordt bemonsterd."
-      },
-      "ap-label-nl": {
-        "nl": "bemonsterdObject"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "Het Grondobject dat wordt bemonsterd."
-      },
-      "domain": [
-        {
-          "EA-Name": "Boorgat",
-          "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "uri",
-            "note": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
-            "value": "NOTE"
-          },
-          {
-            "key": "name",
-            "note": "Bemonsteringsobject.bemonsterdObject",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-nl",
-            "note": "Het Grondobject dat wordt bemonsterd.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-nl",
-            "note": "bemonsterdObject",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Boorgat",
-        "EA-Domain-Guid": "{C38DBB1A-EB18-4590-A878-37846E648571}",
-        "EA-Guid": "{D5BDE302-63FE-49b7-9784-D9ED2BAB7AFD}",
-        "EA-Name": "bemonsterdObject",
-        "EA-Package": "",
-        "EA-Range": "Grondobject",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{EA846113-411A-4178-82F1-41620381EA32}",
-          "EA-Name": "Grondobject",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondobject"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
-            "value": "NOTE"
-          },
-          {
-            "key": "name",
-            "note": "Bemonsteringsobject.bemonsterdObject",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-nl",
-            "note": "Het Grondobject dat wordt bemonsterd.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-nl",
-            "note": "bemonsterdObject",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Het Grondobject dat wordt bemonsterd."
-        },
-        "ap-label-nl": {
-          "nl": "bemonsterdObject"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "Het Grondobject dat wordt bemonsterd."
-        },
-        "derived": "false",
-        "destRole": "bemonsterdObject",
-        "label": {
-          "nl": "bemonsterdObject"
-        },
-        "sourceRole": "null",
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "bemonsterdObject"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "1",
-      "name": "bemonsterdobject",
-      "range": [
-        {
-          "EA-GUID": "{EA846113-411A-4178-82F1-41620381EA32}",
-          "EA-Name": "Grondobject",
-          "EA-Package": "OSLO-Grondboringen",
-          "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondobject"
-        }
-      ]
-    },
-    {
-      "@id": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{C8C224D7-724B-4cc3-B049-8772C12D75C1}",
+      "EA-Guid": "{28C3DF0D-EF04-44d8-88B2-DD583AFBCA44}",
       "ap-definition-nl": {
         "nl": "Verwijzing naar het Object dat men wil bemonsteren."
       },
@@ -8314,13 +8309,40 @@
         }
       ],
       "extra": {
+        "DestRoleTags": [
+          {
+            "key": "ap-label-nl",
+            "note": "bemonsterdObject",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "Verwijzing naar het Object dat men wil bemonsteren.",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Bv een profiel bemonstert een water- of atmosferische kolom, een peilput bemonstert het water in een watervoerende laag, een weefselstaal bemonstert een deel van een organisme.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "bemonsterdObject",
+            "value": "NOTE"
+          }
+        ],
         "EA-Domain": "Bemonsteringsobject",
         "EA-Domain-Guid": "{C684A48D-5F7E-4f30-813C-520EDB9C6EB6}",
-        "EA-Guid": "{C8C224D7-724B-4cc3-B049-8772C12D75C1}",
+        "EA-Guid": "{28C3DF0D-EF04-44d8-88B2-DD583AFBCA44}",
         "EA-Name": "bemonsterdObject",
-        "EA-Package": "OSLO-ObservatiesEnMetingen",
+        "EA-Package": "",
         "EA-Range": "Object",
-        "EA-Type": "attribute",
+        "EA-Type": "connector",
         "RangeData": {
           "EA-GUID": "{2755A4AE-FE29-4950-8975-3C828B732715}",
           "EA-Name": "Object",
@@ -8329,24 +8351,29 @@
         },
         "RawTags": [
           {
-            "key": "uri",
-            "note": "null",
-            "value": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature"
-          },
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "bemonsterdObject"
+            "key": "ap-label-nl",
+            "note": "bemonsterdObject",
+            "value": "NOTE"
           },
           {
             "key": "ap-definition-nl",
-            "note": "null",
-            "value": "Verwijzing naar het Object dat men wil bemonsteren."
+            "note": "Verwijzing naar het Object dat men wil bemonsteren.",
+            "value": "NOTE"
           },
           {
             "key": "ap-usageNote-nl",
-            "note": "null",
-            "value": "Bv een profiel bemonstert een water- of atmosferische kolom, een peilput bemonstert het water in een watervoerende laag, een weefselstaal bemonstert een deel van een organisme."
+            "note": "Bv een profiel bemonstert een water- of atmosferische kolom, een peilput bemonstert het water in een watervoerende laag, een weefselstaal bemonstert een deel van een organisme.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "bemonsterdObject",
+            "value": "NOTE"
           }
         ],
         "Scope": "NOTHING",
@@ -8363,9 +8390,12 @@
         "definition": {
           "nl": "Verwijzing naar het Object dat men wil bemonsteren."
         },
+        "derived": "false",
+        "destRole": "bemonsterdObject",
         "label": {
           "nl": "bemonsterdObject"
         },
+        "sourceRole": "Intentie",
         "usage": {
           "nl": "Bv een profiel bemonstert een water- of atmosferische kolom, een peilput bemonstert het water in een watervoerende laag, een weefselstaal bemonstert een deel van een organisme."
         }
@@ -10060,7 +10090,7 @@
     {
       "@id": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
       "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{2EF09692-121C-45ea-8F7A-0FDAA8FD2462}",
+      "EA-Guid": "{2755A4AE-FE29-4950-8975-3C828B732715}",
       "ap-definition-nl": {
         "nl": "Klasse die instanties van om het even welk type vertegenwoordigt."
       },
@@ -10068,29 +10098,19 @@
         "nl": "Object"
       },
       "ap-usageNote-nl": {
-        "nl": "In de context van Observaties en Metingen is dit het geobserveerdObject waarvan een kenmerk wordt geobserveerd. Het geobserveerdObject kan ook een Object zijn dat de werkelijkheid bemonstert (subklasse Bemonsteringsobject). OPGELET: deze klasse is abstract, ze moet gespecialiseerd worden in functie van het applicatiedomein. OPMERKING: Meer info over deze klasse in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/observaties-en-metingen/\">OSLO Observaties en Metingen</a>."
+        "nl": "In de context van Observaties en Metingen is dit het geobserveerdObject waarvan een kenmerk wordt geobserveerd. Het geobserveerdObject kan ook een Object zijn dat de werkelijkheid bemonstert (subklasse Bemonsteringsobject). OPGELET: deze klasse is abstract, ze moet gespecialiseerd worden in functie van het applicatiedomein."
       },
       "definition": {
         "nl": "Klasse die instanties van om het even welk type vertegenwoordigt."
       },
       "extra": {
-        "EA-Guid": "{2EF09692-121C-45ea-8F7A-0FDAA8FD2462}",
+        "EA-Guid": "{2755A4AE-FE29-4950-8975-3C828B732715}",
         "EA-Name": "Object",
-        "EA-Package": "Hulppakket",
+        "EA-Package": "OSLO-ObservatiesEnMetingen",
         "EA-Parents": "",
         "EA-Parents2": [],
         "EA-Type": "CLASS",
         "RawTags": [
-          {
-            "key": "ap-definition-nl",
-            "note": "null",
-            "value": "Klasse die instanties van om het even welk type vertegenwoordigt."
-          },
-          {
-            "key": "ap-usageNote-nl",
-            "note": "In de context van Observaties en Metingen is dit het geobserveerdObject waarvan een kenmerk wordt geobserveerd. Het geobserveerdObject kan ook een Object zijn dat de werkelijkheid bemonstert (subklasse Bemonsteringsobject). OPGELET: deze klasse is abstract, ze moet gespecialiseerd worden in functie van het applicatiedomein. OPMERKING: Meer info over deze klasse in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/observaties-en-metingen/\">OSLO Observaties en Metingen</a>.",
-            "value": "NOTE"
-          },
           {
             "key": "label-nl",
             "note": "null",
@@ -10100,6 +10120,16 @@
             "key": "uri",
             "note": "null",
             "value": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Klasse die instanties van om het even welk type vertegenwoordigt."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "In de context van Observaties en Metingen is dit het geobserveerdObject waarvan een kenmerk wordt geobserveerd. Het geobserveerdObject kan ook een Object zijn dat de werkelijkheid bemonstert (subklasse Bemonsteringsobject). OPGELET: deze klasse is abstract, ze moet gespecialiseerd worden in functie van het applicatiedomein.",
+            "value": "NOTE"
           }
         ],
         "Scope": "NOTHING",
@@ -10111,7 +10141,7 @@
           "nl": "Object"
         },
         "ap-usageNote-nl": {
-          "nl": "In de context van Observaties en Metingen is dit het geobserveerdObject waarvan een kenmerk wordt geobserveerd. Het geobserveerdObject kan ook een Object zijn dat de werkelijkheid bemonstert (subklasse Bemonsteringsobject). OPGELET: deze klasse is abstract, ze moet gespecialiseerd worden in functie van het applicatiedomein. OPMERKING: Meer info over deze klasse in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/observaties-en-metingen/\">OSLO Observaties en Metingen</a>."
+          "nl": "In de context van Observaties en Metingen is dit het geobserveerdObject waarvan een kenmerk wordt geobserveerd. Het geobserveerdObject kan ook een Object zijn dat de werkelijkheid bemonstert (subklasse Bemonsteringsobject). OPGELET: deze klasse is abstract, ze moet gespecialiseerd worden in functie van het applicatiedomein."
         },
         "definition": {
           "nl": "Klasse die instanties van om het even welk type vertegenwoordigt."
@@ -10121,7 +10151,7 @@
         },
         "parentclasses": "",
         "usage": {
-          "nl": "In de context van Observaties en Metingen is dit het geobserveerdObject waarvan een kenmerk wordt geobserveerd. Het geobserveerdObject kan ook een Object zijn dat de werkelijkheid bemonstert (subklasse Bemonsteringsobject). OPGELET: deze klasse is abstract, ze moet gespecialiseerd worden in functie van het applicatiedomein. OPMERKING: Meer info over deze klasse in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/observaties-en-metingen/\">OSLO Observaties en Metingen</a>."
+          "nl": "In de context van Observaties en Metingen is dit het geobserveerdObject waarvan een kenmerk wordt geobserveerd. Het geobserveerdObject kan ook een Object zijn dat de werkelijkheid bemonstert (subklasse Bemonsteringsobject). OPGELET: deze klasse is abstract, ze moet gespecialiseerd worden in functie van het applicatiedomein."
         }
       },
       "inpackage": "OTHER_PACKAGE",
@@ -10130,7 +10160,7 @@
       },
       "name": "Object",
       "usage": {
-        "nl": "In de context van Observaties en Metingen is dit het geobserveerdObject waarvan een kenmerk wordt geobserveerd. Het geobserveerdObject kan ook een Object zijn dat de werkelijkheid bemonstert (subklasse Bemonsteringsobject). OPGELET: deze klasse is abstract, ze moet gespecialiseerd worden in functie van het applicatiedomein. OPMERKING: Meer info over deze klasse in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/observaties-en-metingen/\">OSLO Observaties en Metingen</a>."
+        "nl": "In de context van Observaties en Metingen is dit het geobserveerdObject waarvan een kenmerk wordt geobserveerd. Het geobserveerdObject kan ook een Object zijn dat de werkelijkheid bemonstert (subklasse Bemonsteringsobject). OPGELET: deze klasse is abstract, ze moet gespecialiseerd worden in functie van het applicatiedomein."
       }
     },
     {
@@ -10396,7 +10426,7 @@
         "EA-Guid": "{C684A48D-5F7E-4f30-813C-520EDB9C6EB6}",
         "EA-Name": "Bemonsteringsobject",
         "EA-Package": "OSLO-ObservatiesEnMetingen",
-        "EA-Parents": "",
+        "EA-Parents": "Object",
         "EA-Parents2": [
           {
             "label": "Object",
@@ -10619,7 +10649,7 @@
     {
       "@id": "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature",
       "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{E0AF353D-8CB6-414b-A7F2-7FAB08409253}",
+      "EA-Guid": "{08B7CB4C-CED2-4c73-8944-3EC8FC6D026F}",
       "ap-definition-nl": {
         "nl": "Object uit de reële wereld dat geen Bemonsteringsobject is."
       },
@@ -10633,15 +10663,32 @@
         "nl": "Object uit de reële wereld dat geen Bemonsteringsobject is."
       },
       "extra": {
-        "EA-Guid": "{E0AF353D-8CB6-414b-A7F2-7FAB08409253}",
+        "EA-Guid": "{08B7CB4C-CED2-4c73-8944-3EC8FC6D026F}",
         "EA-Name": "Domeinobject",
-        "EA-Package": "Hulppakket",
-        "EA-Parents": "",
-        "EA-Parents2": [],
+        "EA-Package": "OSLO-ObservatiesEnMetingen",
+        "EA-Parents": "Object",
+        "EA-Parents2": [
+          {
+            "label": "Object",
+            "name": "Object",
+            "package": "OSLO-ObservatiesEnMetingen",
+            "uri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature"
+          }
+        ],
         "EA-Type": "CLASS",
         "RawTags": [
           {
             "key": "label-nl",
+            "note": "null",
+            "value": "Domeinobject"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature"
+          },
+          {
+            "key": "ap-label-nl",
             "note": "null",
             "value": "Domeinobject"
           },
@@ -10654,11 +10701,6 @@
             "key": "ap-usageNote-nl",
             "note": "Dit is het werkelijk geobserveerdObject. Als rechtstreeks observeren niet kan observeren we een representatief staal, het zgn Bemonsteringsobject. In dat geval is het Domeinobject het bemonsterdObject. OPMERKING: Deze klasse is louter informatief, in praktijk moet ze gesubstitueerd worden door een klasse uit het domein. Bv in het domein Waterkwaliteit zou het domeinobject een instantie vd klasse Rivier kunnen zijn.",
             "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature"
           }
         ],
         "Scope": "NOTHING",
@@ -10678,7 +10720,7 @@
         "label": {
           "nl": "Domeinobject"
         },
-        "parentclasses": "",
+        "parentclasses": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
         "usage": {
           "nl": "Dit is het werkelijk geobserveerdObject. Als rechtstreeks observeren niet kan observeren we een representatief staal, het zgn Bemonsteringsobject. In dat geval is het Domeinobject het bemonsterdObject. OPMERKING: Deze klasse is louter informatief, in praktijk moet ze gesubstitueerd worden door een klasse uit het domein. Bv in het domein Waterkwaliteit zou het domeinobject een instantie vd klasse Rivier kunnen zijn."
         }
@@ -14600,7 +14642,7 @@
         "EA-Guid": "{EA846113-411A-4178-82F1-41620381EA32}",
         "EA-Name": "Grondobject",
         "EA-Package": "OSLO-Grondboringen",
-        "EA-Parents": "",
+        "EA-Parents": "Domeinobject",
         "EA-Parents2": [
           {
             "label": "Domeinobject",
@@ -14906,7 +14948,7 @@
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
   "template": "grondverzet-grondboringen-im.j2",
   "title": "Implementatiemodel Bodem en Ondergrond - Grondboringen",
-  "toolchaincommit": "66a42c45b6a4f9195b33f00d1f9e61e31c0e8604",
+  "toolchaincommit": "37a79118156bcc90eb8a68ee6fe2233996245c17",
   "translation": [
     {
       "language": "nl",

@@ -167,17 +167,6 @@
           "sh:path": "https://data.vlaanderen.be/ns/grondboringen#Boorgat.bekisting"
         },
         {
-          "sh:class": "https://data.vlaanderen.be/ns/grondboringen#Grondobject",
-          "sh:description": {
-            "nl": "Het Grondobject dat wordt bemonsterd."
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "nl": "bemonsterdObject"
-          },
-          "sh:path": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature"
-        },
-        {
           "sh:class": "https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter",
           "sh:description": {
             "nl": "Verwijzing naar de beschrijving van de Boordiameter van het Boorgat."
@@ -368,7 +357,19 @@
       "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2023-10-01#DomeinobjectShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
-      "sh:property": [],
+      "sh:property": [
+        {
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "nl": "Aard van het Domeinobject."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "type"
+          },
+          "sh:path": "http://purl.org/dc/terms/type"
+        }
+      ],
       "sh:targetClass": "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature"
     },
     {
@@ -747,9 +748,9 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "https://data.vlaanderen.be/ns/grondboringen#Grondobject",
+          "sh:class": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
           "sh:description": {
-            "nl": "Het Grondobject dat wordt bemonsterd."
+            "nl": "Object dat wordt bemonsterd."
           },
           "sh:maxCount": "1",
           "sh:minCount": "1",
