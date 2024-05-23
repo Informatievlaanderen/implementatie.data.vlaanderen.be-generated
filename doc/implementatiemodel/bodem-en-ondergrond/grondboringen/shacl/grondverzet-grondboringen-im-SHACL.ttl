@@ -203,8 +203,8 @@
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2023-10-01#BemonsteringShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
-    shacl:class <https://data.vlaanderen.be/ns/grondboringen#Grondobject>;
-    shacl:description "Het Grondobject dat wordt bemonsterd."@nl;
+    shacl:class <http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature>;
+    shacl:description "Object dat wordt bemonsterd."@nl;
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "bemonsterdObject"@nl;
@@ -467,12 +467,6 @@
     shacl:name "bekisting"@nl;
     shacl:path <https://data.vlaanderen.be/ns/grondboringen#Boorgat.bekisting>
   ], [
-    shacl:class <https://data.vlaanderen.be/ns/grondboringen#Grondobject>;
-    shacl:description "Het Grondobject dat wordt bemonsterd."@nl;
-    shacl:minCount 1;
-    shacl:name "bemonsterdObject"@nl;
-    shacl:path <http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature>
-  ], [
     shacl:class <https://data.vlaanderen.be/ns/grondboringen#Boorgatdiameter>;
     shacl:description "Verwijzing naar de beschrijving van de Boordiameter van het Boorgat."@nl;
     shacl:maxCount 1;
@@ -490,7 +484,7 @@
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "isResultaatVan"@nl;
-    shacl:path <http://www.w3.org/ns/sosa/isResultOf>
+    shacl:path <https://data.vlaanderen.be/ns/grondboringen#isResultaatVan>
   ];
   shacl:targetClass <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole> .
 
@@ -648,6 +642,13 @@
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2023-10-01#DomeinobjectShape> a shacl:NodeShape;
   shacl:closed false;
+  shacl:property [
+    shacl:class skos:Concept;
+    shacl:description "Aard van het Domeinobject."@nl;
+    shacl:maxCount 1;
+    shacl:name "type"@nl;
+    shacl:path dc:type
+  ];
   shacl:targetClass <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2023-10-01#EenheidShape> a shacl:NodeShape;
@@ -722,7 +723,7 @@
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "resultaat"@nl;
-    shacl:path <http://www.w3.org/ns/sosa/hasResult>
+    shacl:path <https://data.vlaanderen.be/ns/grondboringen#resultaat>
   ], [
     shacl:class <https://data.vlaanderen.be/ns/grondboringen#WettelijkKaderBoring>;
     shacl:description "Het kader dat vastlegt wat behoort tot de wet."@nl;

@@ -12,8 +12,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/e7941e85ad09560644472396fd12f776df56293d",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/e7941e85ad09560644472396fd12f776df56293d/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/940ce8297b3b9999e14f533e85be9f63adace77f",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/blob/940ce8297b3b9999e14f533e85be9f63adace77f/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
@@ -85,6 +85,46 @@
         "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
       },
       "properties": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#isResultaatVan",
+          "name": "isresultaatvan",
+          "sort": "isResultaatVan",
+          "label": {
+            "nl": "isResultaatVan"
+          },
+          "description": {
+            "nl": "Grondboring waarvan het Boorgat het resultaat is."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Boorgat",
+              "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Grondboring",
+              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Grondboring",
+              "range_puri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring",
+              "range_label": {
+                "nl": "Grondboring"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "parentURI": "http://www.w3.org/ns/sosa/isResultOf",
+            "label-nl": "isResultaatVan",
+            "definition-nl": "Grondboring waarvan het Boorgat het resultaat is."
+          }
+        },
         {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#boringLengte",
           "name": "boringlengte",
@@ -366,46 +406,6 @@
             "label-nl": "diepte",
             "uri": "https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.diepte",
             "ap-definition-nl": "De diepte van het Boorgat."
-          }
-        },
-        {
-          "uri": "http://www.w3.org/ns/sosa/isResultOf",
-          "name": "isresultaatvan",
-          "sort": "isResultaatVan",
-          "label": {
-            "nl": "isResultaatVan"
-          },
-          "description": {
-            "nl": "Grondboring waarvan het Boorgat het resultaat is."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Boorgat",
-              "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Grondboring",
-              "range_uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Grondboring",
-              "range_puri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring",
-              "range_label": {
-                "nl": "Grondboring"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://www.w3.org/ns/sosa/isResultOf",
-            "label-nl": "isResultaatVan",
-            "definition-nl": "Grondboring waarvan het Boorgat het resultaat is."
           }
         },
         {
@@ -3148,6 +3148,46 @@
           }
         },
         {
+          "uri": "https://data.vlaanderen.be/ns/grondboringen#resultaat",
+          "name": "resultaat",
+          "sort": "resultaat",
+          "label": {
+            "nl": "resultaat"
+          },
+          "description": {
+            "nl": "Het resultaat van de uitgevoerde grondboring."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Grondboring",
+              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Boorgat",
+              "range_uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Boorgat",
+              "range_puri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole",
+              "range_label": {
+                "nl": "Boorgat"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "parentURI": "http://www.w3.org/ns/sosa/hasResult",
+            "definition-nl": "Het resultaat van de uitgevoerde grondboring.",
+            "label-nl": "resultaat"
+          }
+        },
+        {
           "uri": "https://data.vlaanderen.be/ns/grondboringen#boormeester",
           "name": "boormeester",
           "sort": "boormeester",
@@ -3225,46 +3265,6 @@
             "label-nl": "boorder",
             "definition-nl": "Diegene die de Boring heeft uitgevoerd.",
             "parentURI": "https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor"
-          }
-        },
-        {
-          "uri": "http://www.w3.org/ns/sosa/hasResult",
-          "name": "resultaat",
-          "sort": "resultaat",
-          "label": {
-            "nl": "resultaat"
-          },
-          "description": {
-            "nl": "Het resultaat van de uitgevoerde grondboring."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Grondboring",
-              "uri": "https://data.vlaanderen.be/ns/grondboringen#Grondboring"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Boorgat",
-              "range_uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Boorgat",
-              "range_puri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole",
-              "range_label": {
-                "nl": "Boorgat"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "definition-nl": "Het resultaat van de uitgevoerde grondboring.",
-            "uri": "http://www.w3.org/ns/sosa/hasResult",
-            "label-nl": "resultaat"
           }
         },
         {
