@@ -29,6 +29,7 @@
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#BeschrijvendResultaatShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwantitatiefResultaatShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#AgentShape>,
+    <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#EenheidShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#ContactInfoShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#CurveShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#VlakShape>,
@@ -44,6 +45,7 @@
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#SysteemtypeShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KlKleurMarkeringShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KlMarkeringSoortShape>,
+    <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#ConceptShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#IdentificatorShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#GeometrieShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#OrganisatieShape>,
@@ -162,9 +164,13 @@
   shacl:closed false;
   shacl:targetClass <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult> .
 
+<https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#ConceptShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#ConformiteitsresultaatShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:targetClass <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Conformiteitsresultaat> .
+  shacl:targetClass <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Conformiteitsresultaat> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#ContactInfoShape> a shacl:NodeShape;
   shacl:closed false;
@@ -181,6 +187,10 @@
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#DeelShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein#Deel> .
+
+<https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#EenheidShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://qudt.org/2.1/schema/qudt/Unit> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#ElementShape> a shacl:NodeShape;
   shacl:closed false;
@@ -299,7 +309,7 @@
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KenmerkTypeShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:targetClass <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KenmerkType> .
+  shacl:targetClass <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KenmerkType> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KlKleurMarkeringShape> a shacl:NodeShape;
   shacl:closed false;
@@ -318,7 +328,7 @@
   shacl:property <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsKenmerkShape/236f0210baaf149903750c43bbe7012c21debb2a>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsKenmerkShape/322371a77364a50f049d46180f6192532eea26dc>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsKenmerkShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
-  shacl:targetClass <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk> .
+  shacl:targetClass <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsKenmerkShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsKenmerk.type";
   shacl:description "verwijst naar het KenmerkType waarop de kwaliteit beoordeel wordt"@nl;
@@ -327,7 +337,7 @@
   shacl:path dc:type .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsKenmerkShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsKenmerk.type";
-  shacl:class <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KenmerkType>;
+  shacl:class <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KenmerkType>;
   shacl:description "verwijst naar het KenmerkType waarop de kwaliteit beoordeel wordt"@nl;
   shacl:name "type"@nl;
   shacl:path dc:type .
@@ -351,6 +361,8 @@
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/0b8f1cfacc6c877b4618f064aa070495c9ee15e3>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/60638eca218f8b9f8ea1b79fb9b42510aa9f03fe>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/af62feb10fc401a33b0ef1ef3d3dc3a9dc30f436>,
+    <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/02392d5801878f9e5a93fa1f9b524558c2d2be0d>,
+    <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/b4fef4e71702ab03a51fad45549ce17a4cd6d8ca>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/c98db63081606ff3cead34428d27ce68f0deb45e>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/09c0c3a9baa1d16aecc7fc56bca94b26629162e5>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/09ed995683a26095de4577d13e597160f260ecb2>,
@@ -363,7 +375,13 @@
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/22104a27a961d699b6cb0d11be9f3a21d1551a6c>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/410d2ea66a404d55892f6c6167481c627e93056f>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/a83bc8abdec025d91826c57b2bee4154d8617ffe>;
-  shacl:targetClass <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie> .
+  shacl:targetClass <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie> .
+
+<https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/02392d5801878f9e5a93fa1f9b524558c2d2be0d> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Kwaliteitsobservatie.geobserveerdObject";
+  shacl:description "Object dat men observeert."@nl;
+  shacl:maxCount 1;
+  shacl:name "geobserveerdObject"@nl;
+  shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/09c0c3a9baa1d16aecc7fc56bca94b26629162e5> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Kwaliteitsobservatie.parameter";
   shacl:class <http://def.isotc211.org/iso19156/2011/Observation#NamedValue>;
@@ -372,10 +390,10 @@
   shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.parameter> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/09ed995683a26095de4577d13e597160f260ecb2> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Kwaliteitsobservatie.resultaat";
-  shacl:class <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat>;
+  shacl:class <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat>;
   shacl:description "het resultaat van de KwaliteitsObservatie"@nl;
   shacl:name "resultaat"@nl;
-  shacl:path <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat> .
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/0b8f1cfacc6c877b4618f064aa070495c9ee15e3> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Kwaliteitsobservatie.geobserveerdKenmerk";
   shacl:description "Kenmerk dat men observeert vh geobserveerdObject."@nl;
@@ -387,7 +405,7 @@
   shacl:description "het resultaat van de KwaliteitsObservatie"@nl;
   shacl:minCount 1;
   shacl:name "resultaat"@nl;
-  shacl:path <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat> .
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/22104a27a961d699b6cb0d11be9f3a21d1551a6c> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Kwaliteitsobservatie.uitgevoerdMetSensor";
   shacl:description "Sensor waarmee de Observatie is uitgevoerd."@nl;
@@ -432,7 +450,7 @@
   shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/7afa0066b3a4f97d47d51ff39171ffd92d38f090> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Kwaliteitsobservatie.gebruikteProcedure";
-  shacl:class <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure>;
+  shacl:class <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure>;
   shacl:description "De gebruikte procedure van de observatie."@nl;
   shacl:name "gebruikteProcedure"@nl;
   shacl:path <http://www.w3.org/ns/sosa/usedProcedure> .
@@ -453,25 +471,31 @@
   shacl:class <http://fixme.com#Agent>;
   shacl:description "Agent die de Observatie heeft uitgevoerd."@nl;
   shacl:name "uitgevoerdDoor"@nl;
-  shacl:path <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor> .
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/a83bc8abdec025d91826c57b2bee4154d8617ffe> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Kwaliteitsobservatie.uitgevoerdMetSensor";
-  shacl:class <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor>;
+  shacl:class <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor>;
   shacl:description "Sensor waarmee de Observatie is uitgevoerd."@nl;
   shacl:name "uitgevoerdMetSensor"@nl;
   shacl:path <http://www.w3.org/ns/sosa/madeBySensor> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/af62feb10fc401a33b0ef1ef3d3dc3a9dc30f436> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Kwaliteitsobservatie.geobserveerdKenmerk";
-  shacl:class <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk>;
+  shacl:class <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk>;
   shacl:description "Kenmerk dat men observeert vh geobserveerdObject."@nl;
   shacl:name "geobserveerdKenmerk"@nl;
   shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty> .
+
+<https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/b4fef4e71702ab03a51fad45549ce17a4cd6d8ca> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Kwaliteitsobservatie.geobserveerdObject";
+  shacl:description "Object dat men observeert."@nl;
+  shacl:minCount 1;
+  shacl:name "geobserveerdObject"@nl;
+  shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/b60cbb1f5aefd2bfc3349aed95e6c89745dd980d> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Kwaliteitsobservatie.uitgevoerdDoor";
   shacl:description "Agent die de Observatie heeft uitgevoerd."@nl;
   shacl:minCount 1;
   shacl:name "uitgevoerdDoor"@nl;
-  shacl:path <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor> .
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/c33ac267fe8f7de3530ed38145aaceef27be77d1> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Kwaliteitsobservatie.fenomeentijd";
   shacl:description "Het moment waarop het resultaat van de Observatie van toepassing was."@nl;
@@ -489,7 +513,7 @@
   shacl:description "Agent die de Observatie heeft uitgevoerd."@nl;
   shacl:maxCount 1;
   shacl:name "uitgevoerdDoor"@nl;
-  shacl:path <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor> .
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/d1359f49e768196bdb04700f790c2b843bc0150f> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Kwaliteitsobservatie.geldigeTijd";
   shacl:class <http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Period>;
@@ -501,20 +525,20 @@
   shacl:description "het resultaat van de KwaliteitsObservatie"@nl;
   shacl:maxCount 1;
   shacl:name "resultaat"@nl;
-  shacl:path <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat> .
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieprocedureShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieprocedureShape/09c0c3a9baa1d16aecc7fc56bca94b26629162e5>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieprocedureShape/a9a136f29614daa96027ca725ba119d518db96c0>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieprocedureShape/322371a77364a50f049d46180f6192532eea26dc>;
-  shacl:targetClass <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure> .
+  shacl:targetClass <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieprocedureShape/09c0c3a9baa1d16aecc7fc56bca94b26629162e5> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Kwaliteitsobservatieprocedure.parameter";
   shacl:class <http://def.isotc211.org/iso19156/2011/Observation#NamedValue>;
   shacl:description "Willekeurig gegeven geassocieerd met de Observatieprocedure."@nl;
   shacl:name "parameter"@nl;
-  shacl:path <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.parameter> .
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.parameter> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieprocedureShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Kwaliteitsobservatieprocedure.type";
   shacl:class <https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#ObservatieProcedureType>;
@@ -526,24 +550,24 @@
   shacl:datatype xsd:anyURI;
   shacl:description "Verwijzing naar een document dat de Observatieprocedure beschrijft."@nl;
   shacl:name "specificatie"@nl;
-  shacl:path <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.specificatie> .
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.specificatie> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsResultaatShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:targetClass <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat> .
+  shacl:targetClass <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsSensorShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsSensorShape/322371a77364a50f049d46180f6192532eea26dc>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsSensorShape/302090a90a5755780bc8fe09be4bcd29193cfd6d>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsSensorShape/587f313308111b587d1bd2440a56622e64624864>;
-  shacl:targetClass <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor> .
+  shacl:targetClass <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsSensorShape/302090a90a5755780bc8fe09be4bcd29193cfd6d> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsSensor.versie";
   shacl:description "De versie van de kwaliteitssensor"@nl;
   shacl:maxCount 1;
   shacl:name "versie"@nl;
-  shacl:path <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie> .
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsSensorShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsSensor.type";
   shacl:class skos:Concept;
@@ -555,7 +579,7 @@
   shacl:datatype xsd:string;
   shacl:description "De versie van de kwaliteitssensor"@nl;
   shacl:name "versie"@nl;
-  shacl:path <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie> .
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwantWrdInMeterShape> a shacl:NodeShape;
   shacl:closed false;
@@ -761,25 +785,25 @@
   shacl:property <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#MarkeringKODShape/6d0d1a7ee79b2c686f21c5fb3b1b05d3d50a0af1>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#MarkeringKODShape/94571f465acf79659953e1b08fedc57ffe295604>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#MarkeringKODShape/e03cafaa0261b8373c22ff68d9080d647cf2e1e7>;
-  shacl:targetClass <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD> .
+  shacl:targetClass <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#MarkeringKODShape/6d0d1a7ee79b2c686f21c5fb3b1b05d3d50a0af1> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#MarkeringKOD.KleurKOD";
   shacl:description "De kleur van de gebruikte markering."@nl;
   shacl:minCount 1;
   shacl:name "Kleur KOD"@nl;
-  shacl:path <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD> .
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#MarkeringKODShape/94571f465acf79659953e1b08fedc57ffe295604> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#MarkeringKOD.KleurKOD";
   shacl:class <https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#KleurCodeKOD>;
   shacl:description "De kleur van de gebruikte markering."@nl;
   shacl:name "Kleur KOD"@nl;
-  shacl:path <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD> .
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#MarkeringKODShape/e03cafaa0261b8373c22ff68d9080d647cf2e1e7> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#MarkeringKOD.KleurKOD";
   shacl:description "De kleur van de gebruikte markering."@nl;
   shacl:maxCount 1;
   shacl:name "Kleur KOD"@nl;
-  shacl:path <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD> .
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#MarkeringShape> a shacl:NodeShape;
   shacl:closed false;
@@ -918,19 +942,19 @@
   shacl:description "De lengte van de markering"@nl;
   shacl:maxCount 1;
   shacl:name "lengte"@nl;
-  shacl:path <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte> .
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#MarkeringShape/fbfecf1015f279714d73cf922215e888887d3793> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Markering.lengte";
   shacl:description "De lengte van de markering"@nl;
   shacl:minCount 1;
   shacl:name "lengte"@nl;
-  shacl:path <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte> .
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#MarkeringShape/fddc7561fafe96880d4adf2302b6a29e3f2a682c> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Markering.lengte";
   shacl:class <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter>;
   shacl:description "De lengte van de markering"@nl;
   shacl:name "lengte"@nl;
-  shacl:path <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte> .
+  shacl:path <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#ObjectShape> a shacl:NodeShape;
   shacl:closed false;
@@ -946,7 +970,7 @@
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#OpenbaarDomeinObjectShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:targetClass <https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject> .
+  shacl:targetClass <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#OrganisatieActiviteitShape> a shacl:NodeShape;
   shacl:closed false;
@@ -1032,7 +1056,9 @@
   shacl:closed false;
   shacl:property <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#RuimtelijkBemonsteringsObjectShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#RuimtelijkBemonsteringsObjectShape/972d73e7a13100b66c0c2f44466edac47aa1ab28>,
-    <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#RuimtelijkBemonsteringsObjectShape/c24764a8fe1e0bed7d991adfcdbf1d954272cd84>;
+    <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#RuimtelijkBemonsteringsObjectShape/9b04564ea329b1ee67d639d575d19e0c3a613336>,
+    <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#RuimtelijkBemonsteringsObjectShape/c24764a8fe1e0bed7d991adfcdbf1d954272cd84>,
+    <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#RuimtelijkBemonsteringsObjectShape/f9da178c8b9a6c374aa8dcd8f3ac821cab98c925>;
   shacl:targetClass <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#RuimtelijkBemonsteringsObjectShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#RuimtelijkBemonsteringsobject.identificator";
@@ -1047,9 +1073,21 @@
   shacl:name "identificator"@nl;
   shacl:path <https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator> .
 
+<https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#RuimtelijkBemonsteringsObjectShape/9b04564ea329b1ee67d639d575d19e0c3a613336> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#RuimtelijkBemonsteringsobject.object";
+  shacl:description "Verwijzing naar het Object dat men wil bemonsteren."@nl;
+  shacl:maxCount 1;
+  shacl:name "object"@nl;
+  shacl:path <http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature> .
+
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#RuimtelijkBemonsteringsObjectShape/c24764a8fe1e0bed7d991adfcdbf1d954272cd84> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#RuimtelijkBemonsteringsobject.object";
   shacl:class <http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature>;
   shacl:description "Verwijzing naar het Object dat men wil bemonsteren."@nl;
+  shacl:name "object"@nl;
+  shacl:path <http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature> .
+
+<https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#RuimtelijkBemonsteringsObjectShape/f9da178c8b9a6c374aa8dcd8f3ac821cab98c925> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#RuimtelijkBemonsteringsobject.object";
+  shacl:description "Verwijzing naar het Object dat men wil bemonsteren."@nl;
+  shacl:minCount 1;
   shacl:name "object"@nl;
   shacl:path <http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature> .
 

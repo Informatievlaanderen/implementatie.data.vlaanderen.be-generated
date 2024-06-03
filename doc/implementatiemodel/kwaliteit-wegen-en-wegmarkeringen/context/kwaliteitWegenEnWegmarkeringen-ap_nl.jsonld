@@ -29,11 +29,13 @@
       "@id": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue"
     },
     "BeschrijvendResultaat": "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult",
-    "Conformiteitsresultaat": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Conformiteitsresultaat",
+    "Concept": "http://www.w3.org/2004/02/skos/core#Concept",
+    "Conformiteitsresultaat": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Conformiteitsresultaat",
     "Contactpunt": "http://schema.org/ContactPoint",
     "Curve": "http://www.opengis.net/ont/geosparql#Curve",
     "DecimaalGetal": "http://www.w3.org/2001/XMLSchema#decimal",
     "Deel": "https://data.vlaanderen.be/ns/openbaardomein#Deel",
+    "Eenheid": "http://qudt.org/2.1/schema/qudt/Unit",
     "Element": "http://www.w3.org/ns/prov#Entity",
     "FysiekObject": {
       "@context": {
@@ -70,7 +72,7 @@
     },
     "GetypeerdeString": "http://www.w3.org/2000/01/rdf-schema#Literal",
     "Identificator": "http://www.w3.org/ns/adms#Identifier",
-    "KenmerkType": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KenmerkType",
+    "KenmerkType": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KenmerkType",
     "KleurCodeKod": "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#KleurCodeKOD",
     "KleurMarkering": "http://www.w3.org/2004/02/skos/core#Concept",
     "KwaliteitsKenmerk": {
@@ -80,9 +82,9 @@
           "@type": "@id"
         }
       },
-      "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk"
+      "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk"
     },
-    "KwaliteitsResultaat": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat",
+    "KwaliteitsResultaat": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat",
     "KwaliteitsSensor": {
       "@context": {
         "type": {
@@ -91,11 +93,11 @@
           "@type": "@id"
         },
         "versie": {
-          "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie",
           "@type": "http://www.w3.org/2001/XMLSchema#string"
         }
       },
-      "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor"
+      "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor"
     },
     "Kwaliteitsobservatie": {
       "@context": {
@@ -116,7 +118,6 @@
           "@type": "@id"
         },
         "geobserveerdObject": {
-          "@container": "@set",
           "@id": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest",
           "@type": "@id"
         },
@@ -126,7 +127,7 @@
           "@type": "@id"
         },
         "resultaat": {
-          "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat",
           "@type": "@id"
         },
         "type": {
@@ -135,7 +136,7 @@
           "@type": "@id"
         },
         "uitgevoerdDoor": {
-          "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor",
           "@type": "@id"
         },
         "uitgevoerdMetSensor": {
@@ -143,18 +144,18 @@
           "@type": "@id"
         }
       },
-      "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
+      "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
     },
     "Kwaliteitsobservatieprocedure": {
       "@context": {
         "parameter": {
           "@container": "@set",
-          "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.parameter",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.parameter",
           "@type": "@id"
         },
         "specificatie": {
           "@container": "@set",
-          "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.specificatie",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.specificatie",
           "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
         },
         "type": {
@@ -163,7 +164,7 @@
           "@type": "@id"
         }
       },
-      "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure"
+      "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure"
     },
     "KwantitatiefResultaat": "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult",
     "KwantitatieveWaardeInMeter": {
@@ -236,7 +237,7 @@
           "@type": "@id"
         },
         "lengte": {
-          "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte",
           "@type": "@id"
         },
         "markeringsoort": {
@@ -257,15 +258,15 @@
     "MarkeringKod": {
       "@context": {
         "kleurKod": {
-          "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD",
+          "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD",
           "@type": "@id"
         }
       },
-      "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD"
+      "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD"
     },
     "Object": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
     "ObservatieProcedureType": "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#ObservatieProcedureType",
-    "OpenbaarDomeinObect": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject",
+    "OpenbaarDomeinObect": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject",
     "Organisatie": {
       "@context": {
         "voorkeurslabel": {
@@ -300,7 +301,6 @@
           "@type": "@id"
         },
         "object": {
-          "@container": "@set",
           "@id": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
           "@type": "@id"
         }

@@ -107,14 +107,14 @@
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
-      "sh:targetClass": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Conformiteitsresultaat"
+      "sh:targetClass": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Conformiteitsresultaat"
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KenmerkTypeShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
-      "sh:targetClass": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KenmerkType"
+      "sh:targetClass": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KenmerkType"
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsKenmerkShape",
@@ -136,7 +136,7 @@
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsKenmerkShape/322371a77364a50f049d46180f6192532eea26dc",
           "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsKenmerk.type",
-          "sh:class": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KenmerkType",
+          "sh:class": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KenmerkType",
           "sh:description": {
             "nl": "verwijst naar het KenmerkType waarop de kwaliteit beoordeel wordt"
           },
@@ -158,7 +158,7 @@
           "sh:path": "http://purl.org/dc/terms/type"
         }
       ],
-      "sh:targetClass": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk"
+      "sh:targetClass": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk"
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape",
@@ -216,7 +216,7 @@
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/7afa0066b3a4f97d47d51ff39171ffd92d38f090",
           "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Kwaliteitsobservatie.gebruikteProcedure",
-          "sh:class": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure",
+          "sh:class": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure",
           "sh:description": {
             "nl": "De gebruikte procedure van de observatie."
           },
@@ -288,7 +288,7 @@
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/af62feb10fc401a33b0ef1ef3d3dc3a9dc30f436",
           "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Kwaliteitsobservatie.geobserveerdKenmerk",
-          "sh:class": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk",
+          "sh:class": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk",
           "sh:description": {
             "nl": "Kenmerk dat men observeert vh geobserveerdObject."
           },
@@ -296,6 +296,30 @@
             "nl": "geobserveerdKenmerk"
           },
           "sh:path": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/02392d5801878f9e5a93fa1f9b524558c2d2be0d",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Kwaliteitsobservatie.geobserveerdObject",
+          "sh:description": {
+            "nl": "Object dat men observeert."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "geobserveerdObject"
+          },
+          "sh:path": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/b4fef4e71702ab03a51fad45549ce17a4cd6d8ca",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Kwaliteitsobservatie.geobserveerdObject",
+          "sh:description": {
+            "nl": "Object dat men observeert."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "geobserveerdObject"
+          },
+          "sh:path": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/c98db63081606ff3cead34428d27ce68f0deb45e",
@@ -324,14 +348,14 @@
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/09ed995683a26095de4577d13e597160f260ecb2",
           "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Kwaliteitsobservatie.resultaat",
-          "sh:class": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat",
+          "sh:class": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat",
           "sh:description": {
             "nl": "het resultaat van de KwaliteitsObservatie"
           },
           "sh:name": {
             "nl": "resultaat"
           },
-          "sh:path": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat"
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/1bab1bb4af028fef0775daa8246b62cbb09cdcd1",
@@ -343,7 +367,7 @@
           "sh:name": {
             "nl": "resultaat"
           },
-          "sh:path": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat"
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/fc134bbb026523e6afde205e88de56ae056be099",
@@ -355,7 +379,7 @@
           "sh:name": {
             "nl": "resultaat"
           },
-          "sh:path": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat"
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/322371a77364a50f049d46180f6192532eea26dc",
@@ -379,7 +403,7 @@
           "sh:name": {
             "nl": "uitgevoerdDoor"
           },
-          "sh:path": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor"
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/b60cbb1f5aefd2bfc3349aed95e6c89745dd980d",
@@ -391,7 +415,7 @@
           "sh:name": {
             "nl": "uitgevoerdDoor"
           },
-          "sh:path": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor"
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/cca2c488938324b89e759dd60201a611e0f43485",
@@ -403,7 +427,7 @@
           "sh:name": {
             "nl": "uitgevoerdDoor"
           },
-          "sh:path": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor"
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/22104a27a961d699b6cb0d11be9f3a21d1551a6c",
@@ -432,7 +456,7 @@
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieShape/a83bc8abdec025d91826c57b2bee4154d8617ffe",
           "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Kwaliteitsobservatie.uitgevoerdMetSensor",
-          "sh:class": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor",
+          "sh:class": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor",
           "sh:description": {
             "nl": "Sensor waarmee de Observatie is uitgevoerd."
           },
@@ -442,7 +466,7 @@
           "sh:path": "http://www.w3.org/ns/sosa/madeBySensor"
         }
       ],
-      "sh:targetClass": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
+      "sh:targetClass": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieprocedureShape",
@@ -459,7 +483,7 @@
           "sh:name": {
             "nl": "parameter"
           },
-          "sh:path": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.parameter"
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.parameter"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieprocedureShape/a9a136f29614daa96027ca725ba119d518db96c0",
@@ -471,7 +495,7 @@
           "sh:name": {
             "nl": "specificatie"
           },
-          "sh:path": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.specificatie"
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.specificatie"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsObservatieprocedureShape/322371a77364a50f049d46180f6192532eea26dc",
@@ -486,14 +510,14 @@
           "sh:path": "http://purl.org/cd/terms/type"
         }
       ],
-      "sh:targetClass": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure"
+      "sh:targetClass": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure"
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsResultaatShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
-      "sh:targetClass": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat"
+      "sh:targetClass": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat"
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsSensorShape",
@@ -522,7 +546,7 @@
           "sh:name": {
             "nl": "versie"
           },
-          "sh:path": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie"
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwaliteitsSensorShape/587f313308111b587d1bd2440a56622e64624864",
@@ -534,10 +558,10 @@
           "sh:name": {
             "nl": "versie"
           },
-          "sh:path": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie"
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie"
         }
       ],
-      "sh:targetClass": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor"
+      "sh:targetClass": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor"
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#MarkeringKODShape",
@@ -554,7 +578,7 @@
           "sh:name": {
             "nl": "Kleur KOD"
           },
-          "sh:path": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD"
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#MarkeringKODShape/94571f465acf79659953e1b08fedc57ffe295604",
@@ -566,7 +590,7 @@
           "sh:name": {
             "nl": "Kleur KOD"
           },
-          "sh:path": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD"
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#MarkeringKODShape/e03cafaa0261b8373c22ff68d9080d647cf2e1e7",
@@ -578,17 +602,17 @@
           "sh:name": {
             "nl": "Kleur KOD"
           },
-          "sh:path": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD"
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD"
         }
       ],
-      "sh:targetClass": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD"
+      "sh:targetClass": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD"
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#OpenbaarDomeinObjectShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
-      "sh:targetClass": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject"
+      "sh:targetClass": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject"
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#PeriodeShape",
@@ -921,12 +945,36 @@
           "sh:path": "https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator"
         },
         {
+          "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#RuimtelijkBemonsteringsObjectShape/9b04564ea329b1ee67d639d575d19e0c3a613336",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#RuimtelijkBemonsteringsobject.object",
+          "sh:description": {
+            "nl": "Verwijzing naar het Object dat men wil bemonsteren."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "object"
+          },
+          "sh:path": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature"
+        },
+        {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#RuimtelijkBemonsteringsObjectShape/c24764a8fe1e0bed7d991adfcdbf1d954272cd84",
           "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#RuimtelijkBemonsteringsobject.object",
           "sh:class": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
           "sh:description": {
             "nl": "Verwijzing naar het Object dat men wil bemonsteren."
           },
+          "sh:name": {
+            "nl": "object"
+          },
+          "sh:path": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#RuimtelijkBemonsteringsObjectShape/f9da178c8b9a6c374aa8dcd8f3ac821cab98c925",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#RuimtelijkBemonsteringsobject.object",
+          "sh:description": {
+            "nl": "Verwijzing naar het Object dat men wil bemonsteren."
+          },
+          "sh:minCount": "1",
           "sh:name": {
             "nl": "object"
           },
@@ -955,6 +1003,13 @@
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://purl.org/dc/terms/Agent"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#EenheidShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://qudt.org/2.1/schema/qudt/Unit"
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#ContactInfoShape",
@@ -1056,6 +1111,13 @@
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KlMarkeringSoortShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#ConceptShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
@@ -1608,7 +1670,7 @@
           "sh:name": {
             "nl": "lengte"
           },
-          "sh:path": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte"
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#MarkeringShape/fbfecf1015f279714d73cf922215e888887d3793",
@@ -1620,7 +1682,7 @@
           "sh:name": {
             "nl": "lengte"
           },
-          "sh:path": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte"
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#MarkeringShape/fddc7561fafe96880d4adf2302b6a29e3f2a682c",
@@ -1632,7 +1694,7 @@
           "sh:name": {
             "nl": "lengte"
           },
-          "sh:path": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte"
+          "sh:path": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte"
         },
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#MarkeringShape/688c22144294fa03ddc300c01cf5b29c0b1a0ec5",
