@@ -29,7 +29,8 @@
       "@id": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue"
     },
     "BeschrijvendResultaat": "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult",
-    "ConformiteitsResultaat": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Conformiteitsresultaat",
+    "Conformiteitsresultaat": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Conformiteitsresultaat",
+    "Contactpunt": "http://schema.org/ContactPoint",
     "Curve": "http://www.opengis.net/ont/geosparql#Curve",
     "DecimaalGetal": "http://www.w3.org/2001/XMLSchema#decimal",
     "Deel": "https://data.vlaanderen.be/ns/openbaardomein#Deel",
@@ -68,27 +69,8 @@
       "@id": "http://www.w3.org/ns/locn#Geometry"
     },
     "GetypeerdeString": "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "Identificator": {
-      "@context": {
-        "identificator": {
-          "@id": "http://www.w3.org/2004/02/skos/core#notation"
-        },
-        "maker": {
-          "@id": "http://purl.org/dc/terms/creator",
-          "@type": "@id"
-        },
-        "schemaAgentschap": {
-          "@id": "http://www.w3.org/ns/adms#schemaAgency",
-          "@type": "http://www.w3.org/2001/XMLSchema#string"
-        },
-        "uitgegeven": {
-          "@id": "http://purl.org/dc/terms/issued",
-          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-        }
-      },
-      "@id": "http://www.w3.org/ns/adms#Identifier"
-    },
-    "KenmerkType": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KenmerkType",
+    "Identificator": "http://www.w3.org/ns/adms#Identifier",
+    "KenmerkType": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KenmerkType",
     "KleurCodeKod": "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#KleurCodeKOD",
     "KleurMarkering": "http://www.w3.org/2004/02/skos/core#Concept",
     "KwaliteitsKenmerk": {
@@ -98,9 +80,9 @@
           "@type": "@id"
         }
       },
-      "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk"
+      "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk"
     },
-    "KwaliteitsResultaat": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat",
+    "KwaliteitsResultaat": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat",
     "KwaliteitsSensor": {
       "@context": {
         "type": {
@@ -109,11 +91,11 @@
           "@type": "@id"
         },
         "versie": {
-          "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie",
+          "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie",
           "@type": "http://www.w3.org/2001/XMLSchema#string"
         }
       },
-      "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor"
+      "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor"
     },
     "Kwaliteitsobservatie": {
       "@context": {
@@ -122,6 +104,7 @@
           "@type": "@id"
         },
         "gebruikteProcedure": {
+          "@container": "@set",
           "@id": "http://www.w3.org/ns/sosa/usedProcedure",
           "@type": "@id"
         },
@@ -130,10 +113,12 @@
           "@type": "@id"
         },
         "geobserveerdKenmerk": {
+          "@container": "@set",
           "@id": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty",
           "@type": "@id"
         },
         "geobserveerdObject": {
+          "@container": "@set",
           "@id": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest",
           "@type": "@id"
         },
@@ -143,7 +128,8 @@
           "@type": "@id"
         },
         "resultaat": {
-          "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat",
+          "@container": "@set",
+          "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat",
           "@type": "@id"
         },
         "type": {
@@ -152,26 +138,27 @@
           "@type": "@id"
         },
         "uitgevoerdDoor": {
-          "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor",
+          "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor",
           "@type": "@id"
         },
         "uitgevoerdMetSensor": {
+          "@container": "@set",
           "@id": "http://www.w3.org/ns/sosa/madeBySensor",
           "@type": "@id"
         }
       },
-      "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
+      "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
     },
     "Kwaliteitsobservatieprocedure": {
       "@context": {
         "parameter": {
           "@container": "@set",
-          "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.parameter",
+          "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.parameter",
           "@type": "@id"
         },
         "specificatie": {
           "@container": "@set",
-          "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.specificatie",
+          "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.specificatie",
           "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
         },
         "type": {
@@ -180,7 +167,7 @@
           "@type": "@id"
         }
       },
-      "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure"
+      "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure"
     },
     "KwantitatiefResultaat": "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult",
     "KwantitatieveWaardeInMeter": {
@@ -274,17 +261,92 @@
     "MarkeringKod": {
       "@context": {
         "kleurKod": {
-          "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD",
+          "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD",
           "@type": "@id"
         }
       },
-      "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD"
+      "@id": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD"
     },
     "Object": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
     "ObservatieProcedureType": "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#ObservatieProcedureType",
-    "OpenbaarDomeinObect": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject",
+    "OpenbaarDomeinObect": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject",
     "Organisatie": {
       "@context": {
+        "alternatieveLabel": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "beschrijving": {
+          "@id": "http://purl.org/dc/terms/description",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "classificatie": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/org#classification",
+          "@type": "@id"
+        },
+        "contactpunt": {
+          "@container": "@set",
+          "@id": "http://schema.org/contactPoint",
+          "@type": "@id"
+        },
+        "doel": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/org#purpose",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "gelinktMet(source)": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/org#linkedTo",
+          "@type": "@id"
+        },
+        "gelinktMet(target)": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/org#linkedTo",
+          "@type": "@id"
+        },
+        "heeftSuborganisatie(source)": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/org#hasSubOrganization",
+          "@type": "@id"
+        },
+        "heeftSuborganisatie(target)": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/org#hasSubOrganization",
+          "@type": "@id"
+        },
+        "homepage": {
+          "@id": "http://xmlns.com/foaf/0.1/homepage",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "logo": {
+          "@id": "http://schema.org/logo"
+        },
+        "organisatieactiviteit": {
+          "@id": "http://www.w3.org/ns/regorg#orgActivity",
+          "@type": "@id"
+        },
+        "organisatiestatus": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/regorg#orgStatus",
+          "@type": "@id"
+        },
+        "organisatietype": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/regorg#orgType",
+          "@type": "@id"
+        },
+        "suborganisatieVan(source)": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/org#subOrganizationOf",
+          "@type": "@id"
+        },
+        "suborganisatieVan(target)": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/org#subOrganizationOf",
+          "@type": "@id"
+        },
         "voorkeurslabel": {
           "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
           "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
@@ -311,13 +373,14 @@
     },
     "RuimtelijkBemonsteringsobject": {
       "@context": {
-        "bemonsterdObject": {
-          "@id": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
-          "@type": "@id"
-        },
         "identificator": {
           "@container": "@set",
-          "@id": "http://www.w3.org/ns/adms#Identifier",
+          "@id": "https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator",
+          "@type": "@id"
+        },
+        "object": {
+          "@container": "@set",
+          "@id": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
           "@type": "@id"
         }
       },

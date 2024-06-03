@@ -6,21 +6,1039 @@
     "baseURI": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#",
     "filename": "kwaliteitWegenEnWegmarkeringen-ap",
     "navigation": {
-      "self": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05"
+      "self": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05"
     },
     "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
     "documenttype": "ap",
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/tree/7936ed52afa352dee7f04c201ad49a05b0da37f0",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/blob/7936ed52afa352dee7f04c201ad49a05b0da37f0/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/tree/9a97ad0416edf4d757b9d7390c5f275e01b73590",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/blob/9a97ad0416edf4d757b9d7390c5f275e01b73590/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/doc/applicatieprofiel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05",
     "usesVocs": [],
     "usesAPs": []
   },
   "classes": [
+    {
+      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Conformiteitsresultaat",
+      "name": "Conformiteitsresultaat",
+      "label": {
+        "nl": "Conformiteitsresultaat"
+      },
+      "sort": "Conformiteitsresultaat",
+      "description": {
+        "nl": "Informatie over het resultaat van de evaluatie van de verkregen waarde(n) volgens een gespecifieerd conformiteitskwaliteitsniveau."
+      },
+      "usage": {
+        "nl": "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_ConformanceResult"
+      },
+      "parents": [
+        {
+          "label": "KwaliteitsResultaat",
+          "name": "KwaliteitsResultaat",
+          "package": "KwaliteitOpenbaarDomein",
+          "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat",
+          "scoped_uri": "#KwaliteitsResultaat"
+        }
+      ],
+      "rawTags": {
+        "label-nl": "Conformiteitsresultaat",
+        "definition-nl": "Informatie over het resultaat van de evaluatie van de verkregen waarde(n) volgens een gespecifieerd conformiteitskwaliteitsniveau.",
+        "usageNote-nl": "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_ConformanceResult",
+        "ap-definition-nl": "Informatie over het resultaat van de evaluatie van de verkregen waarde(n) volgens een gespecifieerd conformiteitskwaliteitsniveau.",
+        "ap-label-nl": "Conformiteitsresultaat",
+        "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Conformiteitsresultaat"
+      },
+      "properties": []
+    },
+    {
+      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk",
+      "name": "Kwaliteitskenmerk",
+      "label": {
+        "nl": "KwaliteitsKenmerk"
+      },
+      "sort": "KwaliteitsKenmerk",
+      "description": {
+        "nl": "Kenmerk vh geobserveerdObject waarop de kwaliteitsbeoordeling is gebasseerd."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Kenmerktype",
+          "name": "Kenmerktype",
+          "package": "ObservatiesEnMetingen",
+          "uri": "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType",
+          "scoped_uri": "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType"
+        }
+      ],
+      "rawTags": {
+        "label-nl": "KwaliteitsKenmerk",
+        "definition-nl": "Kenmerk vh geobserveerdObject waarop de kwaliteitsbeoordeling is gebasseerd.",
+        "ap-definition-nl": "Kenmerk vh geobserveerdObject waarop de kwaliteitsbeoordeling is gebasseerd.",
+        "ap-label-nl": "KwaliteitsKenmerk",
+        "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk"
+      },
+      "properties": [
+        {
+          "uri": "http://purl.org/dc/terms/type",
+          "name": "type",
+          "sort": "type",
+          "label": {
+            "nl": "type"
+          },
+          "description": {
+            "nl": "verwijst naar het KenmerkType waarop de kwaliteit beoordeel wordt"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "KwaliteitsKenmerk",
+              "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "KenmerkType",
+              "range_uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KenmerkType"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#KenmerkType",
+              "range_puri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KenmerkType",
+              "range_label": {
+                "nl": "KenmerkType"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "type",
+            "definition-nl": "verwijst naar het KenmerkType waarop de kwaliteit beoordeel wordt",
+            "ap-definition-nl": "verwijst naar het KenmerkType waarop de kwaliteit beoordeel wordt",
+            "uri": "http://purl.org/dc/terms/type",
+            "ap-label-nl": "type"
+          }
+        }
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie",
+      "name": "Kwaliteitsobservatie",
+      "label": {
+        "nl": "Kwaliteitsobservatie"
+      },
+      "sort": "Kwaliteitsobservatie",
+      "description": {
+        "nl": "Het vaststellen van de waarde van een bepaald kwaliteitskenmerk van een Object op een bepaald tijdstip of tussen twee tijdstippen."
+      },
+      "usage": {
+        "nl": "Het gaat om schattingen van de waarde, maw op de waarde zit een zekere foutmarge. Bijvoorbeeld kleur. Dit is verschillend van waarden die zijn toegekend en dus geen schattingen zijn zoals naam of prijs."
+      },
+      "parents": [
+        {
+          "label": "Observatie",
+          "name": "Observatie",
+          "package": "ObservatiesEnMetingen",
+          "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation",
+          "scoped_uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation"
+        }
+      ],
+      "rawTags": {
+        "definition-nl": "Het vaststellen van de waarde van een bepaald kwaliteitskenmerk van een Object op een bepaald tijdstip of tussen twee tijdstippen.",
+        "usageNote-nl": "Het gaat om schattingen van de waarde, maw op de waarde zit een zekere foutmarge. Bijvoorbeeld kleur. Dit is verschillend van waarden die zijn toegekend en dus geen schattingen zijn zoals naam of prijs.",
+        "ap-definition-nl": "Het vaststellen van de waarde van een bepaald kwaliteitskenmerk van een Object op een bepaald tijdstip of tussen twee tijdstippen.",
+        "ap-usageNote-nl": "Het gaat om schattingen van de waarde, maw op de waarde zit een zekere foutmarge. Bijvoorbeeld kleur. Dit is verschillend van waarden die zijn toegekend en dus geen schattingen zijn zoals naam of prijs.",
+        "label-nl": "Kwaliteitsobservatie",
+        "ap-label-nl": "Kwaliteitsobservatie",
+        "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
+      },
+      "properties": [
+        {
+          "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor",
+          "name": "uitgevoerddoor",
+          "sort": "uitgevoerdDoor",
+          "label": {
+            "nl": "uitgevoerdDoor"
+          },
+          "description": {
+            "nl": "Agent die de Observatie heeft uitgevoerd."
+          },
+          "usage": {
+            "nl": "Dit kan bijvoorbeeld gaan over de machine learning toepassing die de observatie uitvoert"
+          },
+          "domain": [
+            {
+              "EA-Name": "KwaliteitsObservatie",
+              "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Agent",
+              "range_uri": "http://fixme.com#Agent"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Agent",
+              "range_puri": "http://fixme.com#Agent",
+              "range_label": {
+                "nl": "Agent"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "uitgevoerdDoor",
+            "definition-nl": "Agent die de Observatie heeft uitgevoerd.",
+            "usageNote-nl": "Dit kan bijvoorbeeld gaan over de machine learning toepassing die de observatie uitvoert",
+            "ap-definition-nl": "Agent die de Observatie heeft uitgevoerd.",
+            "ap-usageNote-nl": "Dit kan bijvoorbeeld gaan over de machine learning toepassing die de observatie uitvoert",
+            "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor",
+            "ap-label-nl": "uitgevoerdDoor"
+          }
+        },
+        {
+          "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat",
+          "name": "resultaat",
+          "sort": "resultaat",
+          "label": {
+            "nl": "resultaat"
+          },
+          "description": {
+            "nl": "het resultaat van de KwaliteitsObservatie"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "KwaliteitsObservatie",
+              "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "KwaliteitsResultaat",
+              "range_uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#KwaliteitsResultaat",
+              "range_puri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat",
+              "range_label": {
+                "nl": "KwaliteitsResultaat"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat",
+            "label-nl": "resultaat",
+            "ap-label-nl": "resultaat",
+            "definition-nl": "het resultaat van de KwaliteitsObservatie",
+            "ap-definition-nl": "het resultaat van de KwaliteitsObservatie"
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/sosa/usedProcedure",
+          "name": "gebruikteprocedure",
+          "sort": "gebruikteProcedure",
+          "label": {
+            "nl": "gebruikteProcedure"
+          },
+          "description": {
+            "nl": "De gebruikte procedure van de observatie."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "KwaliteitsObservatie",
+              "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "KwaliteitsObservatieprocedure",
+              "range_uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Kwaliteitsobservatieprocedure",
+              "range_puri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure",
+              "range_label": {
+                "nl": "Kwaliteitsobservatieprocedure"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-label-nl": "gebruikteProcedure",
+            "definition-nl": "De gebruikte procedure van de observatie.",
+            "label-nl": "gebruikteProcedure",
+            "uri": "http://www.w3.org/ns/sosa/usedProcedure",
+            "ap-definition-nl": "De gebruikte procedure van de observatie."
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/sosa/madeBySensor",
+          "name": "uitgevoerdmetsensor",
+          "sort": "uitgevoerdMetSensor",
+          "label": {
+            "nl": "uitgevoerdMetSensor"
+          },
+          "description": {
+            "nl": "Sensor waarmee de Observatie is uitgevoerd."
+          },
+          "usage": {
+            "nl": "Dit kan gaan over de machine learning toepassing die de luchtfoto's beoordeeld."
+          },
+          "domain": [
+            {
+              "EA-Name": "KwaliteitsObservatie",
+              "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "KwaliteitsSensor",
+              "range_uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#KwaliteitsSensor",
+              "range_puri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor",
+              "range_label": {
+                "nl": "KwaliteitsSensor"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-definition-nl": "Sensor waarmee de Observatie is uitgevoerd.",
+            "ap-label-nl": "uitgevoerdMetSensor",
+            "ap-usageNote-nl": "Dit kan gaan over de machine learning toepassing die de luchtfoto's beoordeeld.",
+            "definition-nl": "Sensor waarmee de Observatie is uitgevoerd.",
+            "uri": "http://www.w3.org/ns/sosa/madeBySensor",
+            "usageNote-nl": "Dit kan gaan over de machine learning toepassing die de luchtfoto's beoordeeld.",
+            "label-nl": "uitgevoerdMetSensor"
+          }
+        },
+        {
+          "uri": "http://purl.org/cd/terms/type",
+          "name": "type",
+          "sort": "type",
+          "label": {
+            "nl": "type"
+          },
+          "description": {
+            "nl": "Het type van observatie."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "KwaliteitsObservatie",
+              "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Observatietype",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#type",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "type"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "type",
+            "definition-nl": "Het type van observatie.",
+            "uri": "http://purl.org/cd/terms/type",
+            "ap-definition-nl": "Het type van observatie.",
+            "ap-label-nl": "type"
+          }
+        },
+        {
+          "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.validTime",
+          "name": "geldigetijd",
+          "sort": "geldigeTijd",
+          "label": {
+            "nl": "geldigeTijd"
+          },
+          "description": {
+            "nl": "Periode waarvoor het resultaat van de Observatie geldt."
+          },
+          "usage": {
+            "nl": "Bv nuttig voor tijdelijke wegmarkeringen."
+          },
+          "domain": [
+            {
+              "EA-Name": "KwaliteitsObservatie",
+              "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Periode",
+              "range_uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Period"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Periode",
+              "range_puri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Period",
+              "range_label": {
+                "nl": "Periode"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "geldigeTijd",
+            "ap-definition-nl": "Periode waarvoor het resultaat van de Observatie geldt.",
+            "ap-usageNote-nl": "Bv nuttig voor tijdelijke wegmarkeringen.",
+            "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.validTime",
+            "definition-nl": "Periode waarvoor het resultaat van de Observatie geldt.",
+            "usageNote-nl": "Bv nuttig voor tijdelijke wegmarkeringen.",
+            "ap-label-nl": "geldigeTijd"
+          }
+        },
+        {
+          "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime",
+          "name": "fenomeentijd",
+          "sort": "fenomeentijd",
+          "label": {
+            "nl": "fenomeentijd"
+          },
+          "description": {
+            "nl": "Het moment waarop het resultaat van de Observatie van toepassing was."
+          },
+          "usage": {
+            "nl": "Typisch het moment waarop geobserveerd of bemonsterd werd. Als de Observatie temporeel is en het moment waarop iets plaatsvindt wordt geregistreerd dan is dit meteen ook de fenomeentijd."
+          },
+          "domain": [
+            {
+              "EA-Name": "KwaliteitsObservatie",
+              "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "TemporeleEntiteit",
+              "range_uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#TemporeleEntiteit",
+              "range_puri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object",
+              "range_label": {
+                "nl": "TemporeleEntiteit"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "fenomeentijd",
+            "ap-definition-nl": "Het moment waarop het resultaat van de Observatie van toepassing was.",
+            "ap-usageNote-nl": "Typisch het moment waarop geobserveerd of bemonsterd werd. Als de Observatie temporeel is en het moment waarop iets plaatsvindt wordt geregistreerd dan is dit meteen ook de fenomeentijd.",
+            "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime",
+            "definition-nl": "Het moment waarop het resultaat van de Observatie van toepassing was.",
+            "usageNote-nl": "Typisch het moment waarop geobserveerd of bemonsterd werd. Als de Observatie temporeel is en het moment waarop iets plaatsvindt wordt geregistreerd dan is dit meteen ook de fenomeentijd.",
+            "ap-label-nl": "fenomeentijd"
+          }
+        },
+        {
+          "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.parameter",
+          "name": "parameter",
+          "sort": "parameter",
+          "label": {
+            "nl": "parameter"
+          },
+          "description": {
+            "nl": "Willekeurig gegeven gassocieerd met het gebeuren van de Observatie."
+          },
+          "usage": {
+            "nl": "Het gaat hier niet om kenmerken van het geobserveerdObject (die worden al beschreven door het geobserveerdKenmerk) of om parameters geassocieerd met het observatieproces (zoals een instelling van een instrument). Het gaat hier bv om omgevingsparameters die het resultaat kunnen beïnvloeden en van belang zijn om het resultaat correct te interpreteren.  Een voorbeeld is het weer tijdens het moment van het maken van een luchtfoto."
+          },
+          "domain": [
+            {
+              "EA-Name": "KwaliteitsObservatie",
+              "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "BenoemdeWaarde",
+              "range_uri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#BenoemdeWaarde",
+              "range_puri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue",
+              "range_label": {
+                "nl": "BenoemdeWaarde"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "parameter",
+            "ap-definition-nl": "Willekeurig gegeven gassocieerd met het gebeuren van de Observatie.",
+            "ap-usageNote-nl": "Het gaat hier niet om kenmerken van het geobserveerdObject (die worden al beschreven door het geobserveerdKenmerk) of om parameters geassocieerd met het observatieproces (zoals een instelling van een instrument). Het gaat hier bv om omgevingsparameters die het resultaat kunnen beïnvloeden en van belang zijn om het resultaat correct te interpreteren.  Een voorbeeld is het weer tijdens het moment van het maken van een luchtfoto.",
+            "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.parameter",
+            "definition-nl": "Willekeurig gegeven gassocieerd met het gebeuren van de Observatie.",
+            "usageNote-nl": "Het gaat hier niet om kenmerken van het geobserveerdObject (die worden al beschreven door het geobserveerdKenmerk) of om parameters geassocieerd met het observatieproces (zoals een instelling van een instrument). Het gaat hier bv om omgevingsparameters die het resultaat kunnen beïnvloeden en van belang zijn om het resultaat correct te interpreteren.  Een voorbeeld is het weer tijdens het moment van het maken van een luchtfoto.",
+            "ap-label-nl": "parameter"
+          }
+        },
+        {
+          "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty",
+          "name": "geobserveerdkenmerk",
+          "sort": "geobserveerdKenmerk",
+          "label": {
+            "nl": "geobserveerdKenmerk"
+          },
+          "description": {
+            "nl": "Kenmerk dat men observeert vh geobserveerdObject."
+          },
+          "usage": {
+            "nl": "Soms is de procedure waarmee de waarden vh kenmerk worden bekomen indirect, ttz men meet om praktische reden een ander kenmerk dat een proxy is voor het kenmerk dat men werkelijk wil observeren.  Bv om de scheuren in de weg te beoordelen meten we de kleurreflectie op het wegdek. CONSTRAINT: Het geobserveerdKenmerk moet werkelijk een kenmerk zijn van het geobserveerdObject of van een (onder)deel ervan."
+          },
+          "domain": [
+            {
+              "EA-Name": "KwaliteitsObservatie",
+              "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "KwaliteitsKenmerk",
+              "range_uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#KwaliteitsKenmerk",
+              "range_puri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk",
+              "range_label": {
+                "nl": "KwaliteitsKenmerk"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-definition-nl": "Kenmerk dat men observeert vh geobserveerdObject.",
+            "usageNote-nl": "Soms is de procedure waarmee de waarden vh kenmerk worden bekomen indirect, ttz men meet om praktische reden een ander kenmerk dat een proxy is voor het kenmerk dat men werkelijk wil observeren.  Bv om de scheuren in de weg te beoordelen meten we de kleurreflectie op het wegdek. CONSTRAINT: Het geobserveerdKenmerk moet werkelijk een kenmerk zijn van het geobserveerdObject of van een (onder)deel ervan.",
+            "label-nl": "geobserveerdKenmerk",
+            "definition-nl": "Kenmerk dat men observeert vh geobserveerdObject.",
+            "ap-label-nl": "geobserveerdKenmerk",
+            "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty",
+            "ap-usageNote-nl": "Soms is de procedure waarmee de waarden vh kenmerk worden bekomen indirect, ttz men meet om praktische reden een ander kenmerk dat een proxy is voor het kenmerk dat men werkelijk wil observeren.  Bv om de scheuren in de weg te beoordelen meten we de kleurreflectie op het wegdek. CONSTRAINT: Het geobserveerdKenmerk moet werkelijk een kenmerk zijn van het geobserveerdObject of van een (onder)deel ervan."
+          }
+        },
+        {
+          "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest",
+          "name": "geobserveerdobject",
+          "sort": "geobserveerdObject",
+          "label": {
+            "nl": "geobserveerdObject"
+          },
+          "description": {
+            "nl": "Object dat men observeert."
+          },
+          "usage": {
+            "nl": "Dat kan het Object zelf zijn of een proxy ervan, ttz een Bemonsteringsobject. OPMERKING: In dat laatste geval weet men soms pas na het observeren welke real-world Objecten men juist geobserveerd heeft."
+          },
+          "domain": [
+            {
+              "EA-Name": "KwaliteitsObservatie",
+              "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Object",
+              "range_uri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Object",
+              "range_puri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
+              "range_label": {
+                "nl": "Object"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-label-nl": "geobserveerdObject",
+            "definition-nl": "Object dat men observeert.",
+            "label-nl": "geobserveerdObject",
+            "ap-definition-nl": "Object dat men observeert.",
+            "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest",
+            "ap-usageNote-nl": "Dat kan het Object zelf zijn of een proxy ervan, ttz een Bemonsteringsobject. OPMERKING: In dat laatste geval weet men soms pas na het observeren welke real-world Objecten men juist geobserveerd heeft.",
+            "usageNote-nl": "Dat kan het Object zelf zijn of een proxy ervan, ttz een Bemonsteringsobject. OPMERKING: In dat laatste geval weet men soms pas na het observeren welke real-world Objecten men juist geobserveerd heeft."
+          }
+        }
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure",
+      "name": "Kwaliteitsobservatieprocedure",
+      "label": {
+        "nl": "Kwaliteitsobservatieprocedure"
+      },
+      "sort": "Kwaliteitsobservatieprocedure",
+      "description": {
+        "nl": "De procedure die gevolgd wordt om de observatie te doen"
+      },
+      "usage": {
+        "nl": "Dit kan het specificatiedocument zijn met info over de ML software"
+      },
+      "parents": [
+        {
+          "label": "Observatieprocedure",
+          "name": "Observatieprocedure",
+          "package": "SensorenEnBemonstering",
+          "uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure",
+          "scoped_uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
+        }
+      ],
+      "rawTags": {
+        "label-nl": "Kwaliteitsobservatieprocedure",
+        "definition-nl": "De procedure die gevolgd wordt om de observatie te doen",
+        "usageNote-nl": "Dit kan het specificatiedocument zijn met info over de ML software",
+        "ap-label-nl": "Kwaliteitsobservatieprocedure",
+        "ap-definition-nl": "De procedure die gevolgd wordt om de observatie te doen",
+        "ap-usageNote-nl": "Dit kan het specificatiedocument zijn met info over de ML software",
+        "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure"
+      },
+      "properties": [
+        {
+          "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.specificatie",
+          "name": "specificatie",
+          "sort": "specificatie",
+          "label": {
+            "nl": "specificatie"
+          },
+          "description": {
+            "nl": "Verwijzing naar een document dat de Observatieprocedure beschrijft."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "KwaliteitsObservatieprocedure",
+              "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "URI",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_label": {
+                "nl": "URI"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "specificatie",
+            "definition-nl": "Verwijzing naar een document dat de Observatieprocedure beschrijft.",
+            "name": "Observatieprocedure.specificatie",
+            "package": "OSLO-SensorenEnBemonstering",
+            "ap-definition-nl": "Verwijzing naar een document dat de Observatieprocedure beschrijft.",
+            "ap-label-nl": "specificatie",
+            "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.specificatie"
+          }
+        },
+        {
+          "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.parameter",
+          "name": "parameter",
+          "sort": "parameter",
+          "label": {
+            "nl": "parameter"
+          },
+          "description": {
+            "nl": "Willekeurig gegeven geassocieerd met de Observatieprocedure."
+          },
+          "usage": {
+            "nl": "Bv een parameter die een aspect van de Observatieprocedure beschrijft (bv de vereiste hoogte voor het observeren van windsnelheid) of een noodzakelijke omgevingsparameter (bv temperatuurbereik waarbinnen een labo-analyse moet plaatsvinden)."
+          },
+          "domain": [
+            {
+              "EA-Name": "KwaliteitsObservatieprocedure",
+              "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "BenoemdeWaarde",
+              "range_uri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#BenoemdeWaarde",
+              "range_puri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue",
+              "range_label": {
+                "nl": "BenoemdeWaarde"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "parameter",
+            "definition-nl": "Willekeurig gegeven geassocieerd met de Observatieprocedure.",
+            "usageNote-nl": "Bv een parameter die een aspect van de Observatieprocedure beschrijft (bv de maximale hoogte voor het nemen van een luchtfoto) of een noodzakelijke omgevingsparameter (bv zichtbaarheidsgraad waarbinnen een luchtfoto mag plaatsnemen).",
+            "name": "Observatieprocedure.parameter",
+            "package": "OSLO-SensorenEnBemonstering",
+            "ap-definition-nl": "Willekeurig gegeven geassocieerd met de Observatieprocedure.",
+            "ap-usageNote-nl": "Bv een parameter die een aspect van de Observatieprocedure beschrijft (bv de vereiste hoogte voor het observeren van windsnelheid) of een noodzakelijke omgevingsparameter (bv temperatuurbereik waarbinnen een labo-analyse moet plaatsvinden).",
+            "ap-label-nl": "parameter",
+            "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.parameter"
+          }
+        },
+        {
+          "uri": "http://purl.org/cd/terms/type",
+          "name": "type",
+          "sort": "type",
+          "label": {
+            "nl": "type"
+          },
+          "description": {
+            "nl": "Aard van de Observatieprocedure."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "KwaliteitsObservatieprocedure",
+              "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "ObservatieProceduretype",
+              "range_uri": "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#ObservatieProcedureType"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#ObservatieProcedureType",
+              "range_puri": "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#ObservatieProcedureType",
+              "range_label": {
+                "nl": "ObservatieProcedureType"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "type",
+            "definition-nl": "Aard van de Observatieprocedure.",
+            "ap-label-nl": "type",
+            "ap-definition-nl": "Aard van de Observatieprocedure.",
+            "uri": "http://purl.org/cd/terms/type"
+          }
+        }
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat",
+      "name": "Kwaliteitsresultaat",
+      "label": {
+        "nl": "KwaliteitsResultaat"
+      },
+      "sort": "KwaliteitsResultaat",
+      "description": {
+        "nl": "Het resultaat van de evaluatie van de kwaliteit van de weg, materialisatie of markering."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Any",
+          "name": "Any",
+          "package": "ObservatiesEnMetingen",
+          "uri": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
+          "scoped_uri": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any"
+        }
+      ],
+      "rawTags": {
+        "label-nl": "KwaliteitsResultaat",
+        "definition-nl": "Het resultaat van de evaluatie van de kwaliteit van de weg, materialisatie of markering.",
+        "ap-definition-nl": "Het resultaat van de evaluatie van de kwaliteit van de weg, materialisatie of markering.",
+        "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat",
+        "ap-label-nl": "KwaliteitsResultaat"
+      },
+      "properties": []
+    },
+    {
+      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor",
+      "name": "Kwaliteitssensor",
+      "label": {
+        "nl": "KwaliteitsSensor"
+      },
+      "sort": "KwaliteitsSensor",
+      "description": {
+        "nl": "De sensor die men gebruikt om de kwaliteitskenmerkern waar te nemen."
+      },
+      "usage": {
+        "nl": "De Machine Learning toepassing die van toepassing is om de kwaliteit in kaart te brengen."
+      },
+      "parents": [
+        {
+          "label": "Sensor",
+          "name": "Sensor",
+          "package": "SSN/SOSA",
+          "uri": "https://www.w3.org/ns/sosa/Sensor",
+          "scoped_uri": "https://www.w3.org/ns/sosa/Sensor"
+        }
+      ],
+      "rawTags": {
+        "label-nl": "KwaliteitsSensor",
+        "definition-nl": "De sensor die men gebruikt om de kwaliteitskenmerkern waar te nemen.",
+        "ap-definition-nl": "De sensor die men gebruikt om de kwaliteitskenmerkern waar te nemen.",
+        "usageNote-nl": "De Machine Learning toepassing die van toepassing is om de kwaliteit in kaart te brengen.",
+        "ap-usageNote-nl": "De Machine Learning toepassing die van toepassing is om de kwaliteit in kaart te brengen.",
+        "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor",
+        "ap-label-nl": "KwaliteitsSensor"
+      },
+      "properties": [
+        {
+          "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie",
+          "name": "versie",
+          "sort": "versie",
+          "label": {
+            "nl": "versie"
+          },
+          "description": {
+            "nl": "De versie van de kwaliteitssensor"
+          },
+          "usage": {
+            "nl": "dit kan gaan over de versie van de machine learning toepassing"
+          },
+          "domain": [
+            {
+              "EA-Name": "KwaliteitsSensor",
+              "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "name": "Systeem.versie",
+            "label-nl": "versie",
+            "definition-nl": "De versie van de kwaliteitssensor",
+            "usageNote-nl": "dit kan gaan over de versie van de machine learning toepassing",
+            "ap-definition-nl": "De versie van de kwaliteitssensor",
+            "ap-usageNote-nl": "dit kan gaan over de versie van de machine learning toepassing",
+            "ap-label-nl": "versie",
+            "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie"
+          }
+        },
+        {
+          "uri": "http://purl.org/cd/terms/type",
+          "name": "type",
+          "sort": "type",
+          "label": {
+            "nl": "type"
+          },
+          "description": {
+            "nl": "Aard vh Systeem."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "KwaliteitsSensor",
+              "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Systeemtype",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#type",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "type"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://purl.org/cd/terms/type",
+            "label-nl": "type",
+            "definition-nl": "Aard vh Systeem.",
+            "ap-definition-nl": "Aard vh Systeem.",
+            "ap-label-nl": "type"
+          }
+        }
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD",
+      "name": "MarkeringKod",
+      "label": {
+        "nl": "Markering KOD"
+      },
+      "sort": "Markering KOD",
+      "description": {
+        "nl": "Abstracte als noemer voor de verschillende types van markeringen."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Markering",
+          "name": "Markering",
+          "package": "OTL",
+          "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Markering",
+          "scoped_uri": "#Markering"
+        }
+      ],
+      "rawTags": {
+        "label-nl": "Markering KOD",
+        "ap-label-nl": "Markering KOD",
+        "definition-nl": "Abstracte als noemer voor de verschillende types van markeringen.",
+        "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD",
+        "ap-definition-nl": "Abstracte als noemer voor de verschillende types van markeringen."
+      },
+      "properties": [
+        {
+          "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD",
+          "name": "kleurKod",
+          "sort": "Kleur KOD",
+          "label": {
+            "nl": "Kleur KOD"
+          },
+          "description": {
+            "nl": "De kleur van de gebruikte markering."
+          },
+          "usage": {
+            "nl": "Niet limitatieve lijst van mogelijke kleuren"
+          },
+          "domain": [
+            {
+              "EA-Name": "MarkeringKOD",
+              "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "KleurCodeKOD",
+              "range_uri": "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#KleurCodeKOD"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#KleurCodeKOD",
+              "range_puri": "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#KleurCodeKOD",
+              "range_label": {
+                "nl": "KleurCodeKOD"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "Kleur KOD",
+            "ap-label-nl": "Kleur KOD",
+            "definition-nl": "De kleur van de gebruikte markering.",
+            "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD",
+            "ap-definition-nl": "De kleur van de gebruikte markering.",
+            "usageNote-nl": "Niet limitatieve lijst van mogelijke kleuren",
+            "ap-usageNote-nl": "Niet limitatieve lijst van mogelijke kleuren"
+          }
+        }
+      ]
+    },
+    {
+      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject",
+      "name": "Openbaardomeinobect",
+      "label": {
+        "nl": "OpenbaarDomeinObect"
+      },
+      "sort": "OpenbaarDomeinObect",
+      "description": {
+        "nl": "Klasse die instanties van om het even welk type vertegenwoordigt die voorkomen op het openbaar domein."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Object",
+          "name": "Object",
+          "package": "ObservatiesEnMetingen",
+          "uri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
+          "scoped_uri": "#Object"
+        },
+        {
+          "label": "Domeinobject",
+          "name": "Domeinobject",
+          "package": "ObservatiesEnMetingen",
+          "uri": "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature",
+          "scoped_uri": "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature"
+        }
+      ],
+      "rawTags": {
+        "label-nl": "OpenbaarDomeinObect",
+        "definition-nl": "Klasse die instanties van om het even welk type vertegenwoordigt die voorkomen op het openbaar domein.",
+        "ap-definition-nl": "Klasse die instanties van om het even welk type vertegenwoordigt die voorkomen op het openbaar domein.",
+        "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject",
+        "ap-label-nl": "OpenbaarDomeinObect"
+      },
+      "properties": []
+    },
     {
       "uri": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#LidarCloud",
       "name": "Lidarpuntenwolk",
@@ -299,7 +1317,7 @@
       },
       "properties": [
         {
-          "uri": "http://www.w3.org/ns/adms#Identifier",
+          "uri": "https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator",
           "name": "identificator",
           "sort": "identificator",
           "label": {
@@ -341,16 +1359,16 @@
             "name": "Bemonsteringsobject.identificator",
             "ap-definition-nl": "Verwijzing naar de informatie die het Bemonsteringsobject uniek identificeert.",
             "ap-usageNote-nl": "Bv het uniek nummer dat aan een Monster wordt toegekend of het numer van een meetstation.",
-            "uri": "http://www.w3.org/ns/adms#Identifier",
+            "uri": "https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator",
             "ap-label-nl": "identificator"
           }
         },
         {
           "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
-          "name": "bemonsterdobject",
-          "sort": "bemonsterdObject",
+          "name": "object",
+          "sort": "object",
           "label": {
-            "nl": "bemonsterdObject"
+            "nl": "object"
           },
           "description": {
             "nl": "Verwijzing naar het Object dat men wil bemonsteren."
@@ -377,14 +1395,14 @@
               }
             }
           ],
-          "cardinality": "1",
+          "cardinality": "",
           "codelist_uri": "",
           "rawTags": {
             "definition-nl": "Verwijzing naar het Object dat men wil bemonsteren.",
             "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature",
-            "ap-label-nl": "bemonsterdObject",
+            "ap-label-nl": "object",
             "ap-definition-nl": "Verwijzing naar het Object dat men wil bemonsteren.",
-            "label-nl": "bemonsterdObject"
+            "label-nl": "object"
           }
         }
       ]
@@ -407,7 +1425,7 @@
           "label": "KwaliteitsResultaat",
           "name": "KwaliteitsResultaat",
           "package": "KwaliteitOpenbaarDomein",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat",
+          "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat",
           "scoped_uri": "#KwaliteitsResultaat"
         }
       ],
@@ -438,7 +1456,7 @@
           "label": "KwaliteitsResultaat",
           "name": "KwaliteitsResultaat",
           "package": "KwaliteitOpenbaarDomein",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat",
+          "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat",
           "scoped_uri": "#KwaliteitsResultaat"
         }
       ],
@@ -482,15 +1500,7 @@
         "nl": "Een aantal mensen georganiseerd in een gemeenschap of andere sociale, commerciële of politieke structuur. De groep heeft een gemeenschappelijk doel of bestaansreden die de individuele leden ervan overstijgt en kan handelen als agent. Een organisatie heeft dikwijls een hiërarchische structuur."
       },
       "usage": {},
-      "parents": [
-        {
-          "label": "Agent",
-          "name": "Agent",
-          "package": "OSLO-Generiek",
-          "uri": "http://purl.org/dc/terms/Agent",
-          "scoped_uri": "#Agent"
-        }
-      ],
+      "parents": [],
       "rawTags": {
         "ap-definition-nl": "Een aantal mensen georganiseerd in een gemeenschap of andere sociale, commerciële of politieke structuur. De groep heeft een gemeenschappelijk doel of bestaansreden die de individuele leden ervan overstijgt en kan handelen als agent. Een organisatie heeft dikwijls een hiërarchische structuur.",
         "label-nl": "Organisatie",
@@ -499,6 +1509,555 @@
         "ap-label-nl": "Organisatie"
       },
       "properties": [
+        {
+          "uri": "http://xmlns.com/foaf/0.1/homepage",
+          "name": "homepage",
+          "sort": "homepage",
+          "label": {
+            "nl": "homepage"
+          },
+          "description": {
+            "nl": "Adres vd homepage van de website vd organisatie."
+          },
+          "usage": {
+            "nl": " "
+          },
+          "domain": [
+            {
+              "EA-Name": "Organisatie",
+              "uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-usageNote-nl": " ",
+            "ap-definition-nl": "Adres vd homepage van de website vd organisatie.",
+            "label-nl": "homepage",
+            "uri": "http://xmlns.com/foaf/0.1/homepage",
+            "definition-nl": "Adres vd homepage van de website vd organisatie.",
+            "ap-label-nl": "homepage"
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/regorg#orgType",
+          "name": "organisatietype",
+          "sort": "organisatietype",
+          "label": {
+            "nl": "organisatietype"
+          },
+          "description": {
+            "nl": "Soort organisatie."
+          },
+          "usage": {
+            "nl": "Specialisatie van classificatie (naast activiteit & status)."
+          },
+          "domain": [
+            {
+              "EA-Name": "Organisatie",
+              "uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "OrganisatieType",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Organisatie Type",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Organisatie Type"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-label-nl": "organisatietype",
+            "uri": "http://www.w3.org/ns/regorg#orgType",
+            "label-nl": "organisatietype",
+            "ap-definition-nl": "Soort organisatie.",
+            "ap-usageNote-nl": "Specialisatie van classificatie (naast activiteit & status).",
+            "definition-nl": "Soort organisatie.",
+            "usageNote-nl": "Specialisatie van classificatie (naast activiteit & status)."
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/regorg#orgStatus",
+          "name": "organisatiestatus",
+          "sort": "organisatiestatus",
+          "label": {
+            "nl": "organisatiestatus"
+          },
+          "description": {
+            "nl": "Toestand vd organisatie."
+          },
+          "usage": {
+            "nl": "Specialisatie van classificatie (naast type & activiteit)."
+          },
+          "domain": [
+            {
+              "EA-Name": "Organisatie",
+              "uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "OrganisatieStatus",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Organisatie Status",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Organisatie Status"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-label-nl": "organisatiestatus",
+            "uri": "http://www.w3.org/ns/regorg#orgStatus",
+            "label-nl": "organisatiestatus",
+            "ap-definition-nl": "Toestand vd organisatie.",
+            "ap-usageNote-nl": "Specialisatie van classificatie (naast type & activiteit).",
+            "definition-nl": "Toestand vd organisatie.",
+            "usageNote-nl": "Specialisatie van classificatie (naast type & activiteit)."
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/regorg#orgActivity",
+          "name": "organisatieactiviteit",
+          "sort": "organisatieactiviteit",
+          "label": {
+            "nl": "organisatieactiviteit"
+          },
+          "description": {
+            "nl": "Type activiteit die door de organisatie wordt uitgeoefend."
+          },
+          "usage": {
+            "nl": "Specialisatie van het attribuut classificatie (naast type & status)."
+          },
+          "domain": [
+            {
+              "EA-Name": "Organisatie",
+              "uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "OrganisatieActiviteit",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Organisatie Activiteit",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Organisatie Activiteit"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-label-nl": "organisatieactiviteit",
+            "label-nl": "organisatieactiviteit",
+            "ap-definition-nl": "Type activiteit die door de organisatie wordt uitgeoefend.",
+            "uri": "http://www.w3.org/ns/regorg#orgActivity",
+            "ap-usageNote-nl": "Specialisatie van het attribuut classificatie (naast type & status).",
+            "definition-nl": "Type activiteit die door de organisatie wordt uitgeoefend.",
+            "usageNote-nl": "Specialisatie van het attribuut classificatie (naast type & status)."
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/org#subOrganizationOf",
+          "name": "suborganisatieVan(target)",
+          "sort": "suborganisatie van (target)",
+          "label": {
+            "nl": "suborganisatie van (target)"
+          },
+          "description": {
+            "nl": "Organisatie die deze organisatie omvat."
+          },
+          "usage": {
+            "nl": "Wordt gebruikt om een hiërarchie van organisaties te documenteren."
+          },
+          "domain": [
+            {
+              "EA-Name": "Organisatie",
+              "uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Organisatie",
+              "range_uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Organisatie",
+              "range_puri": "http://www.w3.org/ns/org#Organization",
+              "range_label": {
+                "nl": "Organisatie"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-definition-nl": "Organisatie die deze organisatie omvat.",
+            "ap-usageNote-nl": "Wordt gebruikt om een hiërarchie van organisaties te documenteren.",
+            "label-nl": "",
+            "ap-label-nl": "",
+            "uri": "http://www.w3.org/ns/org#subOrganizationOf",
+            "definition-nl": "Organisatie die deze organisatie omvat.",
+            "usageNote-nl": "Wordt gebruikt om een hiërarchie van organisaties te documenteren."
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/org#subOrganizationOf",
+          "name": "suborganisatieVan(source)",
+          "sort": "suborganisatie van (source)",
+          "label": {
+            "nl": "suborganisatie van (source)"
+          },
+          "description": {
+            "nl": "Organisatie die deze organisatie omvat."
+          },
+          "usage": {
+            "nl": "Wordt gebruikt om een hiërarchie van organisaties te documenteren."
+          },
+          "domain": [
+            {
+              "EA-Name": "Organisatie",
+              "uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Organisatie",
+              "range_uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Organisatie",
+              "range_puri": "http://www.w3.org/ns/org#Organization",
+              "range_label": {
+                "nl": "Organisatie"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-definition-nl": "Organisatie die deze organisatie omvat.",
+            "ap-usageNote-nl": "Wordt gebruikt om een hiërarchie van organisaties te documenteren.",
+            "label-nl": "",
+            "ap-label-nl": "",
+            "uri": "http://www.w3.org/ns/org#subOrganizationOf",
+            "definition-nl": "Organisatie die deze organisatie omvat.",
+            "usageNote-nl": "Wordt gebruikt om een hiërarchie van organisaties te documenteren."
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/org#purpose",
+          "name": "doel",
+          "sort": "doel",
+          "label": {
+            "nl": "doel"
+          },
+          "description": {
+            "nl": "Bestaansreden vd organisatie."
+          },
+          "usage": {
+            "nl": " "
+          },
+          "domain": [
+            {
+              "EA-Name": "Organisatie",
+              "uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "TaalString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "TaalString"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-usageNote-nl": " ",
+            "label-nl": "doel",
+            "ap-definition-nl": "Bestaansreden vd organisatie.",
+            "uri": "http://www.w3.org/ns/org#purpose",
+            "definition-nl": "Bestaansreden vd organisatie.",
+            "ap-label-nl": "doel"
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/org#linkedTo",
+          "name": "gelinktMet(target)",
+          "sort": "gelinkt met (target)",
+          "label": {
+            "nl": "gelinkt met (target)"
+          },
+          "description": {
+            "nl": "Niet nader bepaalde relatie met een andere organisatie."
+          },
+          "usage": {
+            "nl": "Bv om subsidiëring of bevooradingsketens te documenteren. Dient in dat geval verder gespecialiseerd te worden."
+          },
+          "domain": [
+            {
+              "EA-Name": "Organisatie",
+              "uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Organisatie",
+              "range_uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Organisatie",
+              "range_puri": "http://www.w3.org/ns/org#Organization",
+              "range_label": {
+                "nl": "Organisatie"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "",
+            "ap-definition-nl": "Niet nader bepaalde relatie met een andere organisatie.",
+            "ap-usageNote-nl": "Bv om subsidiëring of bevooradingsketens te documenteren. Dient in dat geval verder gespecialiseerd te worden.",
+            "uri": "http://www.w3.org/ns/org#linkedTo",
+            "ap-label-nl": "",
+            "definition-nl": "Niet nader bepaalde relatie met een andere organisatie.",
+            "usageNote-nl": "Bv om subsidiëring of bevooradingsketens te documenteren. Dient in dat geval verder gespecialiseerd te worden."
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/org#linkedTo",
+          "name": "gelinktMet(source)",
+          "sort": "gelinkt met (source)",
+          "label": {
+            "nl": "gelinkt met (source)"
+          },
+          "description": {
+            "nl": "Niet nader bepaalde relatie met een andere organisatie."
+          },
+          "usage": {
+            "nl": "Bv om subsidiëring of bevooradingsketens te documenteren. Dient in dat geval verder gespecialiseerd te worden."
+          },
+          "domain": [
+            {
+              "EA-Name": "Organisatie",
+              "uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Organisatie",
+              "range_uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Organisatie",
+              "range_puri": "http://www.w3.org/ns/org#Organization",
+              "range_label": {
+                "nl": "Organisatie"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "",
+            "ap-definition-nl": "Niet nader bepaalde relatie met een andere organisatie.",
+            "ap-usageNote-nl": "Bv om subsidiëring of bevooradingsketens te documenteren. Dient in dat geval verder gespecialiseerd te worden.",
+            "uri": "http://www.w3.org/ns/org#linkedTo",
+            "ap-label-nl": "",
+            "definition-nl": "Niet nader bepaalde relatie met een andere organisatie.",
+            "usageNote-nl": "Bv om subsidiëring of bevooradingsketens te documenteren. Dient in dat geval verder gespecialiseerd te worden."
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/org#hasSubOrganization",
+          "name": "heeftSuborganisatie(target)",
+          "sort": "heeft suborganisatie (target)",
+          "label": {
+            "nl": "heeft suborganisatie (target)"
+          },
+          "description": {
+            "nl": "Organisatie die dochter of onderdeel is van de organisatie."
+          },
+          "usage": {
+            "nl": "Wordt gebruikt om een hiërarchie van organisaties te documenteren."
+          },
+          "domain": [
+            {
+              "EA-Name": "Organisatie",
+              "uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Organisatie",
+              "range_uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Organisatie",
+              "range_puri": "http://www.w3.org/ns/org#Organization",
+              "range_label": {
+                "nl": "Organisatie"
+              }
+            }
+          ],
+          "cardinality": "",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://www.w3.org/ns/org#hasSubOrganization",
+            "ap-usageNote-nl": "Wordt gebruikt om een hiërarchie van organisaties te documenteren.",
+            "ap-definition-nl": "Organisatie die dochter of onderdeel is van de organisatie.",
+            "label-nl": "",
+            "definition-nl": "Organisatie die dochter of onderdeel is van de organisatie.",
+            "usageNote-nl": "Wordt gebruikt om een hiërarchie van organisaties te documenteren.",
+            "ap-label-nl": ""
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/org#hasSubOrganization",
+          "name": "heeftSuborganisatie(source)",
+          "sort": "heeft suborganisatie (source)",
+          "label": {
+            "nl": "heeft suborganisatie (source)"
+          },
+          "description": {
+            "nl": "Organisatie die dochter of onderdeel is van de organisatie."
+          },
+          "usage": {
+            "nl": "Wordt gebruikt om een hiërarchie van organisaties te documenteren."
+          },
+          "domain": [
+            {
+              "EA-Name": "Organisatie",
+              "uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Organisatie",
+              "range_uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Organisatie",
+              "range_puri": "http://www.w3.org/ns/org#Organization",
+              "range_label": {
+                "nl": "Organisatie"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://www.w3.org/ns/org#hasSubOrganization",
+            "ap-usageNote-nl": "Wordt gebruikt om een hiërarchie van organisaties te documenteren.",
+            "ap-definition-nl": "Organisatie die dochter of onderdeel is van de organisatie.",
+            "label-nl": "",
+            "definition-nl": "Organisatie die dochter of onderdeel is van de organisatie.",
+            "usageNote-nl": "Wordt gebruikt om een hiërarchie van organisaties te documenteren.",
+            "ap-label-nl": ""
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/org#classification",
+          "name": "classificatie",
+          "sort": "classificatie",
+          "label": {
+            "nl": "classificatie"
+          },
+          "description": {
+            "nl": "Rangschikking van de organisatie in een classificatiesysteem."
+          },
+          "usage": {
+            "nl": " "
+          },
+          "domain": [
+            {
+              "EA-Name": "Organisatie",
+              "uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "OrganisatieClassificatie",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Organisatie Classificatie",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Organisatie Classificatie"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-usageNote-nl": " ",
+            "ap-definition-nl": "Rangschikking van de organisatie in een classificatiesysteem.",
+            "uri": "http://www.w3.org/ns/org#classification",
+            "label-nl": "classificatie",
+            "definition-nl": "Rangschikking van de organisatie in een classificatiesysteem.",
+            "ap-label-nl": "classificatie"
+          }
+        },
         {
           "uri": "http://www.w3.org/2004/02/skos/core#prefLabel",
           "name": "voorkeurslabel",
@@ -542,6 +2101,174 @@
             "label-nl": "voorkeurslabel",
             "ap-definition-nl": "Naam waarmee de organisatie bij voorkeur wordt aangeduid.",
             "definition-nl": "Naam waarmee de organisatie bij voorkeur wordt aangeduid."
+          }
+        },
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#altLabel",
+          "name": "alternatieveLabel",
+          "sort": "alternatieve label",
+          "label": {
+            "nl": "alternatieve label"
+          },
+          "description": {
+            "nl": "Andere naam waaronder de organisatie bekend is."
+          },
+          "usage": {
+            "nl": "Bv commerciële naam, informele naam"
+          },
+          "domain": [
+            {
+              "EA-Name": "Organisatie",
+              "uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "TaalString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "TaalString"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-label-nl": "alternatieve label",
+            "label-nl": "alternatieve label",
+            "ap-definition-nl": "Andere naam waaronder de organisatie bekend is.",
+            "ap-usageNote-nl": "Bv commerciële naam, informele naam",
+            "uri": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "definition-nl": "Andere naam waaronder de organisatie bekend is.",
+            "usageNote-nl": "Bv commerciële naam, informele naam"
+          }
+        },
+        {
+          "uri": "http://schema.org/logo",
+          "name": "logo",
+          "sort": "logo",
+          "label": {
+            "nl": "logo"
+          },
+          "description": {
+            "nl": "Verwijzing naar het logo vd organisatie."
+          },
+          "usage": {
+            "nl": " "
+          },
+          "domain": [
+            {
+              "EA-Name": "Organisatie",
+              "uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "range": [],
+          "scopedrange": [],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-usageNote-nl": " ",
+            "ap-definition-nl": "Verwijzing naar het logo vd organisatie.",
+            "uri": "http://schema.org/logo",
+            "label-nl": "logo",
+            "definition-nl": "Verwijzing naar het logo vd organisatie.",
+            "ap-label-nl": "logo"
+          }
+        },
+        {
+          "uri": "http://schema.org/contactPoint",
+          "name": "contactpunt",
+          "sort": "contactpunt",
+          "label": {
+            "nl": "contactpunt"
+          },
+          "description": {
+            "nl": "Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren."
+          },
+          "usage": {
+            "nl": " "
+          },
+          "domain": [
+            {
+              "EA-Name": "Organisatie",
+              "uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "ContactInfo",
+              "range_uri": "http://schema.org/ContactPoint"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Contactpunt",
+              "range_puri": "http://schema.org/ContactPoint",
+              "range_label": {
+                "nl": "Contactpunt"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-usageNote-nl": " ",
+            "label-nl": "contactpunt",
+            "ap-definition-nl": "Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren.",
+            "uri": "http://schema.org/contactPoint",
+            "ap-label-nl": "contactpunt",
+            "definition-nl": "Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren."
+          }
+        },
+        {
+          "uri": "http://purl.org/dc/terms/description",
+          "name": "beschrijving",
+          "sort": "beschrijving",
+          "label": {
+            "nl": "beschrijving"
+          },
+          "description": {
+            "nl": "Beschrijving van de organisatie."
+          },
+          "usage": {
+            "nl": " "
+          },
+          "domain": [
+            {
+              "EA-Name": "Organisatie",
+              "uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "TaalString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "TaalString"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-usageNote-nl": " ",
+            "label-nl": "beschrijving",
+            "ap-definition-nl": "Beschrijving van de organisatie.",
+            "uri": "http://purl.org/dc/terms/description",
+            "definition-nl": "Beschrijving van de organisatie.",
+            "ap-label-nl": "beschrijving"
           }
         }
       ]
@@ -620,7 +2347,7 @@
           "label": "OpenbaarDomeinObect",
           "name": "OpenbaarDomeinObject",
           "package": "KwaliteitOpenbaarDomein",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject",
+          "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject",
           "scoped_uri": "#OpenbaarDomeinObect"
         }
       ],
@@ -794,1024 +2521,6 @@
         "ap-usageNote-nl": "Naar GRB-skeletoptie wegbeheer - WEM1: Puntvormige wegmarkering; WEM2: Lijnvormige wegmarkering; WEM3: Vlakvormige wegmarkering",
         "uri": "https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Wegmarkering",
         "ap-label-nl": "Wegmarkering"
-      },
-      "properties": []
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Conformiteitsresultaat",
-      "name": "Conformiteitsresultaat",
-      "label": {
-        "nl": "ConformiteitsResultaat"
-      },
-      "sort": "ConformiteitsResultaat",
-      "description": {
-        "nl": "Informatie over het resultaat van de evaluatie van de verkregen waarde(n) volgens een gespecifieerd conformiteitskwaliteitsniveau."
-      },
-      "usage": {
-        "nl": "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_ConformanceResult"
-      },
-      "parents": [
-        {
-          "label": "KwaliteitsResultaat",
-          "name": "KwaliteitsResultaat",
-          "package": "KwaliteitOpenbaarDomein",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat",
-          "scoped_uri": "#KwaliteitsResultaat"
-        }
-      ],
-      "rawTags": {
-        "label-nl": "ConformiteitsResultaat",
-        "definition-nl": "Informatie over het resultaat van de evaluatie van de verkregen waarde(n) volgens een gespecifieerd conformiteitskwaliteitsniveau.",
-        "usageNote-nl": "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_ConformanceResult",
-        "ap-definition-nl": "Informatie over het resultaat van de evaluatie van de verkregen waarde(n) volgens een gespecifieerd conformiteitskwaliteitsniveau.",
-        "ap-label-nl": "ConformiteitsResultaat",
-        "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Conformiteitsresultaat"
-      },
-      "properties": []
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk",
-      "name": "Kwaliteitskenmerk",
-      "label": {
-        "nl": "KwaliteitsKenmerk"
-      },
-      "sort": "KwaliteitsKenmerk",
-      "description": {
-        "nl": "Kenmerk vh geobserveerdObject waarop de kwaliteitsbeoordeling is gebasseerd."
-      },
-      "usage": {},
-      "parents": [
-        {
-          "label": "Kenmerktype",
-          "name": "Kenmerktype",
-          "package": "ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType",
-          "scoped_uri": "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType"
-        }
-      ],
-      "rawTags": {
-        "label-nl": "KwaliteitsKenmerk",
-        "definition-nl": "Kenmerk vh geobserveerdObject waarop de kwaliteitsbeoordeling is gebasseerd.",
-        "ap-definition-nl": "Kenmerk vh geobserveerdObject waarop de kwaliteitsbeoordeling is gebasseerd.",
-        "ap-label-nl": "KwaliteitsKenmerk",
-        "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk"
-      },
-      "properties": [
-        {
-          "uri": "http://purl.org/dc/terms/type",
-          "name": "type",
-          "sort": "type",
-          "label": {
-            "nl": "type"
-          },
-          "description": {
-            "nl": "verwijst naar het KenmerkType waarop de kwaliteit beoordeel wordt"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "KwaliteitsKenmerk",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "KenmerkType",
-              "range_uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KenmerkType"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#KenmerkType",
-              "range_puri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KenmerkType",
-              "range_label": {
-                "nl": "KenmerkType"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "type",
-            "definition-nl": "verwijst naar het KenmerkType waarop de kwaliteit beoordeel wordt",
-            "ap-definition-nl": "verwijst naar het KenmerkType waarop de kwaliteit beoordeel wordt",
-            "uri": "http://purl.org/dc/terms/type",
-            "ap-label-nl": "type"
-          }
-        }
-      ]
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie",
-      "name": "Kwaliteitsobservatie",
-      "label": {
-        "nl": "Kwaliteitsobservatie"
-      },
-      "sort": "Kwaliteitsobservatie",
-      "description": {
-        "nl": "Het vaststellen van de waarde van een bepaald kwaliteitskenmerk van een Object op een bepaald tijdstip of tussen twee tijdstippen."
-      },
-      "usage": {
-        "nl": "Het gaat om schattingen van de waarde, maw op de waarde zit een zekere foutmarge. Bijvoorbeeld kleur. Dit is verschillend van waarden die zijn toegekend en dus geen schattingen zijn zoals naam of prijs."
-      },
-      "parents": [
-        {
-          "label": "Observatie",
-          "name": "Observatie",
-          "package": "ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation",
-          "scoped_uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation"
-        }
-      ],
-      "rawTags": {
-        "definition-nl": "Het vaststellen van de waarde van een bepaald kwaliteitskenmerk van een Object op een bepaald tijdstip of tussen twee tijdstippen.",
-        "usageNote-nl": "Het gaat om schattingen van de waarde, maw op de waarde zit een zekere foutmarge. Bijvoorbeeld kleur. Dit is verschillend van waarden die zijn toegekend en dus geen schattingen zijn zoals naam of prijs.",
-        "ap-definition-nl": "Het vaststellen van de waarde van een bepaald kwaliteitskenmerk van een Object op een bepaald tijdstip of tussen twee tijdstippen.",
-        "ap-usageNote-nl": "Het gaat om schattingen van de waarde, maw op de waarde zit een zekere foutmarge. Bijvoorbeeld kleur. Dit is verschillend van waarden die zijn toegekend en dus geen schattingen zijn zoals naam of prijs.",
-        "label-nl": "Kwaliteitsobservatie",
-        "ap-label-nl": "Kwaliteitsobservatie",
-        "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
-      },
-      "properties": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor",
-          "name": "uitgevoerddoor",
-          "sort": "uitgevoerdDoor",
-          "label": {
-            "nl": "uitgevoerdDoor"
-          },
-          "description": {
-            "nl": "Agent die de Observatie heeft uitgevoerd."
-          },
-          "usage": {
-            "nl": "Dit kan bijvoorbeeld gaan over de machine learning toepassing die de observatie uitvoert"
-          },
-          "domain": [
-            {
-              "EA-Name": "KwaliteitsObservatie",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Agent",
-              "range_uri": "http://fixme.com#Agent"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Agent",
-              "range_puri": "http://fixme.com#Agent",
-              "range_label": {
-                "nl": "Agent"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "uitgevoerdDoor",
-            "definition-nl": "Agent die de Observatie heeft uitgevoerd.",
-            "usageNote-nl": "Dit kan bijvoorbeeld gaan over de machine learning toepassing die de observatie uitvoert",
-            "ap-definition-nl": "Agent die de Observatie heeft uitgevoerd.",
-            "ap-usageNote-nl": "Dit kan bijvoorbeeld gaan over de machine learning toepassing die de observatie uitvoert",
-            "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor",
-            "ap-label-nl": "uitgevoerdDoor"
-          }
-        },
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat",
-          "name": "resultaat",
-          "sort": "resultaat",
-          "label": {
-            "nl": "resultaat"
-          },
-          "description": {
-            "nl": "het resultaat van de KwaliteitsObservatie"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "KwaliteitsObservatie",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "KwaliteitsResultaat",
-              "range_uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#KwaliteitsResultaat",
-              "range_puri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat",
-              "range_label": {
-                "nl": "KwaliteitsResultaat"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat",
-            "label-nl": "resultaat",
-            "ap-label-nl": "resultaat",
-            "definition-nl": "het resultaat van de KwaliteitsObservatie",
-            "ap-definition-nl": "het resultaat van de KwaliteitsObservatie"
-          }
-        },
-        {
-          "uri": "http://www.w3.org/ns/sosa/usedProcedure",
-          "name": "gebruikteprocedure",
-          "sort": "gebruikteProcedure",
-          "label": {
-            "nl": "gebruikteProcedure"
-          },
-          "description": {
-            "nl": "De gebruikte procedure van de observatie."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "KwaliteitsObservatie",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "KwaliteitsObservatieprocedure",
-              "range_uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Kwaliteitsobservatieprocedure",
-              "range_puri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure",
-              "range_label": {
-                "nl": "Kwaliteitsobservatieprocedure"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "ap-label-nl": "gebruikteProcedure",
-            "definition-nl": "De gebruikte procedure van de observatie.",
-            "label-nl": "gebruikteProcedure",
-            "uri": "http://www.w3.org/ns/sosa/usedProcedure",
-            "ap-definition-nl": "De gebruikte procedure van de observatie."
-          }
-        },
-        {
-          "uri": "http://www.w3.org/ns/sosa/madeBySensor",
-          "name": "uitgevoerdmetsensor",
-          "sort": "uitgevoerdMetSensor",
-          "label": {
-            "nl": "uitgevoerdMetSensor"
-          },
-          "description": {
-            "nl": "Sensor waarmee de Observatie is uitgevoerd."
-          },
-          "usage": {
-            "nl": "Dit kan gaan over de machine learning toepassing die de luchtfoto's beoordeeld."
-          },
-          "domain": [
-            {
-              "EA-Name": "KwaliteitsObservatie",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "KwaliteitsSensor",
-              "range_uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#KwaliteitsSensor",
-              "range_puri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor",
-              "range_label": {
-                "nl": "KwaliteitsSensor"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "ap-definition-nl": "Sensor waarmee de Observatie is uitgevoerd.",
-            "ap-label-nl": "uitgevoerdMetSensor",
-            "ap-usageNote-nl": "Dit kan gaan over de machine learning toepassing die de luchtfoto's beoordeeld.",
-            "definition-nl": "Sensor waarmee de Observatie is uitgevoerd.",
-            "uri": "http://www.w3.org/ns/sosa/madeBySensor",
-            "usageNote-nl": "Dit kan gaan over de machine learning toepassing die de luchtfoto's beoordeeld.",
-            "label-nl": "uitgevoerdMetSensor"
-          }
-        },
-        {
-          "uri": "http://purl.org/cd/terms/type",
-          "name": "type",
-          "sort": "type",
-          "label": {
-            "nl": "type"
-          },
-          "description": {
-            "nl": "Het type van observatie."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "KwaliteitsObservatie",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Observatietype",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#type",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "nl": "type"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "type",
-            "definition-nl": "Het type van observatie.",
-            "uri": "http://purl.org/cd/terms/type",
-            "ap-definition-nl": "Het type van observatie.",
-            "ap-label-nl": "type"
-          }
-        },
-        {
-          "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.validTime",
-          "name": "geldigetijd",
-          "sort": "geldigeTijd",
-          "label": {
-            "nl": "geldigeTijd"
-          },
-          "description": {
-            "nl": "Periode waarvoor het resultaat van de Observatie geldt."
-          },
-          "usage": {
-            "nl": "Bv nuttig voor tijdelijke wegmarkeringen."
-          },
-          "domain": [
-            {
-              "EA-Name": "KwaliteitsObservatie",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Periode",
-              "range_uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Period"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Periode",
-              "range_puri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Period",
-              "range_label": {
-                "nl": "Periode"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "geldigeTijd",
-            "ap-definition-nl": "Periode waarvoor het resultaat van de Observatie geldt.",
-            "ap-usageNote-nl": "Bv nuttig voor tijdelijke wegmarkeringen.",
-            "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.validTime",
-            "definition-nl": "Periode waarvoor het resultaat van de Observatie geldt.",
-            "usageNote-nl": "Bv nuttig voor tijdelijke wegmarkeringen.",
-            "ap-label-nl": "geldigeTijd"
-          }
-        },
-        {
-          "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime",
-          "name": "fenomeentijd",
-          "sort": "fenomeentijd",
-          "label": {
-            "nl": "fenomeentijd"
-          },
-          "description": {
-            "nl": "Het moment waarop het resultaat van de Observatie van toepassing was."
-          },
-          "usage": {
-            "nl": "Typisch het moment waarop geobserveerd of bemonsterd werd. Als de Observatie temporeel is en het moment waarop iets plaatsvindt wordt geregistreerd dan is dit meteen ook de fenomeentijd."
-          },
-          "domain": [
-            {
-              "EA-Name": "KwaliteitsObservatie",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "TemporeleEntiteit",
-              "range_uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#TemporeleEntiteit",
-              "range_puri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object",
-              "range_label": {
-                "nl": "TemporeleEntiteit"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "fenomeentijd",
-            "ap-definition-nl": "Het moment waarop het resultaat van de Observatie van toepassing was.",
-            "ap-usageNote-nl": "Typisch het moment waarop geobserveerd of bemonsterd werd. Als de Observatie temporeel is en het moment waarop iets plaatsvindt wordt geregistreerd dan is dit meteen ook de fenomeentijd.",
-            "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime",
-            "definition-nl": "Het moment waarop het resultaat van de Observatie van toepassing was.",
-            "usageNote-nl": "Typisch het moment waarop geobserveerd of bemonsterd werd. Als de Observatie temporeel is en het moment waarop iets plaatsvindt wordt geregistreerd dan is dit meteen ook de fenomeentijd.",
-            "ap-label-nl": "fenomeentijd"
-          }
-        },
-        {
-          "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.parameter",
-          "name": "parameter",
-          "sort": "parameter",
-          "label": {
-            "nl": "parameter"
-          },
-          "description": {
-            "nl": "Willekeurig gegeven gassocieerd met het gebeuren van de Observatie."
-          },
-          "usage": {
-            "nl": "Het gaat hier niet om kenmerken van het geobserveerdObject (die worden al beschreven door het geobserveerdKenmerk) of om parameters geassocieerd met het observatieproces (zoals een instelling van een instrument). Het gaat hier bv om omgevingsparameters die het resultaat kunnen beïnvloeden en van belang zijn om het resultaat correct te interpreteren.  Een voorbeeld is het weer tijdens het moment van het maken van een luchtfoto."
-          },
-          "domain": [
-            {
-              "EA-Name": "KwaliteitsObservatie",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "BenoemdeWaarde",
-              "range_uri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#BenoemdeWaarde",
-              "range_puri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue",
-              "range_label": {
-                "nl": "BenoemdeWaarde"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "parameter",
-            "ap-definition-nl": "Willekeurig gegeven gassocieerd met het gebeuren van de Observatie.",
-            "ap-usageNote-nl": "Het gaat hier niet om kenmerken van het geobserveerdObject (die worden al beschreven door het geobserveerdKenmerk) of om parameters geassocieerd met het observatieproces (zoals een instelling van een instrument). Het gaat hier bv om omgevingsparameters die het resultaat kunnen beïnvloeden en van belang zijn om het resultaat correct te interpreteren.  Een voorbeeld is het weer tijdens het moment van het maken van een luchtfoto.",
-            "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.parameter",
-            "definition-nl": "Willekeurig gegeven gassocieerd met het gebeuren van de Observatie.",
-            "usageNote-nl": "Het gaat hier niet om kenmerken van het geobserveerdObject (die worden al beschreven door het geobserveerdKenmerk) of om parameters geassocieerd met het observatieproces (zoals een instelling van een instrument). Het gaat hier bv om omgevingsparameters die het resultaat kunnen beïnvloeden en van belang zijn om het resultaat correct te interpreteren.  Een voorbeeld is het weer tijdens het moment van het maken van een luchtfoto.",
-            "ap-label-nl": "parameter"
-          }
-        },
-        {
-          "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty",
-          "name": "geobserveerdkenmerk",
-          "sort": "geobserveerdKenmerk",
-          "label": {
-            "nl": "geobserveerdKenmerk"
-          },
-          "description": {
-            "nl": "Kenmerk dat men observeert vh geobserveerdObject."
-          },
-          "usage": {
-            "nl": "Soms is de procedure waarmee de waarden vh kenmerk worden bekomen indirect, ttz men meet om praktische reden een ander kenmerk dat een proxy is voor het kenmerk dat men werkelijk wil observeren.  Bv om de scheuren in de weg te beoordelen meten we de kleurreflectie op het wegdek. CONSTRAINT: Het geobserveerdKenmerk moet werkelijk een kenmerk zijn van het geobserveerdObject of van een (onder)deel ervan."
-          },
-          "domain": [
-            {
-              "EA-Name": "KwaliteitsObservatie",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "KwaliteitsKenmerk",
-              "range_uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#KwaliteitsKenmerk",
-              "range_puri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk",
-              "range_label": {
-                "nl": "KwaliteitsKenmerk"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "ap-definition-nl": "Kenmerk dat men observeert vh geobserveerdObject.",
-            "usageNote-nl": "Soms is de procedure waarmee de waarden vh kenmerk worden bekomen indirect, ttz men meet om praktische reden een ander kenmerk dat een proxy is voor het kenmerk dat men werkelijk wil observeren.  Bv om de scheuren in de weg te beoordelen meten we de kleurreflectie op het wegdek. CONSTRAINT: Het geobserveerdKenmerk moet werkelijk een kenmerk zijn van het geobserveerdObject of van een (onder)deel ervan.",
-            "label-nl": "geobserveerdKenmerk",
-            "definition-nl": "Kenmerk dat men observeert vh geobserveerdObject.",
-            "ap-label-nl": "geobserveerdKenmerk",
-            "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty",
-            "ap-usageNote-nl": "Soms is de procedure waarmee de waarden vh kenmerk worden bekomen indirect, ttz men meet om praktische reden een ander kenmerk dat een proxy is voor het kenmerk dat men werkelijk wil observeren.  Bv om de scheuren in de weg te beoordelen meten we de kleurreflectie op het wegdek. CONSTRAINT: Het geobserveerdKenmerk moet werkelijk een kenmerk zijn van het geobserveerdObject of van een (onder)deel ervan."
-          }
-        },
-        {
-          "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest",
-          "name": "geobserveerdobject",
-          "sort": "geobserveerdObject",
-          "label": {
-            "nl": "geobserveerdObject"
-          },
-          "description": {
-            "nl": "Object dat men observeert."
-          },
-          "usage": {
-            "nl": "Dat kan het Object zelf zijn of een proxy ervan, ttz een Bemonsteringsobject. OPMERKING: In dat laatste geval weet men soms pas na het observeren welke real-world Objecten men juist geobserveerd heeft."
-          },
-          "domain": [
-            {
-              "EA-Name": "KwaliteitsObservatie",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Object",
-              "range_uri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Object",
-              "range_puri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
-              "range_label": {
-                "nl": "Object"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "ap-label-nl": "geobserveerdObject",
-            "definition-nl": "Object dat men observeert.",
-            "label-nl": "geobserveerdObject",
-            "ap-definition-nl": "Object dat men observeert.",
-            "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest",
-            "ap-usageNote-nl": "Dat kan het Object zelf zijn of een proxy ervan, ttz een Bemonsteringsobject. OPMERKING: In dat laatste geval weet men soms pas na het observeren welke real-world Objecten men juist geobserveerd heeft.",
-            "usageNote-nl": "Dat kan het Object zelf zijn of een proxy ervan, ttz een Bemonsteringsobject. OPMERKING: In dat laatste geval weet men soms pas na het observeren welke real-world Objecten men juist geobserveerd heeft."
-          }
-        }
-      ]
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure",
-      "name": "Kwaliteitsobservatieprocedure",
-      "label": {
-        "nl": "Kwaliteitsobservatieprocedure"
-      },
-      "sort": "Kwaliteitsobservatieprocedure",
-      "description": {
-        "nl": "De procedure die gevolgd wordt om de observatie te doen"
-      },
-      "usage": {
-        "nl": "Dit kan het specificatiedocument zijn met info over de ML software"
-      },
-      "parents": [
-        {
-          "label": "Observatieprocedure",
-          "name": "Observatieprocedure",
-          "package": "SensorenEnBemonstering",
-          "uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure",
-          "scoped_uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
-        }
-      ],
-      "rawTags": {
-        "label-nl": "Kwaliteitsobservatieprocedure",
-        "definition-nl": "De procedure die gevolgd wordt om de observatie te doen",
-        "usageNote-nl": "Dit kan het specificatiedocument zijn met info over de ML software",
-        "ap-label-nl": "Kwaliteitsobservatieprocedure",
-        "ap-definition-nl": "De procedure die gevolgd wordt om de observatie te doen",
-        "ap-usageNote-nl": "Dit kan het specificatiedocument zijn met info over de ML software",
-        "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure"
-      },
-      "properties": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.specificatie",
-          "name": "specificatie",
-          "sort": "specificatie",
-          "label": {
-            "nl": "specificatie"
-          },
-          "description": {
-            "nl": "Verwijzing naar een document dat de Observatieprocedure beschrijft."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "KwaliteitsObservatieprocedure",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "URI",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#anyURI",
-              "range_label": {
-                "nl": "URI"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "specificatie",
-            "definition-nl": "Verwijzing naar een document dat de Observatieprocedure beschrijft.",
-            "name": "Observatieprocedure.specificatie",
-            "package": "OSLO-SensorenEnBemonstering",
-            "ap-definition-nl": "Verwijzing naar een document dat de Observatieprocedure beschrijft.",
-            "ap-label-nl": "specificatie",
-            "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.specificatie"
-          }
-        },
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.parameter",
-          "name": "parameter",
-          "sort": "parameter",
-          "label": {
-            "nl": "parameter"
-          },
-          "description": {
-            "nl": "Willekeurig gegeven geassocieerd met de Observatieprocedure."
-          },
-          "usage": {
-            "nl": "Bv een parameter die een aspect van de Observatieprocedure beschrijft (bv de vereiste hoogte voor het observeren van windsnelheid) of een noodzakelijke omgevingsparameter (bv temperatuurbereik waarbinnen een labo-analyse moet plaatsvinden)."
-          },
-          "domain": [
-            {
-              "EA-Name": "KwaliteitsObservatieprocedure",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "BenoemdeWaarde",
-              "range_uri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#BenoemdeWaarde",
-              "range_puri": "http://def.isotc211.org/iso19156/2011/Observation#NamedValue",
-              "range_label": {
-                "nl": "BenoemdeWaarde"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "parameter",
-            "definition-nl": "Willekeurig gegeven geassocieerd met de Observatieprocedure.",
-            "usageNote-nl": "Bv een parameter die een aspect van de Observatieprocedure beschrijft (bv de maximale hoogte voor het nemen van een luchtfoto) of een noodzakelijke omgevingsparameter (bv zichtbaarheidsgraad waarbinnen een luchtfoto mag plaatsnemen).",
-            "name": "Observatieprocedure.parameter",
-            "package": "OSLO-SensorenEnBemonstering",
-            "ap-definition-nl": "Willekeurig gegeven geassocieerd met de Observatieprocedure.",
-            "ap-usageNote-nl": "Bv een parameter die een aspect van de Observatieprocedure beschrijft (bv de vereiste hoogte voor het observeren van windsnelheid) of een noodzakelijke omgevingsparameter (bv temperatuurbereik waarbinnen een labo-analyse moet plaatsvinden).",
-            "ap-label-nl": "parameter",
-            "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.parameter"
-          }
-        },
-        {
-          "uri": "http://purl.org/cd/terms/type",
-          "name": "type",
-          "sort": "type",
-          "label": {
-            "nl": "type"
-          },
-          "description": {
-            "nl": "Aard van de Observatieprocedure."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "KwaliteitsObservatieprocedure",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "ObservatieProceduretype",
-              "range_uri": "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#ObservatieProcedureType"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#ObservatieProcedureType",
-              "range_puri": "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#ObservatieProcedureType",
-              "range_label": {
-                "nl": "ObservatieProcedureType"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "type",
-            "definition-nl": "Aard van de Observatieprocedure.",
-            "ap-label-nl": "type",
-            "ap-definition-nl": "Aard van de Observatieprocedure.",
-            "uri": "http://purl.org/cd/terms/type"
-          }
-        }
-      ]
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat",
-      "name": "Kwaliteitsresultaat",
-      "label": {
-        "nl": "KwaliteitsResultaat"
-      },
-      "sort": "KwaliteitsResultaat",
-      "description": {
-        "nl": "Het resultaat van de evaluatie van de kwaliteit van de weg, materialisatie of markering."
-      },
-      "usage": {},
-      "parents": [
-        {
-          "label": "Any",
-          "name": "Any",
-          "package": "ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
-          "scoped_uri": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any"
-        }
-      ],
-      "rawTags": {
-        "label-nl": "KwaliteitsResultaat",
-        "definition-nl": "Het resultaat van de evaluatie van de kwaliteit van de weg, materialisatie of markering.",
-        "ap-definition-nl": "Het resultaat van de evaluatie van de kwaliteit van de weg, materialisatie of markering.",
-        "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat",
-        "ap-label-nl": "KwaliteitsResultaat"
-      },
-      "properties": []
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor",
-      "name": "Kwaliteitssensor",
-      "label": {
-        "nl": "KwaliteitsSensor"
-      },
-      "sort": "KwaliteitsSensor",
-      "description": {
-        "nl": "De sensor die men gebruikt om de kwaliteitskenmerkern waar te nemen."
-      },
-      "usage": {
-        "nl": "De Machine Learning toepassing die van toepassing is om de kwaliteit in kaart te brengen."
-      },
-      "parents": [
-        {
-          "label": "Sensor",
-          "name": "Sensor",
-          "package": "SSN/SOSA",
-          "uri": "https://www.w3.org/ns/sosa/Sensor",
-          "scoped_uri": "https://www.w3.org/ns/sosa/Sensor"
-        }
-      ],
-      "rawTags": {
-        "label-nl": "KwaliteitsSensor",
-        "definition-nl": "De sensor die men gebruikt om de kwaliteitskenmerkern waar te nemen.",
-        "ap-definition-nl": "De sensor die men gebruikt om de kwaliteitskenmerkern waar te nemen.",
-        "usageNote-nl": "De Machine Learning toepassing die van toepassing is om de kwaliteit in kaart te brengen.",
-        "ap-usageNote-nl": "De Machine Learning toepassing die van toepassing is om de kwaliteit in kaart te brengen.",
-        "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor",
-        "ap-label-nl": "KwaliteitsSensor"
-      },
-      "properties": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie",
-          "name": "versie",
-          "sort": "versie",
-          "label": {
-            "nl": "versie"
-          },
-          "description": {
-            "nl": "De versie van de kwaliteitssensor"
-          },
-          "usage": {
-            "nl": "dit kan gaan over de versie van de machine learning toepassing"
-          },
-          "domain": [
-            {
-              "EA-Name": "KwaliteitsSensor",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "String",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
-              "range_label": {
-                "nl": "String"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "name": "Systeem.versie",
-            "label-nl": "versie",
-            "definition-nl": "De versie van de kwaliteitssensor",
-            "usageNote-nl": "dit kan gaan over de versie van de machine learning toepassing",
-            "ap-definition-nl": "De versie van de kwaliteitssensor",
-            "ap-usageNote-nl": "dit kan gaan over de versie van de machine learning toepassing",
-            "ap-label-nl": "versie",
-            "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie"
-          }
-        },
-        {
-          "uri": "http://purl.org/cd/terms/type",
-          "name": "type",
-          "sort": "type",
-          "label": {
-            "nl": "type"
-          },
-          "description": {
-            "nl": "Aard vh Systeem."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "KwaliteitsSensor",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Systeemtype",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#type",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "nl": "type"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://purl.org/cd/terms/type",
-            "label-nl": "type",
-            "definition-nl": "Aard vh Systeem.",
-            "ap-definition-nl": "Aard vh Systeem.",
-            "ap-label-nl": "type"
-          }
-        }
-      ]
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD",
-      "name": "MarkeringKod",
-      "label": {
-        "nl": "Markering KOD"
-      },
-      "sort": "Markering KOD",
-      "description": {
-        "nl": "Abstracte als noemer voor de verschillende types van markeringen."
-      },
-      "usage": {},
-      "parents": [
-        {
-          "label": "Markering",
-          "name": "Markering",
-          "package": "OTL",
-          "uri": "https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Markering",
-          "scoped_uri": "#Markering"
-        }
-      ],
-      "rawTags": {
-        "label-nl": "Markering KOD",
-        "ap-label-nl": "Markering KOD",
-        "definition-nl": "Abstracte als noemer voor de verschillende types van markeringen.",
-        "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD",
-        "ap-definition-nl": "Abstracte als noemer voor de verschillende types van markeringen."
-      },
-      "properties": [
-        {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD",
-          "name": "kleurKod",
-          "sort": "Kleur KOD",
-          "label": {
-            "nl": "Kleur KOD"
-          },
-          "description": {
-            "nl": "De kleur van de gebruikte markering."
-          },
-          "usage": {
-            "nl": "Niet limitatieve lijst van mogelijke kleuren"
-          },
-          "domain": [
-            {
-              "EA-Name": "MarkeringKOD",
-              "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "KleurCodeKOD",
-              "range_uri": "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#KleurCodeKOD"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#KleurCodeKOD",
-              "range_puri": "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#KleurCodeKOD",
-              "range_label": {
-                "nl": "KleurCodeKOD"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "Kleur KOD",
-            "ap-label-nl": "Kleur KOD",
-            "definition-nl": "De kleur van de gebruikte markering.",
-            "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD",
-            "ap-definition-nl": "De kleur van de gebruikte markering.",
-            "usageNote-nl": "Niet limitatieve lijst van mogelijke kleuren",
-            "ap-usageNote-nl": "Niet limitatieve lijst van mogelijke kleuren"
-          }
-        }
-      ]
-    },
-    {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject",
-      "name": "Openbaardomeinobect",
-      "label": {
-        "nl": "OpenbaarDomeinObect"
-      },
-      "sort": "OpenbaarDomeinObect",
-      "description": {
-        "nl": "Klasse die instanties van om het even welk type vertegenwoordigt die voorkomen op het openbaar domein."
-      },
-      "usage": {},
-      "parents": [
-        {
-          "label": "Object",
-          "name": "Object",
-          "package": "ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
-          "scoped_uri": "#Object"
-        },
-        {
-          "label": "Domeinobject",
-          "name": "Domeinobject",
-          "package": "ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature",
-          "scoped_uri": "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature"
-        }
-      ],
-      "rawTags": {
-        "label-nl": "OpenbaarDomeinObect",
-        "definition-nl": "Klasse die instanties van om het even welk type vertegenwoordigt die voorkomen op het openbaar domein.",
-        "ap-definition-nl": "Klasse die instanties van om het even welk type vertegenwoordigt die voorkomen op het openbaar domein.",
-        "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject",
-        "ap-label-nl": "OpenbaarDomeinObect"
       },
       "properties": []
     },
@@ -2382,7 +3091,7 @@
           "label": "OpenbaarDomeinObect",
           "name": "OpenbaarDomeinObject",
           "package": "KwaliteitOpenbaarDomein",
-          "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject",
+          "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject",
           "scoped_uri": "#OpenbaarDomeinObect"
         }
       ],
@@ -2487,6 +3196,51 @@
       "name": {
         "nl": "lengte",
         "undefined": "lengte"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD",
+      "name": {
+        "nl": "Kleur KOD",
+        "undefined": "kleurKod"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.parameter",
+      "name": {
+        "nl": "parameter",
+        "undefined": "parameter"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://implementatie.data.test-vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor",
+      "name": {
+        "nl": "uitgevoerdDoor",
+        "undefined": "uitgevoerddoor"
       },
       "description": {},
       "domain": [
@@ -2910,6 +3664,31 @@
       ]
     },
     {
+      "uri": "http://schema.org/ContactPoint",
+      "name": "Contactpunt",
+      "label": {
+        "nl": "Contactpunt"
+      },
+      "sort": "Contactpunt",
+      "description": {
+        "nl": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren."
+      },
+      "usage": {
+        "nl": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek."
+      },
+      "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren.",
+        "ap-label-nl": "Contactpunt",
+        "ap-usageNote-nl": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek.",
+        "label-nl": "Contactpunt",
+        "uri": "http://schema.org/ContactPoint",
+        "definition-nl": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren.",
+        "usageNote-nl": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek."
+      },
+      "properties": []
+    },
+    {
       "uri": "http://www.opengis.net/ont/geosparql#Curve",
       "name": "Curve",
       "label": {
@@ -3107,180 +3886,7 @@
         "usageNote-nl": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem. OPMERKING: Meer info over dit datatype in het applicatieprofiel <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/\">OSLO Generiek - basis</a>.",
         "ap-label-nl": "Identificator"
       },
-      "properties": [
-        {
-          "uri": "http://www.w3.org/ns/adms#schemaAgency",
-          "name": "schemaAgentschap",
-          "sort": "schema agentschap",
-          "label": {
-            "nl": "schema agentschap"
-          },
-          "description": {
-            "nl": "Naam vd agent die de identificator heeft toegekend."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Identificator",
-              "uri": "http://www.w3.org/ns/adms#Identifier"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "String",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
-              "range_label": {
-                "nl": "String"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://www.w3.org/ns/adms#schemaAgency",
-            "label-nl": "schema agentschap",
-            "ap-label-nl": "schema agentschap",
-            "ap-definition-nl": "Naam vd agent die de identificator heeft toegekend.",
-            "definition-nl": "Naam vd agent die de identificator heeft toegekend."
-          }
-        },
-        {
-          "uri": "http://www.w3.org/2004/02/skos/core#notation",
-          "name": "identificator",
-          "sort": "identificator",
-          "label": {
-            "nl": "identificator"
-          },
-          "description": {
-            "nl": "String gebruikt om het object uniek te identificeren."
-          },
-          "usage": {
-            "nl": "Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator."
-          },
-          "domain": [
-            {
-              "EA-Name": "Identificator",
-              "uri": "http://www.w3.org/ns/adms#Identifier"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "GetypeerdeString",
-              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Getypeerde String",
-              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
-              "range_label": {
-                "nl": "Getypeerde String"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "ap-label-nl": "identificator",
-            "uri": "http://www.w3.org/2004/02/skos/core#notation",
-            "ap-usageNote-nl": "Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator.",
-            "label-nl": "identificator",
-            "ap-definition-nl": "String gebruikt om het object uniek te identificeren.",
-            "definition-nl": "String gebruikt om het object uniek te identificeren.",
-            "usageNote-nl": "Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator."
-          }
-        },
-        {
-          "uri": "http://purl.org/dc/terms/issued",
-          "name": "uitgegeven",
-          "sort": "uitgegeven",
-          "label": {
-            "nl": "uitgegeven"
-          },
-          "description": {
-            "nl": "Tijdstip waarop de identificator werd uitgegeven."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Identificator",
-              "uri": "http://www.w3.org/ns/adms#Identifier"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "DateTime",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
-              "range_label": {
-                "nl": "DateTime"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://purl.org/dc/terms/issued",
-            "label-nl": "uitgegeven",
-            "ap-label-nl": "uitgegeven",
-            "ap-definition-nl": "Tijdstip waarop de identificator werd uitgegeven.",
-            "definition-nl": "Tijdstip waarop de identificator werd uitgegeven."
-          }
-        },
-        {
-          "uri": "http://purl.org/dc/terms/creator",
-          "name": "maker",
-          "sort": "maker",
-          "label": {
-            "nl": "maker"
-          },
-          "description": {
-            "nl": "Link naar de agent die de identificator heeft uitgegeven."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Identificator",
-              "uri": "http://www.w3.org/ns/adms#Identifier"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Agent",
-              "range_uri": "http://fixme.com#Agent"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Agent",
-              "range_puri": "http://fixme.com#Agent",
-              "range_label": {
-                "nl": "Agent"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://purl.org/dc/terms/creator",
-            "label-nl": "maker",
-            "ap-label-nl": "maker",
-            "ap-definition-nl": "Link naar de agent die de identificator heeft uitgegeven.",
-            "definition-nl": "Link naar de agent die de identificator heeft uitgegeven."
-          }
-        }
-      ]
+      "properties": []
     },
     {
       "uri": "http://www.w3.org/ns/locn#Geometry",
