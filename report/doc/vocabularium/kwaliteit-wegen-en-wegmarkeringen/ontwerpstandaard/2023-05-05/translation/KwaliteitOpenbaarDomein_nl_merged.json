@@ -1026,8 +1026,8 @@
   "contributors-file": "stakeholders.csv",
   "diagram": "KwaliteitOpenbaarDomein",
   "disabled": false,
-  "documentcommit": "8cf4ce5b813352c919c814aabdae367f93de94ea",
-  "dummy": "12",
+  "documentcommit": "6b3ece18e4f7f5c8675c4a4eea62669dcbdafd51",
+  "dummy": "13",
   "eap": "KwaliteitOpenbaarDomein.eap",
   "editors": [
     {
@@ -3422,6 +3422,247 @@
           "EA-Name": "Geometrie",
           "EA-Package": "OSLO-Generiek",
           "uri": "http://www.w3.org/ns/locn#Geometry"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{1FAE07F3-35A2-498d-A427-6CBE444DF797}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Moment",
+          "uri": "http://www.w3.org/2006/time#Instant"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Moment",
+        "EA-Domain-Guid": "{7FDA3804-688E-41d9-9C61-C364C9B32369}",
+        "EA-Guid": "{1FAE07F3-35A2-498d-A427-6CBE444DF797}",
+        "EA-Name": "inXSDDateTime",
+        "EA-Package": "W3C-Time",
+        "EA-Range": "DateTime",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "inXSDDateTime"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2006/time#inXSDDateTime"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "inXSDDateTime"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "inXSDDateTime"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "inXSDDateTime"
+      },
+      "label-nl": {
+        "nl": "inXSDDateTime"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "inxsddatetime",
+      "range": [
+        {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/2006/time#hasEnd",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{F4A91B34-6DD0-4f06-9835-8E8382A8521C}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Periode",
+          "uri": "http://www.w3.org/2006/time#ProperInterval"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Periode",
+        "EA-Domain-Guid": "{6841FB06-35C4-4815-BF87-7DF81584B574}",
+        "EA-Guid": "{F4A91B34-6DD0-4f06-9835-8E8382A8521C}",
+        "EA-Name": "^tot",
+        "EA-Package": "W3C-Time",
+        "EA-Range": "Moment",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{7FDA3804-688E-41d9-9C61-C364C9B32369}",
+          "EA-Name": "Moment",
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#Instant"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2006/time#hasEnd"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "tot"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "tot"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "tot"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "tot"
+      },
+      "label-nl": {
+        "nl": "tot"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "tot",
+      "range": [
+        {
+          "EA-GUID": "{7FDA3804-688E-41d9-9C61-C364C9B32369}",
+          "EA-Name": "Moment",
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#Instant"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/2006/time#hasBeginning",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{1632A1B2-3A0F-447d-A85F-C5D489B919BB}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Periode",
+          "uri": "http://www.w3.org/2006/time#ProperInterval"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Periode",
+        "EA-Domain-Guid": "{6841FB06-35C4-4815-BF87-7DF81584B574}",
+        "EA-Guid": "{1632A1B2-3A0F-447d-A85F-C5D489B919BB}",
+        "EA-Name": "^van",
+        "EA-Package": "W3C-Time",
+        "EA-Range": "Moment",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{7FDA3804-688E-41d9-9C61-C364C9B32369}",
+          "EA-Name": "Moment",
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#Instant"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2006/time#hasBeginning"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "van"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "van"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "van"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "van"
+      },
+      "label-nl": {
+        "nl": "van"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "van",
+      "range": [
+        {
+          "EA-GUID": "{7FDA3804-688E-41d9-9C61-C364C9B32369}",
+          "EA-Name": "Moment",
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#Instant"
         }
       ]
     },
@@ -8620,6 +8861,206 @@
       "name": "Concept"
     },
     {
+      "@id": "http://www.w3.org/2006/time#Instant",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{7FDA3804-688E-41d9-9C61-C364C9B32369}",
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{7FDA3804-688E-41d9-9C61-C364C9B32369}",
+        "EA-Name": "Moment",
+        "EA-Package": "W3C-Time",
+        "EA-Parents": "TemporeleEntiteit",
+        "EA-Parents2": [
+          {
+            "label": "TemporeleEntiteit",
+            "name": "TemporeleEntiteit",
+            "package": "W3C-Time",
+            "uri": "http://www.w3.org/2006/time#TemporalEntity"
+          }
+        ],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Moment"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2006/time#Instant"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "Moment"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "Moment"
+        },
+        "parentclasses": "http://www.w3.org/2006/time#TemporalEntity",
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Moment"
+      },
+      "label-nl": {
+        "nl": "Moment"
+      },
+      "name": "Moment"
+    },
+    {
+      "@id": "http://www.w3.org/2006/time#ProperInterval",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{6841FB06-35C4-4815-BF87-7DF81584B574}",
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{6841FB06-35C4-4815-BF87-7DF81584B574}",
+        "EA-Name": "Periode",
+        "EA-Package": "W3C-Time",
+        "EA-Parents": "TemporeleEntiteit",
+        "EA-Parents2": [
+          {
+            "label": "TemporeleEntiteit",
+            "name": "TemporeleEntiteit",
+            "package": "W3C-Time",
+            "uri": "http://www.w3.org/2006/time#TemporalEntity"
+          }
+        ],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Periode"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2006/time#ProperInterval"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "Periode"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "Periode"
+        },
+        "parentclasses": "http://www.w3.org/2006/time#TemporalEntity",
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Periode"
+      },
+      "label-nl": {
+        "nl": "Periode"
+      },
+      "name": "Periode"
+    },
+    {
+      "@id": "http://www.w3.org/2006/time#TemporalEntity",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{8B5BDB7F-02C4-44a6-AE8A-6B5A7C1B8B9E}",
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{8B5BDB7F-02C4-44a6-AE8A-6B5A7C1B8B9E}",
+        "EA-Name": "TemporeleEntiteit",
+        "EA-Package": "W3C-Time",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Abstracte klasse voor temporele objecten."
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "TemporeleEntiteit"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "TemporeleEntiteit"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2006/time#TemporalEntity"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "TemporeleEntiteit"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "TemporeleEntiteit"
+        },
+        "parentclasses": "",
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "TemporeleEntiteit"
+      },
+      "label-nl": {
+        "nl": "TemporeleEntiteit"
+      },
+      "name": "Temporeleentiteit"
+    },
+    {
       "@id": "http://www.w3.org/ns/adms#Identifier",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{2E0E0282-B00D-4d3a-A436-FA0B1ED4F4F4}",
@@ -9940,6 +10381,193 @@
   "name": "KwaliteitOpenbaarDomein",
   "properties": [
     {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#resultaat",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{AFF956CB-589F-4182-A7C6-36853D72F239}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "KwantitatiefResultaat",
+          "uri": "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "KwantitatiefResultaat",
+        "EA-Domain-Guid": "{C6E5CAE4-2A0A-4b69-A0DD-B7BBDDA5EFFB}",
+        "EA-Guid": "{AFF956CB-589F-4182-A7C6-36853D72F239}",
+        "EA-Name": "resultaat",
+        "EA-Package": "KwaliteitOpenbaarDomein",
+        "EA-Range": "KwantitatieveWaarde",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{778B6A99-7291-4713-91F5-0370C6F1F769}",
+          "EA-Name": "KwantitatieveWaarde",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "https://schema.org/QuantitativeValue"
+        },
+        "RawTags": [],
+        "Scope": "FULL_DEFINITON",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": "",
+        "label-en": "",
+        "label-nl": {
+          "nl": "TODO"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label-nl": {
+        "nl": "TODO"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "",
+      "range": [
+        {
+          "EA-GUID": "{778B6A99-7291-4713-91F5-0370C6F1F769}",
+          "EA-Name": "KwantitatieveWaarde",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "https://schema.org/QuantitativeValue"
+        }
+      ]
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#resultaat",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "EA-Guid": "{D39EC8F1-1CA3-4b43-9C6A-600FD105F6A9}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Conformiteitsresultaat",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Conformiteitsresultaat"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Conformiteitsresultaat",
+        "EA-Domain-Guid": "{B60F440B-7050-49ab-9336-FBBCC2C4BF02}",
+        "EA-Guid": "{D39EC8F1-1CA3-4b43-9C6A-600FD105F6A9}",
+        "EA-Name": "resultaat",
+        "EA-Package": "KwaliteitOpenbaarDomein",
+        "EA-Range": "boolean",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "",
+          "EA-Package": "",
+          "uri": "null"
+        },
+        "RawTags": [],
+        "Scope": "FULL_DEFINITON",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": "",
+        "label-en": "",
+        "label-nl": {
+          "nl": "TODO"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label-nl": {
+        "nl": "TODO"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "",
+      "range": []
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#resultaat",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{37C1A7AF-5F7E-4bd3-A8F0-561E03998884}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "BeschrijvendResultaat",
+          "uri": "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "BeschrijvendResultaat",
+        "EA-Domain-Guid": "{7BD76E9E-4B8A-4d43-BFD0-FC222118D822}",
+        "EA-Guid": "{37C1A7AF-5F7E-4bd3-A8F0-561E03998884}",
+        "EA-Name": "resultaat",
+        "EA-Package": "KwaliteitOpenbaarDomein",
+        "EA-Range": "TaalString",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{CEE9AF92-964A-4790-B048-A52AE6FBBD0D}",
+          "EA-Name": "TaalString",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [],
+        "Scope": "FULL_DEFINITON",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": "",
+        "label-en": "",
+        "label-nl": {
+          "nl": "TODO"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label-nl": {
+        "nl": "TODO"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "",
+      "range": [
+        {
+          "EA-GUID": "{CEE9AF92-964A-4790-B048-A52AE6FBBD0D}",
+          "EA-Name": "TaalString",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ]
+    },
+    {
       "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{B7328BFA-F121-4e4c-8F3B-D56637A6D662}",
@@ -10656,7 +11284,7 @@
   "title-nl": {
     "nl": "TODO"
   },
-  "toolchaincommit": "fcc83a515a6f2ea47fdab332aba7126c95c9d1d0",
+  "toolchaincommit": "8e878edd88ad323bb39287f7d12efdbfd10b06d9",
   "translation": [
     {
       "language": "nl",
