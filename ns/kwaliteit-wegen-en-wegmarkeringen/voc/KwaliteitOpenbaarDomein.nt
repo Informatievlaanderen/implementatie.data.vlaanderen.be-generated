@@ -28,7 +28,6 @@
 <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat> .
 <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/sosa/usedProcedure> .
 <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/sosa/madeBySensor> .
-<https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/sosa/hasResult> .
 <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/dc/terms/type> .
 <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/cd/terms/type> .
 <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.validTime> .
@@ -85,14 +84,6 @@
 <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Klasse die instanties van om het even welk type vertegenwoordigt die voorkomen op het openbaar domein."@nl .
 <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature> .
 <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature> .
-<https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#resultaat> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen> .
-<https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#resultaat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#resultaat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#resultaat> <http://www.w3.org/2000/01/rdf-schema#domain> <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Conformiteitsresultaat> .
-<https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#resultaat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult> .
-<https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#resultaat> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
-<http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult> <http://www.w3.org/2000/01/rdf-schema#label> "BeschrijvendResultaat"@nl .
 <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen> .
 <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte> <http://www.w3.org/2000/01/rdf-schema#label> "lengte"@nl .
@@ -236,6 +227,8 @@ _:g457820 <http://xmlns.com/foaf/0.1/lastName> "Boi" .
 _:g457820 <http://xmlns.com/foaf/0.1/mbox> <mailto:tom.boi@brugge.be> .
 _:g457840 <http://xmlns.com/foaf/0.1/homepage> <https://www.brugge.be/> .
 _:g457840 <http://xmlns.com/foaf/0.1/name> "Stad Brugge" .
+<http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult> <http://www.w3.org/2000/01/rdf-schema#label> "BeschrijvendResultaat"@nl .
 <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult> <http://www.w3.org/2000/01/rdf-schema#label> "KwantitatiefResultaat"@nl .
 <https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#ObservatieProcedureType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
@@ -250,7 +243,6 @@ _:g457840 <http://xmlns.com/foaf/0.1/name> "Stad Brugge" .
 <http://www.w3.org/ns/sosa/usedProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "gebruikteProcedure"@nl .
 <http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/2000/01/rdf-schema#label> "uitgevoerdMetSensor"@nl .
-<http://www.w3.org/ns/sosa/hasResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://purl.org/dc/terms/type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#label> "type"@nl .
 <http://purl.org/cd/terms/type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
