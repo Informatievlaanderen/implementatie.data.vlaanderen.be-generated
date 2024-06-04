@@ -4,7 +4,6 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
-@prefix schemas: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult> a rdfs:Class;
@@ -24,6 +23,13 @@
 
 <https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#TypeMarkering> a rdfs:Class;
   rdfs:label "TypeMarkering"@nl .
+
+<https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Conformiteitsresultaat> a owl:Class;
+  rdfs:label "Conformiteitsresultaat"@nl;
+  <http://purl.org/vocab/vann/usageNote> "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_ConformanceResult"@nl;
+  rdfs:comment "Informatie over het resultaat van de evaluatie van de verkregen waarde(n) volgens een gespecifieerd conformiteitskwaliteitsniveau."@nl;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen>;
+  rdfs:subClassOf <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat> .
 
 <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KenmerkType> a owl:Class;
   rdfs:label "KenmerkType"@nl;
@@ -90,16 +96,6 @@
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen>;
   rdfs:range <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter> .
 
-<https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#resultaat> a owl:ObjectProperty,
-    rdf:Property,
-    owl:DatatypeProperty;
-  rdfs:domain <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult>,
-    <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Conformiteitsresultaat>,
-    <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult>;
-  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen>;
-  rdfs:range schemas:QuantitativeValue,
-    rdf:langString .
-
 <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty> a rdf:Property;
   rdfs:label "geobserveerdKenmerk"@nl .
 
@@ -118,18 +114,14 @@
 dc:type a rdf:Property;
   rdfs:label "type"@nl .
 
+<http://www.w3.org/ns/sosa/hasResult> a rdf:Property;
+  rdfs:label "resultaat"@nl .
+
 <http://www.w3.org/ns/sosa/madeBySensor> a rdf:Property;
   rdfs:label "uitgevoerdMetSensor"@nl .
 
 <http://www.w3.org/ns/sosa/usedProcedure> a rdf:Property;
   rdfs:label "gebruikteProcedure"@nl .
-
-<https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Conformiteitsresultaat> a owl:Class;
-  rdfs:label "Conformiteitsresultaat"@nl;
-  <http://purl.org/vocab/vann/usageNote> "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_ConformanceResult"@nl;
-  rdfs:comment "Informatie over het resultaat van de evaluatie van de verkregen waarde(n) volgens een gespecifieerd conformiteitskwaliteitsniveau."@nl;
-  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen>;
-  rdfs:subClassOf <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat> .
 
 <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie> a owl:Class;
   rdfs:label "Kwaliteitsobservatie"@nl;
@@ -206,6 +198,7 @@ dc:type a rdf:Property;
     <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat>,
     <http://www.w3.org/ns/sosa/usedProcedure>,
     <http://www.w3.org/ns/sosa/madeBySensor>,
+    <http://www.w3.org/ns/sosa/hasResult>,
     dc:type,
     <http://purl.org/cd/terms/type>,
     <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.validTime>,
