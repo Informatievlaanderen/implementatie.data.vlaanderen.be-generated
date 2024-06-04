@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/tree/1a11c85960b6998164d24eae4985002d2172f29d",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/blob/1a11c85960b6998164d24eae4985002d2172f29d/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/tree/c0cfbfdfd45387714d1ab7ee71aa446b8d771c1b",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/blob/c0cfbfdfd45387714d1ab7ee71aa446b8d771c1b/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/doc/applicatieprofiel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05",
     "usesVocs": [],
@@ -817,8 +817,8 @@
           "label": "Any",
           "name": "Any",
           "package": "ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
-          "scoped_uri": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any"
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "scoped_uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
         }
       ],
       "rawTags": {
@@ -1488,7 +1488,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#TaalString",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "TaalString"
@@ -1556,7 +1556,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "https://schema.org/QuantitativeValue",
+              "range_uri": "#KwantitatieveWaarde",
               "range_puri": "https://schema.org/QuantitativeValue",
               "range_label": {
                 "nl": "KwantitatieveWaarde"
@@ -1694,7 +1694,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#TaalString",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "TaalString"
@@ -2146,16 +2146,16 @@
           ],
           "range": [
             {
-              "range_label": "TypeLaag",
-              "range_uri": "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#TypeLaag"
+              "range_label": "KILaagRol",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#TypeLaag",
-              "range_puri": "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#TypeLaag",
+              "range_uri": "#Laag rol",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
               "range_label": {
-                "nl": "TypeLaag"
+                "nl": "Laag rol"
               }
             }
           ],
@@ -2837,190 +2837,6 @@
   ],
   "datatypes": [
     {
-      "uri": "http://data.europa.eu/m8g/PeriodOfTime",
-      "name": "Periode",
-      "label": {
-        "nl": "Periode"
-      },
-      "sort": "Periode",
-      "description": {
-        "nl": "Min of meer afgebakende tijdsduur."
-      },
-      "usage": {
-        "nl": "Typisch volgt de duur uit het opgeven ve begin- en eindtijdstip."
-      },
-      "parents": [],
-      "rawTags": {
-        "ap-definition-nl": "Min of meer afgebakende tijdsduur.",
-        "ap-usageNote-nl": "Typisch volgt de duur uit het opgeven ve begin- en eindtijdstip.",
-        "label-nl": "Periode",
-        "uri": "http://data.europa.eu/m8g/PeriodOfTime",
-        "definition-nl": "Min of meer afgebakende tijdsduur.",
-        "usageNote-nl": "Typisch volgt de duur uit het opgeven ve begin- en eindtijdstip.",
-        "ap-label-nl": "Periode"
-      },
-      "properties": [
-        {
-          "uri": "http://www.w3.org/2006/time#hasEnd",
-          "name": "tot",
-          "sort": "tot",
-          "label": {
-            "nl": "tot"
-          },
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Periode",
-              "uri": "http://www.w3.org/2006/time#ProperInterval"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Moment",
-              "range_uri": "http://www.w3.org/2006/time#Instant"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Moment",
-              "range_puri": "http://www.w3.org/2006/time#Instant",
-              "range_label": {
-                "nl": "Moment"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://www.w3.org/2006/time#hasEnd",
-            "label-nl": "tot"
-          }
-        },
-        {
-          "uri": "http://www.w3.org/2006/time#hasBeginning",
-          "name": "van",
-          "sort": "van",
-          "label": {
-            "nl": "van"
-          },
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Periode",
-              "uri": "http://www.w3.org/2006/time#ProperInterval"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Moment",
-              "range_uri": "http://www.w3.org/2006/time#Instant"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Moment",
-              "range_puri": "http://www.w3.org/2006/time#Instant",
-              "range_label": {
-                "nl": "Moment"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://www.w3.org/2006/time#hasBeginning",
-            "label-nl": "van"
-          }
-        },
-        {
-          "uri": "http://data.europa.eu/m8g/startTime",
-          "name": "begin",
-          "sort": "begin",
-          "label": {
-            "nl": "begin"
-          },
-          "description": {
-            "nl": "Aanvang van de tijdsduur."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Periode",
-              "uri": "http://data.europa.eu/m8g/PeriodOfTime"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "DateTime",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
-              "range_label": {
-                "nl": "DateTime"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data.europa.eu/m8g/startTime",
-            "label-nl": "begin",
-            "ap-definition-nl": "Aanvang van de tijdsduur.",
-            "definition-nl": "Aanvang van de tijdsduur.",
-            "ap-label-nl": "begin"
-          }
-        },
-        {
-          "uri": "http://data.europa.eu/m8g/endTime",
-          "name": "einde",
-          "sort": "einde",
-          "label": {
-            "nl": "einde"
-          },
-          "description": {
-            "nl": "Einde vd tijdsduur."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Periode",
-              "uri": "http://data.europa.eu/m8g/PeriodOfTime"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "DateTime",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
-              "range_label": {
-                "nl": "DateTime"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "ap-definition-nl": "Einde vd tijdsduur.",
-            "label-nl": "einde",
-            "uri": "http://data.europa.eu/m8g/endTime",
-            "definition-nl": "Einde vd tijdsduur.",
-            "ap-label-nl": "einde"
-          }
-        }
-      ]
-    },
-    {
       "uri": "http://def.isotc211.org/iso19103/2005/Names#GenericName",
       "name": "Generiekenaam",
       "label": {
@@ -3112,13 +2928,13 @@
           "range": [
             {
               "range_label": "Any",
-              "range_uri": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any"
+              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
-              "range_puri": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
+              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Resource",
+              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Resource",
               "range_label": {
                 "nl": "Any"
               }
@@ -3177,31 +2993,6 @@
           }
         }
       ]
-    },
-    {
-      "uri": "http://schema.org/ContactPoint",
-      "name": "Contactpunt",
-      "label": {
-        "nl": "Contactpunt"
-      },
-      "sort": "Contactpunt",
-      "description": {
-        "nl": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren."
-      },
-      "usage": {
-        "nl": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek."
-      },
-      "parents": [],
-      "rawTags": {
-        "ap-definition-nl": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren.",
-        "ap-label-nl": "Contactpunt",
-        "ap-usageNote-nl": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek.",
-        "label-nl": "Contactpunt",
-        "uri": "http://schema.org/ContactPoint",
-        "definition-nl": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren.",
-        "usageNote-nl": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek."
-      },
-      "properties": []
     },
     {
       "uri": "http://www.opengis.net/ont/geosparql#Curve",
@@ -3303,6 +3094,29 @@
       "properties": []
     },
     {
+      "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+      "name": "Taalstring",
+      "label": {
+        "nl": "TaalString"
+      },
+      "sort": "TaalString",
+      "description": {
+        "nl": "Combinatie van een string en de taal waarin de inhoud ervan is gesteld."
+      },
+      "usage": {
+        "nl": "Bvb 'Rue Mercator' als string en 'fr' als taal. Te implementeren als Langstring."
+      },
+      "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Combinatie van een string en de taal waarin de inhoud ervan is gesteld.",
+        "ap-usageNote-nl": "Bvb 'Rue Mercator' als string en 'fr' als taal. Te implementeren als Langstring.",
+        "label-nl": "TaalString",
+        "literal": "true",
+        "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+      },
+      "properties": []
+    },
+    {
       "uri": "http://www.w3.org/2000/01/rdf-schema#Literal",
       "name": "GetypeerdeString",
       "label": {
@@ -3338,18 +3152,44 @@
       "description": {
         "nl": "Beschrijft een constante."
       },
-      "usage": {
-        "nl": "http://www.w3.org/2000/01/rdf-schema#Literal"
-      },
+      "usage": {},
       "parents": [],
       "rawTags": {
         "beheerstatus": "Gepubliceerd",
         "creatie": "28",
         "definition-nl": "Beschrijft een constante.",
         "label-nl": "Literal",
-        "uri": "http://www.w3.org/2000/01/rdf-schema#Literal",
-        "usagenote-nl": "http://www.w3.org/2000/01/rdf-schema#Literal",
-        "usageNote-nl": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      },
+      "properties": []
+    },
+    {
+      "uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+      "name": "Naaminnaamruimte",
+      "label": {
+        "nl": "NaamInNaamruimte"
+      },
+      "sort": "NaamInNaamruimte",
+      "description": {
+        "nl": "TODO"
+      },
+      "usage": {
+        "nl": "Te implementeren als URI."
+      },
+      "parents": [
+        {
+          "label": "GeneriekeNaam",
+          "name": "GeneriekeNaam",
+          "package": "ObservatiesEnMetingen",
+          "uri": "http://def.isotc211.org/iso19103/2005/Names#GenericName",
+          "scoped_uri": "#GeneriekeNaam"
+        }
+      ],
+      "rawTags": {
+        "definition-nl": "TODO",
+        "label-nl": "NaamInNaamruimte",
+        "uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "usageNote-nl": "Te implementeren als URI."
       },
       "properties": []
     },
@@ -3375,6 +3215,36 @@
         "uri": "http://www.w3.org/2001/XMLSchema#decimal",
         "usageNote-nl": "https://www.w3.org/TR/xmlschema-2/#decimal",
         "usagenote-nl": "https://www.w3.org/TR/xmlschema-2/#decimal"
+      },
+      "properties": []
+    },
+    {
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "name": "Lokalenaam",
+      "label": {
+        "nl": "LokaleNaam"
+      },
+      "sort": "LokaleNaam",
+      "description": {
+        "nl": "TODO"
+      },
+      "usage": {
+        "nl": "Te implementeren als String."
+      },
+      "parents": [
+        {
+          "label": "GeneriekeNaam",
+          "name": "GeneriekeNaam",
+          "package": "ObservatiesEnMetingen",
+          "uri": "http://def.isotc211.org/iso19103/2005/Names#GenericName",
+          "scoped_uri": "#GeneriekeNaam"
+        }
+      ],
+      "rawTags": {
+        "ap-usageNote-nl": "Te implementeren als String.",
+        "definition-nl": "TODO",
+        "label-nl": "LokaleNaam",
+        "uri": "http://www.w3.org/2001/XMLSchema#string"
       },
       "properties": []
     },
@@ -3535,90 +3405,6 @@
           "rawTags": {
             "uri": "http://www.w3.org/2006/time#hasBeginning",
             "label-nl": "van"
-          }
-        },
-        {
-          "uri": "http://data.europa.eu/m8g/startTime",
-          "name": "begin",
-          "sort": "begin",
-          "label": {
-            "nl": "begin"
-          },
-          "description": {
-            "nl": "Aanvang van de tijdsduur."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Periode",
-              "uri": "http://data.europa.eu/m8g/PeriodOfTime"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "DateTime",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
-              "range_label": {
-                "nl": "DateTime"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data.europa.eu/m8g/startTime",
-            "label-nl": "begin",
-            "ap-definition-nl": "Aanvang van de tijdsduur.",
-            "definition-nl": "Aanvang van de tijdsduur.",
-            "ap-label-nl": "begin"
-          }
-        },
-        {
-          "uri": "http://data.europa.eu/m8g/endTime",
-          "name": "einde",
-          "sort": "einde",
-          "label": {
-            "nl": "einde"
-          },
-          "description": {
-            "nl": "Einde vd tijdsduur."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Periode",
-              "uri": "http://data.europa.eu/m8g/PeriodOfTime"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "DateTime",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
-              "range_label": {
-                "nl": "DateTime"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "ap-definition-nl": "Einde vd tijdsduur.",
-            "label-nl": "einde",
-            "uri": "http://data.europa.eu/m8g/endTime",
-            "definition-nl": "Einde vd tijdsduur.",
-            "ap-label-nl": "einde"
           }
         }
       ]
@@ -3827,6 +3613,110 @@
             "ap-definition-nl": "Geometrie uitgedrukt in gml-formaat.",
             "definition-nl": "Geometrie uitgedrukt in gml-formaat.",
             "usageNote-nl": "Gebruik http://www.opengis.net/ont/geosparql#gmlLiteral als datatype."
+          }
+        }
+      ]
+    },
+    {
+      "uri": "https://qudt.org/schema/qudt/QuantityValue",
+      "name": "Kwantitatievewaarde",
+      "label": {
+        "nl": "KwantitatieveWaarde"
+      },
+      "sort": "KwantitatieveWaarde",
+      "description": {
+        "nl": "Aanduiding van de kwantiteit van een bepaald kenmerk van een object."
+      },
+      "usage": {
+        "nl": "Bv de hoogte van een object,het gewicht,de temperatuur etc. Het gaat om een kenmerk dat numeriek uitgedrukt kan worden en in een bepaalde eenheid. Kwalitatieve aanduidingen zoals hoog,laag ed vallen hier dus niet onder."
+      },
+      "parents": [],
+      "rawTags": {
+        "ap-definition-nl": "Aanduiding van de kwantiteit van een bepaald kenmerk van een object.",
+        "ap-usageNote-nl": "Bv de hoogte van een object,het gewicht,de temperatuur etc. Het gaat om een kenmerk dat numeriek uitgedrukt kan worden en in een bepaalde eenheid. Kwalitatieve aanduidingen zoals hoog,laag ed vallen hier dus niet onder.",
+        "label-nl": "KwantitatieveWaarde",
+        "uri": "https://qudt.org/schema/qudt/QuantityValue"
+      },
+      "properties": [
+        {
+          "uri": "https://qudt.org/schema/qudt/value",
+          "name": "waarde",
+          "sort": "waarde",
+          "label": {
+            "nl": "waarde"
+          },
+          "description": {
+            "nl": "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "KwantitatieveWaarde",
+              "uri": "https://qudt.org/schema/qudt/QuantityValue"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Literal",
+              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Literal",
+              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+              "range_label": {
+                "nl": "Literal"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "https://qudt.org/schema/qudt/value",
+            "label-nl": "waarde",
+            "ap-definition-nl": "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."
+          }
+        },
+        {
+          "uri": "https://qudt.org/schema/qudt/hasUnit",
+          "name": "eenheid",
+          "sort": "eenheid",
+          "label": {
+            "nl": "eenheid"
+          },
+          "description": {
+            "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "KwantitatieveWaarde",
+              "uri": "https://qudt.org/schema/qudt/QuantityValue"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Concept",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Concept",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Concept"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "ap-label-nl": "eenheid",
+            "ap-definition-nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt.",
+            "label-nl": "eenheid",
+            "uri": "https://qudt.org/schema/qudt/hasUnit"
           }
         }
       ]

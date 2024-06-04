@@ -46,7 +46,6 @@
       },
       "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Conformiteitsresultaat"
     },
-    "Contactpunt": "http://schema.org/ContactPoint",
     "Curve": "http://www.opengis.net/ont/geosparql#Curve",
     "DecimaalGetal": "http://www.w3.org/2001/XMLSchema#decimal",
     "Deel": "https://data.vlaanderen.be/ns/openbaardomein#Deel",
@@ -190,6 +189,18 @@
       },
       "@id": "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult"
     },
+    "KwantitatieveWaarde": {
+      "@context": {
+        "eenheid": {
+          "@id": "https://qudt.org/schema/qudt/hasUnit",
+          "@type": "@id"
+        },
+        "waarde": {
+          "@id": "https://qudt.org/schema/qudt/value"
+        }
+      },
+      "@id": "https://qudt.org/schema/qudt/QuantityValue"
+    },
     "KwantitatieveWaardeInMeter": {
       "@context": {
         "standaardEenheid": {
@@ -235,6 +246,7 @@
       },
       "@id": "https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Laag"
     },
+    "LaagRol": "http://www.w3.org/2004/02/skos/core#Concept",
     "LidaRpuntenwolk": {
       "@context": {
         "geometrie": {
@@ -245,6 +257,7 @@
       "@id": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#LidarCloud"
     },
     "Literal": "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "LokaleNaam": "http://www.w3.org/2001/XMLSchema#string",
     "Markering": {
       "@context": {
         "breedte": {
@@ -296,6 +309,7 @@
       },
       "@id": "http://www.w3.org/2006/time#Instant"
     },
+    "NaamInNaamruimte": "http://www.w3.org/2001/XMLSchema#anyURI",
     "Object": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
     "ObservatieProcedureType": "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#ObservatieProcedureType",
     "OpenbaarDomeinObect": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject",
@@ -314,14 +328,6 @@
     "OrganisatieType": "http://www.w3.org/2004/02/skos/core#Concept",
     "Periode": {
       "@context": {
-        "begin": {
-          "@id": "http://data.europa.eu/m8g/startTime",
-          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-        },
-        "einde": {
-          "@id": "http://data.europa.eu/m8g/endTime",
-          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-        },
         "tot": {
           "@id": "http://www.w3.org/2006/time#hasEnd",
           "@type": "@id"
@@ -357,6 +363,7 @@
       "@id": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Scene"
     },
     "SoortMarkeringsproduct": "http://www.w3.org/2004/02/skos/core#Concept",
+    "TaalString": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
     "TemporeleEntiteit": "http://www.w3.org/2006/time#TemporalEntity",
     "Traject": {
       "@context": {

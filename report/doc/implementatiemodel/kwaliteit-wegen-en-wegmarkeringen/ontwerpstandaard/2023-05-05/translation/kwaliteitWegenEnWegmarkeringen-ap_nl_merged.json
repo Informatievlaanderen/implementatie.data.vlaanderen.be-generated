@@ -612,7 +612,7 @@
             "label": "Any",
             "name": "Any",
             "package": "ObservatiesEnMetingen",
-            "uri": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any"
+            "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
           }
         ],
         "EA-Type": "CLASS",
@@ -658,7 +658,7 @@
         "label": {
           "nl": "KwaliteitsResultaat"
         },
-        "parentclasses": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
+        "parentclasses": "http://www.w3.org/2000/01/rdf-schema#Resource",
         "usage": ""
       },
       "inpackage": "ACTIVE_PACKAGE",
@@ -667,7 +667,7 @@
       },
       "name": "Kwaliteitsresultaat",
       "parents": [
-        "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any"
+        "http://www.w3.org/2000/01/rdf-schema#Resource"
       ]
     },
     {
@@ -968,8 +968,8 @@
   "contributors-file": "stakeholders.csv",
   "diagram": "KwaliteitOpenbaarDomein",
   "disabled": false,
-  "documentcommit": "1a11c85960b6998164d24eae4985002d2172f29d",
-  "dummy": "14",
+  "documentcommit": "c0cfbfdfd45387714d1ab7ee71aa446b8d771c1b",
+  "dummy": "15",
   "eap": "KwaliteitOpenbaarDomein.eap",
   "editors": [
     {
@@ -2113,6 +2113,179 @@
           "EA-Name": "Agent",
           "EA-Package": "FOAF",
           "uri": "http://fixme.com#Agent"
+        }
+      ]
+    },
+    {
+      "@id": "https://qudt.org/schema/qudt/value",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{F40D1518-57A3-48f8-8B10-BB3E5A52CBD8}",
+      "ap-definition-nl": {
+        "nl": "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."
+      },
+      "ap-label-nl": {
+        "nl": "waarde"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."
+      },
+      "domain": [
+        {
+          "EA-Name": "KwantitatieveWaarde",
+          "uri": "https://qudt.org/schema/qudt/QuantityValue"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "KwantitatieveWaarde",
+        "EA-Domain-Guid": "{0595DD01-782C-400b-BB1B-737356C0C966}",
+        "EA-Guid": "{F40D1518-57A3-48f8-8B10-BB3E5A52CBD8}",
+        "EA-Name": "waarde",
+        "EA-Package": "QUDT",
+        "EA-Range": "Literal",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://qudt.org/schema/qudt/value"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "waarde"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."
+        },
+        "ap-label-nl": {
+          "nl": "waarde"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."
+        },
+        "label": {
+          "nl": "waarde"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "waarde"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "waarde",
+      "range": [
+        {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      ]
+    },
+    {
+      "@id": "https://qudt.org/schema/qudt/hasUnit",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{97C842CC-4661-475f-956A-9AF613C9CB8C}",
+      "ap-definition-nl": {
+        "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+      },
+      "ap-label-nl": {
+        "nl": "eenheid"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+      },
+      "domain": [
+        {
+          "EA-Name": "KwantitatieveWaarde",
+          "uri": "https://qudt.org/schema/qudt/QuantityValue"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "KwantitatieveWaarde",
+        "EA-Domain-Guid": "{0595DD01-782C-400b-BB1B-737356C0C966}",
+        "EA-Guid": "{97C842CC-4661-475f-956A-9AF613C9CB8C}",
+        "EA-Name": "eenheid",
+        "EA-Package": "QUDT",
+        "EA-Range": "Concept",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{78E35C0D-6AC2-4711-8744-EBA707DF743E}",
+          "EA-Name": "Concept",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "eenheid"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "eenheid"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://qudt.org/schema/qudt/hasUnit"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+        },
+        "ap-label-nl": {
+          "nl": "eenheid"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+        },
+        "label": {
+          "nl": "eenheid"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "eenheid"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "eenheid",
+      "range": [
+        {
+          "EA-GUID": "{78E35C0D-6AC2-4711-8744-EBA707DF743E}",
+          "EA-Name": "Concept",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
         }
       ]
     },
@@ -4548,15 +4721,15 @@
         "EA-Domain": "Laag",
         "EA-Domain-Guid": "{5A88C1BE-2A74-4b64-9219-60A11365020F}",
         "EA-Guid": "{60BAE523-7E45-49a2-B7F1-395F231BBDA2}",
-        "EA-Name": "type",
+        "EA-Name": "laagrol",
         "EA-Package": "OTL",
-        "EA-Range": "TypeLaag",
+        "EA-Range": "KILaagRol",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{E85ABDAD-D868-4b53-ADB7-E72DA3302CF4}",
-          "EA-Name": "TypeLaag",
-          "EA-Package": "KwaliteitOpenbaarDomein",
-          "uri": "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#TypeLaag"
+          "EA-GUID": "{06AED52C-1C7B-492b-A125-0F706DA240AD}",
+          "EA-Name": "KILaagRol",
+          "EA-Package": "OTL",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
         },
         "RawTags": [
           {
@@ -4626,10 +4799,10 @@
       "name": "type",
       "range": [
         {
-          "EA-GUID": "{E85ABDAD-D868-4b53-ADB7-E72DA3302CF4}",
-          "EA-Name": "TypeLaag",
-          "EA-Package": "KwaliteitOpenbaarDomein",
-          "uri": "https://data.vlaanderen.be/ns/kwaliteitopenbaardomein#TypeLaag"
+          "EA-GUID": "{06AED52C-1C7B-492b-A125-0F706DA240AD}",
+          "EA-Name": "KILaagRol",
+          "EA-Package": "OTL",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
         }
       ],
       "usage": {
@@ -5848,7 +6021,7 @@
           "EA-GUID": "{C4575F68-2B70-4ce6-87B4-0EC60B259F9A}",
           "EA-Name": "Any",
           "EA-Package": "ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any"
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
         },
         "RawTags": [
           {
@@ -5907,7 +6080,7 @@
           "EA-GUID": "{C4575F68-2B70-4ce6-87B4-0EC60B259F9A}",
           "EA-Name": "Any",
           "EA-Package": "ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any"
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
         }
       ]
     },
@@ -6005,286 +6178,9 @@
           "uri": "http://def.isotc211.org/iso19103/2005/Names#GenericName"
         }
       ]
-    },
-    {
-      "@id": "http://data.europa.eu/m8g/startTime",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{9B11A3DA-C5C8-43c9-935A-A00FDCDDDEAD}",
-      "ap-definition-nl": {
-        "nl": "Aanvang van de tijdsduur."
-      },
-      "ap-label-nl": {
-        "nl": "begin"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "Aanvang van de tijdsduur."
-      },
-      "domain": [
-        {
-          "EA-Name": "Periode",
-          "uri": "http://data.europa.eu/m8g/PeriodOfTime"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Periode",
-        "EA-Domain-Guid": "{BEB8510B-FF2E-4ad4-B89A-E7CCD9EA6665}",
-        "EA-Guid": "{9B11A3DA-C5C8-43c9-935A-A00FDCDDDEAD}",
-        "EA-Name": "begin",
-        "EA-Package": "OSLO-Generiek",
-        "EA-Range": "DateTime",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-Name": "DateTime",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data.europa.eu/m8g/startTime"
-          },
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "begin"
-          },
-          {
-            "key": "ap-definition-nl",
-            "note": "null",
-            "value": "Aanvang van de tijdsduur."
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "Aanvang van de tijdsduur."
-          },
-          {
-            "key": "ap-label-nl",
-            "note": "null",
-            "value": "begin"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Aanvang van de tijdsduur."
-        },
-        "ap-label-nl": {
-          "nl": "begin"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "Aanvang van de tijdsduur."
-        },
-        "label": {
-          "nl": "begin"
-        },
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "begin"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "1",
-      "name": "begin",
-      "range": [
-        {
-          "EA-Name": "DateTime",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
-        }
-      ]
-    },
-    {
-      "@id": "http://data.europa.eu/m8g/endTime",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{A5AA38EB-77A0-4b1d-A43A-311CDA0F136D}",
-      "ap-definition-nl": {
-        "nl": "Einde vd tijdsduur."
-      },
-      "ap-label-nl": {
-        "nl": "einde"
-      },
-      "codelist": [],
-      "definition": {
-        "nl": "Einde vd tijdsduur."
-      },
-      "domain": [
-        {
-          "EA-Name": "Periode",
-          "uri": "http://data.europa.eu/m8g/PeriodOfTime"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Periode",
-        "EA-Domain-Guid": "{BEB8510B-FF2E-4ad4-B89A-E7CCD9EA6665}",
-        "EA-Guid": "{A5AA38EB-77A0-4b1d-A43A-311CDA0F136D}",
-        "EA-Name": "einde",
-        "EA-Package": "OSLO-Generiek",
-        "EA-Range": "DateTime",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-Name": "DateTime",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
-        },
-        "RawTags": [
-          {
-            "key": "ap-definition-nl",
-            "note": "null",
-            "value": "Einde vd tijdsduur."
-          },
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "einde"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data.europa.eu/m8g/endTime"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "Einde vd tijdsduur."
-          },
-          {
-            "key": "ap-label-nl",
-            "note": "null",
-            "value": "einde"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Einde vd tijdsduur."
-        },
-        "ap-label-nl": {
-          "nl": "einde"
-        },
-        "ap-usageNote-nl": "",
-        "definition": {
-          "nl": "Einde vd tijdsduur."
-        },
-        "label": {
-          "nl": "einde"
-        },
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "einde"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "0",
-      "name": "einde",
-      "range": [
-        {
-          "EA-Name": "DateTime",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
-        }
-      ]
     }
   ],
   "externals": [
-    {
-      "@id": "http://data.europa.eu/m8g/PeriodOfTime",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{BEB8510B-FF2E-4ad4-B89A-E7CCD9EA6665}",
-      "ap-definition-nl": {
-        "nl": "Min of meer afgebakende tijdsduur."
-      },
-      "ap-label-nl": {
-        "nl": "Periode"
-      },
-      "ap-usageNote-nl": {
-        "nl": "Typisch volgt de duur uit het opgeven ve begin- en eindtijdstip."
-      },
-      "definition": {
-        "nl": "Min of meer afgebakende tijdsduur."
-      },
-      "extra": {
-        "EA-Guid": "{BEB8510B-FF2E-4ad4-B89A-E7CCD9EA6665}",
-        "EA-Name": "Periode",
-        "EA-Package": "OSLO-Generiek",
-        "EA-Parents": "",
-        "EA-Parents2": [],
-        "EA-Type": "DATATYPE",
-        "RawTags": [
-          {
-            "key": "ap-definition-nl",
-            "note": "null",
-            "value": "Min of meer afgebakende tijdsduur."
-          },
-          {
-            "key": "ap-usageNote-nl",
-            "note": "null",
-            "value": "Typisch volgt de duur uit het opgeven ve begin- en eindtijdstip."
-          },
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "Periode"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data.europa.eu/m8g/PeriodOfTime"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "Min of meer afgebakende tijdsduur."
-          },
-          {
-            "key": "usageNote-nl",
-            "note": "null",
-            "value": "Typisch volgt de duur uit het opgeven ve begin- en eindtijdstip."
-          },
-          {
-            "key": "ap-label-nl",
-            "note": "null",
-            "value": "Periode"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Min of meer afgebakende tijdsduur."
-        },
-        "ap-label-nl": {
-          "nl": "Periode"
-        },
-        "ap-usageNote-nl": {
-          "nl": "Typisch volgt de duur uit het opgeven ve begin- en eindtijdstip."
-        },
-        "definition": {
-          "nl": "Min of meer afgebakende tijdsduur."
-        },
-        "label": {
-          "nl": "Periode"
-        },
-        "parentclasses": "",
-        "usage": {
-          "nl": "Typisch volgt de duur uit het opgeven ve begin- en eindtijdstip."
-        }
-      },
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "Periode"
-      },
-      "name": "Periode",
-      "usage": {
-        "nl": "Typisch volgt de duur uit het opgeven ve begin- en eindtijdstip."
-      }
-    },
     {
       "@id": "http://def.isotc211.org/iso19103/2005/Names#GenericName",
       "@type": "http://www.w3.org/2002/07/owl#Class",
@@ -7302,97 +7198,6 @@
       "name": "Eenheid"
     },
     {
-      "@id": "http://schema.org/ContactPoint",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{E18AE060-F5B7-47fa-ADDD-9967C2F25C85}",
-      "ap-definition-nl": {
-        "nl": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren."
-      },
-      "ap-label-nl": {
-        "nl": "Contactpunt"
-      },
-      "ap-usageNote-nl": {
-        "nl": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek."
-      },
-      "definition": {
-        "nl": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren."
-      },
-      "extra": {
-        "EA-Guid": "{E18AE060-F5B7-47fa-ADDD-9967C2F25C85}",
-        "EA-Name": "ContactInfo",
-        "EA-Package": "OSLO-Generiek",
-        "EA-Parents": "",
-        "EA-Parents2": [],
-        "EA-Type": "DATATYPE",
-        "RawTags": [
-          {
-            "key": "ap-definition-nl",
-            "note": "null",
-            "value": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren."
-          },
-          {
-            "key": "ap-label-nl",
-            "note": "null",
-            "value": "Contactpunt"
-          },
-          {
-            "key": "ap-usageNote-nl",
-            "note": "null",
-            "value": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek."
-          },
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "Contactpunt"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://schema.org/ContactPoint"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren."
-          },
-          {
-            "key": "usageNote-nl",
-            "note": "null",
-            "value": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren."
-        },
-        "ap-label-nl": {
-          "nl": "Contactpunt"
-        },
-        "ap-usageNote-nl": {
-          "nl": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek."
-        },
-        "definition": {
-          "nl": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren."
-        },
-        "label": {
-          "nl": "Contactpunt"
-        },
-        "parentclasses": "",
-        "usage": {
-          "nl": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek."
-        }
-      },
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "Contactpunt"
-      },
-      "name": "Contactpunt",
-      "usage": {
-        "nl": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek."
-      }
-    },
-    {
       "@id": "http://www.opengis.net/ont/geosparql#Curve",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{BABCAE5E-4653-404f-B7E2-C48ED5D8BE98}",
@@ -7687,6 +7492,87 @@
       }
     },
     {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{CEE9AF92-964A-4790-B048-A52AE6FBBD0D}",
+      "ap-definition-nl": {
+        "nl": "Combinatie van een string en de taal waarin de inhoud ervan is gesteld."
+      },
+      "ap-label-nl": {
+        "nl": "TaalString"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Bvb 'Rue Mercator' als string en 'fr' als taal. Te implementeren als Langstring."
+      },
+      "definition": {
+        "nl": "Combinatie van een string en de taal waarin de inhoud ervan is gesteld."
+      },
+      "extra": {
+        "EA-Guid": "{CEE9AF92-964A-4790-B048-A52AE6FBBD0D}",
+        "EA-Name": "TaalString",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Combinatie van een string en de taal waarin de inhoud ervan is gesteld."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "Bvb 'Rue Mercator' als string en 'fr' als taal. Te implementeren als Langstring."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "TaalString"
+          },
+          {
+            "key": "literal",
+            "note": "null",
+            "value": "true"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Combinatie van een string en de taal waarin de inhoud ervan is gesteld."
+        },
+        "ap-label-nl": {
+          "nl": "TaalString"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Bvb 'Rue Mercator' als string en 'fr' als taal. Te implementeren als Langstring."
+        },
+        "definition": {
+          "nl": "Combinatie van een string en de taal waarin de inhoud ervan is gesteld."
+        },
+        "label": {
+          "nl": "TaalString"
+        },
+        "parentclasses": "",
+        "usage": {
+          "nl": "Bvb 'Rue Mercator' als string en 'fr' als taal. Te implementeren als Langstring."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "TaalString"
+      },
+      "name": "Taalstring",
+      "usage": {
+        "nl": "Bvb 'Rue Mercator' als string en 'fr' als taal. Te implementeren als Langstring."
+      }
+    },
+    {
       "@id": "http://www.w3.org/2000/01/rdf-schema#Literal",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{84C93140-B809-4837-A55A-7687CA2B83D9}",
@@ -7827,16 +7713,6 @@
             "key": "uri",
             "note": "null",
             "value": "http://www.w3.org/2000/01/rdf-schema#Literal"
-          },
-          {
-            "key": "usagenote-nl",
-            "note": "null",
-            "value": "http://www.w3.org/2000/01/rdf-schema#Literal"
-          },
-          {
-            "key": "usageNote-nl",
-            "note": "null",
-            "value": "http://www.w3.org/2000/01/rdf-schema#Literal"
           }
         ],
         "Scope": "NOTHING",
@@ -7855,17 +7731,90 @@
           "nl": "Literal"
         },
         "parentclasses": "",
-        "usage": {
-          "nl": "http://www.w3.org/2000/01/rdf-schema#Literal"
-        }
+        "usage": ""
       },
       "inpackage": "OTHER_PACKAGE",
       "label": {
         "nl": "Literal"
       },
-      "name": "Literal",
+      "name": "Literal"
+    },
+    {
+      "@id": "http://www.w3.org/2001/XMLSchema#anyURI",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{716A9862-FB6F-4547-A998-B41B4B6BDAB2}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "NaamInNaamruimte"
+      },
+      "definition": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{716A9862-FB6F-4547-A998-B41B4B6BDAB2}",
+        "EA-Name": "NaamInNaamruimte",
+        "EA-Package": "IM-BenoemdeWaarden",
+        "EA-Parents": "GeneriekeNaam",
+        "EA-Parents2": [
+          {
+            "label": "GeneriekeNaam",
+            "name": "GeneriekeNaam",
+            "package": "ObservatiesEnMetingen",
+            "uri": "http://def.isotc211.org/iso19103/2005/Names#GenericName"
+          }
+        ],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "TODO"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "NaamInNaamruimte"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2001/XMLSchema#anyURI"
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "null",
+            "value": "Te implementeren als URI."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "NaamInNaamruimte"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "TODO"
+        },
+        "label": {
+          "nl": "NaamInNaamruimte"
+        },
+        "parentclasses": "http://def.isotc211.org/iso19103/2005/Names#GenericName",
+        "usage": {
+          "nl": "Te implementeren als URI."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "NaamInNaamruimte"
+      },
+      "name": "Naaminnaamruimte",
       "usage": {
-        "nl": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        "nl": "Te implementeren als URI."
       }
     },
     {
@@ -7952,6 +7901,89 @@
       "name": "DecimaalGetal",
       "usage": {
         "nl": "https://www.w3.org/TR/xmlschema-2/#decimal"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2001/XMLSchema#string",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{4BACE679-B16C-4ab4-9101-43E4C1F060AB}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "LokaleNaam"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Te implementeren als String."
+      },
+      "definition": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{4BACE679-B16C-4ab4-9101-43E4C1F060AB}",
+        "EA-Name": "LokaleNaam",
+        "EA-Package": "IM-BenoemdeWaarden",
+        "EA-Parents": "GeneriekeNaam",
+        "EA-Parents2": [
+          {
+            "label": "GeneriekeNaam",
+            "name": "GeneriekeNaam",
+            "package": "ObservatiesEnMetingen",
+            "uri": "http://def.isotc211.org/iso19103/2005/Names#GenericName"
+          }
+        ],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "Te implementeren als String."
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "TODO"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "LokaleNaam"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2001/XMLSchema#string"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "LokaleNaam"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Te implementeren als String."
+        },
+        "definition": {
+          "nl": "TODO"
+        },
+        "label": {
+          "nl": "LokaleNaam"
+        },
+        "parentclasses": "http://def.isotc211.org/iso19103/2005/Names#GenericName",
+        "usage": {
+          "nl": "Te implementeren als String."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "LokaleNaam"
+      },
+      "name": "Lokalenaam",
+      "usage": {
+        "nl": "Te implementeren als String."
       }
     },
     {
@@ -8589,6 +8621,67 @@
         "nl": "Concept"
       },
       "name": "Concept"
+    },
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{06AED52C-1C7B-492b-A125-0F706DA240AD}",
+      "ap-definition-nl": {
+        "nl": "De mogelijke rollen van de laag."
+      },
+      "ap-label-nl": {
+        "nl": "Laag rol"
+      },
+      "definition": {
+        "nl": "De mogelijke rollen van de laag."
+      },
+      "extra": {
+        "EA-Guid": "{06AED52C-1C7B-492b-A125-0F706DA240AD}",
+        "EA-Name": "KILaagRol",
+        "EA-Package": "OTL",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "ENUMERATION",
+        "RawTags": [
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "De mogelijke rollen van de laag."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Laag rol"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "De mogelijke rollen van de laag."
+        },
+        "ap-label-nl": {
+          "nl": "Laag rol"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "De mogelijke rollen van de laag."
+        },
+        "label": {
+          "nl": "Laag rol"
+        },
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Laag rol"
+      },
+      "name": "LaagRol"
     },
     {
       "@id": "http://www.w3.org/2006/time#Instant",
@@ -9581,6 +9674,82 @@
       "name": "Wegmarkering",
       "usage": {
         "nl": "Naar GRB-skeletoptie wegbeheer - WEM1: Puntvormige wegmarkering; WEM2: Lijnvormige wegmarkering; WEM3: Vlakvormige wegmarkering"
+      }
+    },
+    {
+      "@id": "https://qudt.org/schema/qudt/QuantityValue",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{0595DD01-782C-400b-BB1B-737356C0C966}",
+      "ap-definition-nl": {
+        "nl": "Aanduiding van de kwantiteit van een bepaald kenmerk van een object."
+      },
+      "ap-label-nl": {
+        "nl": "KwantitatieveWaarde"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Bv de hoogte van een object,het gewicht,de temperatuur etc. Het gaat om een kenmerk dat numeriek uitgedrukt kan worden en in een bepaalde eenheid. Kwalitatieve aanduidingen zoals hoog,laag ed vallen hier dus niet onder."
+      },
+      "definition": {
+        "nl": "Aanduiding van de kwantiteit van een bepaald kenmerk van een object."
+      },
+      "extra": {
+        "EA-Guid": "{0595DD01-782C-400b-BB1B-737356C0C966}",
+        "EA-Name": "KwantitatieveWaarde",
+        "EA-Package": "QUDT",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Aanduiding van de kwantiteit van een bepaald kenmerk van een object."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "Bv de hoogte van een object,het gewicht,de temperatuur etc. Het gaat om een kenmerk dat numeriek uitgedrukt kan worden en in een bepaalde eenheid. Kwalitatieve aanduidingen zoals hoog,laag ed vallen hier dus niet onder."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "KwantitatieveWaarde"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://qudt.org/schema/qudt/QuantityValue"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Aanduiding van de kwantiteit van een bepaald kenmerk van een object."
+        },
+        "ap-label-nl": {
+          "nl": "KwantitatieveWaarde"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Bv de hoogte van een object,het gewicht,de temperatuur etc. Het gaat om een kenmerk dat numeriek uitgedrukt kan worden en in een bepaalde eenheid. Kwalitatieve aanduidingen zoals hoog,laag ed vallen hier dus niet onder."
+        },
+        "definition": {
+          "nl": "Aanduiding van de kwantiteit van een bepaald kenmerk van een object."
+        },
+        "label": {
+          "nl": "KwantitatieveWaarde"
+        },
+        "parentclasses": "",
+        "usage": {
+          "nl": "Bv de hoogte van een object,het gewicht,de temperatuur etc. Het gaat om een kenmerk dat numeriek uitgedrukt kan worden en in een bepaalde eenheid. Kwalitatieve aanduidingen zoals hoog,laag ed vallen hier dus niet onder."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "KwantitatieveWaarde"
+      },
+      "name": "Kwantitatievewaarde",
+      "usage": {
+        "nl": "Bv de hoogte van een object,het gewicht,de temperatuur etc. Het gaat om een kenmerk dat numeriek uitgedrukt kan worden en in een bepaalde eenheid. Kwalitatieve aanduidingen zoals hoog,laag ed vallen hier dus niet onder."
       }
     },
     {
@@ -10691,7 +10860,7 @@
   "standaardregisterurl": "https://data.vlaanderen.be/doc/applicatieprofiel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05",
   "template": "kwaliteitWegenEnWegmarkeringen-ap.j2",
   "title": "Implementatiemodel Kwaliteit Wegen en Wegmarkeringen",
-  "toolchaincommit": "eab70c6f09d58ddda6345ffafa5b897ff40737d2",
+  "toolchaincommit": "b7723aa4541af66b06fc7902b0ccb769d9cdc2dd",
   "translation": [
     {
       "language": "nl",
