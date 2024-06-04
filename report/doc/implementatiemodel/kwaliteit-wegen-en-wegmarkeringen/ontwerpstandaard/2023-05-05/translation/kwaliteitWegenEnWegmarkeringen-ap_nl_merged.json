@@ -968,8 +968,8 @@
   "contributors-file": "stakeholders.csv",
   "diagram": "KwaliteitOpenbaarDomein",
   "disabled": false,
-  "documentcommit": "5a1b981454db9cf63d4e2da38baeb332e9f0ee52",
-  "dummy": "12",
+  "documentcommit": "ccf1613d98699dcd6b3f1792a4f2cc20fd908d2f",
+  "dummy": "13",
   "eap": "KwaliteitOpenbaarDomein.eap",
   "editors": [
     {
@@ -2117,6 +2117,179 @@
       ]
     },
     {
+      "@id": "https://qudt.org/schema/qudt/value",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{F40D1518-57A3-48f8-8B10-BB3E5A52CBD8}",
+      "ap-definition-nl": {
+        "nl": "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."
+      },
+      "ap-label-nl": {
+        "nl": "waarde"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."
+      },
+      "domain": [
+        {
+          "EA-Name": "KwantitatieveWaarde",
+          "uri": "https://qudt.org/schema/qudt/QuantityValue"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "KwantitatieveWaarde",
+        "EA-Domain-Guid": "{0595DD01-782C-400b-BB1B-737356C0C966}",
+        "EA-Guid": "{F40D1518-57A3-48f8-8B10-BB3E5A52CBD8}",
+        "EA-Name": "waarde",
+        "EA-Package": "QUDT",
+        "EA-Range": "Literal",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://qudt.org/schema/qudt/value"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "waarde"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."
+        },
+        "ap-label-nl": {
+          "nl": "waarde"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."
+        },
+        "label": {
+          "nl": "waarde"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "waarde"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "waarde",
+      "range": [
+        {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      ]
+    },
+    {
+      "@id": "https://qudt.org/schema/qudt/hasUnit",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{97C842CC-4661-475f-956A-9AF613C9CB8C}",
+      "ap-definition-nl": {
+        "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+      },
+      "ap-label-nl": {
+        "nl": "eenheid"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+      },
+      "domain": [
+        {
+          "EA-Name": "KwantitatieveWaarde",
+          "uri": "https://qudt.org/schema/qudt/QuantityValue"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "KwantitatieveWaarde",
+        "EA-Domain-Guid": "{0595DD01-782C-400b-BB1B-737356C0C966}",
+        "EA-Guid": "{97C842CC-4661-475f-956A-9AF613C9CB8C}",
+        "EA-Name": "eenheid",
+        "EA-Package": "QUDT",
+        "EA-Range": "Concept",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{78E35C0D-6AC2-4711-8744-EBA707DF743E}",
+          "EA-Name": "Concept",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "eenheid"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "eenheid"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://qudt.org/schema/qudt/hasUnit"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+        },
+        "ap-label-nl": {
+          "nl": "eenheid"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."
+        },
+        "label": {
+          "nl": "eenheid"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "eenheid"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "eenheid",
+      "range": [
+        {
+          "EA-GUID": "{78E35C0D-6AC2-4711-8744-EBA707DF743E}",
+          "EA-Name": "Concept",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ]
+    },
+    {
       "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{9EDC0169-D46C-449a-9D08-9637BB9162B8}",
@@ -3137,6 +3310,81 @@
       }
     },
     {
+      "@id": "http://www.w3.org/ns/sosa/hasResult",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{A969C2A1-9459-4070-94D8-7FB37B6E3C91}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "resultaat"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "KwantitatiefResultaat",
+          "uri": "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "KwantitatiefResultaat",
+        "EA-Domain-Guid": "{C6E5CAE4-2A0A-4b69-A0DD-B7BBDDA5EFFB}",
+        "EA-Guid": "{A969C2A1-9459-4070-94D8-7FB37B6E3C91}",
+        "EA-Name": "resultaat",
+        "EA-Package": "KwaliteitOpenbaarDomein",
+        "EA-Range": "KwantitatieveWaarde",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{778B6A99-7291-4713-91F5-0370C6F1F769}",
+          "EA-Name": "KwantitatieveWaarde",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "https://schema.org/QuantitativeValue"
+        },
+        "RawTags": [
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "resultaat"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/sosa/hasResult"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "resultaat"
+        },
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": {
+          "nl": "resultaat"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "resultaat"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "resultaat",
+      "range": [
+        {
+          "EA-GUID": "{778B6A99-7291-4713-91F5-0370C6F1F769}",
+          "EA-Name": "KwantitatieveWaarde",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "https://schema.org/QuantitativeValue"
+        }
+      ]
+    },
+    {
       "@id": "http://www.w3.org/ns/locn#geometry",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{AF88D0DE-3FCE-47a1-9571-D9E3918A7260}",
@@ -3228,6 +3476,229 @@
           "EA-Name": "Geometrie",
           "EA-Package": "OSLO-Generiek",
           "uri": "http://www.w3.org/ns/locn#Geometry"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{DF086231-69B6-4e33-877B-971F83E8E9C0}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "inXSDDateTime"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "Moment",
+          "uri": "http://www.w3.org/2006/time#Instant"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Moment",
+        "EA-Domain-Guid": "{C746CB33-4977-45fd-9A03-8A885DE9A502}",
+        "EA-Guid": "{DF086231-69B6-4e33-877B-971F83E8E9C0}",
+        "EA-Name": "inXSDDateTime",
+        "EA-Package": "W3C-Time",
+        "EA-Range": "DateTime",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "inXSDDateTime"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2006/time#inXSDDateTime"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "inXSDDateTime"
+        },
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": {
+          "nl": "inXSDDateTime"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "inXSDDateTime"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "inxsddatetime",
+      "range": [
+        {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/2006/time#hasEnd",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{F15A12AB-557C-4990-802E-DD22F903B997}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "tot"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "Periode",
+          "uri": "http://www.w3.org/2006/time#ProperInterval"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Periode",
+        "EA-Domain-Guid": "{B35B86D8-8CA7-4d8d-B854-BCF20D7292DE}",
+        "EA-Guid": "{F15A12AB-557C-4990-802E-DD22F903B997}",
+        "EA-Name": "^tot",
+        "EA-Package": "W3C-Time",
+        "EA-Range": "Moment",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{C746CB33-4977-45fd-9A03-8A885DE9A502}",
+          "EA-Name": "Moment",
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#Instant"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2006/time#hasEnd"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "tot"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "tot"
+        },
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": {
+          "nl": "tot"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "tot"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "tot",
+      "range": [
+        {
+          "EA-GUID": "{C746CB33-4977-45fd-9A03-8A885DE9A502}",
+          "EA-Name": "Moment",
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#Instant"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/2006/time#hasBeginning",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{54B4DEDF-247A-44d6-BE29-628088630BB5}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "van"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "Periode",
+          "uri": "http://www.w3.org/2006/time#ProperInterval"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Periode",
+        "EA-Domain-Guid": "{B35B86D8-8CA7-4d8d-B854-BCF20D7292DE}",
+        "EA-Guid": "{54B4DEDF-247A-44d6-BE29-628088630BB5}",
+        "EA-Name": "^van",
+        "EA-Package": "W3C-Time",
+        "EA-Range": "Moment",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{C746CB33-4977-45fd-9A03-8A885DE9A502}",
+          "EA-Name": "Moment",
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#Instant"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2006/time#hasBeginning"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "van"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "van"
+        },
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": {
+          "nl": "van"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "van"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "van",
+      "range": [
+        {
+          "EA-GUID": "{C746CB33-4977-45fd-9A03-8A885DE9A502}",
+          "EA-Name": "Moment",
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#Instant"
         }
       ]
     },
@@ -4853,10 +5324,10 @@
         "EA-Range": "TemporeleEntiteit",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-GUID": "{A054E7E8-B2EF-4ca8-BF71-B58D55DB5E68}",
+          "EA-GUID": "{E6329ECD-31C7-48f7-A298-39D221E39493}",
           "EA-Name": "TemporeleEntiteit",
-          "EA-Package": "ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object"
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#TemporalEntity"
         },
         "RawTags": [
           {
@@ -4926,10 +5397,10 @@
       "name": "fenomeentijd",
       "range": [
         {
-          "EA-GUID": "{A054E7E8-B2EF-4ca8-BF71-B58D55DB5E68}",
+          "EA-GUID": "{E6329ECD-31C7-48f7-A298-39D221E39493}",
           "EA-Name": "TemporeleEntiteit",
-          "EA-Package": "ObservatiesEnMetingen",
-          "uri": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object"
+          "EA-Package": "W3C-Time",
+          "uri": "http://www.w3.org/2006/time#TemporalEntity"
         }
       ],
       "usage": {
@@ -5912,97 +6383,6 @@
       }
     },
     {
-      "@id": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{A054E7E8-B2EF-4ca8-BF71-B58D55DB5E68}",
-      "ap-definition-nl": {
-        "nl": "Abstracte klasse voor temporele objecten."
-      },
-      "ap-label-nl": {
-        "nl": "TemporeleEntiteit"
-      },
-      "ap-usageNote-nl": {
-        "nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn. OPMERKING: Meer info in <a href=\"https://iso.org/standard/26013.html\">ISO 19108 Geographic Information - Temporal schema</a>. Substitutie door een eenvoudiger equivalent bv time:TemporalEntity uit de <a href=\"https://w3.org/TR/owl-time/\">W3C Time Ontology</a> is aanbevolen."
-      },
-      "definition": {
-        "nl": "Abstracte klasse voor temporele objecten."
-      },
-      "extra": {
-        "EA-Guid": "{A054E7E8-B2EF-4ca8-BF71-B58D55DB5E68}",
-        "EA-Name": "TemporeleEntiteit",
-        "EA-Package": "ObservatiesEnMetingen",
-        "EA-Parents": "",
-        "EA-Parents2": [],
-        "EA-Type": "DATATYPE",
-        "RawTags": [
-          {
-            "key": "ap-definition-nl",
-            "note": "null",
-            "value": "Abstracte klasse voor temporele objecten."
-          },
-          {
-            "key": "ap-label-nl",
-            "note": "null",
-            "value": "TemporeleEntiteit"
-          },
-          {
-            "key": "ap-usageNote-nl",
-            "note": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn. OPMERKING: Meer info in <a href=\"https://iso.org/standard/26013.html\">ISO 19108 Geographic Information - Temporal schema</a>. Substitutie door een eenvoudiger equivalent bv time:TemporalEntity uit de <a href=\"https://w3.org/TR/owl-time/\">W3C Time Ontology</a> is aanbevolen.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "TemporeleEntiteit"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "Abstracte klasse voor temporele objecten."
-          },
-          {
-            "key": "usageNote-nl",
-            "note": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn. OPMERKING: Meer info in <a href=\"https://iso.org/standard/26013.html\">ISO 19108 Geographic Information - Temporal schema</a>. Substitutie door een eenvoudiger equivalent bv time:TemporalEntity uit de <a href=\"https://w3.org/TR/owl-time/\">W3C Time Ontology</a> is aanbevolen.",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Abstracte klasse voor temporele objecten."
-        },
-        "ap-label-nl": {
-          "nl": "TemporeleEntiteit"
-        },
-        "ap-usageNote-nl": {
-          "nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn. OPMERKING: Meer info in <a href=\"https://iso.org/standard/26013.html\">ISO 19108 Geographic Information - Temporal schema</a>. Substitutie door een eenvoudiger equivalent bv time:TemporalEntity uit de <a href=\"https://w3.org/TR/owl-time/\">W3C Time Ontology</a> is aanbevolen."
-        },
-        "definition": {
-          "nl": "Abstracte klasse voor temporele objecten."
-        },
-        "label": {
-          "nl": "TemporeleEntiteit"
-        },
-        "parentclasses": "",
-        "usage": {
-          "nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn. OPMERKING: Meer info in <a href=\"https://iso.org/standard/26013.html\">ISO 19108 Geographic Information - Temporal schema</a>. Substitutie door een eenvoudiger equivalent bv time:TemporalEntity uit de <a href=\"https://w3.org/TR/owl-time/\">W3C Time Ontology</a> is aanbevolen."
-        }
-      },
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "TemporeleEntiteit"
-      },
-      "name": "Temporeleentiteit",
-      "usage": {
-        "nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn. OPMERKING: Meer info in <a href=\"https://iso.org/standard/26013.html\">ISO 19108 Geographic Information - Temporal schema</a>. Substitutie door een eenvoudiger equivalent bv time:TemporalEntity uit de <a href=\"https://w3.org/TR/owl-time/\">W3C Time Ontology</a> is aanbevolen."
-      }
-    },
-    {
       "@id": "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#LidarCloud",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{05EB7AB5-0734-465a-BE70-83525F023697}",
@@ -6847,97 +7227,6 @@
       "name": "Eenheid"
     },
     {
-      "@id": "http://schema.org/ContactPoint",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{E18AE060-F5B7-47fa-ADDD-9967C2F25C85}",
-      "ap-definition-nl": {
-        "nl": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren."
-      },
-      "ap-label-nl": {
-        "nl": "Contactpunt"
-      },
-      "ap-usageNote-nl": {
-        "nl": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek."
-      },
-      "definition": {
-        "nl": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren."
-      },
-      "extra": {
-        "EA-Guid": "{E18AE060-F5B7-47fa-ADDD-9967C2F25C85}",
-        "EA-Name": "ContactInfo",
-        "EA-Package": "OSLO-Generiek",
-        "EA-Parents": "",
-        "EA-Parents2": [],
-        "EA-Type": "DATATYPE",
-        "RawTags": [
-          {
-            "key": "ap-definition-nl",
-            "note": "null",
-            "value": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren."
-          },
-          {
-            "key": "ap-label-nl",
-            "note": "null",
-            "value": "Contactpunt"
-          },
-          {
-            "key": "ap-usageNote-nl",
-            "note": "null",
-            "value": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek."
-          },
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "Contactpunt"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://schema.org/ContactPoint"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren."
-          },
-          {
-            "key": "usageNote-nl",
-            "note": "null",
-            "value": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-nl": {
-          "nl": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren."
-        },
-        "ap-label-nl": {
-          "nl": "Contactpunt"
-        },
-        "ap-usageNote-nl": {
-          "nl": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek."
-        },
-        "definition": {
-          "nl": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren."
-        },
-        "label": {
-          "nl": "Contactpunt"
-        },
-        "parentclasses": "",
-        "usage": {
-          "nl": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek."
-        }
-      },
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "Contactpunt"
-      },
-      "name": "Contactpunt",
-      "usage": {
-        "nl": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek."
-      }
-    },
-    {
       "@id": "http://www.opengis.net/ont/geosparql#Curve",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{BABCAE5E-4653-404f-B7E2-C48ED5D8BE98}",
@@ -7229,6 +7518,87 @@
       "name": "3dobject",
       "usage": {
         "nl": "Dimensie is te verstaan in wiskundige zin: het minimum aantal coördinaten nodig om een willekeurig punt voor te stellen dat deel uitmaakt van de primitieve. Om een willekeurig punt aan te duiden in de ruimte die het 3Dobject inneemt zijn 3 coördinaten nodig. Een 3DObject heeft daarom lengte, breedte en diepte. Analoog aan de polylijn (di een Curve onstaan door interpolatie tussen twee of meer punten) bestaan er ook in 3 dimensies vormen die gedefinieerd worden door sets van controlepunten. Een 3DObject wordt begrensd door meerdere Vlakken (bv kubus) of door 1 gesloten Vlak (bv bol). Bijkomende grensvlakken vormen mogelijks holtes in het 3DObject. Om binnen- en buitengrenzen te kunnen onderscheiden geldt doorgaans de afspraak dat het 3DObject links ligt van het Vlak waardoor het wordt begrensd."
+      }
+    },
+    {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{CEE9AF92-964A-4790-B048-A52AE6FBBD0D}",
+      "ap-definition-nl": {
+        "nl": "Combinatie van een string en de taal waarin de inhoud ervan is gesteld."
+      },
+      "ap-label-nl": {
+        "nl": "TaalString"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Bvb 'Rue Mercator' als string en 'fr' als taal. Te implementeren als Langstring."
+      },
+      "definition": {
+        "nl": "Combinatie van een string en de taal waarin de inhoud ervan is gesteld."
+      },
+      "extra": {
+        "EA-Guid": "{CEE9AF92-964A-4790-B048-A52AE6FBBD0D}",
+        "EA-Name": "TaalString",
+        "EA-Package": "OSLO-Generiek",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Combinatie van een string en de taal waarin de inhoud ervan is gesteld."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "Bvb 'Rue Mercator' als string en 'fr' als taal. Te implementeren als Langstring."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "TaalString"
+          },
+          {
+            "key": "literal",
+            "note": "null",
+            "value": "true"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Combinatie van een string en de taal waarin de inhoud ervan is gesteld."
+        },
+        "ap-label-nl": {
+          "nl": "TaalString"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Bvb 'Rue Mercator' als string en 'fr' als taal. Te implementeren als Langstring."
+        },
+        "definition": {
+          "nl": "Combinatie van een string en de taal waarin de inhoud ervan is gesteld."
+        },
+        "label": {
+          "nl": "TaalString"
+        },
+        "parentclasses": "",
+        "usage": {
+          "nl": "Bvb 'Rue Mercator' als string en 'fr' als taal. Te implementeren als Langstring."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "TaalString"
+      },
+      "name": "Taalstring",
+      "usage": {
+        "nl": "Bvb 'Rue Mercator' als string en 'fr' als taal. Te implementeren als Langstring."
       }
     },
     {
@@ -8136,6 +8506,203 @@
       "name": "Concept"
     },
     {
+      "@id": "http://www.w3.org/2006/time#Instant",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{C746CB33-4977-45fd-9A03-8A885DE9A502}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "Moment"
+      },
+      "extra": {
+        "EA-Guid": "{C746CB33-4977-45fd-9A03-8A885DE9A502}",
+        "EA-Name": "Moment",
+        "EA-Package": "W3C-Time",
+        "EA-Parents": "",
+        "EA-Parents2": [
+          {
+            "label": "TemporeleEntiteit",
+            "name": "TemporeleEntiteit",
+            "package": "W3C-Time",
+            "uri": "http://www.w3.org/2006/time#TemporalEntity"
+          }
+        ],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Moment"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2006/time#Instant"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "Moment"
+        },
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": {
+          "nl": "Moment"
+        },
+        "parentclasses": "http://www.w3.org/2006/time#TemporalEntity",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Moment"
+      },
+      "name": "Moment"
+    },
+    {
+      "@id": "http://www.w3.org/2006/time#ProperInterval",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{B35B86D8-8CA7-4d8d-B854-BCF20D7292DE}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "ap-label-nl": {
+        "nl": "Periode"
+      },
+      "extra": {
+        "EA-Guid": "{B35B86D8-8CA7-4d8d-B854-BCF20D7292DE}",
+        "EA-Name": "Periode",
+        "EA-Package": "W3C-Time",
+        "EA-Parents": "",
+        "EA-Parents2": [
+          {
+            "label": "TemporeleEntiteit",
+            "name": "TemporeleEntiteit",
+            "package": "W3C-Time",
+            "uri": "http://www.w3.org/2006/time#TemporalEntity"
+          }
+        ],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Periode"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2006/time#ProperInterval"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": {
+          "nl": "Periode"
+        },
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": {
+          "nl": "Periode"
+        },
+        "parentclasses": "http://www.w3.org/2006/time#TemporalEntity",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Periode"
+      },
+      "name": "Periode"
+    },
+    {
+      "@id": "http://www.w3.org/2006/time#TemporalEntity",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{E6329ECD-31C7-48f7-A298-39D221E39493}",
+      "ap-definition-nl": {
+        "nl": "Abstracte klasse voor temporele objecten."
+      },
+      "ap-label-nl": {
+        "nl": "TemporeleEntiteit"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn."
+      },
+      "definition": {
+        "nl": "Abstracte klasse voor temporele objecten."
+      },
+      "extra": {
+        "EA-Guid": "{E6329ECD-31C7-48f7-A298-39D221E39493}",
+        "EA-Name": "TemporeleEntiteit",
+        "EA-Package": "W3C-Time",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Abstracte klasse voor temporele objecten."
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "TemporeleEntiteit"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "TemporeleEntiteit"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2006/time#TemporalEntity"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Abstracte klasse voor temporele objecten."
+        },
+        "ap-label-nl": {
+          "nl": "TemporeleEntiteit"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn."
+        },
+        "definition": {
+          "nl": "Abstracte klasse voor temporele objecten."
+        },
+        "label": {
+          "nl": "TemporeleEntiteit"
+        },
+        "parentclasses": "",
+        "usage": {
+          "nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "TemporeleEntiteit"
+      },
+      "name": "Temporeleentiteit",
+      "usage": {
+        "nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn."
+      }
+    },
+    {
       "@id": "http://www.w3.org/ns/adms#Identifier",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{2E0E0282-B00D-4d3a-A436-FA0B1ED4F4F4}",
@@ -8932,6 +9499,82 @@
       }
     },
     {
+      "@id": "https://qudt.org/schema/qudt/QuantityValue",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{0595DD01-782C-400b-BB1B-737356C0C966}",
+      "ap-definition-nl": {
+        "nl": "Aanduiding van de kwantiteit van een bepaald kenmerk van een object."
+      },
+      "ap-label-nl": {
+        "nl": "KwantitatieveWaarde"
+      },
+      "ap-usageNote-nl": {
+        "nl": "Bv de hoogte van een object,het gewicht,de temperatuur etc. Het gaat om een kenmerk dat numeriek uitgedrukt kan worden en in een bepaalde eenheid. Kwalitatieve aanduidingen zoals hoog,laag ed vallen hier dus niet onder."
+      },
+      "definition": {
+        "nl": "Aanduiding van de kwantiteit van een bepaald kenmerk van een object."
+      },
+      "extra": {
+        "EA-Guid": "{0595DD01-782C-400b-BB1B-737356C0C966}",
+        "EA-Name": "KwantitatieveWaarde",
+        "EA-Package": "QUDT",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "null",
+            "value": "Aanduiding van de kwantiteit van een bepaald kenmerk van een object."
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "null",
+            "value": "Bv de hoogte van een object,het gewicht,de temperatuur etc. Het gaat om een kenmerk dat numeriek uitgedrukt kan worden en in een bepaalde eenheid. Kwalitatieve aanduidingen zoals hoog,laag ed vallen hier dus niet onder."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "KwantitatieveWaarde"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://qudt.org/schema/qudt/QuantityValue"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Aanduiding van de kwantiteit van een bepaald kenmerk van een object."
+        },
+        "ap-label-nl": {
+          "nl": "KwantitatieveWaarde"
+        },
+        "ap-usageNote-nl": {
+          "nl": "Bv de hoogte van een object,het gewicht,de temperatuur etc. Het gaat om een kenmerk dat numeriek uitgedrukt kan worden en in een bepaalde eenheid. Kwalitatieve aanduidingen zoals hoog,laag ed vallen hier dus niet onder."
+        },
+        "definition": {
+          "nl": "Aanduiding van de kwantiteit van een bepaald kenmerk van een object."
+        },
+        "label": {
+          "nl": "KwantitatieveWaarde"
+        },
+        "parentclasses": "",
+        "usage": {
+          "nl": "Bv de hoogte van een object,het gewicht,de temperatuur etc. Het gaat om een kenmerk dat numeriek uitgedrukt kan worden en in een bepaalde eenheid. Kwalitatieve aanduidingen zoals hoog,laag ed vallen hier dus niet onder."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "KwantitatieveWaarde"
+      },
+      "name": "Kwantitatievewaarde",
+      "usage": {
+        "nl": "Bv de hoogte van een object,het gewicht,de temperatuur etc. Het gaat om een kenmerk dat numeriek uitgedrukt kan worden en in een bepaalde eenheid. Kwalitatieve aanduidingen zoals hoog,laag ed vallen hier dus niet onder."
+      }
+    },
+    {
       "@id": "https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Laag",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{5A88C1BE-2A74-4b64-9219-60A11365020F}",
@@ -9360,6 +10003,106 @@
   "name": "kwaliteitWegenEnWegmarkeringen-ap",
   "navigation": {},
   "properties": [
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#resultaat",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "EA-Guid": "{C3FCCFAE-B56A-42a4-BF9A-86BB6B1BDCD8}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "Conformiteitsresultaat",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Conformiteitsresultaat"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Conformiteitsresultaat",
+        "EA-Domain-Guid": "{B60F440B-7050-49ab-9336-FBBCC2C4BF02}",
+        "EA-Guid": "{C3FCCFAE-B56A-42a4-BF9A-86BB6B1BDCD8}",
+        "EA-Name": "resultaat",
+        "EA-Package": "KwaliteitOpenbaarDomein",
+        "EA-Range": "boolean",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "",
+          "EA-Package": "",
+          "uri": "null"
+        },
+        "RawTags": [],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": "",
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": "",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "",
+      "range": []
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#resultaat",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{FAABE6B4-EFCF-4ee7-AB30-260F1E579115}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "BeschrijvendResultaat",
+          "uri": "http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "BeschrijvendResultaat",
+        "EA-Domain-Guid": "{7BD76E9E-4B8A-4d43-BFD0-FC222118D822}",
+        "EA-Guid": "{FAABE6B4-EFCF-4ee7-AB30-260F1E579115}",
+        "EA-Name": "resultaat",
+        "EA-Package": "KwaliteitOpenbaarDomein",
+        "EA-Range": "TaalString",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{CEE9AF92-964A-4790-B048-A52AE6FBBD0D}",
+          "EA-Name": "TaalString",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": "",
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": "",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "",
+      "range": [
+        {
+          "EA-GUID": "{CEE9AF92-964A-4790-B048-A52AE6FBBD0D}",
+          "EA-Name": "TaalString",
+          "EA-Package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ]
+    },
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
@@ -10039,7 +10782,7 @@
   "standaardregisterurl": "https://data.vlaanderen.be/doc/applicatieprofiel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05",
   "template": "kwaliteitWegenEnWegmarkeringen-ap.j2",
   "title": "Implementatiemodel Kwaliteit Wegen en Wegmarkeringen",
-  "toolchaincommit": "e495e633187efb1f4fae35b12ac4fca9e086c3c2",
+  "toolchaincommit": "883d1cabc97aee82f96abaabb5b00cc659a00bcc",
   "translation": [
     {
       "language": "nl",

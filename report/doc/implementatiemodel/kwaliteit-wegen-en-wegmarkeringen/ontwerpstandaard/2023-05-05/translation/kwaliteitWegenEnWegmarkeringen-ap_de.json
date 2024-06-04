@@ -132,6 +132,14 @@
   ],
   "properties": [
     {
+      "EA-Guid": "{C3FCCFAE-B56A-42a4-BF9A-86BB6B1BDCD8}",
+      "name": ""
+    },
+    {
+      "EA-Guid": "{FAABE6B4-EFCF-4ee7-AB30-260F1E579115}",
+      "name": ""
+    },
+    {
       "EA-Guid": "{B7328BFA-F121-4e4c-8F3B-D56637A6D662}",
       "name": "lengte",
       "label": {
@@ -250,22 +258,6 @@
       },
       "usage": {
         "nl": "Subtypes zijn LokaleNaam en NaamInNaamruimte (resp een naam zonder en een naam met  vermelding van een naamruimte). Datatype van LokaleNaamaam is bvb String of Taalstring, datatype van NaamInNaamruimte is bvb URI. OPMERKING: Meer info over dit datatype in  <a href=\"https://www.iso.org/standard/56734.html\">ISO 19103 Geographic Information - Conceptual schema language</a>.",
-        "de": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{A054E7E8-B2EF-4ca8-BF71-B58D55DB5E68}",
-      "name": "Temporeleentiteit",
-      "label": {
-        "nl": "TemporeleEntiteit",
-        "de": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Abstracte klasse voor temporele objecten.",
-        "de": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn. OPMERKING: Meer info in <a href=\"https://iso.org/standard/26013.html\">ISO 19108 Geographic Information - Temporal schema</a>. Substitutie door een eenvoudiger equivalent bv time:TemporalEntity uit de <a href=\"https://w3.org/TR/owl-time/\">W3C Time Ontology</a> is aanbevolen.",
         "de": "Enter your translation here"
       }
     },
@@ -410,22 +402,6 @@
       }
     },
     {
-      "EA-Guid": "{E18AE060-F5B7-47fa-ADDD-9967C2F25C85}",
-      "name": "Contactpunt",
-      "label": {
-        "nl": "Contactpunt",
-        "de": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren.",
-        "de": "Enter your translation here"
-      },
-      "usage": {
-        "nl": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc. Meer uitgebreide beschrijving in het AP OSLO-Generiek.",
-        "de": "Enter your translation here"
-      }
-    },
-    {
       "EA-Guid": "{BABCAE5E-4653-404f-B7E2-C48ED5D8BE98}",
       "name": "Curve",
       "label": {
@@ -470,6 +446,22 @@
       },
       "usage": {
         "nl": "Dimensie is te verstaan in wiskundige zin: het minimum aantal coördinaten nodig om een willekeurig punt voor te stellen dat deel uitmaakt van de primitieve. Om een willekeurig punt aan te duiden in de ruimte die het 3Dobject inneemt zijn 3 coördinaten nodig. Een 3DObject heeft daarom lengte, breedte en diepte. Analoog aan de polylijn (di een Curve onstaan door interpolatie tussen twee of meer punten) bestaan er ook in 3 dimensies vormen die gedefinieerd worden door sets van controlepunten. Een 3DObject wordt begrensd door meerdere Vlakken (bv kubus) of door 1 gesloten Vlak (bv bol). Bijkomende grensvlakken vormen mogelijks holtes in het 3DObject. Om binnen- en buitengrenzen te kunnen onderscheiden geldt doorgaans de afspraak dat het 3DObject links ligt van het Vlak waardoor het wordt begrensd.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{CEE9AF92-964A-4790-B048-A52AE6FBBD0D}",
+      "name": "Taalstring",
+      "label": {
+        "nl": "TaalString",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Combinatie van een string en de taal waarin de inhoud ervan is gesteld.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Bvb 'Rue Mercator' als string en 'fr' als taal. Te implementeren als Langstring.",
         "de": "Enter your translation here"
       }
     },
@@ -630,6 +622,38 @@
       }
     },
     {
+      "EA-Guid": "{C746CB33-4977-45fd-9A03-8A885DE9A502}",
+      "name": "Moment",
+      "label": {
+        "nl": "Moment",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{B35B86D8-8CA7-4d8d-B854-BCF20D7292DE}",
+      "name": "Periode",
+      "label": {
+        "nl": "Periode",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{E6329ECD-31C7-48f7-A298-39D221E39493}",
+      "name": "Temporeleentiteit",
+      "label": {
+        "nl": "TemporeleEntiteit",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Abstracte klasse voor temporele objecten.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Die temporele objecten zijn temporele geometrische primitieven zoals Moment of Periode. Of het zijn composieten van temporele primitieven, bv om de geschiedenis van een fenomeen weer te geven (bv de opeenvolgende Periodes dat het fenomeen zich voordeed). Te gebruiken wanneer bvb beide temporele geometrische primitieven mogelijk zijn.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
       "EA-Guid": "{2E0E0282-B00D-4d3a-A436-FA0B1ED4F4F4}",
       "name": "Identificator",
       "label": {
@@ -754,6 +778,22 @@
       },
       "usage": {
         "nl": "Naar GRB-skeletoptie wegbeheer - WEM1: Puntvormige wegmarkering; WEM2: Lijnvormige wegmarkering; WEM3: Vlakvormige wegmarkering",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{0595DD01-782C-400b-BB1B-737356C0C966}",
+      "name": "Kwantitatievewaarde",
+      "label": {
+        "nl": "KwantitatieveWaarde",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Aanduiding van de kwantiteit van een bepaald kenmerk van een object.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Bv de hoogte van een object,het gewicht,de temperatuur etc. Het gaat om een kenmerk dat numeriek uitgedrukt kan worden en in een bepaalde eenheid. Kwalitatieve aanduidingen zoals hoog,laag ed vallen hier dus niet onder.",
         "de": "Enter your translation here"
       }
     },
@@ -960,6 +1000,30 @@
       }
     },
     {
+      "EA-Guid": "{F40D1518-57A3-48f8-8B10-BB3E5A52CBD8}",
+      "name": "waarde",
+      "label": {
+        "nl": "waarde",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{97C842CC-4661-475f-956A-9AF613C9CB8C}",
+      "name": "eenheid",
+      "label": {
+        "nl": "eenheid",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
       "EA-Guid": "{9EDC0169-D46C-449a-9D08-9637BB9162B8}",
       "name": "resultaat",
       "label": {
@@ -1080,6 +1144,14 @@
       }
     },
     {
+      "EA-Guid": "{A969C2A1-9459-4070-94D8-7FB37B6E3C91}",
+      "name": "resultaat",
+      "label": {
+        "nl": "resultaat",
+        "de": "Enter your translation here"
+      }
+    },
+    {
       "EA-Guid": "{AF88D0DE-3FCE-47a1-9571-D9E3918A7260}",
       "name": "geometrie",
       "label": {
@@ -1088,6 +1160,30 @@
       },
       "definition": {
         "nl": "De geometrie overeenkomstig met een bepaald object.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{DF086231-69B6-4e33-877B-971F83E8E9C0}",
+      "name": "inxsddatetime",
+      "label": {
+        "nl": "inXSDDateTime",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{F15A12AB-557C-4990-802E-DD22F903B997}",
+      "name": "tot",
+      "label": {
+        "nl": "tot",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{54B4DEDF-247A-44d6-BE29-628088630BB5}",
+      "name": "van",
+      "label": {
+        "nl": "van",
         "de": "Enter your translation here"
       }
     },
