@@ -140,7 +140,7 @@
                         "name": "Verkeersmeting",
                         "label": "Verkeersmeting",
                         "package": "OSLO-Verkeersmetingen",
-                        "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting"
+                        "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting"
                     },
                     {
                         "name": "Meting",
@@ -149,7 +149,7 @@
                         "uri": "http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement"
                     }
                 ],
-                "parentclasses": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting, http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement",
+                "parentclasses": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting, http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement",
                 "label": {
                     "nl": "Verkeerssnelheidsmeting"
                 },
@@ -182,7 +182,7 @@
             "inpackage": "ACTIVE_PACKAGE",
             "name": "Verkeerssnelheidsmeting",
             "parents": [
-                "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting",
+                "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting",
                 "http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement"
             ]
         },
@@ -212,10 +212,10 @@
                         "name": "Verkeerskenmerk",
                         "label": "Verkeerskenmerk",
                         "package": "OSLO-Verkeersmetingen",
-                        "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk"
+                        "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk"
                     }
                 ],
-                "parentclasses": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk",
+                "parentclasses": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk",
                 "label": {
                     "nl": "Verkeerssnelheidsmetingkenmerk"
                 },
@@ -258,7 +258,7 @@
             "inpackage": "ACTIVE_PACKAGE",
             "name": "Verkeerssnelheidsmetingkenmerk",
             "parents": [
-                "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk"
+                "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk"
             ]
         },
         {
@@ -287,7 +287,7 @@
                         "name": "Verkeersmeting",
                         "label": "Verkeersmeting",
                         "package": "OSLO-Verkeersmetingen",
-                        "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting"
+                        "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting"
                     },
                     {
                         "name": "Telling",
@@ -296,7 +296,7 @@
                         "uri": "http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation"
                     }
                 ],
-                "parentclasses": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting, http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation",
+                "parentclasses": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting, http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation",
                 "label": {
                     "nl": "Verkeerstelling"
                 },
@@ -329,7 +329,7 @@
             "inpackage": "ACTIVE_PACKAGE",
             "name": "Verkeerstelling",
             "parents": [
-                "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting",
+                "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting",
                 "http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation"
             ]
         },
@@ -359,10 +359,10 @@
                         "name": "Verkeerskenmerk",
                         "label": "Verkeerskenmerk",
                         "package": "OSLO-Verkeersmetingen",
-                        "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk"
+                        "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk"
                     }
                 ],
-                "parentclasses": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk",
+                "parentclasses": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk",
                 "label": {
                     "nl": "Verkeerstellingkenmerk"
                 },
@@ -405,11 +405,100 @@
             "inpackage": "ACTIVE_PACKAGE",
             "name": "Verkeerstellingkenmerk",
             "parents": [
-                "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk"
+                "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk"
             ]
         }
     ],
     "properties": [
+        {
+            "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen/#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "verkeersmeetpuntnetwerkreferentie",
+            "inpackage": "ACTIVE_PACKAGE",
+            "definition": {
+                "nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
+            },
+            "label": {
+                "nl": "verkeersmeetpuntnetwerkreferentie"
+            },
+            "ap-label-nl": {
+                "nl": "verkeersmeetpuntnetwerkreferentie"
+            },
+            "ap-definition-nl": {
+                "nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
+            },
+            "extra": {
+                "EA-Name": "verkeersmeetpuntnetwerkreferentie",
+                "EA-Guid": "{52414853-0857-4630-9CA7-3C1889B82C27}",
+                "EA-Package": "OSLO-Verkeersmetingen",
+                "EA-Type": "attribute",
+                "EA-Domain": "Verkeersmeetpunt",
+                "EA-Domain-Guid": "{84DECA56-0848-4297-A791-E0316CDC69CF}",
+                "EA-Range": "Puntreferentie",
+                "RangeData": {
+                    "EA-Name": "Puntreferentie",
+                    "EA-GUID": "{A3BFE246-F22F-427d-8A16-CC9C40EFE22E}",
+                    "EA-Package": "INSPIRE-netwerk",
+                    "uri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie"
+                },
+                "label": {
+                    "nl": "verkeersmeetpuntnetwerkreferentie"
+                },
+                "definition": {
+                    "nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
+                },
+                "usage": "",
+                "ap-label-nl": {
+                    "nl": "verkeersmeetpuntnetwerkreferentie"
+                },
+                "ap-definition-nl": {
+                    "nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
+                },
+                "ap-usageNote-nl": "",
+                "ap-codelist": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "verkeersmeetpuntnetwerkreferentie",
+                        "note": "null"
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "package",
+                        "value": "VSDS-Verkeersmetingen",
+                        "note": "null"
+                    },
+                    {
+                        "key": "uri",
+                        "value": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen/#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "FULL_DEFINITON"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt",
+                    "EA-Name": "Verkeersmeetpunt"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Puntreferentie",
+                    "EA-GUID": "{A3BFE246-F22F-427d-8A16-CC9C40EFE22E}",
+                    "EA-Package": "INSPIRE-netwerk",
+                    "uri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "1",
+            "maxCardinality": "1"
+        },
         {
             "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk.kenmerktype",
             "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
@@ -2603,683 +2692,6 @@
             "name": "Procedure"
         },
         {
-            "@id": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersbemonsteringsobject",
-            "@type": "http://www.w3.org/2002/07/owl#Class",
-            "inpackage": "OTHER_PACKAGE",
-            "ap-usageNote-nl": {
-                "nl": "Van belang als men dit object niet rechtstreeks kan observeren. Bvb om de snelheid ve Voertuig te bepalen kan men moeilijk dat Voertuig gaan volgen, in plaats daarvan zet men een meetpunt op langs de weg om te zien hoe snel passerende Voertuigen rijden. Gelijkaardig voor bvb verkeersintensiteit: men telt in een meetpunt langs de weg doorkomsten van Voertuigen en gaat ervan uit dat dit cijfer representatief is voor  het Wegsegment (deel van de weg tussen twee opeenvolgende kruispunten). OPGELET: Deze klasse is abstract, ze mag niet geinstantieerd worden. Gebruik in de plaats de subklassen Verkeersmeetpunt of Verkeersmeettraject"
-            },
-            "usage": {
-                "nl": "Van belang als men dit object niet rechtstreeks kan observeren. Bvb om de snelheid ve Voertuig te bepalen kan men moeilijk dat Voertuig gaan volgen, in plaats daarvan zet men een meetpunt op langs de weg om te zien hoe snel passerende Voertuigen rijden. Gelijkaardig voor bvb verkeersintensiteit: men telt in een meetpunt langs de weg doorkomsten van Voertuigen en gaat ervan uit dat dit cijfer representatief is voor  het Wegsegment (deel van de weg tussen twee opeenvolgende kruispunten). OPGELET: Deze klasse is abstract, ze mag niet geinstantieerd worden. Gebruik in de plaats de subklassen Verkeersmeetpunt of Verkeersmeettraject"
-            },
-            "definition": {
-                "nl": "Object dat representatief is voor het object waarvan men het Verkeerskenmerk meet."
-            },
-            "label": {
-                "nl": "Verkeersbemonsteringsobject"
-            },
-            "ap-label-nl": {
-                "nl": "Verkeersbemonsteringsobject"
-            },
-            "ap-definition-nl": {
-                "nl": "Object dat representatief is voor het object waarvan men het Verkeerskenmerk meet."
-            },
-            "extra": {
-                "EA-Name": "Verkeersbemonsteringsobject",
-                "EA-Guid": "{CFE067A0-8DA9-40db-AF71-DC32C871721F}",
-                "EA-Package": "OSLO-Verkeersmetingen",
-                "EA-Type": "CLASS",
-                "EA-Parents": "Verkeersobject",
-                "EA-Parents2": [
-                    {
-                        "name": "Verkeersobject",
-                        "label": "Verkeersobject",
-                        "package": "OSLO-Verkeersmetingen",
-                        "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersobject"
-                    },
-                    {
-                        "name": "Bemonsteringsobject",
-                        "label": "Bemonsteringsobject",
-                        "package": "ISO",
-                        "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature"
-                    }
-                ],
-                "parentclasses": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersobject, http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature",
-                "label": {
-                    "nl": "Verkeersbemonsteringsobject"
-                },
-                "definition": {
-                    "nl": "Object dat representatief is voor het object waarvan men het Verkeerskenmerk meet."
-                },
-                "usage": {
-                    "nl": "Van belang als men dit object niet rechtstreeks kan observeren. Bvb om de snelheid ve Voertuig te bepalen kan men moeilijk dat Voertuig gaan volgen, in plaats daarvan zet men een meetpunt op langs de weg om te zien hoe snel passerende Voertuigen rijden. Gelijkaardig voor bvb verkeersintensiteit: men telt in een meetpunt langs de weg doorkomsten van Voertuigen en gaat ervan uit dat dit cijfer representatief is voor  het Wegsegment (deel van de weg tussen twee opeenvolgende kruispunten). OPGELET: Deze klasse is abstract, ze mag niet geinstantieerd worden. Gebruik in de plaats de subklassen Verkeersmeetpunt of Verkeersmeettraject"
-                },
-                "ap-label-nl": {
-                    "nl": "Verkeersbemonsteringsobject"
-                },
-                "ap-definition-nl": {
-                    "nl": "Object dat representatief is voor het object waarvan men het Verkeerskenmerk meet."
-                },
-                "ap-usageNote-nl": {
-                    "nl": "Van belang als men dit object niet rechtstreeks kan observeren. Bvb om de snelheid ve Voertuig te bepalen kan men moeilijk dat Voertuig gaan volgen, in plaats daarvan zet men een meetpunt op langs de weg om te zien hoe snel passerende Voertuigen rijden. Gelijkaardig voor bvb verkeersintensiteit: men telt in een meetpunt langs de weg doorkomsten van Voertuigen en gaat ervan uit dat dit cijfer representatief is voor  het Wegsegment (deel van de weg tussen twee opeenvolgende kruispunten). OPGELET: Deze klasse is abstract, ze mag niet geinstantieerd worden. Gebruik in de plaats de subklassen Verkeersmeetpunt of Verkeersmeettraject"
-                },
-                "ap-codelist": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "Verkeersbemonsteringsobject",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-label-nl",
-                        "value": "Verkeersbemonsteringsobject",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Object dat representatief is voor het object waarvan men het Verkeerskenmerk meet.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "NOTE",
-                        "note": "Van belang als men dit object niet rechtstreeks kan observeren. Bvb om de snelheid ve Voertuig te bepalen kan men moeilijk dat Voertuig gaan volgen, in plaats daarvan zet men een meetpunt op langs de weg om te zien hoe snel passerende Voertuigen rijden. Gelijkaardig voor bvb verkeersintensiteit: men telt in een meetpunt langs de weg doorkomsten van Voertuigen en gaat ervan uit dat dit cijfer representatief is voor  het Wegsegment (deel van de weg tussen twee opeenvolgende kruispunten). OPGELET: Deze klasse is abstract, ze mag niet geinstantieerd worden. Gebruik in de plaats de subklassen Verkeersmeetpunt of Verkeersmeettraject"
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "Object dat representatief is voor het object waarvan men het Verkeerskenmerk meet.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "usageNote-nl",
-                        "value": "NOTE",
-                        "note": "Van belang als men dit object niet rechtstreeks kan observeren. Bvb om de snelheid ve Voertuig te bepalen kan men moeilijk dat Voertuig gaan volgen, in plaats daarvan zet men een meetpunt op langs de weg om te zien hoe snel passerende Voertuigen rijden. Gelijkaardig voor bvb verkeersintensiteit: men telt in een meetpunt langs de weg doorkomsten van Voertuigen en gaat ervan uit dat dit cijfer representatief is voor  het Wegsegment (deel van de weg tussen twee opeenvolgende kruispunten). OPGELET: Deze klasse is abstract, ze mag niet geinstantieerd worden. Gebruik in de plaats de subklassen Verkeersmeetpunt of Verkeersmeettraject"
-                    },
-                    {
-                        "key": "package",
-                        "value": "OSLO-Verkeersmetingen",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "NOTHING"
-            },
-            "name": "Verkeersbemonsteringsobject"
-        },
-        {
-            "@id": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersdomeinobject",
-            "@type": "http://www.w3.org/2002/07/owl#Class",
-            "inpackage": "OTHER_PACKAGE",
-            "ap-usageNote-nl": {
-                "nl": "Hieronder verstaan we een real-world object uit het verkeer, ttz een Voertuig of Verkeersdeelnemer of een Wegsegment of gelijkaardig waarover verkeer plaatsvindt. Vallen hier niet onder: Verkeersbemonsteringsobjecten zoals Verkeersmeetpunten of Verkeersmeettrajecten, dat zijn de objecten die het Verkeersdomein bemonsteren. OPGELET: Deze klasse is abstract, ze mag maw niet geinstantieerd worden. Gebruik in de plaats subklassen zoal Wegsegment, Rijstrook, Voertuig etc."
-            },
-            "usage": {
-                "nl": "Hieronder verstaan we een real-world object uit het verkeer, ttz een Voertuig of Verkeersdeelnemer of een Wegsegment of gelijkaardig waarover verkeer plaatsvindt. Vallen hier niet onder: Verkeersbemonsteringsobjecten zoals Verkeersmeetpunten of Verkeersmeettrajecten, dat zijn de objecten die het Verkeersdomein bemonsteren. OPGELET: Deze klasse is abstract, ze mag maw niet geinstantieerd worden. Gebruik in de plaats subklassen zoal Wegsegment, Rijstrook, Voertuig etc."
-            },
-            "definition": {
-                "nl": "Object uit het verkeersdomein waarvan men een Verkeerskenmerk meet."
-            },
-            "label": {
-                "nl": "Verkeersdomeinobject"
-            },
-            "ap-label-nl": {
-                "nl": "Verkeersdomeinobject"
-            },
-            "ap-definition-nl": {
-                "nl": "Object uit het verkeersdomein waarvan men een Verkeerskenmerk meet."
-            },
-            "extra": {
-                "EA-Name": "Verkeersdomeinobject",
-                "EA-Guid": "{2E48BB96-557B-4b70-A841-96C9488ACB0C}",
-                "EA-Package": "OSLO-Verkeersmetingen",
-                "EA-Type": "CLASS",
-                "EA-Parents": "Verkeersobject",
-                "EA-Parents2": [
-                    {
-                        "name": "Verkeersobject",
-                        "label": "Verkeersobject",
-                        "package": "OSLO-Verkeersmetingen",
-                        "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersobject"
-                    },
-                    {
-                        "name": "Domeinobject",
-                        "label": "",
-                        "package": "ISO",
-                        "uri": "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature"
-                    }
-                ],
-                "parentclasses": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersobject, http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature",
-                "label": {
-                    "nl": "Verkeersdomeinobject"
-                },
-                "definition": {
-                    "nl": "Object uit het verkeersdomein waarvan men een Verkeerskenmerk meet."
-                },
-                "usage": {
-                    "nl": "Hieronder verstaan we een real-world object uit het verkeer, ttz een Voertuig of Verkeersdeelnemer of een Wegsegment of gelijkaardig waarover verkeer plaatsvindt. Vallen hier niet onder: Verkeersbemonsteringsobjecten zoals Verkeersmeetpunten of Verkeersmeettrajecten, dat zijn de objecten die het Verkeersdomein bemonsteren. OPGELET: Deze klasse is abstract, ze mag maw niet geinstantieerd worden. Gebruik in de plaats subklassen zoal Wegsegment, Rijstrook, Voertuig etc."
-                },
-                "ap-label-nl": {
-                    "nl": "Verkeersdomeinobject"
-                },
-                "ap-definition-nl": {
-                    "nl": "Object uit het verkeersdomein waarvan men een Verkeerskenmerk meet."
-                },
-                "ap-usageNote-nl": {
-                    "nl": "Hieronder verstaan we een real-world object uit het verkeer, ttz een Voertuig of Verkeersdeelnemer of een Wegsegment of gelijkaardig waarover verkeer plaatsvindt. Vallen hier niet onder: Verkeersbemonsteringsobjecten zoals Verkeersmeetpunten of Verkeersmeettrajecten, dat zijn de objecten die het Verkeersdomein bemonsteren. OPGELET: Deze klasse is abstract, ze mag maw niet geinstantieerd worden. Gebruik in de plaats subklassen zoal Wegsegment, Rijstrook, Voertuig etc."
-                },
-                "ap-codelist": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "Verkeersdomeinobject",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-label-nl",
-                        "value": "Verkeersdomeinobject",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Object uit het verkeersdomein waarvan men een Verkeerskenmerk meet.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "NOTE",
-                        "note": "Hieronder verstaan we een real-world object uit het verkeer, ttz een Voertuig of Verkeersdeelnemer of een Wegsegment of gelijkaardig waarover verkeer plaatsvindt. Vallen hier niet onder: Verkeersbemonsteringsobjecten zoals Verkeersmeetpunten of Verkeersmeettrajecten, dat zijn de objecten die het Verkeersdomein bemonsteren. OPGELET: Deze klasse is abstract, ze mag maw niet geinstantieerd worden. Gebruik in de plaats subklassen zoal Wegsegment, Rijstrook, Voertuig etc."
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "Object uit het verkeersdomein waarvan men een Verkeerskenmerk meet.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "usageNote-nl",
-                        "value": "NOTE",
-                        "note": "Hieronder verstaan we een real-world object uit het verkeer, ttz een Voertuig of Verkeersdeelnemer of een Wegsegment of gelijkaardig waarover verkeer plaatsvindt. Vallen hier niet onder: Verkeersbemonsteringsobjecten zoals Verkeersmeetpunten of Verkeersmeettrajecten, dat zijn de objecten die het Verkeersdomein bemonsteren. OPGELET: Deze klasse is abstract, ze mag maw niet geinstantieerd worden. Gebruik in de plaats subklassen zoal Wegsegment, Rijstrook, Voertuig etc."
-                    },
-                    {
-                        "key": "package",
-                        "value": "OSLO-Verkeersmetingen",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "NOTHING"
-            },
-            "name": "Verkeersdomeinobject"
-        },
-        {
-            "@id": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk",
-            "@type": "http://www.w3.org/2002/07/owl#Class",
-            "inpackage": "OTHER_PACKAGE",
-            "usage": {
-                "nl": "Bvb de gemiddelde snelheid van auto's langs een Meetpunt of de verkeersIntensiteit van fietsen op een Wegsegment bvb uitgedrukt in aantal voertuigen of de snelheid van een individueel Voertuig etc."
-            },
-            "definition": {
-                "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
-            },
-            "label": {
-                "nl": "Verkeerskenmerk"
-            },
-            "ap-label-nl": {
-                "nl": "Verkeerskenmerk"
-            },
-            "ap-definition-nl": {
-                "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
-            },
-            "extra": {
-                "EA-Name": "Verkeerskenmerk",
-                "EA-Guid": "{CCF671D1-65E5-4164-80DC-A55676E447D2}",
-                "EA-Package": "OSLO-Verkeersmetingen",
-                "EA-Type": "CLASS",
-                "EA-Parents": "",
-                "EA-Parents2": [
-                    {
-                        "name": "Kenmerktype",
-                        "label": "",
-                        "package": "ISO",
-                        "uri": "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType"
-                    }
-                ],
-                "parentclasses": "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType",
-                "label": {
-                    "nl": "Verkeerskenmerk"
-                },
-                "definition": {
-                    "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
-                },
-                "usage": {
-                    "nl": "Bvb de gemiddelde snelheid van auto's langs een Meetpunt of de verkeersIntensiteit van fietsen op een Wegsegment bvb uitgedrukt in aantal voertuigen of de snelheid van een individueel Voertuig etc."
-                },
-                "ap-label-nl": {
-                    "nl": "Verkeerskenmerk"
-                },
-                "ap-definition-nl": {
-                    "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
-                },
-                "ap-usageNote-nl": "",
-                "ap-codelist": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "Verkeerskenmerk",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-label-nl",
-                        "value": "Verkeerskenmerk",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "usageNote-nl",
-                        "value": "Bvb de gemiddelde snelheid van auto's langs een Meetpunt of de verkeersIntensiteit van fietsen op een Wegsegment bvb uitgedrukt in aantal voertuigen of de snelheid van een individueel Voertuig etc.",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "NOTHING"
-            },
-            "name": "Verkeerskenmerk"
-        },
-        {
-            "@id": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeetpunt",
-            "@type": "http://www.w3.org/2002/07/owl#Class",
-            "inpackage": "OTHER_PACKAGE",
-            "ap-usageNote-nl": {
-                "nl": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft."
-            },
-            "usage": {
-                "nl": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft."
-            },
-            "definition": {
-                "nl": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet."
-            },
-            "label": {
-                "nl": "Verkeersmeetpunt"
-            },
-            "ap-label-nl": {
-                "nl": "Verkeersmeetpunt"
-            },
-            "ap-definition-nl": {
-                "nl": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet."
-            },
-            "extra": {
-                "EA-Name": "Verkeersmeetpunt",
-                "EA-Guid": "{84DECA56-0848-4297-A791-E0316CDC69CF}",
-                "EA-Package": "OSLO-Verkeersmetingen",
-                "EA-Type": "CLASS",
-                "EA-Parents": "Verkeersbemonsteringsobject",
-                "EA-Parents2": [
-                    {
-                        "name": "Verkeersbemonsteringsobject",
-                        "label": "Verkeersbemonsteringsobject",
-                        "package": "OSLO-Verkeersmetingen",
-                        "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersbemonsteringsobject"
-                    },
-                    {
-                        "name": "Bemonsteringspunt",
-                        "label": "Bemonsteringspunt",
-                        "package": "OSLO-ObservatiesEnMetingen",
-                        "uri": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint"
-                    }
-                ],
-                "parentclasses": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersbemonsteringsobject, http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint",
-                "label": {
-                    "nl": "Verkeersmeetpunt"
-                },
-                "definition": {
-                    "nl": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet."
-                },
-                "usage": {
-                    "nl": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft."
-                },
-                "ap-label-nl": {
-                    "nl": "Verkeersmeetpunt"
-                },
-                "ap-definition-nl": {
-                    "nl": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet."
-                },
-                "ap-usageNote-nl": {
-                    "nl": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft."
-                },
-                "ap-codelist": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "Verkeersmeetpunt",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-label-nl",
-                        "value": "Verkeersmeetpunt",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "usageNote-nl",
-                        "value": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft.",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "NOTHING"
-            },
-            "name": "Verkeersmeetpunt"
-        },
-        {
-            "@id": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting",
-            "@type": "http://www.w3.org/2002/07/owl#Class",
-            "inpackage": "OTHER_PACKAGE",
-            "ap-usageNote-nl": {
-                "nl": "Verkeer wordt gedefinieerd als de verplaatsing van objecten zoals personen, vracht, data etc over media zoals land, water, lucht, kabels. In de context van dit applicatieprofiel bedoelen we met verkeer het wegverkeer. Verkeer kan betrekking hebben op objecten die zichzelf verplaatsen (al dan niet met een vervoermiddel) of objecten die vervoerd worden, maar ook op objecten waarover verkeer plaatsvindt. De meting kan het vaststellen van de waarde van een kenmerk van een individueel Voertuig of Verkeersdeelnemer tijdens zijn verplaatsing zijn (bvb zijn snelheid of nummerplaat) of van een kenmerk van de infrastructuur zoals een Wegsegment of een Rijstrook waarover het verkeer zich beweegt (bv de verkeersintensiteit). Verkeersmetingen  zijn Observaties, maw op de waarde zit een zekere foutmarge door de gebruikte meettechniek.\n"
-            },
-            "usage": {
-                "nl": "Verkeer wordt gedefinieerd als de verplaatsing van objecten zoals personen, vracht, data etc over media zoals land, water, lucht, kabels. In de context van dit applicatieprofiel bedoelen we met verkeer het wegverkeer. Verkeer kan betrekking hebben op objecten die zichzelf verplaatsen (al dan niet met een vervoermiddel) of objecten die vervoerd worden, maar ook op objecten waarover verkeer plaatsvindt. De meting kan het vaststellen van de waarde van een kenmerk van een individueel Voertuig of Verkeersdeelnemer tijdens zijn verplaatsing zijn (bvb zijn snelheid of nummerplaat) of van een kenmerk van de infrastructuur zoals een Wegsegment of een Rijstrook waarover het verkeer zich beweegt (bv de verkeersintensiteit). Verkeersmetingen  zijn Observaties, maw op de waarde zit een zekere foutmarge door de gebruikte meettechniek.\n"
-            },
-            "definition": {
-                "nl": "Het vaststellen van de waarde van een bepaald kenmerk van het verkeer op een bepaald tijdstip of tussen twee tijdstippen."
-            },
-            "label": {
-                "nl": "Verkeersmeting"
-            },
-            "ap-label-nl": {
-                "nl": "Verkeersmeting"
-            },
-            "ap-definition-nl": {
-                "nl": "Het vaststellen van de waarde van een bepaald kenmerk van het verkeer op een bepaald tijdstip of tussen twee tijdstippen."
-            },
-            "extra": {
-                "EA-Name": "Verkeersmeting",
-                "EA-Guid": "{629A009C-848B-463b-AA2C-272DB667D354}",
-                "EA-Package": "OSLO-Verkeersmetingen",
-                "EA-Type": "CLASS",
-                "EA-Parents": "",
-                "EA-Parents2": [
-                    {
-                        "name": "Observatie",
-                        "label": "Observatie",
-                        "package": "ISO",
-                        "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation"
-                    }
-                ],
-                "parentclasses": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation",
-                "label": {
-                    "nl": "Verkeersmeting"
-                },
-                "definition": {
-                    "nl": "Het vaststellen van de waarde van een bepaald kenmerk van het verkeer op een bepaald tijdstip of tussen twee tijdstippen."
-                },
-                "usage": {
-                    "nl": "Verkeer wordt gedefinieerd als de verplaatsing van objecten zoals personen, vracht, data etc over media zoals land, water, lucht, kabels. In de context van dit applicatieprofiel bedoelen we met verkeer het wegverkeer. Verkeer kan betrekking hebben op objecten die zichzelf verplaatsen (al dan niet met een vervoermiddel) of objecten die vervoerd worden, maar ook op objecten waarover verkeer plaatsvindt. De meting kan het vaststellen van de waarde van een kenmerk van een individueel Voertuig of Verkeersdeelnemer tijdens zijn verplaatsing zijn (bvb zijn snelheid of nummerplaat) of van een kenmerk van de infrastructuur zoals een Wegsegment of een Rijstrook waarover het verkeer zich beweegt (bv de verkeersintensiteit). Verkeersmetingen  zijn Observaties, maw op de waarde zit een zekere foutmarge door de gebruikte meettechniek.\n"
-                },
-                "ap-label-nl": {
-                    "nl": "Verkeersmeting"
-                },
-                "ap-definition-nl": {
-                    "nl": "Het vaststellen van de waarde van een bepaald kenmerk van het verkeer op een bepaald tijdstip of tussen twee tijdstippen."
-                },
-                "ap-usageNote-nl": {
-                    "nl": "Verkeer wordt gedefinieerd als de verplaatsing van objecten zoals personen, vracht, data etc over media zoals land, water, lucht, kabels. In de context van dit applicatieprofiel bedoelen we met verkeer het wegverkeer. Verkeer kan betrekking hebben op objecten die zichzelf verplaatsen (al dan niet met een vervoermiddel) of objecten die vervoerd worden, maar ook op objecten waarover verkeer plaatsvindt. De meting kan het vaststellen van de waarde van een kenmerk van een individueel Voertuig of Verkeersdeelnemer tijdens zijn verplaatsing zijn (bvb zijn snelheid of nummerplaat) of van een kenmerk van de infrastructuur zoals een Wegsegment of een Rijstrook waarover het verkeer zich beweegt (bv de verkeersintensiteit). Verkeersmetingen  zijn Observaties, maw op de waarde zit een zekere foutmarge door de gebruikte meettechniek.\n"
-                },
-                "ap-codelist": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "Verkeersmeting",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-label-nl",
-                        "value": "Verkeersmeting",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Het vaststellen van de waarde van een bepaald kenmerk van het verkeer op een bepaald tijdstip of tussen twee tijdstippen.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "NOTE",
-                        "note": "Verkeer wordt gedefinieerd als de verplaatsing van objecten zoals personen, vracht, data etc over media zoals land, water, lucht, kabels. In de context van dit applicatieprofiel bedoelen we met verkeer het wegverkeer. Verkeer kan betrekking hebben op objecten die zichzelf verplaatsen (al dan niet met een vervoermiddel) of objecten die vervoerd worden, maar ook op objecten waarover verkeer plaatsvindt. De meting kan het vaststellen van de waarde van een kenmerk van een individueel Voertuig of Verkeersdeelnemer tijdens zijn verplaatsing zijn (bvb zijn snelheid of nummerplaat) of van een kenmerk van de infrastructuur zoals een Wegsegment of een Rijstrook waarover het verkeer zich beweegt (bv de verkeersintensiteit). Verkeersmetingen  zijn Observaties, maw op de waarde zit een zekere foutmarge door de gebruikte meettechniek.\n"
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "Het vaststellen van de waarde van een bepaald kenmerk van het verkeer op een bepaald tijdstip of tussen twee tijdstippen.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "usageNote-nl",
-                        "value": "NOTE",
-                        "note": "Verkeer wordt gedefinieerd als de verplaatsing van objecten zoals personen, vracht, data etc over media zoals land, water, lucht, kabels. Verkeer kan betrekking hebben op objecten die zichzelf verplaatsen (al dan niet met een vervoermiddel) of objecten die vervoerd worden, maar ook op objecten waarover verkeer plaatsvindt. De meting kan het vaststellen van de waarde van een kenmerk van een individueel object tijdens zijn verplaatsing zijn (bvb zijn snelheid) of van een kenmerk van de infrastructuur waarover het verkeer zich beweegt (bv de verkeersintensiteit). Verkeersmetingen  zijn Observaties, maw op de waarde zit een zekere foutmarge door de gebruikte meettechniek.\n"
-                    },
-                    {
-                        "key": "package",
-                        "value": "OSLO-Verkeersmetingen",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "NOTHING"
-            },
-            "name": "Verkeersmeting"
-        },
-        {
-            "@id": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersobject",
-            "@type": "http://www.w3.org/2002/07/owl#Class",
-            "inpackage": "OTHER_PACKAGE",
-            "ap-usageNote-nl": {
-                "nl": "OPGELET: Deze klasse is abstract, ze moet gespecialiseerd worden als Verkeersdomeinobject of als Verkeersbemonsteringsobject. Als Verkeersdomeinobject als de meting direct betrekking heeft op het object dat men wil observeren (bvb een Wegsegment of een Voertuig etc) of als Verkeersbemonsteringsobject als de meting onrechtstreeks gebeurt (bvb via een Verkeersmeetpunt gelegen langs een Wegsegment)."
-            },
-            "usage": {
-                "nl": "OPGELET: Deze klasse is abstract, ze moet gespecialiseerd worden als Verkeersdomeinobject of als Verkeersbemonsteringsobject. Als Verkeersdomeinobject als de meting direct betrekking heeft op het object dat men wil observeren (bvb een Wegsegment of een Voertuig etc) of als Verkeersbemonsteringsobject als de meting onrechtstreeks gebeurt (bvb via een Verkeersmeetpunt gelegen langs een Wegsegment)."
-            },
-            "definition": {
-                "nl": "Object waarop of waarlangs zich verkeer voordoet of dat deel uitmaakt vh verkeer."
-            },
-            "label": {
-                "nl": "Verkeersobject"
-            },
-            "ap-label-nl": {
-                "nl": "Verkeersobject"
-            },
-            "ap-definition-nl": {
-                "nl": "Object waarop of waarlangs zich verkeer voordoet of dat deel uitmaakt vh verkeer."
-            },
-            "extra": {
-                "EA-Name": "Verkeersobject",
-                "EA-Guid": "{5E405CE5-6BD2-4f40-B346-162D1D3D4C85}",
-                "EA-Package": "OSLO-Verkeersmetingen",
-                "EA-Type": "CLASS",
-                "EA-Parents": "",
-                "EA-Parents2": [
-                    {
-                        "name": "Object",
-                        "label": "",
-                        "package": "ISO",
-                        "uri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature"
-                    }
-                ],
-                "parentclasses": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
-                "label": {
-                    "nl": "Verkeersobject"
-                },
-                "definition": {
-                    "nl": "Object waarop of waarlangs zich verkeer voordoet of dat deel uitmaakt vh verkeer."
-                },
-                "usage": {
-                    "nl": "OPGELET: Deze klasse is abstract, ze moet gespecialiseerd worden als Verkeersdomeinobject of als Verkeersbemonsteringsobject. Als Verkeersdomeinobject als de meting direct betrekking heeft op het object dat men wil observeren (bvb een Wegsegment of een Voertuig etc) of als Verkeersbemonsteringsobject als de meting onrechtstreeks gebeurt (bvb via een Verkeersmeetpunt gelegen langs een Wegsegment)."
-                },
-                "ap-label-nl": {
-                    "nl": "Verkeersobject"
-                },
-                "ap-definition-nl": {
-                    "nl": "Object waarop of waarlangs zich verkeer voordoet of dat deel uitmaakt vh verkeer."
-                },
-                "ap-usageNote-nl": {
-                    "nl": "OPGELET: Deze klasse is abstract, ze moet gespecialiseerd worden als Verkeersdomeinobject of als Verkeersbemonsteringsobject. Als Verkeersdomeinobject als de meting direct betrekking heeft op het object dat men wil observeren (bvb een Wegsegment of een Voertuig etc) of als Verkeersbemonsteringsobject als de meting onrechtstreeks gebeurt (bvb via een Verkeersmeetpunt gelegen langs een Wegsegment)."
-                },
-                "ap-codelist": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "Verkeersobject",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-label-nl",
-                        "value": "Verkeersobject",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Object waarop of waarlangs zich verkeer voordoet of dat deel uitmaakt vh verkeer.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "NOTE",
-                        "note": "OPGELET: Deze klasse is abstract, ze moet gespecialiseerd worden als Verkeersdomeinobject of als Verkeersbemonsteringsobject. Als Verkeersdomeinobject als de meting direct betrekking heeft op het object dat men wil observeren (bvb een Wegsegment of een Voertuig etc) of als Verkeersbemonsteringsobject als de meting onrechtstreeks gebeurt (bvb via een Verkeersmeetpunt gelegen langs een Wegsegment)."
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "Object waarop of waarlangs zich verkeer voordoet of dat deel uitmaakt vh verkeer.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "usageNote-nl",
-                        "value": "NOTE",
-                        "note": "OPGELET: Deze klasse is abstract, ze moet gespecialiseerd worden als Verkeersdomeinobject of als Verkeersbemonsteringsobject. Als Verkeersdomeinobject als de meting direct betrekking heeft op het object dat men wil observeren of als Verkeersbemonsteringsobject als de meting onrechtstreeks gebeurt (bvb via een Verkeersmeetpunt)."
-                    },
-                    {
-                        "key": "package",
-                        "value": "OSLO-Verkeersmetingen",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "NOTHING"
-            },
-            "name": "Verkeersobject"
-        },
-        {
-            "@id": "https://data.vlaanderen.be/ns/Verkeersmetingen#Wegobject",
-            "@type": "http://www.w3.org/2002/07/owl#Class",
-            "inpackage": "OTHER_PACKAGE",
-            "ap-usageNote-nl": {
-                "nl": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken."
-            },
-            "usage": {
-                "nl": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken."
-            },
-            "definition": {
-                "nl": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt."
-            },
-            "label": {
-                "nl": "Wegobject"
-            },
-            "ap-label-nl": {
-                "nl": "Wegobject"
-            },
-            "ap-definition-nl": {
-                "nl": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt."
-            },
-            "extra": {
-                "EA-Name": "Wegobject",
-                "EA-Guid": "{76494F4F-E122-4dfb-8EA0-84FF3C4EF761}",
-                "EA-Package": "INSPIRE-Weg",
-                "EA-Type": "CLASS",
-                "EA-Parents": "Verkeersdomeinobject",
-                "EA-Parents2": [
-                    {
-                        "name": "Verkeersdomeinobject",
-                        "label": "Verkeersdomeinobject",
-                        "package": "OSLO-Verkeersmetingen",
-                        "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersdomeinobject"
-                    }
-                ],
-                "parentclasses": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersdomeinobject",
-                "label": {
-                    "nl": "Wegobject"
-                },
-                "definition": {
-                    "nl": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt."
-                },
-                "usage": {
-                    "nl": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken."
-                },
-                "ap-label-nl": {
-                    "nl": "Wegobject"
-                },
-                "ap-definition-nl": {
-                    "nl": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt."
-                },
-                "ap-usageNote-nl": {
-                    "nl": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken."
-                },
-                "ap-codelist": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "Wegobject",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-label-nl",
-                        "value": "Wegobject",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "usageNote-nl",
-                        "value": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "package",
-                        "value": "OSLO-Verkeersmetingen",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "NOTHING"
-            },
-            "name": "Wegobject"
-        },
-        {
             "@id": "https://data.vlaanderen.be/ns/netwerk#LineaireReferentie",
             "@type": "http://www.w3.org/2002/07/owl#Class",
             "inpackage": "OTHER_PACKAGE",
@@ -3801,6 +3213,688 @@
             "name": "Transportlink"
         },
         {
+            "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersbemonsteringsobject",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "inpackage": "OTHER_PACKAGE",
+            "ap-usageNote-nl": {
+                "nl": "Van belang als men dit object niet rechtstreeks kan observeren. Bvb om de snelheid ve Voertuig te bepalen kan men moeilijk dat Voertuig gaan volgen, in plaats daarvan zet men een meetpunt op langs de weg om te zien hoe snel passerende Voertuigen rijden. Gelijkaardig voor bvb verkeersintensiteit: men telt in een meetpunt langs de weg doorkomsten van Voertuigen en gaat ervan uit dat dit cijfer representatief is voor  het Wegsegment (deel van de weg tussen twee opeenvolgende kruispunten). OPGELET: Deze klasse is abstract, ze mag niet geinstantieerd worden. Gebruik in de plaats de subklassen Verkeersmeetpunt of Verkeersmeettraject"
+            },
+            "usage": {
+                "nl": "Van belang als men dit object niet rechtstreeks kan observeren. Bvb om de snelheid ve Voertuig te bepalen kan men moeilijk dat Voertuig gaan volgen, in plaats daarvan zet men een meetpunt op langs de weg om te zien hoe snel passerende Voertuigen rijden. Gelijkaardig voor bvb verkeersintensiteit: men telt in een meetpunt langs de weg doorkomsten van Voertuigen en gaat ervan uit dat dit cijfer representatief is voor  het Wegsegment (deel van de weg tussen twee opeenvolgende kruispunten). OPGELET: Deze klasse is abstract, ze mag niet geinstantieerd worden. Gebruik in de plaats de subklassen Verkeersmeetpunt of Verkeersmeettraject"
+            },
+            "definition": {
+                "nl": "Object dat representatief is voor het object waarvan men het Verkeerskenmerk meet."
+            },
+            "label": {
+                "nl": "Verkeersbemonsteringsobject"
+            },
+            "ap-label-nl": {
+                "nl": "Verkeersbemonsteringsobject"
+            },
+            "ap-definition-nl": {
+                "nl": "Object dat representatief is voor het object waarvan men het Verkeerskenmerk meet."
+            },
+            "extra": {
+                "EA-Name": "Verkeersbemonsteringsobject",
+                "EA-Guid": "{CFE067A0-8DA9-40db-AF71-DC32C871721F}",
+                "EA-Package": "OSLO-Verkeersmetingen",
+                "EA-Type": "CLASS",
+                "EA-Parents": "Verkeersobject",
+                "EA-Parents2": [
+                    {
+                        "name": "Verkeersobject",
+                        "label": "Verkeersobject",
+                        "package": "OSLO-Verkeersmetingen",
+                        "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersobject"
+                    },
+                    {
+                        "name": "Bemonsteringsobject",
+                        "label": "Bemonsteringsobject",
+                        "package": "ISO",
+                        "uri": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature"
+                    }
+                ],
+                "parentclasses": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersobject, http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature",
+                "label": {
+                    "nl": "Verkeersbemonsteringsobject"
+                },
+                "definition": {
+                    "nl": "Object dat representatief is voor het object waarvan men het Verkeerskenmerk meet."
+                },
+                "usage": {
+                    "nl": "Van belang als men dit object niet rechtstreeks kan observeren. Bvb om de snelheid ve Voertuig te bepalen kan men moeilijk dat Voertuig gaan volgen, in plaats daarvan zet men een meetpunt op langs de weg om te zien hoe snel passerende Voertuigen rijden. Gelijkaardig voor bvb verkeersintensiteit: men telt in een meetpunt langs de weg doorkomsten van Voertuigen en gaat ervan uit dat dit cijfer representatief is voor  het Wegsegment (deel van de weg tussen twee opeenvolgende kruispunten). OPGELET: Deze klasse is abstract, ze mag niet geinstantieerd worden. Gebruik in de plaats de subklassen Verkeersmeetpunt of Verkeersmeettraject"
+                },
+                "ap-label-nl": {
+                    "nl": "Verkeersbemonsteringsobject"
+                },
+                "ap-definition-nl": {
+                    "nl": "Object dat representatief is voor het object waarvan men het Verkeerskenmerk meet."
+                },
+                "ap-usageNote-nl": {
+                    "nl": "Van belang als men dit object niet rechtstreeks kan observeren. Bvb om de snelheid ve Voertuig te bepalen kan men moeilijk dat Voertuig gaan volgen, in plaats daarvan zet men een meetpunt op langs de weg om te zien hoe snel passerende Voertuigen rijden. Gelijkaardig voor bvb verkeersintensiteit: men telt in een meetpunt langs de weg doorkomsten van Voertuigen en gaat ervan uit dat dit cijfer representatief is voor  het Wegsegment (deel van de weg tussen twee opeenvolgende kruispunten). OPGELET: Deze klasse is abstract, ze mag niet geinstantieerd worden. Gebruik in de plaats de subklassen Verkeersmeetpunt of Verkeersmeettraject"
+                },
+                "ap-codelist": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "Verkeersbemonsteringsobject",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "Verkeersbemonsteringsobject",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "Object dat representatief is voor het object waarvan men het Verkeerskenmerk meet.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-usageNote-nl",
+                        "value": "NOTE",
+                        "note": "Van belang als men dit object niet rechtstreeks kan observeren. Bvb om de snelheid ve Voertuig te bepalen kan men moeilijk dat Voertuig gaan volgen, in plaats daarvan zet men een meetpunt op langs de weg om te zien hoe snel passerende Voertuigen rijden. Gelijkaardig voor bvb verkeersintensiteit: men telt in een meetpunt langs de weg doorkomsten van Voertuigen en gaat ervan uit dat dit cijfer representatief is voor  het Wegsegment (deel van de weg tussen twee opeenvolgende kruispunten). OPGELET: Deze klasse is abstract, ze mag niet geinstantieerd worden. Gebruik in de plaats de subklassen Verkeersmeetpunt of Verkeersmeettraject"
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "Object dat representatief is voor het object waarvan men het Verkeerskenmerk meet.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "usageNote-nl",
+                        "value": "NOTE",
+                        "note": "Van belang als men dit object niet rechtstreeks kan observeren. Bvb om de snelheid ve Voertuig te bepalen kan men moeilijk dat Voertuig gaan volgen, in plaats daarvan zet men een meetpunt op langs de weg om te zien hoe snel passerende Voertuigen rijden. Gelijkaardig voor bvb verkeersintensiteit: men telt in een meetpunt langs de weg doorkomsten van Voertuigen en gaat ervan uit dat dit cijfer representatief is voor  het Wegsegment (deel van de weg tussen twee opeenvolgende kruispunten). OPGELET: Deze klasse is abstract, ze mag niet geinstantieerd worden. Gebruik in de plaats de subklassen Verkeersmeetpunt of Verkeersmeettraject"
+                    },
+                    {
+                        "key": "package",
+                        "value": "OSLO-Verkeersmetingen",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "name": "Verkeersbemonsteringsobject"
+        },
+        {
+            "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersdomeinobject",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "inpackage": "OTHER_PACKAGE",
+            "ap-usageNote-nl": {
+                "nl": "Hieronder verstaan we een real-world object uit het verkeer, ttz een Voertuig of Verkeersdeelnemer of een Wegsegment of gelijkaardig waarover verkeer plaatsvindt. Vallen hier niet onder: Verkeersbemonsteringsobjecten zoals Verkeersmeetpunten of Verkeersmeettrajecten, dat zijn de objecten die het Verkeersdomein bemonsteren. OPGELET: Deze klasse is abstract, ze mag maw niet geinstantieerd worden. Gebruik in de plaats subklassen zoal Wegsegment, Rijstrook, Voertuig etc."
+            },
+            "usage": {
+                "nl": "Hieronder verstaan we een real-world object uit het verkeer, ttz een Voertuig of Verkeersdeelnemer of een Wegsegment of gelijkaardig waarover verkeer plaatsvindt. Vallen hier niet onder: Verkeersbemonsteringsobjecten zoals Verkeersmeetpunten of Verkeersmeettrajecten, dat zijn de objecten die het Verkeersdomein bemonsteren. OPGELET: Deze klasse is abstract, ze mag maw niet geinstantieerd worden. Gebruik in de plaats subklassen zoal Wegsegment, Rijstrook, Voertuig etc."
+            },
+            "definition": {
+                "nl": "Object uit het verkeersdomein waarvan men een Verkeerskenmerk meet."
+            },
+            "label": {
+                "nl": "Verkeersdomeinobject"
+            },
+            "ap-label-nl": {
+                "nl": "Verkeersdomeinobject"
+            },
+            "ap-definition-nl": {
+                "nl": "Object uit het verkeersdomein waarvan men een Verkeerskenmerk meet."
+            },
+            "extra": {
+                "EA-Name": "Verkeersdomeinobject",
+                "EA-Guid": "{2E48BB96-557B-4b70-A841-96C9488ACB0C}",
+                "EA-Package": "OSLO-Verkeersmetingen",
+                "EA-Type": "CLASS",
+                "EA-Parents": "Verkeersobject",
+                "EA-Parents2": [
+                    {
+                        "name": "Verkeersobject",
+                        "label": "Verkeersobject",
+                        "package": "OSLO-Verkeersmetingen",
+                        "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersobject"
+                    },
+                    {
+                        "name": "Domeinobject",
+                        "label": "",
+                        "package": "ISO",
+                        "uri": "http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature"
+                    }
+                ],
+                "parentclasses": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersobject, http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#GFI_DomainFeature",
+                "label": {
+                    "nl": "Verkeersdomeinobject"
+                },
+                "definition": {
+                    "nl": "Object uit het verkeersdomein waarvan men een Verkeerskenmerk meet."
+                },
+                "usage": {
+                    "nl": "Hieronder verstaan we een real-world object uit het verkeer, ttz een Voertuig of Verkeersdeelnemer of een Wegsegment of gelijkaardig waarover verkeer plaatsvindt. Vallen hier niet onder: Verkeersbemonsteringsobjecten zoals Verkeersmeetpunten of Verkeersmeettrajecten, dat zijn de objecten die het Verkeersdomein bemonsteren. OPGELET: Deze klasse is abstract, ze mag maw niet geinstantieerd worden. Gebruik in de plaats subklassen zoal Wegsegment, Rijstrook, Voertuig etc."
+                },
+                "ap-label-nl": {
+                    "nl": "Verkeersdomeinobject"
+                },
+                "ap-definition-nl": {
+                    "nl": "Object uit het verkeersdomein waarvan men een Verkeerskenmerk meet."
+                },
+                "ap-usageNote-nl": {
+                    "nl": "Hieronder verstaan we een real-world object uit het verkeer, ttz een Voertuig of Verkeersdeelnemer of een Wegsegment of gelijkaardig waarover verkeer plaatsvindt. Vallen hier niet onder: Verkeersbemonsteringsobjecten zoals Verkeersmeetpunten of Verkeersmeettrajecten, dat zijn de objecten die het Verkeersdomein bemonsteren. OPGELET: Deze klasse is abstract, ze mag maw niet geinstantieerd worden. Gebruik in de plaats subklassen zoal Wegsegment, Rijstrook, Voertuig etc."
+                },
+                "ap-codelist": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "Verkeersdomeinobject",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "Verkeersdomeinobject",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "Object uit het verkeersdomein waarvan men een Verkeerskenmerk meet.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-usageNote-nl",
+                        "value": "NOTE",
+                        "note": "Hieronder verstaan we een real-world object uit het verkeer, ttz een Voertuig of Verkeersdeelnemer of een Wegsegment of gelijkaardig waarover verkeer plaatsvindt. Vallen hier niet onder: Verkeersbemonsteringsobjecten zoals Verkeersmeetpunten of Verkeersmeettrajecten, dat zijn de objecten die het Verkeersdomein bemonsteren. OPGELET: Deze klasse is abstract, ze mag maw niet geinstantieerd worden. Gebruik in de plaats subklassen zoal Wegsegment, Rijstrook, Voertuig etc."
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "Object uit het verkeersdomein waarvan men een Verkeerskenmerk meet.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "usageNote-nl",
+                        "value": "NOTE",
+                        "note": "Hieronder verstaan we een real-world object uit het verkeer, ttz een Voertuig of Verkeersdeelnemer of een Wegsegment of gelijkaardig waarover verkeer plaatsvindt. Vallen hier niet onder: Verkeersbemonsteringsobjecten zoals Verkeersmeetpunten of Verkeersmeettrajecten, dat zijn de objecten die het Verkeersdomein bemonsteren. OPGELET: Deze klasse is abstract, ze mag maw niet geinstantieerd worden. Gebruik in de plaats subklassen zoal Wegsegment, Rijstrook, Voertuig etc."
+                    },
+                    {
+                        "key": "package",
+                        "value": "OSLO-Verkeersmetingen",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "name": "Verkeersdomeinobject"
+        },
+        {
+            "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "inpackage": "OTHER_PACKAGE",
+            "usage": {
+                "nl": "Bvb de gemiddelde snelheid van auto's langs een Meetpunt of de verkeersIntensiteit van fietsen op een Wegsegment bvb uitgedrukt in aantal voertuigen of de snelheid van een individueel Voertuig etc."
+            },
+            "definition": {
+                "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
+            },
+            "label": {
+                "nl": "Verkeerskenmerk"
+            },
+            "ap-label-nl": {
+                "nl": "Verkeerskenmerk"
+            },
+            "ap-definition-nl": {
+                "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
+            },
+            "extra": {
+                "EA-Name": "Verkeerskenmerk",
+                "EA-Guid": "{CCF671D1-65E5-4164-80DC-A55676E447D2}",
+                "EA-Package": "OSLO-Verkeersmetingen",
+                "EA-Type": "CLASS",
+                "EA-Parents": "",
+                "EA-Parents2": [
+                    {
+                        "name": "Kenmerktype",
+                        "label": "",
+                        "package": "ISO",
+                        "uri": "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType"
+                    }
+                ],
+                "parentclasses": "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType",
+                "label": {
+                    "nl": "Verkeerskenmerk"
+                },
+                "definition": {
+                    "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
+                },
+                "usage": {
+                    "nl": "Bvb de gemiddelde snelheid van auto's langs een Meetpunt of de verkeersIntensiteit van fietsen op een Wegsegment bvb uitgedrukt in aantal voertuigen of de snelheid van een individueel Voertuig etc."
+                },
+                "ap-label-nl": {
+                    "nl": "Verkeerskenmerk"
+                },
+                "ap-definition-nl": {
+                    "nl": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer."
+                },
+                "ap-usageNote-nl": "",
+                "ap-codelist": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "Verkeerskenmerk",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "Verkeerskenmerk",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "Kenmerk van het Verkeersdomeinobject of het Verkeersbemonsteringsobject dat gemeten wordt en dat betrekking heeft op het verkeer over of langs dat object of op zijn deelname aan het verkeer.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "usageNote-nl",
+                        "value": "Bvb de gemiddelde snelheid van auto's langs een Meetpunt of de verkeersIntensiteit van fietsen op een Wegsegment bvb uitgedrukt in aantal voertuigen of de snelheid van een individueel Voertuig etc.",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "name": "Verkeerskenmerk"
+        },
+        {
+            "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "inpackage": "OTHER_PACKAGE",
+            "ap-usageNote-nl": {
+                "nl": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft."
+            },
+            "usage": {
+                "nl": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft."
+            },
+            "definition": {
+                "nl": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet."
+            },
+            "label": {
+                "nl": "Verkeersmeetpunt"
+            },
+            "ap-label-nl": {
+                "nl": "Verkeersmeetpunt"
+            },
+            "ap-definition-nl": {
+                "nl": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet."
+            },
+            "extra": {
+                "EA-Name": "Verkeersmeetpunt",
+                "EA-Guid": "{84DECA56-0848-4297-A791-E0316CDC69CF}",
+                "EA-Package": "OSLO-Verkeersmetingen",
+                "EA-Type": "CLASS",
+                "EA-Parents": "Verkeersbemonsteringsobject",
+                "EA-Parents2": [
+                    {
+                        "name": "Verkeersbemonsteringsobject",
+                        "label": "Verkeersbemonsteringsobject",
+                        "package": "OSLO-Verkeersmetingen",
+                        "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersbemonsteringsobject"
+                    },
+                    {
+                        "name": "Bemonsteringspunt",
+                        "label": "Bemonsteringspunt",
+                        "package": "OSLO-ObservatiesEnMetingen",
+                        "uri": "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint"
+                    }
+                ],
+                "parentclasses": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersbemonsteringsobject, http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint",
+                "label": {
+                    "nl": "Verkeersmeetpunt"
+                },
+                "definition": {
+                    "nl": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet."
+                },
+                "usage": {
+                    "nl": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft."
+                },
+                "ap-label-nl": {
+                    "nl": "Verkeersmeetpunt"
+                },
+                "ap-definition-nl": {
+                    "nl": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet."
+                },
+                "ap-usageNote-nl": {
+                    "nl": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft."
+                },
+                "ap-codelist": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "Verkeersmeetpunt",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "Verkeersmeetpunt",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-usageNote-nl",
+                        "value": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "Punt waarlangs men kenmerken van het voorbijkomend verkeer meet.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "usageNote-nl",
+                        "value": "Dit is het punt langs de weg waar bvb doorkomsten van Voertuigen worden geteld en/of hun snelheid wordt gemeten of waarvoor enig ander Verkeerskenmerk wordt vastgesteld dat op het bemonsterd Verkeerdomeinobject betrekking heeft.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "package",
+                        "value": "OSLO-Verkeersmetingen",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "name": "Verkeersmeetpunt"
+        },
+        {
+            "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "inpackage": "OTHER_PACKAGE",
+            "ap-usageNote-nl": {
+                "nl": "Verkeer wordt gedefinieerd als de verplaatsing van objecten zoals personen, vracht, data etc over media zoals land, water, lucht, kabels. In de context van dit applicatieprofiel bedoelen we met verkeer het wegverkeer. Verkeer kan betrekking hebben op objecten die zichzelf verplaatsen (al dan niet met een vervoermiddel) of objecten die vervoerd worden, maar ook op objecten waarover verkeer plaatsvindt. De meting kan het vaststellen van de waarde van een kenmerk van een individueel Voertuig of Verkeersdeelnemer tijdens zijn verplaatsing zijn (bvb zijn snelheid of nummerplaat) of van een kenmerk van de infrastructuur zoals een Wegsegment of een Rijstrook waarover het verkeer zich beweegt (bv de verkeersintensiteit). Verkeersmetingen  zijn Observaties, maw op de waarde zit een zekere foutmarge door de gebruikte meettechniek.\n"
+            },
+            "usage": {
+                "nl": "Verkeer wordt gedefinieerd als de verplaatsing van objecten zoals personen, vracht, data etc over media zoals land, water, lucht, kabels. In de context van dit applicatieprofiel bedoelen we met verkeer het wegverkeer. Verkeer kan betrekking hebben op objecten die zichzelf verplaatsen (al dan niet met een vervoermiddel) of objecten die vervoerd worden, maar ook op objecten waarover verkeer plaatsvindt. De meting kan het vaststellen van de waarde van een kenmerk van een individueel Voertuig of Verkeersdeelnemer tijdens zijn verplaatsing zijn (bvb zijn snelheid of nummerplaat) of van een kenmerk van de infrastructuur zoals een Wegsegment of een Rijstrook waarover het verkeer zich beweegt (bv de verkeersintensiteit). Verkeersmetingen  zijn Observaties, maw op de waarde zit een zekere foutmarge door de gebruikte meettechniek.\n"
+            },
+            "definition": {
+                "nl": "Het vaststellen van de waarde van een bepaald kenmerk van het verkeer op een bepaald tijdstip of tussen twee tijdstippen."
+            },
+            "label": {
+                "nl": "Verkeersmeting"
+            },
+            "ap-label-nl": {
+                "nl": "Verkeersmeting"
+            },
+            "ap-definition-nl": {
+                "nl": "Het vaststellen van de waarde van een bepaald kenmerk van het verkeer op een bepaald tijdstip of tussen twee tijdstippen."
+            },
+            "extra": {
+                "EA-Name": "Verkeersmeting",
+                "EA-Guid": "{629A009C-848B-463b-AA2C-272DB667D354}",
+                "EA-Package": "OSLO-Verkeersmetingen",
+                "EA-Type": "CLASS",
+                "EA-Parents": "",
+                "EA-Parents2": [
+                    {
+                        "name": "Observatie",
+                        "label": "Observatie",
+                        "package": "ISO",
+                        "uri": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation"
+                    }
+                ],
+                "parentclasses": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation",
+                "label": {
+                    "nl": "Verkeersmeting"
+                },
+                "definition": {
+                    "nl": "Het vaststellen van de waarde van een bepaald kenmerk van het verkeer op een bepaald tijdstip of tussen twee tijdstippen."
+                },
+                "usage": {
+                    "nl": "Verkeer wordt gedefinieerd als de verplaatsing van objecten zoals personen, vracht, data etc over media zoals land, water, lucht, kabels. In de context van dit applicatieprofiel bedoelen we met verkeer het wegverkeer. Verkeer kan betrekking hebben op objecten die zichzelf verplaatsen (al dan niet met een vervoermiddel) of objecten die vervoerd worden, maar ook op objecten waarover verkeer plaatsvindt. De meting kan het vaststellen van de waarde van een kenmerk van een individueel Voertuig of Verkeersdeelnemer tijdens zijn verplaatsing zijn (bvb zijn snelheid of nummerplaat) of van een kenmerk van de infrastructuur zoals een Wegsegment of een Rijstrook waarover het verkeer zich beweegt (bv de verkeersintensiteit). Verkeersmetingen  zijn Observaties, maw op de waarde zit een zekere foutmarge door de gebruikte meettechniek.\n"
+                },
+                "ap-label-nl": {
+                    "nl": "Verkeersmeting"
+                },
+                "ap-definition-nl": {
+                    "nl": "Het vaststellen van de waarde van een bepaald kenmerk van het verkeer op een bepaald tijdstip of tussen twee tijdstippen."
+                },
+                "ap-usageNote-nl": {
+                    "nl": "Verkeer wordt gedefinieerd als de verplaatsing van objecten zoals personen, vracht, data etc over media zoals land, water, lucht, kabels. In de context van dit applicatieprofiel bedoelen we met verkeer het wegverkeer. Verkeer kan betrekking hebben op objecten die zichzelf verplaatsen (al dan niet met een vervoermiddel) of objecten die vervoerd worden, maar ook op objecten waarover verkeer plaatsvindt. De meting kan het vaststellen van de waarde van een kenmerk van een individueel Voertuig of Verkeersdeelnemer tijdens zijn verplaatsing zijn (bvb zijn snelheid of nummerplaat) of van een kenmerk van de infrastructuur zoals een Wegsegment of een Rijstrook waarover het verkeer zich beweegt (bv de verkeersintensiteit). Verkeersmetingen  zijn Observaties, maw op de waarde zit een zekere foutmarge door de gebruikte meettechniek.\n"
+                },
+                "ap-codelist": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "Verkeersmeting",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "Verkeersmeting",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "Het vaststellen van de waarde van een bepaald kenmerk van het verkeer op een bepaald tijdstip of tussen twee tijdstippen.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-usageNote-nl",
+                        "value": "NOTE",
+                        "note": "Verkeer wordt gedefinieerd als de verplaatsing van objecten zoals personen, vracht, data etc over media zoals land, water, lucht, kabels. In de context van dit applicatieprofiel bedoelen we met verkeer het wegverkeer. Verkeer kan betrekking hebben op objecten die zichzelf verplaatsen (al dan niet met een vervoermiddel) of objecten die vervoerd worden, maar ook op objecten waarover verkeer plaatsvindt. De meting kan het vaststellen van de waarde van een kenmerk van een individueel Voertuig of Verkeersdeelnemer tijdens zijn verplaatsing zijn (bvb zijn snelheid of nummerplaat) of van een kenmerk van de infrastructuur zoals een Wegsegment of een Rijstrook waarover het verkeer zich beweegt (bv de verkeersintensiteit). Verkeersmetingen  zijn Observaties, maw op de waarde zit een zekere foutmarge door de gebruikte meettechniek.\n"
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "Het vaststellen van de waarde van een bepaald kenmerk van het verkeer op een bepaald tijdstip of tussen twee tijdstippen.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "usageNote-nl",
+                        "value": "NOTE",
+                        "note": "Verkeer wordt gedefinieerd als de verplaatsing van objecten zoals personen, vracht, data etc over media zoals land, water, lucht, kabels. Verkeer kan betrekking hebben op objecten die zichzelf verplaatsen (al dan niet met een vervoermiddel) of objecten die vervoerd worden, maar ook op objecten waarover verkeer plaatsvindt. De meting kan het vaststellen van de waarde van een kenmerk van een individueel object tijdens zijn verplaatsing zijn (bvb zijn snelheid) of van een kenmerk van de infrastructuur waarover het verkeer zich beweegt (bv de verkeersintensiteit). Verkeersmetingen  zijn Observaties, maw op de waarde zit een zekere foutmarge door de gebruikte meettechniek.\n"
+                    },
+                    {
+                        "key": "package",
+                        "value": "OSLO-Verkeersmetingen",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "name": "Verkeersmeting"
+        },
+        {
+            "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersobject",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "inpackage": "OTHER_PACKAGE",
+            "ap-usageNote-nl": {
+                "nl": "OPGELET: Deze klasse is abstract, ze moet gespecialiseerd worden als Verkeersdomeinobject of als Verkeersbemonsteringsobject. Als Verkeersdomeinobject als de meting direct betrekking heeft op het object dat men wil observeren (bvb een Wegsegment of een Voertuig etc) of als Verkeersbemonsteringsobject als de meting onrechtstreeks gebeurt (bvb via een Verkeersmeetpunt gelegen langs een Wegsegment)."
+            },
+            "usage": {
+                "nl": "OPGELET: Deze klasse is abstract, ze moet gespecialiseerd worden als Verkeersdomeinobject of als Verkeersbemonsteringsobject. Als Verkeersdomeinobject als de meting direct betrekking heeft op het object dat men wil observeren (bvb een Wegsegment of een Voertuig etc) of als Verkeersbemonsteringsobject als de meting onrechtstreeks gebeurt (bvb via een Verkeersmeetpunt gelegen langs een Wegsegment)."
+            },
+            "definition": {
+                "nl": "Object waarop of waarlangs zich verkeer voordoet of dat deel uitmaakt vh verkeer."
+            },
+            "label": {
+                "nl": "Verkeersobject"
+            },
+            "ap-label-nl": {
+                "nl": "Verkeersobject"
+            },
+            "ap-definition-nl": {
+                "nl": "Object waarop of waarlangs zich verkeer voordoet of dat deel uitmaakt vh verkeer."
+            },
+            "extra": {
+                "EA-Name": "Verkeersobject",
+                "EA-Guid": "{5E405CE5-6BD2-4f40-B346-162D1D3D4C85}",
+                "EA-Package": "OSLO-Verkeersmetingen",
+                "EA-Type": "CLASS",
+                "EA-Parents": "",
+                "EA-Parents2": [
+                    {
+                        "name": "Object",
+                        "label": "",
+                        "package": "ISO",
+                        "uri": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature"
+                    }
+                ],
+                "parentclasses": "http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
+                "label": {
+                    "nl": "Verkeersobject"
+                },
+                "definition": {
+                    "nl": "Object waarop of waarlangs zich verkeer voordoet of dat deel uitmaakt vh verkeer."
+                },
+                "usage": {
+                    "nl": "OPGELET: Deze klasse is abstract, ze moet gespecialiseerd worden als Verkeersdomeinobject of als Verkeersbemonsteringsobject. Als Verkeersdomeinobject als de meting direct betrekking heeft op het object dat men wil observeren (bvb een Wegsegment of een Voertuig etc) of als Verkeersbemonsteringsobject als de meting onrechtstreeks gebeurt (bvb via een Verkeersmeetpunt gelegen langs een Wegsegment)."
+                },
+                "ap-label-nl": {
+                    "nl": "Verkeersobject"
+                },
+                "ap-definition-nl": {
+                    "nl": "Object waarop of waarlangs zich verkeer voordoet of dat deel uitmaakt vh verkeer."
+                },
+                "ap-usageNote-nl": {
+                    "nl": "OPGELET: Deze klasse is abstract, ze moet gespecialiseerd worden als Verkeersdomeinobject of als Verkeersbemonsteringsobject. Als Verkeersdomeinobject als de meting direct betrekking heeft op het object dat men wil observeren (bvb een Wegsegment of een Voertuig etc) of als Verkeersbemonsteringsobject als de meting onrechtstreeks gebeurt (bvb via een Verkeersmeetpunt gelegen langs een Wegsegment)."
+                },
+                "ap-codelist": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "Verkeersobject",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "Verkeersobject",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "Object waarop of waarlangs zich verkeer voordoet of dat deel uitmaakt vh verkeer.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-usageNote-nl",
+                        "value": "NOTE",
+                        "note": "OPGELET: Deze klasse is abstract, ze moet gespecialiseerd worden als Verkeersdomeinobject of als Verkeersbemonsteringsobject. Als Verkeersdomeinobject als de meting direct betrekking heeft op het object dat men wil observeren (bvb een Wegsegment of een Voertuig etc) of als Verkeersbemonsteringsobject als de meting onrechtstreeks gebeurt (bvb via een Verkeersmeetpunt gelegen langs een Wegsegment)."
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "Object waarop of waarlangs zich verkeer voordoet of dat deel uitmaakt vh verkeer.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "usageNote-nl",
+                        "value": "NOTE",
+                        "note": "OPGELET: Deze klasse is abstract, ze moet gespecialiseerd worden als Verkeersdomeinobject of als Verkeersbemonsteringsobject. Als Verkeersdomeinobject als de meting direct betrekking heeft op het object dat men wil observeren of als Verkeersbemonsteringsobject als de meting onrechtstreeks gebeurt (bvb via een Verkeersmeetpunt)."
+                    },
+                    {
+                        "key": "package",
+                        "value": "OSLO-Verkeersmetingen",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "name": "Verkeersobject"
+        },
+        {
+            "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#Wegobject",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "inpackage": "OTHER_PACKAGE",
+            "ap-usageNote-nl": {
+                "nl": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken."
+            },
+            "usage": {
+                "nl": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken."
+            },
+            "definition": {
+                "nl": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt."
+            },
+            "label": {
+                "nl": "Wegobject"
+            },
+            "ap-label-nl": {
+                "nl": "Wegobject"
+            },
+            "ap-definition-nl": {
+                "nl": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt."
+            },
+            "extra": {
+                "EA-Name": "Wegobject",
+                "EA-Guid": "{76494F4F-E122-4dfb-8EA0-84FF3C4EF761}",
+                "EA-Package": "INSPIRE-Weg",
+                "EA-Type": "CLASS",
+                "EA-Parents": "Verkeersdomeinobject",
+                "EA-Parents2": [
+                    {
+                        "name": "Verkeersdomeinobject",
+                        "label": "Verkeersdomeinobject",
+                        "package": "OSLO-Verkeersmetingen",
+                        "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersdomeinobject"
+                    }
+                ],
+                "parentclasses": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersdomeinobject",
+                "label": {
+                    "nl": "Wegobject"
+                },
+                "definition": {
+                    "nl": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt."
+                },
+                "usage": {
+                    "nl": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken."
+                },
+                "ap-label-nl": {
+                    "nl": "Wegobject"
+                },
+                "ap-definition-nl": {
+                    "nl": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt."
+                },
+                "ap-usageNote-nl": {
+                    "nl": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken."
+                },
+                "ap-codelist": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "Wegobject",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "Wegobject",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-usageNote-nl",
+                        "value": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "Object dat een onderdeel uit een Wegennetwerk vertegenwoordigt.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "usageNote-nl",
+                        "value": "Typische voorbeelden zijn Wegsegmenten, Wegknopen, Weglinksequenties etc OPGELET: deze klasse is abstract, enkel de subklassen gebruiken.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "package",
+                        "value": "OSLO-Verkeersmetingen",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "name": "Wegobject"
+        },
+        {
             "@id": "https://data.vlaanderen.be/ns/weg#Rijrichting",
             "@type": "http://www.w3.org/2002/07/owl#Class",
             "inpackage": "OTHER_PACKAGE",
@@ -3827,7 +3921,7 @@
                         "name": "Verkeersdomeinobject",
                         "label": "Verkeersdomeinobject",
                         "package": "OSLO-Verkeersmetingen",
-                        "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersdomeinobject"
+                        "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersdomeinobject"
                     },
                     {
                         "name": "Transporteigenschap",
@@ -3836,7 +3930,7 @@
                         "uri": "https://data.vlaanderen.be/ns/transportnetwerk#Transporteigenschap"
                     }
                 ],
-                "parentclasses": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersdomeinobject, https://data.vlaanderen.be/ns/transportnetwerk#Transporteigenschap",
+                "parentclasses": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersdomeinobject, https://data.vlaanderen.be/ns/transportnetwerk#Transporteigenschap",
                 "label": {
                     "nl": "Rijrichting"
                 },
@@ -3911,7 +4005,7 @@
                         "name": "Wegobject",
                         "label": "Wegobject",
                         "package": "INSPIRE-Weg",
-                        "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Wegobject"
+                        "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Wegobject"
                     },
                     {
                         "name": "Transportknoop",
@@ -3920,7 +4014,7 @@
                         "uri": "https://data.vlaanderen.be/ns/transportnetwerk#Transportknoop"
                     }
                 ],
-                "parentclasses": "https://data.vlaanderen.be/ns/Verkeersmetingen#Wegobject, https://data.vlaanderen.be/ns/transportnetwerk#Transportknoop",
+                "parentclasses": "https://data.vlaanderen.be/ns/verkeersmetingen#Wegobject, https://data.vlaanderen.be/ns/transportnetwerk#Transportknoop",
                 "label": {
                     "nl": "Wegknoop"
                 },
@@ -3998,7 +4092,7 @@
                         "name": "Wegobject",
                         "label": "Wegobject",
                         "package": "INSPIRE-Weg",
-                        "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Wegobject"
+                        "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Wegobject"
                     },
                     {
                         "name": "Transportlink",
@@ -4007,7 +4101,7 @@
                         "uri": "https://data.vlaanderen.be/ns/transportnetwerk#Transportlink"
                     }
                 ],
-                "parentclasses": "https://data.vlaanderen.be/ns/Verkeersmetingen#Wegobject, https://data.vlaanderen.be/ns/transportnetwerk#Transportlink",
+                "parentclasses": "https://data.vlaanderen.be/ns/verkeersmetingen#Wegobject, https://data.vlaanderen.be/ns/transportnetwerk#Transportlink",
                 "label": {
                     "nl": "Wegsegment"
                 },
@@ -4601,6 +4695,595 @@
             "generalization": [],
             "minCardinality": "0",
             "maxCardinality": "1"
+        },
+        {
+            "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "voertuigtype",
+            "inpackage": "OTHER_PACKAGE",
+            "ap-usageNote-nl": {
+                "nl": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc."
+            },
+            "usage": {
+                "nl": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc."
+            },
+            "definition": {
+                "nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
+            },
+            "label": {
+                "nl": "voertuigType"
+            },
+            "ap-label-nl": {
+                "nl": "voertuigType"
+            },
+            "ap-definition-nl": {
+                "nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
+            },
+            "extra": {
+                "EA-Name": "voertuigType",
+                "EA-Guid": "{CF9C3D94-2593-4911-AFB0-26E1C2D262AB}",
+                "EA-Package": "OSLO-Verkeersmetingen",
+                "EA-Type": "attribute",
+                "EA-Domain": "Verkeerskenmerk",
+                "EA-Domain-Guid": "{CCF671D1-65E5-4164-80DC-A55676E447D2}",
+                "EA-Range": "Voertuigtype",
+                "RangeData": {
+                    "EA-Name": "Voertuigtype",
+                    "EA-GUID": "{64EE5960-3F3B-44f0-B16F-98DB641FF786}",
+                    "EA-Package": "INSPIRE-Transportnetwerk",
+                    "uri": "https://data.vlaanderen.be/ns/transportnetwerk#Voertuigtype"
+                },
+                "label": {
+                    "nl": "voertuigType"
+                },
+                "definition": {
+                    "nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
+                },
+                "usage": {
+                    "nl": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc."
+                },
+                "ap-label-nl": {
+                    "nl": "voertuigType"
+                },
+                "ap-definition-nl": {
+                    "nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
+                },
+                "ap-usageNote-nl": {
+                    "nl": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc."
+                },
+                "ap-codelist": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "voertuigType",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "voertuigType",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "Soort Voertuig waarvan men het Verkeerskenmerk meet.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-usageNote-nl",
+                        "value": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "Soort Voertuig waarvan men het Verkeerskenmerk meet.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "usageNote-nl",
+                        "value": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc.",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk",
+                    "EA-Name": "Verkeerskenmerk"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Voertuigtype",
+                    "EA-GUID": "{64EE5960-3F3B-44f0-B16F-98DB641FF786}",
+                    "EA-Package": "INSPIRE-Transportnetwerk",
+                    "uri": "https://data.vlaanderen.be/ns/transportnetwerk#Voertuigtype"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "1",
+            "maxCardinality": "*"
+        },
+        {
+            "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#ligging",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "ligging",
+            "inpackage": "OTHER_PACKAGE",
+            "ap-usageNote-nl": {
+                "nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
+            },
+            "usage": {
+                "nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
+            },
+            "definition": {
+                "nl": "Locatie van de Sensor."
+            },
+            "label": {
+                "nl": "ligging"
+            },
+            "ap-label-nl": {
+                "nl": "ligging"
+            },
+            "ap-definition-nl": {
+                "nl": "Locatie van de Sensor."
+            },
+            "extra": {
+                "EA-Name": "ligging",
+                "EA-Guid": "{34CAD925-9990-4440-8D3B-1C7A2D324E5B}",
+                "EA-Package": "SSN/SOSA",
+                "EA-Type": "attribute",
+                "EA-Domain": "Sensor",
+                "EA-Domain-Guid": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
+                "EA-Range": "Locatie",
+                "RangeData": {
+                    "EA-Name": "Locatie",
+                    "EA-GUID": "{E214F098-F563-483c-A095-65A105394C36}",
+                    "EA-Package": "OSLO-Verkeersmetingen",
+                    "uri": "http://www.w3.org/ns/prov#Location"
+                },
+                "label": {
+                    "nl": "ligging"
+                },
+                "definition": {
+                    "nl": "Locatie van de Sensor."
+                },
+                "usage": {
+                    "nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
+                },
+                "ap-label-nl": {
+                    "nl": "ligging"
+                },
+                "ap-definition-nl": {
+                    "nl": "Locatie van de Sensor."
+                },
+                "ap-usageNote-nl": {
+                    "nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
+                },
+                "ap-codelist": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "ligging",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "ligging",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "Locatie van de Sensor.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "package",
+                        "value": "OSLO-Verkeersmetingen",
+                        "note": "null"
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "Locatie van de Sensor.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-usageNote-nl",
+                        "value": "NOTE",
+                        "note": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
+                    },
+                    {
+                        "key": "usageNote-nl",
+                        "value": "NOTE",
+                        "note": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://www.w3.org/ns/sosa/Sensor",
+                    "EA-Name": "Sensor"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Locatie",
+                    "EA-GUID": "{E214F098-F563-483c-A095-65A105394C36}",
+                    "EA-Package": "OSLO-Verkeersmetingen",
+                    "uri": "http://www.w3.org/ns/prov#Location"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "0",
+            "maxCardinality": "*"
+        },
+        {
+            "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "geobserveerdobject",
+            "inpackage": "OTHER_PACKAGE",
+            "definition": {
+                "nl": "TODO"
+            },
+            "label": {
+                "nl": "geobserveerdObject"
+            },
+            "ap-label-nl": {
+                "nl": "geobserveerdObject"
+            },
+            "ap-definition-nl": {
+                "nl": "TODO"
+            },
+            "extra": {
+                "EA-Name": "geobserveerdObject",
+                "EA-Guid": "{9C622FAB-2A42-457b-B26A-7E74AE56D792}",
+                "derived": "false",
+                "EA-Package": "",
+                "EA-Type": "connector",
+                "EA-Domain": "Verkeersmeting",
+                "EA-Domain-Guid": "{629A009C-848B-463b-AA2C-272DB667D354}",
+                "EA-Range": "Verkeersmeetpunt",
+                "RangeData": {
+                    "EA-Name": "Verkeersmeetpunt",
+                    "EA-GUID": "{84DECA56-0848-4297-A791-E0316CDC69CF}",
+                    "EA-Package": "OSLO-Verkeersmetingen",
+                    "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt"
+                },
+                "sourceRole": "null",
+                "destRole": "geobserveerdObject",
+                "label": {
+                    "nl": "geobserveerdObject"
+                },
+                "definition": {
+                    "nl": "TODO"
+                },
+                "usage": "",
+                "ap-label-nl": {
+                    "nl": "geobserveerdObject"
+                },
+                "ap-definition-nl": {
+                    "nl": "TODO"
+                },
+                "ap-usageNote-nl": "",
+                "ap-codelist": "",
+                "RawTags": [
+                    {
+                        "key": "definition-nl",
+                        "value": "NOTE",
+                        "note": "TODO"
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "NOTE",
+                        "note": "geobserveerdObject"
+                    }
+                ],
+                "DestRoleTags": [
+                    {
+                        "key": "definition-nl",
+                        "value": "NOTE",
+                        "note": "TODO"
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "NOTE",
+                        "note": "geobserveerdObject"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting",
+                    "EA-Name": "Verkeersmeting"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Verkeersmeetpunt",
+                    "EA-GUID": "{84DECA56-0848-4297-A791-E0316CDC69CF}",
+                    "EA-Package": "OSLO-Verkeersmetingen",
+                    "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "1",
+            "maxCardinality": "1"
+        },
+        {
+            "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#fenomeenTijd",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "fenomeentijd",
+            "inpackage": "OTHER_PACKAGE",
+            "ap-usageNote-nl": {
+                "nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn."
+            },
+            "usage": {
+                "nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn."
+            },
+            "definition": {
+                "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+            },
+            "label": {
+                "nl": "fenomeenTijd"
+            },
+            "ap-label-nl": {
+                "nl": "fenomeenTijd"
+            },
+            "ap-definition-nl": {
+                "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+            },
+            "extra": {
+                "EA-Name": "fenomeenTijd",
+                "EA-Guid": "{08BA936D-44F3-420f-9E42-82994C3B7E89}",
+                "EA-Package": "OSLO-Verkeersmetingen",
+                "EA-Type": "attribute",
+                "EA-Domain": "Verkeersmeting",
+                "EA-Domain-Guid": "{629A009C-848B-463b-AA2C-272DB667D354}",
+                "EA-Range": "TemporeleEntiteit",
+                "RangeData": {
+                    "EA-Name": "TemporeleEntiteit",
+                    "EA-GUID": "{300A19C6-C1BD-4479-B125-ADFF86DD5836}",
+                    "EA-Package": "Time",
+                    "uri": "http://fixme.com#TemporeleEntiteit"
+                },
+                "label": {
+                    "nl": "fenomeenTijd"
+                },
+                "definition": {
+                    "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+                },
+                "usage": {
+                    "nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn."
+                },
+                "ap-label-nl": {
+                    "nl": "fenomeenTijd"
+                },
+                "ap-definition-nl": {
+                    "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+                },
+                "ap-usageNote-nl": {
+                    "nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn."
+                },
+                "ap-codelist": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "fenomeenTijd",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "fenomeenTijd",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-usageNote-nl",
+                        "value": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "package",
+                        "value": "OSLO-Verkeersmetingen",
+                        "note": "null"
+                    },
+                    {
+                        "key": "parentURI",
+                        "value": "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime",
+                        "note": "null"
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is.",
+                        "note": "null"
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting",
+                    "EA-Name": "Verkeersmeting"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "TemporeleEntiteit",
+                    "EA-GUID": "{300A19C6-C1BD-4479-B125-ADFF86DD5836}",
+                    "EA-Package": "Time",
+                    "uri": "http://fixme.com#TemporeleEntiteit"
+                }
+            ],
+            "generalization": [
+                "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime"
+            ],
+            "minCardinality": "1",
+            "maxCardinality": "1"
+        },
+        {
+            "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "bemonsterdobject",
+            "inpackage": "OTHER_PACKAGE",
+            "ap-usageNote-nl": {
+                "nl": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt."
+            },
+            "usage": {
+                "nl": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt."
+            },
+            "definition": {
+                "nl": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
+            },
+            "label": {
+                "nl": "bemonsterdObject"
+            },
+            "ap-label-nl": {
+                "nl": "bemonsterdObject"
+            },
+            "ap-definition-nl": {
+                "nl": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
+            },
+            "extra": {
+                "EA-Name": "bemonsterdObject",
+                "EA-Guid": "{4957D1B2-0700-4cd6-A022-32AF0C0E1760}",
+                "derived": "false",
+                "EA-Package": "",
+                "EA-Type": "connector",
+                "EA-Domain": "Verkeersbemonsteringsobject",
+                "EA-Domain-Guid": "{CFE067A0-8DA9-40db-AF71-DC32C871721F}",
+                "EA-Range": "Verkeersdomeinobject",
+                "RangeData": {
+                    "EA-Name": "Verkeersdomeinobject",
+                    "EA-GUID": "{2E48BB96-557B-4b70-A841-96C9488ACB0C}",
+                    "EA-Package": "OSLO-Verkeersmetingen",
+                    "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersdomeinobject"
+                },
+                "sourceRole": "null",
+                "destRole": "bemonsterdObject",
+                "label": {
+                    "nl": "bemonsterdObject"
+                },
+                "definition": {
+                    "nl": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
+                },
+                "usage": {
+                    "nl": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt."
+                },
+                "ap-label-nl": {
+                    "nl": "bemonsterdObject"
+                },
+                "ap-definition-nl": {
+                    "nl": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
+                },
+                "ap-usageNote-nl": {
+                    "nl": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt."
+                },
+                "ap-codelist": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "NOTE",
+                        "note": "bemonsterdObject"
+                    },
+                    {
+                        "key": "parentURI",
+                        "value": "NOTE",
+                        "note": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "NOTE",
+                        "note": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "NOTE",
+                        "note": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "NOTE",
+                        "note": "bemonsterdObject"
+                    },
+                    {
+                        "key": "usageNote-nl",
+                        "value": "NOTE",
+                        "note": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt."
+                    },
+                    {
+                        "key": "ap-usageNote-nl",
+                        "value": "NOTE",
+                        "note": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt."
+                    }
+                ],
+                "DestRoleTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "NOTE",
+                        "note": "bemonsterdObject"
+                    },
+                    {
+                        "key": "parentURI",
+                        "value": "NOTE",
+                        "note": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature"
+                    },
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "NOTE",
+                        "note": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "NOTE",
+                        "note": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "NOTE",
+                        "note": "bemonsterdObject"
+                    },
+                    {
+                        "key": "usageNote-nl",
+                        "value": "NOTE",
+                        "note": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt."
+                    },
+                    {
+                        "key": "ap-usageNote-nl",
+                        "value": "NOTE",
+                        "note": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt."
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersbemonsteringsobject",
+                    "EA-Name": "Verkeersbemonsteringsobject"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Verkeersdomeinobject",
+                    "EA-GUID": "{2E48BB96-557B-4b70-A841-96C9488ACB0C}",
+                    "EA-Package": "OSLO-Verkeersmetingen",
+                    "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersdomeinobject"
+                }
+            ],
+            "generalization": [
+                "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature"
+            ],
+            "minCardinality": "1",
+            "maxCardinality": "*"
         },
         {
             "@id": "https://data.vlaanderen.be/ns/netwerk/#beginknoop",
@@ -5311,681 +5994,6 @@
             "maxCardinality": "1"
         },
         {
-            "@id": "https://data.vlaanderen.be/ns/Verkeersmetingen#voertuigType",
-            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-            "name": "voertuigtype",
-            "inpackage": "OTHER_PACKAGE",
-            "ap-usageNote-nl": {
-                "nl": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc."
-            },
-            "usage": {
-                "nl": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc."
-            },
-            "definition": {
-                "nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
-            },
-            "label": {
-                "nl": "voertuigType"
-            },
-            "ap-label-nl": {
-                "nl": "voertuigType"
-            },
-            "ap-definition-nl": {
-                "nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
-            },
-            "extra": {
-                "EA-Name": "voertuigType",
-                "EA-Guid": "{CF9C3D94-2593-4911-AFB0-26E1C2D262AB}",
-                "EA-Package": "OSLO-Verkeersmetingen",
-                "EA-Type": "attribute",
-                "EA-Domain": "Verkeerskenmerk",
-                "EA-Domain-Guid": "{CCF671D1-65E5-4164-80DC-A55676E447D2}",
-                "EA-Range": "Voertuigtype",
-                "RangeData": {
-                    "EA-Name": "Voertuigtype",
-                    "EA-GUID": "{64EE5960-3F3B-44f0-B16F-98DB641FF786}",
-                    "EA-Package": "INSPIRE-Transportnetwerk",
-                    "uri": "https://data.vlaanderen.be/ns/transportnetwerk#Voertuigtype"
-                },
-                "label": {
-                    "nl": "voertuigType"
-                },
-                "definition": {
-                    "nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
-                },
-                "usage": {
-                    "nl": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc."
-                },
-                "ap-label-nl": {
-                    "nl": "voertuigType"
-                },
-                "ap-definition-nl": {
-                    "nl": "Soort Voertuig waarvan men het Verkeerskenmerk meet."
-                },
-                "ap-usageNote-nl": {
-                    "nl": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc."
-                },
-                "ap-codelist": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "voertuigType",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-label-nl",
-                        "value": "voertuigType",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Soort Voertuig waarvan men het Verkeerskenmerk meet.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "Soort Voertuig waarvan men het Verkeerskenmerk meet.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "usageNote-nl",
-                        "value": "Bvb \"Fiets\" als men enkel het aantal fietsen wil tellen in een Meetpunt. Enkel noodzakelijk voor Verkeersdomeinobjecten die zelf geen Voertuig zijn maar bvb een Wegsegment of Rijstrook etc.",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "NOTHING"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeerskenmerk",
-                    "EA-Name": "Verkeerskenmerk"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "Voertuigtype",
-                    "EA-GUID": "{64EE5960-3F3B-44f0-B16F-98DB641FF786}",
-                    "EA-Package": "INSPIRE-Transportnetwerk",
-                    "uri": "https://data.vlaanderen.be/ns/transportnetwerk#Voertuigtype"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "1",
-            "maxCardinality": "*"
-        },
-        {
-            "@id": "https://data.vlaanderen.be/ns/Verkeersmetingen#verkeersmeetpuntnetwerkreferentie",
-            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-            "name": "verkeersmeetpuntnetwerkreferentie",
-            "inpackage": "OTHER_PACKAGE",
-            "definition": {
-                "nl": "TODO"
-            },
-            "label": {
-                "nl": "verkeersmeetpuntnetwerkreferentie"
-            },
-            "ap-label-nl": {
-                "nl": "verkeersmeetpuntnetwerkreferentie"
-            },
-            "ap-definition-nl": {
-                "nl": "TODO"
-            },
-            "extra": {
-                "EA-Name": "verkeersmeetpuntnetwerkreferentie",
-                "EA-Guid": "{52414853-0857-4630-9CA7-3C1889B82C27}",
-                "EA-Package": "OSLO-Verkeersmetingen",
-                "EA-Type": "attribute",
-                "EA-Domain": "Verkeersmeetpunt",
-                "EA-Domain-Guid": "{84DECA56-0848-4297-A791-E0316CDC69CF}",
-                "EA-Range": "Puntreferentie",
-                "RangeData": {
-                    "EA-Name": "Puntreferentie",
-                    "EA-GUID": "{A3BFE246-F22F-427d-8A16-CC9C40EFE22E}",
-                    "EA-Package": "INSPIRE-netwerk",
-                    "uri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie"
-                },
-                "label": {
-                    "nl": "verkeersmeetpuntnetwerkreferentie"
-                },
-                "definition": {
-                    "nl": "TODO"
-                },
-                "usage": "",
-                "ap-label-nl": {
-                    "nl": "verkeersmeetpuntnetwerkreferentie"
-                },
-                "ap-definition-nl": {
-                    "nl": "TODO"
-                },
-                "ap-usageNote-nl": "",
-                "ap-codelist": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "verkeersmeetpuntnetwerkreferentie",
-                        "note": "null"
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "TODO",
-                        "note": "null"
-                    },
-                    {
-                        "key": "parentURI",
-                        "value": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen/#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "NOTHING"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeetpunt",
-                    "EA-Name": "Verkeersmeetpunt"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "Puntreferentie",
-                    "EA-GUID": "{A3BFE246-F22F-427d-8A16-CC9C40EFE22E}",
-                    "EA-Package": "INSPIRE-netwerk",
-                    "uri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie"
-                }
-            ],
-            "generalization": [
-                "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen/#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie"
-            ],
-            "minCardinality": "1",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "https://data.vlaanderen.be/ns/Verkeersmetingen#ligging",
-            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-            "name": "ligging",
-            "inpackage": "OTHER_PACKAGE",
-            "ap-usageNote-nl": {
-                "nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
-            },
-            "usage": {
-                "nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
-            },
-            "definition": {
-                "nl": "Locatie van de Sensor."
-            },
-            "label": {
-                "nl": "ligging"
-            },
-            "ap-label-nl": {
-                "nl": "ligging"
-            },
-            "ap-definition-nl": {
-                "nl": "Locatie van de Sensor."
-            },
-            "extra": {
-                "EA-Name": "ligging",
-                "EA-Guid": "{34CAD925-9990-4440-8D3B-1C7A2D324E5B}",
-                "EA-Package": "SSN/SOSA",
-                "EA-Type": "attribute",
-                "EA-Domain": "Sensor",
-                "EA-Domain-Guid": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
-                "EA-Range": "Locatie",
-                "RangeData": {
-                    "EA-Name": "Locatie",
-                    "EA-GUID": "{E214F098-F563-483c-A095-65A105394C36}",
-                    "EA-Package": "OSLO-Verkeersmetingen",
-                    "uri": "http://www.w3.org/ns/prov#Location"
-                },
-                "label": {
-                    "nl": "ligging"
-                },
-                "definition": {
-                    "nl": "Locatie van de Sensor."
-                },
-                "usage": {
-                    "nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
-                },
-                "ap-label-nl": {
-                    "nl": "ligging"
-                },
-                "ap-definition-nl": {
-                    "nl": "Locatie van de Sensor."
-                },
-                "ap-usageNote-nl": {
-                    "nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
-                },
-                "ap-codelist": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "ligging",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-label-nl",
-                        "value": "ligging",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Locatie van de Sensor.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "package",
-                        "value": "OSLO-Verkeersmetingen",
-                        "note": "null"
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "Locatie van de Sensor.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "NOTE",
-                        "note": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
-                    },
-                    {
-                        "key": "usageNote-nl",
-                        "value": "NOTE",
-                        "note": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
-                    }
-                ],
-                "Scope": "NOTHING"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "https://www.w3.org/ns/sosa/Sensor",
-                    "EA-Name": "Sensor"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "Locatie",
-                    "EA-GUID": "{E214F098-F563-483c-A095-65A105394C36}",
-                    "EA-Package": "OSLO-Verkeersmetingen",
-                    "uri": "http://www.w3.org/ns/prov#Location"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "0",
-            "maxCardinality": "*"
-        },
-        {
-            "@id": "https://data.vlaanderen.be/ns/Verkeersmetingen#geobserveerdObject",
-            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-            "name": "geobserveerdobject",
-            "inpackage": "OTHER_PACKAGE",
-            "definition": {
-                "nl": "TODO"
-            },
-            "label": {
-                "nl": "geobserveerdObject"
-            },
-            "ap-label-nl": {
-                "nl": "geobserveerdObject"
-            },
-            "ap-definition-nl": {
-                "nl": "TODO"
-            },
-            "extra": {
-                "EA-Name": "geobserveerdObject",
-                "EA-Guid": "{9C622FAB-2A42-457b-B26A-7E74AE56D792}",
-                "derived": "false",
-                "EA-Package": "",
-                "EA-Type": "connector",
-                "EA-Domain": "Verkeersmeting",
-                "EA-Domain-Guid": "{629A009C-848B-463b-AA2C-272DB667D354}",
-                "EA-Range": "Verkeersmeetpunt",
-                "RangeData": {
-                    "EA-Name": "Verkeersmeetpunt",
-                    "EA-GUID": "{84DECA56-0848-4297-A791-E0316CDC69CF}",
-                    "EA-Package": "OSLO-Verkeersmetingen",
-                    "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeetpunt"
-                },
-                "sourceRole": "null",
-                "destRole": "geobserveerdObject",
-                "label": {
-                    "nl": "geobserveerdObject"
-                },
-                "definition": {
-                    "nl": "TODO"
-                },
-                "usage": "",
-                "ap-label-nl": {
-                    "nl": "geobserveerdObject"
-                },
-                "ap-definition-nl": {
-                    "nl": "TODO"
-                },
-                "ap-usageNote-nl": "",
-                "ap-codelist": "",
-                "RawTags": [
-                    {
-                        "key": "definition-nl",
-                        "value": "NOTE",
-                        "note": "TODO"
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "NOTE",
-                        "note": "geobserveerdObject"
-                    }
-                ],
-                "DestRoleTags": [
-                    {
-                        "key": "definition-nl",
-                        "value": "NOTE",
-                        "note": "TODO"
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "NOTE",
-                        "note": "geobserveerdObject"
-                    }
-                ],
-                "Scope": "NOTHING"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting",
-                    "EA-Name": "Verkeersmeting"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "Verkeersmeetpunt",
-                    "EA-GUID": "{84DECA56-0848-4297-A791-E0316CDC69CF}",
-                    "EA-Package": "OSLO-Verkeersmetingen",
-                    "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeetpunt"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "1",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "https://data.vlaanderen.be/ns/Verkeersmetingen#fenomeenTijd",
-            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-            "name": "fenomeentijd",
-            "inpackage": "OTHER_PACKAGE",
-            "ap-usageNote-nl": {
-                "nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn."
-            },
-            "usage": {
-                "nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn."
-            },
-            "definition": {
-                "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
-            },
-            "label": {
-                "nl": "fenomeenTijd"
-            },
-            "ap-label-nl": {
-                "nl": "fenomeenTijd"
-            },
-            "ap-definition-nl": {
-                "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
-            },
-            "extra": {
-                "EA-Name": "fenomeenTijd",
-                "EA-Guid": "{08BA936D-44F3-420f-9E42-82994C3B7E89}",
-                "EA-Package": "OSLO-Verkeersmetingen",
-                "EA-Type": "attribute",
-                "EA-Domain": "Verkeersmeting",
-                "EA-Domain-Guid": "{629A009C-848B-463b-AA2C-272DB667D354}",
-                "EA-Range": "TemporeleEntiteit",
-                "RangeData": {
-                    "EA-Name": "TemporeleEntiteit",
-                    "EA-GUID": "{300A19C6-C1BD-4479-B125-ADFF86DD5836}",
-                    "EA-Package": "Time",
-                    "uri": "http://fixme.com#TemporeleEntiteit"
-                },
-                "label": {
-                    "nl": "fenomeenTijd"
-                },
-                "definition": {
-                    "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
-                },
-                "usage": {
-                    "nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn."
-                },
-                "ap-label-nl": {
-                    "nl": "fenomeenTijd"
-                },
-                "ap-definition-nl": {
-                    "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
-                },
-                "ap-usageNote-nl": {
-                    "nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn."
-                },
-                "ap-codelist": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "fenomeenTijd",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-label-nl",
-                        "value": "fenomeenTijd",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "package",
-                        "value": "OSLO-Verkeersmetingen",
-                        "note": "null"
-                    },
-                    {
-                        "key": "parentURI",
-                        "value": "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime",
-                        "note": "null"
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is.",
-                        "note": "null"
-                    }
-                ],
-                "Scope": "NOTHING"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting",
-                    "EA-Name": "Verkeersmeting"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "TemporeleEntiteit",
-                    "EA-GUID": "{300A19C6-C1BD-4479-B125-ADFF86DD5836}",
-                    "EA-Package": "Time",
-                    "uri": "http://fixme.com#TemporeleEntiteit"
-                }
-            ],
-            "generalization": [
-                "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime"
-            ],
-            "minCardinality": "1",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "https://data.vlaanderen.be/ns/Verkeersmetingen#bemonsterdObject",
-            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-            "name": "bemonsterdobject",
-            "inpackage": "OTHER_PACKAGE",
-            "ap-usageNote-nl": {
-                "nl": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt."
-            },
-            "usage": {
-                "nl": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt."
-            },
-            "definition": {
-                "nl": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
-            },
-            "label": {
-                "nl": "bemonsterdObject"
-            },
-            "ap-label-nl": {
-                "nl": "bemonsterdObject"
-            },
-            "ap-definition-nl": {
-                "nl": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
-            },
-            "extra": {
-                "EA-Name": "bemonsterdObject",
-                "EA-Guid": "{4957D1B2-0700-4cd6-A022-32AF0C0E1760}",
-                "derived": "false",
-                "EA-Package": "",
-                "EA-Type": "connector",
-                "EA-Domain": "Verkeersbemonsteringsobject",
-                "EA-Domain-Guid": "{CFE067A0-8DA9-40db-AF71-DC32C871721F}",
-                "EA-Range": "Verkeersdomeinobject",
-                "RangeData": {
-                    "EA-Name": "Verkeersdomeinobject",
-                    "EA-GUID": "{2E48BB96-557B-4b70-A841-96C9488ACB0C}",
-                    "EA-Package": "OSLO-Verkeersmetingen",
-                    "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersdomeinobject"
-                },
-                "sourceRole": "null",
-                "destRole": "bemonsterdObject",
-                "label": {
-                    "nl": "bemonsterdObject"
-                },
-                "definition": {
-                    "nl": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
-                },
-                "usage": {
-                    "nl": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt."
-                },
-                "ap-label-nl": {
-                    "nl": "bemonsterdObject"
-                },
-                "ap-definition-nl": {
-                    "nl": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
-                },
-                "ap-usageNote-nl": {
-                    "nl": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt."
-                },
-                "ap-codelist": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "NOTE",
-                        "note": "bemonsterdObject"
-                    },
-                    {
-                        "key": "parentURI",
-                        "value": "NOTE",
-                        "note": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "NOTE",
-                        "note": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "NOTE",
-                        "note": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
-                    },
-                    {
-                        "key": "ap-label-nl",
-                        "value": "NOTE",
-                        "note": "bemonsterdObject"
-                    },
-                    {
-                        "key": "usageNote-nl",
-                        "value": "NOTE",
-                        "note": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt."
-                    },
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "NOTE",
-                        "note": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt."
-                    }
-                ],
-                "DestRoleTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "NOTE",
-                        "note": "bemonsterdObject"
-                    },
-                    {
-                        "key": "parentURI",
-                        "value": "NOTE",
-                        "note": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature"
-                    },
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "NOTE",
-                        "note": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "NOTE",
-                        "note": "Verwijzing naar het Verkeersdomeinobject waarop de meting betrekking heeft en waarvoor het Verkeersbemonsteringsobject representatief is."
-                    },
-                    {
-                        "key": "ap-label-nl",
-                        "value": "NOTE",
-                        "note": "bemonsterdObject"
-                    },
-                    {
-                        "key": "usageNote-nl",
-                        "value": "NOTE",
-                        "note": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt."
-                    },
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "NOTE",
-                        "note": "Bvb het Voertuig of het Wegsegment waarvan men een Verkeerskenmerk bepaalt."
-                    }
-                ],
-                "Scope": "NOTHING"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersbemonsteringsobject",
-                    "EA-Name": "Verkeersbemonsteringsobject"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "Verkeersdomeinobject",
-                    "EA-GUID": "{2E48BB96-557B-4b70-A841-96C9488ACB0C}",
-                    "EA-Package": "OSLO-Verkeersmetingen",
-                    "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersdomeinobject"
-                }
-            ],
-            "generalization": [
-                "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature"
-            ],
-            "minCardinality": "1",
-            "maxCardinality": "*"
-        },
-        {
             "@id": "http://www.w3.org/ns/ssn/implements",
             "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
             "name": "implementeert",
@@ -6321,7 +6329,7 @@
             "codelist": [],
             "domain": [
                 {
-                    "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeting",
+                    "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting",
                     "EA-Name": "Verkeersmeting"
                 }
             ],
@@ -6718,7 +6726,7 @@
             "codelist": [],
             "domain": [
                 {
-                    "uri": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeetpunt",
+                    "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt",
                     "EA-Name": "Verkeersmeetpunt"
                 }
             ],
