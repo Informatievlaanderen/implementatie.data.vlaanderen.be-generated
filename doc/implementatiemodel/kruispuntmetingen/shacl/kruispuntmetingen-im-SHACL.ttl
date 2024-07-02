@@ -52,6 +52,7 @@
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#LocatieShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#ObservatieprocedureShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#ProcedureShape>,
+    <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#SensorShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#InputShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#OutputShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#GerichteLinkShape>,
@@ -76,8 +77,7 @@
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#ToestelShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#ObservatieverzamelingShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#SysteemShape>,
-    <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#PlatformShape>,
-    <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#SensorShape> .
+    <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#PlatformShape> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#AgentShape> a shacl:NodeShape;
   shacl:closed false;
@@ -550,7 +550,7 @@
   shacl:path <http://www.w3.org/ns/ssn/hasInput> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#ObservatieprocedureShape/4881f41cc66f4b8cd3be64c9f9b7e6e26cfd2cf5> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#Observatieprocedure.ge%C3%AFmplementeerdMet";
-  shacl:class <https://www.w3.org/ns/sosa/Sensor>;
+  shacl:class <http://www.w3.org/ns/sosa/Sensor>;
   shacl:description "Sensor waarmee de Observatieprocedure is of moet worden uitgevoerd."@nl;
   shacl:name "geïmplementeerdMet"@nl;
   shacl:path <http://www.w3.org/ns/ssn/implementedBy> .
@@ -733,7 +733,7 @@
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#SensorShape/715b6a06329c1327eeb4bd048fec0bdc32235658>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#SensorShape/802fd650e6ec42f1b6aa8e9d6d85dd529d59b822>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#SensorShape/7c8605c3338335abe4771b8126140af61a98ddc1>;
-  shacl:targetClass <https://www.w3.org/ns/sosa/Sensor> .
+  shacl:targetClass <http://www.w3.org/ns/sosa/Sensor> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#SensorShape/715b6a06329c1327eeb4bd048fec0bdc32235658> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#Sensor.implementeert";
   shacl:description "Observatieprocedure die door de Sensor wordt toegepast."@nl;
@@ -831,7 +831,7 @@
   shacl:path <https://saref.etsi.org/core/accomplishes> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#ToestelShape/cde7263d3da184d95c9c10336005ccfc8922acc8> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#Toestel.hostvan";
-  shacl:class <https://www.w3.org/ns/sosa/Sensor>;
+  shacl:class <http://www.w3.org/ns/sosa/Sensor>;
   shacl:description "Sensor door het Toestel gehost."@nl;
   shacl:name "host van"@nl;
   shacl:path <https://www.w3.org/ns/sosa/hosts> .
@@ -979,7 +979,7 @@
   shacl:path <https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#VerkeersmetingShape/1577ed08c179238e234b11af1f5672b5d2614526> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#Verkeersmeting.uitgevoerdMet";
-  shacl:class <https://www.w3.org/ns/sosa/Sensor>;
+  shacl:class <http://www.w3.org/ns/sosa/Sensor>;
   shacl:description "De Sensor waarmee de Verkeersmeting werd uitgevoerd."@nl;
   shacl:name "uitgevoerdMet"@nl;
   shacl:path <http://www.w3.org/ns/sosa/madeBySensor> .

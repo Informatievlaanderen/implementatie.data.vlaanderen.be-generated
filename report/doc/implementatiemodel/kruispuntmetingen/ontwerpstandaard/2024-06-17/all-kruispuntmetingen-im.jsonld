@@ -2161,7 +2161,7 @@
             "codelist": [],
             "domain": [
                 {
-                    "uri": "https://www.w3.org/ns/sosa/Sensor",
+                    "uri": "http://www.w3.org/ns/sosa/Sensor",
                     "EA-Name": "Sensor"
                 }
             ],
@@ -5922,6 +5922,108 @@
             "name": "Procedure"
         },
         {
+            "@id": "http://www.w3.org/ns/sosa/Sensor",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "inpackage": "OTHER_PACKAGE",
+            "ap-usageNote-nl": {
+                "nl": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
+            },
+            "usage": {
+                "nl": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
+            },
+            "definition": {
+                "nl": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden."
+            },
+            "label": {
+                "nl": "Sensor"
+            },
+            "ap-label-nl": {
+                "nl": "Sensor"
+            },
+            "ap-definition-nl": {
+                "nl": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden."
+            },
+            "extra": {
+                "EA-Name": "Sensor",
+                "EA-Guid": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
+                "EA-Package": "SSN/SOSA",
+                "EA-Type": "CLASS",
+                "EA-Parents": "",
+                "EA-Parents2": [
+                    {
+                        "name": "Systeem",
+                        "label": "Systeem",
+                        "package": "SSN/SOSA",
+                        "uri": "http://www.w3.org/ns/ssn/System"
+                    }
+                ],
+                "parentclasses": "http://www.w3.org/ns/ssn/System",
+                "label": {
+                    "nl": "Sensor"
+                },
+                "definition": {
+                    "nl": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden."
+                },
+                "usage": {
+                    "nl": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
+                },
+                "ap-label-nl": {
+                    "nl": "Sensor"
+                },
+                "ap-definition-nl": {
+                    "nl": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden."
+                },
+                "ap-usageNote-nl": {
+                    "nl": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
+                },
+                "ap-codelist": "",
+                "RawTags": [
+                    {
+                        "key": "ap-definition-nl",
+                        "value": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden.",
+                        "note": "Device, agent (including humans), or software (simulation) involved in, or implementing, a procedure. Sensors respond to a stimulus, e.e., a change in the environment, or Input data composed from the Results of prior observations, and generate a result. Sensors can be hosted by platforms."
+                    },
+                    {
+                        "key": "ap-label-nl",
+                        "value": "Sensor",
+                        "note": "null"
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "Sensor",
+                        "note": "null"
+                    },
+                    {
+                        "key": "uri",
+                        "value": "http://www.w3.org/ns/sosa/Sensor",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-usageNote-nl",
+                        "value": "NOTE",
+                        "note": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
+                    },
+                    {
+                        "key": "ap-label-en",
+                        "value": "Sensor",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-definition-en",
+                        "value": "Device or Agent (including Persons or software) with which Observations are made.",
+                        "note": "null"
+                    },
+                    {
+                        "key": "ap-usageNote-en",
+                        "value": "NOTE",
+                        "note": "Sensors generate a result based on a stimulus, i.e. a change in the environment, or based on results from other Observations. They are typically hosted by a Platform. Examples are speedometers, gyroscopes, barometers, magnetometers mounted on a smart phone. The human eye, for example, can also be regarded as a Sensor."
+                    }
+                ],
+                "Scope": "NOTHING"
+            },
+            "name": "Sensor"
+        },
+        {
             "@id": "http://www.w3.org/ns/ssn/Input",
             "@type": "http://www.w3.org/2002/07/owl#Class",
             "inpackage": "OTHER_PACKAGE",
@@ -8226,108 +8328,6 @@
                 "Scope": "NOTHING"
             },
             "name": "Platform"
-        },
-        {
-            "@id": "https://www.w3.org/ns/sosa/Sensor",
-            "@type": "http://www.w3.org/2002/07/owl#Class",
-            "inpackage": "OTHER_PACKAGE",
-            "ap-usageNote-nl": {
-                "nl": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
-            },
-            "usage": {
-                "nl": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
-            },
-            "definition": {
-                "nl": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden."
-            },
-            "label": {
-                "nl": "Sensor"
-            },
-            "ap-label-nl": {
-                "nl": "Sensor"
-            },
-            "ap-definition-nl": {
-                "nl": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden."
-            },
-            "extra": {
-                "EA-Name": "Sensor",
-                "EA-Guid": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
-                "EA-Package": "SSN/SOSA",
-                "EA-Type": "CLASS",
-                "EA-Parents": "",
-                "EA-Parents2": [
-                    {
-                        "name": "Systeem",
-                        "label": "Systeem",
-                        "package": "SSN/SOSA",
-                        "uri": "http://www.w3.org/ns/ssn/System"
-                    }
-                ],
-                "parentclasses": "http://www.w3.org/ns/ssn/System",
-                "label": {
-                    "nl": "Sensor"
-                },
-                "definition": {
-                    "nl": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden."
-                },
-                "usage": {
-                    "nl": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
-                },
-                "ap-label-nl": {
-                    "nl": "Sensor"
-                },
-                "ap-definition-nl": {
-                    "nl": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden."
-                },
-                "ap-usageNote-nl": {
-                    "nl": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
-                },
-                "ap-codelist": "",
-                "RawTags": [
-                    {
-                        "key": "ap-definition-nl",
-                        "value": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden.",
-                        "note": "Device, agent (including humans), or software (simulation) involved in, or implementing, a procedure. Sensors respond to a stimulus, e.e., a change in the environment, or Input data composed from the Results of prior observations, and generate a result. Sensors can be hosted by platforms."
-                    },
-                    {
-                        "key": "ap-label-nl",
-                        "value": "Sensor",
-                        "note": "null"
-                    },
-                    {
-                        "key": "label-nl",
-                        "value": "Sensor",
-                        "note": "null"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "https://www.w3.org/ns/sosa/Sensor",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-usageNote-nl",
-                        "value": "NOTE",
-                        "note": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
-                    },
-                    {
-                        "key": "ap-label-en",
-                        "value": "Sensor",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-definition-en",
-                        "value": "Device or Agent (including Persons or software) with which Observations are made.",
-                        "note": "null"
-                    },
-                    {
-                        "key": "ap-usageNote-en",
-                        "value": "NOTE",
-                        "note": "Sensors generate a result based on a stimulus, i.e. a change in the environment, or based on results from other Observations. They are typically hosted by a Platform. Examples are speedometers, gyroscopes, barometers, magnetometers mounted on a smart phone. The human eye, for example, can also be regarded as a Sensor."
-                    }
-                ],
-                "Scope": "NOTHING"
-            },
-            "name": "Sensor"
         }
     ],
     "externalproperties": [
@@ -8361,7 +8361,7 @@
                     "EA-Name": "Sensor",
                     "EA-GUID": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
                     "EA-Package": "SSN/SOSA",
-                    "uri": "https://www.w3.org/ns/sosa/Sensor"
+                    "uri": "http://www.w3.org/ns/sosa/Sensor"
                 },
                 "sourceRole": "^gehostDoor",
                 "destRole": "^hostVan",
@@ -8458,7 +8458,7 @@
                     "EA-Name": "Sensor",
                     "EA-GUID": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
                     "EA-Package": "SSN/SOSA",
-                    "uri": "https://www.w3.org/ns/sosa/Sensor"
+                    "uri": "http://www.w3.org/ns/sosa/Sensor"
                 }
             ],
             "generalization": [],
@@ -11313,7 +11313,7 @@
             "codelist": [],
             "domain": [
                 {
-                    "uri": "https://www.w3.org/ns/sosa/Sensor",
+                    "uri": "http://www.w3.org/ns/sosa/Sensor",
                     "EA-Name": "Sensor"
                 }
             ],
@@ -11359,7 +11359,7 @@
                     "EA-Name": "Sensor",
                     "EA-GUID": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
                     "EA-Package": "SSN/SOSA",
-                    "uri": "https://www.w3.org/ns/sosa/Sensor"
+                    "uri": "http://www.w3.org/ns/sosa/Sensor"
                 },
                 "sourceRole": "implementeert",
                 "destRole": "geïmplementeerdMet",
@@ -11466,7 +11466,7 @@
                     "EA-Name": "Sensor",
                     "EA-GUID": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
                     "EA-Package": "SSN/SOSA",
-                    "uri": "https://www.w3.org/ns/sosa/Sensor"
+                    "uri": "http://www.w3.org/ns/sosa/Sensor"
                 }
             ],
             "generalization": [],
@@ -11701,7 +11701,7 @@
                     "EA-Name": "Sensor",
                     "EA-GUID": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
                     "EA-Package": "SSN/SOSA",
-                    "uri": "https://www.w3.org/ns/sosa/Sensor"
+                    "uri": "http://www.w3.org/ns/sosa/Sensor"
                 },
                 "sourceRole": "uitgevoerdeObservatie",
                 "destRole": "^uitgevoerdMet",
@@ -11798,7 +11798,7 @@
                     "EA-Name": "Sensor",
                     "EA-GUID": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
                     "EA-Package": "SSN/SOSA",
-                    "uri": "https://www.w3.org/ns/sosa/Sensor"
+                    "uri": "http://www.w3.org/ns/sosa/Sensor"
                 }
             ],
             "generalization": [],
@@ -11943,7 +11943,7 @@
             "codelist": [],
             "domain": [
                 {
-                    "uri": "https://www.w3.org/ns/sosa/Sensor",
+                    "uri": "http://www.w3.org/ns/sosa/Sensor",
                     "EA-Name": "Sensor"
                 }
             ],
@@ -13644,16 +13644,16 @@
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/",
     "config": "config/config-ap.json",
-    "branchtag": "publicatie-20240617",
+    "branchtag": "production-02072024",
     "contextgenerator": {
         "parameters": "-d -l label"
     },
-    "dummy": "9",
+    "dummy": "10",
     "filename": "config/verkeersmetingen-im.json",
     "navigation": {},
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen",
     "urlref": "/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17",
-    "documentcommit": "7c2ae4abaaa9dfc51c0422db176be247311a342e",
-    "toolchaincommit": "70c04cac4d4b4e503d0a66f943ebb4eb00379871",
+    "documentcommit": "a80d20bae84b7f6c2fbbf712a9567ee186899b6c",
+    "toolchaincommit": "5b8fad57c477547aa8b2f071acf838f40c120a9f",
     "hostname": "https://implementatie.data.vlaanderen.be"
 }

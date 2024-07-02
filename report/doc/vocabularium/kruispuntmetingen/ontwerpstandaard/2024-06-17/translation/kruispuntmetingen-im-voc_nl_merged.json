@@ -79,7 +79,7 @@
   "@id": "https://data.vlaanderen.be/ns/verkeersmetingen",
   "@type": "http://www.w3.org/2002/07/owl#Ontology",
   "authors": [],
-  "branchtag": "publicatie-20240617",
+  "branchtag": "production-02072024",
   "classes": [
     {
       "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#Fietspad",
@@ -1475,8 +1475,8 @@
   "contributors-column": "Verkeersmetingen",
   "contributors-file": "stakeholders.csv",
   "diagram": "OSLO-Kruispuntmetingen",
-  "documentcommit": "7c2ae4abaaa9dfc51c0422db176be247311a342e",
-  "dummy": "9",
+  "documentcommit": "a80d20bae84b7f6c2fbbf712a9567ee186899b6c",
+  "dummy": "10",
   "eap": "Kruispuntmetingen-IM.eap",
   "editors": [
     {
@@ -1549,7 +1549,7 @@
           "EA-GUID": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
           "EA-Name": "Sensor",
           "EA-Package": "SSN/SOSA",
-          "uri": "https://www.w3.org/ns/sosa/Sensor"
+          "uri": "http://www.w3.org/ns/sosa/Sensor"
         },
         "RawTags": [
           {
@@ -1623,7 +1623,7 @@
           "EA-GUID": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
           "EA-Name": "Sensor",
           "EA-Package": "SSN/SOSA",
-          "uri": "https://www.w3.org/ns/sosa/Sensor"
+          "uri": "http://www.w3.org/ns/sosa/Sensor"
         }
       ]
     },
@@ -4338,7 +4338,7 @@
       "domain": [
         {
           "EA-Name": "Sensor",
-          "uri": "https://www.w3.org/ns/sosa/Sensor"
+          "uri": "http://www.w3.org/ns/sosa/Sensor"
         }
       ],
       "extra": {
@@ -4526,7 +4526,7 @@
           "EA-GUID": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
           "EA-Name": "Sensor",
           "EA-Package": "SSN/SOSA",
-          "uri": "https://www.w3.org/ns/sosa/Sensor"
+          "uri": "http://www.w3.org/ns/sosa/Sensor"
         },
         "RawTags": [
           {
@@ -4605,7 +4605,7 @@
           "EA-GUID": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
           "EA-Name": "Sensor",
           "EA-Package": "SSN/SOSA",
-          "uri": "https://www.w3.org/ns/sosa/Sensor"
+          "uri": "http://www.w3.org/ns/sosa/Sensor"
         }
       ]
     },
@@ -4869,7 +4869,7 @@
           "EA-GUID": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
           "EA-Name": "Sensor",
           "EA-Package": "SSN/SOSA",
-          "uri": "https://www.w3.org/ns/sosa/Sensor"
+          "uri": "http://www.w3.org/ns/sosa/Sensor"
         },
         "RawTags": [
           {
@@ -4943,7 +4943,7 @@
           "EA-GUID": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
           "EA-Name": "Sensor",
           "EA-Package": "SSN/SOSA",
-          "uri": "https://www.w3.org/ns/sosa/Sensor"
+          "uri": "http://www.w3.org/ns/sosa/Sensor"
         }
       ]
     },
@@ -4958,7 +4958,7 @@
       "domain": [
         {
           "EA-Name": "Sensor",
-          "uri": "https://www.w3.org/ns/sosa/Sensor"
+          "uri": "http://www.w3.org/ns/sosa/Sensor"
         }
       ],
       "extra": {
@@ -9515,6 +9515,100 @@
       "name": "Procedure"
     },
     {
+      "@id": "http://www.w3.org/ns/sosa/Sensor",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
+        "EA-Name": "Sensor",
+        "EA-Package": "SSN/SOSA",
+        "EA-Parents": "",
+        "EA-Parents2": [
+          {
+            "label": "Systeem",
+            "name": "Systeem",
+            "package": "SSN/SOSA",
+            "uri": "http://www.w3.org/ns/ssn/System"
+          }
+        ],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "note": "Device, agent (including humans), or software (simulation) involved in, or implementing, a procedure. Sensors respond to a stimulus, e.e., a change in the environment, or Input data composed from the Results of prior observations, and generate a result. Sensors can be hosted by platforms.",
+            "value": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden."
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "null",
+            "value": "Sensor"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Sensor"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/sosa/Sensor"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "note": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor.",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-label-en",
+            "note": "null",
+            "value": "Sensor"
+          },
+          {
+            "key": "ap-definition-en",
+            "note": "null",
+            "value": "Device or Agent (including Persons or software) with which Observations are made."
+          },
+          {
+            "key": "ap-usageNote-en",
+            "note": "Sensors generate a result based on a stimulus, i.e. a change in the environment, or based on results from other Observations. They are typically hosted by a Platform. Examples are speedometers, gyroscopes, barometers, magnetometers mounted on a smart phone. The human eye, for example, can also be regarded as a Sensor.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "Sensor"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "Sensor"
+        },
+        "parentclasses": "http://www.w3.org/ns/ssn/System",
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Sensor"
+      },
+      "label-nl": {
+        "nl": "Sensor"
+      },
+      "name": "Sensor"
+    },
+    {
       "@id": "http://www.w3.org/ns/ssn/Input",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{FB83108B-BC83-4522-81BB-F464E8BB14F2}",
@@ -11729,100 +11823,6 @@
         "nl": "Platform"
       },
       "name": "Platform"
-    },
-    {
-      "@id": "https://www.w3.org/ns/sosa/Sensor",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
-      "definition-nl": {
-        "nl": "TODO"
-      },
-      "extra": {
-        "EA-Guid": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
-        "EA-Name": "Sensor",
-        "EA-Package": "SSN/SOSA",
-        "EA-Parents": "",
-        "EA-Parents2": [
-          {
-            "label": "Systeem",
-            "name": "Systeem",
-            "package": "SSN/SOSA",
-            "uri": "http://www.w3.org/ns/ssn/System"
-          }
-        ],
-        "EA-Type": "CLASS",
-        "RawTags": [
-          {
-            "key": "ap-definition-nl",
-            "note": "Device, agent (including humans), or software (simulation) involved in, or implementing, a procedure. Sensors respond to a stimulus, e.e., a change in the environment, or Input data composed from the Results of prior observations, and generate a result. Sensors can be hosted by platforms.",
-            "value": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden."
-          },
-          {
-            "key": "ap-label-nl",
-            "note": "null",
-            "value": "Sensor"
-          },
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "Sensor"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "https://www.w3.org/ns/sosa/Sensor"
-          },
-          {
-            "key": "ap-usageNote-nl",
-            "note": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor.",
-            "value": "NOTE"
-          },
-          {
-            "key": "ap-label-en",
-            "note": "null",
-            "value": "Sensor"
-          },
-          {
-            "key": "ap-definition-en",
-            "note": "null",
-            "value": "Device or Agent (including Persons or software) with which Observations are made."
-          },
-          {
-            "key": "ap-usageNote-en",
-            "note": "Sensors generate a result based on a stimulus, i.e. a change in the environment, or based on results from other Observations. They are typically hosted by a Platform. Examples are speedometers, gyroscopes, barometers, magnetometers mounted on a smart phone. The human eye, for example, can also be regarded as a Sensor.",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "definition": "",
-        "definition-en": "",
-        "definition-nl": {
-          "nl": "TODO"
-        },
-        "equivalent": "",
-        "label": {
-          "nl": "Sensor"
-        },
-        "label-en": "",
-        "label-nl": {
-          "nl": "Sensor"
-        },
-        "parentclasses": "http://www.w3.org/ns/ssn/System",
-        "sameAs": "",
-        "subclass": "",
-        "subclass1": "",
-        "usage": "",
-        "usageNote-en": "",
-        "usageNote-nl": ""
-      },
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "Sensor"
-      },
-      "label-nl": {
-        "nl": "Sensor"
-      },
-      "name": "Sensor"
     }
   ],
   "extra": {
@@ -12535,7 +12535,7 @@
       "domain": [
         {
           "EA-Name": "Sensor",
-          "uri": "https://www.w3.org/ns/sosa/Sensor"
+          "uri": "http://www.w3.org/ns/sosa/Sensor"
         }
       ],
       "extra": {
@@ -13562,7 +13562,7 @@
   "title-nl": {
     "nl": "TODO"
   },
-  "toolchaincommit": "70c04cac4d4b4e503d0a66f943ebb4eb00379871",
+  "toolchaincommit": "5b8fad57c477547aa8b2f071acf838f40c120a9f",
   "translation": [
     {
       "language": "nl",

@@ -469,7 +469,7 @@
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#VerkeersmetingShape/1577ed08c179238e234b11af1f5672b5d2614526",
           "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#Verkeersmeting.uitgevoerdMet",
-          "sh:class": "https://www.w3.org/ns/sosa/Sensor",
+          "sh:class": "http://www.w3.org/ns/sosa/Sensor",
           "sh:description": {
             "nl": "De Sensor waarmee de Verkeersmeting werd uitgevoerd."
           },
@@ -1194,7 +1194,7 @@
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#ObservatieprocedureShape/4881f41cc66f4b8cd3be64c9f9b7e6e26cfd2cf5",
           "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#Observatieprocedure.ge%C3%AFmplementeerdMet",
-          "sh:class": "https://www.w3.org/ns/sosa/Sensor",
+          "sh:class": "http://www.w3.org/ns/sosa/Sensor",
           "sh:description": {
             "nl": "Sensor waarmee de Observatieprocedure is of moet worden uitgevoerd."
           },
@@ -1260,6 +1260,62 @@
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.w3.org/ns/sosa/Procedure"
+    },
+    {
+      "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#SensorShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#SensorShape/b8460dc4cd8e040cf4a6629add174de5cc9dce18",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#Sensor.gehostDoor",
+          "sh:class": "https://saref.etsi.org/core/Device",
+          "sh:description": {
+            "nl": "Toestel waarop de Sensor gehost wordt."
+          },
+          "sh:name": {
+            "nl": "gehostDoor"
+          },
+          "sh:path": "http://www.w3.org/ns/sosa/isHostedBy"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#SensorShape/715b6a06329c1327eeb4bd048fec0bdc32235658",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#Sensor.implementeert",
+          "sh:description": {
+            "nl": "Observatieprocedure die door de Sensor wordt toegepast."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "implementeert"
+          },
+          "sh:path": "http://www.w3.org/ns/ssn/implements"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#SensorShape/802fd650e6ec42f1b6aa8e9d6d85dd529d59b822",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#Sensor.implementeert",
+          "sh:class": "http://www.w3.org/ns/sosa/Procedure",
+          "sh:description": {
+            "nl": "Observatieprocedure die door de Sensor wordt toegepast."
+          },
+          "sh:name": {
+            "nl": "implementeert"
+          },
+          "sh:path": "http://www.w3.org/ns/ssn/implements"
+        },
+        {
+          "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#SensorShape/7c8605c3338335abe4771b8126140af61a98ddc1",
+          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#Sensor.ligging",
+          "sh:class": "http://www.w3.org/ns/prov#Location",
+          "sh:description": {
+            "nl": "Locatie van de Sensor."
+          },
+          "sh:name": {
+            "nl": "ligging"
+          },
+          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#ligging"
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/sosa/Sensor"
     },
     {
       "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#InputShape",
@@ -2014,7 +2070,7 @@
         {
           "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#ToestelShape/cde7263d3da184d95c9c10336005ccfc8922acc8",
           "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#Toestel.hostvan",
-          "sh:class": "https://www.w3.org/ns/sosa/Sensor",
+          "sh:class": "http://www.w3.org/ns/sosa/Sensor",
           "sh:description": {
             "nl": "Sensor door het Toestel gehost."
           },
@@ -2094,62 +2150,6 @@
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "https://www.w3.org/ns/sosa/Platform"
-    },
-    {
-      "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#SensorShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#SensorShape/b8460dc4cd8e040cf4a6629add174de5cc9dce18",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#Sensor.gehostDoor",
-          "sh:class": "https://saref.etsi.org/core/Device",
-          "sh:description": {
-            "nl": "Toestel waarop de Sensor gehost wordt."
-          },
-          "sh:name": {
-            "nl": "gehostDoor"
-          },
-          "sh:path": "http://www.w3.org/ns/sosa/isHostedBy"
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#SensorShape/715b6a06329c1327eeb4bd048fec0bdc32235658",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#Sensor.implementeert",
-          "sh:description": {
-            "nl": "Observatieprocedure die door de Sensor wordt toegepast."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "nl": "implementeert"
-          },
-          "sh:path": "http://www.w3.org/ns/ssn/implements"
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#SensorShape/802fd650e6ec42f1b6aa8e9d6d85dd529d59b822",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#Sensor.implementeert",
-          "sh:class": "http://www.w3.org/ns/sosa/Procedure",
-          "sh:description": {
-            "nl": "Observatieprocedure die door de Sensor wordt toegepast."
-          },
-          "sh:name": {
-            "nl": "implementeert"
-          },
-          "sh:path": "http://www.w3.org/ns/ssn/implements"
-        },
-        {
-          "@id": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#SensorShape/7c8605c3338335abe4771b8126140af61a98ddc1",
-          "rdfs:seeAlso": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kruispuntmetingen/ontwerpstandaard/2024-06-17#Sensor.ligging",
-          "sh:class": "http://www.w3.org/ns/prov#Location",
-          "sh:description": {
-            "nl": "Locatie van de Sensor."
-          },
-          "sh:name": {
-            "nl": "ligging"
-          },
-          "sh:path": "https://data.vlaanderen.be/ns/verkeersmetingen#ligging"
-        }
-      ],
-      "sh:targetClass": "https://www.w3.org/ns/sosa/Sensor"
     }
   ]
 }
