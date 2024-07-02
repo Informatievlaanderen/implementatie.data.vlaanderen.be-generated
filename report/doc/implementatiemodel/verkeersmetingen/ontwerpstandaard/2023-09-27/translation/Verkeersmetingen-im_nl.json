@@ -371,6 +371,19 @@
       }
     },
     {
+      "EA-Guid": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
+      "name": "Sensor",
+      "label": {
+        "nl": "Sensor"
+      },
+      "definition": {
+        "nl": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden."
+      },
+      "usage": {
+        "nl": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
+      }
+    },
+    {
       "EA-Guid": "{36BFB504-3638-4c1e-B329-E4BDF1C541F6}",
       "name": "Lineairereferentie",
       "label": {
@@ -598,22 +611,22 @@
       "usage": {
         "nl": "Deze componenten kunnen Systemen op zich zijn. In deze context zijn het Systemen die een Observatieprocedure realiseren (typisch een Sensor) of waarmee een Bemonsteringsprocedure wordt uitgevoerd (bv een Boorinstallatie). OPMERKING: Voor meer details over deze klasse zie <a href=\"https://data.vlaanderen.be/doc/applicatieprofiel/sensoren-en-bemonstering/\">AP Sensoren en Bemonstering</a>."
       }
-    },
-    {
-      "EA-Guid": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
-      "name": "Sensor",
-      "label": {
-        "nl": "Sensor"
-      },
-      "definition": {
-        "nl": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden."
-      },
-      "usage": {
-        "nl": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
-      }
     }
   ],
   "externalproperties": [
+    {
+      "EA-Guid": "{08BA936D-44F3-420f-9E42-82994C3B7E89}",
+      "name": "fenomeentijd",
+      "label": {
+        "nl": "fenomeenTijd"
+      },
+      "definition": {
+        "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+      },
+      "usage": {
+        "nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn."
+      }
+    },
     {
       "EA-Guid": "{FCFCB9D9-E66E-4e9f-AB39-7A24DC0C08BF}",
       "name": "vanpositie",
@@ -681,19 +694,6 @@
       },
       "definition": {
         "nl": "TODO"
-      }
-    },
-    {
-      "EA-Guid": "{08BA936D-44F3-420f-9E42-82994C3B7E89}",
-      "name": "fenomeentijd",
-      "label": {
-        "nl": "fenomeenTijd"
-      },
-      "definition": {
-        "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
-      },
-      "usage": {
-        "nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn."
       }
     },
     {

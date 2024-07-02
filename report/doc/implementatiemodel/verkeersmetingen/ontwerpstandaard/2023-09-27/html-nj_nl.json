@@ -6,15 +6,15 @@
     "baseURI": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#",
     "filename": "Verkeersmetingen-im",
     "navigation": {
-      "self": "https://implementatie.data.vlaanderen.be//doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27"
+      "self": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/verkeersmetingen/ontwerpstandaard/2023-09-27"
     },
     "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
     "documenttype": "ap",
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/3156aa10effa13b06703430b5b84a64b03639ff4",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/3156aa10effa13b06703430b5b84a64b03639ff4/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/dee3738c74b28bf062dff93b8599a52c516a2af3",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/dee3738c74b28bf062dff93b8599a52c516a2af3/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/",
     "usesVocs": [],
@@ -606,6 +606,125 @@
       "properties": []
     },
     {
+      "uri": "http://www.w3.org/ns/sosa/Sensor",
+      "name": "Sensor",
+      "label": {
+        "nl": "Sensor"
+      },
+      "sort": "Sensor",
+      "description": {
+        "nl": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden."
+      },
+      "usage": {
+        "nl": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
+      },
+      "parents": [
+        {
+          "label": "Systeem",
+          "name": "Systeem",
+          "package": "SSN/SOSA",
+          "uri": "https://www.w3.org/TR/vocab-ssn/#ssn-system",
+          "scoped_uri": "#Systeem"
+        }
+      ],
+      "rawTags": {
+        "ap-definition-nl": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden.",
+        "ap-label-nl": "Sensor",
+        "label-nl": "Sensor",
+        "uri": "http://www.w3.org/ns/sosa/Sensor",
+        "ap-usageNote-nl": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
+      },
+      "properties": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#ligging",
+          "name": "ligging",
+          "sort": "ligging",
+          "label": {
+            "nl": "ligging"
+          },
+          "description": {
+            "nl": "Locatie van de Sensor."
+          },
+          "usage": {
+            "nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
+          },
+          "domain": [
+            {
+              "EA-Name": "Sensor",
+              "uri": "http://www.w3.org/ns/sosa/Sensor"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Locatie",
+              "range_uri": "http://www.w3.org/ns/prov#Location"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Locatie",
+              "range_puri": "http://www.w3.org/ns/prov#Location",
+              "range_label": {
+                "nl": "Locatie"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "ligging",
+            "ap-label-nl": "ligging",
+            "ap-definition-nl": "Locatie van de Sensor.",
+            "package": "OSLO-Verkeersmetingen",
+            "definition-nl": "Locatie van de Sensor.",
+            "ap-usageNote-nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren.",
+            "usageNote-nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/ssn/implements",
+          "name": "implementeert",
+          "sort": "implementeert",
+          "label": {
+            "nl": "implementeert"
+          },
+          "description": {
+            "nl": "Observatieprocedure die door de Sensor wordt toegepast."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Sensor",
+              "uri": "http://www.w3.org/ns/sosa/Sensor"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Observatieprocedure",
+              "range_uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Observatieprocedure",
+              "range_puri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure",
+              "range_label": {
+                "nl": "Observatieprocedure"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://www.w3.org/ns/ssn/implements",
+            "ap-definition-nl": "Observatieprocedure die door de Sensor wordt toegepast.",
+            "label-nl": "implementeert",
+            "ap-label-nl": "implementeert"
+          }
+        }
+      ]
+    },
+    {
       "uri": "https://data.vlaanderen.be/ns/netwerk#Netwerkelement",
       "name": "Netwerkelement",
       "label": {
@@ -1031,46 +1150,7 @@
       },
       "properties": [
         {
-          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject",
-          "name": "geobserveerdobject",
-          "sort": "geobserveerdObject",
-          "label": {
-            "nl": "geobserveerdObject"
-          },
-          "description": {
-            "nl": "TODO"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Verkeersmeting",
-              "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Verkeersmeetpunt",
-              "range_uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Verkeersmeetpunt",
-              "range_puri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt",
-              "range_label": {
-                "nl": "Verkeersmeetpunt"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "definition-nl": "TODO",
-            "label-nl": "geobserveerdObject"
-          }
-        },
-        {
-          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#fenomeenTijd",
+          "uri": "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime",
           "name": "fenomeentijd",
           "sort": "fenomeenTijd",
           "label": {
@@ -1110,9 +1190,47 @@
             "ap-label-nl": "fenomeenTijd",
             "ap-definition-nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is.",
             "ap-usageNote-nl": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn.",
-            "package": "OSLO-Verkeersmetingen",
-            "parentURI": "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime",
-            "definition-nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+            "definition-nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is.",
+            "uri": "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime"
+          }
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject",
+          "name": "geobserveerdobject",
+          "sort": "geobserveerdObject",
+          "label": {
+            "nl": "geobserveerdObject"
+          },
+          "description": {
+            "nl": "TODO"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Verkeersmeting",
+              "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Verkeersmeetpunt",
+              "range_uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Verkeersmeetpunt",
+              "range_puri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt",
+              "range_label": {
+                "nl": "Verkeersmeetpunt"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "definition-nl": "TODO",
+            "label-nl": "geobserveerdObject"
           }
         },
         {
@@ -1135,13 +1253,13 @@
           "range": [
             {
               "range_label": "Sensor",
-              "range_uri": "https://www.w3.org/ns/sosa/Sensor"
+              "range_uri": "http://www.w3.org/ns/sosa/Sensor"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Sensor",
-              "range_puri": "https://www.w3.org/ns/sosa/Sensor",
+              "range_puri": "http://www.w3.org/ns/sosa/Sensor",
               "range_label": {
                 "nl": "Sensor"
               }
@@ -1639,13 +1757,13 @@
           "range": [
             {
               "range_label": "Sensor",
-              "range_uri": "https://www.w3.org/ns/sosa/Sensor"
+              "range_uri": "http://www.w3.org/ns/sosa/Sensor"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Sensor",
-              "range_puri": "https://www.w3.org/ns/sosa/Sensor",
+              "range_puri": "http://www.w3.org/ns/sosa/Sensor",
               "range_label": {
                 "nl": "Sensor"
               }
@@ -1725,125 +1843,6 @@
         "uri": "https://www.w3.org/TR/vocab-ssn/#ssn-system"
       },
       "properties": []
-    },
-    {
-      "uri": "https://www.w3.org/ns/sosa/Sensor",
-      "name": "Sensor",
-      "label": {
-        "nl": "Sensor"
-      },
-      "sort": "Sensor",
-      "description": {
-        "nl": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden."
-      },
-      "usage": {
-        "nl": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
-      },
-      "parents": [
-        {
-          "label": "Systeem",
-          "name": "Systeem",
-          "package": "SSN/SOSA",
-          "uri": "https://www.w3.org/TR/vocab-ssn/#ssn-system",
-          "scoped_uri": "#Systeem"
-        }
-      ],
-      "rawTags": {
-        "ap-definition-nl": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden.",
-        "ap-label-nl": "Sensor",
-        "label-nl": "Sensor",
-        "uri": "https://www.w3.org/ns/sosa/Sensor",
-        "ap-usageNote-nl": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
-      },
-      "properties": [
-        {
-          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#ligging",
-          "name": "ligging",
-          "sort": "ligging",
-          "label": {
-            "nl": "ligging"
-          },
-          "description": {
-            "nl": "Locatie van de Sensor."
-          },
-          "usage": {
-            "nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
-          },
-          "domain": [
-            {
-              "EA-Name": "Sensor",
-              "uri": "https://www.w3.org/ns/sosa/Sensor"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Locatie",
-              "range_uri": "http://www.w3.org/ns/prov#Location"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Locatie",
-              "range_puri": "http://www.w3.org/ns/prov#Location",
-              "range_label": {
-                "nl": "Locatie"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "ligging",
-            "ap-label-nl": "ligging",
-            "ap-definition-nl": "Locatie van de Sensor.",
-            "package": "OSLO-Verkeersmetingen",
-            "definition-nl": "Locatie van de Sensor.",
-            "ap-usageNote-nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren.",
-            "usageNote-nl": "Bvb de coördinaten of het adres of een verwijzing naar een meetpunt of ander Bemonsteringsobject. Meerdere verschillende types van locaties kunnen worden opgegeven (bvb adres èn coördinaten). Als de Sensor een meetinstallatie is evt de verschillende meetpunten die worden omvat of een omschrijvende polygoon. OPGELET: De locatie van de Sensor is niet noodzakelijk de positie waar de Observatie gebeurt, die wordt in de eerste plaats gegeven door de ligging vh Bemonsteringsobject. Dit attribuut laat vooral toe om posities van Sensoren te beschrijven los vd metingen die er gebeuren."
-          }
-        },
-        {
-          "uri": "http://www.w3.org/ns/ssn/implements",
-          "name": "implementeert",
-          "sort": "implementeert",
-          "label": {
-            "nl": "implementeert"
-          },
-          "description": {
-            "nl": "Observatieprocedure die door de Sensor wordt toegepast."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Sensor",
-              "uri": "https://www.w3.org/ns/sosa/Sensor"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Observatieprocedure",
-              "range_uri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Observatieprocedure",
-              "range_puri": "https://www.w3.org/TR/vocab-ssn/#SOSAProcedure",
-              "range_label": {
-                "nl": "Observatieprocedure"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://www.w3.org/ns/ssn/implements",
-            "ap-definition-nl": "Observatieprocedure die door de Sensor wordt toegepast.",
-            "label-nl": "implementeert",
-            "ap-label-nl": "implementeert"
-          }
-        }
-      ]
     }
   ],
   "properties": [

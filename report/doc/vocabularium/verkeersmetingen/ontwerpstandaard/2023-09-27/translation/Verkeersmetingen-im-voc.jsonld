@@ -2640,6 +2640,84 @@
       "name": "Procedure"
     },
     {
+      "@id": "http://www.w3.org/ns/sosa/Sensor",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "inpackage": "OTHER_PACKAGE",
+      "label-nl": {
+        "nl": "Sensor"
+      },
+      "label": {
+        "nl": "Sensor"
+      },
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Name": "Sensor",
+        "EA-Guid": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
+        "EA-Package": "SSN/SOSA",
+        "EA-Type": "CLASS",
+        "EA-Parents": "",
+        "EA-Parents2": [
+          {
+            "name": "Systeem",
+            "label": "Systeem",
+            "package": "SSN/SOSA",
+            "uri": "https://www.w3.org/TR/vocab-ssn/#ssn-system"
+          }
+        ],
+        "parentclasses": "https://www.w3.org/TR/vocab-ssn/#ssn-system",
+        "label": {
+          "nl": "Sensor"
+        },
+        "definition": "",
+        "usage": "",
+        "label-nl": {
+          "nl": "Sensor"
+        },
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "usageNote-nl": "",
+        "label-en": "",
+        "definition-en": "",
+        "usageNote-en": "",
+        "equivalent": "",
+        "subclass": "",
+        "subclass1": "",
+        "sameAs": "",
+        "RawTags": [
+          {
+            "key": "ap-definition-nl",
+            "value": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden.",
+            "note": "Device, agent (including humans), or software (simulation) involved in, or implementing, a procedure. Sensors respond to a stimulus, e.e., a change in the environment, or Input data composed from the Results of prior observations, and generate a result. Sensors can be hosted by platforms."
+          },
+          {
+            "key": "ap-label-nl",
+            "value": "Sensor",
+            "note": "null"
+          },
+          {
+            "key": "label-nl",
+            "value": "Sensor",
+            "note": "null"
+          },
+          {
+            "key": "uri",
+            "value": "http://www.w3.org/ns/sosa/Sensor",
+            "note": "null"
+          },
+          {
+            "key": "ap-usageNote-nl",
+            "value": "NOTE",
+            "note": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
+          }
+        ],
+        "Scope": "NOTHING"
+      },
+      "name": "Sensor"
+    },
+    {
       "@id": "https://data.vlaanderen.be/ns/netwerk#LineaireReferentie",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "inpackage": "OTHER_PACKAGE",
@@ -4261,45 +4339,52 @@
         "Scope": "NOTHING"
       },
       "name": "Systeem"
-    },
+    }
+  ],
+  "externalproperties": [
     {
-      "@id": "https://www.w3.org/ns/sosa/Sensor",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "@id": "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "fenomeentijd",
       "inpackage": "OTHER_PACKAGE",
       "label-nl": {
-        "nl": "Sensor"
+        "nl": "fenomeenTijd"
+      },
+      "definition": {
+        "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
       },
       "label": {
-        "nl": "Sensor"
+        "nl": "fenomeenTijd"
       },
       "definition-nl": {
-        "nl": "TODO"
+        "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
       },
       "extra": {
-        "EA-Name": "Sensor",
-        "EA-Guid": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
-        "EA-Package": "SSN/SOSA",
-        "EA-Type": "CLASS",
-        "EA-Parents": "",
-        "EA-Parents2": [
-          {
-            "name": "Systeem",
-            "label": "Systeem",
-            "package": "SSN/SOSA",
-            "uri": "https://www.w3.org/TR/vocab-ssn/#ssn-system"
-          }
-        ],
-        "parentclasses": "https://www.w3.org/TR/vocab-ssn/#ssn-system",
-        "label": {
-          "nl": "Sensor"
+        "EA-Name": "fenomeenTijd",
+        "EA-Guid": "{08BA936D-44F3-420f-9E42-82994C3B7E89}",
+        "EA-Package": "OSLO-Verkeersmetingen",
+        "EA-Type": "attribute",
+        "EA-Domain": "Verkeersmeting",
+        "EA-Domain-Guid": "{629A009C-848B-463b-AA2C-272DB667D354}",
+        "EA-Range": "TemporeleEntiteit",
+        "RangeData": {
+          "EA-Name": "TemporeleEntiteit",
+          "EA-GUID": "{300A19C6-C1BD-4479-B125-ADFF86DD5836}",
+          "EA-Package": "Time",
+          "uri": "http://fixme.com#TemporeleEntiteit"
         },
-        "definition": "",
+        "label": {
+          "nl": "fenomeenTijd"
+        },
+        "definition": {
+          "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
+        },
         "usage": "",
         "label-nl": {
-          "nl": "Sensor"
+          "nl": "fenomeenTijd"
         },
         "definition-nl": {
-          "nl": "TODO"
+          "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
         },
         "usageNote-nl": "",
         "label-en": "",
@@ -4311,37 +4396,57 @@
         "sameAs": "",
         "RawTags": [
           {
-            "key": "ap-definition-nl",
-            "value": "Toestel of Agent (incl Personen of software) waarmee Observaties gemaakt worden.",
-            "note": "Device, agent (including humans), or software (simulation) involved in, or implementing, a procedure. Sensors respond to a stimulus, e.e., a change in the environment, or Input data composed from the Results of prior observations, and generate a result. Sensors can be hosted by platforms."
+            "key": "label-nl",
+            "value": "fenomeenTijd",
+            "note": "null"
           },
           {
             "key": "ap-label-nl",
-            "value": "Sensor",
+            "value": "fenomeenTijd",
             "note": "null"
           },
           {
-            "key": "label-nl",
-            "value": "Sensor",
-            "note": "null"
-          },
-          {
-            "key": "uri",
-            "value": "https://www.w3.org/ns/sosa/Sensor",
+            "key": "ap-definition-nl",
+            "value": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is.",
             "note": "null"
           },
           {
             "key": "ap-usageNote-nl",
-            "value": "NOTE",
-            "note": "Sensoren genereren een resultaat op basis van een Stimulus, ttz een verandering in de omgeving, of op basis van resultaten van andere Observaties. Ze worden typisch gehost door een Platform. Voorbeelden zijn snelheidsmeters, gyroscopen, barometers, magnetometers gemonteerd op een smart phone. Ook bv het menselijk oog kan beschouwd worden als een sensor."
+            "value": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn.",
+            "note": "null"
+          },
+          {
+            "key": "definition-nl",
+            "value": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is.",
+            "note": "null"
+          },
+          {
+            "key": "uri",
+            "value": "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime",
+            "note": "null"
           }
         ],
         "Scope": "NOTHING"
       },
-      "name": "Sensor"
-    }
-  ],
-  "externalproperties": [
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting",
+          "EA-Name": "Verkeersmeting"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "TemporeleEntiteit",
+          "EA-GUID": "{300A19C6-C1BD-4479-B125-ADFF86DD5836}",
+          "EA-Package": "Time",
+          "uri": "http://fixme.com#TemporeleEntiteit"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
+    },
     {
       "@id": "https://data.vlaanderen.be/ns/weg#vanPositie",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
@@ -4846,7 +4951,7 @@
       "codelist": [],
       "domain": [
         {
-          "uri": "https://www.w3.org/ns/sosa/Sensor",
+          "uri": "http://www.w3.org/ns/sosa/Sensor",
           "EA-Name": "Sensor"
         }
       ],
@@ -4959,118 +5064,6 @@
         }
       ],
       "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
-    },
-    {
-      "@id": "https://data.vlaanderen.be/ns/verkeersmetingen#fenomeenTijd",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "fenomeentijd",
-      "inpackage": "OTHER_PACKAGE",
-      "label-nl": {
-        "nl": "fenomeenTijd"
-      },
-      "definition": {
-        "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
-      },
-      "label": {
-        "nl": "fenomeenTijd"
-      },
-      "definition-nl": {
-        "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
-      },
-      "extra": {
-        "EA-Name": "fenomeenTijd",
-        "EA-Guid": "{08BA936D-44F3-420f-9E42-82994C3B7E89}",
-        "EA-Package": "OSLO-Verkeersmetingen",
-        "EA-Type": "attribute",
-        "EA-Domain": "Verkeersmeting",
-        "EA-Domain-Guid": "{629A009C-848B-463b-AA2C-272DB667D354}",
-        "EA-Range": "TemporeleEntiteit",
-        "RangeData": {
-          "EA-Name": "TemporeleEntiteit",
-          "EA-GUID": "{300A19C6-C1BD-4479-B125-ADFF86DD5836}",
-          "EA-Package": "Time",
-          "uri": "http://fixme.com#TemporeleEntiteit"
-        },
-        "label": {
-          "nl": "fenomeenTijd"
-        },
-        "definition": {
-          "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
-        },
-        "usage": "",
-        "label-nl": {
-          "nl": "fenomeenTijd"
-        },
-        "definition-nl": {
-          "nl": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is."
-        },
-        "usageNote-nl": "",
-        "label-en": "",
-        "definition-en": "",
-        "usageNote-en": "",
-        "equivalent": "",
-        "subclass": "",
-        "subclass1": "",
-        "sameAs": "",
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "value": "fenomeenTijd",
-            "note": "null"
-          },
-          {
-            "key": "ap-label-nl",
-            "value": "fenomeenTijd",
-            "note": "null"
-          },
-          {
-            "key": "ap-definition-nl",
-            "value": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is.",
-            "note": "null"
-          },
-          {
-            "key": "ap-usageNote-nl",
-            "value": "Typisch het moment waarop de observatie of bemonstering plaatsvindt. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze voorspelling van toepassing zou moeten zijn.",
-            "note": "null"
-          },
-          {
-            "key": "package",
-            "value": "OSLO-Verkeersmetingen",
-            "note": "null"
-          },
-          {
-            "key": "parentURI",
-            "value": "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime",
-            "note": "null"
-          },
-          {
-            "key": "definition-nl",
-            "value": "Het moment waarop het resultaat van de Verkeersmeting van toepassing is.",
-            "note": "null"
-          }
-        ],
-        "Scope": "NOTHING"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting",
-          "EA-Name": "Verkeersmeting"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "TemporeleEntiteit",
-          "EA-GUID": "{300A19C6-C1BD-4479-B125-ADFF86DD5836}",
-          "EA-Package": "Time",
-          "uri": "http://fixme.com#TemporeleEntiteit"
-        }
-      ],
-      "generalization": [
-        "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime"
-      ],
       "minCardinality": "1",
       "maxCardinality": "1"
     },
@@ -6030,7 +6023,7 @@
       "codelist": [],
       "domain": [
         {
-          "uri": "https://www.w3.org/ns/sosa/Sensor",
+          "uri": "http://www.w3.org/ns/sosa/Sensor",
           "EA-Name": "Sensor"
         }
       ],
@@ -6073,7 +6066,7 @@
           "EA-Name": "Sensor",
           "EA-GUID": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
           "EA-Package": "SSN/SOSA",
-          "uri": "https://www.w3.org/ns/sosa/Sensor"
+          "uri": "http://www.w3.org/ns/sosa/Sensor"
         },
         "sourceRole": "implementeert",
         "destRole": "geïmplementeerdMet",
@@ -6164,7 +6157,7 @@
           "EA-Name": "Sensor",
           "EA-GUID": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
           "EA-Package": "SSN/SOSA",
-          "uri": "https://www.w3.org/ns/sosa/Sensor"
+          "uri": "http://www.w3.org/ns/sosa/Sensor"
         }
       ],
       "generalization": [],
@@ -6198,7 +6191,7 @@
           "EA-Name": "Sensor",
           "EA-GUID": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
           "EA-Package": "SSN/SOSA",
-          "uri": "https://www.w3.org/ns/sosa/Sensor"
+          "uri": "http://www.w3.org/ns/sosa/Sensor"
         },
         "sourceRole": "uitgevoerdeObservatie",
         "destRole": "^uitgevoerdMet",
@@ -6279,7 +6272,7 @@
           "EA-Name": "Sensor",
           "EA-GUID": "{2A28FF0E-C1B4-4918-B61C-21D7CECE0CED}",
           "EA-Package": "SSN/SOSA",
-          "uri": "https://www.w3.org/ns/sosa/Sensor"
+          "uri": "http://www.w3.org/ns/sosa/Sensor"
         }
       ],
       "generalization": [],
@@ -6767,15 +6760,15 @@
   "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/issues",
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/",
   "config": "config/config-voc.json",
-  "branchtag": "publicatie-13022024",
-  "dummy": "22",
+  "branchtag": "publicatie-02072024",
+  "dummy": "23",
   "filename": "config/verkeersmetingen-im.json",
   "navigation": {},
   "repository": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen",
   "urlref": "/doc/vocabularium/verkeersmetingen/ontwerpstandaard/2023-09-27",
-  "documentcommit": "3156aa10effa13b06703430b5b84a64b03639ff4",
-  "toolchaincommit": "9ea6fcea35dd675f680601ad3a513f64bb9bad84",
-  "hostname": "https://implementatie.data.vlaanderen.be/",
+  "documentcommit": "dee3738c74b28bf062dff93b8599a52c516a2af3",
+  "toolchaincommit": "0aca8e5c05366ca04870defc28147fb9da11027a",
+  "hostname": "https://implementatie.data.vlaanderen.be",
   "translation": [
     {
       "language": "nl",
