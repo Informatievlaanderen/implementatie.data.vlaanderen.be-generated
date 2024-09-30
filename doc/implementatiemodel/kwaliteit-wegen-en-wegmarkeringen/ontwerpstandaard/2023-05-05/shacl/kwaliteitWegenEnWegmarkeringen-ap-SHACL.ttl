@@ -28,7 +28,6 @@
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#BeschrijvendResultaatShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwantitatiefResultaatShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#AgentShape>,
-    <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#EenheidShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#CurveShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#VlakShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#3DobjectShape>,
@@ -62,6 +61,7 @@
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#FysiekObjectShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#WegmarkeringShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwantitatieveWaardeShape>,
+    <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#EenheidShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#LaagShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#MarkeringShape>,
     <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#AIMObjectShape>,
@@ -174,15 +174,18 @@
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#BeschrijvendResultaatShape/09ed995683a26095de4577d13e597160f260ecb2> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#BeschrijvendResultaat.resultaat";
   shacl:datatype rdf:langString;
+  shacl:description "Textuele beschrijving van het kwaliteitsresultaat."@nl;
   shacl:name "resultaat"@nl;
   shacl:path <http://www.w3.org/ns/sosa/hasResult> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#BeschrijvendResultaatShape/1bab1bb4af028fef0775daa8246b62cbb09cdcd1> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#BeschrijvendResultaat.resultaat";
+  shacl:description "Textuele beschrijving van het kwaliteitsresultaat."@nl;
   shacl:minCount 1;
   shacl:name "resultaat"@nl;
   shacl:path <http://www.w3.org/ns/sosa/hasResult> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#BeschrijvendResultaatShape/fc134bbb026523e6afde205e88de56ae056be099> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#BeschrijvendResultaat.resultaat";
+  shacl:description "Textuele beschrijving van het kwaliteitsresultaat."@nl;
   shacl:maxCount 1;
   shacl:name "resultaat"@nl;
   shacl:path <http://www.w3.org/ns/sosa/hasResult> .
@@ -198,11 +201,13 @@
   shacl:targetClass <https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Conformiteitsresultaat> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#ConformiteitsresultaatShape/1bab1bb4af028fef0775daa8246b62cbb09cdcd1> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Conformiteitsresultaat.resultaat";
+  shacl:description "resultaat volgens het gespecifieerde conformiteitsniveau."@nl;
   shacl:minCount 1;
   shacl:name "resultaat"@nl;
   shacl:path <http://www.w3.org/ns/sosa/hasResult> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#ConformiteitsresultaatShape/fc134bbb026523e6afde205e88de56ae056be099> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Conformiteitsresultaat.resultaat";
+  shacl:description "resultaat volgens het gespecifieerde conformiteitsniveau."@nl;
   shacl:maxCount 1;
   shacl:name "resultaat"@nl;
   shacl:path <http://www.w3.org/ns/sosa/hasResult> .
@@ -221,7 +226,7 @@
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#EenheidShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:targetClass <http://qudt.org/2.1/schema/qudt/Unit> .
+  shacl:targetClass <https://qudt.org/schema/qudt/Unit> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#ElementShape> a shacl:NodeShape;
   shacl:closed false;
@@ -703,15 +708,18 @@
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwantitatiefResultaatShape/09ed995683a26095de4577d13e597160f260ecb2> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwantitatiefResultaat.resultaat";
   shacl:class schemas:QuantitativeValue;
+  shacl:description "Kwantitatieve waarde van een kwaliteitsmaat."@nl;
   shacl:name "resultaat"@nl;
   shacl:path <http://www.w3.org/ns/sosa/hasResult> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwantitatiefResultaatShape/1bab1bb4af028fef0775daa8246b62cbb09cdcd1> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwantitatiefResultaat.resultaat";
+  shacl:description "Kwantitatieve waarde van een kwaliteitsmaat."@nl;
   shacl:minCount 1;
   shacl:name "resultaat"@nl;
   shacl:path <http://www.w3.org/ns/sosa/hasResult> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwantitatiefResultaatShape/fc134bbb026523e6afde205e88de56ae056be099> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#KwantitatiefResultaat.resultaat";
+  shacl:description "Kwantitatieve waarde van een kwaliteitsmaat."@nl;
   shacl:maxCount 1;
   shacl:name "resultaat"@nl;
   shacl:path <http://www.w3.org/ns/sosa/hasResult> .
@@ -1140,30 +1148,36 @@
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#PeriodeShape/0354f86b3536851fb9b0c53038d5e662c58b5e2a> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Periode.tot";
   shacl:class <http://www.w3.org/2006/time#Instant>;
+  shacl:description "Het moment waarop de periode eindigt."@nl;
   shacl:name "tot"@nl;
   shacl:path <http://www.w3.org/2006/time#hasEnd> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#PeriodeShape/0e315d4790091d512d746a8f6b09a44661741724> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Periode.tot";
+  shacl:description "Het moment waarop de periode eindigt."@nl;
   shacl:maxCount 1;
   shacl:name "tot"@nl;
   shacl:path <http://www.w3.org/2006/time#hasEnd> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#PeriodeShape/ad7a8d0731f300a98493dfe3a00424aa2a795d9b> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Periode.van";
+  shacl:description "het moment waarop de periode start."@nl;
   shacl:minCount 1;
   shacl:name "van"@nl;
   shacl:path <http://www.w3.org/2006/time#hasBeginning> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#PeriodeShape/d426118d422ba5be2c3d3cc917337b0dce926a6d> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Periode.van";
   shacl:class <http://www.w3.org/2006/time#Instant>;
+  shacl:description "het moment waarop de periode start."@nl;
   shacl:name "van"@nl;
   shacl:path <http://www.w3.org/2006/time#hasBeginning> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#PeriodeShape/edfff7f5cb2b7637267bbfeb6b1e2d52d7c1edc5> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Periode.tot";
+  shacl:description "Het moment waarop de periode eindigt."@nl;
   shacl:minCount 1;
   shacl:name "tot"@nl;
   shacl:path <http://www.w3.org/2006/time#hasEnd> .
 
 <https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#PeriodeShape/fa99298c0faadafb620da48c365af6f5d475f678> rdfs:seeAlso "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05#Periode.van";
+  shacl:description "het moment waarop de periode start."@nl;
   shacl:maxCount 1;
   shacl:name "van"@nl;
   shacl:path <http://www.w3.org/2006/time#hasBeginning> .

@@ -13,10 +13,10 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/tree/7fd07b96e5506bbf69e93ad3bcebf82bc540a95b",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/blob/7fd07b96e5506bbf69e93ad3bcebf82bc540a95b/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/tree/07a1c15bdc9c1cd03a21b193c1cce7ac13bfde49",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/blob/07a1c15bdc9c1cd03a21b193c1cce7ac13bfde49/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/issues",
-    "standaardregisterurl": "https://data.vlaanderen.be/doc/applicatieprofiel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05",
+    "standaardregisterurl": "https://data.vlaanderen.be/standaarden/implementatiemodel-kwaliteit-wegen-en-wegmarkeringen/",
     "usesVocs": [],
     "usesAPs": []
   },
@@ -59,8 +59,12 @@
           "label": {
             "nl": "resultaat"
           },
-          "description": {},
-          "usage": {},
+          "description": {
+            "nl": "resultaat volgens het gespecifieerde conformiteitsniveau."
+          },
+          "usage": {
+            "nl": "Dit resultaat is ofwel conform of niet conform"
+          },
           "domain": [
             {
               "EA-Name": "Conformiteitsresultaat",
@@ -74,7 +78,11 @@
           "rawTags": {
             "ap-label-nl": "resultaat",
             "uri": "http://www.w3.org/ns/sosa/hasResult",
-            "label-nl": "resultaat"
+            "label-nl": "resultaat",
+            "definition-nl": "resultaat volgens het gespecifieerde conformiteitsniveau.",
+            "usageNote-nl": "Dit resultaat is ofwel conform of niet conform",
+            "ap-definition-nl": "resultaat volgens het gespecifieerde conformiteitsniveau.",
+            "ap-usageNote-nl": "Dit resultaat is ofwel conform of niet conform"
           }
         }
       ]
@@ -1472,7 +1480,9 @@
           "label": {
             "nl": "resultaat"
           },
-          "description": {},
+          "description": {
+            "nl": "Textuele beschrijving van het kwaliteitsresultaat."
+          },
           "usage": {},
           "domain": [
             {
@@ -1500,7 +1510,9 @@
           "rawTags": {
             "ap-label-nl": "resultaat",
             "uri": "http://www.w3.org/ns/sosa/hasResult",
-            "label-nl": "resultaat"
+            "label-nl": "resultaat",
+            "definition-nl": "Textuele beschrijving van het kwaliteitsresultaat.",
+            "ap-definition-nl": "Textuele beschrijving van het kwaliteitsresultaat."
           }
         }
       ]
@@ -1540,7 +1552,9 @@
           "label": {
             "nl": "resultaat"
           },
-          "description": {},
+          "description": {
+            "nl": "Kwantitatieve waarde van een kwaliteitsmaat."
+          },
           "usage": {},
           "domain": [
             {
@@ -1568,7 +1582,9 @@
           "rawTags": {
             "ap-label-nl": "resultaat",
             "uri": "http://www.w3.org/ns/sosa/hasResult",
-            "label-nl": "resultaat"
+            "label-nl": "resultaat",
+            "definition-nl": "Kwantitatieve waarde van een kwaliteitsmaat.",
+            "ap-definition-nl": "Kwantitatieve waarde van een kwaliteitsmaat."
           }
         }
       ]
@@ -1594,33 +1610,6 @@
       "properties": []
     },
     {
-      "uri": "http://qudt.org/2.1/schema/qudt/Unit",
-      "name": "Eenheid",
-      "label": {
-        "nl": "Eenheid"
-      },
-      "sort": "Eenheid",
-      "description": {
-        "nl": "TODO"
-      },
-      "usage": {},
-      "parents": [
-        {
-          "label": "Concept",
-          "name": "Concept",
-          "package": "skos",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept",
-          "scoped_uri": "#Concept"
-        }
-      ],
-      "rawTags": {
-        "definition-nl": "TODO",
-        "label-nl": "Eenheid",
-        "uri": "http://qudt.org/2.1/schema/qudt/Unit"
-      },
-      "properties": []
-    },
-    {
       "uri": "http://www.w3.org/2004/02/skos/core#Concept",
       "name": "Concept",
       "label": {
@@ -1628,14 +1617,16 @@
       },
       "sort": "Concept",
       "description": {
-        "nl": "TODO"
+        "nl": "Een SKOS-concept kan worden gezien als een idee of notie; een denkeenheid."
       },
       "usage": {},
       "parents": [],
       "rawTags": {
-        "definition-nl": "TODO",
+        "definition-nl": "Een SKOS-concept kan worden gezien als een idee of notie; een denkeenheid.",
         "label-nl": "Concept",
-        "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+        "ap-label-nl": "Concept",
+        "ap-definition-nl": "Een SKOS-concept kan worden gezien als een idee of notie; een denkeenheid."
       },
       "properties": []
     },
@@ -1962,6 +1953,39 @@
         "ap-usageNote-nl": "Naar GRB-skeletoptie wegbeheer - WEM1: Puntvormige wegmarkering; WEM2: Lijnvormige wegmarkering; WEM3: Vlakvormige wegmarkering",
         "uri": "https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Wegmarkering",
         "ap-label-nl": "Wegmarkering"
+      },
+      "properties": []
+    },
+    {
+      "uri": "https://qudt.org/schema/qudt/Unit",
+      "name": "Eenheid",
+      "label": {
+        "nl": "Eenheid"
+      },
+      "sort": "Eenheid",
+      "description": {
+        "nl": "Een meeteenheid, of eenheid, is een specifieke hoeveelheid die is gekozen als schaal voor het meten van andere hoeveelheden van dezelfde soort (meer in het algemeen van equivalente dimensie)."
+      },
+      "usage": {
+        "nl": "Bijvoorbeeld, de meter is een lengte-eenheid die rigoureus is gedefinieerd en gestandaardiseerd door het BIPM (Internationaal Bureau voor Gewichten en Maten). Elke meting van de lengte kan worden uitgedrukt als een getal vermenigvuldigd met de eenheid meter."
+      },
+      "parents": [
+        {
+          "label": "Concept",
+          "name": "Concept",
+          "package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+          "scoped_uri": "#Concept"
+        }
+      ],
+      "rawTags": {
+        "definition-nl": "Een meeteenheid, of eenheid, is een specifieke hoeveelheid die is gekozen als schaal voor het meten van andere hoeveelheden van dezelfde soort (meer in het algemeen van equivalente dimensie).",
+        "label-nl": "Eenheid",
+        "uri": "https://qudt.org/schema/qudt/Unit",
+        "usageNote-nl": "Bijvoorbeeld, de meter is een lengte-eenheid die rigoureus is gedefinieerd en gestandaardiseerd door het BIPM (Internationaal Bureau voor Gewichten en Maten). Elke meting van de lengte kan worden uitgedrukt als een getal vermenigvuldigd met de eenheid meter.",
+        "ap-label-nl": "Eenheid",
+        "ap-definition-nl": "Een meeteenheid, of eenheid, is een specifieke hoeveelheid die is gekozen als schaal voor het meten van andere hoeveelheden van dezelfde soort (meer in het algemeen van equivalente dimensie).",
+        "ap-usageNote-nl": "Bijvoorbeeld, de meter is een lengte-eenheid die rigoureus is gedefinieerd en gestandaardiseerd door het BIPM (Internationaal Bureau voor Gewichten en Maten). Elke meting van de lengte kan worden uitgedrukt als een getal vermenigvuldigd met de eenheid meter."
       },
       "properties": []
     },
@@ -3171,7 +3195,7 @@
       },
       "sort": "NaamInNaamruimte",
       "description": {
-        "nl": "TODO"
+        "nl": "Naam met vermelding van een naamruimte."
       },
       "usage": {
         "nl": "Te implementeren als URI."
@@ -3186,10 +3210,12 @@
         }
       ],
       "rawTags": {
-        "definition-nl": "TODO",
+        "definition-nl": "Naam met vermelding van een naamruimte.",
         "label-nl": "NaamInNaamruimte",
         "uri": "http://www.w3.org/2001/XMLSchema#anyURI",
-        "usageNote-nl": "Te implementeren als URI."
+        "usageNote-nl": "Te implementeren als URI.",
+        "ap-label-nl": "NaamInNaamruimte",
+        "ap-definition-nl": "Naam met vermelding van een naamruimte."
       },
       "properties": []
     },
@@ -3226,7 +3252,7 @@
       },
       "sort": "LokaleNaam",
       "description": {
-        "nl": "TODO"
+        "nl": "Naam zonder vermelding van een naamruimte."
       },
       "usage": {
         "nl": "Te implementeren als String."
@@ -3242,9 +3268,12 @@
       ],
       "rawTags": {
         "ap-usageNote-nl": "Te implementeren als String.",
-        "definition-nl": "TODO",
+        "definition-nl": "Naam zonder vermelding van een naamruimte.",
         "label-nl": "LokaleNaam",
-        "uri": "http://www.w3.org/2001/XMLSchema#string"
+        "uri": "http://www.w3.org/2001/XMLSchema#string",
+        "usageNote-nl": "Te implementeren als String.",
+        "ap-label-nl": "LokaleNaam",
+        "ap-definition-nl": "Naam zonder vermelding van een naamruimte."
       },
       "properties": []
     },
@@ -3255,7 +3284,9 @@
         "nl": "Moment"
       },
       "sort": "Moment",
-      "description": {},
+      "description": {
+        "nl": "Moment met omvang en duur nul."
+      },
       "usage": {},
       "parents": [
         {
@@ -3268,7 +3299,10 @@
       ],
       "rawTags": {
         "label-nl": "Moment",
-        "uri": "http://www.w3.org/2006/time#Instant"
+        "uri": "http://www.w3.org/2006/time#Instant",
+        "definition-nl": "Moment met omvang en duur nul.",
+        "ap-label-nl": "Moment",
+        "ap-definition-nl": "Moment met omvang en duur nul."
       },
       "properties": [
         {
@@ -3305,7 +3339,8 @@
           "codelist_uri": "",
           "rawTags": {
             "label-nl": "inXSDDateTime",
-            "uri": "http://www.w3.org/2006/time#inXSDDateTime"
+            "uri": "http://www.w3.org/2006/time#inXSDDateTime",
+            "ap-label-nl": "inXSDDateTime"
           }
         }
       ]
@@ -3317,7 +3352,9 @@
         "nl": "Periode"
       },
       "sort": "Periode",
-      "description": {},
+      "description": {
+        "nl": "TemporeleEntiteit waarvan de omvang en duurtijd verschilt van nul, ttz waarvoor de begin- en eindwaarde verschillend zijn."
+      },
       "usage": {},
       "parents": [
         {
@@ -3330,7 +3367,10 @@
       ],
       "rawTags": {
         "label-nl": "Periode",
-        "uri": "http://www.w3.org/2006/time#ProperInterval"
+        "uri": "http://www.w3.org/2006/time#ProperInterval",
+        "definition-nl": "TemporeleEntiteit waarvan de omvang en duurtijd verschilt van nul, ttz waarvoor de begin- en eindwaarde verschillend zijn.",
+        "ap-label-nl": "Periode",
+        "ap-definition-nl": "TemporeleEntiteit waarvan de omvang en duurtijd verschilt van nul, ttz waarvoor de begin- en eindwaarde verschillend zijn."
       },
       "properties": [
         {
@@ -3340,7 +3380,9 @@
           "label": {
             "nl": "tot"
           },
-          "description": {},
+          "description": {
+            "nl": "Het moment waarop de periode eindigt."
+          },
           "usage": {},
           "domain": [
             {
@@ -3367,7 +3409,10 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://www.w3.org/2006/time#hasEnd",
-            "label-nl": "tot"
+            "label-nl": "tot",
+            "definition-nl": "Het moment waarop de periode eindigt.",
+            "ap-label-nl": "tot",
+            "ap-definition-nl": "Het moment waarop de periode eindigt."
           }
         },
         {
@@ -3377,7 +3422,9 @@
           "label": {
             "nl": "van"
           },
-          "description": {},
+          "description": {
+            "nl": "het moment waarop de periode start."
+          },
           "usage": {},
           "domain": [
             {
@@ -3404,7 +3451,10 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://www.w3.org/2006/time#hasBeginning",
-            "label-nl": "van"
+            "label-nl": "van",
+            "definition-nl": "het moment waarop de periode start.",
+            "ap-label-nl": "van",
+            "ap-definition-nl": "het moment waarop de periode start."
           }
         }
       ]

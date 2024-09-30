@@ -267,10 +267,10 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/tree/7fd07b96e5506bbf69e93ad3bcebf82bc540a95b">https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/tree/7fd07b96e5506bbf69e93ad3bcebf82bc540a95b</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/blob/7fd07b96e5506bbf69e93ad3bcebf82bc540a95b/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/blob/7fd07b96e5506bbf69e93ad3bcebf82bc540a95b/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/tree/07a1c15bdc9c1cd03a21b193c1cce7ac13bfde49">https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/tree/07a1c15bdc9c1cd03a21b193c1cce7ac13bfde49</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/blob/07a1c15bdc9c1cd03a21b193c1cce7ac13bfde49/CHANGELOG">https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/blob/07a1c15bdc9c1cd03a21b193c1cce7ac13bfde49/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/issues">https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen/issues</a></dd>
-              <dt>Standaardenregister</dt><dd><a href="https://data.vlaanderen.be/doc/applicatieprofiel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05">https://data.vlaanderen.be/doc/applicatieprofiel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05</a></dd>
+              <dt>Standaardenregister</dt><dd><a href="https://data.vlaanderen.be/standaarden/implementatiemodel-kwaliteit-wegen-en-wegmarkeringen/">https://data.vlaanderen.be/standaarden/implementatiemodel-kwaliteit-wegen-en-wegmarkeringen/</a></dd>
 
               <dt>Afhankelijkheden</dt><dd>
                 
@@ -292,11 +292,9 @@
             <div class="region" id="introduction">
               <div class="introduction typography">
               
-                <p>Dit document beschrijft een <strong>applicatieprofiel</strong>, in dit geval <strong>Implementatiemodel Kwaliteit Wegen en Wegmarkeringen</strong>.
-                <!--Een applicatieprofiel is een specificatie die bestaande termen hergebruikt van verschillende basis-standaarden en daar meer specificiteit aan toevoegt.-->
-                <!-- Daarbij wordt het gebruik van de termen toegelicht voor de interbestuurlijke uitwisseling van overheidsinformatie.-->
-                Dit applicatieprofiel beantwoordt de vraag over hoe het corresponderende domeinmodel in de praktijk kan toegepast worden.
-                Daarbij worden de beperkingen (kardinaliteit, codelijsten) toegelicht en de overeenkomstige (RDF) termen opgelijst.
+                <p>Dit document beschrijft een <strong>implementatiemodel</strong>, in dit geval <strong>Implementatiemodel Kwaliteit Wegen en Wegmarkeringen</strong>.
+                Een implementatiemodel is een toepassing van vocabularia voor een concreet doel.
+                Het beschrijft in alle detail (zoals kardinaliteiten, codelijsten, datatypes, ...) de gewenste datastructuur.
                 </p>
               
               </div>
@@ -320,10 +318,10 @@
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">Status van dit document</h2>
                 
                 <p>
-                  Dit applicatieprofiel heeft status <a href="https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard">Ontwerp Standaard</a> en werd uitgegeven op 2022-11-08.
+                  Dit implementatiemodel heeft status <a href="https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard">Ontwerp Standaard</a> en werd uitgegeven op 2022-11-08.
 	        </p><p>
                   Informatie over het gevolgde proces en de beslissingen om tot deze specificatie te komen zijn beschikbaar in het 
-                  <a href="https://data.vlaanderen.be/doc/applicatieprofiel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05">standaardenregister</a>.
+                  <a href="https://data.vlaanderen.be/standaarden/implementatiemodel-kwaliteit-wegen-en-wegmarkeringen/">standaardenregister</a>.
                 </p>
                 
               </section>
@@ -338,7 +336,7 @@
             <div class="region region--no-space-top typography" id="conformance">
               <h2 class="h2" id="conformance" aria-level="1" role="heading">Conformiteit</h2>
               
-              <p>De conformiteit voor applicatieprofielen is <a href="/doc/begeleidend/applicatieprofielen/conformiteit">hier</a> te vinden.</p>
+              <p>De conformiteit voor implementatiemodellen is <a href="/doc/begeleidend/implementatiemodellen/conformiteit">hier</a> te vinden.</p>
               
             </div>
             <div class="region region--no-space-top" id="overview">
@@ -415,6 +413,8 @@
               <a href="/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05/html/overview.jpg" target="_blank">
                  <img src="/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05/html/overview.jpg" />
               </a>
+              
+              
             </div>
             <div class="region region--no-space-top">
               <h2 class="h2">Entiteiten</h2>
@@ -437,7 +437,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="AimObject"><a href="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#AIMObject" data-toggle="tooltip" data-content="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#AIMObject" data-placement="right">AIM object</a></h3>
+              <h3 class="h3" id="AIMobject"><a href="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#AIMObject" data-toggle="tooltip" data-content="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#AIMObject" data-placement="right">AIM object</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Abstracte als de basisklasse voor alle uniek geïdentificeerde OTL objecten met de basiseigenschappen die elk OTL object minstens heeft.</dd>
@@ -450,8 +450,8 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#AimObject%3Aasset-id">asset-id</a>, 
-                      <a href="#AimObject%3AheeftBetrokkene">heeft betrokkene</a>.</dd>
+                      <a href="#AIMobject.asset-id">asset-id</a>, 
+                      <a href="#AIMobject.heeftbetrokkene">heeft betrokkene</a>.</dd>
                     
                   </dl>
                 </div>
@@ -471,7 +471,7 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="AimObject%3Aasset-id" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#AIMObject.assetId">
+                      <tr id="AIMobject.asset-id" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#AIMObject.assetId">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#AIMObject.assetId" data-toggle="tooltip" data-content="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#AIMObject.assetId" data-placement="right">
@@ -479,11 +479,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Identificator" data-placement="right">Identificator</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Identificator" data-placement="right">Identificator</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">Unieke identificatie van de asset zoals toegekend door de assetbeheerder of n.a.v. eerste aanlevering door de leverancier.</td>
@@ -491,7 +491,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="AimObject%3AheeftBetrokkene" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/doc/implementatiemodel/aim-object/#heeft betrokkene">
+                      <tr id="AIMobject.heeftbetrokkene" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/doc/implementatiemodel/aim-object/#heeft betrokkene">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://wegenenverkeer.data.vlaanderen.be/doc/implementatiemodel/aim-object/#heeft betrokkene" data-toggle="tooltip" data-content="https://wegenenverkeer.data.vlaanderen.be/doc/implementatiemodel/aim-object/#heeft betrokkene" data-placement="right">
@@ -499,11 +499,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Agent" data-placement="right">Agent</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Agent" data-placement="right">Agent</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">Koppelt een natuurlijk persoon,rechtspersoon of een hoedanigheid (een functie eerder dan de persoon die de functie uitoefent) aan een object in een bepaalde rol.</td>
@@ -518,7 +518,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Beschrijvendresultaat"><a href="http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult" data-placement="right">BeschrijvendResultaat</a></h3>
+              <h3 class="h3" id="BeschrijvendResultaat"><a href="http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult" data-placement="right">BeschrijvendResultaat</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Een beschrijvend resultaat kan ook gebruikt worden om een korte beschrijving te voorzien van het resultaat van de kwaliteitsevaluatie, ter begeleiding bij het complete kwantitatieve resultaat, of wanneer er geen kwantitatieve waarde bekomen worden kan.</dd>
@@ -533,7 +533,7 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Beschrijvendresultaat%3Aresultaat">resultaat</a>.</dd>
+                      <a href="#BeschrijvendResultaat.resultaat">resultaat</a>.</dd>
                     
                   </dl>
                 </div>
@@ -553,7 +553,7 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Beschrijvendresultaat%3Aresultaat" typeof="rdfs:Property" resource="http://www.w3.org/ns/sosa/hasResult">
+                      <tr id="BeschrijvendResultaat.resultaat" typeof="rdfs:Property" resource="http://www.w3.org/ns/sosa/hasResult">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/ns/sosa/hasResult" data-toggle="tooltip" data-content="http://www.w3.org/ns/sosa/hasResult" data-placement="right">
@@ -561,14 +561,14 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#TaalString" data-placement="right">TaalString</a>
-			    
-                          
+			  
+                             
+                                            <a href="#TaalString" data-placement="right">TaalString</a>
+                             
+                         
                         </td>
                         <td>1</td>
-                        <td property="rdfs:comment"></td>
+                        <td property="rdfs:comment">Textuele beschrijving van het kwaliteitsresultaat.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -583,7 +583,7 @@
               <h3 class="h3" id="Concept"><a href="http://www.w3.org/2004/02/skos/core#Concept" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#Concept" data-placement="right">Concept</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Beschrijving</dt><dd>TODO</dd>
+                    <dt>Beschrijving</dt><dd>Een SKOS-concept kan worden gezien als een idee of notie; een denkeenheid.</dd>
                     
 		    
                     <dt>Eigenschappen</dt>
@@ -611,7 +611,7 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Conformiteitsresultaat%3Aresultaat">resultaat</a>.</dd>
+                      <a href="#Conformiteitsresultaat.resultaat">resultaat</a>.</dd>
                     
                   </dl>
                 </div>
@@ -631,7 +631,7 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Conformiteitsresultaat%3Aresultaat" typeof="rdfs:Property" resource="http://www.w3.org/ns/sosa/hasResult">
+                      <tr id="Conformiteitsresultaat.resultaat" typeof="rdfs:Property" resource="http://www.w3.org/ns/sosa/hasResult">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/ns/sosa/hasResult" data-toggle="tooltip" data-content="http://www.w3.org/ns/sosa/hasResult" data-placement="right">
@@ -639,11 +639,11 @@
                           </code>
                         </td>
                         <td>
-                          
+			  
                         </td>
                         <td>1</td>
-                        <td property="rdfs:comment"></td>
-                        <td property="vann:usageNote"></td>
+                        <td property="rdfs:comment">resultaat volgens het gespecifieerde conformiteitsniveau.</td>
+                        <td property="vann:usageNote">Dit resultaat is ofwel conform of niet conform</td>
                         <td></td>
                       </tr>
                     
@@ -674,10 +674,12 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Eenheid"><a href="http://qudt.org/2.1/schema/qudt/Unit" data-toggle="tooltip" data-content="http://qudt.org/2.1/schema/qudt/Unit" data-placement="right">Eenheid</a></h3>
+              <h3 class="h3" id="Eenheid"><a href="https://qudt.org/schema/qudt/Unit" data-toggle="tooltip" data-content="https://qudt.org/schema/qudt/Unit" data-placement="right">Eenheid</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Beschrijving</dt><dd>TODO</dd>
+                    <dt>Beschrijving</dt><dd>Een meeteenheid, of eenheid, is een specifieke hoeveelheid die is gekozen als schaal voor het meten van andere hoeveelheden van dezelfde soort (meer in het algemeen van equivalente dimensie).</dd>
+                    
+                    <dt>Gebruik</dt><dd>Bijvoorbeeld, de meter is een lengte-eenheid die rigoureus is gedefinieerd en gestandaardiseerd door het BIPM (Internationaal Bureau voor Gewichten en Maten). Elke meting van de lengte kan worden uitgedrukt als een getal vermenigvuldigd met de eenheid meter.</dd>
                     
 		     
 		    <dt>Subklasse van <dt><dd>
@@ -714,7 +716,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="FysiekObject"><a href="https://data.vlaanderen.be/ns/openbaardomein#FysiekObject" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/openbaardomein#FysiekObject" data-placement="right">Fysiek object</a></h3>
+              <h3 class="h3" id="Fysiekobject"><a href="https://data.vlaanderen.be/ns/openbaardomein#FysiekObject" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/openbaardomein#FysiekObject" data-placement="right">Fysiek object</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>De hoofdklasse waar alle objecten die geïnventariseerd kunnen worden van afgeleid worden.</dd>
@@ -727,9 +729,9 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#FysiekObject%3Abeheerder">beheerder</a>, 
-                      <a href="#FysiekObject%3Ageometrie">geometrie</a>, 
-                      <a href="#FysiekObject%3Aidentificator">Identificator</a>.</dd>
+                      <a href="#Fysiekobject.beheerder">beheerder</a>, 
+                      <a href="#Fysiekobject.geometrie">geometrie</a>, 
+                      <a href="#Fysiekobject.Identificator">Identificator</a>.</dd>
                     
                   </dl>
                 </div>
@@ -749,7 +751,7 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="FysiekObject%3Abeheerder" typeof="rdfs:Property" resource="http://fixme.com/#beheerder">
+                      <tr id="Fysiekobject.beheerder" typeof="rdfs:Property" resource="http://fixme.com/#beheerder">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://fixme.com/#beheerder" data-toggle="tooltip" data-content="http://fixme.com/#beheerder" data-placement="right">
@@ -757,11 +759,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Organisatie" data-placement="right">Organisatie</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Organisatie" data-placement="right">Organisatie</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">Instantie die instaat voor het beheer van het object.</td>
@@ -769,7 +771,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="FysiekObject%3Ageometrie" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#geometry">
+                      <tr id="Fysiekobject.geometrie" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#geometry">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/ns/locn#geometry" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#geometry" data-placement="right">
@@ -777,11 +779,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Geometrie" data-placement="right">Geometrie</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Geometrie" data-placement="right">Geometrie</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">De geometrie overeenkomstig met een bepaald object.</td>
@@ -789,7 +791,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="FysiekObject%3Aidentificator" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator">
+                      <tr id="Fysiekobject.Identificator" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator" data-placement="right">
@@ -797,11 +799,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Identificator" data-placement="right">Identificator</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Identificator" data-placement="right">Identificator</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">de identificator die gelinkt is aan het fysiek object</td>
@@ -816,7 +818,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Kwaliteitskenmerk"><a href="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk" data-placement="right">KwaliteitsKenmerk</a></h3>
+              <h3 class="h3" id="KwaliteitsKenmerk"><a href="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsKenmerk" data-placement="right">KwaliteitsKenmerk</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Kenmerk vh geobserveerdObject waarop de kwaliteitsbeoordeling is gebasseerd.</dd>
@@ -829,7 +831,7 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Kwaliteitskenmerk%3Atype">type</a>.</dd>
+                      <a href="#KwaliteitsKenmerk.type">type</a>.</dd>
                     
                   </dl>
                 </div>
@@ -849,7 +851,7 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Kwaliteitskenmerk%3Atype" typeof="rdfs:Property" resource="http://purl.org/dc/terms/type">
+                      <tr id="KwaliteitsKenmerk.type" typeof="rdfs:Property" resource="http://purl.org/dc/terms/type">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://purl.org/dc/terms/type" data-toggle="tooltip" data-content="http://purl.org/dc/terms/type" data-placement="right">
@@ -857,11 +859,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#KenmerkType" data-placement="right">KenmerkType</a>
-			    
-                          
+			  
+                             
+                                            <a href="#KenmerkType" data-placement="right">KenmerkType</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">verwijst naar het KenmerkType waarop de kwaliteit beoordeel wordt</td>
@@ -891,16 +893,16 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Kwaliteitsobservatie%3Afenomeentijd">fenomeentijd</a>, 
-                      <a href="#Kwaliteitsobservatie%3Agebruikteprocedure">gebruikteProcedure</a>, 
-                      <a href="#Kwaliteitsobservatie%3Ageldigetijd">geldigeTijd</a>, 
-                      <a href="#Kwaliteitsobservatie%3Ageobserveerdkenmerk">geobserveerdKenmerk</a>, 
-                      <a href="#Kwaliteitsobservatie%3Ageobserveerdobject">geobserveerdObject</a>, 
-                      <a href="#Kwaliteitsobservatie%3Aparameter">parameter</a>, 
-                      <a href="#Kwaliteitsobservatie%3Aresultaat">resultaat</a>, 
-                      <a href="#Kwaliteitsobservatie%3Atype">type</a>, 
-                      <a href="#Kwaliteitsobservatie%3Auitgevoerddoor">uitgevoerdDoor</a>, 
-                      <a href="#Kwaliteitsobservatie%3Auitgevoerdmetsensor">uitgevoerdMetSensor</a>.</dd>
+                      <a href="#Kwaliteitsobservatie.fenomeentijd">fenomeentijd</a>, 
+                      <a href="#Kwaliteitsobservatie.gebruikteProcedure">gebruikteProcedure</a>, 
+                      <a href="#Kwaliteitsobservatie.geldigeTijd">geldigeTijd</a>, 
+                      <a href="#Kwaliteitsobservatie.geobserveerdKenmerk">geobserveerdKenmerk</a>, 
+                      <a href="#Kwaliteitsobservatie.geobserveerdObject">geobserveerdObject</a>, 
+                      <a href="#Kwaliteitsobservatie.parameter">parameter</a>, 
+                      <a href="#Kwaliteitsobservatie.resultaat">resultaat</a>, 
+                      <a href="#Kwaliteitsobservatie.type">type</a>, 
+                      <a href="#Kwaliteitsobservatie.uitgevoerdDoor">uitgevoerdDoor</a>, 
+                      <a href="#Kwaliteitsobservatie.uitgevoerdMetSensor">uitgevoerdMetSensor</a>.</dd>
                     
                   </dl>
                 </div>
@@ -920,7 +922,7 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Kwaliteitsobservatie%3Afenomeentijd" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime">
+                      <tr id="Kwaliteitsobservatie.fenomeentijd" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime" data-placement="right">
@@ -928,11 +930,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#TemporeleEntiteit" data-placement="right">TemporeleEntiteit</a>
-			    
-                          
+			  
+                             
+                                            <a href="#TemporeleEntiteit" data-placement="right">TemporeleEntiteit</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">Het moment waarop het resultaat van de Observatie van toepassing was.</td>
@@ -940,7 +942,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Kwaliteitsobservatie%3Agebruikteprocedure" typeof="rdfs:Property" resource="http://www.w3.org/ns/sosa/usedProcedure">
+                      <tr id="Kwaliteitsobservatie.gebruikteProcedure" typeof="rdfs:Property" resource="http://www.w3.org/ns/sosa/usedProcedure">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/ns/sosa/usedProcedure" data-toggle="tooltip" data-content="http://www.w3.org/ns/sosa/usedProcedure" data-placement="right">
@@ -948,11 +950,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Kwaliteitsobservatieprocedure" data-placement="right">Kwaliteitsobservatieprocedure</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Kwaliteitsobservatieprocedure" data-placement="right">Kwaliteitsobservatieprocedure</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">De gebruikte procedure van de observatie.</td>
@@ -960,7 +962,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Kwaliteitsobservatie%3Ageldigetijd" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.validTime">
+                      <tr id="Kwaliteitsobservatie.geldigeTijd" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.validTime">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.validTime" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.validTime" data-placement="right">
@@ -968,11 +970,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Periode" data-placement="right">Periode</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Periode" data-placement="right">Periode</a>
+                             
+                         
                         </td>
                         <td>0..1</td>
                         <td property="rdfs:comment">Periode waarvoor het resultaat van de Observatie geldt.</td>
@@ -980,7 +982,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Kwaliteitsobservatie%3Ageobserveerdkenmerk" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty">
+                      <tr id="Kwaliteitsobservatie.geobserveerdKenmerk" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty" data-placement="right">
@@ -988,11 +990,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#KwaliteitsKenmerk" data-placement="right">KwaliteitsKenmerk</a>
-			    
-                          
+			  
+                             
+                                            <a href="#KwaliteitsKenmerk" data-placement="right">KwaliteitsKenmerk</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">Kenmerk dat men observeert vh geobserveerdObject.</td>
@@ -1000,7 +1002,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Kwaliteitsobservatie%3Ageobserveerdobject" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest">
+                      <tr id="Kwaliteitsobservatie.geobserveerdObject" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest" data-placement="right">
@@ -1008,11 +1010,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Object" data-placement="right">Object</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Object" data-placement="right">Object</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">Object dat men observeert.</td>
@@ -1020,7 +1022,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Kwaliteitsobservatie%3Aparameter" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.parameter">
+                      <tr id="Kwaliteitsobservatie.parameter" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.parameter">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.parameter" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.parameter" data-placement="right">
@@ -1028,11 +1030,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#BenoemdeWaarde" data-placement="right">BenoemdeWaarde</a>
-			    
-                          
+			  
+                             
+                                            <a href="#BenoemdeWaarde" data-placement="right">BenoemdeWaarde</a>
+                             
+                         
                         </td>
                         <td>0..*</td>
                         <td property="rdfs:comment">Willekeurig gegeven gassocieerd met het gebeuren van de Observatie.</td>
@@ -1040,7 +1042,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Kwaliteitsobservatie%3Aresultaat" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat">
+                      <tr id="Kwaliteitsobservatie.resultaat" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.resultaat" data-placement="right">
@@ -1048,11 +1050,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#KwaliteitsResultaat" data-placement="right">KwaliteitsResultaat</a>
-			    
-                          
+			  
+                             
+                                            <a href="#KwaliteitsResultaat" data-placement="right">KwaliteitsResultaat</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">het resultaat van de KwaliteitsObservatie</td>
@@ -1060,7 +1062,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Kwaliteitsobservatie%3Atype" typeof="rdfs:Property" resource="http://purl.org/cd/terms/type">
+                      <tr id="Kwaliteitsobservatie.type" typeof="rdfs:Property" resource="http://purl.org/cd/terms/type">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://purl.org/cd/terms/type" data-toggle="tooltip" data-content="http://purl.org/cd/terms/type" data-placement="right">
@@ -1068,11 +1070,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#type" data-placement="right">type</a>
-			    
-                          
+			  
+                             
+                                            <a href="#type" data-placement="right">type</a>
+                             
+                         
                         </td>
                         <td>0..*</td>
                         <td property="rdfs:comment">Het type van observatie.</td>
@@ -1080,7 +1082,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Kwaliteitsobservatie%3Auitgevoerddoor" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor">
+                      <tr id="Kwaliteitsobservatie.uitgevoerdDoor" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatie.uitgevoerdDoor" data-placement="right">
@@ -1088,11 +1090,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Agent" data-placement="right">Agent</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Agent" data-placement="right">Agent</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">Agent die de Observatie heeft uitgevoerd.</td>
@@ -1100,7 +1102,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Kwaliteitsobservatie%3Auitgevoerdmetsensor" typeof="rdfs:Property" resource="http://www.w3.org/ns/sosa/madeBySensor">
+                      <tr id="Kwaliteitsobservatie.uitgevoerdMetSensor" typeof="rdfs:Property" resource="http://www.w3.org/ns/sosa/madeBySensor">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/ns/sosa/madeBySensor" data-toggle="tooltip" data-content="http://www.w3.org/ns/sosa/madeBySensor" data-placement="right">
@@ -1108,11 +1110,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#KwaliteitsSensor" data-placement="right">KwaliteitsSensor</a>
-			    
-                          
+			  
+                             
+                                            <a href="#KwaliteitsSensor" data-placement="right">KwaliteitsSensor</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">Sensor waarmee de Observatie is uitgevoerd.</td>
@@ -1142,9 +1144,9 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Kwaliteitsobservatieprocedure%3Aparameter">parameter</a>, 
-                      <a href="#Kwaliteitsobservatieprocedure%3Aspecificatie">specificatie</a>, 
-                      <a href="#Kwaliteitsobservatieprocedure%3Atype">type</a>.</dd>
+                      <a href="#Kwaliteitsobservatieprocedure.parameter">parameter</a>, 
+                      <a href="#Kwaliteitsobservatieprocedure.specificatie">specificatie</a>, 
+                      <a href="#Kwaliteitsobservatieprocedure.type">type</a>.</dd>
                     
                   </dl>
                 </div>
@@ -1164,7 +1166,7 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Kwaliteitsobservatieprocedure%3Aparameter" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.parameter">
+                      <tr id="Kwaliteitsobservatieprocedure.parameter" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.parameter">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.parameter" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.parameter" data-placement="right">
@@ -1172,11 +1174,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#BenoemdeWaarde" data-placement="right">BenoemdeWaarde</a>
-			    
-                          
+			  
+                             
+                                            <a href="#BenoemdeWaarde" data-placement="right">BenoemdeWaarde</a>
+                             
+                         
                         </td>
                         <td>0..*</td>
                         <td property="rdfs:comment">Willekeurig gegeven geassocieerd met de Observatieprocedure.</td>
@@ -1184,7 +1186,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Kwaliteitsobservatieprocedure%3Aspecificatie" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.specificatie">
+                      <tr id="Kwaliteitsobservatieprocedure.specificatie" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.specificatie">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.specificatie" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsObservatieprocedure.specificatie" data-placement="right">
@@ -1192,11 +1194,14 @@
                           </code>
                         </td>
                         <td>
-                          
-			     
-			    <a href="http://www.w3.org/2001/XMLSchema#anyURI" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#anyURI" data-placement="right">URI</a>
-                            
-                          
+			  
+                             
+                                            <a href="#URI"
+                                               data-toggle="tooltip"
+                                               data-content="http://www.w3.org/2001/XMLSchema#anyURI"
+                                               data-placement="right">URI</a>
+                             
+                         
                         </td>
                         <td>0..*</td>
                         <td property="rdfs:comment">Verwijzing naar een document dat de Observatieprocedure beschrijft.</td>
@@ -1204,7 +1209,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Kwaliteitsobservatieprocedure%3Atype" typeof="rdfs:Property" resource="http://purl.org/cd/terms/type">
+                      <tr id="Kwaliteitsobservatieprocedure.type" typeof="rdfs:Property" resource="http://purl.org/cd/terms/type">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://purl.org/cd/terms/type" data-toggle="tooltip" data-content="http://purl.org/cd/terms/type" data-placement="right">
@@ -1212,11 +1217,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#ObservatieProcedureType" data-placement="right">ObservatieProcedureType</a>
-			    
-                          
+			  
+                             
+                                            <a href="#ObservatieProcedureType" data-placement="right">ObservatieProcedureType</a>
+                             
+                         
                         </td>
                         <td>0..*</td>
                         <td property="rdfs:comment">Aard van de Observatieprocedure.</td>
@@ -1231,7 +1236,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Kwaliteitsresultaat"><a href="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat" data-placement="right">KwaliteitsResultaat</a></h3>
+              <h3 class="h3" id="KwaliteitsResultaat"><a href="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsResultaat" data-placement="right">KwaliteitsResultaat</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Het resultaat van de evaluatie van de kwaliteit van de weg, materialisatie of markering.</dd>
@@ -1251,7 +1256,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Kwaliteitssensor"><a href="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor" data-placement="right">KwaliteitsSensor</a></h3>
+              <h3 class="h3" id="KwaliteitsSensor"><a href="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor" data-placement="right">KwaliteitsSensor</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>De sensor die men gebruikt om de kwaliteitskenmerkern waar te nemen.</dd>
@@ -1266,8 +1271,8 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Kwaliteitssensor%3Atype">type</a>, 
-                      <a href="#Kwaliteitssensor%3Aversie">versie</a>.</dd>
+                      <a href="#KwaliteitsSensor.type">type</a>, 
+                      <a href="#KwaliteitsSensor.versie">versie</a>.</dd>
                     
                   </dl>
                 </div>
@@ -1287,7 +1292,7 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Kwaliteitssensor%3Atype" typeof="rdfs:Property" resource="http://purl.org/cd/terms/type">
+                      <tr id="KwaliteitsSensor.type" typeof="rdfs:Property" resource="http://purl.org/cd/terms/type">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://purl.org/cd/terms/type" data-toggle="tooltip" data-content="http://purl.org/cd/terms/type" data-placement="right">
@@ -1295,11 +1300,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#type" data-placement="right">type</a>
-			    
-                          
+			  
+                             
+                                            <a href="#type" data-placement="right">type</a>
+                             
+                         
                         </td>
                         <td>0..*</td>
                         <td property="rdfs:comment">Aard vh Systeem.</td>
@@ -1307,7 +1312,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Kwaliteitssensor%3Aversie" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie">
+                      <tr id="KwaliteitsSensor.versie" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KwaliteitsSensor.versie" data-placement="right">
@@ -1315,11 +1320,14 @@
                           </code>
                         </td>
                         <td>
-                          
-			     
-			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
-                            
-                          
+			  
+                             
+                                            <a href="#String"
+                                               data-toggle="tooltip"
+                                               data-content="http://www.w3.org/2001/XMLSchema#string"
+                                               data-placement="right">String</a>
+                             
+                         
                         </td>
                         <td>0..1</td>
                         <td property="rdfs:comment">De versie van de kwaliteitssensor</td>
@@ -1334,7 +1342,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Kwantitatiefresultaat"><a href="http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult" data-placement="right">KwantitatiefResultaat</a></h3>
+              <h3 class="h3" id="KwantitatiefResultaat"><a href="http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult" data-placement="right">KwantitatiefResultaat</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>De waarden of informatie over de waarden verkregen door het toepassen van een kwaliteitsmaat.</dd>
@@ -1347,7 +1355,7 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Kwantitatiefresultaat%3Aresultaat">resultaat</a>.</dd>
+                      <a href="#KwantitatiefResultaat.resultaat">resultaat</a>.</dd>
                     
                   </dl>
                 </div>
@@ -1367,7 +1375,7 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Kwantitatiefresultaat%3Aresultaat" typeof="rdfs:Property" resource="http://www.w3.org/ns/sosa/hasResult">
+                      <tr id="KwantitatiefResultaat.resultaat" typeof="rdfs:Property" resource="http://www.w3.org/ns/sosa/hasResult">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/ns/sosa/hasResult" data-toggle="tooltip" data-content="http://www.w3.org/ns/sosa/hasResult" data-placement="right">
@@ -1375,14 +1383,14 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#KwantitatieveWaarde" data-placement="right">KwantitatieveWaarde</a>
-			    
-                          
+			  
+                             
+                                            <a href="#KwantitatieveWaarde" data-placement="right">KwantitatieveWaarde</a>
+                             
+                         
                         </td>
                         <td>1</td>
-                        <td property="rdfs:comment"></td>
+                        <td property="rdfs:comment">Kwantitatieve waarde van een kwaliteitsmaat.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -1407,10 +1415,10 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Laag%3Abreedte">breedte</a>, 
-                      <a href="#Laag%3Alengte">lengte</a>, 
-                      <a href="#Laag%3Aoppervlakte">oppervlakte</a>, 
-                      <a href="#Laag%3Atype">type</a>.</dd>
+                      <a href="#Laag.breedte">breedte</a>, 
+                      <a href="#Laag.lengte">lengte</a>, 
+                      <a href="#Laag.oppervlakte">oppervlakte</a>, 
+                      <a href="#Laag.type">type</a>.</dd>
                     
                   </dl>
                 </div>
@@ -1430,7 +1438,7 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Laag%3Abreedte" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Laag.breedte">
+                      <tr id="Laag.breedte" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Laag.breedte">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Laag.breedte" data-toggle="tooltip" data-content="https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Laag.breedte" data-placement="right">
@@ -1438,11 +1446,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Kwantitatieve waarde in meter" data-placement="right">Kwantitatieve waarde in meter</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Kwantitatievewaardeinmeter" data-placement="right">Kwantitatieve waarde in meter</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">De (gemiddelde) breedte van een laag in meter. Dit kan ook de nominale breedte zijn afhankelijk van de laag en situatie.</td>
@@ -1450,7 +1458,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Laag%3Alengte" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Laag.lengte">
+                      <tr id="Laag.lengte" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Laag.lengte">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Laag.lengte" data-toggle="tooltip" data-content="https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Laag.lengte" data-placement="right">
@@ -1458,11 +1466,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Kwantitatieve waarde in meter" data-placement="right">Kwantitatieve waarde in meter</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Kwantitatievewaardeinmeter" data-placement="right">Kwantitatieve waarde in meter</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">De (gemiddelde) lengte van een laag in meter. Dit kan ook de nominale lengte zijn afhankelijk van de laag en situatie.</td>
@@ -1470,7 +1478,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Laag%3Aoppervlakte" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Laag.oppervlakte">
+                      <tr id="Laag.oppervlakte" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Laag.oppervlakte">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Laag.oppervlakte" data-toggle="tooltip" data-content="https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Laag.oppervlakte" data-placement="right">
@@ -1478,11 +1486,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Kwantitatieve waarde in vierkante meter" data-placement="right">Kwantitatieve waarde in vierkante meter</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Kwantitatievewaardeinvierkantemeter" data-placement="right">Kwantitatieve waarde in vierkante meter</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">De oppervlakte van een laag in vierkante meter.</td>
@@ -1490,7 +1498,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Laag%3Atype" typeof="rdfs:Property" resource="http://purl.org/cd/terms/type">
+                      <tr id="Laag.type" typeof="rdfs:Property" resource="http://purl.org/cd/terms/type">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://purl.org/cd/terms/type" data-toggle="tooltip" data-content="http://purl.org/cd/terms/type" data-placement="right">
@@ -1498,11 +1506,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Laag rol" data-placement="right">Laag rol</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Laagrol" data-placement="right">Laag rol</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">Het type van de laag</td>
@@ -1517,7 +1525,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Lidarpuntenwolk"><a href="http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#LidarCloud" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#LidarCloud" data-placement="right">LIDARpuntenwolk</a></h3>
+              <h3 class="h3" id="LIDARpuntenwolk"><a href="http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#LidarCloud" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#LidarCloud" data-placement="right">LIDARpuntenwolk</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Driedimensionele set van meetpunten verkregen door een actief remote sensing systeem vh type LIDAR.</dd>
@@ -1532,7 +1540,7 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Lidarpuntenwolk%3Ageometrie">geometrie</a>.</dd>
+                      <a href="#LIDARpuntenwolk.geometrie">geometrie</a>.</dd>
                     
                   </dl>
                 </div>
@@ -1552,7 +1560,7 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Lidarpuntenwolk%3Ageometrie" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape">
+                      <tr id="LIDARpuntenwolk.geometrie" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape" data-placement="right">
@@ -1560,11 +1568,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#3Dobject" data-placement="right">3Dobject</a>
-			    
-                          
+			  
+                             
+                                            <a href="#3Dobject" data-placement="right">3Dobject</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">geometrie vd LIDARpuntenwolk</td>
@@ -1593,13 +1601,13 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Markering%3Abreedte">breedte</a>, 
-                      <a href="#Markering%3Akleur">kleur</a>, 
-                      <a href="#Markering%3Akleurkod">kleurKOD</a>, 
-                      <a href="#Markering%3Alengte">lengte</a>, 
-                      <a href="#Markering%3Amarkeringsoort">markeringsoort</a>, 
-                      <a href="#Markering%3Aoppervlakte">oppervlakte</a>, 
-                      <a href="#Markering%3Atype">type</a>.</dd>
+                      <a href="#Markering.breedte">breedte</a>, 
+                      <a href="#Markering.kleur">kleur</a>, 
+                      <a href="#Markering.kleurKOD">kleurKOD</a>, 
+                      <a href="#Markering.lengte">lengte</a>, 
+                      <a href="#Markering.markeringsoort">markeringsoort</a>, 
+                      <a href="#Markering.oppervlakte">oppervlakte</a>, 
+                      <a href="#Markering.type">type</a>.</dd>
                     
                   </dl>
                 </div>
@@ -1619,7 +1627,7 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Markering%3Abreedte" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Markering.breedte">
+                      <tr id="Markering.breedte" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Markering.breedte">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Markering.breedte" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Markering.breedte" data-placement="right">
@@ -1627,11 +1635,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Kwantitatieve waarde in meter" data-placement="right">Kwantitatieve waarde in meter</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Kwantitatievewaardeinmeter" data-placement="right">Kwantitatieve waarde in meter</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">De breedte van de markering</td>
@@ -1639,7 +1647,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Markering%3Akleur" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Markering.kleur">
+                      <tr id="Markering.kleur" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Markering.kleur">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Markering.kleur" data-toggle="tooltip" data-content="https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Markering.kleur" data-placement="right">
@@ -1647,11 +1655,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Kleur markering" data-placement="right">Kleur markering</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Kleurmarkering" data-placement="right">Kleur markering</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">De kleur van de gebruikte markering.</td>
@@ -1659,7 +1667,7 @@
                         <td><a href="https://wegenenverkeer.data.vlaanderen.be/id/conceptscheme/KlKleurMarkering">Link</a></td>
                       </tr>
                     
-                      <tr id="Markering%3Akleurkod" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KleurKOD">
+                      <tr id="Markering.kleurKOD" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KleurKOD">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KleurKOD" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#KleurKOD" data-placement="right">
@@ -1667,11 +1675,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#KleurCodeKOD" data-placement="right">KleurCodeKOD</a>
-			    
-                          
+			  
+                             
+                                            <a href="#KleurCodeKOD" data-placement="right">KleurCodeKOD</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">De kleur van de gebruikte markering.</td>
@@ -1679,7 +1687,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Markering%3Alengte" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte">
+                      <tr id="Markering.lengte" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#lengte" data-placement="right">
@@ -1687,11 +1695,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Kwantitatieve waarde in meter" data-placement="right">Kwantitatieve waarde in meter</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Kwantitatievewaardeinmeter" data-placement="right">Kwantitatieve waarde in meter</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">De lengte van de markering</td>
@@ -1699,7 +1707,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Markering%3Amarkeringsoort" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Markering.markeringsoort">
+                      <tr id="Markering.markeringsoort" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Markering.markeringsoort">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Markering.markeringsoort" data-toggle="tooltip" data-content="https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Markering.markeringsoort" data-placement="right">
@@ -1707,11 +1715,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Soort markeringsproduct" data-placement="right">Soort markeringsproduct</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Soortmarkeringsproduct" data-placement="right">Soort markeringsproduct</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">De soort van markering (verf, thermopast,...).</td>
@@ -1719,7 +1727,7 @@
                         <td><a href="https://wegenenverkeer.data.vlaanderen.be/id/conceptscheme/KlMarkeringSoort">Link</a></td>
                       </tr>
                     
-                      <tr id="Markering%3Aoppervlakte" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Markering.oppervlakte">
+                      <tr id="Markering.oppervlakte" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Markering.oppervlakte">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Markering.oppervlakte" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#Markering.oppervlakte" data-placement="right">
@@ -1727,11 +1735,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Kwantitatieve waarde in vierkante meter" data-placement="right">Kwantitatieve waarde in vierkante meter</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Kwantitatievewaardeinvierkantemeter" data-placement="right">Kwantitatieve waarde in vierkante meter</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">De oppervlakte van de markering</td>
@@ -1739,7 +1747,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Markering%3Atype" typeof="rdfs:Property" resource="http://purl.org/cd/terms/type">
+                      <tr id="Markering.type" typeof="rdfs:Property" resource="http://purl.org/cd/terms/type">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://purl.org/cd/terms/type" data-toggle="tooltip" data-content="http://purl.org/cd/terms/type" data-placement="right">
@@ -1747,11 +1755,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#TypeMarkering" data-placement="right">TypeMarkering</a>
-			    
-                          
+			  
+                             
+                                            <a href="#TypeMarkering" data-placement="right">TypeMarkering</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">Het type van de markering</td>
@@ -1766,7 +1774,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="MarkeringKod"><a href="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD" data-placement="right">Markering KOD</a></h3>
+              <h3 class="h3" id="MarkeringKOD"><a href="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD" data-placement="right">Markering KOD</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Abstracte als noemer voor de verschillende types van markeringen.</dd>
@@ -1779,7 +1787,7 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#MarkeringKod%3AkleurKod">Kleur KOD</a>.</dd>
+                      <a href="#MarkeringKOD.KleurKOD">Kleur KOD</a>.</dd>
                     
                   </dl>
                 </div>
@@ -1799,7 +1807,7 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="MarkeringKod%3AkleurKod" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD">
+                      <tr id="MarkeringKOD.KleurKOD" typeof="rdfs:Property" resource="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#MarkeringKOD.kleurKOD" data-placement="right">
@@ -1807,11 +1815,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#KleurCodeKOD" data-placement="right">KleurCodeKOD</a>
-			    
-                          
+			  
+                             
+                                            <a href="#KleurCodeKOD" data-placement="right">KleurCodeKOD</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">De kleur van de gebruikte markering.</td>
@@ -1842,7 +1850,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Openbaardomeinobect"><a href="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject" data-placement="right">OpenbaarDomeinObect</a></h3>
+              <h3 class="h3" id="OpenbaarDomeinObect"><a href="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject" data-toggle="tooltip" data-content="https://implementatie.data.vlaanderen.be/ns/kwaliteit-wegen-en-wegmarkeringen#OpenbaarDomeinObject" data-placement="right">OpenbaarDomeinObect</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Klasse die instanties van om het even welk type vertegenwoordigt die voorkomen op het openbaar domein.</dd>
@@ -1876,7 +1884,7 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Organisatie%3Avoorkeurslabel">voorkeurslabel</a>.</dd>
+                      <a href="#Organisatie.voorkeurslabel">voorkeurslabel</a>.</dd>
                     
                   </dl>
                 </div>
@@ -1896,7 +1904,7 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Organisatie%3Avoorkeurslabel" typeof="rdfs:Property" resource="http://www.w3.org/2004/02/skos/core#prefLabel">
+                      <tr id="Organisatie.voorkeurslabel" typeof="rdfs:Property" resource="http://www.w3.org/2004/02/skos/core#prefLabel">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/2004/02/skos/core#prefLabel" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#prefLabel" data-placement="right">
@@ -1904,11 +1912,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#TaalString" data-placement="right">TaalString</a>
-			    
-                          
+			  
+                             
+                                            <a href="#TaalString" data-placement="right">TaalString</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">Naam waarmee de organisatie bij voorkeur wordt aangeduid.</td>
@@ -1923,7 +1931,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Ruimtelijkbemonsteringsobject"><a href="http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature" data-placement="right">RuimtelijkBemonsteringsobject</a></h3>
+              <h3 class="h3" id="RuimtelijkBemonsteringsobject"><a href="http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature" data-placement="right">RuimtelijkBemonsteringsobject</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Ruimtelijk begrensd deel van het Object dat men observeert en dat represent</dd>
@@ -1936,8 +1944,8 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Ruimtelijkbemonsteringsobject%3Aidentificator">identificator</a>, 
-                      <a href="#Ruimtelijkbemonsteringsobject%3Aobject">object</a>.</dd>
+                      <a href="#RuimtelijkBemonsteringsobject.identificator">identificator</a>, 
+                      <a href="#RuimtelijkBemonsteringsobject.object">object</a>.</dd>
                     
                   </dl>
                 </div>
@@ -1957,7 +1965,7 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Ruimtelijkbemonsteringsobject%3Aidentificator" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator">
+                      <tr id="RuimtelijkBemonsteringsobject.identificator" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator" data-placement="right">
@@ -1965,11 +1973,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Identificator" data-placement="right">Identificator</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Identificator" data-placement="right">Identificator</a>
+                             
+                         
                         </td>
                         <td>1..*</td>
                         <td property="rdfs:comment">Verwijzing naar de informatie die het Bemonsteringsobject uniek identificeert.</td>
@@ -1977,7 +1985,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Ruimtelijkbemonsteringsobject%3Aobject" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature">
+                      <tr id="RuimtelijkBemonsteringsobject.object" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature" data-placement="right">
@@ -1985,11 +1993,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Object" data-placement="right">Object</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Object" data-placement="right">Object</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">Verwijzing naar het Object dat men wil bemonsteren.</td>
@@ -2019,7 +2027,7 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Scene%3Ageometrie">geometrie</a>.</dd>
+                      <a href="#Scene.geometrie">geometrie</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2039,7 +2047,7 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Scene%3Ageometrie" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape">
+                      <tr id="Scene.geometrie" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape" data-placement="right">
@@ -2047,11 +2055,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Vlak" data-placement="right">Vlak</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Vlak" data-placement="right">Vlak</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">Geometrie vd Scene.</td>
@@ -2081,7 +2089,7 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Traject%3Ageometrie">geometrie</a>.</dd>
+                      <a href="#Traject.geometrie">geometrie</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2101,7 +2109,7 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Traject%3Ageometrie" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape">
+                      <tr id="Traject.geometrie" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape" data-placement="right">
@@ -2109,11 +2117,11 @@
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Curve" data-placement="right">Curve</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Curve" data-placement="right">Curve</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">Geometrie van het Traject.</td>
@@ -2157,7 +2165,7 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="3dobject"><a href="http://www.opengis.net/ont/gml#Solid" data-toggle="tooltip" data-content="http://www.opengis.net/ont/gml#Solid" data-placement="right">3Dobject</a></h3>
+              <h3 class="h3" id="3Dobject"><a href="http://www.opengis.net/ont/gml#Solid" data-toggle="tooltip" data-content="http://www.opengis.net/ont/gml#Solid" data-placement="right">3Dobject</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2181,7 +2189,7 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="Benoemdewaarde"><a href="http://def.isotc211.org/iso19156/2011/Observation#NamedValue" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Observation#NamedValue" data-placement="right">BenoemdeWaarde</a></h3>
+              <h3 class="h3" id="BenoemdeWaarde"><a href="http://def.isotc211.org/iso19156/2011/Observation#NamedValue" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Observation#NamedValue" data-placement="right">BenoemdeWaarde</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2193,8 +2201,8 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor dit datatype zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Benoemdewaarde%3Anaam">naam</a>, 
-                      <a href="#Benoemdewaarde%3Awaarde">waarde</a>.</dd>
+                      <a href="#BenoemdeWaarde.naam">naam</a>, 
+                      <a href="#BenoemdeWaarde.waarde">waarde</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2214,18 +2222,18 @@
 
                     <tbody class="supertype">
                       
-                      <tr id="Benoemdewaarde%3Anaam" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Observation#NamedValue.name">
+                      <tr id="BenoemdeWaarde.naam" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Observation#NamedValue.name">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://def.isotc211.org/iso19156/2011/Observation#NamedValue.name" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Observation#NamedValue.name" data-placement="right">naam</a>
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#GeneriekeNaam" data-placement="right">GeneriekeNaam</a>
-			    
-                          
+			  
+                             
+                                            <a href="#GeneriekeNaam" data-placement="right">GeneriekeNaam</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">Naam vh type van de waarde.</td>
@@ -2233,18 +2241,21 @@
                         <td></td>
                       </tr>
                       
-                      <tr id="Benoemdewaarde%3Awaarde" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Observation#NamedValue.value">
+                      <tr id="BenoemdeWaarde.waarde" typeof="rdfs:Property" resource="http://def.isotc211.org/iso19156/2011/Observation#NamedValue.value">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://def.isotc211.org/iso19156/2011/Observation#NamedValue.value" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19156/2011/Observation#NamedValue.value" data-placement="right">waarde</a>
                           </code>
                         </td>
                         <td>
-                          
-			     
-			    <a href="http://www.w3.org/2000/01/rdf-schema#Resource" data-toggle="tooltip" data-content="http://www.w3.org/2000/01/rdf-schema#Resource" data-placement="right">Any</a>
-                            
-                          
+			  
+                             
+                                            <a href="#Any"
+                                               data-toggle="tooltip"
+                                               data-content="http://www.w3.org/2000/01/rdf-schema#Resource"
+                                               data-placement="right">Any</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">Kwalitatieve of kwantitatieve invulling van de waarde.</td>
@@ -2284,7 +2295,7 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="DecimaalGetal"><a href="http://www.w3.org/2001/XMLSchema#decimal" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#decimal" data-placement="right">Decimaal getal</a></h3>
+              <h3 class="h3" id="Decimaalgetal"><a href="http://www.w3.org/2001/XMLSchema#decimal" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#decimal" data-placement="right">Decimaal getal</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2304,7 +2315,7 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="Generiekenaam"><a href="http://def.isotc211.org/iso19103/2005/Names#GenericName" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19103/2005/Names#GenericName" data-placement="right">GeneriekeNaam</a></h3>
+              <h3 class="h3" id="GeneriekeNaam"><a href="http://def.isotc211.org/iso19103/2005/Names#GenericName" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19103/2005/Names#GenericName" data-placement="right">GeneriekeNaam</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2336,9 +2347,9 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor dit datatype zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Geometrie%3AalsGml">als GML</a>, 
-                      <a href="#Geometrie%3AalsWkt">als WKT</a>, 
-                      <a href="#Geometrie%3Aopmeting">opmeting</a>.</dd>
+                      <a href="#Geometrie.alsGML">als GML</a>, 
+                      <a href="#Geometrie.alsWKT">als WKT</a>, 
+                      <a href="#Geometrie.opmeting">opmeting</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2358,18 +2369,18 @@
 
                     <tbody class="supertype">
                       
-                      <tr id="Geometrie%3AalsGml" typeof="rdfs:Property" resource="http://www.opengis.net/ont/geosparql#asGML">
+                      <tr id="Geometrie.alsGML" typeof="rdfs:Property" resource="http://www.opengis.net/ont/geosparql#asGML">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.opengis.net/ont/geosparql#asGML" data-toggle="tooltip" data-content="http://www.opengis.net/ont/geosparql#asGML" data-placement="right">als GML</a>
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Getypeerde String" data-placement="right">Getypeerde String</a>
-			    
-                          
+			  
+                             
+                                            <a href="#GetypeerdeString" data-placement="right">Getypeerde String</a>
+                             
+                         
                         </td>
                         <td>0..1</td>
                         <td property="rdfs:comment">Geometrie uitgedrukt in gml-formaat.</td>
@@ -2377,18 +2388,18 @@
                         <td></td>
                       </tr>
                       
-                      <tr id="Geometrie%3AalsWkt" typeof="rdfs:Property" resource="http://www.opengis.net/ont/geosparql#asWKT">
+                      <tr id="Geometrie.alsWKT" typeof="rdfs:Property" resource="http://www.opengis.net/ont/geosparql#asWKT">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.opengis.net/ont/geosparql#asWKT" data-toggle="tooltip" data-content="http://www.opengis.net/ont/geosparql#asWKT" data-placement="right">als WKT</a>
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Getypeerde String" data-placement="right">Getypeerde String</a>
-			    
-                          
+			  
+                             
+                                            <a href="#GetypeerdeString" data-placement="right">Getypeerde String</a>
+                             
+                         
                         </td>
                         <td>0..1</td>
                         <td property="rdfs:comment">Geometrie uitgedrukt in wkt-formaat.</td>
@@ -2396,18 +2407,21 @@
                         <td></td>
                       </tr>
                       
-                      <tr id="Geometrie%3Aopmeting" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting">
+                      <tr id="Geometrie.opmeting" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting" data-placement="right">opmeting</a>
                           </code>
                         </td>
                         <td>
-                          
-			     
-			    <a href="https://data.vlaanderen.be/ns/generiek#Opmeting" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/generiek#Opmeting" data-placement="right">Opmeting</a>
-                            
-                          
+			  
+                             
+                                            <a href="#Opmeting"
+                                               data-toggle="tooltip"
+                                               data-content="https://data.vlaanderen.be/ns/generiek#Opmeting"
+                                               data-placement="right">Opmeting</a>
+                             
+                         
                         </td>
                         <td>0..1</td>
                         <td property="rdfs:comment">De manier waarop de geometrie werd bepaald.</td>
@@ -2463,7 +2477,7 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="KwantitatieveWaardeInMeter"><a href="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter" data-toggle="tooltip" data-content="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter" data-placement="right">Kwantitatieve waarde in meter</a></h3>
+              <h3 class="h3" id="Kwantitatievewaardeinmeter"><a href="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter" data-toggle="tooltip" data-content="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter" data-placement="right">Kwantitatieve waarde in meter</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2473,8 +2487,8 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor dit datatype zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#KwantitatieveWaardeInMeter%3AstandaardEenheid">standaard eenheid</a>, 
-                      <a href="#KwantitatieveWaardeInMeter%3Awaarde">waarde</a>.</dd>
+                      <a href="#Kwantitatievewaardeinmeter.standaardeenheid">standaard eenheid</a>, 
+                      <a href="#Kwantitatievewaardeinmeter.waarde">waarde</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2494,18 +2508,18 @@
 
                     <tbody class="supertype">
                       
-                      <tr id="KwantitatieveWaardeInMeter%3AstandaardEenheid" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter.standaardEenheid">
+                      <tr id="Kwantitatievewaardeinmeter.standaardeenheid" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter.standaardEenheid">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter.standaardEenheid" data-toggle="tooltip" data-content="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter.standaardEenheid" data-placement="right">standaard eenheid</a>
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Literal" data-placement="right">Literal</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">De standaard eenheid bij dit datatype is uitgedrukt in meter.</td>
@@ -2513,18 +2527,18 @@
                         <td></td>
                       </tr>
                       
-                      <tr id="KwantitatieveWaardeInMeter%3Awaarde" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter.waarde">
+                      <tr id="Kwantitatievewaardeinmeter.waarde" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter.waarde">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter.waarde" data-toggle="tooltip" data-content="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInMeter.waarde" data-placement="right">waarde</a>
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Decimaal getal" data-placement="right">Decimaal getal</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Decimaalgetal" data-placement="right">Decimaal getal</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">Bevat een getal die bij het datatype hoort.</td>
@@ -2540,7 +2554,7 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="KwantitatieveWaardeInVierkanteMeter"><a href="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInVierkanteMeter" data-toggle="tooltip" data-content="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInVierkanteMeter" data-placement="right">Kwantitatieve waarde in vierkante meter</a></h3>
+              <h3 class="h3" id="Kwantitatievewaardeinvierkantemeter"><a href="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInVierkanteMeter" data-toggle="tooltip" data-content="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInVierkanteMeter" data-placement="right">Kwantitatieve waarde in vierkante meter</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2550,8 +2564,8 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor dit datatype zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#KwantitatieveWaardeInVierkanteMeter%3AstandaardEenheid">standaard eenheid</a>, 
-                      <a href="#KwantitatieveWaardeInVierkanteMeter%3Awaarde">waarde</a>.</dd>
+                      <a href="#Kwantitatievewaardeinvierkantemeter.standaardeenheid">standaard eenheid</a>, 
+                      <a href="#Kwantitatievewaardeinvierkantemeter.waarde">waarde</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2571,18 +2585,18 @@
 
                     <tbody class="supertype">
                       
-                      <tr id="KwantitatieveWaardeInVierkanteMeter%3AstandaardEenheid" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInVierkanteMeter.standaardEenheid">
+                      <tr id="Kwantitatievewaardeinvierkantemeter.standaardeenheid" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInVierkanteMeter.standaardEenheid">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInVierkanteMeter.standaardEenheid" data-toggle="tooltip" data-content="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInVierkanteMeter.standaardEenheid" data-placement="right">standaard eenheid</a>
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Literal" data-placement="right">Literal</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">De standaard eenheid bij dit datatype is uitgedrukt in vierkante meter.</td>
@@ -2590,18 +2604,18 @@
                         <td></td>
                       </tr>
                       
-                      <tr id="KwantitatieveWaardeInVierkanteMeter%3Awaarde" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInVierkanteMeter.waarde">
+                      <tr id="Kwantitatievewaardeinvierkantemeter.waarde" typeof="rdfs:Property" resource="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInVierkanteMeter.waarde">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInVierkanteMeter.waarde" data-toggle="tooltip" data-content="https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#KwantWrdInVierkanteMeter.waarde" data-placement="right">waarde</a>
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Decimaal getal" data-placement="right">Decimaal getal</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Decimaalgetal" data-placement="right">Decimaal getal</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">Bevat een getal die bij het datatype hoort.</td>
@@ -2617,7 +2631,7 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="Kwantitatievewaarde"><a href="https://qudt.org/schema/qudt/QuantityValue" data-toggle="tooltip" data-content="https://qudt.org/schema/qudt/QuantityValue" data-placement="right">KwantitatieveWaarde</a></h3>
+              <h3 class="h3" id="KwantitatieveWaarde"><a href="https://qudt.org/schema/qudt/QuantityValue" data-toggle="tooltip" data-content="https://qudt.org/schema/qudt/QuantityValue" data-placement="right">KwantitatieveWaarde</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2629,8 +2643,8 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor dit datatype zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Kwantitatievewaarde%3Aeenheid">eenheid</a>, 
-                      <a href="#Kwantitatievewaarde%3Awaarde">waarde</a>.</dd>
+                      <a href="#KwantitatieveWaarde.eenheid">eenheid</a>, 
+                      <a href="#KwantitatieveWaarde.waarde">waarde</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2650,18 +2664,18 @@
 
                     <tbody class="supertype">
                       
-                      <tr id="Kwantitatievewaarde%3Aeenheid" typeof="rdfs:Property" resource="https://qudt.org/schema/qudt/hasUnit">
+                      <tr id="KwantitatieveWaarde.eenheid" typeof="rdfs:Property" resource="https://qudt.org/schema/qudt/hasUnit">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://qudt.org/schema/qudt/hasUnit" data-toggle="tooltip" data-content="https://qudt.org/schema/qudt/hasUnit" data-placement="right">eenheid</a>
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Concept" data-placement="right">Concept</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Concept" data-placement="right">Concept</a>
+                             
+                         
                         </td>
                         <td>0..1</td>
                         <td property="rdfs:comment">De gestandaardiseerde eenheid waarin de waarde is uitgedrukt.</td>
@@ -2669,18 +2683,18 @@
                         <td></td>
                       </tr>
                       
-                      <tr id="Kwantitatievewaarde%3Awaarde" typeof="rdfs:Property" resource="https://qudt.org/schema/qudt/value">
+                      <tr id="KwantitatieveWaarde.waarde" typeof="rdfs:Property" resource="https://qudt.org/schema/qudt/value">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://qudt.org/schema/qudt/value" data-toggle="tooltip" data-content="https://qudt.org/schema/qudt/value" data-placement="right">waarde</a>
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Literal" data-placement="right">Literal</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt.</td>
@@ -2714,11 +2728,11 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="Lokalenaam"><a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">LokaleNaam</a></h3>
+              <h3 class="h3" id="LokaleNaam"><a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">LokaleNaam</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Beschrijving</dt><dd>TODO</dd>
+                    <dt>Beschrijving</dt><dd>Naam zonder vermelding van een naamruimte.</dd>
                     
                     <dt>Gebruik</dt><dd>Te implementeren als String.</dd>
                     
@@ -2742,7 +2756,7 @@
 	      
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Beschrijving</dt><dd></dd>
+                    <dt>Beschrijving</dt><dd>Moment met omvang en duur nul.</dd>
                     
 		     
 		    <dt>Subklasse van <dt><dd>
@@ -2752,7 +2766,7 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor dit datatype zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Moment%3Ainxsddatetime">inXSDDateTime</a>.</dd>
+                      <a href="#Moment.inXSDDateTime">inXSDDateTime</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2772,18 +2786,21 @@
 
                     <tbody class="supertype">
                       
-                      <tr id="Moment%3Ainxsddatetime" typeof="rdfs:Property" resource="http://www.w3.org/2006/time#inXSDDateTime">
+                      <tr id="Moment.inXSDDateTime" typeof="rdfs:Property" resource="http://www.w3.org/2006/time#inXSDDateTime">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/2006/time#inXSDDateTime" data-toggle="tooltip" data-content="http://www.w3.org/2006/time#inXSDDateTime" data-placement="right">inXSDDateTime</a>
                           </code>
                         </td>
                         <td>
-                          
-			     
-			    <a href="http://www.w3.org/2001/XMLSchema#dateTime" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#dateTime" data-placement="right">DateTime</a>
-                            
-                          
+			  
+                             
+                                            <a href="#DateTime"
+                                               data-toggle="tooltip"
+                                               data-content="http://www.w3.org/2001/XMLSchema#dateTime"
+                                               data-placement="right">DateTime</a>
+                             
+                         
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment"></td>
@@ -2799,11 +2816,11 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="Naaminnaamruimte"><a href="http://www.w3.org/2001/XMLSchema#anyURI" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#anyURI" data-placement="right">NaamInNaamruimte</a></h3>
+              <h3 class="h3" id="NaamInNaamruimte"><a href="http://www.w3.org/2001/XMLSchema#anyURI" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#anyURI" data-placement="right">NaamInNaamruimte</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Beschrijving</dt><dd>TODO</dd>
+                    <dt>Beschrijving</dt><dd>Naam met vermelding van een naamruimte.</dd>
                     
                     <dt>Gebruik</dt><dd>Te implementeren als URI.</dd>
                     
@@ -2827,7 +2844,7 @@
 	      
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Beschrijving</dt><dd></dd>
+                    <dt>Beschrijving</dt><dd>TemporeleEntiteit waarvan de omvang en duurtijd verschilt van nul, ttz waarvoor de begin- en eindwaarde verschillend zijn.</dd>
                     
 		     
 		    <dt>Subklasse van <dt><dd>
@@ -2837,8 +2854,8 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor dit datatype zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Periode%3Atot">tot</a>, 
-                      <a href="#Periode%3Avan">van</a>.</dd>
+                      <a href="#Periode.tot">tot</a>, 
+                      <a href="#Periode.van">van</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2858,40 +2875,40 @@
 
                     <tbody class="supertype">
                       
-                      <tr id="Periode%3Atot" typeof="rdfs:Property" resource="http://www.w3.org/2006/time#hasEnd">
+                      <tr id="Periode.tot" typeof="rdfs:Property" resource="http://www.w3.org/2006/time#hasEnd">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/2006/time#hasEnd" data-toggle="tooltip" data-content="http://www.w3.org/2006/time#hasEnd" data-placement="right">tot</a>
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Moment" data-placement="right">Moment</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Moment" data-placement="right">Moment</a>
+                             
+                         
                         </td>
                         <td>1</td>
-                        <td property="rdfs:comment"></td>
+                        <td property="rdfs:comment">Het moment waarop de periode eindigt.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
                       
-                      <tr id="Periode%3Avan" typeof="rdfs:Property" resource="http://www.w3.org/2006/time#hasBeginning">
+                      <tr id="Periode.van" typeof="rdfs:Property" resource="http://www.w3.org/2006/time#hasBeginning">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/2006/time#hasBeginning" data-toggle="tooltip" data-content="http://www.w3.org/2006/time#hasBeginning" data-placement="right">van</a>
                           </code>
                         </td>
                         <td>
-                          
-			    
-			    <a href="#Moment" data-placement="right">Moment</a>
-			    
-                          
+			  
+                             
+                                            <a href="#Moment" data-placement="right">Moment</a>
+                             
+                         
                         </td>
                         <td>1</td>
-                        <td property="rdfs:comment"></td>
+                        <td property="rdfs:comment">het moment waarop de periode start.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -2904,7 +2921,7 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="Taalstring"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a></h3>
+              <h3 class="h3" id="TaalString"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2924,7 +2941,7 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="Temporeleentiteit"><a href="http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object" data-placement="right">TemporeleEntiteit</a></h3>
+              <h3 class="h3" id="TemporeleEntiteit"><a href="http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object" data-placement="right">TemporeleEntiteit</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2944,7 +2961,7 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="Temporeleentiteit"><a href="http://www.w3.org/2006/time#TemporalEntity" data-toggle="tooltip" data-content="http://www.w3.org/2006/time#TemporalEntity" data-placement="right">TemporeleEntiteit</a></h3>
+              <h3 class="h3" id="TemporeleEntiteit"><a href="http://www.w3.org/2006/time#TemporalEntity" data-toggle="tooltip" data-content="http://www.w3.org/2006/time#TemporalEntity" data-placement="right">TemporeleEntiteit</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2991,14 +3008,14 @@
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">JSON-LD context</h2>
                 (niet normatief)
                 
-                <p>Een herbruikbare JSON-LD context definitie voor dit applicatieprofiel is terug te vinden op: <a href="/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05/context/kwaliteitWegenEnWegmarkeringen-ap.jsonld" target="_blank">/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05/context/kwaliteitWegenEnWegmarkeringen-ap.jsonld</a></p>
+                <p>Een herbruikbare JSON-LD context definitie voor dit implementatiemodel is terug te vinden op: <a href="/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05/context/kwaliteitWegenEnWegmarkeringen-ap.jsonld" target="_blank">/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05/context/kwaliteitWegenEnWegmarkeringen-ap.jsonld</a></p>
                 
             </div>
             <div class="region region--no-space-top" id="shacl">
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">SHACL template</h2>
                 (niet normatief)
                 
-                <p>Een herbruikbare SHACL template definitie voor dit applicatieprofiel is terug te vinden op: <a href="/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05/shacl/kwaliteitWegenEnWegmarkeringen-ap-SHACL.ttl" target="_blank">/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05/shacl/kwaliteitWegenEnWegmarkeringen-ap-SHACL.ttl</a></p>
+                <p>Een herbruikbare SHACL template definitie voor dit implementatiemodel is terug te vinden op: <a href="/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05/shacl/kwaliteitWegenEnWegmarkeringen-ap-SHACL.ttl" target="_blank">/doc/implementatiemodel/kwaliteit-wegen-en-wegmarkeringen/ontwerpstandaard/2023-05-05/shacl/kwaliteitWegenEnWegmarkeringen-ap-SHACL.ttl</a></p>
                 
             </div>
           </div>
