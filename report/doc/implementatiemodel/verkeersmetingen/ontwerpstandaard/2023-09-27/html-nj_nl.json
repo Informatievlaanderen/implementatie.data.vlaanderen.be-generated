@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/dee3738c74b28bf062dff93b8599a52c516a2af3",
-    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/dee3738c74b28bf062dff93b8599a52c516a2af3/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/tree/b5d94a32a19a7e296c4c0f54b831e014fca2aca2",
+    "changelogurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/blob/b5d94a32a19a7e296c4c0f54b831e014fca2aca2/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-im-verkeersmetingen/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/",
     "usesVocs": [],
@@ -1031,7 +1031,7 @@
       },
       "properties": [
         {
-          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen/#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie",
+          "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie",
           "name": "verkeersmeetpuntnetwerkreferentie",
           "sort": "verkeersmeetpuntnetwerkreferentie",
           "label": {
@@ -1068,7 +1068,7 @@
             "label-nl": "verkeersmeetpuntnetwerkreferentie",
             "definition-nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt.",
             "package": "VSDS-Verkeersmetingen",
-            "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen/#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie"
+            "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie"
           }
         },
         {
@@ -1582,47 +1582,6 @@
       },
       "properties": [
         {
-          "uri": "https://data.vlaanderen.be/ns/netwerk/#beginknoop",
-          "name": "beginknoop",
-          "sort": "beginknoop",
-          "label": {
-            "nl": "beginknoop"
-          },
-          "description": {
-            "nl": "Knoop die het begin is van het Wegsegment."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Wegsegment",
-              "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Wegknoop",
-              "range_uri": "https://data.vlaanderen.be/ns/weg#Wegknoop"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Wegknoop",
-              "range_puri": "https://data.vlaanderen.be/ns/weg#Wegknoop",
-              "range_label": {
-                "nl": "Wegknoop"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-nl": "beginknoop",
-            "uri": "https://data.vlaanderen.be/ns/netwerk/#beginknoop",
-            "ap-label-nl": "beginknoop",
-            "ap-definition-nl": "Knoop die het begin is van het Wegsegment."
-          }
-        },
-        {
           "uri": "https://data.vlaanderen.be/ns/netwerk#eindknoop",
           "name": "eindknoop",
           "sort": "eindknoop",
@@ -1661,6 +1620,47 @@
             "ap-label-nl": "eindknoop",
             "uri": "https://data.vlaanderen.be/ns/netwerk#eindknoop",
             "label-nl": "eindknoop"
+          }
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/netwerk#beginknoop",
+          "name": "beginknoop",
+          "sort": "beginknoop",
+          "label": {
+            "nl": "beginknoop"
+          },
+          "description": {
+            "nl": "Knoop die het begin is van het Wegsegment."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Wegsegment",
+              "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Wegknoop",
+              "range_uri": "https://data.vlaanderen.be/ns/weg#Wegknoop"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Wegknoop",
+              "range_puri": "https://data.vlaanderen.be/ns/weg#Wegknoop",
+              "range_label": {
+                "nl": "Wegknoop"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-nl": "beginknoop",
+            "uri": "https://data.vlaanderen.be/ns/netwerk#beginknoop",
+            "ap-label-nl": "beginknoop",
+            "ap-definition-nl": "Knoop die het begin is van het Wegsegment."
           }
         },
         {
@@ -1847,21 +1847,6 @@
   ],
   "properties": [
     {
-      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen/#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie",
-      "name": {
-        "nl": "verkeersmeetpuntnetwerkreferentie",
-        "undefined": "verkeersmeetpuntnetwerkreferentie"
-      },
-      "description": {},
-      "domain": [
-        null
-      ],
-      "range": [
-        null
-      ],
-      "parents": []
-    },
-    {
       "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk.kenmerktype",
       "name": {
         "nl": "kenmerktype",
@@ -1924,6 +1909,21 @@
       "parents": [
         "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk"
       ]
+    },
+    {
+      "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie",
+      "name": {
+        "nl": "verkeersmeetpuntnetwerkreferentie",
+        "undefined": "verkeersmeetpuntnetwerkreferentie"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
     },
     {
       "uri": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement",

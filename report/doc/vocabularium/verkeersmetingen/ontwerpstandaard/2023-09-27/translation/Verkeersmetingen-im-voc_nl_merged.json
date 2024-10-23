@@ -79,7 +79,7 @@
   "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen",
   "@type": "http://www.w3.org/2002/07/owl#Ontology",
   "authors": [],
-  "branchtag": "publicatie-02072024",
+  "branchtag": "publicatie-20241023",
   "classes": [
     {
       "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting",
@@ -409,7 +409,7 @@
   "contributors-column": "Verkeersmetingen",
   "contributors-file": "stakeholders.csv",
   "diagram": "VSDS-Verkeersmetingen",
-  "documentcommit": "dee3738c74b28bf062dff93b8599a52c516a2af3",
+  "documentcommit": "b5d94a32a19a7e296c4c0f54b831e014fca2aca2",
   "dummy": "23",
   "eap": "Verkeersmetingen-IM.eap",
   "editors": [
@@ -1321,122 +1321,6 @@
       }
     },
     {
-      "@id": "https://data.vlaanderen.be/ns/netwerk/#beginknoop",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{0366713F-C00D-4dd9-A4FA-1E627668457D}",
-      "codelist": [],
-      "definition-nl": {
-        "nl": "TODO"
-      },
-      "domain": [
-        {
-          "EA-Name": "Wegsegment",
-          "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "label-nl",
-            "note": "beginknoop",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "https://data.vlaanderen.be/ns/netwerk/#beginknoop",
-            "value": "NOTE"
-          },
-          {
-            "key": "ap-label-nl",
-            "note": "beginknoop",
-            "value": "NOTE"
-          },
-          {
-            "key": "ap-definition-nl",
-            "note": "Knoop die het begin is van het Wegsegment.",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Wegsegment",
-        "EA-Domain-Guid": "{A74FEDDC-177C-430a-80BF-5D15C5278C01}",
-        "EA-Guid": "{0366713F-C00D-4dd9-A4FA-1E627668457D}",
-        "EA-Name": "^beginknoop",
-        "EA-Package": "",
-        "EA-Range": "Wegknoop",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{5E144E63-EF37-4a5f-8156-703E8B996ED9}",
-          "EA-Name": "Wegknoop",
-          "EA-Package": "INSPIRE-Weg",
-          "uri": "https://data.vlaanderen.be/ns/weg#Wegknoop"
-        },
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "beginknoop",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "https://data.vlaanderen.be/ns/netwerk/#beginknoop",
-            "value": "NOTE"
-          },
-          {
-            "key": "ap-label-nl",
-            "note": "beginknoop",
-            "value": "NOTE"
-          },
-          {
-            "key": "ap-definition-nl",
-            "note": "Knoop die het begin is van het Wegsegment.",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "definition": "",
-        "definition-en": "",
-        "definition-nl": {
-          "nl": "TODO"
-        },
-        "derived": "false",
-        "destRole": "^beginknoop",
-        "equivalent": "",
-        "label": {
-          "nl": "beginknoop"
-        },
-        "label-en": "",
-        "label-nl": {
-          "nl": "beginknoop"
-        },
-        "sameAs": "",
-        "sourceRole": "null",
-        "subclass": "",
-        "subclass1": "",
-        "usage": "",
-        "usageNote-en": "",
-        "usageNote-nl": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "nl": "beginknoop"
-      },
-      "label-nl": {
-        "nl": "beginknoop"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "1",
-      "name": "beginknoop",
-      "range": [
-        {
-          "EA-GUID": "{5E144E63-EF37-4a5f-8156-703E8B996ED9}",
-          "EA-Name": "Wegknoop",
-          "EA-Package": "INSPIRE-Weg",
-          "uri": "https://data.vlaanderen.be/ns/weg#Wegknoop"
-        }
-      ]
-    },
-    {
       "@id": "https://data.vlaanderen.be/ns/netwerk#toepassingsRichting",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{177F8E42-EFE0-4a68-86DA-149541320602}",
@@ -1644,6 +1528,122 @@
       "maxCardinality": "1",
       "minCardinality": "1",
       "name": "eindknoop",
+      "range": [
+        {
+          "EA-GUID": "{5E144E63-EF37-4a5f-8156-703E8B996ED9}",
+          "EA-Name": "Wegknoop",
+          "EA-Package": "INSPIRE-Weg",
+          "uri": "https://data.vlaanderen.be/ns/weg#Wegknoop"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/netwerk#beginknoop",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{0366713F-C00D-4dd9-A4FA-1E627668457D}",
+      "codelist": [],
+      "definition-nl": {
+        "nl": "TODO"
+      },
+      "domain": [
+        {
+          "EA-Name": "Wegsegment",
+          "uri": "https://data.vlaanderen.be/ns/weg#Wegsegment"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "label-nl",
+            "note": "beginknoop",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "https://data.vlaanderen.be/ns/netwerk#beginknoop",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "beginknoop",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "Knoop die het begin is van het Wegsegment.",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Wegsegment",
+        "EA-Domain-Guid": "{A74FEDDC-177C-430a-80BF-5D15C5278C01}",
+        "EA-Guid": "{0366713F-C00D-4dd9-A4FA-1E627668457D}",
+        "EA-Name": "^beginknoop",
+        "EA-Package": "",
+        "EA-Range": "Wegknoop",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{5E144E63-EF37-4a5f-8156-703E8B996ED9}",
+          "EA-Name": "Wegknoop",
+          "EA-Package": "INSPIRE-Weg",
+          "uri": "https://data.vlaanderen.be/ns/weg#Wegknoop"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "beginknoop",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "https://data.vlaanderen.be/ns/netwerk#beginknoop",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-label-nl",
+            "note": "beginknoop",
+            "value": "NOTE"
+          },
+          {
+            "key": "ap-definition-nl",
+            "note": "Knoop die het begin is van het Wegsegment.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "definition": "",
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "TODO"
+        },
+        "derived": "false",
+        "destRole": "^beginknoop",
+        "equivalent": "",
+        "label": {
+          "nl": "beginknoop"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "beginknoop"
+        },
+        "sameAs": "",
+        "sourceRole": "null",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "beginknoop"
+      },
+      "label-nl": {
+        "nl": "beginknoop"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "beginknoop",
       "range": [
         {
           "EA-GUID": "{5E144E63-EF37-4a5f-8156-703E8B996ED9}",
@@ -6128,102 +6128,6 @@
   "navigation": {},
   "properties": [
     {
-      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen/#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{52414853-0857-4630-9CA7-3C1889B82C27}",
-      "codelist": [],
-      "definition": {
-        "nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
-      },
-      "definition-nl": {
-        "nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
-      },
-      "domain": [
-        {
-          "EA-Name": "Verkeersmeetpunt",
-          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Verkeersmeetpunt",
-        "EA-Domain-Guid": "{84DECA56-0848-4297-A791-E0316CDC69CF}",
-        "EA-Guid": "{52414853-0857-4630-9CA7-3C1889B82C27}",
-        "EA-Name": "verkeersmeetpuntnetwerkreferentie",
-        "EA-Package": "OSLO-Verkeersmetingen",
-        "EA-Range": "Puntreferentie",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{A3BFE246-F22F-427d-8A16-CC9C40EFE22E}",
-          "EA-Name": "Puntreferentie",
-          "EA-Package": "INSPIRE-netwerk",
-          "uri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie"
-        },
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "note": "null",
-            "value": "verkeersmeetpuntnetwerkreferentie"
-          },
-          {
-            "key": "definition-nl",
-            "note": "null",
-            "value": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
-          },
-          {
-            "key": "package",
-            "note": "null",
-            "value": "VSDS-Verkeersmetingen"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen/#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie"
-          }
-        ],
-        "Scope": "FULL_DEFINITON",
-        "definition": {
-          "nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
-        },
-        "definition-en": "",
-        "definition-nl": {
-          "nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
-        },
-        "equivalent": "",
-        "label": {
-          "nl": "verkeersmeetpuntnetwerkreferentie"
-        },
-        "label-en": "",
-        "label-nl": {
-          "nl": "verkeersmeetpuntnetwerkreferentie"
-        },
-        "sameAs": "",
-        "subclass": "",
-        "subclass1": "",
-        "usage": "",
-        "usageNote-en": "",
-        "usageNote-nl": ""
-      },
-      "generalization": [],
-      "inpackage": "ACTIVE_PACKAGE",
-      "label": {
-        "nl": "verkeersmeetpuntnetwerkreferentie"
-      },
-      "label-nl": {
-        "nl": "verkeersmeetpuntnetwerkreferentie"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "1",
-      "name": "verkeersmeetpuntnetwerkreferentie",
-      "range": [
-        {
-          "EA-GUID": "{A3BFE246-F22F-427d-8A16-CC9C40EFE22E}",
-          "EA-Name": "Puntreferentie",
-          "EA-Package": "INSPIRE-netwerk",
-          "uri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie"
-        }
-      ]
-    },
-    {
       "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk.kenmerktype",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{8E611CBE-ABDA-4726-9E28-7BE132D4F8F3}",
@@ -6728,6 +6632,102 @@
       ]
     },
     {
+      "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{52414853-0857-4630-9CA7-3C1889B82C27}",
+      "codelist": [],
+      "definition": {
+        "nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
+      },
+      "definition-nl": {
+        "nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
+      },
+      "domain": [
+        {
+          "EA-Name": "Verkeersmeetpunt",
+          "uri": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Verkeersmeetpunt",
+        "EA-Domain-Guid": "{84DECA56-0848-4297-A791-E0316CDC69CF}",
+        "EA-Guid": "{52414853-0857-4630-9CA7-3C1889B82C27}",
+        "EA-Name": "verkeersmeetpuntnetwerkreferentie",
+        "EA-Package": "OSLO-Verkeersmetingen",
+        "EA-Range": "Puntreferentie",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{A3BFE246-F22F-427d-8A16-CC9C40EFE22E}",
+          "EA-Name": "Puntreferentie",
+          "EA-Package": "INSPIRE-netwerk",
+          "uri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "verkeersmeetpuntnetwerkreferentie"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
+          },
+          {
+            "key": "package",
+            "note": "null",
+            "value": "VSDS-Verkeersmetingen"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "definition": {
+          "nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
+        },
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "verkeersmeetpuntnetwerkreferentie"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "verkeersmeetpuntnetwerkreferentie"
+        },
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "verkeersmeetpuntnetwerkreferentie"
+      },
+      "label-nl": {
+        "nl": "verkeersmeetpuntnetwerkreferentie"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "verkeersmeetpuntnetwerkreferentie",
+      "range": [
+        {
+          "EA-GUID": "{A3BFE246-F22F-427d-8A16-CC9C40EFE22E}",
+          "EA-Name": "Puntreferentie",
+          "EA-Package": "INSPIRE-netwerk",
+          "uri": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie"
+        }
+      ]
+    },
+    {
       "@id": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Rijrichting.netwerkreferentieelement",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{D0FC4E26-48C8-4a28-BD9A-D6BD94C4C450}",
@@ -6841,7 +6841,7 @@
   "title-nl": {
     "nl": "TODO"
   },
-  "toolchaincommit": "0aca8e5c05366ca04870defc28147fb9da11027a",
+  "toolchaincommit": "6c3d4b368e9de51d38092ed19d8b1df8667e0c74",
   "translation": [
     {
       "language": "nl",
