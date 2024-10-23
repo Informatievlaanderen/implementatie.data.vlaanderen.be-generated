@@ -18,6 +18,13 @@ skos:Concept a rdfs:Class;
   rdfs:range <https://data.vlaanderen.be/ns/weg#Wegsegment>;
   rdfs:subPropertyOf <https://data.vlaanderen.be/ns/netwerk/#netwerkreferentie> .
 
+<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie> a owl:ObjectProperty;
+  rdfs:label "verkeersmeetpuntnetwerkreferentie"@nl;
+  rdfs:comment "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt>;
+  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen>;
+  rdfs:range <https://data.vlaanderen.be/ns/netwerk#Puntreferentie> .
+
 <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerssnelheidsmeting.geobserveerdKenmerk> a owl:ObjectProperty;
   rdfs:label "Verkeerssnelheidsmeting.geobserveerdKenmerk"@nl;
   rdfs:comment """Object dat door de Verkeerssnelheidsmetingen wordt geobserveerd.	"""@nl;
@@ -55,13 +62,6 @@ skos:Concept a rdfs:Class;
   rdfs:domain <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeerstellingkenmerk>;
   rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen>;
   rdfs:range skos:Concept .
-
-<https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen/#Verkeersmeetpunt.verkeersmeetpuntnetwerkreferentie> a owl:ObjectProperty;
-  rdfs:label "verkeersmeetpuntnetwerkreferentie"@nl;
-  rdfs:comment "Referentie naar het Netwerkelement waarop of waarlangs het Verkeersmeetpunt ligt of dat door dat punt bemonsterd wordt."@nl;
-  rdfs:domain <https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt>;
-  rdfs:isDefinedBy <https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen>;
-  rdfs:range <https://data.vlaanderen.be/ns/netwerk#Puntreferentie> .
 
 <http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement.result> a rdf:Property;
   rdfs:label "resultaat"@nl .
